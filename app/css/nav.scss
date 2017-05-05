@@ -1,16 +1,41 @@
 .main-nav {
-    background: #002F2F;
-    height: 40px;
-    width: 100%;
-
-    &__menu-container {
-        float: right;
+    &__header {
+        background: #34495e;
+        min-height: 48px;
     }
 
-    &__link {
-        color: #FFF;
-        display: inline-block;
-        padding: 10px 15px;
+    a {
+        cursor: pointer;
         text-decoration: none;
+    }
+
+    .mdl-layout__drawer-button {
+        margin: 0;
+    }
+
+    .mdl-layout__header-row {
+        height: 48px;
+        padding-left: 50px;
+        padding-right: 12px;
+    }
+
+    .mdl-layout__header-row .mdl-navigation {
+        height: 48px;
+    }
+
+    .mdl-layout__header-row .mdl-navigation__link {
+        line-height: 48px;
+        padding: 0 8px;
+    }
+
+    .mdl-navigation__link {
+        &:hover,
+        &--active {
+            color: #bdc3c7;
+        }
+
+        &--active {
+            pointer-events: none;
+        }
     }
 }

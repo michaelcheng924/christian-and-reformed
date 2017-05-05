@@ -1,0 +1,62 @@
+.catechism-training {
+    text-align: center;
+
+    &__mode-switcher {
+        margin-top: 20px;
+        text-align: center;
+
+        label {
+            margin-right: 30px;
+        }
+    }
+
+    &__main-section {
+        background: #f1c40f;
+        padding: 50px 0;
+        width: 100%;
+
+        .mdl-card {
+            margin: 0 auto 0;
+            min-height: initial;
+            width: 600px;
+        }
+
+        .mdl-card__title {
+            color: #fff;
+            background: #2c3e50;
+        }
+    }
+
+    &__main-card {
+        &--correct {
+            .mdl-card__title {
+                background: #1abc9c;
+            }
+
+            .catechism-training__input {
+                color: #1abc9c;
+            }
+        }
+
+        &--wrong {
+            .mdl-card__title {
+                background: #e74c3c;
+            }
+
+            .catechism-training__input {
+                color: #e74c3c;
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    &__correct {
+        color: #1abc9c;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+}

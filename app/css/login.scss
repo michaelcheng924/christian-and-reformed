@@ -1,0 +1,25 @@
+.login {
+    &__box {
+        position: absolute;
+        right: 0;
+        top: 48px;
+        z-index: 1000;
+    }
+
+    &__overlay {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__box.mdl-card {
+        width: 300px;
+    }
+
+    &__box > .mdl-card__title {
+        background: #FFF;
+        color: #333;
+    }
+}

@@ -1,6 +1,28 @@
 body {
-    background: #EFECCA;
+    background: #3498db;
     color: #333;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
+}
+
+.section {
+    &__heading {
+        background: #3497db;
+        padding: 20px 0;
+    }
+
+    &__card-description {
+        text-align: left;
+
+        &.mdl-card {
+            margin: 20px auto 0;
+            min-height: initial;
+            width: 512px;
+        }
+
+        > .mdl-card__title {
+            color: #fff;
+            background: #9b59b6;
+        }
+    }
 }

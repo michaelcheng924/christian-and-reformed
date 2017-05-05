@@ -50,6 +50,9 @@ app.use((req, res) => {
                     <meta charset="utf-8">
                     <title>React Redux Fullstack Starter</title>
 
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
                     <link rel="stylesheet" href="/styles.css">
                     <script>
                         window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}
@@ -57,6 +60,8 @@ app.use((req, res) => {
                 </head>
                 <body>
                     <div id="app">${componentHTML}</div>
+
+                    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
                     <script src="/bundle.js"></script>
                 </body>
             </html>
