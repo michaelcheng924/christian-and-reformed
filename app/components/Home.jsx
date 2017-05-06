@@ -20,15 +20,23 @@ export default class Home extends Component {
                     {
                         APP_LIST.map(app => {
                             return (
-                                <Card className="home__card">
-                                    <CardTitle className="home__card-title" title={app.title} />
-                                    <CardText className="home__card-description">
-                                        {app.description}
-                                    </CardText>
-                                    <CardActions className="home__card-actions">
-                                        <FlatButton label={app.buttonText} />
-                                    </CardActions>
-                                </Card>
+                                <Link key={app.title} to={app.url}>
+                                    <Card className="home__card">
+                                        <CardTitle
+                                            className="home__card-title" title={app.title}
+                                             style={{
+                                                background:
+                                                    `url('${app.image}') bottom right 15% no-repeat #FFD740`
+                                            }}
+                                        />
+                                        <CardText className="home__card-description">
+                                            {app.description}
+                                        </CardText>
+                                        <CardActions className="home__card-actions">
+                                            <FlatButton label={app.buttonText} />
+                                        </CardActions>
+                                    </Card>
+                                </Link>
                             );
                         })
                     }

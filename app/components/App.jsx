@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -7,18 +7,24 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { toggleDrawer } from 'app/actions/AppActions';
 import Nav from 'app/components/Nav';
 import Home from 'app/components/Home';
+import CatechismTraining from 'app/components/CatechismTraining';
 
 class App extends Component {
     render() {
         const { drawerOpen, onToggleDrawer } = this.props;
 
+        const Component = typeof window === 'undefined' ? 'div' : BrowserRouter;
+
         return (
-            <MuiThemeProvider>
-                <div>
-                    <Nav onToggleDrawer={onToggleDrawer} />
-                    <Route path="/" component={Home}/>
-                </div>
-            </MuiThemeProvider>
+            <Component>
+                <MuiThemeProvider>
+                    <div>
+                        <Nav onToggleDrawer={onToggleDrawer} />
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/catechism-training" component={CatechismTraining}/>
+                    </div>
+                </MuiThemeProvider>
+            </Component>
         );
     }
 }
