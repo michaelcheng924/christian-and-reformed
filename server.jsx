@@ -4,14 +4,16 @@ import bodyParser from 'body-parser';
 import path from 'path';
 import React from 'react';
 import { Provider } from 'react-redux';
-import { renderToString } from 'react-dom/server';
+import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router';
 import { RoutingContext, match } from 'react-router';
 import createLocation from 'history/lib/createLocation';
 import routes from 'app/routes';
 import { makeStore } from 'app/helpers';
 import serverRoutes from 'app/server/routes';
+import App from 'app/components/App';
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/appname');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reformedchristianapp');
 
 var app = express();
 
@@ -20,55 +22,53 @@ app.use(express.static(path.join(__dirname, 'public')));
 serverRoutes(app);
 
 app.use((req, res) => {
-    const location = createLocation(req.url);
     const store = makeStore();
+    const context = {}
 
-    match({ routes, location }, (err, redirectLocation, renderProps) => {
-        if (err) {
-            console.log(err);
-            return res.status(500).end('Internal server error');
-        }
-
-        if (!renderProps) {
-            return res.status(404).end('Not found.');
-        }
-
-        const InitialComponent = (
+    const componentHTML = ReactDOMServer.renderToString(
+        <StaticRouter
+            location={req.url}
+            context={context}
+        >
             <Provider store={store}>
-                <RoutingContext {...renderProps} />
+                <App/>
             </Provider>
-        );
+        </StaticRouter>
+    );
 
-        const initialState = store.getState();
+    const initialState = store.getState();
 
-        const componentHTML = renderToString(InitialComponent);
+    const HTML = `
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8">
+                <title>Reformed Christian App</title>
 
-        const HTML = `
-            <!DOCTYPE html>
-            <html>
-                <head>
-                    <meta charset="utf-8">
-                    <title>React Redux Fullstack Starter</title>
+                <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-                    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+                <link rel="stylesheet" href="/styles.css">
 
-                    <link rel="stylesheet" href="/styles.css">
-                    <script>
-                        window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}
-                    </script>
-                </head>
-                <body>
-                    <div id="app">${componentHTML}</div>
+                <script>
+                    window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}
+                </script>
+            </head>
+            <body>
+                <div id="app">${componentHTML}</div>
+                <script src="/bundle.js"></script>
+            </body>
+        </html>
+    `;
 
-                    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-                    <script src="/bundle.js"></script>
-                </body>
-            </html>
-        `;
-
-        res.end(HTML);
-    });
+    if (context.url) {
+        res.writeHead(301, {
+            Location: context.url
+        });
+        res.end()
+    } else {
+        res.write(HTML)
+        res.end()
+    }
 });
 
 export default app;

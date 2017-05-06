@@ -1,14 +1,36 @@
 .home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    &__header {
+        color: #FFF;
+        font-weight: 100;
+        margin-left: 25px;
+        margin-top: 60px;
+        text-align: center;
 
-    &__card.mdl-card {
-      height: 320px;
-      margin-top: 20px;
-      width: 320px;
+        svg {
+            fill: #FFF !important;
+            height: 60px !important;
+            width: 60px !important;
+        }
     }
-    &__card > .mdl-card__title {
-        background: #f1c40f;
+
+    &__header-the,
+    &__header-title {
+        font-size: 30px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 40px 0;
+    }
+
+    &__card {
+        height: 300px;
+        width: 300px;
+    }
+
+    &__card-title {
+        background: #FFD740;
     }
 }
