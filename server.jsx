@@ -55,6 +55,10 @@ app.use((req, res) => {
             </head>
             <body>
                 <div id="app">${componentHTML}</div>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4&libraries=places">
+                </script>
+
                 <script src="/bundle.js"></script>
             </body>
         </html>

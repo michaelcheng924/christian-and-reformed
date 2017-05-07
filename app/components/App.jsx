@@ -8,6 +8,7 @@ import { toggleDrawer } from 'app/actions/AppActions';
 import Nav from 'app/components/Nav';
 import Home from 'app/components/Home';
 import CatechismTraining from 'app/components/CatechismTraining';
+import BaptistDirectory from 'app/components/BaptistDirectory';
 
 class App extends Component {
     render() {
@@ -22,6 +23,7 @@ class App extends Component {
                         <Nav onToggleDrawer={onToggleDrawer} />
                         <Route exact path="/" component={Home}/>
                         <Route path="/catechism-training" component={CatechismTraining}/>
+                        <Route path="/baptist-church-directory" component={BaptistDirectory}/>
                     </div>
                 </MuiThemeProvider>
             </Component>
