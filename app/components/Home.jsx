@@ -13,7 +13,6 @@ export default class Home extends Component {
                 <div className="home__header">
                     <div className="home__header-the">The</div>
                     <div className="home__header-title">Reformed Christian App</div>
-                    <PeopleOutlineIcon />
                     <div className="home__header-tagline">Tools for the Reformed Community</div>
                 </div>
                 <div className="home__cards">

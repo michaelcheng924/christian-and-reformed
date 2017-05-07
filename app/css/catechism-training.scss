@@ -9,4 +9,141 @@
     &__header-title {
         font-size: 30px;
     }
+
+    &__modes-section {
+        background: #CE93D8;
+        color: #FFF;
+        padding: 25px 0;
+        text-align: center;
+
+        > div {
+            display: inline-block;
+        }
+
+        &--practice {
+            background: #90CAF9;
+        }
+    }
+
+    &__mode-button {
+        display: inline-block !important;
+        width: initial !important;
+    }
+
+    &__challenge {
+        background: #F3E5F5;
+        padding: 40px;
+
+        &--wrong {
+            background: #FFCDD2;
+
+            .catechism-training__card-question {
+                background: #EF5350;
+            }
+
+            .catechism-training__input textarea {
+                color: #EF5350 !important;
+            }
+        }
+
+        &--correct {
+            background: #C8E6C9;
+
+            .catechism-training__card-question {
+                background: #43A047;
+            }
+        }
+    }
+
+    &__practice {
+        background: #E3F2FD;
+        text-align: center;
+
+        &.catechism-training__challenge--wrong {
+            .catechism-training__input textarea {
+                color: initial !important;
+            }
+        }
+    }
+
+    &__card-question {
+        background: #37474F;
+        text-align: left;
+
+        > span {
+            color: #FFF !important;
+        }
+    }
+
+    &__card-answer {
+        text-align: center;
+    }
+
+    &__input {
+        text-align: left;
+        width: 100% !important;
+    }
+
+    &__submit,
+    &__start-over {
+        margin-top: 15px;
+    }
+
+    &__correct-answer {
+        color: #43A047;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    &__practice-toggles {
+        display: inline-block;
+        margin: 0 auto 20px;
+    }
+
+    &__practice-checkbox {
+        display: inline-block !important;
+        text-align: left;
+        width: 210px !important;
+    }
+
+    &__practice-navigation {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        svg {
+            cursor: pointer;
+            height: 40px !important;
+            width: 40px !important;
+        }
+    }
+
+    &__slider-container {
+        flex-grow: 1;
+        padding: 0 15px;
+    }
+
+    &__slider {
+        > div {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+    }
+
+    &__multiple-choice-section {
+        font-size: 15px;
+        margin: 15px auto;
+        text-align: left;
+        width: 400px;
+
+        > div {
+            cursor: pointer;
+            margin-bottom: 8px;
+
+            &:hover {
+                color: rgb(0, 188, 212);
+            }
+        }
+    }
 }

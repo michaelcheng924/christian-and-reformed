@@ -1,132 +1,115 @@
-import React, { createClass } from 'react';
 import $ from 'jquery';
+import React, { Component } from 'react';
 import css from 'classnames';
-import { delay, noop } from 'lodash';
+import { delay } from 'lodash';
+import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
 
-const CatechismTrainingChallenge = createClass({
-    displayName: 'CatechismTrainingChallenge',
+import { CORRECT_RESPONSES } from 'app/constants/global';
 
-    componentDidMount() {
-        this.updateHeight();
+export default class CatechismTrainingChallenge extends Component {
+    constructor(props) {
+        super(props);
 
-        $(this.input).on('keypress', event => {
-            if (event.which === 13) {
-                event.preventDefault();
-                this.onSubmit({ preventDefault: noop });
-            }
-        });
-    },
+        this.state = {
+            inputValue: '',
+            questionCorrect: false,
+            questionWrong: false
+        };
 
-    updateHeight() {
-        const input = this.input;
+        this.onKeyPress = this.onKeyPress.bind(this);
+        this.onReset = this.onReset.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
 
-        input.style.height = 0;
-        input.style.height = `${input.scrollHeight}px`;
-    },
-
-    onSubmit(event) {
-        event.preventDefault();
-
-        const { currentQuestion, getAnswer, questionWrong } = this.props;
-
-        if (questionWrong) { return; }
-
-        const userAnswer = getAnswer(this.input.value);
-        const actualAnswer = getAnswer(currentQuestion.answer);
-
-        if (userAnswer === actualAnswer) {
-            this.onCorrect();
-        } else {
-            this.onWrong();
+        if (typeof window !== 'undefined') {
+            $('body').on('keypress', this.onKeyPress);
         }
-    },
+    }
 
-    onCorrect() {
-        const { currentQuestion, setParentState } = this.props;
+    componentWillUnmount() {
+        $('body').off('keypress', this.onKeyPress);
+    }
 
-        if (currentQuestion.id === 135) {
-
-        } else {
-            setParentState({ questionCorrect: true });
-
-            delay(() => {
-                setParentState({
-                    questionCorrect: false,
-                    questionNumber: currentQuestion.id + 1
-                });
-
-                this.input.value = '';
-            }, 500);
+    onKeyPress(event) {
+        if (event.which === 13) {
+            event.preventDefault();
+            console.log(this);
+            this.onSubmit();
         }
-    },
-
-    onWrong() {
-        this.props.setParentState({ questionWrong: true });
-    },
+    }
 
     onReset() {
         this.props.setParentState({
-            questionNumber: 1,
-            questionWrong: false
+            questionNumber: 1
         });
 
-        this.input.value = '';
-        this.updateHeight();
-    },
+        this.setState({
+            inputValue: '',
+            questionCorrect: false,
+            questionWrong: false
+        });
+    }
+
+    onSubmit() {
+        const { currentQuestion, getAnswer, setParentState } = this.props;
+
+        const answer = getAnswer(currentQuestion.answer);
+        const userAnswer = getAnswer(this.state.inputValue);
+
+        if (answer === userAnswer) {
+            if (currentQuestion.id === 135) {
+
+            } else {
+                this.setState({ questionCorrect: true });
+
+                delay(() => {
+                    setParentState({ questionNumber: currentQuestion.id + 1 });
+                    this.setState({ inputValue: '', questionCorrect: false });
+                }, 670);
+            }
+        } else {
+            this.setState({ questionWrong: true });
+        }
+    }
 
     render() {
-        const { currentQuestion, questionCorrect, questionWrong, setParentState } = this.props;
+        const { questionCorrect, questionWrong } = this.state;
+        const { currentQuestion } = this.props;
 
-        const classNames = css('catechism-training__main-card mdl-card mdl-shadow--2dp', {
-            'catechism-training__main-card--correct': questionCorrect,
-            'catechism-training__main-card--wrong': questionWrong
+        const classNames = css('catechism-training__challenge', {
+            'catechism-training__challenge--correct': questionCorrect,
+            'catechism-training__challenge--wrong': questionWrong
         });
 
         return (
             <div className={classNames}>
-                <div className="mdl-card__title">
-                    <h2 className="mdl-card__title-text">
-                        {`${currentQuestion.id}) ${currentQuestion.question}`}
-                    </h2>
-                </div>
-                <div className="mdl-card__supporting-text">
-                    <form onSubmit={this.onSubmit}>
-                        <div className="catechism-training__input mdl-textfield mdl-js-textfield">
-                            <textarea
-                                className="mdl-textfield__input"
-                                disabled={questionWrong}
-                                type="text"
-                                ref={input => this.input = input}
-                                onChange={this.updateHeight}
-                            />
-                            <label className="mdl-textfield__label" htmlFor="sample5">Type answer here</label>
-                        </div>
+                <Card className="catechism-training__card">
+                    <CardTitle className="catechism-training__card-question" title={questionCorrect ? CORRECT_RESPONSES[Math.floor(Math.random() * CORRECT_RESPONSES.length - .05)] : currentQuestion.question} />
+                    <CardText className="catechism-training__card-answer">
+                        <TextField
+                            className="catechism-training__input"
+                            disabled={questionWrong}
+                            errorText={questionWrong ? ' ' : null}
+                            floatingLabelText="Answer"
+                            multiLine={true}
+                            onChange={event => this.setState({ inputValue: event.target.value })}
+                            ref={input => this.input = input}
+                            value={this.state.inputValue}
+                        />
                         {
                             questionWrong
-                                ? <div className="catechism-training__correct">{currentQuestion.answer}</div>
-                                : (
-                                    <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                        Submit
-                                    </button>
-                                )
-                        }
-                        {
-                            questionWrong
-                                ? (
-                                    <button
-                                        className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
-                                        onClick={this.onReset}
-                                    >
-                                        Start over
-                                    </button>
-                                )
+                                ? <div className="catechism-training__correct-answer">{currentQuestion.answer}</div>
                                 : null
                         }
-                    </form>
-                </div>
+                        {
+                            questionWrong
+                                ? <RaisedButton className="catechism-training__start-over" label="Start over" secondary={true} onTouchTap={this.onReset} />
+                                : <RaisedButton className="catechism-training__submit" label="Submit" primary={true} onTouchTap={this.onSubmit} />
+                        }
+                    </CardText>
+                </Card>
             </div>
         );
     }
-});
-
-export default CatechismTrainingChallenge;
+}

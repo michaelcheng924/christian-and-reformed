@@ -18,3 +18,5 @@ export const APP_LIST = [
         shortTitle: 'Reformed Baptist Church Directory'
     }
 ];
+
+export const CORRECT_RESPONSES = ['Yeah!', 'Awesome!', 'Hooray!', 'You got it!', 'Way to go!', 'Excellent!', 'Magnificent!', 'Spectacular!', 'Marvelous!'];

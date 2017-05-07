@@ -1,9 +1,9 @@
 .home {
     &__header {
+        background: #0097A7;
         color: #FFF;
         font-weight: 100;
-        margin-left: 25px;
-        margin-top: 60px;
+        padding: 60px 0;
         text-align: center;
 
         svg {
@@ -13,9 +13,17 @@
         }
     }
 
-    &__header-the,
+    &__header-the {
+        font-size: 16px;
+    }
+
     &__header-title {
+        color: #EF9A9A;
         font-size: 30px;
+    }
+
+    &__header-tagline {
+        font-size: 12px;
     }
 
     &__cards {
