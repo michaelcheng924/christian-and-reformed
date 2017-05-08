@@ -7,6 +7,12 @@ import PeopleOutlineIcon from 'material-ui-icons/PeopleOutline';
 import { APP_LIST } from 'app/constants/global';
 
 export default class Home extends Component {
+    componentWillMount() {
+        if (typeof window !== 'undefined') {
+            console.log(document, window);
+        }
+    }
+
 	render() {
 		return (
 			<div>

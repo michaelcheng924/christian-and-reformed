@@ -10,12 +10,11 @@ export const APP_LIST = [
         shortTitle: 'Catechism Training'
     },
     {
-        title: 'International Reformed Baptist Church Directory',
+        title: 'Reformed Church Finder',
         description: 'Easily find Reformed Baptist churches using Google Maps.',
-        url: '/baptist-church-directory',
+        url: '/reformed-church-finder',
         image: '/globe.png',
-        buttonText: 'Open map',
-        shortTitle: 'Reformed Baptist Church Directory'
+        buttonText: 'Open map'
     }
 ];
 

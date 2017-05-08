@@ -3,15 +3,35 @@
     flex-direction: column;
     height: calc(100vh - 64px);
 
-    &__info {
-        background: #DCEDC8;
+    &__filters {
+        background: rgba(255, 255, 255, .6);
+        height: 178px;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 64px;
+        transition: all .3s;
+        width: 205px;
+
+        &--hide {
+            height: 24px;
+            width: 84px;
+
+            .church-directory__filters-title svg {
+                transform: rotate(270deg);
+            }
+        }
+    }
+
+    &__filters-title {
+        align-items: center;
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
-        padding: 10px 0;
-        width: 100%;
 
-        > div {
-            margin: 0 10px;
+        svg {
+            transform: rotate(90deg);
+            transition: all .3s;
         }
     }
 }

@@ -5,7 +5,7 @@ import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
 
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import CatechismTrainingChallenge from 'app/components/CatechismTraining/challenge';
-import CatechismTrainingPractice from 'app/components/CatechismTraining/practice-mode';
+import CatechismTrainingPractice from 'app/components/CatechismTraining/practice';
 
 class CatechismTraining extends Component {
     constructor(props) {

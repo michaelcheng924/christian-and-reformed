@@ -1,42 +1,28 @@
-// https://maps.googleapis.com/maps/api/geocode/json?address=11920+Stidham+Rd,+Conroe,+TX+77302&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
+// https://maps.googleapis.com/maps/api/geocode/json?address=19-23+Queen+Street,+Walloon,+Qld+4306&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
 
 const CHURCHES = [  
     {  
         coordinates: {
-            lat: -27.618062,
-            lng: 152.62575
+           lat : -27.605517,
+           lng : 152.6664817
         },
         details: {  
             name: "Berean Bible Church",
-            address: "87 Thagoona-Haigslea Road Thagoona Qld 4306 ",
+            address: "19-23 Queen Street, Walloon, Qld 4306",
             region: "AUS",
-            website: "http://www.bbcq.org"
+            website: "http://www.bbcq.org",
+            tags: [
+                {
+                    type: 'confession',
+                    data: '1689'
+                },
+                {
+                    type: 'current location',
+                    data: 'Walloon Uniting Church'
+                }
+            ]
 
       }
-    },
-    {  
-        coordinates: {
-            lat: -27.377788,
-            lng: 153.071894
-        },
-        details: {  
-            name: "Banyo Baptist Church",
-            address: "Musgrave Road & Hartley Street Banyo, Qld. 4014",
-            region: "AUS",
-            website: "http://www.banyobaptistchurch.org/"
-        }
-    },
-    {  
-        coordinates: {
-            lat: -27.461192,
-            lng: 153.000042
-        },
-        details: {  
-            name: "Rosalie Baptist Church",
-            address: "24 Ellena Street, Rosalie, Brisbane, Queensland 4064",
-            region: "AUS",
-            website: "http://www.rbcq.org.au/"
-        }
     },
     {  
         coordinates: {
@@ -45,9 +31,15 @@ const CHURCHES = [
         },
         details: {  
             name: "Samford Baptist Church",
-            address: "8 Woodrose Court Ferny Hills Qld 4055",
+            address: "Samford Farmers Hall, 30 Main St, Samford Village QLD 4520, Australia",
             region: "AUS",
-            website: "http://www.sbfq.org/"
+            website: "http://www.sbcq.org/",
+            tags: [
+                {
+                    type: 'confession',
+                    data: '1689'
+                }
+            ]
         }
     },
     {  

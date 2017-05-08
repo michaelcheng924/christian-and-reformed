@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import { defer, each } from 'lodash';
 import { Link } from 'react-router';
+import css from 'classnames';
+import Checkbox from 'material-ui/Checkbox';
+import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
+import KeyboardArrowLeftIcon from 'material-ui-icons/KeyboardArrowLeft';
+
 import CHURCHES from 'app/constants/baptist-churches';
 
 export default class BaptistChurches extends Component {
@@ -9,32 +14,18 @@ export default class BaptistChurches extends Component {
         super(props);
 
         this.state = {
+            showFilters: true
+        };
 
-        }
+        this.toggleFilters = this.toggleFilters.bind(this);
     }
 
     componentDidMount() {
         this.initMap();
     }
 
-    onAdd() {
-        this.setState({ about: true });
-    }
-
-    onAdd() {
-        this.setState({ add: true });
-    }
-
-    onEdit(data) {
-        this.setState({ edit: data });
-    }
-
-    onClose() {
-        this.setState({
-            about: false,
-            add: false,
-            edit: false
-        });
+    toggleFilters() {
+        this.setState({ showFilters: !this.state.showFilters });
     }
 
     initMap() {
@@ -57,15 +48,30 @@ export default class BaptistChurches extends Component {
                     map: map
                 });
 
+                const tags = church.details.tags
+                    ? church.details.tags.map(tag => {
+                        let string = '';
+
+                        if (tag.type === 'confession') {
+                            string += `<div><i class="fa fa-book" aria-hidden="true"></i> <strong>Confession:</strong> ${tag.data}</div>`;
+                        } else if (tag.type === 'current location') {
+                            string += `<div><i class="fa fa-home" aria-hidden="true"></i> <strong>Current location:</strong> ${tag.data}</div>`;
+                        }
+
+                        return string;
+                    }).join('')
+                    : '';
+
                 infoWindow[index] = new google.maps.InfoWindow({
                     content: `
                         <div class="info-window">
                             <h2>${name}</h2>
-                            <div>${address}</div>
-                            <div><a href="https://maps.google.com?daddr=${address.replace(' ', '+')}
+                            <div>${address} (<a href="https://maps.google.com?daddr=${address.replace(' ', '+')}
 
-" target="_blank">Directions</a></div>
-                            <div><a href="${website}" target="_blank">${website}</a></div>
+" target="_blank">Directions</a>)</div>
+                            <div><strong>Website: </strong><a href="${website}" target="_blank">${website}</a></div>
+                            <div><strong>Notes:</strong></div>
+                            ${tags}
                         </div>
                     `
                 });
@@ -130,16 +136,56 @@ export default class BaptistChurches extends Component {
           map.fitBounds(bounds);
         });
     }
+
+    onCheck() {
+
+    }
     
     render() {
+        const classNames = css('church-directory__filters', {
+            'church-directory__filters--hide': !this.state.showFilters
+        });
+
         return (
             <div className="church-directory">
-                <div className="church-directory__info">
-                    <div>International Reformed Baptist Church Directory</div>
-                    <div><strong>{CHURCHES.length}</strong> churches</div>
-                </div>
                 <input id="pac-input" className="controls" type="text" placeholder="Search Box" ref={input => this.search = input} />
                 <div className="map" ref={div => this.map = div} />
+                <div className={classNames}>
+                    <div className="church-directory__filters-title" onClick={this.toggleFilters}>
+                        <strong>Filters:</strong>
+                        <KeyboardArrowLeftIcon />
+                    </div>
+                    {
+                        this.state.showFilters
+                            ? (
+                                <div>
+                                    <RadioButtonGroup name="mapFilters" defaultSelected="baptist" onChange={this.onModeChange}>
+                                        <RadioButton
+                                            value="baptist"
+                                            label="Baptist"
+                                        />
+                                        <RadioButton
+                                            value="presbyterian"
+                                            label="Presbyterian"
+                                        />
+                                        <RadioButton
+                                            value="all"
+                                            label="All"
+                                        />
+                                    </RadioButtonGroup>
+                                    <Checkbox
+                                        label="Confessional only"
+                                        onCheck={this.onShowAnswer}
+                                    />
+                                    <Checkbox
+                                        label="Family-integrated only"
+                                        onCheck={this.onShowAnswer}
+                                    />
+                                </div>
+                            )
+                            : null
+                    }
+                </div>
             </div>
         );
     }
