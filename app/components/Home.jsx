@@ -9,7 +9,7 @@ import { APP_LIST } from 'app/constants/global';
 export default class Home extends Component {
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            console.log(document, window);
+            document.title = 'The Reformed Christian App: Tools for the Reformed Community';
         }
     }
 

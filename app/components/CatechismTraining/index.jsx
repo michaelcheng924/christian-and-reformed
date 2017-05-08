@@ -21,6 +21,12 @@ class CatechismTraining extends Component {
         this.setParentState = this.setParentState.bind(this);
     }
 
+    componentWillMount() {
+        if (typeof window !== 'undefined') {
+            document.title = 'Catechism for Boys and Girls Training';
+        }
+    }
+
     setParentState(object) {
         this.setState(object);
     }

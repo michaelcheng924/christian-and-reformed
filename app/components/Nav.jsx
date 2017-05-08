@@ -38,7 +38,7 @@ export default class Nav extends Component {
         return (
             <div>
                 <AppBar
-                    title="The Reformed Christian App"
+                    title="Reformed Christian App"
                     onLeftIconButtonTouchTap={this.handleToggle}
                     className="app-bar"
                 />
