@@ -24,6 +24,7 @@ class CatechismTraining extends Component {
     componentWillMount() {
         if (typeof window !== 'undefined') {
             document.title = 'Catechism for Boys and Girls Training';
+            document.body.style.background = '#F3E5F5';
         }
     }
 
@@ -51,9 +52,9 @@ class CatechismTraining extends Component {
 
         return (
             <div className="catechism-training">
-                <div className="catechism-training__header">
-                    <div className="catechism-training__header-title">Catechism for Boys and Girls Training</div>
-                    <div className="catechism-training__header-subtitle">An app to help you and your children learn the catechism faster.</div>
+                <div className="header">
+                    <div className="header-title">Catechism for Boys and Girls Training</div>
+                    <div className="header-subtitle">An app to help you and your children learn the catechism faster.</div>
                 </div>
                 <div className={classNames}>
                     <RadioButtonGroup name="shipSpeed" defaultSelected="challenge" onChange={this.onModeChange}>

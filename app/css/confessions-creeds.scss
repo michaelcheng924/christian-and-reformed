@@ -1,0 +1,120 @@
+.confessions-creeds {
+    .header {
+        background: #0277BD;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px 15px 15px;
+
+        h2,h3 {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    &__home-card {
+        width: 300px;
+    }
+
+    &__home-card-title {
+        background: #FFD600;
+    }
+
+    &__chapter-select {
+        margin-top: 15px;
+    }
+
+    &__chapter-select-chapters {
+        margin-bottom: 20px;
+    }
+
+    &__chapter-select-chapter {
+        color: #00695C;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        height: 25px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--active {
+            color: #333;
+            pointer-events: none;
+            text-decoration: underline;
+        }
+    }
+
+    &__chapter-select-divider {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    &__card {
+        margin-bottom: 20px;
+        width: 600px;
+    }
+
+    &__card-title {
+        background: #01579B;
+        padding: 3px 16px !important;
+
+        > span {
+            color: #FFF !important;
+            font-size: 16px !important;
+            line-height: 22px !important;
+        }
+    }
+
+    &__scriptures {
+        margin-top: 15px;
+    }
+
+    &__scripture-reference {
+        color: #00BFA5;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__scripture-texts {
+        margin-top: 7px;
+    }
+
+    &__scripture-text {
+        border: 1px solid #CDCDCD;
+        margin-bottom: 7px;
+        padding: 5px;
+        position: relative;
+
+        h2, h3 {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        svg {
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    }
+}

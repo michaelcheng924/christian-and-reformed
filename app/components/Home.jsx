@@ -9,7 +9,8 @@ import { APP_LIST } from 'app/constants/global';
 export default class Home extends Component {
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'The Reformed Christian App: Tools for the Reformed Community';
+            document.title = 'The Reformed Christian App: ';
+            document.body.style.background = '#4DB6AC';
         }
     }
 
@@ -17,9 +18,8 @@ export default class Home extends Component {
 		return (
 			<div>
                 <div className="home__header">
-                    <div className="home__header-the">The</div>
-                    <div className="home__header-title">Reformed Christian App</div>
-                    <div className="home__header-tagline">Tools for the Reformed Community</div>
+                    <div className="home__header-title">Reformed Toolbox</div>
+                    <div className="home__header-tagline">Technology Serving Historic Truth</div>
                 </div>
                 <div className="home__cards">
                     {
@@ -38,7 +38,7 @@ export default class Home extends Component {
                                             {app.description}
                                         </CardText>
                                         <CardActions className="home__card-actions">
-                                            <FlatButton label={app.buttonText} />
+                                            <FlatButton label="Open" />
                                         </CardActions>
                                     </Card>
                                 </Link>

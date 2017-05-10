@@ -11,9 +11,19 @@ a {
 }
 
 .app-bar {
-    background: #006064 !important;
+    background: #0D47A1 !important;
 
     h1 {
         font-weight: 300 !important;
     }
+}
+
+.header {
+    color: #FFF;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 30px;
 }

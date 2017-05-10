@@ -7,8 +7,11 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { toggleDrawer } from 'app/actions/AppActions';
 import Nav from 'app/components/Nav';
 import Home from 'app/components/Home';
-import CatechismTraining from 'app/components/CatechismTraining';
+import VideoAudio from 'app/components/VideoAudio';
 import ChurchFinder from 'app/components/ChurchFinder';
+import ConfessionsCreeds from 'app/components/ConfessionsCreeds';
+import LondonBaptistConfession from 'app/components/ConfessionsCreeds/london-baptist';
+import CatechismTraining from 'app/components/CatechismTraining';
 
 class App extends Component {
     render() {
@@ -22,8 +25,11 @@ class App extends Component {
                     <div>
                         <Nav onToggleDrawer={onToggleDrawer} />
                         <Route exact path="/" component={Home}/>
-                        <Route path="/catechism-training" component={CatechismTraining}/>
+                        <Route path="/video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
+                        <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
+                        <Route path="/1689-london-baptist-confession" component={LondonBaptistConfession}/>
+                        <Route path="/catechism-training" component={CatechismTraining}/>
                     </div>
                 </MuiThemeProvider>
             </Component>

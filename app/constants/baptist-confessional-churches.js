@@ -8,21 +8,38 @@ const CHURCHES = [
         },
         details: {  
             name: "Berean Bible Church",
+            denomination: 'baptist',
             address: "19-23 Queen Street, Walloon, Qld 4306",
             region: "AUS",
             website: "http://www.bbcq.org",
-            tags: [
+            notes: [
                 {
-                    type: 'confession',
-                    data: '1689'
+                    type: 'meeting at',
+                    data: 'Walloon Uniting Church'
                 },
                 {
-                    type: 'current location',
-                    data: 'Walloon Uniting Church'
+                    type: 'sermons',
+                    data: 'http://bbcq.org/cms/online-sermons/newest/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Berean-Bible-Church-108752356199903/'
                 }
-            ]
-
-      }
+            ],
+            pastors: [
+                {
+                    name: 'Troy Cane',
+                    email: 'troy@bbcq.org',
+                    image: 'http://bbcq.org/cms/wp-content/uploads/2014/04/t_cane0913.jpg'
+                },
+                {
+                    name: 'Paul Caswell',
+                    email: 'paul@bbcq.org',
+                    image: 'http://bbcq.org/cms/wp-content/uploads/2014/04/p_caswell0913.jpg'
+                }
+            ],
+            lastUpdated: '5/8/2017'
+        }
     },
     {  
         coordinates: {
@@ -34,7 +51,7 @@ const CHURCHES = [
             address: "Samford Farmers Hall, 30 Main St, Samford Village QLD 4520, Australia",
             region: "AUS",
             website: "http://www.sbcq.org/",
-            tags: [
+            notes: [
                 {
                     type: 'confession',
                     data: '1689'
@@ -1687,7 +1704,20 @@ const CHURCHES = [
             name: "Dominion Baptist Church",
             address: "2333 Valleydale Rd. Birmingham, Alabama 35244",
             region: "AL",
-            website: "http://www.dominionbaptist.org/"
+            website: "http://www.dominionbaptist.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=dominionbaptist'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mark Liddle',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/markliddle.png'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1699,7 +1729,25 @@ const CHURCHES = [
             name: "Emmanuel Baptist Church",
             address: "4445 Chisholm Road Florence, Alabama 35630",
             region: "AL",
-            website: ""
+            website: "http://www.emmanuel-florence.org/",
+            familyIntegrated: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=bygraceareyesaved'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Joshua Miller',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/MillerJoshuaJ.png'
+                },
+                {
+                    name: 'Daniel Michael',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/danielmichael.png'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1711,7 +1759,21 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "122 Walnut Street  Madison, AL 35758",
             region: "AL",
-            website: "http://www.gracemadison-al.com/index.html"
+            website: "http://www.gbcmadison-al.com/",
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/GraceBaptistMadisonAL/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Dean Olive',
+                    email: 'pastor@gbcmadison-al.com',
+                    image: 'http://www.gbcmadison-al.com/uploads/3/4/2/2/3422105/1579487_orig.jpg'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1723,7 +1785,27 @@ const CHURCHES = [
             name: "Grace Heritage Church",
             address: "1345 Annalue Dr. Auburn, AL   36830",
             region: "AL",
-            website: "http://www.graceheritage.org/"
+            website: "http://www.graceheritage.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://graceheritage.org/audio/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/graceheritagechurch/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Paul Stith',
+                    image: 'http://graceheritage.org/stiths4.jpg'
+                },
+                {
+                    name: 'Stan Reeves'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1735,7 +1817,13 @@ const CHURCHES = [
             name: "Harvest Fellowship Community Church",
             address: "903 Grant Ave. Gadsden, AL 35903",
             region: "AL",
-            website: "http://www.hfcchurch.org/"
+            website: "http://www.hfcchurch.org/",
+            pastors: [
+                {
+                    name: 'Ricky L. Tillis'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1747,7 +1835,27 @@ const CHURCHES = [
             name: "New Life Baptist",
             address: "7640 Wall Triana HighWay Harvest, AL  35749",
             region: "AL",
-            website: "http://www.nlbc-harvest.org/"
+            website: "http://www.nlbc-harvest.org/",
+            noConfession: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://nlbc-harvest.org/resources/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/nlbcharvest/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Dr. Andy Wisner'
+                },
+                {
+                    name: 'Eric Swinney'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1759,7 +1867,22 @@ const CHURCHES = [
             name: "Trinity Church",
             address: "4426 West Main St Dothan, AL 36303",
             region: "AL",
-            website: "http://www.trinitychurchdothan.com"
+            website: "http://www.trinitychurchdothan.com",
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'McMullan Chapel in front of Hutto Tower'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Paul C. Roten'
+                },
+                {
+                    name: 'Craig L. Gillis'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1771,7 +1894,24 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "250 Pine Mountain Circle, Remlap, AL 35133",
             region: "AL",
-            website: "http://www.prbc1689.org"
+            website: "http://www.prbc1689.org",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.prbc1689.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/prbcremlap/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Kurt M. Smith',
+                    image: 'http://www.prbc1689.org/wp-content/uploads/2015/05/kurt.jpg'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1783,7 +1923,25 @@ const CHURCHES = [
             name: "Cornerstone Church",
             address: "4248 East Broadway Rd. Mesa, Arizona  85206",
             region: "AZ",
-            website: "http://www.cstonemesa.org/"
+            website: "http://www.cstonemesa.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.cstonemesa.org/sermons-audio/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Cornerstone-Church/109199199120563?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jim Adams',
+                    email: 'grizzlyadams@cstonemesa.org',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/jamesadams.png'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1795,7 +1953,28 @@ const CHURCHES = [
             name: "Grace Covenant Church",
             address: "1255 N. Greenfield Rd. Gilbert, AZ 85234",
             region: "AZ",
-            website: "http://gccgilbert.com/"
+            website: "http://gccgilbert.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://gccgilbert.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/gccgilbert/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'John Giarrizzo',
+                    image: 'http://gccgilbert.com/wp-content/uploads/2015/01/JohnG.jpg'
+                },
+                {
+                    name: 'Darrell Gustafson',
+                    image: 'http://gccgilbert.com/wp-content/uploads/2014/11/headshot_4_low_res-199x300.jpg'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
     {  
@@ -1807,21 +1986,42 @@ const CHURCHES = [
             name: "Miller Valley Baptist Church",
             address: "815 Whipple St Prescott, AZ 86301",
             region: "AZ",
-            website: ""
+            website: "http://millervalleybaptist.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://millervalleybaptist.org/wordpress/?page_id=70'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Miller-Valley-Baptist-Church-111807132183555/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Chris J. Marley',
+                    image: 'http://millervalleybaptist.org/wordpress/wp-content/myimages/ordinationfamily.jpg'
+                },
+                {
+                    name: 'Chris L. Marley',
+                    image: 'http://millervalleybaptist.org/wordpress/wp-content/myimages/ordinationfamily.jpg'
+                }
+            ],
+            lastUpdated: '5/8/2017'
         }
     },
-    {  
-        coordinates: {
-            lat: 33.535062,
-            lng: -112.150719
-        },
-        details: {  
-            name: "Northwest Baptist Church",
-            address: "6701 N. 43rd Ave. Phoenix, AZ 85019",
-            region: "AZ",
-            website: "http://www.northwestbaptistchurchonline.org/"
-        }
-    },
+    // {  
+    //     coordinates: {
+    //         lat: 33.535062,
+    //         lng: -112.150719
+    //     },
+    //     details: {  
+    //         name: "Northwest Baptist Church",
+    //         address: "6701 N. 43rd Ave. Phoenix, AZ 85019",
+    //         region: "AZ",
+    //         website: "http://www.northwestbaptistchurchonline.org/"
+    //     }
+    // },
     {  
         coordinates: {
             lat: 33.491665,

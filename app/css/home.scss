@@ -14,7 +14,7 @@
     }
 
     &__header-the {
-        font-size: 25px;
+        font-size: 12px;
     }
 
     &__header-title {
@@ -24,7 +24,7 @@
     }
 
     &__header-tagline {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     &__cards {
@@ -35,8 +35,16 @@
     }
 
     &__card {
-        height: 300px;
+        height: 230px;
         margin-bottom: 15px;
         width: 300px;
+    }
+
+    &__card-title {
+        height: 82px;
+    }
+
+    &__card-description {
+        height: 32px;
     }
 }
