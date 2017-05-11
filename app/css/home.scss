@@ -33,26 +33,6 @@
         font-weight: 300;
     }
 
-    &__fb {
-        display: inline-block !important;
-        left: 5px;
-        position: absolute;
-        top: 5px;
-
-        > div {
-            padding-bottom: 0 !important;
-        }
-
-        .fb-like > span {
-            overflow: hidden;
-            width: 96px !important;
-        }
-    }
-
-    &__fb-card {
-        padding: 4px 8px !important;
-    }
-
     &__apps {
         display: flex;
         flex-wrap: wrap;

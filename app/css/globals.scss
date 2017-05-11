@@ -84,20 +84,29 @@ a {
     display: flex;
     height: 400px;
     justify-content: center;
-    padding: 24px 20px;
+    padding: 20px;
 
-    &__login-card {
+    &__card {
+        height: 100%;
+        width: 100%;
+
         > div {
+            height: 100%;
             padding-bottom: 0 !important;
         }
     }
 
-    &__login-card-description {
+    &__card-description {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+    }
+
+    &__login-section {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px 10px !important;
     }
 
     &__login-radio-container {
@@ -108,8 +117,14 @@ a {
     &__login-input {
         font-size: 13px !important;
         margin-right: 15px;
-        width: 100px !important;
+        width: 150px !important;
     }
+}
+
+.fb-like {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .header {
