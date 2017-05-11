@@ -22,6 +22,10 @@ class Home extends Component {
         }
     }
 
+    componentWillLeave(callback) {
+        console.log('LEAVE?');
+    }
+
     onAppClick(url) {
         this.props.onSetApp(url);
     }
@@ -34,6 +38,7 @@ class Home extends Component {
                         APP_LIST.map((app, index) => {
                             return (
                                 <CSSTransitionGroup
+                                    key={app.title}
                                     transitionName={index % 2 === 0 ? 'homeTransition' : 'homeTransitionRight'}
                                     transitionAppear={true}
                                     transitionAppearTimeout={400}
@@ -41,7 +46,6 @@ class Home extends Component {
                                     transitionLeave={false}
                                 >
                                     <Link
-                                        key={app.title}
                                         className="home__app-link"
                                         onClick={partial(this.onAppClick, app.url)}
                                         to={app.url}

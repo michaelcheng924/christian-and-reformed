@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import { partial } from 'lodash';
 import { createSelector } from 'reselect';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
