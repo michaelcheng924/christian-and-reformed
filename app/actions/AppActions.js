@@ -1,10 +1,10 @@
-import { TOGGLE_DRAWER } from 'app/actions/AppActionTypes';
+import { SET_APP } from 'app/actions/AppActionTypes';
 
-export function toggleDrawer(show) {
+export function setApp(app) {
     return {
-        type: TOGGLE_DRAWER,
+        type: SET_APP,
         payload: {
-            show
+            app
         }
     };
 }

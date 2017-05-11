@@ -41,7 +41,7 @@ app.use((req, res) => {
     const initialState = store.getState();
 
     const data = find(APP_LIST, app => app.url === req.path);
-    const title = data ? data.title : 'Reformed Christian App';
+    const title = data ? data.title : 'Reformed Toolbox: Technology Serving Truth';
 
     const HTML = `
         <!DOCTYPE html>
@@ -62,6 +62,25 @@ app.use((req, res) => {
                 </script>
             </head>
             <body>
+                <script>
+                  window.fbAsyncInit = function() {
+                    FB.init({
+                      appId      : '292276141215622',
+                      xfbml      : true,
+                      version    : 'v2.9'
+                    });
+                    FB.AppEvents.logPageView();
+                  };
+
+                  (function(d, s, id){
+                     var js, fjs = d.getElementsByTagName(s)[0];
+                     if (d.getElementById(id)) {return;}
+                     js = d.createElement(s); js.id = id;
+                     js.src = "//connect.facebook.net/en_US/sdk.js";
+                     fjs.parentNode.insertBefore(js, fjs);
+                   }(document, 'script', 'facebook-jssdk'));
+                </script>
+
                 <div id="app">${componentHTML}</div>
 
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4&libraries=places">

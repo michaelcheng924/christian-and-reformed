@@ -1,8 +1,16 @@
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
 body {
-    background: #4DB6AC;
+    background: #E3F2FD;
     color: #333;
     font-family: 'Roboto';
     font-weight: 300;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
     margin: 0;
 }
 
@@ -10,11 +18,25 @@ a {
     text-decoration: none;
 }
 
-.app-bar {
-    background: #0D47A1 !important;
+.radio-inline {
+    display: inline-block !important;
+    margin-right: 15px;
+    width: initial !important;
 
-    h1 {
-        font-weight: 300 !important;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    > div > div {
+        margin-right: 6px !important;
+    }
+}
+
+.app {
+    &__back-button {
+        bottom: 5px;
+        position: fixed;
+        left: 5px;
     }
 }
 

@@ -1,35 +1,48 @@
-import React, { createClass } from 'react';
-import { partial } from 'lodash';
+import React, { Component } from 'react';
+import css from 'classnames';
+import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
+import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
 
-const Login = createClass({
-    displayName: 'Login',
-
-    onChangeMode(mode) {
-        this.props.setParentState({ mode });
-    },
-
+export default class Login extends Component {
     render() {
+        const classNames = css('home__login', {
+            'home__login--show': this.props.showLogin
+        });
+
         return (
-            <div className="login">
-                <div className="login__box mdl-card mdl-shadow--2dp">
-                    <div className="mdl-card__supporting-text">
-                        <form action="#">
-                          <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input className="mdl-textfield__input" type="text" id="sample3" />
-                            <label className="mdl-textfield__label" htmlFor="sample3">Text...</label>
-                          </div>
-                        </form>
-                    </div>
-                    <div className="mdl-card__actions mdl-card--border">
-                        <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            Get Started
-                        </a>
-                    </div>
-                </div>
-                <div className="login__overlay" />
+            <div className={classNames}>
+                <Card className="home__login-card">
+                    <CardText className="home__login-card-description">
+                        <RadioButtonGroup className="home__login-radio-container" name="login" defaultSelected="login" onChange={this.onLoginSignupChange}>
+                            <RadioButton
+                                className="radio-inline"
+                                value="login"
+                                label="Login"
+                            />
+                            <RadioButton
+                                className="radio-inline"
+                                value="signup"
+                                label="Signup"
+                            />
+                        </RadioButtonGroup>
+                        <div>
+                            <TextField
+                                className="home__login-input"
+                                hintText="Email"
+                                underlineFocusStyle={{ borderColor: '#1E88E5' }}
+                            />
+                            <TextField
+                                className="home__login-input"
+                                hintText="Password"
+                                underlineFocusStyle={{ borderColor: '#1E88E5' }}
+                            />
+                            <RaisedButton className="home__login-button" label="Submit" primary={true} />
+                        </div>
+                    </CardText>
+                </Card>
             </div>
         );
     }
-});
-
-export default Login;
+}

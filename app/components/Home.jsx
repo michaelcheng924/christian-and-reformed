@@ -1,46 +1,61 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import PeopleOutlineIcon from 'material-ui-icons/PeopleOutline';
+import { connect } from 'react-redux';
+import { partial } from 'lodash';
+import WarningIcon from 'material-ui-icons/Warning';
 
 import { APP_LIST } from 'app/constants/global';
+import { setApp } from 'app/actions/AppActions';
 
-export default class Home extends Component {
+class Home extends Component {
+    constructor(props) {
+        super(props);
+
+        this.onAppClick = this.onAppClick.bind(this);
+    }
+
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'The Reformed Christian App: ';
-            document.body.style.background = '#4DB6AC';
+            document.title = 'Reformed Toolbox: Technology Serving Truth';
+            document.body.style.background = '#90CAF9';
         }
+    }
+
+    onAppClick(url) {
+        this.props.onSetApp(url);
     }
 
 	render() {
 		return (
 			<div>
-                <div className="home__header">
-                    <div className="home__header-title">Reformed Toolbox</div>
-                    <div className="home__header-tagline">Technology Serving Historic Truth</div>
-                </div>
-                <div className="home__cards">
+                <div className="home__apps">
                     {
                         APP_LIST.map(app => {
                             return (
-                                <Link key={app.title} to={app.url}>
-                                    <Card className="home__card">
-                                        <CardTitle
-                                            className="home__card-title" title={app.title}
-                                             style={{
-                                                background:
-                                                    `url('${app.image}') bottom right 15% no-repeat #FFD740`
-                                            }}
-                                        />
-                                        <CardText className="home__card-description">
-                                            {app.description}
-                                        </CardText>
-                                        <CardActions className="home__card-actions">
-                                            <FlatButton label="Open" />
-                                        </CardActions>
-                                    </Card>
+                                <Link
+                                    key={app.title}
+                                    className="home__app-link"
+                                    onClick={partial(this.onAppClick, app.url)}
+                                    to={app.url}
+                                >
+                                    <div className="home__app-container">
+                                        <div className="home__app" style={{ background: app.background }}>
+                                            <div>
+                                                {
+                                                    app.underConstruction
+                                                        ? (
+                                                            <div className="home__construction">
+                                                                <WarningIcon className="home__icon--construction" /> In progress
+                                                            </div>
+                                                        )
+                                                        : null
+                                                }
+                                                {app.icon}
+                                                <h2>{app.title}</h2>
+                                                <div>{app.description}</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </Link>
                             );
                         })
@@ -50,3 +65,9 @@ export default class Home extends Component {
 		);
 	}
 };
+
+const mapActionsToProps = {
+    onSetApp: setApp
+};
+
+export default connect(null, mapActionsToProps)(Home);

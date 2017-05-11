@@ -1,15 +1,15 @@
-import { TOGGLE_DRAWER } from 'app/actions/AppActionTypes';
+import { SET_APP } from 'app/actions/AppActionTypes';
 
 const defaultState = {
-    drawerOpen: false
+    app: false
 };
 
 export default function usersReducer(state = defaultState, { type, payload }) {
     switch(type) {
-        case TOGGLE_DRAWER:
+        case SET_APP:
             return {
                 ...state,
-                drawerOpen: payload.show
+                app: payload.app
             };
         default:
             return state;

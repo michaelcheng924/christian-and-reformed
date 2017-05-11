@@ -1,50 +1,164 @@
 .home {
-    &__header {
-        background: #0097A7;
+    &__login-toggle {
+        background: #90CAF9;
+        border-radius: 0 0 0 4px;
         color: #FFF;
-        font-weight: 100;
-        padding: 60px 0;
-        text-align: center;
+        cursor: pointer;
+        padding: 2px 4px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1001;
+    }
 
-        svg {
-            fill: #FFF !important;
-            height: 60px !important;
-            width: 60px !important;
+    &__login {
+        background: #90CAF9;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        transition: all .3s;
+        width: 100%;
+        z-index: 1000;
+
+        &--show {
+            height: 106px;
         }
     }
 
-    &__header-the {
-        font-size: 12px;
+    &__login-card {
+        margin: 24px 20px;
+
+        > div {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    &__login-card-description {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 10px !important;
+    }
+
+    &__login-radio-container {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    &__login-input {
+        font-size: 13px !important;
+        margin-right: 15px;
+        width: 100px !important;
+    }
+
+    &__header {
+        background: #0D47A1;
+        color: #FFF;
+        flex-grow: 1;
+        font-weight: 900;
+        height: 100%;
+        padding: 20px 0;
+        position: relative;
+        text-align: center;
+        transition: all .3s;
+
+        &--small {
+            padding: 5px 0;
+
+            .home__header-title {
+                font-size: 16px;
+            }
+
+            .home__header-tagline {
+                display: none;
+            }
+        }
     }
 
     &__header-title {
-        color: #EF9A9A;
         font-size: 32px;
-        font-weight: 300;
+        transition: all .3s;
     }
 
     &__header-tagline {
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 300;
     }
 
-    &__cards {
+    &__apps {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 40px 0;
+        width: 100%;
+
+        > a,
+        .home__app-link {
+            color: #FFF;
+            width: 50%;
+        }
     }
 
-    &__card {
-        height: 230px;
-        margin-bottom: 15px;
-        width: 300px;
+    &__app-container {
+        align-items: center;
+        background: #424242;
+        display: flex;
+        height: 250px;
+        justify-content: center;
+
+        &:hover {
+            .home__app {
+                height: calc(100% - 25px);
+                width: calc(100% - 25px);
+            }
+        }
     }
 
-    &__card-title {
-        height: 82px;
+    &__app {
+        align-items: center;
+        display: flex;
+        height: 250px;
+        padding: 20px;
+        text-align: center;
+        transition: all .3s;
+        width: 100%;
+
+        > div {
+            flex-grow: 1;
+        }
+
+        svg {
+            fill: #FFF !important;
+            height: 50px !important;
+            width: 50px !important;
+        }
+
+        .home__icon {
+            &--construction {
+                fill: #FFF176 !important;
+                height: 30px !important;
+                width: 30px !important;
+            }
+        }
     }
 
-    &__card-description {
-        height: 32px;
+    &__construction {
+        align-items: center;
+        color: #FFF176;
+        display: flex;
+        font-size: 20px;
+        font-weight: 800;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .home__apps {
+        > a,
+        .home__app-link {
+            width: 100%;
+        }
     }
 }

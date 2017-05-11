@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { partial } from 'lodash';
 import { createSelector } from 'reselect';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentClear from 'material-ui/svg-icons/content/clear';
 
-import { toggleDrawer } from 'app/actions/AppActions';
-import Nav from 'app/components/Nav';
+import { setApp } from 'app/actions/AppActions';
+import Header from 'app/components/Header';
 import Home from 'app/components/Home';
 import VideoAudio from 'app/components/VideoAudio';
 import ChurchFinder from 'app/components/ChurchFinder';
@@ -14,8 +17,29 @@ import LondonBaptistConfession from 'app/components/ConfessionsCreeds/london-bap
 import CatechismTraining from 'app/components/CatechismTraining';
 
 class App extends Component {
+    componentWillMount() {
+        if (typeof window !== 'undefined') {
+            const pathname = window.location.pathname;
+            if (pathname !== '/') {
+                this.props.onSetApp(pathname);
+            }
+        }
+    }
+
+    renderBack() {
+        if (!this.props.app) { return null; }
+
+        return (
+            <Link to="/" onClick={partial(this.props.onSetApp, null)}>
+                <FloatingActionButton className="app__back-button" mini={true} secondary={true}>
+                    <ContentClear />
+                </FloatingActionButton>
+            </Link>
+        );
+    }
+
     render() {
-        const { drawerOpen, onToggleDrawer } = this.props;
+        const { app, onSetApp } = this.props;
 
         const Component = typeof window === 'undefined' ? 'div' : BrowserRouter;
 
@@ -23,13 +47,14 @@ class App extends Component {
             <Component>
                 <MuiThemeProvider>
                     <div>
-                        <Nav onToggleDrawer={onToggleDrawer} />
+                        <Header app={app} />
                         <Route exact path="/" component={Home}/>
-                        <Route path="/video-audio" component={VideoAudio}/>
+                        <Route path="/reformed-video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
                         <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
                         <Route path="/1689-london-baptist-confession" component={LondonBaptistConfession}/>
-                        <Route path="/catechism-training" component={CatechismTraining}/>
+                        <Route path="/catechism-practice" component={CatechismTraining}/>
+                        {this.renderBack()}
                     </div>
                 </MuiThemeProvider>
             </Component>
@@ -43,7 +68,7 @@ const mapStateToProps = createSelector(
 );
 
 const mapActionsToProps = {
-    onToggleDrawer: toggleDrawer
+    onSetApp: setApp
 };
 
 export default connect(mapStateToProps, mapActionsToProps)(App);

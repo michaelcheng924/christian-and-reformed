@@ -1,1 +1,1 @@
-export const TOGGLE_DRAWER = 'app:toggleDrawer';
+export const SET_APP = 'app:setApp';
