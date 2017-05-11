@@ -38,10 +38,12 @@
         flex-wrap: wrap;
         width: 100%;
 
-        > a,
-        .home__app-link {
-            color: #FFF;
+        > span {
             width: 50%;
+        }
+
+        a {
+            color: #FFF;
         }
     }
 
@@ -98,6 +100,40 @@
         margin-bottom: 10px;
         width: 100%;
     }
+}
+
+.headerTransition-appear {
+    position: relative;
+    top: -117px;
+}
+
+.headerTransition-appear.headerTransition-appear-active {
+    top: 0;
+    transition: all .4s ease-in;
+}
+
+.homeTransition-appear {
+    left: -100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.homeTransition-appear.homeTransition-appear-active {
+    left: 0;
+    overflow: hidden;
+    transition: all .4s ease-in;
+}
+
+.homeTransitionRight-appear {
+    left: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.homeTransitionRight-appear.homeTransitionRight-appear-active {
+    left: 0;
+    overflow: hidden;
+    transition: all .4s ease-in;
 }
 
 @media (max-width: 720px) {

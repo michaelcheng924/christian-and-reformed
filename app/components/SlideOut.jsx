@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
-import { partial } from 'lodash';
+import { map, partial } from 'lodash';
 import css from 'classnames';
 import { Card, CardText } from 'material-ui/Card';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
@@ -106,13 +106,14 @@ class SlideOut extends Component {
         return (
             <div className="slide-out-content__logged-in-section">
                 <div><strong>{user}</strong> is logged in.</div>
+                <br />
+                <div><strong>Catechism for Boys and Girls Score: </strong>{userData.catechismBoysGirls}</div>
                 <RaisedButton
                     className="slide-out-content__logout"
                     label="Log out"
                     secondary={true}
                     onClick={this.onLogout}
                 />
-                <br /><br />
             </div>
 
         );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
-
 import SlideOut from 'app/components/SlideOut';
 
 export default class Header extends Component {
@@ -14,10 +14,18 @@ export default class Header extends Component {
         return (
             <div>
                 <SlideOut />
-                <div className={classNames}>
-                    <div className="home__header-title">Reformed Toolbox</div>
-                    <div className="home__header-tagline">Technology Serving Truth</div>
-                </div>
+                <CSSTransitionGroup
+                    transitionName="headerTransition"
+                    transitionAppear={true}
+                    transitionAppearTimeout={400}
+                    transitionEnter={false}
+                    transitionLeave={false}
+                >
+                    <div className={classNames}>
+                        <div className="home__header-title">Reformed Toolbox</div>
+                        <div className="home__header-tagline">Technology Serving Truth</div>
+                    </div>
+                </CSSTransitionGroup>
             </div>
         );
     }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { partial } from 'lodash';
@@ -30,33 +31,41 @@ class Home extends Component {
 			<div>
                 <div className="home__apps">
                     {
-                        APP_LIST.map(app => {
+                        APP_LIST.map((app, index) => {
                             return (
-                                <Link
-                                    key={app.title}
-                                    className="home__app-link"
-                                    onClick={partial(this.onAppClick, app.url)}
-                                    to={app.url}
+                                <CSSTransitionGroup
+                                    transitionName={index % 2 === 0 ? 'homeTransition' : 'homeTransitionRight'}
+                                    transitionAppear={true}
+                                    transitionAppearTimeout={400}
+                                    transitionEnter={false}
+                                    transitionLeave={false}
                                 >
-                                    <div className="home__app-container">
-                                        <div className="home__app" style={{ background: app.background }}>
-                                            <div>
-                                                {
-                                                    app.underConstruction
-                                                        ? (
-                                                            <div className="home__construction">
-                                                                <WarningIcon className="home__icon--construction" /> In progress
-                                                            </div>
-                                                        )
-                                                        : null
-                                                }
-                                                {app.icon}
-                                                <h2>{app.title}</h2>
-                                                <div>{app.description}</div>
+                                    <Link
+                                        key={app.title}
+                                        className="home__app-link"
+                                        onClick={partial(this.onAppClick, app.url)}
+                                        to={app.url}
+                                    >
+                                        <div className="home__app-container">
+                                            <div className="home__app" style={{ background: app.background }}>
+                                                <div>
+                                                    {
+                                                        app.underConstruction
+                                                            ? (
+                                                                <div className="home__construction">
+                                                                    <WarningIcon className="home__icon--construction" /> In progress
+                                                                </div>
+                                                            )
+                                                            : null
+                                                    }
+                                                    {app.icon}
+                                                    <h2>{app.title}</h2>
+                                                    <div>{app.description}</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </Link>
+                                    </Link>
+                                </CSSTransitionGroup>
                             );
                         })
                     }

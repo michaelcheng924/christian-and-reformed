@@ -140,6 +140,27 @@ a {
     margin-top: 20px;
 }
 
+.admin {
+    text-align: left;
+    width: 100%;
+
+    > span {
+        color: red;
+        cursor: pointer;
+    }
+
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .fa-times {
+        color: red;
+        cursor: pointer;
+    }
+}
+
 .header {
     color: #FFF;
     padding: 60px 0;

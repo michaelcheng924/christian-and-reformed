@@ -1,7 +1,8 @@
 import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE } from 'app/actions/AppActionTypes';
-import { login, loginWithToken, passwordResetEmail, signup } from 'app/api/users';
+import { deleteUser, getAllUsers, login, loginWithToken, passwordResetEmail, signup } from 'app/api/users';
 
 const defaultState = {
+    allUsers: [],
     app: null,
     loginErrorMessage: null,
     user: null,
@@ -57,7 +58,18 @@ export default function usersReducer(state = defaultState, { type, payload }) {
                 user: payload.user,
                 userData: payload.userData
             };
-        
+        case deleteUser.SUCCESS:
+            return {
+                ...defaultState,
+                user: state.user === 'cheng.c.mike@gmail.com' ? state.user : null,
+                allUsers: payload.users
+            };
+        // ADMIN
+        case getAllUsers.SUCCESS:
+            return {
+                ...state,
+                allUsers: payload.users
+            };
         default:
             return state;
     }
