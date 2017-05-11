@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 export function createClient({ actionTypePrefix, requestType, url }) {
     const SUCCESS = `${actionTypePrefix}_SUCCESS`;
+    const ERROR = `${actionTypePrefix}_ERROR`;
 
     function request(data) {
         function thunk(dispatch) {
@@ -15,6 +16,12 @@ export function createClient({ actionTypePrefix, requestType, url }) {
                         type: SUCCESS,
                         payload: response
                     });
+                },
+                error(response) {
+                    dispatch({
+                        type: ERROR,
+                        payload: response.responseJSON
+                    });
                 }
             });
         }
@@ -23,6 +30,7 @@ export function createClient({ actionTypePrefix, requestType, url }) {
     }
 
     request.SUCCESS = SUCCESS;
+    request.ERROR = ERROR;
 
     return request;
 }

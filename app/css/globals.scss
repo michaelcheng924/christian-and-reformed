@@ -119,6 +119,19 @@ a {
         margin-right: 15px;
         width: 150px !important;
     }
+
+    &__login-error-message {
+        color: #F44336;
+        text-align: center;
+    }
+
+    &__logged-in-section {
+
+    }
+
+    &__logout {
+        margin-top: 20px;
+    }
 }
 
 .fb-like {

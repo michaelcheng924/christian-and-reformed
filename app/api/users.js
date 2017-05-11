@@ -1,19 +1,39 @@
 import { createClient } from 'app/api/utils';
 
-export const addUser = createClient({
-    actionTypePrefix: 'users:addUser',
+export const signup = createClient({
+    actionTypePrefix: 'users:signup',
     requestType: 'POST',
-    url: 'api/users'
+    url: '/api/users/signup'
 });
 
-export const getUsers = createClient({
-    actionTypePrefix: 'users:getUser',
+export const login = createClient({
+    actionTypePrefix: 'users:login',
+    requestType: 'POST',
+    url: '/api/users/login'
+});
+
+export const loginWithToken = createClient({
+    actionTypePrefix: 'users:loginWithToken',
+    requestType: 'POST',
+    url: '/api/users/loginwithtoken'
+});
+
+export const passwordResetEmail = createClient({
+    actionTypePrefix: 'users:passwordResetEmail',
+    requestType: 'POST',
+    url: '/api/users/passwordresetemail'
+});
+
+// ******** ADMIN ********
+
+export const getAllUsers = createClient({
+    actionTypePrefix: 'users:getAllUsers',
     requestType: 'GET',
-    url: 'api/users'
+    url: '/api/users/allusers'
 });
 
-export const removeUser = createClient({
-    actionTypePrefix: 'users:removeUser',
+export const deleteUser = createClient({
+    actionTypePrefix: 'users:deleteUser',
     requestType: 'DELETE',
-    url: 'api/users'
+    url: '/api/users/delete'
 });
