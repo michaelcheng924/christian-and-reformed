@@ -1,7 +1,7 @@
 import { SET_APP } from 'app/actions/AppActionTypes';
 
 const defaultState = {
-    app: false
+    app: null
 };
 
 export default function usersReducer(state = defaultState, { type, payload }) {

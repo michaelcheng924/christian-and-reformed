@@ -40,6 +40,78 @@ a {
     }
 }
 
+.overlay {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.slide-out {
+    position: absolute;
+    top: -400px;
+    transition: all .3s;
+    width: 100%;
+    z-index: 1000;
+
+    &__toggle {
+        background: #EF6C00;
+        border: 1px solid #FFF;
+        border-top: 0;
+        border-radius: 0 0 3px 3px;
+        color: #FFF;
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        margin-right: 3px;
+        padding: 0 6px;
+        position: relative;
+        top: -1px;
+    }
+
+    &--show {
+        top: 0;
+    }
+}
+
+.slide-out-content {
+    align-items: center;
+    background: #EF6C00;
+    border-bottom: 1px solid #FFF;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    padding: 24px 20px;
+
+    &__login-card {
+        > div {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    &__login-card-description {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 10px !important;
+    }
+
+    &__login-radio-container {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    &__login-input {
+        font-size: 13px !important;
+        margin-right: 15px;
+        width: 100px !important;
+    }
+}
+
 .header {
     color: #FFF;
     padding: 60px 0;

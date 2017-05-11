@@ -1,74 +1,20 @@
 .home {
-    &__login-toggle {
-        background: #90CAF9;
-        border-radius: 0 0 0 4px;
-        color: #FFF;
-        cursor: pointer;
-        padding: 2px 4px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1001;
-    }
-
-    &__login {
-        background: #90CAF9;
-        height: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        transition: all .3s;
-        width: 100%;
-        z-index: 1000;
-
-        &--show {
-            height: 106px;
-        }
-    }
-
-    &__login-card {
-        margin: 24px 20px;
-
-        > div {
-            padding-bottom: 0 !important;
-        }
-    }
-
-    &__login-card-description {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px 10px !important;
-    }
-
-    &__login-radio-container {
-        display: inline-block;
-        margin-right: 20px;
-    }
-
-    &__login-input {
-        font-size: 13px !important;
-        margin-right: 15px;
-        width: 100px !important;
-    }
-
     &__header {
         background: #0D47A1;
         color: #FFF;
         flex-grow: 1;
         font-weight: 900;
         height: 100%;
-        padding: 20px 0;
+        padding: 30px 0;
         position: relative;
         text-align: center;
         transition: all .3s;
 
         &--small {
-            padding: 5px 0;
+            padding: 10px 0;
 
             .home__header-title {
-                font-size: 16px;
+                font-size: 18px;
             }
 
             .home__header-tagline {
@@ -85,6 +31,26 @@
     &__header-tagline {
         font-size: 16px;
         font-weight: 300;
+    }
+
+    &__fb {
+        display: inline-block !important;
+        left: 5px;
+        position: absolute;
+        top: 5px;
+
+        > div {
+            padding-bottom: 0 !important;
+        }
+
+        .fb-like > span {
+            overflow: hidden;
+            width: 96px !important;
+        }
+    }
+
+    &__fb-card {
+        padding: 4px 8px !important;
     }
 
     &__apps {
