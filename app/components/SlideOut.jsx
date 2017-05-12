@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
@@ -38,6 +39,18 @@ class SlideOut extends Component {
             if (token) {
                 this.props.onLoginWithToken({ token });
             }
+        }
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.showSlideOut !== prevState.showSlideOut) {
+            $('body').css(this.state.showSlideOut ? {
+                height: '100vh',
+                overflow: 'hidden'
+            } : {
+                height: 'initial',
+                overflow: 'auto'
+            });
         }
     }
 

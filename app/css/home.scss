@@ -34,6 +34,7 @@
     }
 
     &__apps {
+        color: #FFF;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -41,24 +42,31 @@
         > span {
             width: 50%;
         }
-
-        a {
-            color: #FFF;
-        }
     }
 
     &__app-container {
         align-items: center;
         background: #424242;
+        cursor: pointer;
         display: flex;
         height: 250px;
         justify-content: center;
+        position: relative;
+        transition: all .4s ease-in;
 
         &:hover {
             .home__app {
                 height: calc(100% - 25px);
                 width: calc(100% - 25px);
             }
+        }
+
+        &--leave {
+            left: -100%;
+        }
+
+        &--leave-right {
+            left: 100%;
         }
     }
 
@@ -115,46 +123,41 @@
 .homeTransition-appear {
     left: -100%;
     overflow: hidden;
-    position: relative;
 }
 
 .homeTransition-appear.homeTransition-appear-active {
     left: 0;
     overflow: hidden;
-    transition: all .4s ease-in;
 }
 
 .homeTransition-leave {
     left: 0;
     overflow: hidden;
-    position: relative;
 }
 
 .homeTransition-leave.homeTransition-leave-active {
     left: -100%;
     overflow: hidden;
-    transition: all .4s ease-in;
 }
 
 .homeTransitionRight-appear {
     left: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .homeTransitionRight-appear.homeTransitionRight-appear-active {
     left: 0;
     overflow: hidden;
-    transition: all .4s ease-in;
 }
 
-.appTransition-enter {
-  opacity: 0.01;
+.homeTransitionRight-leave {
+    left: 0;
+    overflow: hidden;
 }
 
-.appTransition-enter.appTransition-enter-active {
-  opacity: 1;
-  transition: opacity 5s ease-in;
+.homeTransitionRight-leave.homeTransitionRight-leave-active {
+    left: 100%;
+    overflow: hidden;
 }
 
 @media (max-width: 720px) {

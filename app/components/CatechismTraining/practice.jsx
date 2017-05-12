@@ -10,7 +10,7 @@ import KeyboardArrowLeftIcon from 'material-ui-icons/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from 'material-ui-icons/KeyboardArrowRight';
 import Slider from 'material-ui/Slider';
 
-import BOYS_GIRLS, { CHOICE_MAPPING } from 'app/constants/catechism-boys-girls';
+import { CHOICE_MAPPING } from 'app/constants/catechism-boys-girls';
 import { CORRECT_RESPONSES } from 'app/constants/global';
 
 export default class CatechismTrainingPractice extends Component {
@@ -112,13 +112,13 @@ export default class CatechismTrainingPractice extends Component {
     }
 
     onSubmit(multipleChoiceAnswer) {
-        const { currentQuestion, getAnswer, setParentState } = this.props;
+        const { catechismData, currentQuestion, getAnswer, setParentState } = this.props;
 
         const answer = getAnswer(currentQuestion.answer);
         const userAnswer = getAnswer(multipleChoiceAnswer || this.state.inputValue);
 
         if (answer === userAnswer) {
-            if (currentQuestion.id === 135) {
+            if (currentQuestion.id === catechismData.length) {
 
             } else {
                 this.setState({ questionCorrect: true });
@@ -144,7 +144,7 @@ export default class CatechismTrainingPractice extends Component {
             <div className="catechism-training__multiple-choice-section">
                 {
                     this.state.choices.map((choice, index) => {
-                        const answer = BOYS_GIRLS[choice - 1].answer;
+                        const answer = this.props.catechismData[choice - 1].answer;
 
                         return (
                             <div
@@ -162,7 +162,7 @@ export default class CatechismTrainingPractice extends Component {
 
     render() {
         const { questionCorrect, questionWrong, showAnswer, showMultipleChoice } = this.state;
-        const { currentQuestion, setParentState } = this.props;
+        const { catechismData, currentQuestion, setParentState } = this.props;
         const questionNumber = currentQuestion.id;
 
         const classNames = css('catechism-training__challenge catechism-training__practice', {
@@ -198,14 +198,14 @@ export default class CatechismTrainingPractice extends Component {
                                 <Slider
                                     className="catechism-training__slider"
                                     min={1}
-                                    max={135}
+                                    max={catechismData.length}
                                     onChange={this.onJumpToNumber}
                                     step={1}
                                     value={questionNumber}
                                 />
                             </div>
                             {
-                                questionNumber < 135
+                                questionNumber < catechismData.length
                                     ? <KeyboardArrowRightIcon onClick={() => this.onJumpToNumber(null, questionNumber + 1)} />
                                     : <div style={{width: 40}} />
                             }

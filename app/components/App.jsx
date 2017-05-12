@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -23,6 +24,12 @@ class App extends Component {
             if (pathname !== '/') {
                 this.props.onSetApp(pathname);
             }
+        }
+    }
+
+    componentDidUpdate(prevProps) {
+        if (!this.props.app && prevProps.app) {
+            $('body').scrollTop(0);
         }
     }
 

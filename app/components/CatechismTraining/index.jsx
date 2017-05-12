@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import css from 'classnames';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
+import DropDownMenu from 'material-ui/DropDownMenu';
+import MenuItem from 'material-ui/MenuItem';
 
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
+import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
 import CatechismTrainingChallenge from 'app/components/CatechismTraining/challenge';
 import CatechismTrainingPractice from 'app/components/CatechismTraining/practice';
 
@@ -12,11 +15,13 @@ class CatechismTraining extends Component {
         super(props);
 
         this.state = {
+            catechism: 'boysGirls',
             mode: 'challenge',
             questionNumber: 1
         };
 
         this.getAnswer = this.getAnswer.bind(this);
+        this.onChangeCatechism = this.onChangeCatechism.bind(this);
         this.onModeChange = this.onModeChange.bind(this);
         this.setParentState = this.setParentState.bind(this);
     }
@@ -32,6 +37,13 @@ class CatechismTraining extends Component {
         this.setState(object);
     }
 
+    onChangeCatechism(event, key, value) {
+        this.setState({
+            catechism: value,
+            questionNumber: 1
+        });
+    }
+
     onModeChange(event) {
         this.setState({
             mode: event.target.value,
@@ -44,17 +56,29 @@ class CatechismTraining extends Component {
     }
 
     render() {
-        const { mode, questionNumber } = this.state;
+        const { catechism, mode, questionNumber } = this.state;
 
         const classNames = css('catechism-training__modes-section', {
             'catechism-training__modes-section--practice': mode === 'practice'
         });
+
+        const catechismData = catechism === 'boysGirls' ? BOYS_GIRLS : WESTMINSTER_SHORTER;
 
         return (
             <div className="catechism-training">
                 <div className="header">
                     <div className="header-title">Catechism for Boys and Girls Training</div>
                     <div className="header-subtitle">An app to help you and your children learn the catechism faster.</div>
+                    <DropDownMenu
+                        className="catechism-training__dropdown"
+                        value={catechism}
+                        onChange={this.onChangeCatechism}
+                        style={{ width: 300 }}
+                        autoWidth={false}
+                    >
+                        <MenuItem value="boysGirls" primaryText="Catechism for Boys and Girls" />
+                        <MenuItem value="westminsterShorter" primaryText="Westminster Shorter Catechism" />
+                    </DropDownMenu>
                 </div>
                 <div className={classNames}>
                     <RadioButtonGroup name="shipSpeed" defaultSelected="challenge" onChange={this.onModeChange}>
@@ -74,14 +98,16 @@ class CatechismTraining extends Component {
                     mode === 'challenge'
                         ? (
                             <CatechismTrainingChallenge
-                                currentQuestion={BOYS_GIRLS[questionNumber - 1]}
+                                catechismData={catechismData}
+                                currentQuestion={catechismData[questionNumber - 1]}
                                 getAnswer={this.getAnswer}
                                 setParentState={this.setParentState}
                             />
                         )
                         : (
                             <CatechismTrainingPractice
-                                currentQuestion={BOYS_GIRLS[questionNumber - 1]}
+                                catechismData={catechismData}
+                                currentQuestion={catechismData[questionNumber - 1]}
                                 getAnswer={this.getAnswer}
                                 setParentState={this.setParentState}
                             />

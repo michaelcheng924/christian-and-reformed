@@ -9,7 +9,7 @@ export const APP_LIST = [
         title: 'Reformed Video and Audio',
         description: 'Watch and listen to solid teaching from a Reformed theological perspective.',
         url: '/reformed-video-audio',
-        background: '#F44336',
+        background: '#EF5350',
         icon: <PlayCircleFilledIcon />,
         underConstruction: true
     },

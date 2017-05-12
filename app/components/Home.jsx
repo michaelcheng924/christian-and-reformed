@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { partial } from 'lodash';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import css from 'classnames';
+import { delay, partial } from 'lodash';
 import WarningIcon from 'material-ui-icons/Warning';
 
 import { APP_LIST } from 'app/constants/global';
@@ -11,6 +12,10 @@ import { setApp } from 'app/actions/AppActions';
 class Home extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            leave: false
+        };
 
         this.onAppClick = this.onAppClick.bind(this);
     }
@@ -27,15 +32,30 @@ class Home extends Component {
     }
 
     onAppClick(url) {
-        this.props.onSetApp(url);
+        const { history, onSetApp } = this.props;
+
+        onSetApp(url);
+        this.setState({ leave: true });
+
+        delay(() => {
+            history.push(url);
+        }, 400);
     }
 
 	render() {
+        const { app } = this.props;
+        const { leave } = this.state;
+
 		return (
 			<div>
                 <div className="home__apps">
                     {
                         APP_LIST.map((app, index) => {
+                            const classNames = css('home__app-container', {
+                                'home__app-container--leave': leave && index % 2 === 0,
+                                'home__app-container--leave-right': leave && index % 2 === 1
+                            });
+
                             return (
                                 <CSSTransitionGroup
                                     key={app.title}
@@ -43,32 +63,33 @@ class Home extends Component {
                                     transitionAppear={true}
                                     transitionAppearTimeout={400}
                                     transitionEnter={false}
-                                    transitionLeave={false}
+                                    transitionLeave={true}
+                                    transitionLeaveTimeout={400}
                                 >
-                                    <Link
-                                        className="home__app-link"
-                                        onClick={partial(this.onAppClick, app.url)}
-                                        to={app.url}
-                                    >
-                                        <div className="home__app-container">
-                                            <div className="home__app" style={{ background: app.background }}>
-                                                <div>
-                                                    {
-                                                        app.underConstruction
-                                                            ? (
-                                                                <div className="home__construction">
-                                                                    <WarningIcon className="home__icon--construction" /> In progress
-                                                                </div>
-                                                            )
-                                                            : null
-                                                    }
-                                                    {app.icon}
-                                                    <h2>{app.title}</h2>
-                                                    <div>{app.description}</div>
+                                    {
+                                        leave
+                                            ? null
+                                            : (
+                                                <div className={classNames} onClick={partial(this.onAppClick, app.url)}>
+                                                    <div className="home__app" style={{ background: app.background }}>
+                                                        <div>
+                                                            {
+                                                                app.underConstruction
+                                                                    ? (
+                                                                        <div className="home__construction">
+                                                                            <WarningIcon className="home__icon--construction" /> In progress
+                                                                        </div>
+                                                                    )
+                                                                    : null
+                                                            }
+                                                            {app.icon}
+                                                            <h2>{app.title}</h2>
+                                                            <div>{app.description}</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </Link>
+                                            )
+                                    }
                                 </CSSTransitionGroup>
                             );
                         })
@@ -83,4 +104,4 @@ const mapActionsToProps = {
     onSetApp: setApp
 };
 
-export default connect(null, mapActionsToProps)(Home);
+export default connect(null, mapActionsToProps)(withRouter(Home));
