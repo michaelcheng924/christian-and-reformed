@@ -9,7 +9,7 @@ export default class VideoAudo extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Reformed Theology Video and Audio';
+            document.title = 'Reformed Video and Audio';
             document.body.style.background = '#FFCDD2';
         }
     }
