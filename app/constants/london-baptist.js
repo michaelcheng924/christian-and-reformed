@@ -1,5 +1,7 @@
 import React from 'react';
 
+const LONDON_BAPTIST_NAME = '1689 London Baptist Confession of Faith';
+
 const LONDON_BAPTIST = [
     {
         chapter: 1,
@@ -875,4 +877,7 @@ All of which are given by the inspiration of God, to be the rule of faith and li
     }
 ];
 
-export default LONDON_BAPTIST;
+export {
+    LONDON_BAPTIST,
+    LONDON_BAPTIST_NAME
+};

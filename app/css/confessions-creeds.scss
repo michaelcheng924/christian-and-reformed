@@ -1,6 +1,8 @@
 .confessions-creeds {
     .header {
-        background: #0277BD;
+        background: #0097A7;
+        position: relative;
+        transition: all .4s ease-in;
     }
 
     &__content {
@@ -9,13 +11,16 @@
         justify-content: space-around;
         padding: 30px 15px 15px;
 
-        h2,h3 {
-            margin: 0;
-            text-align: center;
+        > span {
+            width: 100%;
         }
     }
 
     &__home-card {
+        cursor: pointer;
+        height: 192px;
+        overflow: hidden;
+        transition: all .4s ease-in;
         width: 300px;
     }
 
@@ -66,55 +71,93 @@
         margin-top: 20px;
     }
 
-    &__card {
-        margin-bottom: 20px;
-        width: 600px;
+    &__content-card-container {
+        transition: all .4s;
     }
 
-    &__card-title {
-        background: #01579B;
-        padding: 3px 16px !important;
+    &__content-card {
+        margin-bottom: 20px;
+        overflow: hidden;
 
-        > span {
-            color: #FFF !important;
-            font-size: 16px !important;
-            line-height: 22px !important;
+        > div {
+            padding-bottom: 0 !important;
         }
     }
 
-    &__scriptures {
-        margin-top: 15px;
+    &__content-card-title {
+        background: #006064;
+
+        > span {
+            color: #FFF !important;
+        }
     }
 
-    &__scripture-reference {
-        color: #00BFA5;
+    &__content-card-dropdown {
+        > div > div {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    &__content-card-dropdown-label {
+        color: #E91E63;
+        margin-left: 24px;
+    }
+
+    &__content-card-chapter {
+        margin-top: 20px;
+    }
+
+    &__content-card-section {
+        margin-bottom: 15px;
+    }
+
+    &__content-card-scriptures {
+        margin-top: 8px;
+    }
+
+    &__content-card-scripture {
+        color: #558B2F;
         cursor: pointer;
 
         &:hover {
             text-decoration: underline;
         }
     }
+}
 
-    &__scripture-texts {
-        margin-top: 7px;
-    }
+.confessionsCreedsHeader-appear {
+    left: -100%;
+}
 
-    &__scripture-text {
-        border: 1px solid #CDCDCD;
-        margin-bottom: 7px;
-        padding: 5px;
-        position: relative;
+.confessionsCreedsHeader-appear.confessionsCreedsHeader-appear-active {
+    left: 0;
+}
 
-        h2, h3 {
-            font-size: 14px;
-            text-align: left;
-        }
+.confessionsCreedsHeader-leave {
+    left: 0;
+}
 
-        svg {
-            cursor: pointer;
-            position: absolute;
-            right: 5px;
-            top: 5px;
-        }
-    }
+.confessionsCreedsHeader-leave.confessionsCreedsHeader-leave-active {
+    left: -100%;
+}
+
+.confessionsCreedsCard-enter {
+    height: 0;
+    overflow: hidden;
+}
+
+.confessionsCreedsCard-enter.confessionsCreedsCard-enter-active {
+    height: 100%;
+    overflow: hidden;
+}
+
+.confessionsCreedsCard-leave {
+    height: 100%;
+    overflow: hidden;
+}
+
+.confessionsCreedsCard-leave.confessionsCreedsCard-leave-active {
+    height: 0;
+    overflow: hidden;
 }

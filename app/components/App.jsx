@@ -6,7 +6,7 @@ import { partial } from 'lodash';
 import { createSelector } from 'reselect';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentClear from 'material-ui/svg-icons/content/clear';
+import ContentForward from 'material-ui/svg-icons/content/forward';
 
 import { setApp } from 'app/actions/AppActions';
 import Header from 'app/components/Header';
@@ -14,7 +14,6 @@ import Home from 'app/components/Home';
 import VideoAudio from 'app/components/VideoAudio';
 import ChurchFinder from 'app/components/ChurchFinder';
 import ConfessionsCreeds from 'app/components/ConfessionsCreeds';
-import LondonBaptistConfession from 'app/components/ConfessionsCreeds/london-baptist';
 import CatechismTraining from 'app/components/CatechismTraining';
 
 class App extends Component {
@@ -39,7 +38,7 @@ class App extends Component {
         return (
             <Link to="/" onClick={partial(this.props.onSetApp, null)}>
                 <FloatingActionButton className="app__back-button" mini={true} secondary={true}>
-                    <ContentClear />
+                    <ContentForward />
                 </FloatingActionButton>
             </Link>
         );
@@ -59,7 +58,6 @@ class App extends Component {
                         <Route path="/reformed-video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
                         <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
-                        <Route path="/1689-london-baptist-confession" component={LondonBaptistConfession}/>
                         <Route path="/catechism-practice" component={CatechismTraining}/>
                         {this.renderBack()}
                     </div>
