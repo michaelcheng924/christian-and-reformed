@@ -18,15 +18,13 @@ class CatechismTraining extends Component {
 
         this.state = {
             selection: null,
-            mode: 'challenge',
-            showHeader: true,
-            questionNumber: 1
+            // TODO: Fix
+            setOpacity: false,
+            showContent: false,
+            showHeader: true
         };
 
-        this.getAnswer = this.getAnswer.bind(this);
         this.openUrl = this.openUrl.bind(this);
-        this.onModeChange = this.onModeChange.bind(this);
-        this.setParentState = this.setParentState.bind(this);
     }
 
     componentWillMount() {
@@ -47,10 +45,10 @@ class CatechismTraining extends Component {
         delay(() => {
             this.setState({ showContent: true });
         }, 400);
-    }
 
-    setParentState(object) {
-        this.setState(object);
+        delay(() => {
+            this.setState({ setOpacity: true });
+        }, 800);
     }
 
     openUrl(event, key, value) {
@@ -71,17 +69,6 @@ class CatechismTraining extends Component {
         delay(() => {
             this.setState({ showContent: true });
         }, 400);
-    }
-
-    onModeChange(event) {
-        this.setState({
-            mode: event.target.value,
-            questionNumber: 1
-        });
-    }
-
-    getAnswer(string) {
-        return string.replace(/[^a-zA-Z ]/gm, '').toLowerCase();
     }
 
     renderHeader() {
@@ -167,7 +154,11 @@ class CatechismTraining extends Component {
     }
 
     render() {
-        const { showContent } = this.state;
+        const { setOpacity, showContent } = this.state;
+
+        const classnames = css('catechism-training__content-card-container', {
+            'catechism-training__content-card-container--opacity': setOpacity
+        });
 
         return (
             <div className="catechism-training">
@@ -183,7 +174,7 @@ class CatechismTraining extends Component {
                         {
                             showContent
                                 ? (
-                                    <div className="catechism-training__content-card-container">
+                                    <div className={classnames}>
                                         {this.renderContent()}
                                     </div>
                                 )
@@ -195,47 +186,5 @@ class CatechismTraining extends Component {
         );
     }
 }
-
-// const { catechism, mode, questionNumber } = this.state;
-
-// const classNames = css('catechism-training__modes-section', {
-//     'catechism-training__modes-section--practice': mode === 'practice'
-// });
-
-// const catechismData = catechism === 'boysGirls' ? BOYS_GIRLS : WESTMINSTER_SHORTER;
-
-// <div className={classNames}>
-//                     <RadioButtonGroup name="shipSpeed" defaultSelected="challenge" onChange={this.onModeChange}>
-//                         <RadioButton
-//                             className="catechism-training__mode-button"
-//                             value="challenge"
-//                             label="Challenge"
-//                         />
-//                         <RadioButton
-//                             className="catechism-training__mode-button"
-//                             value="practice"
-//                             label="Practice"
-//                         />
-//                     </RadioButtonGroup>
-//                 </div>
-//                 {
-//                     mode === 'challenge'
-//                         ? (
-//                             <CatechismTrainingChallenge
-//                                 catechismData={catechismData}
-//                                 currentQuestion={catechismData[questionNumber - 1]}
-//                                 getAnswer={this.getAnswer}
-//                                 setParentState={this.setParentState}
-//                             />
-//                         )
-//                         : (
-//                             <CatechismTrainingPractice
-//                                 catechismData={catechismData}
-//                                 currentQuestion={catechismData[questionNumber - 1]}
-//                                 getAnswer={this.getAnswer}
-//                                 setParentState={this.setParentState}
-//                             />
-//                         )
-//                 }
 
 export default withRouter(CatechismTraining);

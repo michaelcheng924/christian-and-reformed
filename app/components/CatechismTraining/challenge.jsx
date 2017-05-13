@@ -1,10 +1,12 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
 import { delay } from 'lodash';
 import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 
 import { CORRECT_RESPONSES } from 'app/constants/global';
 
@@ -61,7 +63,10 @@ export default class CatechismTrainingChallenge extends Component {
             if (currentQuestion.id === 135) {
 
             } else {
-                this.setState({ questionCorrect: true });
+                this.setState({
+                    questionCorrect: true,
+                    questionCorrectText: CORRECT_RESPONSES[Math.floor(Math.random() * CORRECT_RESPONSES.length - .01)]
+                });
 
                 delay(() => {
                     setParentState({ questionNumber: currentQuestion.id + 1 });
@@ -74,41 +79,57 @@ export default class CatechismTrainingChallenge extends Component {
     }
 
     render() {
-        const { questionCorrect, questionWrong } = this.state;
+        const { questionCorrect, questionCorrectText, questionWrong } = this.state;
         const { currentQuestion } = this.props;
 
-        const classNames = css('catechism-training__challenge', {
-            'catechism-training__challenge--correct': questionCorrect,
-            'catechism-training__challenge--wrong': questionWrong
+        const classNames = css('catechism-training__main', {
+            'catechism-training__main--correct': questionCorrect,
+            'catechism-training__main--wrong': questionWrong
         });
 
         return (
             <div className={classNames}>
-                <Card className="catechism-training__card">
-                    <CardTitle className="catechism-training__card-question" title={questionCorrect ? CORRECT_RESPONSES[Math.floor(Math.random() * CORRECT_RESPONSES.length - .05)] : currentQuestion.question} />
-                    <CardText className="catechism-training__card-answer">
-                        <TextField
-                            className="catechism-training__input"
-                            disabled={questionWrong}
-                            errorText={questionWrong ? ' ' : null}
-                            floatingLabelText="Answer"
-                            multiLine={true}
-                            onChange={event => this.setState({ inputValue: event.target.value })}
-                            ref={input => this.input = input}
-                            value={this.state.inputValue}
-                        />
+                <Paper className="catechism-training__main-paper" zDepth={5}>
+                    <div className="catechism-training__main-question">{`${currentQuestion.id}) ${currentQuestion.question}`}</div>
+                    <TextField
+                        className="catechism-training__input"
+                        disabled={questionWrong}
+                        errorText={questionWrong ? ' ' : null}
+                        floatingLabelText="Answer"
+                        multiLine={true}
+                        onChange={event => this.setState({ inputValue: event.target.value })}
+                        underlineFocusStyle={{ borderColor: '#FFEB3B' }}
+                        ref={input => this.input = input}
+                        value={this.state.inputValue}
+                    />
+                    {
+                        questionWrong
+                            ? <div className="catechism-training__correct-answer">{currentQuestion.answer}</div>
+                            : null
+                    }
+                    {
+                        questionWrong
+                            ? <RaisedButton className="catechism-training__start-over" label="Start over" secondary={true} onTouchTap={this.onReset} />
+                            : <RaisedButton className="catechism-training__submit" label="Submit" primary={true} onTouchTap={this.onSubmit} />
+                    }
+                    <CSSTransitionGroup
+                        transitionName="catechismCorrect"
+                        transitionEnter={true}
+                        transitionEnterTimeout={400}
+                        transitionLeave={true}
+                        transitionLeaveTimeout={400}
+                    >
                         {
-                            questionWrong
-                                ? <div className="catechism-training__correct-answer">{currentQuestion.answer}</div>
+                            questionCorrect
+                                ? (
+                                    <Paper className="catechism-training__paper-correct" zDepth={2}>
+                                        <div>{questionCorrectText}</div>
+                                    </Paper>
+                                )
                                 : null
                         }
-                        {
-                            questionWrong
-                                ? <RaisedButton className="catechism-training__start-over" label="Start over" secondary={true} onTouchTap={this.onReset} />
-                                : <RaisedButton className="catechism-training__submit" label="Submit" primary={true} onTouchTap={this.onSubmit} />
-                        }
-                    </CardText>
-                </Card>
+                    </CSSTransitionGroup>
+                </Paper>
             </div>
         );
     }

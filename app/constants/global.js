@@ -30,7 +30,7 @@ export const APP_LIST = [
     {
         title: 'Catechism Practice',
         description: 'An app to help you and your children learn the catechism faster.',
-        url: '/catechism-practice',
+        url: '/catechism-training',
         background: '#BA68C8',
         icon: <QuestionAnswerIcon />
     },

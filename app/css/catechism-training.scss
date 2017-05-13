@@ -15,7 +15,12 @@
     }
 
     &__content-card-container {
+        opacity: 0;
         transition: all .4s;
+
+        &--opacity {
+            opacity: 1;
+        }
     }
 
     &__content-card {
@@ -34,49 +39,52 @@
         }
     }
 
-    &__modes-section {
-        background: #CE93D8;
-        color: #FFF;
-        padding: 25px 0;
-        text-align: center;
-
-        > div {
-            display: inline-block;
-        }
-
-        &--practice {
-            background: #90CAF9;
-        }
-    }
-
     &__mode-button {
         display: inline-block !important;
+        margin-right: 15px;
         width: initial !important;
+
+        > div > div {
+            margin-right: 6px !important;
+        }
     }
 
-    &__challenge {
-        background: #F3E5F5;
-        padding: 40px;
-
-        &--wrong {
-            background: #FFCDD2;
-
-            .catechism-training__card-question {
-                background: #EF5350;
-            }
-
-            .catechism-training__input textarea {
-                color: #EF5350 !important;
-            }
-        }
+    &__main {
+        margin-top: 20px;
+        padding: 20px 20px 30px;
 
         &--correct {
-            background: #C8E6C9;
-
-            .catechism-training__card-question {
-                background: #43A047;
+            .catechism-training__main-paper {
+                background: #388E3C !important;
             }
         }
+    }
+
+    &__main-paper {
+        background: #455A64 !important;
+        overflow: hidden;
+        padding: 15px;
+        position: relative;
+    }
+
+    &__main-question {
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    &__paper-correct {
+        align-items: center;
+        display: flex;
+        font-size: 25px;
+        height: 45px;
+        justify-content: center;
+        left: 15px;
+        padding: 0 20px;
+        position: absolute;
+        width: calc(100% - 30px);
+        top: 15px;
+        transition: all .4s;
     }
 
     &__practice {
@@ -106,6 +114,10 @@
     &__input {
         text-align: left;
         width: 100% !important;
+
+        label, div, textarea {
+            color: #FFF !important;
+        }
     }
 
     &__submit,
@@ -114,7 +126,7 @@
     }
 
     &__correct-answer {
-        color: #43A047;
+        color: #81C784;
         text-align: left;
         font-size: 25px;
         font-weight: 400;
@@ -202,4 +214,20 @@
 
 .catechismCard-leave.catechismCard-leave-active {
     opacity: 0;
+}
+
+.catechismCorrect-enter {
+    top: -45px;
+}
+
+.catechismCorrect-enter.catechismCorrect-enter-active {
+    top: 15px;
+}
+
+.catechismCorrect-leave {
+    top: 15px;
+}
+
+.catechismCorrect-leave.catechismCorrect-leave-active {
+    top: -45px;
 }
