@@ -2,6 +2,36 @@
     .header {
         background: #BA68C8;
         padding-bottom: 20px;
+        position: relative;
+        transition: all .4s ease-in;
+    }
+
+    &__content {
+        padding: 30px 15px 15px;
+
+        > span {
+            width: 100%;
+        }
+    }
+
+    &__content-card-container {
+        transition: all .4s;
+    }
+
+    &__content-card {
+        margin-bottom: 20px;
+
+        > div {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    &__content-card-title {
+        background: #4A148C;
+
+        > span {
+            color: #FFF !important;
+        }
     }
 
     &__modes-section {
@@ -140,4 +170,36 @@
             }
         }
     }
+}
+
+.catechismHeader-appear {
+    left: -100%;
+}
+
+.catechismHeader-appear.catechismHeader-appear-active {
+    left: 0;
+}
+
+.catechismHeader-leave {
+    left: 0;
+}
+
+.catechismHeader-leave.catechismHeader-leave-active {
+    left: -100%;
+}
+
+.catechismCard-enter {
+    opacity: 0;
+}
+
+.catechismCard-enter.catechismCard-enter-active {
+    opacity: 1;
+}
+
+.catechismCard-leave {
+    opacity: 1;
+}
+
+.catechismCard-leave.catechismCard-leave-active {
+    opacity: 0;
 }

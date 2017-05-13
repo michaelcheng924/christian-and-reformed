@@ -1,48 +1,76 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
+import { delay } from 'lodash';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
-import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
+import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
-import CatechismTrainingChallenge from 'app/components/CatechismTraining/challenge';
-import CatechismTrainingPractice from 'app/components/CatechismTraining/practice';
+import CatechismTrainingContentCard from 'app/components/CatechismTraining/content-card';
 
 class CatechismTraining extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            catechism: 'boysGirls',
+            selection: null,
             mode: 'challenge',
+            showHeader: true,
             questionNumber: 1
         };
 
         this.getAnswer = this.getAnswer.bind(this);
-        this.onChangeCatechism = this.onChangeCatechism.bind(this);
+        this.openUrl = this.openUrl.bind(this);
         this.onModeChange = this.onModeChange.bind(this);
         this.setParentState = this.setParentState.bind(this);
     }
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Catechism for Boys and Girls Training';
+            document.title = 'Catechism Training: Tools to Help You and Your Family Learn the Catechism Faster';
             document.body.style.background = '#F3E5F5';
+
+            const pathname = window.location.pathname;
+
+            if (pathname === '/catechism-training/catechism-boys-girls') {
+                this.setState({ selection: pathname });
+                document.title = 'Catechism for Boys and Girls Training';
+            }
         }
+    }
+
+    componentDidMount() {
+        delay(() => {
+            this.setState({ showContent: true });
+        }, 400);
     }
 
     setParentState(object) {
         this.setState(object);
     }
 
-    onChangeCatechism(event, key, value) {
+    openUrl(event, key, value) {
+        const { history } = this.props
+
         this.setState({
-            catechism: value,
-            questionNumber: 1
+            questionNumber: 1,
+            showContent: false,
+            selection: value
         });
+
+        history.push(value);
+
+        if (typeof window !== 'undefined' && value === '/catechism-training/catechism-boys-girls') {
+            document.title = 'Catechism for Boys and Girls Training';
+        }
+
+        delay(() => {
+            this.setState({ showContent: true });
+        }, 400);
     }
 
     onModeChange(event) {
@@ -61,7 +89,7 @@ class CatechismTraining extends Component {
 
         return (
             <CSSTransitionGroup
-                transitionName="confessionsCreedsHeader"
+                transitionName="catechismHeader"
                 transitionAppear={true}
                 transitionAppearTimeout={400}
                 transitionEnter={false}
@@ -73,8 +101,8 @@ class CatechismTraining extends Component {
                         ? (
                             <div className="header">
                                 <div>
-                                    <div className="header-title">Confessions and Creeds</div>
-                                    <div className="header-subtitle">Tools to help you read and compare the historic confessions and creeds more effectively.</div>
+                                    <div className="header-title">Catechism Training</div>
+                                    <div className="header-subtitle">An app to help you and your children learn the catechism faster.</div>
                                     <Card className="header__dropdown-card">
                                         <CardText className="header__dropdown-card-description">
                                             <DropDownMenu
@@ -84,9 +112,9 @@ class CatechismTraining extends Component {
                                                 style={{ width: 350 }}
                                                 autoWidth={false}
                                             >
-                                                <MenuItem value={null} primaryText="Select a confession or creed" disabled />
-                                                <MenuItem value="/confessions-creeds/1689-london-baptist-confession" primaryText="1689 London Baptist Confession of Faith" />
-                                                <MenuItem value="westminster" primaryText="Westminster Confession of Faith" />
+                                                <MenuItem value={null} primaryText="Select a catechism" disabled />
+                                                <MenuItem value="/catechism-training/catechism-boys-girls" primaryText="Catechism for Boys and Girls" />
+                                                <MenuItem value="/catechism-training/westminster-shorter" primaryText="Westminster Shorter Catechism" />
                                             </DropDownMenu>
                                         </CardText>
                                     </Card>
@@ -99,69 +127,115 @@ class CatechismTraining extends Component {
         );
     }
 
+    renderContent() {
+        const { selection } = this.state;
+
+        if (!selection) {
+            return (
+                <Card className="catechism-training__content-card">
+                    <CardTitle
+                        className="catechism-training__content-card-title"
+                        title="Select a catechism above"
+                    />
+                    <CardText>
+                        Catechism questions will appear here.
+                    </CardText>
+                </Card>
+            );
+        }
+
+        let data;
+        let name;
+
+        switch (selection) {
+            case '/catechism-training/catechism-boys-girls':
+                data = BOYS_GIRLS;
+                name = 'Catechism for Boys and Girls';
+                break;
+            case '/catechism-training/westminster-shorter':
+                data = WESTMINSTER_SHORTER;
+                name = 'Westminster Shorter Catechism';
+                break;
+            default:
+                data = [];
+                name = 'Select a catechism above'
+        }
+
+        return (
+            <CatechismTrainingContentCard data={data} name={name} />
+        );
+    }
+
     render() {
-        const { catechism, mode, questionNumber } = this.state;
-
-        const classNames = css('catechism-training__modes-section', {
-            'catechism-training__modes-section--practice': mode === 'practice'
-        });
-
-        const catechismData = catechism === 'boysGirls' ? BOYS_GIRLS : WESTMINSTER_SHORTER;
+        const { showContent } = this.state;
 
         return (
             <div className="catechism-training">
-                <div className="header">
-                    <div>
-                        <div className="header-title">Catechism for Boys and Girls Training</div>
-                        <div className="header-subtitle">An app to help you and your children learn the catechism faster.</div>
-                        <DropDownMenu
-                            className="catechism-training__dropdown"
-                            value={catechism}
-                            onChange={this.onChangeCatechism}
-                            style={{ width: 300 }}
-                            autoWidth={false}
-                        >
-                            <MenuItem value="boysGirls" primaryText="Catechism for Boys and Girls" />
-                            <MenuItem value="westminsterShorter" primaryText="Westminster Shorter Catechism" />
-                        </DropDownMenu>
-                    </div>
+                {this.renderHeader()}
+                <div className="catechism-training__content">
+                    <CSSTransitionGroup
+                        transitionName="catechismCard"
+                        transitionEnter={true}
+                        transitionEnterTimeout={400}
+                        transitionLeave={true}
+                        transitionLeaveTimeout={400}
+                    >
+                        {
+                            showContent
+                                ? (
+                                    <div className="catechism-training__content-card-container">
+                                        {this.renderContent()}
+                                    </div>
+                                )
+                                : null
+                        }
+                    </CSSTransitionGroup>
                 </div>
-                <div className={classNames}>
-                    <RadioButtonGroup name="shipSpeed" defaultSelected="challenge" onChange={this.onModeChange}>
-                        <RadioButton
-                            className="catechism-training__mode-button"
-                            value="challenge"
-                            label="Challenge"
-                        />
-                        <RadioButton
-                            className="catechism-training__mode-button"
-                            value="practice"
-                            label="Practice"
-                        />
-                    </RadioButtonGroup>
-                </div>
-                {
-                    mode === 'challenge'
-                        ? (
-                            <CatechismTrainingChallenge
-                                catechismData={catechismData}
-                                currentQuestion={catechismData[questionNumber - 1]}
-                                getAnswer={this.getAnswer}
-                                setParentState={this.setParentState}
-                            />
-                        )
-                        : (
-                            <CatechismTrainingPractice
-                                catechismData={catechismData}
-                                currentQuestion={catechismData[questionNumber - 1]}
-                                getAnswer={this.getAnswer}
-                                setParentState={this.setParentState}
-                            />
-                        )
-                }
             </div>
         );
     }
 }
 
-export default CatechismTraining;
+// const { catechism, mode, questionNumber } = this.state;
+
+// const classNames = css('catechism-training__modes-section', {
+//     'catechism-training__modes-section--practice': mode === 'practice'
+// });
+
+// const catechismData = catechism === 'boysGirls' ? BOYS_GIRLS : WESTMINSTER_SHORTER;
+
+// <div className={classNames}>
+//                     <RadioButtonGroup name="shipSpeed" defaultSelected="challenge" onChange={this.onModeChange}>
+//                         <RadioButton
+//                             className="catechism-training__mode-button"
+//                             value="challenge"
+//                             label="Challenge"
+//                         />
+//                         <RadioButton
+//                             className="catechism-training__mode-button"
+//                             value="practice"
+//                             label="Practice"
+//                         />
+//                     </RadioButtonGroup>
+//                 </div>
+//                 {
+//                     mode === 'challenge'
+//                         ? (
+//                             <CatechismTrainingChallenge
+//                                 catechismData={catechismData}
+//                                 currentQuestion={catechismData[questionNumber - 1]}
+//                                 getAnswer={this.getAnswer}
+//                                 setParentState={this.setParentState}
+//                             />
+//                         )
+//                         : (
+//                             <CatechismTrainingPractice
+//                                 catechismData={catechismData}
+//                                 currentQuestion={catechismData[questionNumber - 1]}
+//                                 getAnswer={this.getAnswer}
+//                                 setParentState={this.setParentState}
+//                             />
+//                         )
+//                 }
+
+export default withRouter(CatechismTraining);

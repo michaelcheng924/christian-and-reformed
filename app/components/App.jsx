@@ -58,7 +58,7 @@ class App extends Component {
                         <Route path="/reformed-video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
                         <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
-                        <Route path="/catechism-practice" component={CatechismTraining}/>
+                        <Route path="/catechism-training" component={CatechismTraining}/>
                         {this.renderBack()}
                     </div>
                 </MuiThemeProvider>

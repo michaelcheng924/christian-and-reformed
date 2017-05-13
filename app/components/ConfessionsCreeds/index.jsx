@@ -27,13 +27,14 @@ class ConfessionsCreeds extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Confessions and Creeds';
+            document.title = 'Confessions and Creeds: Tools to help you read and compare the historic confessions and creeds more effectively.';
             document.body.style.background = '#B2EBF2';
 
             const pathname = window.location.pathname;
 
             if (pathname === '/confessions-creeds/1689-london-baptist-confession') {
                 this.setState({ selection: pathname });
+                document.title = '1689 London Baptist Confession';
             }
         }
     }
@@ -53,6 +54,10 @@ class ConfessionsCreeds extends Component {
         });
 
         history.push(value);
+
+        if (typeof window !== 'undefined' && value === '/confessions-creeds/1689-london-baptist-confession') {
+            document.title = '1689 London Baptist Confession';
+        }
 
         delay(() => {
             this.setState({ showContent: true });
