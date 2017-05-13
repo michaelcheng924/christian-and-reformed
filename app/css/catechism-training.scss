@@ -87,6 +87,17 @@
         transition: all .4s;
     }
 
+    &__practice-options {
+        margin-bottom: 10px;
+        padding: 20px;
+        position: relative;
+        top: -10px;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+
     &__practice {
         background: #E3F2FD;
         text-align: center;
@@ -139,8 +150,16 @@
 
     &__practice-checkbox {
         display: inline-block !important;
-        text-align: left;
-        width: 210px !important;
+        margin-right: 15px;
+        width: 143px !important;
+
+        > div > div {
+            margin-right: 6px !important;
+        }
+
+        &:last-child {
+            width: 192px !important;
+        }
     }
 
     &__practice-navigation {
@@ -168,6 +187,7 @@
     }
 
     &__multiple-choice-section {
+        color: #FFEB3B;
         font-size: 15px;
         margin: 15px auto;
         text-align: left;

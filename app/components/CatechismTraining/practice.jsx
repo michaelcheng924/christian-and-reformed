@@ -1,10 +1,12 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
 import { delay, indexOf, partial, shuffle } from 'lodash';
 import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 import Checkbox from 'material-ui/Checkbox';
 import KeyboardArrowLeftIcon from 'material-ui-icons/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from 'material-ui-icons/KeyboardArrowRight';
@@ -121,7 +123,10 @@ export default class CatechismTrainingPractice extends Component {
             if (currentQuestion.id === catechismData.length) {
 
             } else {
-                this.setState({ questionCorrect: true });
+                this.setState({
+                    questionCorrect: true,
+                    questionCorrectText: CORRECT_RESPONSES[Math.floor(Math.random() * CORRECT_RESPONSES.length - .01)]
+                });
 
                 delay(() => {
                     setParentState({ questionNumber: currentQuestion.id + 1 });
@@ -151,7 +156,7 @@ export default class CatechismTrainingPractice extends Component {
                                 key={choice}
                                 onClick={partial(this.onSubmit, answer)}
                             >
-                                {`${CHOICE_MAPPING[index]}) ${answer}`}
+                                {`${CHOICE_MAPPING[index]}${answer}`}
                             </div>
                         );
                     })
@@ -161,14 +166,103 @@ export default class CatechismTrainingPractice extends Component {
     }
 
     render() {
-        const { questionCorrect, questionWrong, showAnswer, showMultipleChoice } = this.state;
-        const { catechismData, currentQuestion, setParentState } = this.props;
+        const { questionCorrect, questionCorrectText, questionWrong, showAnswer, showMultipleChoice } = this.state;
+        const { catechismData, currentQuestion } = this.props;
         const questionNumber = currentQuestion.id;
 
-        const classNames = css('catechism-training__challenge catechism-training__practice', {
-            'catechism-training__challenge--correct': questionCorrect,
-            'catechism-training__challenge--wrong': questionWrong
+        const classNames = css('catechism-training__main', {
+            'catechism-training__main--correct': questionCorrect,
+            'catechism-training__main--wrong': questionWrong
         });
+
+        return (
+            <div className={classNames}>
+                <Paper className="catechism-training__practice-options" zDepth={3}>
+                    <h3>Options</h3>
+                    <div className="catechism-training__practice-toggles">
+                        <Checkbox
+                            className="catechism-training__practice-checkbox"
+                            label={showAnswer ? 'Hide answer' : 'Show answer'}
+                            onCheck={this.onShowAnswer}
+                        />
+                        <Checkbox
+                            className="catechism-training__practice-checkbox"
+                            label={showMultipleChoice ? 'Hide multiple choice' : 'Show multiple choice'}
+                            onCheck={this.onShowMultipleChoice}
+                        />
+                    </div>
+                    <div className="catechism-training__practice-navigation">
+                        {
+                            questionNumber > 1
+                                ? <KeyboardArrowLeftIcon onClick={() => this.onJumpToNumber(null, questionNumber - 1)} />
+                                : <div style={{width: 40}} />
+                        }
+                        <div className="catechism-training__slider-container">
+                            Slide to question
+                            <Slider
+                                className="catechism-training__slider"
+                                min={1}
+                                max={catechismData.length}
+                                onChange={this.onJumpToNumber}
+                                step={1}
+                                value={questionNumber}
+                            />
+                        </div>
+                        {
+                            questionNumber < catechismData.length
+                                ? <KeyboardArrowRightIcon onClick={() => this.onJumpToNumber(null, questionNumber + 1)} />
+                                : <div style={{width: 40}} />
+                        }
+                    </div>
+                </Paper>
+                <Paper className="catechism-training__main-paper" zDepth={5}>
+                    <div className="catechism-training__main-question">{`${currentQuestion.id}) ${currentQuestion.question}`}</div>
+                    {
+                        showMultipleChoice
+                            ? this.renderMultipleChoice()
+                            : (
+                                <TextField
+                                    className="catechism-training__input"
+                                    errorText={questionWrong ? ' ' : null}
+                                    floatingLabelText="Answer"
+                                    multiLine={true}
+                                    onChange={event => this.setState({ inputValue: event.target.value, questionWrong: false })}
+                                    underlineFocusStyle={{ borderColor: '#FFEB3B' }}
+                                    ref={input => this.input = input}
+                                    value={this.state.inputValue}
+                                />
+                            )
+                    }
+                    {
+                        questionWrong || showAnswer
+                            ? <div className="catechism-training__correct-answer">{currentQuestion.answer}</div>
+                            : null
+                    }
+                    {
+                        showMultipleChoice
+                            ? null
+                            : <RaisedButton className="catechism-training__submit" label="Submit" primary={true} onTouchTap={this.onSubmit} />
+                    }
+                    <CSSTransitionGroup
+                        transitionName="catechismCorrect"
+                        transitionEnter={true}
+                        transitionEnterTimeout={400}
+                        transitionLeave={true}
+                        transitionLeaveTimeout={400}
+                    >
+                        {
+                            questionCorrect
+                                ? (
+                                    <Paper className="catechism-training__paper-correct" zDepth={2}>
+                                        <div>{questionCorrectText}</div>
+                                    </Paper>
+                                )
+                                : null
+                        }
+                    </CSSTransitionGroup>
+                </Paper>
+            </div>
+        );
 
         return (
             <div className={classNames}>
