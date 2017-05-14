@@ -232,6 +232,22 @@ a {
     }
 }
 
+.appHeader-appear {
+    left: -100%;
+}
+
+.appHeader-appear.appHeader-appear-active {
+    left: 0;
+}
+
+.appHeader-leave {
+    left: 0;
+}
+
+.appHeader-leave.appHeader-leave-active {
+    left: -100%;
+}
+
 .confessionsCreedsScripture-appear {
     left: -100%;
 }

@@ -108,6 +108,25 @@
         margin-bottom: 15px;
     }
 
+    &__superscript {
+        color: #689F38;
+        cursor: pointer;
+        font-weight: 900;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__popover {
+        margin-top: 5px;
+        padding: 10px;
+
+        h2, h3 {
+            font-size: 14px;
+        }
+    }
+
     &__content-card-scriptures {
         margin-top: 8px;
     }
@@ -120,22 +139,6 @@
             text-decoration: underline;
         }
     }
-}
-
-.confessionsCreedsHeader-appear {
-    left: -100%;
-}
-
-.confessionsCreedsHeader-appear.confessionsCreedsHeader-appear-active {
-    left: 0;
-}
-
-.confessionsCreedsHeader-leave {
-    left: 0;
-}
-
-.confessionsCreedsHeader-leave.confessionsCreedsHeader-leave-active {
-    left: -100%;
 }
 
 .confessionsCreedsCard-enter {

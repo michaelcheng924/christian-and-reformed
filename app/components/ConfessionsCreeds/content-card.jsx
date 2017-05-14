@@ -25,7 +25,7 @@ export default class ConfessionsCreedsContentCard extends Component {
         this.setState({ selection: value });
     }
 
-    showScripture(index, scripture) {
+    showScripture(index, scripture, superscript) {
         const scriptures = this.state.scriptures;
 
         if (!scriptures[index]) {
@@ -39,8 +39,9 @@ export default class ConfessionsCreedsContentCard extends Component {
             url: '/api/global/getscripture',
             data: JSON.stringify({ scripture }),
             success(response) {
-                scriptures[index].push({
+                scriptures[index].unshift({
                     scripture,
+                    superscript,
                     text: response.body
                 });
 
@@ -70,61 +71,106 @@ export default class ConfessionsCreedsContentCard extends Component {
         return (
             <div className="confessions-creeds__content-card-chapter">
                 <div className="confessions-creeds__content-card-section">
-                    <strong><em>Click Scripture references to display them without leaving the page.</em></strong>
+                    <strong><em>Click superscripts to view Scriptures in a popover without leaving the page.</em></strong>
                 </div>
 
                 {
-                    data[selection - 1].content.map((item, index) => {
+                    data[selection - 1].content.map((paragraph, index) => {
                         return (
                             <div key={index} className="confessions-creeds__content-card-section">
-                                <div><strong><u>{index + 1}</u></strong></div>
-                                <div>{item.text}</div>
-                                <div className="confessions-creeds__content-card-scriptures">
-                                    {
-                                        item.scriptures.map((scripture, scriptureIndex) => {
-                                            const comma = scriptureIndex === item.scriptures.length - 1 ? null : ', ';
-
-                                            return (
-                                                <span key={scriptureIndex} className="confessions-creeds__content-card-scripture" onClick={partial(this.showScripture, index, scripture)}>{scripture}{comma}</span>
-                                            );
-                                        })
-                                    }
-                                    {
-                                        scriptures[index] && scriptures[index].map((scripture, scriptureTextIndex) => {
-                                            return (
-                                                <CSSTransitionGroup
-                                                    key={scripture.scripture}
-                                                    transitionName="confessionsCreedsScripture"
-                                                    transitionAppear={true}
-                                                    transitionAppearTimeout={400}
-                                                    transitionEnter={true}
-                                                    transitionEnterTimeout={400}
-                                                    transitionLeave={true}
-                                                    transitionLeaveTimeout={400}
-                                                >
-                                                    {
-                                                        scripture.remove
-                                                            ? null
-                                                            : (
-                                                                <Card className="scripture-card">
-                                                                    <CardTitle
-                                                                        className="scripture-card__title"
-                                                                        title={scripture.scripture}
-                                                                    />
-                                                                    <CardText className="scripture-card__text">
-                                                                        <div dangerouslySetInnerHTML={{__html: scripture.text}} />
-                                                                        <ClearIcon onClick={partial(this.removeScripture, index, scripture.scripture)} />
-                                                                    </CardText>
-                                                                </Card>
-                                                            )
-                                                    }
-                                                </CSSTransitionGroup>
-                                            );
-                                        })
-                                    }
-                                </div>
+                                <div><em><u>Paragraph {index + 1}</u></em></div>
+                                {
+                                    paragraph.map(section => {
+                                        return (
+                                            <span key={section.superscript}>{section.text}<sup className="confessions-creeds__superscript" onClick={partial(this.showScripture, index, section.scriptures, section.superscript)}>{`${section.superscript} `}</sup></span>
+                                        );
+                                    })
+                                }
+                                {
+                                    scriptures[index] && scriptures[index].map((scripture, scriptureTextIndex) => {
+                                        return (
+                                            <CSSTransitionGroup
+                                                key={scripture.scripture}
+                                                transitionName="confessionsCreedsScripture"
+                                                transitionAppear={true}
+                                                transitionAppearTimeout={400}
+                                                transitionEnter={true}
+                                                transitionEnterTimeout={400}
+                                                transitionLeave={true}
+                                                transitionLeaveTimeout={400}
+                                            >
+                                                {
+                                                    scripture.remove
+                                                        ? null
+                                                        : (
+                                                            <Card className="scripture-card">
+                                                                <CardTitle
+                                                                    className="scripture-card__title"
+                                                                    title={`${scripture.superscript}) ${scripture.scripture}`}
+                                                                />
+                                                                <CardText className="scripture-card__text">
+                                                                    <div dangerouslySetInnerHTML={{__html: scripture.text}} />
+                                                                    <ClearIcon onClick={partial(this.removeScripture, index, scripture.scripture)} />
+                                                                </CardText>
+                                                            </Card>
+                                                        )
+                                                }
+                                            </CSSTransitionGroup>
+                                        );
+                                    })
+                                }
                             </div>
                         );
+                        // return (
+                        //     <div key={index} className="confessions-creeds__content-card-section">
+                        //         <div><strong><u>{index + 1}</u></strong></div>
+                        //         <div>{item.text}</div>
+                        //         <div className="confessions-creeds__content-card-scriptures">
+                        //             {
+                        //                 item.scriptures.map((scripture, scriptureIndex) => {
+                        //                     const comma = scriptureIndex === item.scriptures.length - 1 ? null : ', ';
+
+                        //                     return (
+                        //                         <span key={scriptureIndex} className="confessions-creeds__content-card-scripture" onClick={partial(this.showScripture, index, scripture)}>{scripture}{comma}</span>
+                        //                     );
+                        //                 })
+                        //             }
+                        //             {
+                        //                 scriptures[index] && scriptures[index].map((scripture, scriptureTextIndex) => {
+                        //                     return (
+                        //                         <CSSTransitionGroup
+                        //                             key={scripture.scripture}
+                        //                             transitionName="confessionsCreedsScripture"
+                        //                             transitionAppear={true}
+                        //                             transitionAppearTimeout={400}
+                        //                             transitionEnter={true}
+                        //                             transitionEnterTimeout={400}
+                        //                             transitionLeave={true}
+                        //                             transitionLeaveTimeout={400}
+                        //                         >
+                        //                             {
+                        //                                 scripture.remove
+                        //                                     ? null
+                        //                                     : (
+                        //                                         <Card className="scripture-card">
+                        //                                             <CardTitle
+                        //                                                 className="scripture-card__title"
+                        //                                                 title={scripture.scripture}
+                        //                                             />
+                        //                                             <CardText className="scripture-card__text">
+                        //                                                 <div dangerouslySetInnerHTML={{__html: scripture.text}} />
+                        //                                                 <ClearIcon onClick={partial(this.removeScripture, index, scripture.scripture)} />
+                        //                                             </CardText>
+                        //                                         </Card>
+                        //                                     )
+                        //                             }
+                        //                         </CSSTransitionGroup>
+                        //                     );
+                        //                 })
+                        //             }
+                        //         </div>
+                        //     </div>
+                        // );
                     })
                 }
             </div>
