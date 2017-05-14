@@ -5,8 +5,10 @@ import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 
+import GOSPEL from 'app/constants/course-gospel';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
+import VideoAudioContentCard from 'app/components/VideoAudio/content-card';
 
 class VideoAudo extends Component {
     constructor(props) {
@@ -26,6 +28,13 @@ class VideoAudo extends Component {
         if (typeof window !== 'undefined') {
             document.title = 'Video/Audio Mini-courses: Video/audio on a variety of topics, with questions to test your understanding';
             document.body.style.background = '#FFCDD2';
+
+            const pathname = window.location.pathname;
+
+            if (pathname === '/video-audio/gospel') {
+                this.setState({ selection: pathname });
+                document.title = 'Video/Audio Mini-course: What is the Gospel?';
+            }
         }
     }
 
@@ -96,18 +105,18 @@ class VideoAudo extends Component {
         let name;
 
         switch (selection) {
-            case '/confessions-creeds/1689-london-baptist-confession':
-                data = LONDON_BAPTIST;
-                name = LONDON_BAPTIST_NAME;
+            case '/video-audio/gospel':
+                data = GOSPEL;
+                name = GOSPEL.name;
                 break;
             default:
                 data = [];
-                name = 'Select a confession or creed above';
+                name = 'Select a mini-course above';
                 break;
         }
 
         return (
-            <ConfessionsCreedsContentCard data={data} name={name} />
+            <VideoAudioContentCard data={data} name={name} />
         );
     }
 

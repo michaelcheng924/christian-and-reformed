@@ -55,7 +55,7 @@ class App extends Component {
                     <div>
                         <Header app={app} />
                         <Route exact path="/" component={Home}/>
-                        <Route path="/reformed-video-audio" component={VideoAudio}/>
+                        <Route path="/video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
                         <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
                         <Route path="/catechism-training" component={CatechismTraining}/>

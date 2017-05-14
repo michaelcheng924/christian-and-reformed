@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
-import { delay, find, partial, remove } from 'lodash';
+import { delay, find, partial, remove, some } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
@@ -53,11 +53,13 @@ export default class ConfessionsCreedsContentCard extends Component {
             url: '/api/global/getscripture',
             data: JSON.stringify({ scripture }),
             success(response) {
-                scriptures[index].unshift({
-                    scripture,
-                    superscript,
-                    text: response.body
-                });
+                if (!some(scriptures[index], item => item.scripture === scripture)) {
+                    scriptures[index].unshift({
+                        scripture,
+                        superscript,
+                        text: response.body
+                    });
+                }
 
                 this.setState({ scriptures });
             }

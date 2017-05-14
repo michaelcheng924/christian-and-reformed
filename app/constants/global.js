@@ -8,7 +8,7 @@ export const APP_LIST = [
     {
         title: 'Video/Audio Mini-courses',
         description: 'Video/audio on a variety of topics, with questions to test your understanding',
-        url: '/reformed-video-audio',
+        url: '/video-audio',
         background: '#EF5350',
         icon: <PlayCircleFilledIcon />
     },

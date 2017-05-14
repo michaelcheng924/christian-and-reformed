@@ -13,4 +13,28 @@
             color: #FFF !important;
         }
     }
+
+    &__course-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__questions {
+        padding: 20px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__true-false {
+        color: #558B2F;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
 }
