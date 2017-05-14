@@ -73,15 +73,6 @@ class Home extends Component {
                                                 <div className={classNames} onClick={partial(this.onAppClick, app.url)}>
                                                     <div className="home__app" style={{ background: app.background }}>
                                                         <div>
-                                                            {
-                                                                app.underConstruction
-                                                                    ? (
-                                                                        <div className="home__construction">
-                                                                            <WarningIcon className="home__icon--construction" /> In progress
-                                                                        </div>
-                                                                    )
-                                                                    : null
-                                                            }
                                                             {app.icon}
                                                             <h2>{app.title}</h2>
                                                             <div>{app.description}</div>

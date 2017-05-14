@@ -121,56 +121,6 @@ export default class ConfessionsCreedsContentCard extends Component {
                                 }
                             </div>
                         );
-                        // return (
-                        //     <div key={index} className="confessions-creeds__content-card-section">
-                        //         <div><strong><u>{index + 1}</u></strong></div>
-                        //         <div>{item.text}</div>
-                        //         <div className="confessions-creeds__content-card-scriptures">
-                        //             {
-                        //                 item.scriptures.map((scripture, scriptureIndex) => {
-                        //                     const comma = scriptureIndex === item.scriptures.length - 1 ? null : ', ';
-
-                        //                     return (
-                        //                         <span key={scriptureIndex} className="confessions-creeds__content-card-scripture" onClick={partial(this.showScripture, index, scripture)}>{scripture}{comma}</span>
-                        //                     );
-                        //                 })
-                        //             }
-                        //             {
-                        //                 scriptures[index] && scriptures[index].map((scripture, scriptureTextIndex) => {
-                        //                     return (
-                        //                         <CSSTransitionGroup
-                        //                             key={scripture.scripture}
-                        //                             transitionName="confessionsCreedsScripture"
-                        //                             transitionAppear={true}
-                        //                             transitionAppearTimeout={400}
-                        //                             transitionEnter={true}
-                        //                             transitionEnterTimeout={400}
-                        //                             transitionLeave={true}
-                        //                             transitionLeaveTimeout={400}
-                        //                         >
-                        //                             {
-                        //                                 scripture.remove
-                        //                                     ? null
-                        //                                     : (
-                        //                                         <Card className="scripture-card">
-                        //                                             <CardTitle
-                        //                                                 className="scripture-card__title"
-                        //                                                 title={scripture.scripture}
-                        //                                             />
-                        //                                             <CardText className="scripture-card__text">
-                        //                                                 <div dangerouslySetInnerHTML={{__html: scripture.text}} />
-                        //                                                 <ClearIcon onClick={partial(this.removeScripture, index, scripture.scripture)} />
-                        //                                             </CardText>
-                        //                                         </Card>
-                        //                                     )
-                        //                             }
-                        //                         </CSSTransitionGroup>
-                        //                     );
-                        //                 })
-                        //             }
-                        //         </div>
-                        //     </div>
-                        // );
                     })
                 }
             </div>
@@ -186,25 +136,31 @@ export default class ConfessionsCreedsContentCard extends Component {
                 <CardTitle
                     className="confessions-creeds__content-card-title"
                     title={name}
-                />
-                <CardText>
+                >
                     <div className="confessions-creeds__content-card-dropdown-label"> Select a chapter from the dropdown below:</div>
-                    <DropDownMenu
-                        className="confessions-creeds__content-card-dropdown"
-                        value={selection}
-                        maxHeight={400}
-                        onChange={this.onSelect}
-                        style={{ width: '100%' }}
-                        autoWidth={false}
-                    >
-                        {
-                            data.map((item, index) => {
-                                return (
-                                    <MenuItem key={index} value={index + 1} primaryText={`Chapter ${item.chapter}:  ${item.title}`} />
-                                );
-                            })
-                        }
-                    </DropDownMenu>
+                    <Card className="confessions-creeds__chapter-dropdown">
+                        <CardText className="confessions-creeds__chapter-dropdown-description">
+                            <DropDownMenu
+                                className="confessions-creeds__content-card-dropdown"
+                                value={selection}
+                                maxHeight={400}
+                                onChange={this.onSelect}
+                                style={{ width: '100%' }}
+                                autoWidth={false}
+                            >
+                                {
+                                    data.map((item, index) => {
+                                        return (
+                                            <MenuItem key={index} value={index + 1} primaryText={`Chapter ${item.chapter}:  ${item.title}`} />
+                                        );
+                                    })
+                                }
+                            </DropDownMenu>
+                        </CardText>
+                    </Card>
+                </CardTitle>
+                <CardText>
+                    
                     {this.renderChapter()}
                 </CardText>
             </Card>

@@ -14,23 +14,6 @@
         }
     }
 
-    &__content-card-container {
-        opacity: 0;
-        transition: all .4s;
-
-        &--opacity {
-            opacity: 1;
-        }
-    }
-
-    &__content-card {
-        margin-bottom: 20px;
-
-        > div {
-            padding-bottom: 0 !important;
-        }
-    }
-
     &__content-card-title {
         background: #4A148C;
 

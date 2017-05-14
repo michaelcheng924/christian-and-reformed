@@ -6,30 +6,29 @@ import QuestionAnswerIcon from 'material-ui-icons/QuestionAnswer';
 
 export const APP_LIST = [
     {
-        title: 'Reformed Video and Audio',
-        description: 'Watch and listen to solid teaching from a Reformed theological perspective.',
+        title: 'Video/Audio Mini-courses',
+        description: 'Video/audio on a variety of topics, with questions to test your understanding',
         url: '/reformed-video-audio',
         background: '#EF5350',
-        icon: <PlayCircleFilledIcon />,
-        underConstruction: true
+        icon: <PlayCircleFilledIcon />
     },
     {
         title: 'Reformed Church Finder',
-        description: 'Easily find Reformed Baptist churches using Google Maps.',
+        description: 'Find solid Reformed churches using Google Maps',
         url: '/reformed-church-finder',
         background: '#43A047',
         icon: <DirectionsIcon />
     },
     {
-        title: 'Confessions and Creeds',
-        description: 'Tools to help you read and compare the historic confessions and creeds more effectively.',
+        title: 'Confessions/Creeds Explorer',
+        description: 'Read and study historic confessions and creeds with easy display of Scripture references',
         url: '/confessions-creeds',
         background: '#0097A7',
         icon: <LibraryBooksIcon />
     },
     {
         title: 'Catechism Practice',
-        description: 'An app to help you and your children learn the catechism faster.',
+        description: 'An app to help you learn the catechism faster',
         url: '/catechism-training',
         background: '#BA68C8',
         icon: <QuestionAnswerIcon />

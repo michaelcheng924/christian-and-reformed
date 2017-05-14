@@ -1,0 +1,16 @@
+.video-audio {
+    .header {
+        background: #EF5350;
+        padding-bottom: 20px;
+        position: relative;
+        transition: all .4s ease-in;
+    }
+
+    &__content-card-title {
+        background: #B71C1C;
+
+        > span {
+            color: #FFF !important;
+        }
+    }
+}

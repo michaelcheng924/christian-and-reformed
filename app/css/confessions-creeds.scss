@@ -68,24 +68,16 @@
         margin-top: 20px;
     }
 
-    &__content-card-container {
-        transition: all .4s;
-    }
-
-    &__content-card {
-        margin-bottom: 20px;
-
-        > div {
-            padding-bottom: 0 !important;
-        }
-    }
-
     &__content-card-title {
         background: #006064;
 
         > span {
             color: #FFF !important;
         }
+    }
+
+    &__chapter-dropdown-description {
+        padding: 0 !important;
     }
 
     &__content-card-dropdown {
@@ -96,8 +88,8 @@
     }
 
     &__content-card-dropdown-label {
-        color: #E91E63;
-        margin-left: 24px;
+        color: #FFEB3B;
+        margin: 10px 0;
     }
 
     &__content-card-chapter {

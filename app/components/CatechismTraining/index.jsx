@@ -142,7 +142,7 @@ class CatechismTraining extends Component {
                     setParentState={this.setParentState}
                     showHeader={showHeader}
                     title="Catechism Training"
-                    subtitle="An app to help you and your children learn the catechism faster."
+                    subtitle="An app to help you learn the catechism faster"
                 >
                     {this.renderDropdown()}
                 </AppHeader>
@@ -153,25 +153,5 @@ class CatechismTraining extends Component {
         );
     }
 }
-
-// <div className="catechism-training__content">
-//                     <CSSTransitionGroup
-//                         transitionName="catechismCard"
-//                         transitionEnter={true}
-//                         transitionEnterTimeout={400}
-//                         transitionLeave={true}
-//                         transitionLeaveTimeout={400}
-//                     >
-//                         {
-//                             showContent
-//                                 ? (
-//                                     <div className={classnames}>
-//                                         {this.renderContent()}
-//                                     </div>
-//                                 )
-//                                 : null
-//                         }
-//                     </CSSTransitionGroup>
-//                 </div>
 
 export default withRouter(CatechismTraining);
