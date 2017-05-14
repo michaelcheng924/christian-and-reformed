@@ -10,6 +10,8 @@ import MenuItem from 'material-ui/MenuItem';
 
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
+import AppHeader from 'app/components/AppHeader';
+import ContentCard from 'app/components/ContentCard';
 import CatechismTrainingContentCard from 'app/components/CatechismTraining/content-card';
 
 class CatechismTraining extends Component {
@@ -18,13 +20,12 @@ class CatechismTraining extends Component {
 
         this.state = {
             selection: null,
-            // TODO: Fix
-            setOpacity: false,
             showContent: false,
             showHeader: true
         };
 
         this.openUrl = this.openUrl.bind(this);
+        this.setParentState = this.setParentState.bind(this);
     }
 
     componentWillMount() {
@@ -41,23 +42,15 @@ class CatechismTraining extends Component {
         }
     }
 
-    componentDidMount() {
-        delay(() => {
-            this.setState({ showContent: true });
-        }, 400);
-
-        delay(() => {
-            this.setState({ setOpacity: true });
-        }, 800);
+    setParentState(object) {
+        this.setState(object);
     }
 
     openUrl(event, key, value) {
         const { history } = this.props
 
         this.setState({
-            questionNumber: 1,
             showContent: false,
-            selection: value
         });
 
         history.push(value);
@@ -67,50 +60,33 @@ class CatechismTraining extends Component {
         }
 
         delay(() => {
-            this.setState({ showContent: true });
+            this.setState({
+                questionNumber: 1,
+                selection: value,
+                showContent: true
+            });
         }, 400);
     }
 
-    renderHeader() {
+    renderDropdown() {
         const { selection } = this.state;
 
         return (
-            <CSSTransitionGroup
-                transitionName="catechismHeader"
-                transitionAppear={true}
-                transitionAppearTimeout={400}
-                transitionEnter={false}
-                transitionLeave={true}
-                transitionLeaveTimeout={400}
-            >
-                {
-                    this.state.showHeader
-                        ? (
-                            <div className="header">
-                                <div>
-                                    <div className="header-title">Catechism Training</div>
-                                    <div className="header-subtitle">An app to help you and your children learn the catechism faster.</div>
-                                    <Card className="header__dropdown-card">
-                                        <CardText className="header__dropdown-card-description">
-                                            <DropDownMenu
-                                                className="header__dropdown"
-                                                value={selection}
-                                                onChange={this.openUrl}
-                                                style={{ width: 350 }}
-                                                autoWidth={false}
-                                            >
-                                                <MenuItem value={null} primaryText="Select a catechism" disabled />
-                                                <MenuItem value="/catechism-training/catechism-boys-girls" primaryText="Catechism for Boys and Girls" />
-                                                <MenuItem value="/catechism-training/westminster-shorter" primaryText="Westminster Shorter Catechism" />
-                                            </DropDownMenu>
-                                        </CardText>
-                                    </Card>
-                                </div>
-                            </div>
-                        )
-                        : null
-                }
-            </CSSTransitionGroup>
+            <Card className="header__dropdown-card">
+                <CardText className="header__dropdown-card-description">
+                    <DropDownMenu
+                        className="header__dropdown"
+                        value={selection}
+                        onChange={this.openUrl}
+                        style={{ width: 350 }}
+                        autoWidth={false}
+                    >
+                        <MenuItem value={null} primaryText="Select a catechism" disabled />
+                        <MenuItem value="/catechism-training/catechism-boys-girls" primaryText="Catechism for Boys and Girls" />
+                        <MenuItem value="/catechism-training/westminster-shorter" primaryText="Westminster Shorter Catechism" />
+                    </DropDownMenu>
+                </CardText>
+            </Card>
         );
     }
 
@@ -154,7 +130,7 @@ class CatechismTraining extends Component {
     }
 
     render() {
-        const { setOpacity, showContent } = this.state;
+        const { setOpacity, showContent, showHeader } = this.state;
 
         const classnames = css('catechism-training__content-card-container', {
             'catechism-training__content-card-container--opacity': setOpacity
@@ -162,29 +138,40 @@ class CatechismTraining extends Component {
 
         return (
             <div className="catechism-training">
-                {this.renderHeader()}
-                <div className="catechism-training__content">
-                    <CSSTransitionGroup
-                        transitionName="catechismCard"
-                        transitionEnter={true}
-                        transitionEnterTimeout={400}
-                        transitionLeave={true}
-                        transitionLeaveTimeout={400}
-                    >
-                        {
-                            showContent
-                                ? (
-                                    <div className={classnames}>
-                                        {this.renderContent()}
-                                    </div>
-                                )
-                                : null
-                        }
-                    </CSSTransitionGroup>
-                </div>
+                <AppHeader
+                    setParentState={this.setParentState}
+                    showHeader={showHeader}
+                    title="Catechism Training"
+                    subtitle="An app to help you and your children learn the catechism faster."
+                >
+                    {this.renderDropdown()}
+                </AppHeader>
+                <ContentCard setParentState={this.setParentState} showContent={showContent}>
+                    {this.renderContent()}
+                </ContentCard>
             </div>
         );
     }
 }
+
+// <div className="catechism-training__content">
+//                     <CSSTransitionGroup
+//                         transitionName="catechismCard"
+//                         transitionEnter={true}
+//                         transitionEnterTimeout={400}
+//                         transitionLeave={true}
+//                         transitionLeaveTimeout={400}
+//                     >
+//                         {
+//                             showContent
+//                                 ? (
+//                                     <div className={classnames}>
+//                                         {this.renderContent()}
+//                                     </div>
+//                                 )
+//                                 : null
+//                         }
+//                     </CSSTransitionGroup>
+//                 </div>
 
 export default withRouter(CatechismTraining);

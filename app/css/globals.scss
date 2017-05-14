@@ -43,6 +43,16 @@ a {
             transform: rotate(180deg);
         }
     }
+
+    &__content-card {
+        opacity: 0;
+        padding: 20px;
+        transition: all .4s;
+
+        &--show {
+            opacity: 1;
+        }
+    }
 }
 
 .overlay {

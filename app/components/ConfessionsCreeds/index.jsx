@@ -1,6 +1,4 @@
-import $ from 'jquery';
 import React, { Component } from 'react';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { delay, partial } from 'lodash';
@@ -11,6 +9,7 @@ import MenuItem from 'material-ui/MenuItem';
 import { LONDON_BAPTIST, LONDON_BAPTIST_NAME } from 'app/constants/london-baptist.js';
 import { setApp } from 'app/actions/AppActions';
 import AppHeader from 'app/components/AppHeader';
+import ContentCard from 'app/components/ContentCard';
 import ConfessionsCreedsContentCard from 'app/components/ConfessionsCreeds/content-card';
 
 class ConfessionsCreeds extends Component {
@@ -49,8 +48,7 @@ class ConfessionsCreeds extends Component {
         const { history } = this.props
 
         this.setState({
-            showContent: false,
-            selection: value
+            showContent: false
         });
 
         history.push(value);
@@ -60,8 +58,33 @@ class ConfessionsCreeds extends Component {
         }
 
         delay(() => {
-            this.setState({ showContent: true });
+            this.setState({
+                selection: value,
+                showContent: true
+            });
         }, 400);
+    }
+
+    renderDropdown() {
+        const { selection } = this.state;
+
+        return (
+            <Card className="header__dropdown-card">
+                <CardText className="header__dropdown-card-description">
+                    <DropDownMenu
+                        className="header__dropdown"
+                        value={selection}
+                        onChange={this.openUrl}
+                        style={{ width: 350 }}
+                        autoWidth={false}
+                    >
+                        <MenuItem value={null} primaryText="Select a confession or creed" disabled />
+                        <MenuItem value="/confessions-creeds/1689-london-baptist-confession" primaryText="1689 London Baptist Confession of Faith" />
+                        <MenuItem value="westminster" primaryText="Westminster Confession of Faith" />
+                    </DropDownMenu>
+                </CardText>
+            </Card>
+        );
     }
 
     renderContent() {
@@ -100,28 +123,6 @@ class ConfessionsCreeds extends Component {
         );
     }
 
-    renderDropdown() {
-        const { selection } = this.state;
-
-        return (
-            <Card className="header__dropdown-card">
-                <CardText className="header__dropdown-card-description">
-                    <DropDownMenu
-                        className="header__dropdown"
-                        value={selection}
-                        onChange={this.openUrl}
-                        style={{ width: 350 }}
-                        autoWidth={false}
-                    >
-                        <MenuItem value={null} primaryText="Select a confession or creed" disabled />
-                        <MenuItem value="/confessions-creeds/1689-london-baptist-confession" primaryText="1689 London Baptist Confession of Faith" />
-                        <MenuItem value="westminster" primaryText="Westminster Confession of Faith" />
-                    </DropDownMenu>
-                </CardText>
-            </Card>
-        );
-    }
-
     render() {
         const { showHeader } = this.state;
         const { selection, showContent } = this.state;
@@ -136,25 +137,9 @@ class ConfessionsCreeds extends Component {
                 >
                     {this.renderDropdown()}
                 </AppHeader>
-                <div className="confessions-creeds__content">
-                    <CSSTransitionGroup
-                        transitionName="confessionsCreedsCard"
-                        transitionEnter={true}
-                        transitionEnterTimeout={400}
-                        transitionLeave={true}
-                        transitionLeaveTimeout={400}
-                    >
-                        {
-                            showContent
-                                ? (
-                                    <div className="confessions-creeds__content-card-container">
-                                        {this.renderContent()}
-                                    </div>
-                                )
-                                : null
-                        }
-                    </CSSTransitionGroup>
-                </div>
+                <ContentCard setParentState={this.setParentState} showContent={showContent}>
+                    {this.renderContent()}
+                </ContentCard>
             </div>
         );
     }
