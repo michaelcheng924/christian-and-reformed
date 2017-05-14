@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import css from 'classnames';
 import { delay, find, partial, remove } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
@@ -13,7 +14,8 @@ export default class ConfessionsCreedsContentCard extends Component {
         
         this.state = {
             selection: 1,
-            scriptures: {}
+            scriptures: {},
+            showText: false
         };
 
         this.removeScripture = this.removeScripture.bind(this);
@@ -21,8 +23,20 @@ export default class ConfessionsCreedsContentCard extends Component {
         this.showScripture = this.showScripture.bind(this);
     }
 
+    componentDidMount() {
+        this.setState({ showText: true });
+    }
+
     onSelect(event, key, value) {
-        this.setState({ selection: value });
+        this.setState({ showText: false });
+
+        delay(() => {
+            this.setState({
+                selection: value,
+                showText: true
+            });
+        }, 400);
+
     }
 
     showScripture(index, scripture, superscript) {
@@ -65,15 +79,18 @@ export default class ConfessionsCreedsContentCard extends Component {
     }
 
     renderChapter() {
-        const { scriptures, selection } = this.state;
+        const { scriptures, selection, showText } = this.state;
         const { data } = this.props;
 
+        const classnames = css('confessions-creeds__content-card-chapter', {
+            'confessions-creeds__content-card-chapter--show': showText
+        });
+
         return (
-            <div className="confessions-creeds__content-card-chapter">
+            <div className={classnames}>
                 <div className="confessions-creeds__content-card-section">
                     <strong><em>Click superscripts to view Scriptures in a popover without leaving the page.</em></strong>
                 </div>
-
                 {
                     data[selection - 1].content.map((paragraph, index) => {
                         return (
@@ -160,7 +177,6 @@ export default class ConfessionsCreedsContentCard extends Component {
                     </Card>
                 </CardTitle>
                 <CardText>
-                    
                     {this.renderChapter()}
                 </CardText>
             </Card>
