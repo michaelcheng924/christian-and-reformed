@@ -5,6 +5,7 @@ import { delay, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
+import Paper from 'material-ui/Paper';
 
 import { LONDON_BAPTIST, LONDON_BAPTIST_NAME } from 'app/constants/london-baptist.js';
 import { setApp } from 'app/actions/AppActions';
@@ -69,21 +70,19 @@ class ConfessionsCreeds extends Component {
         const { selection } = this.state;
 
         return (
-            <Card className="header__dropdown-card">
-                <CardText className="header__dropdown-card-description">
-                    <DropDownMenu
-                        className="header__dropdown"
-                        value={selection}
-                        onChange={this.openUrl}
-                        style={{ width: 350 }}
-                        autoWidth={false}
-                    >
-                        <MenuItem value={null} primaryText="Select a confession or creed" disabled />
-                        <MenuItem value="/confessions-creeds/1689-london-baptist-confession" primaryText="1689 London Baptist Confession of Faith" />
-                        <MenuItem value="westminster" primaryText="Westminster Confession of Faith" />
-                    </DropDownMenu>
-                </CardText>
-            </Card>
+            <Paper className="header__dropdown-card" zDepth={5}>
+                <DropDownMenu
+                    className="header__dropdown"
+                    value={selection}
+                    onChange={this.openUrl}
+                    style={{ width: 350 }}
+                    autoWidth={false}
+                >
+                    <MenuItem value={null} primaryText="Select a confession or creed" disabled />
+                    <MenuItem value="/confessions-creeds/1689-london-baptist-confession" primaryText="1689 London Baptist Confession of Faith" />
+                    <MenuItem value="westminster" primaryText="Westminster Confession of Faith" />
+                </DropDownMenu>
+            </Paper>
         );
     }
 

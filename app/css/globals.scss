@@ -18,6 +18,24 @@ a {
     text-decoration: none;
 }
 
+progress {
+    background: #FFF;
+    color: #4CAF50;
+    height: 5px;
+
+    &::-webkit-progress-bar {
+        background: #FFF;
+    }
+
+    &::-webkit-progress-value {
+        background: #4CAF50;
+    }
+
+    &::-moz-progress-bar {
+        background: #4CAF50;
+    }
+}
+
 .radio-inline {
     display: inline-block !important;
     margin-right: 15px;
@@ -188,14 +206,6 @@ a {
     &__dropdown-card {
         display: inline-block;
         margin-top: 15px;
-
-        > div {
-            padding-bottom: 0 !important;
-        }
-    }
-
-    &__dropdown-card-description {
-        padding: 0 !important;
     }
 }
 

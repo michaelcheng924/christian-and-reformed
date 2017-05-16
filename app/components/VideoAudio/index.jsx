@@ -4,6 +4,7 @@ import { delay, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
+import Paper from 'material-ui/Paper';
 
 import GOSPEL from 'app/constants/course-gospel';
 import AppHeader from 'app/components/AppHeader';
@@ -67,20 +68,18 @@ class VideoAudo extends Component {
         const { selection } = this.state;
 
         return (
-            <Card className="header__dropdown-card">
-                <CardText className="header__dropdown-card-description">
-                    <DropDownMenu
-                        className="header__dropdown"
-                        value={selection}
-                        onChange={this.openUrl}
-                        style={{ width: 350 }}
-                        autoWidth={false}
-                    >
-                        <MenuItem value={null} primaryText="Select a mini-course" disabled />
-                        <MenuItem value="/video-audio/gospel" primaryText="What is the Gospel?" />
-                    </DropDownMenu>
-                </CardText>
-            </Card>
+            <Paper className="header__dropdown-card" zDepth={5}>
+                <DropDownMenu
+                    className="header__dropdown"
+                    value={selection}
+                    onChange={this.openUrl}
+                    style={{ width: 350 }}
+                    autoWidth={false}
+                >
+                    <MenuItem value={null} primaryText="Select a mini-course" disabled />
+                    <MenuItem value="/video-audio/gospel" primaryText="What is the Gospel?" />
+                </DropDownMenu>
+            </Paper>
         );
     }
 

@@ -437,44 +437,355 @@ const LONDON_BAPTIST = [
                 }
             ]
         ]
+    },
+    {
+        chapter: 4,
+        title: 'Of Creation',
+        topic: ['creation'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "In the beginning it pleased God the Father, Son, and Holy Spirit,",
+                    scriptures: 'John 1:2-3; Heb. 1:2; Job 26:13'
+                },
+                {
+                    superscript: 2,
+                    text: "for the manifestation of the glory of His eternal power,",
+                    scriptures: 'Rom. 1:20'
+                },
+                {
+                    superscript: 3,
+                    text: "wisdom, and goodness, to create or make the world, and all things therein, whether visible or invisible, in the space of six days, and all very good.",
+                    scriptures: 'Col. 1:16; Gen. 1:31'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "After God had made all other creatures, He created man, male and female,",
+                    scriptures: 'Gen. 1:27'
+                },
+                {
+                    superscript: 5,
+                    text: "with reasonable and immortal souls,",
+                    scriptures: 'Gen. 2:7'
+                },
+                {
+                    superscript: 6,
+                    text: "rendering them fit unto that life to God for which they were created; being made after the image of God, in knowledge, righteousness, and true holiness;",
+                    scriptures: 'Eccles. 7:29; Gen. 1:26'
+                },
+                {
+                    superscript: 7,
+                    text: "having the law of God written in their hearts,",
+                    scriptures: 'Rom. 2:14-15'
+                },
+                {
+                    superscript: 8,
+                    text: "and power to fulfill it, and yet under a possibility of transgressing, being left to the liberty of their own will, which was subject to change.",
+                    scriptures: 'Gen. 3:6'
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "Besides the law written in their hearts, they received a command not to eat of the tree of knowledge of good and evil,",
+                    scriptures: 'Gen. 2:17'
+                },
+                {
+                    superscript: 10,
+                    text: "which while they kept, they were happy in their communion with God, and had dominion over the creatures.",
+                    scriptures: 'Gen. 1:26, 28'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 5,
+        title: 'Of Divine Providence',
+        topic: ['providence'],
+        content: [
+            [
+                {
+                    superscript: 11,
+                    text: "God the good Creator of all things, in His infinite power and wisdom does uphold, direct, dispose, and govern all creatures and things,",
+                    scriptures: 'Heb. 1:3; Job 38:11; Isa. 46:10, 11; Ps. 135:6'
+                },
+                {
+                    superscript: 12,
+                    text: "from the greatest even to the least,",
+                    scriptures: 'Matt. 10:29-31'
+                },
+                {
+                    superscript: 13,
+                    text: "by His most wise and holy providence, to the end for the which they were created, according unto His infallible foreknowledge, and the free and immutable counsel of His own will; to the praise of the glory of His wisdom, power, justice, infinite goodness, and mercy.",
+                    scriptures: 'Eph. 1:11'
+                }
+            ],
+            [
+                {
+                    superscript: 14,
+                    text: "Although in relation to the foreknowledge and decree of God, the first cause, all things come to pass immutably and infallibly;",
+                    scriptures: 'Acts 2:23'
+                },
+                {
+                    superscript: 15,
+                    text: "so that there is not anything befalls any by chance, or without His providence;",
+                    scriptures: 'Prov. 16:33'
+                },
+                {
+                    superscript: 16,
+                    text: "yet by the same providence He ordered them to fall out according to the nature of second causes, either necessarily, freely, or contingently.",
+                    scriptures: 'Gen. 8:22'
+                }
+            ],
+            [
+                {
+                    superscript: 17,
+                    text: "God, in his ordinary providence makes use of means,",
+                    scriptures: 'Acts 27:31, 44; Isa. 55:10-11'
+                },
+                {
+                    superscript: 18,
+                    text: "yet is free to work without,",
+                    scriptures: 'Hosea 1:7'
+                },
+                {
+                    superscript: 19,
+                    text: 'above,',
+                    scriptures: 'Rom. 4:19-21'
+                },
+                {
+                    superscript: 20,
+                    text: 'and against them',
+                    scriptures: 'Dan. 3:27'
+                },
+                {
+                    superscript: '',
+                    text: 'at His pleasure.'
+                }
+            ],
+            [
+                {
+                    superscript: 21,
+                    text: "The almighty power, unsearchable wisdom, and infinite goodness of God, so far manifest themselves in His providence, that His determinate counsel extends itself even to the first fall, and all other sinful actions both of angels and men;",
+                    scriptures: 'Rom. 11:32-34; 2 Sam. 24:1; 1 Chron. 21:1'
+                },
+                {
+                    superscript: 22,
+                    text: "and that not by a bare permission, which also He most wisely and powerfully binds, and otherwise orders and governs,",
+                    scriptures: '2 Kings 19:28; Ps. 76:10'
+                },
+                {
+                    superscript: 23,
+                    text: "in a manifold dispensation to His most holy ends;",
+                    scriptures: 'Gen. 1:20; Isa. 10:6-7, 12'
+                },
+                {
+                    superscript: 24,
+                    text: "yet so, as the sinfulness of their acts proceeds only from the creatures, and not from God, who, being most holy and righteous, neither is nor can be the author or approver of sin.",
+                    scriptures: 'Ps. 1:21; 1 John 2:16'
+                }
+            ],
+            [
+                {
+                    superscript: 25,
+                    text: "The most wise, righteous, and gracious God does often times leave for a season His own children to manifold temptations and the corruptions of their own hearts, to chastise them for their former sins, or to discover unto them the hidden strength of corruption and deceitfulness of their hearts, that they may be humbled; and to raise them to a more close and constant dependence for their support upon Himself; and to make them more watchful against all future occasions of sin, and for other just and holy ends.",
+                    scriptures: '2 Chron. 32:25-26, 31; 2 Cor. 12:7-9'
+                },
+                {
+                    superscript: 26,
+                    text: "So that whatsoever befalls any of His elect is by His appointment, for His glory, and their good.",
+                    scriptures: 'Rom. 8:28'
+                }
+            ],
+            [
+                {
+                    superscript: 27,
+                    text: "As for those wicked and ungodly men whom God, as the righteous judge, for former sin does blind and harden;",
+                    scriptures: 'Rom. 1:24-26, 28, 11:7-8'
+                },
+                {
+                    superscript: 28,
+                    text: "from them He not only withholds His grace, whereby they might have been enlightened in their understanding, and wrought upon their hearts;",
+                    scriptures: 'Deut. 29:4'
+                },
+                {
+                    superscript: 29,
+                    text: "but sometimes also withdraws the gifts which they had,",
+                    scriptures: 'Matt. 13:12'
+                },
+                {
+                    superscript: 30,
+                    text: "and exposes them to such objects as their corruption makes occasion of sin;",
+                    scriptures: 'Deut. 2:30; 2 Kings 8:12-13'
+                },
+                {
+                    superscript: 31,
+                    text: "and withal, gives them over to their own lusts, the temptations of the world, and the power of Satan,",
+                    scriptures: 'Ps. 81:11-12; 2 Thess. 2:10-12'
+                },
+                {
+                    superscript: 32,
+                    text: "whereby it comes to pass that they harden themselves, under those means which God uses for the softening of others.",
+                    scriptures: 'Exod. 8:15, 32; Isa. 6:9-10; 1 Pet. 2:7-8'
+                }
+            ],
+            [
+                {
+                    superscript: 33,
+                    text: "As the providence of God does in general reach to all creatures, so after a more special manner it takes care of His church, and disposes of all things to the good thereof.",
+                    scriptures: '1 Tim. 4:10; Amos 9:8-9; Isa. 43:3-5'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 6,
+        title: 'Of the Fall of Man, of Sin, and of the Punishment Thereof',
+        topic: ['sin'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Although God created man upright and perfect, and gave him a righteous law, which had been unto life had he kept it, and threatened death upon the breach thereof,",
+                    scriptures: 'Gen. 2:16-17'
+                },
+                {
+                    superscript: 2,
+                    text: "yet he did not long abide in this honor; Satan using the subtlety of the serpent to subdue Eve, then by her seducing Adam, who, without any compulsion, did willfully transgress the law of their creation, and the command given to them, in eating the forbidden fruit,",
+                    scriptures: 'Gen. 3:12-13; 2 Cor. 11:3'
+                },
+                {
+                    superscript: '',
+                    text: "which God was pleased, according to His wise and holy counsel to permit, having purposed to order it to His own glory."
+                }
+            ],
+            [
+                {
+                    superscript: 3,
+                    text: "Our first parents, by this sin, fell from their original righteousness and communion with God, and we in them whereby death came upon all:",
+                    scriptures: 'Rom. 3:23'
+                },
+                {
+                    superscript: 4,
+                    text: "all becoming dead in sin,",
+                    scriptures: 'Rom 5:12, etc.'
+                },
+                {
+                    superscript: 5,
+                    text: "and wholly defiled in all the faculties and parts of soul and body.",
+                    scriptures: 'Titus 1:15; Gen. 6:5; Jer. 17:9; Rom. 3:10-19'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "They being the root, and by God's appointment, standing in the room and stead of all mankind, the guilt of the sin was imputed, and corrupted nature conveyed, to all their posterity descending from them by ordinary generation,",
+                    scriptures: 'Rom. 5:12-19; 1 Cor. 15:21-22, 45, 49'
+                },
+                {
+                    superscript: 7,
+                    text: "being now conceived in sin,",
+                    scriptures: 'Ps. 51:5; Job 14:4'
+                },
+                {
+                    superscript: 8,
+                    text: "and by nature children of wrath,",
+                    scriptures: 'Eph. 2:3'
+                },
+                {
+                    superscript: 9,
+                    text: "the servants of sin, the subjects of death,",
+                    scriptures: 'Rom. 6:20, 5:12'
+                },
+                {
+                    superscript: 10,
+                    text: "and all other miseries, spiritual, temporal, and eternal, unless the Lord Jesus set them free.",
+                    scriptures: 'Heb. 2:14-15; 1 Thess. 1:10'
+                }
+            ],
+            [
+                {
+                    superscript: 11,
+                    text: "From this original corruption, whereby we are utterly indisposed, disabled, and made opposite to all good, and wholly inclined to all evil,",
+                    scriptures: 'Rom. 8:7; Col. 1:21'
+                },
+                {
+                    superscript: 12,
+                    text: "do proceed all actual transgressions.",
+                    scriptures: 'James 1:14-15; Matt. 15:19'
+                }
+            ],
+            [
+                {
+                    superscript: 13,
+                    text: "The corruption of nature, during this life, does remain in those that are regenerated;",
+                    scriptures: 'Rom. 7:18, 23; Eccles. 7:20; 1 John 1:8'
+                },
+                {
+                    superscript: 14,
+                    text: "and although it be through Christ pardoned and mortified, yet both itself, and the first motions thereof, are truly and properly sin.",
+                    scriptures: 'Rom. 7:23-25; Gal. 5:17'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 7,
+        title: "Of God's Covenant",
+        topic: ['covenant'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Moreover, man having brought himself under the curse of the law by his fall, it pleased the Lord to make a covenant of grace,",
+                    scriptures: 'Gen. 2:17; Gal. 3:10; Rom. 3:20-21'
+                }
+            ],
+            [
+                {
+                    superscript: 2,
+                    text: "wherein He freely offers unto sinners life and salvation by Jesus Christ, requiring of them faith in Him, that they may be saved;",
+                    scriptures: 'Rom. 5:12-19; 1 Cor. 15:21-22, 45, 49'
+                },
+                {
+                    superscript: 3,
+                    text: "being now conceived in sin,",
+                    scriptures: 'Rom. 8:3; Mark 16:15-16; John 3:16'
+                },
+                {
+                    superscript: 4,
+                    text: "and promising to give unto all those that are ordained unto eternal life, His Holy Spirit, to make them willing and able to believe.",
+                    scriptures: 'Ezek. 36:26-27; John 6:44-45; Ps. 110:3'
+                }
+            ],
+            [
+                {
+                    superscript: 5,
+                    text: "This covenant is revealed in the gospel; first of all to Adam in the promise of salvation by the seed of the woman,",
+                    scriptures: 'Gen. 3:15'
+                },
+                {
+                    superscript: 6,
+                    text: "and afterwards by farther steps, until the full discovery thereof was completed in the New Testament;",
+                    scriptures: 'Heb. 1:1'
+                },
+                {
+                    superscript: 7,
+                    text: "and it is founded in that eternal covenant transaction that was between the Father and the Son about the redemption of the elect;",
+                    scriptures: '2 Tim. 1:9; Titus 1:2'
+                },
+                {
+                    superscript: 8,
+                    text: "and it is alone by the grace of this covenant that all the posterity of fallen Adam that ever were saved did obtain life and blessed immortality, man being now utterly incapable of acceptance with God upon those terms on which Adam stood in his state of innocency. ",
+                    scriptures: 'Heb. 11:6, 13; Rom. 4:1-2, &c.; Acts 4:12; John 8:56'
+                }
+            ]
+        ]
     }
 ];
-// Chapter 4: Of Creation
-// Paragraph 1. In the beginning it pleased God the Father, Son, and Holy Spirit, (John 1:2, 3; Heb. 1:2; Job 26:13) for the manifestation of the glory of His eternal power, (Rom. 1:20) wisdom, and goodness, to create or make the world, and all things therein, whether visible or invisible, in the space of six days, and all very good. (Col. 1:16; Gen. 1:31)
-
-// Paragraph 2. After God had made all other creatures, He created man, male and female, (Gen. 1:27) with reasonable and immortal souls, (Gen. 2:7) rendering them fit unto that life to God for which they were created; being made after the image of God, in knowledge, righteousness, and true holiness; (Eccles. 7:29; Gen. 1:26) having the law of God written in their hearts, (Rom. 2:14, 15) and power to fulfill it, and yet under a possibility of transgressing, being left to the liberty of their own will, which was subject to change. (Gen. 3:6)
-
-// Paragraph 3. Besides the law written in their hearts, they received a command not to eat of the tree of knowledge of good and evil, (Gen. 2:17) which while they kept, they were happy in their communion with God, and had dominion over the creatures.  (Gen. 1:26, 28)
-// Chapter 5: Of Divine Providence
-// Paragraph 1. God the good Creator of all things, in His infinite power and wisdom does uphold, direct, dispose, and govern all creatures and things, (Heb. 1:3; Job 38:11; Isa. 46:10, 11; Ps. 135:6) from the greatest even to the least, (Matt. 10:29-31) by His most wise and holy providence, to the end for the which they were created, according unto His infallible foreknowledge, and the free and immutable counsel of His own will; to the praise of the glory of His wisdom, power, justice, infinite goodness, and mercy. (Eph. 1:11)
-
-// Paragraph 2. Although in relation to the foreknowledge and decree of God, the first cause, all things come to pass immutably and infallibly; (Acts 2:23) so that there is not anything befalls any by chance, or without His providence; (Prov. 16:33) yet by the same providence He ordered them to fall out according to the nature of second causes, either necessarily, freely, or contingently. (Gen. 8:22)
-
-// Paragraph 3. God, in his ordinary providence makes use of means, (Acts 27:31, 44; Isa. 55:10, 11) yet is free to work without, (Hosea 1:7) above, (Rom. 4:19-21) and against them (Dan. 3:27) at His pleasure. 
-
-// Paragraph 4. The almighty power, unsearchable wisdom, and infinite goodness of God, so far manifest themselves in His providence, that His determinate counsel extends itself even to the first fall, and all other sinful actions both of angels and men; (Rom. 11:32-34; 2 Sam. 24:1; 1 Chron. 21:1) and that not by a bare permission, which also He most wisely and powerfully binds, and otherwise orders and governs, (2 Kings 19:28; Ps. 76:10) in a manifold dispensation to His most holy ends; (Gen. 1:20; Isa. 10:6, 7, 12) yet so, as the sinfulness of their acts proceeds only from the creatures, and not from God, who, being most holy and righteous, neither is nor can be the author or approver of sin. (Ps. 1:21; 1 John 2:16)
-
-// Paragraph 5. The most wise, righteous, and gracious God does often times leave for a season His own children to manifold temptations and the corruptions of their own hearts, to chastise them for their former sins, or to discover unto them the hidden strength of corruption and deceitfulness of their hearts, that they may be humbled; and to raise them to a more close and constant dependence for their support upon Himself; and to make them more watchful against all future occasions of sin, and for other just and holy ends. (2 Chron. 32:25, 26, 31; 2 Cor. 12:7-9) So that whatsoever befalls any of His elect is by His appointment, for His glory, and their good. (Rom. 8:28)
-
-// Paragraph 6. As for those wicked and ungodly men whom God, as the righteous judge, for former sin does blind and harden; (Rom. 1:24-26, 28, 11:7, 8) from them He not only withholds His grace, whereby they might have been enlightened in their understanding, and wrought upon their hearts; (Deut. 29:4) but sometimes also withdraws the gifts which they had, (Matt. 13:12) and exposes them to such objects as their corruption makes occasion of sin; (Deut. 2:30; 2 Kings 8:12, 13) and withal, gives them over to their own lusts, the temptations of the world, and the power of Satan, (Ps. 81:11, 12; 2 Thess. 2:10-12) whereby it comes to pass that they harden themselves, under those means which God uses for the softening of others. (Exod. 8:15, 32; Isa. 6:9, 10; 1 Pet. 2:7, 8)
-
-// Paragraph 7. As the providence of God does in general reach to all creatures, so after a more special manner it takes care of His church, and disposes of all things to the good thereof.  (1 Tim. 4:10; Amos 9:8, 9; Isa. 43:3-5)
-// Chapter 6: Of The Fall Of Man, Of Sin, And Of The Punishment Thereof
-// Paragraph 1. Although God created man upright and perfect, and gave him a righteous law, which had been unto life had he kept it, and threatened death upon the breach thereof, (Gen. 2:16, 17) yet he did not long abide in this honor; Satan using the subtlety of the serpent to subdue Eve, then by her seducing Adam, who, without any compulsion, did willfully transgress the law of their creation, and the command given to them, in eating the forbidden fruit, (Gen. 3:12, 13; 2 Cor. 11:3) which God was pleased, according to His wise and holy counsel to permit, having purposed to order it to His own glory.
-
-// Paragraph 2. Our first parents, by this sin, fell from their original righteousness and communion with God, and we in them whereby death came upon all: (Rom. 3:23) all becoming dead in sin, (Rom 5:12, etc.) and wholly defiled in all the faculties and parts of soul and body.  (Titus 1:15; Gen. 6:5; Jer. 17:9; Rom. 3:10-19)
-
-// Paragraph 3. They being the root, and by God's appointment, standing in the room and stead of all mankind, the guilt of the sin was imputed, and corrupted nature conveyed, to all their posterity descending from them by ordinary generation, (Rom. 5:12-19; 1 Cor. 15:21, 22, 45, 49) being now conceived in sin, (Ps. 51:5; Job 14:4) and by nature children of wrath, (Eph. 2:3) the servants of sin, the subjects of death, (Rom. 6:20, 5:12) and all other miseries, spiritual, temporal, and eternal, unless the Lord Jesus set them free.  (Heb. 2:14, 15; 1 Thess. 1:10)
-
-// Paragraph 4. From this original corruption, whereby we are utterly indisposed, disabled, and made opposite to all good, and wholly inclined to all evil, (Rom. 8:7; Col. 1:21) do proceed all actual transgressions.  (James 1:14, 15; Matt. 15:19)
-
-// Paragraph 5. The corruption of nature, during this life, does remain in those that are regenerated; (Rom. 7:18, 23; Eccles. 7:20; 1 John 1:8) and although it be through Christ pardoned and mortified, yet both itself, and the first motions thereof, are truly and properly sin.  (Rom. 7:23-25; Gal. 5:17)
-// Chapter 7: Of God’s Covenant
-// Paragraph 1. The distance between God and the creature is so great, that although reasonable creatures do owe obedience to Him as their creator, yet they could never have attained the reward of life but by some voluntary condescension on God's part, which He hath been pleased to express by way of covenant.  (Luke 17:10; Job 35:7, 8)
-
-// Paragraph 2. Moreover, man having brought himself under the curse of the law by his fall, it pleased the Lord to make a covenant of grace, (Gen. 2:17; Gal. 3:10; Rom. 3:20, 21) wherein He freely offers unto sinners life and salvation by Jesus Christ, requiring of them faith in Him, that they may be saved; (Rom. 8:3; Mark 16:15,16; John 3:16) and promising to give unto all those that are ordained unto eternal life, His Holy Spirit, to make them willing and able to believe.  (Ezek. 36:26, 27; John 6:44, 45; Ps. 110:3)
-
-// Paragraph 3. This covenant is revealed in the gospel; first of all to Adam in the promise of salvation by the seed of the woman, (Gen. 3:15) and afterwards by farther steps, until the full discovery thereof was completed in the New Testament; (Heb. 1:1) and it is founded in that eternal covenant transaction that was between the Father and the Son about the redemption of the elect; (2 Tim. 1:9; Titus 1:2) and it is alone by the grace of this covenant that all the posterity of fallen Adam that ever were saved did obtain life and blessed immortality, man being now utterly incapable of acceptance with God upon those terms on which Adam stood in his state of innocency.  (Heb. 11:6, 13; Rom. 4:1, 2, &c.; Acts 4:12; John 8:56)
 // Chapter 8: Of Christ The Mediator
 // Paragraph 1. It pleased God, in His eternal purpose, to choose and ordain the Lord Jesus, His only begotten Son, according to the covenant made between them both, to be the mediator between God and man; (Isa. 42:1; 1 Pet. 1:19, 20) the prophet, (Acts 3:22) priest, (Heb. 5:5, 6) and king; (Ps. 2:6; Luke 1:33) head and savior of the church, (Eph. 1:22, 23) the heir of all things, (Heb. 1:2) and judge of the world; (Acts 17:31) unto whom He did from all eternity give a people to be His seed and to be by Him in time redeemed, called, justified, sanctified, and glorified.  (Isa. 53:10; John 17:6; Rom. 8:30)
 
@@ -721,131 +1032,7 @@ const LONDON_BAPTIST = [
 // Paragraph 3. As Christ would have us to be certainly persuaded that there shall be a day of judgment, both to deter all men from sin, (2 Cor. 5:10, 11) and for the greater consolation of the godly in their adversity, (2 Thess. 1:5-7) so will he have the day unknown to men, that they may shake off all carnal security, and be always watchful, because they know not at what hour the Lord will come, (Mark 13:35-37; Luke 12:35-40) and may ever be prepared to say, Come Lord Jesus; come quickly. (Rev. 22:20) Amen.
 
 
-//                 text: "God, having all life, glory, goodness, blessedness, in and of himself, is alone in and unto himself all-sufficient, not standing in need of any creature which he hath made, nor deriving any glory from them, but only manifesting his own glory in, by, unto, and upon them; he is the alone fountain of all being, of whom, through whom, and to whom are all things, and he hath most sovereign dominion over all creatures, to do by them, for them, or upon them, whatsoever himself pleaseth; in his sight all things are open and manifest, his knowledge is infinite, infallible, and independent upon the creature, so as nothing is to him contingent or uncertain; he is most holy in all his counsels, in all his works, and in all his commands; to him is due from angels and men, whatsoever worship, service, or obedience, as creatures they owe unto the Creator, and whatever he is further pleased to require of them.",
-//                 scriptures: ['John 5:26', 'Psalms 148:13', 'Psalms 119:68', 'Job 22:2-3', 'Romans 11:34-36', 'Daniel 4:25, 34-35', 'Hebrews 4:13', 'Ezekiel 11:5', 'Acts 15:18', 'Psalms 145:17', 'Revelation 5:12-14']
-//             },
-//             {
-//                 text: "In this divine and infinite Being there are three subsistences, the Father, the Word or Son, and Holy Spirit, of one substance, power, and eternity, each having the whole divine essence, yet the essence undivided: the Father is of none, neither begotten nor proceeding; the Son is eternally begotten of the Father; the Holy Spirit proceeding from the Father and the Son; all infinite, without beginning, therefore but one God, who is not to be divided in nature and being, but distinguished by several peculiar relative properties and personal relations; which doctrine of the Trinity is the foundation of all our communion with God, and comfortable dependence on him.",
-//                 scriptures: ['1 John 5:7', 'Matthew 28:19', '2 Corinthians 13:14', 'Exodus 3:14', 'John 14:11', '1 Corinthians 8:6', 'John 1:14,18', 'John 15:26', 'Galatians 4:6']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 3,
-//         title: "Of God's Decree",
-//         topic: ['god:decree'],
-//         content: [
-//             {
-//                 text: 'God hath decreed in himself, from all eternity, by the most wise and holy counsel of his own will, freely and unchangeably, all things, whatsoever comes to pass; yet so as thereby is God neither the author of sin nor hath fellowship with any therein; nor is violence offered to the will of the creature, nor yet is the liberty or contingency of second causes taken away, but rather established; in which appears his wisdom in disposing all things, and power and faithfulness in accomplishing his decree.',
-//                 scriptures: ['Isaiah 46:10', 'Ephesians 1:11', 'Hebrews 6:17', 'Romans 9:15, 18', 'James 1:13', '1 John 1:5', 'Acts 4:27-28', 'John 19:11', 'Numbers 23:19', 'Ephesians 1:3-5']
-//             },
-//             {
-//                 text: 'Although God knoweth whatsoever may or can come to pass, upon all supposed conditions, yet hath he not decreed anything, because he foresaw it as future, or as that which would come to pass upon such conditions.',
-//                 scriptures: ['Acts 15:18', 'Romans 9:11, 13, 16, 18']
-//             },
-//             {
-//                 text: 'By the decree of God, for the manifestation of his glory, some men and angels are predestinated, or foreordained to eternal life through Jesus Christ, to the praise of his glorious grace; others being left to act in their sin to their just condemnation, to the praise of his glorious justice.',
-//                 scriptures: ['1 Timothy 5:21', 'Matthew 25:34', 'Ephesians 1:5-6', 'Romans 9:22-23', 'Jude 4']
-//             },
-//             {
-//                 text: 'These angels and men thus predestinated and foreordained, are particularly and unchangeably designed, and their number so certain and definite, that it cannot be either increased or diminished.',
-//                 scriptures: ['2 Timothy 2:19', 'John 13:18']
-//             },
-//             {
-//                 text: 'Those of mankind that are predestinated to life, God, before the foundation of the world was laid, according to his eternal and immutable purpose, and the secret counsel and good pleasure of his will, hath chosen in Christ unto everlasting glory, out of his mere free grace and love, without any other thing in the creature as a condition or cause moving him thereunto.',
-//                 scriptures: ['Ephesians 1:4, 9, 11', 'Romans 8:30', '2 Timothy 1:9', '1 Thessalonians 5:9', 'Romans 9:13, 16', 'Ephesians 2:5, 12']
-//             },
-//             {
-//                 text: 'As God hath appointed the elect unto glory, so he hath, by the eternal and most free purpose of his will, foreordained all the means thereunto; wherefore they who are elected, being fallen in Adam, are redeemed by Christ, are effectually called unto faith in Christ, by his Spirit working in due season, are justified, adopted, sanctified, and kept by his power through faith unto salvation; neither are any other redeemed by Christ, or effectually called, justified, adopted, sanctified, and saved, but the elect only.',
-//                 scriptures: ['1 Peter 1:2', '2 Thessalonians 2:13', '1 Thessalonians 5:9-10', 'Romans 8:30', '2 Thessalonians 2:13', '1 Peter 1:5', 'John 10:26', 'John 17:9', 'John 6:64']
-//             },
-//             {
-//                 text: 'The doctrine of the high mystery of predestination is to be handled with special prudence and care, that men attending the will of God revealed in his Word, and yielding obedience thereunto, may, from the certainty of their effectual vocation, be assured of their eternal election; so shall this doctrine afford matter of praise, reverence, and admiration of God, and of humility, diligence, and abundant consolation to all that sincerely obey the gospel.',
-//                 scriptures: ['1 Thessalonians 1:4-5', '2 Peter 1:10', 'Ephesians 1:6', 'Romans 11:33', 'Romans 11:5-6, 20', 'Luke 10:20']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 4,
-//         title: 'Of Creation',
-//         topic: ['creation'],
-//         content: [
-//             {
-//                 text: 'In the beginning it pleased God the Father, Son, and Holy Spirit, for the manifestation of the glory of his eternal power, wisdom, and goodness, to create or make the world, and all things therein, whether visible or invisible, in the space of six days, and all very good.',
-//                 scriptures: ['John 1:2-3', 'Hebrews 1:2', 'Job 26:13', 'Romans 1:20', 'Colossians 1:16', 'Genesis 1:31']
-//             },
-//             {
-//                 text: 'After God had made all other creatures, he created man, male and female, with reasonable and immortal souls, rendering them fit unto that life to God for which they were created; being made after the image of God, in knowledge, righteousness, and true holiness; having the law of God written in their hearts, and power to fulfil it, and yet under a possibility of transgressing, being left to the liberty of their own will, which was subject to change.',
-//                 scriptures: ['Genesis 1:27', 'Genesis 2:7', 'Ecclesiastes 7:29', 'Genesis 1:26', 'Romans 2:14-15', 'Genesis 3:6']
-//             },
-//             {
-//                 text: 'Besides the law written in their hearts, they received a command not to eat of the tree of knowledge of good and evil, which whilst they kept, they were happy in their communion with God, and had dominion over the creatures.',
-//                 scriptures: ['Genesis 2:17', 'Genesis 1:26, 28']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 5,
-//         title: 'Of Divine Providence',
-//         topic: ['providence'],
-//         content: [
-//             {
-//                 text: 'God the good Creator of all things, in his infinite power and wisdom doth uphold, direct, dispose, and govern all creatures and things, from the greatest even to the least, by his most wise and holy providence, to the end for the which they were created, according unto his infallible foreknowledge, and the free and immutable counsel of his own will; to the praise of the glory of his wisdom, power, justice, infinite goodness, and mercy.',
-//                 scriptures: ['Hebrews 1:3', 'Job 38:11', 'Isaiah 46:10-11', 'Psalms 135:6', 'Matthew 10:29-31', 'Ephesians 1:11']
-//             },
-//             {
-//                 text: 'Although in relation to the foreknowledge and decree of God, the first cause, all things come to pass immutably and infallibly; so that there is not anything befalls any by chance, or without his providence; yet by the same providence he ordereth them to fall out according to the nature of second causes, either necessarily, freely, or contingently.',
-//                 scriptures: ['Acts 2:23', 'Proverbs 16:33', 'Genesis 8:22']
-//             },
-//             {
-//                 text: 'God, in his ordinary providence maketh use of means, yet is free to work without, above, and against them at his pleasure.',
-//                 scriptures: ['Acts 27:31, 44', 'Isaiah 55:10-11', 'Hosea 1:7', 'Romans 4:19-21', 'Daniel 3:27']
-//             },
-//             {
-//                 text: 'The almighty power, unsearchable wisdom, and infinite goodness of God, so far manifest themselves in his providence, that his determinate counsel extendeth itself even to the first fall, and all other sinful actions both of angels and men; and that not by a bare permission, which also he most wisely and powerfully boundeth, and otherwise ordereth and governeth, in a manifold dispensation to his most holy ends; yet so, as the sinfulness of their acts proceedeth only from the creatures, and not from God, who, being most holy and righteous, neither is nor can be the author or approver of sin.',
-//                 scriptures: ['Romans 11:32-34', '2 Samuel 24:1', '1 Chronicles 21:1', '2 Kings 19:28', 'Psalms 76,10', 'Genesis 1:20', 'Isaiah 10:6-7, 12', 'Psalms 1:21', '1 John 2:16']
-//             }, 
-//             {
-//                 text: 'The most wise, righteous, and gracious God doth oftentimes leave for a season his own children to manifold temptations and the corruptions of their own hearts, to chastise them for their former sins, or to discover unto them the hidden strength of corruption and deceitfulness of their hearts, that they may be humbled; and to raise them to a more close and constant dependence for their support upon himself; and to make them more watchful against all future occasions of sin, and for other just and holy ends. So that whatsoever befalls any of his elect is by his appointment, for his glory, and their good. ',
-//                 scriptures: ['2 Chronicles 32:25-26, 31', '2 Corinthians 12:7-9', 'Romans 8:28']
-//             },
-//             {
-//                 text: 'As for those wicked and ungodly men whom God, as the righteous judge, for former sin doth blind and harden; from them he not only withholdeth his grace, whereby they might have been enlightened in their understanding, and wrought upon their hearts; but sometimes also withdraweth the gifts which they had, and exposeth them to such objects as their corruption makes occasion of sin; and withal, gives them over to their own lusts, the temptations of the world, and the power of Satan, whereby it comes to pass that they harden themselves, under those means which God useth for the softening of others.',
-//                 scriptures: ['Romans 1:24-26, 28', 'Romans 11:7-8', 'Deuteronomy 29:4', 'Matthew 13:12', 'Deuteronomy 2:30', '2 Kings 8:12-13', 'Psalms 81:11-12', '2 Thessalonians 2:10-12', 'Exodus 8:15, 32', 'Isaiah 6:9-10', '1 Peter 2:7-8']
-//             },
-//             {
-//                 text: 'As the providence of God doth in general reach to all creatures, so after a more special manner it taketh care of his church, and disposeth of all things to the good thereof.',
-//                 scriptures: ['1 Timothy 4:10', 'Amos 9:8-9', 'Isaiah 43:3-5']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 6,
-//         title: 'Of the Fall of Man, of Sin, and of the Punishment Thereof',
-//         topic: ['sin'],
-//         content: [
-//             {
-//                 text: "Although God created man upright and perfect, and gave him a righteous law, which had been unto life had he kept it, and threatened death upon the breach thereof, yet he did not long abide in this honour; Satan using the subtlety of the serpent to subdue Eve, then by her seducing Adam, who, without any compulsion, did willfully transgress the law of their creation, and the command given unto them, in eating the forbidden fruit, which God was pleased, according to his wise and holy counsel to permit, having purposed to order it to his own glory.",
-//                 scriptures: ['Genesis 2:16-17', 'Genesis 3:12-13', '2 Corinthians 11:3']
-//             },
-//             {
-//                 text: "Our first parents, by this sin, fell from their original righteousness and communion with God, and we in them whereby death came upon all: all becoming dead in sin, and wholly defiled in all the faculties and parts of soul and body.",
-//                 scriptures: ['Romans 3:23', 'Romans 5:12', 'Titus 1:15', 'Genesis 6:5', 'Jeremiah 17:9', 'Romans 3:10-19']
-//             },
-//             {
-//                 text: "They being the root, and by God's appointment, standing in the room and stead of all mankind, the guilt of the sin was imputed, and corrupted nature conveyed, to all their posterity descending from them by ordinary generation, being now conceived in sin, and by nature children of wrath, the servants of sin, the subjects of death, and all other miseries, spiritual, temporal, and eternal, unless the Lord Jesus set them free.",
-//                 scriptures: ['Romans 5:12-19', '1 Corinthians 15:21-22, 45, 49', 'Psalms 51:5', 'Job 14:4', 'Ephesians 2:3', 'Romans 6:20', 'Romans 5:12', 'Hebrews 2:14-15', '1 Thessalonians 1:10']
-//             },
-//             {
-//                 text: "From this original corruption, whereby we are utterly indisposed, disabled, and made opposite to all good, and wholly inclined to all evil, do proceed all actual transgressions.",
-//                 scriptures: ['Romans 8:7', 'Colossians 1:21', 'James 1:14-15', 'Matthew 15:19']
-//             },
-//             {
-//                 text: "The corruption of nature, during this life, doth remain in those that are regenerated; and although it be through Christ pardoned and mortified, yet both itself, and the first motions thereof, are truly and properly sin.",
-//                 scriptures: ['Romans 7:18,23', 'Ecclesiastes 7:20', '1 John 1:8', 'Romans 7:23-25', 'Galatians 5:17']
-//             }
-//         ] 
-//     },
+
 //     {
 //         chapter: 7,
 //         title: "Of God's Covenant",

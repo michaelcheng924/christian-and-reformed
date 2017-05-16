@@ -36,7 +36,6 @@ export default class CatechismTrainingChallenge extends Component {
     onKeyPress(event) {
         if (event.which === 13) {
             event.preventDefault();
-            console.log(this);
             this.onSubmit();
         }
     }

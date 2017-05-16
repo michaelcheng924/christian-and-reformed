@@ -6,6 +6,7 @@ import { delay, find, partial, remove, some } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
+import Paper from 'material-ui/Paper';
 import ClearIcon from 'material-ui-icons/Clear';
 
 export default class ConfessionsCreedsContentCard extends Component {
@@ -157,26 +158,24 @@ export default class ConfessionsCreedsContentCard extends Component {
                     title={name}
                 >
                     <div className="confessions-creeds__content-card-dropdown-label"> Select a chapter from the dropdown below:</div>
-                    <Card className="confessions-creeds__chapter-dropdown">
-                        <CardText className="confessions-creeds__chapter-dropdown-description">
-                            <DropDownMenu
-                                className="confessions-creeds__content-card-dropdown"
-                                value={selection}
-                                maxHeight={400}
-                                onChange={this.onSelect}
-                                style={{ width: '100%' }}
-                                autoWidth={false}
-                            >
-                                {
-                                    data.map((item, index) => {
-                                        return (
-                                            <MenuItem key={index} value={index + 1} primaryText={`Chapter ${item.chapter}:  ${item.title}`} />
-                                        );
-                                    })
-                                }
-                            </DropDownMenu>
-                        </CardText>
-                    </Card>
+                    <Paper className="confessions-creeds__chapter-dropdown" zDepth={5}>
+                        <DropDownMenu
+                            className="confessions-creeds__content-card-dropdown"
+                            value={selection}
+                            maxHeight={400}
+                            onChange={this.onSelect}
+                            style={{ width: '100%' }}
+                            autoWidth={false}
+                        >
+                            {
+                                data.map((item, index) => {
+                                    return (
+                                        <MenuItem key={index} value={index + 1} primaryText={`Chapter ${item.chapter}:  ${item.title}`} />
+                                    );
+                                })
+                            }
+                        </DropDownMenu>
+                    </Paper>
                 </CardTitle>
                 <CardText>
                     {this.renderChapter()}

@@ -7,6 +7,7 @@ import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
+import Paper from 'material-ui/Paper';
 
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
@@ -72,21 +73,19 @@ class CatechismTraining extends Component {
         const { selection } = this.state;
 
         return (
-            <Card className="header__dropdown-card">
-                <CardText className="header__dropdown-card-description">
-                    <DropDownMenu
-                        className="header__dropdown"
-                        value={selection}
-                        onChange={this.openUrl}
-                        style={{ width: 350 }}
-                        autoWidth={false}
-                    >
-                        <MenuItem value={null} primaryText="Select a catechism" disabled />
-                        <MenuItem value="/catechism-training/catechism-boys-girls" primaryText="Catechism for Boys and Girls" />
-                        <MenuItem value="/catechism-training/westminster-shorter" primaryText="Westminster Shorter Catechism" />
-                    </DropDownMenu>
-                </CardText>
-            </Card>
+            <Paper className="header__dropdown-card" zDepth={5}>
+                <DropDownMenu
+                    className="header__dropdown"
+                    value={selection}
+                    onChange={this.openUrl}
+                    style={{ width: 350 }}
+                    autoWidth={false}
+                >
+                    <MenuItem value={null} primaryText="Select a catechism" disabled />
+                    <MenuItem value="/catechism-training/catechism-boys-girls" primaryText="Catechism for Boys and Girls" />
+                    <MenuItem value="/catechism-training/westminster-shorter" primaryText="Westminster Shorter Catechism" />
+                </DropDownMenu>
+            </Paper>
         );
     }
 

@@ -52,6 +52,9 @@ app.use((req, res) => {
                 <title>${title}</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+                <link rel="icon" 
+                      type="image/png" 
+                      href="/tools-icon.png">
 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 

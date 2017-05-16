@@ -15,26 +15,109 @@
     }
 
     &__course-content {
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: -15px;
+    }
+
+    &__media {
+        margin-top: 15px;
     }
 
     &__questions {
+        background: #455A64 !important;
+        color: #FFF;
+        height: 250px;
+        margin-top: 15px;
         padding: 20px;
+        width: 500px;
 
         h2 {
-            margin-bottom: 10px;
+            color: #FFF;
+            margin: 15px 0 0;
+        }
+
+        small {
+            color: #FFF;
+        }
+
+        &--correct {
+            background: #388E3C !important;
+        }
+
+        &--wrong {
+            background: #F44336 !important;
+        }
+
+        &--finished {
+            align-items: center;
+            background: #FFF !important;
+            display: flex;
+            justify-content: center;
         }
     }
 
+    &__questions-progress {
+        align-items: center;
+        color: #FFF;
+        display: flex;
+    }
+
+    &__questions-progress-bar {
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+
+    &__question {
+        color: #FFF;
+    }
+
+    &__blank {
+        width: 160px !important;
+
+        > div {
+            color: #FFEB3B !important;
+            left: 54px;
+        }
+
+        > input {
+            color: #FFEB3B !important;
+            text-align: center;
+        }
+    }
+
+    &__true-false-container {
+        color: #FFF;
+        margin-top: 15px;
+    }
+
     &__true-false {
-        color: #558B2F;
+        color: #FFEB3B;
         cursor: pointer;
 
         &:hover {
             font-weight: bold;
             text-decoration: underline;
+        }
+    }
+
+    &__question-submit {
+        margin-top: 10px;
+    }
+
+    &__finished {
+        text-align: center;
+
+        h2 {
+            color: #388E3C;
+        }
+
+        svg {
+            fill: #388E3C !important;
+            height: 40px !important;
+            width: 40px !important;
         }
     }
 }
