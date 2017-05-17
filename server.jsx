@@ -9,7 +9,6 @@ import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import { RoutingContext, match } from 'react-router';
 import createLocation from 'history/lib/createLocation';
-import routes from 'app/routes';
 import { makeStore } from 'app/helpers';
 import serverRoutes from 'app/server/routes';
 import App from 'app/components/App';
@@ -41,7 +40,7 @@ app.use((req, res) => {
     const initialState = store.getState();
 
     const data = find(APP_LIST, app => app.url === req.path);
-    const title = data ? data.title : 'Reformed Toolbox: Technology Serving Truth';
+    const title = data ? data.title : 'Christian and Reformed: Technology Serving Historic Truth';
 
     const HTML = `
         <!DOCTYPE html>
@@ -54,7 +53,7 @@ app.use((req, res) => {
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
                 <link rel="icon" 
                       type="image/png" 
-                      href="/tools-icon.png">
+                      href="/cross-icon.png">
 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 

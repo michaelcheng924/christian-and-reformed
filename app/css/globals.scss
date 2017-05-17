@@ -201,7 +201,10 @@ progress {
     display: flex;
     height: 174px;
     justify-content: center;
+    padding-bottom: 20px;
+    position: relative;
     text-align: center;
+    transition: all .4s ease-in;
 
     &__dropdown-card {
         display: inline-block;

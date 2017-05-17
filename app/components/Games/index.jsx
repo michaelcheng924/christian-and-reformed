@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-import css from 'classnames';
-import { delay } from 'lodash';
-import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
-import { Card, CardTitle, CardText } from 'material-ui/Card';
+import { withRouter } from 'react-router-dom';
+import { delay, partial } from 'lodash';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
+import { Card, CardTitle, CardText } from 'material-ui/Card';
 
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
@@ -15,7 +12,7 @@ import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
 import CatechismTrainingContentCard from 'app/components/CatechismTraining/content-card';
 
-class CatechismTraining extends Component {
+class Games extends Component {
     constructor(props) {
         super(props);
 
@@ -31,14 +28,17 @@ class CatechismTraining extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Catechism Training: Tools to Help You and Your Family Learn the Catechism Faster';
-            document.body.style.background = '#F3E5F5';
+            document.title = 'Christian and Reformed - Games: Learning the Bible can be fun';
+            document.body.style.background = '#FFF3E0';
 
             const pathname = window.location.pathname;
 
-            if (pathname === '/catechism-training/catechism-boys-girls') {
+            if (pathname === '/games/catechism-boys-girls') {
                 this.setState({ selection: pathname });
-                document.title = 'Catechism for Boys and Girls Training';
+                document.title = 'Christian and Reformed - Games: Catechism for Boys and Girls Training';
+            } else if (pathname === 'games/catechism-westminster-shorter') {
+                this.setState({ selection: pathname });
+                document.title = 'Christian and Reformed - Games: Westminster Shorter Catechism Training';
             }
         }
     }
@@ -56,13 +56,12 @@ class CatechismTraining extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && value === '/catechism-training/catechism-boys-girls') {
-            document.title = 'Catechism for Boys and Girls Training';
+        if (typeof window !== 'undefined' && value === '/games/catechism-boys-girls') {
+            document.title = 'Christian and Reformed - Games: Catechism for Boys and Girls Training';
         }
 
         delay(() => {
             this.setState({
-                questionNumber: 1,
                 selection: value,
                 showContent: true
             });
@@ -81,9 +80,9 @@ class CatechismTraining extends Component {
                     style={{ width: 350 }}
                     autoWidth={false}
                 >
-                    <MenuItem value={null} primaryText="Select a catechism" disabled />
-                    <MenuItem value="/catechism-training/catechism-boys-girls" primaryText="Catechism for Boys and Girls" />
-                    <MenuItem value="/catechism-training/westminster-shorter" primaryText="Westminster Shorter Catechism" />
+                    <MenuItem value={null} primaryText="Select a game" disabled />
+                    <MenuItem value="/games/catechism-boys-girls" primaryText="Catechism for Boys and Girls Training" />
+                    <MenuItem value="/games/catechism-westminster-shorter" primaryText="Westminster Shorter Catechism Training" />
                 </DropDownMenu>
             </Paper>
         );
@@ -94,54 +93,45 @@ class CatechismTraining extends Component {
 
         if (!selection) {
             return (
-                <Card className="catechism-training__content-card">
+                <Card className="games__content-card">
                     <CardTitle
-                        className="catechism-training__content-card-title"
-                        title="Select a catechism above"
+                        className="games__content-card-title"
+                        title="Select a game above"
                     />
                     <CardText>
-                        Catechism questions will appear here.
+                        Game content will appear here.
                     </CardText>
                 </Card>
             );
         }
 
-        let data;
-        let name;
+        let Component;
 
         switch (selection) {
-            case '/catechism-training/catechism-boys-girls':
-                data = BOYS_GIRLS;
-                name = 'Catechism for Boys and Girls';
+            case '/games/catechism-boys-girls':
+                Component = <CatechismTrainingContentCard data={BOYS_GIRLS.data} name={BOYS_GIRLS.name} />
                 break;
-            case '/catechism-training/westminster-shorter':
-                data = WESTMINSTER_SHORTER;
-                name = 'Westminster Shorter Catechism';
+            case '/games/catechism-westminster-shorter':
+                Component = <CatechismTrainingContentCard data={WESTMINSTER_SHORTER.data} name={WESTMINSTER_SHORTER.name} />
                 break;
             default:
                 data = [];
-                name = 'Select a catechism above'
+                name = 'Select a game above'
         }
 
-        return (
-            <CatechismTrainingContentCard data={data} name={name} />
-        );
+        return Component;
     }
 
     render() {
-        const { setOpacity, showContent, showHeader } = this.state;
-
-        const classnames = css('catechism-training__content-card-container', {
-            'catechism-training__content-card-container--opacity': setOpacity
-        });
+        const { showContent, showHeader } = this.state;
 
         return (
-            <div className="catechism-training">
+            <div className="games">
                 <AppHeader
                     setParentState={this.setParentState}
                     showHeader={showHeader}
-                    title="Catechism Training"
-                    subtitle="An app to help you learn the catechism faster"
+                    title="Games"
+                    subtitle="Learning the Bible can be fun"
                 >
                     {this.renderDropdown()}
                 </AppHeader>
@@ -153,4 +143,4 @@ class CatechismTraining extends Component {
     }
 }
 
-export default withRouter(CatechismTraining);
+export default withRouter(Games);

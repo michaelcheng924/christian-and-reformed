@@ -7,7 +7,7 @@ import QuestionAnswerIcon from 'material-ui-icons/QuestionAnswer';
 export const APP_LIST = [
     {
         title: 'Video/Audio Mini-courses',
-        description: 'Video/audio on a variety of topics, with questions to test your understanding',
+        description: 'Video/audio on select topics, with questions to test your understanding',
         url: '/video-audio',
         background: '#EF5350',
         icon: <PlayCircleFilledIcon />
@@ -27,11 +27,11 @@ export const APP_LIST = [
         icon: <LibraryBooksIcon />
     },
     {
-        title: 'Catechism Practice',
-        description: 'An app to help you learn the catechism faster',
-        url: '/catechism-training',
-        background: '#BA68C8',
-        icon: <QuestionAnswerIcon />
+        title: 'Games',
+        description: 'Learning the Bible can be fun',
+        url: '/games',
+        background: '#EF6C00',
+        icon: <i className="fa fa-puzzle-piece" aria-hidden="true" />
     },
 
 ];

@@ -14,7 +14,7 @@ import Home from 'app/components/Home';
 import VideoAudio from 'app/components/VideoAudio';
 import ChurchFinder from 'app/components/ChurchFinder';
 import ConfessionsCreeds from 'app/components/ConfessionsCreeds';
-import CatechismTraining from 'app/components/CatechismTraining';
+import Games from 'app/components/Games';
 
 class App extends Component {
     componentWillMount() {
@@ -58,7 +58,7 @@ class App extends Component {
                         <Route path="/video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
                         <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
-                        <Route path="/catechism-training" component={CatechismTraining}/>
+                        <Route path="/games" component={Games}/>
                         {this.renderBack()}
                     </div>
                 </MuiThemeProvider>

@@ -22,8 +22,8 @@ export default class Header extends Component {
                     transitionLeave={false}
                 >
                     <div className={classNames}>
-                        <div className="home__header-title">Reformed Toolbox</div>
-                        <div className="home__header-tagline">Technology Serving Truth</div>
+                        <div className="home__header-title">Christian and Reformed</div>
+                        <div className="home__header-tagline">Technology Serving Historic Truth</div>
                     </div>
                 </CSSTransitionGroup>
             </div>
