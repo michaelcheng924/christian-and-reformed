@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
@@ -22,10 +21,15 @@ export default class ConfessionsCreedsContentCard extends Component {
         this.removeScripture = this.removeScripture.bind(this);
         this.onSelect = this.onSelect.bind(this);
         this.showScripture = this.showScripture.bind(this);
+        this.showToolTip = this.showToolTip.bind(this);
     }
 
     componentDidMount() {
         this.setState({ showText: true });
+    }
+
+    showToolTip(superscript, scriptures) {
+
     }
 
     onSelect(event, key, value) {
@@ -90,7 +94,7 @@ export default class ConfessionsCreedsContentCard extends Component {
         });
 
         return (
-            <div className={classnames}>
+            <div className={classnames} ref={container => this.container = container}>
                 <div className="confessions-creeds__content-card-section">
                     <strong><em>Click superscripts to view Scriptures in a popover without leaving the page.</em></strong>
                 </div>
@@ -102,7 +106,17 @@ export default class ConfessionsCreedsContentCard extends Component {
                                 {
                                     paragraph.map(section => {
                                         return (
-                                            <span key={section.superscript}>{section.text}<sup className="confessions-creeds__superscript" onClick={partial(this.showScripture, index, section.scriptures, section.superscript)}>{`${section.superscript} `}</sup></span>
+                                            <span key={section.superscript}>
+                                                {section.text}
+                                                <sup
+                                                    className={`confessions-creeds__superscript confessions-creeds__superscript-${section.superscript}`}
+                                                    onClick={partial(this.showScripture, index, section.scriptures, section.superscript)}
+                                                    onMouseOver={partial(this.showToolTip, section.superscript, section.scriptures)}
+                                                    title={section.scriptures}
+                                                >
+                                                    {`${section.superscript} `}
+                                                </sup>
+                                            </span>
                                         );
                                     })
                                 }

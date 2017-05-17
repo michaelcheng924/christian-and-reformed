@@ -508,56 +508,56 @@ const LONDON_BAPTIST = [
         content: [
             [
                 {
-                    superscript: 11,
+                    superscript: 1,
                     text: "God the good Creator of all things, in His infinite power and wisdom does uphold, direct, dispose, and govern all creatures and things,",
                     scriptures: 'Heb. 1:3; Job 38:11; Isa. 46:10, 11; Ps. 135:6'
                 },
                 {
-                    superscript: 12,
+                    superscript: 2,
                     text: "from the greatest even to the least,",
                     scriptures: 'Matt. 10:29-31'
                 },
                 {
-                    superscript: 13,
+                    superscript: 3,
                     text: "by His most wise and holy providence, to the end for the which they were created, according unto His infallible foreknowledge, and the free and immutable counsel of His own will; to the praise of the glory of His wisdom, power, justice, infinite goodness, and mercy.",
                     scriptures: 'Eph. 1:11'
                 }
             ],
             [
                 {
-                    superscript: 14,
+                    superscript: 4,
                     text: "Although in relation to the foreknowledge and decree of God, the first cause, all things come to pass immutably and infallibly;",
                     scriptures: 'Acts 2:23'
                 },
                 {
-                    superscript: 15,
+                    superscript: 5,
                     text: "so that there is not anything befalls any by chance, or without His providence;",
                     scriptures: 'Prov. 16:33'
                 },
                 {
-                    superscript: 16,
+                    superscript: 6,
                     text: "yet by the same providence He ordered them to fall out according to the nature of second causes, either necessarily, freely, or contingently.",
                     scriptures: 'Gen. 8:22'
                 }
             ],
             [
                 {
-                    superscript: 17,
+                    superscript: 7,
                     text: "God, in his ordinary providence makes use of means,",
                     scriptures: 'Acts 27:31, 44; Isa. 55:10-11'
                 },
                 {
-                    superscript: 18,
+                    superscript: 8,
                     text: "yet is free to work without,",
                     scriptures: 'Hosea 1:7'
                 },
                 {
-                    superscript: 19,
+                    superscript: 9,
                     text: 'above,',
                     scriptures: 'Rom. 4:19-21'
                 },
                 {
-                    superscript: 20,
+                    superscript: 10,
                     text: 'and against them',
                     scriptures: 'Dan. 3:27'
                 },
@@ -568,73 +568,73 @@ const LONDON_BAPTIST = [
             ],
             [
                 {
-                    superscript: 21,
+                    superscript: 11,
                     text: "The almighty power, unsearchable wisdom, and infinite goodness of God, so far manifest themselves in His providence, that His determinate counsel extends itself even to the first fall, and all other sinful actions both of angels and men;",
                     scriptures: 'Rom. 11:32-34; 2 Sam. 24:1; 1 Chron. 21:1'
                 },
                 {
-                    superscript: 22,
+                    superscript: 12,
                     text: "and that not by a bare permission, which also He most wisely and powerfully binds, and otherwise orders and governs,",
                     scriptures: '2 Kings 19:28; Ps. 76:10'
                 },
                 {
-                    superscript: 23,
+                    superscript: 13,
                     text: "in a manifold dispensation to His most holy ends;",
                     scriptures: 'Gen. 1:20; Isa. 10:6-7, 12'
                 },
                 {
-                    superscript: 24,
+                    superscript: 14,
                     text: "yet so, as the sinfulness of their acts proceeds only from the creatures, and not from God, who, being most holy and righteous, neither is nor can be the author or approver of sin.",
                     scriptures: 'Ps. 1:21; 1 John 2:16'
                 }
             ],
             [
                 {
-                    superscript: 25,
+                    superscript: 15,
                     text: "The most wise, righteous, and gracious God does often times leave for a season His own children to manifold temptations and the corruptions of their own hearts, to chastise them for their former sins, or to discover unto them the hidden strength of corruption and deceitfulness of their hearts, that they may be humbled; and to raise them to a more close and constant dependence for their support upon Himself; and to make them more watchful against all future occasions of sin, and for other just and holy ends.",
                     scriptures: '2 Chron. 32:25-26, 31; 2 Cor. 12:7-9'
                 },
                 {
-                    superscript: 26,
+                    superscript: 16,
                     text: "So that whatsoever befalls any of His elect is by His appointment, for His glory, and their good.",
                     scriptures: 'Rom. 8:28'
                 }
             ],
             [
                 {
-                    superscript: 27,
+                    superscript: 17,
                     text: "As for those wicked and ungodly men whom God, as the righteous judge, for former sin does blind and harden;",
                     scriptures: 'Rom. 1:24-26, 28, 11:7-8'
                 },
                 {
-                    superscript: 28,
+                    superscript: 18,
                     text: "from them He not only withholds His grace, whereby they might have been enlightened in their understanding, and wrought upon their hearts;",
                     scriptures: 'Deut. 29:4'
                 },
                 {
-                    superscript: 29,
+                    superscript: 19,
                     text: "but sometimes also withdraws the gifts which they had,",
                     scriptures: 'Matt. 13:12'
                 },
                 {
-                    superscript: 30,
+                    superscript: 20,
                     text: "and exposes them to such objects as their corruption makes occasion of sin;",
                     scriptures: 'Deut. 2:30; 2 Kings 8:12-13'
                 },
                 {
-                    superscript: 31,
+                    superscript: 21,
                     text: "and withal, gives them over to their own lusts, the temptations of the world, and the power of Satan,",
                     scriptures: 'Ps. 81:11-12; 2 Thess. 2:10-12'
                 },
                 {
-                    superscript: 32,
+                    superscript: 22,
                     text: "whereby it comes to pass that they harden themselves, under those means which God uses for the softening of others.",
                     scriptures: 'Exod. 8:15, 32; Isa. 6:9-10; 1 Pet. 2:7-8'
                 }
             ],
             [
                 {
-                    superscript: 33,
+                    superscript: 23,
                     text: "As the providence of God does in general reach to all creatures, so after a more special manner it takes care of His church, and disposes of all things to the good thereof.",
                     scriptures: '1 Tim. 4:10; Amos 9:8-9; Isa. 43:3-5'
                 }
@@ -784,110 +784,1192 @@ const LONDON_BAPTIST = [
                 }
             ]
         ]
+    },
+    {
+        chapter: 8,
+        title: "Of Christ the Mediator",
+        topic: ['jesus'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "It pleased God, in His eternal purpose, to choose and ordain the Lord Jesus, His only begotten Son, according to the covenant made between them both, to be the mediator between God and man;",
+                    scriptures: 'Isa. 42:1; 1 Pet. 1:19-20'
+                },
+                {
+                    superscript: 2,
+                    text: "the prophet,",
+                    scriptures: 'Acts 3:22'
+                },
+                {
+                    superscript: 3,
+                    text: "priest,",
+                    scriptures: 'Heb. 5:5-6'
+                },
+                {
+                    superscript: 4,
+                    text: "and king;",
+                    scriptures: 'Ps. 2:6; Luke 1:33'
+                },
+                {
+                    superscript: 5,
+                    text: "head and savior of the church,",
+                    scriptures: 'Eph. 1:22-23'
+                },
+                {
+                    superscript: 6,
+                    text: "the heir of all things,",
+                    scriptures: 'Heb. 1:2'
+                },
+                {
+                    superscript: 7,
+                    text: "and judge of the world;",
+                    scriptures: 'Acts 17:31'
+                },
+                {
+                    superscript: 8,
+                    text: "unto whom He did from all eternity give a people to be His seed and to be by Him in time redeemed, called, justified, sanctified, and glorified.",
+                    scriptures: 'Isa. 53:10; John 17:6; Rom. 8:30'
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "The Son of God, the second person in the Holy Trinity, being very and eternal God, the brightness of the Father's glory, of one substance and equal with Him who made the world, who upholds and governs all things He has made, did, when the fullness of time was complete, take upon Him man's nature, with all the essential properties and common infirmities of it,",
+                    scriptures: 'John 1:14; Gal. 4;4'
+                },
+                {
+                    superscript: 10,
+                    text: "yet without sin;",
+                    scriptures: 'Rom. 8:3; Heb. 2:14, 16-17, 4:15'
+                },
+                {
+                    superscript: 11,
+                    text: "being conceived by the Holy Spirit in the womb of the Virgin Mary, the Holy Spirit coming down upon her: and the power of the Most High overshadowing her; and so was made of a woman of the tribe of Judah, of the seed of Abraham and David according to the Scriptures;",
+                    scriptures: 'Matt. 1:22-23'
+                },
+                {
+                    superscript: 12,
+                    text: "so that two whole, perfect, and distinct natures were inseparably joined together in one person, without conversion, composition, or confusion; which person is very God and very man, yet one Christ, the only mediator between God and man.",
+                    scriptures: 'Luke 1:27, 31, 35; Rom. 9:5; 1 Tim. 2:5'
+                }
+            ],
+            [
+                {
+                    superscript: 13,
+                    text: "The Lord Jesus, in His human nature thus united to the divine, in the person of the Son, was sanctified and anointed with the Holy Spirit above measure,",
+                    scriptures: 'Ps. 45:7; Acts 10:38; John 3:34'
+                },
+                {
+                    superscript: 14,
+                    text: "having in Him all the treasures of wisdom and knowledge;",
+                    scriptures: 'Col. 2:3'
+                },
+                {
+                    superscript: 15,
+                    text: "in whom it pleased the Father that all fullness should dwell,",
+                    scriptures: 'Col. 1:19'
+                },
+                {
+                    superscript: 16,
+                    text: "to the end that being holy, harmless, undefiled,",
+                    scriptures: 'Heb. 7:26'
+                },
+                {
+                    superscript: 17,
+                    text: "and full of grace and truth,",
+                    scriptures: 'John 1:14'
+                },
+                {
+                    superscript: 18,
+                    text: "He might be throughly furnished to execute the office of mediator and surety;",
+                    scriptures: 'Heb. 7:22'
+                },
+                {
+                    superscript: 19,
+                    text: "which office He took not upon himself, but was thereunto called by His Father;",
+                    scriptures: 'Heb. 5:5'
+                },
+                {
+                    superscript: 20,
+                    text: "who also put all power and judgement in His hand, and gave Him commandment to execute the same.",
+                    scriptures: 'John 5:22, 27; Matt. 28:18; Acts 2:36'
+                }
+            ],
+            [
+                {
+                    superscript: 21,
+                    text: "This office the Lord Jesus did most willingly undertake,",
+                    scriptures: 'Ps. 40:7-8; Heb. 10:5-10; John 10:18'
+                },
+                {
+                    superscript: 22,
+                    text: "which that He might discharge He was made under the law,",
+                    scriptures: 'Gal 4:4; Matt. 3:15'
+                },
+                {
+                    superscript: 23,
+                    text: "and did perfectly fulfill it, and underwent the punishment due to us, which we should have born and suffered,",
+                    scriptures: 'Gal. 3:13; Isa. 53:6; 1 Pet. 3:18'
+                },
+                {
+                    superscript: 24,
+                    text: "being made sin and a curse for us;",
+                    scriptures: '2 Cor. 5:21'
+                },
+                {
+                    superscript: 25,
+                    text: "enduring most grievous sorrows in His soul, and most painful sufferings in His body;",
+                    scriptures: 'Matt. 26:37, 38; Luke 22:44; Matt. 27:46'
+                },
+                {
+                    superscript: 26,
+                    text: "was crucified, and died, and remained in the state of the dead, yet saw no corruption:",
+                    scriptures: 'Acts 13:37'
+                },
+                {
+                    superscript: 27,
+                    text: "on the third day He arose from the dead",
+                    scriptures: '1 Cor. 15:3-4'
+                },
+                {
+                    superscript: 28,
+                    text: "with the same body in which He suffered,",
+                    scriptures: 'John 20:25, 27'
+                },
+                {
+                    superscript: 29,
+                    text: "with which He also ascended into heaven,",
+                    scriptures: 'Mark 16:19; Acts 1:9-11'
+                },
+                {
+                    superscript: 30,
+                    text: "and there sits at the right hand of His Father making intercession,",
+                    scriptures: 'Rom. 8:34; Heb. 9:24'
+                },
+                {
+                    superscript: 31,
+                    text: "and shall return to judge men and angels at the end of the world.",
+                    scriptures: 'Acts 10:42; Rom. 14:9-10; Acts 1:11; 2 Pet. 2:4'
+                }
+            ],
+            [
+                {
+                    superscript: 32,
+                    text: "The Lord Jesus, by His perfect obedience and sacrifice of Himself, which He through the eternal Spirit once offered up to God, has fully satisfied the justice of God,",
+                    scriptures: 'Heb. 9:14, 10:14; Rom. 3:25-26'
+                },
+                {
+                    superscript: 33,
+                    text: "procured reconciliation, and purchased an everlasting inheritance in the kingdom of heaven, for all those whom the Father has given unto Him.",
+                    scriptures: 'John 17:2; Heb. 9:15'
+                }
+            ],
+            [
+                {
+                    superscript: 34,
+                    text: "Although the price of redemption was not actually paid by Christ until after His incarnation, yet the virtue, efficacy, and benefit thereof were communicated to the elect in all ages, successively from the beginning of the world, in and by those promises, types, and sacrifices wherein He was revealed, and signified to be the seed which should bruise the serpent's head;",
+                    scriptures: '1 Cor. 4:10; Heb. 4:2; 1 Pet. 1:10-11'
+                },
+                {
+                    superscript: 35,
+                    text: "and the Lamb slain from the foundation of the world,",
+                    scriptures: 'Rev. 13:8'
+                },
+                {
+                    superscript: 36,
+                    text: "being the same yesterday, and today and for ever.",
+                    scriptures: 'Heb. 13:8'
+                }
+            ],
+            [
+                {
+                    superscript: 37,
+                    text: "Christ, in the work of mediation, acts according to both natures, by each nature doing that which is proper to itself; yet by reason of the unity of the person, that which is proper to one nature is sometimes in Scripture, attributed to the person denominated by the other nature.",
+                    scriptures: 'John 3:13; Acts 20:28'
+                }
+            ],
+            [
+                {
+                    superscript: 38,
+                    text: "To all those for whom Christ has obtained eternal redemption, He does certainly and effectually apply and communicate the same, making intercession for them;",
+                    scriptures: 'John 6:37, 10:15-16, 17:9; Rom. 5:10'
+                },
+                {
+                    superscript: 39,
+                    text: "uniting them to Himself by His Spirit, revealing to them, in and by His Word, the mystery of salvation, persuading them to believe and obey,",
+                    scriptures: 'John 17:6; Eph. 1:9; 1 John 5:20'
+                },
+                {
+                    superscript: 40,
+                    text: "governing their hearts by His Word and Spirit,",
+                    scriptures: 'Rom. 8:9, 14'
+                },
+                {
+                    superscript: 41,
+                    text: "and overcoming all their enemies by His almighty power and wisdom,",
+                    scriptures: 'Ps. 110:1; 1 Cor. 15:25-26'
+                },
+                {
+                    superscript: 42,
+                    text: "in such manner and ways as are most consonant to His wonderful and unsearchable dispensation; and all of free and absolute grace, without any condition foreseen in them to procure it.",
+                    scriptures: 'John 3:8; Eph. 1:8'
+                }
+            ],
+            [
+                {
+                    superscript: 43,
+                    text: "This office of mediator between God and man is proper only to Christ, who is the prophet, priest, and king of the church of God; and may not be either in whole, or any part thereof, transferred from Him to any other.",
+                    scriptures: 'Tim. 2:5'
+                }
+            ],
+            [
+                {
+                    superscript: 44,
+                    text: "This number and order of offices is necessary; for in respect of our ignorance, we stand in need of His prophetical office;",
+                    scriptures: 'John 1:18'
+                },
+                {
+                    superscript: 45,
+                    text: "and in respect of our alienation from God, and imperfection of the best of our services, we need His priestly office to reconcile us and present us acceptable unto God;",
+                    scriptures: 'Col. 1:21; Gal. 5:17'
+                },
+                {
+                    superscript: 46,
+                    text: "and in respect to our averseness and utter inability to return to God, and for our rescue and security from our spiritual adversaries, we need His kingly office to convince, subdue, draw, uphold, deliver, and preserve us to His heavenly kingdom.",
+                    scriptures: 'John 16:8; Ps. 110:3; Luke 1:74-75'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 9,
+        title: "Of Free Will",
+        topic: ['free will'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "God has endued the will of man with that natural liberty and power of acting upon choice, that it is neither forced, nor by any necessity of nature determined to do good or evil.",
+                    scriptures: 'Matt. 17:12; James 1:14; Deut. 30:19'
+                }
+            ],
+            [
+                {
+                    superscript: 2,
+                    text: "Man, in his state of innocency, had freedom and power to will and to do that which was good and well-pleasing to God,",
+                    scriptures: 'Eccles. 7:29'
+                },
+                {
+                    superscript: 3,
+                    text: "but yet was unstable, so that he might fall from it.",
+                    scriptures: 'Gen. 3:6'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "Man, by his fall into a state of sin, has wholly lost all ability of will to any spiritual good accompanying salvation;",
+                    scriptures: 'Rom. 5:6, 8:7'
+                },
+                {
+                    superscript: 5,
+                    text: "so as a natural man, being altogether averse from that good, and dead in sin,",
+                    scriptures: 'Eph. 2:1, 5'
+                },
+                {
+                    superscript: 6,
+                    text: "is not able by his own strength to convert himself, or to prepare himself thereunto.",
+                    scriptures: 'Titus 3:3-5; John 6:44'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "When God converts a sinner, and translates him into the state of grace, He frees him from his natural bondage under sin,",
+                    scriptures: 'Col. 1:13; John 8:36'
+                },
+                {
+                    superscript: 8,
+                    text: "and by His grace alone enables him freely to will and to do that which is spiritually good;",
+                    scriptures: 'Phil. 2:13'
+                },
+                {
+                    superscript: 9,
+                    text: "yet so as that by reason of his remaining corruptions, he does not perfectly, nor only will, that which is good, but does also will that which is evil.",
+                    scriptures: 'Rom. 7:15, 18-19, 21, 23'
+                }
+            ],
+            [
+                {
+                    superscript: 10,
+                    text: "This will of man is made perfectly and immutably free to good alone in the state of glory only.",
+                    scriptures: 'Eph. 4:13'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 10,
+        title: "Of Effectual Calling",
+        topic: ['calling'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Those whom God hath predestinated unto life, He is pleased in His appointed, and accepted time, effectually to call,",
+                    scriptures: 'Rom. 8:30, 11:7; Eph. 1:10, 11; 2 Thess. 2:13-14'
+                },
+                {
+                    superscript: 2,
+                    text: "by His Word and Spirit, out of that state of sin and death in which they are by nature, to grace and salvation by Jesus Christ;",
+                    scriptures: 'Eph. 2:1-6'
+                },
+                {
+                    superscript: 3,
+                    text: "enlightening their minds spiritually and savingly to understand the things of God;",
+                    scriptures: 'Acts 26:18; Eph. 1:17-18'
+                },
+                {
+                    superscript: 4,
+                    text: "taking away their heart of stone, and giving to them a heart of flesh;",
+                    scriptures: 'Ezek. 36:26'
+                },
+                {
+                    superscript: 5,
+                    text: "renewing their wills, and by His almighty power determining them to that which is good, and effectually drawing them to Jesus Christ;",
+                    scriptures: 'Deut. 30:6; Ezek. 36:27; Eph. 1:19'
+                },
+                {
+                    superscript: 6,
+                    text: "yet so as they come most freely, being made willing by His grace.",
+                    scriptures: 'Ps. 110:3; Cant. 1:4'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "This effectual call is of God's free and special grace alone, not from anything at all foreseen in man, nor from any power or agency in the creature,",
+                    scriptures: '2 Tim. 1:9; Eph. 2:8'
+                },
+                {
+                    superscript: 8,
+                    text: "being wholly passive therein, being dead in sins and trespasses, until being quickened and renewed by the Holy Spirit;",
+                    scriptures: '1 Cor. 2:14; Eph. 2:5; John 5:25'
+                },
+                {
+                    superscript: 9,
+                    text: "he is thereby enabled to answer this call, and to embrace the grace offered and conveyed in it, and that by no less power than that which raised up Christ from the dead.",
+                    scriptures: 'Eph. 1:19-20'
+                }
+            ],
+            [
+                {
+                    superscript: 10,
+                    text: "Elect infants dying in infancy are regenerated and saved by Christ through the Spirit;",
+                    scriptures: 'John 3:3, 5-6'
+                },
+                {
+                    superscript: 11,
+                    text: "who works when, and where, and how He pleases;",
+                    scriptures: 'John 3:8'
+                },
+                {
+                    superscript: '',
+                    text: "so also are all elect persons, who are incapable of being outwardly called by the ministry of the Word."
+                }
+            ],
+            [
+                {
+                    superscript: 12,
+                    text: "Others not elected, although they may be called by the ministry of the Word, and may have some common operations of the Spirit,",
+                    scriptures: 'Matt. 22:14, 13:20-21; Heb 6:4-5'
+                },
+                {
+                    superscript: 13,
+                    text: "yet not being effectually drawn by the Father, they neither will nor can truly come to Christ, and therefore cannot be saved:",
+                    scriptures: 'John 6:44-45, 65; 1 John 2:24-25'
+                },
+                {
+                    superscript: 14,
+                    text: "much less can men that do not receive the Christian religion be saved; be they never so diligent to frame their lives according to the light of nature and the law of that religion they do profess.",
+                    scriptures: 'Acts 4:12; John 4:22, 17:3'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 11,
+        title: "Of Justification",
+        topic: ['justification'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Those whom God effectually calls, he also freely justifies,",
+                    scriptures: 'Rom. 3:24, 8:30'
+                },
+                {
+                    superscript: 2,
+                    text: "not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous;",
+                    scriptures: 'Rom. 4:5-8, Eph. 1:7'
+                },
+                {
+                    superscript: 3,
+                    text: "not for anything wrought in them, or done by them, but for Christ's sake alone;",
+                    scriptures: '1 Cor. 1:30-31, Rom. 5:17-19'
+                },
+                {
+                    superscript: 4,
+                    text: "not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness; but by imputing Christ's active obedience unto the whole law, and passive obedience in his death for their whole and sole righteousness by faith,",
+                    scriptures: 'Phil. 3:8-9; Eph. 2:8-10'
+                },
+                {
+                    superscript: 5,
+                    text: "which faith they have not of themselves; it is the gift of God.",
+                    scriptures: 'John 1:12, Rom. 5:17'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "Faith thus receiving and resting on Christ and his righteousness, is the alone instrument of justification;",
+                    scriptures: 'Rom. 3:28'
+                },
+                {
+                    superscript: 7,
+                    text: "yet is not alone in the person justified, but is ever accompanied with all other saving graces, and is no dead faith, but works by love.",
+                    scriptures: 'Gal.5:6, James 2:17, 22, 26'
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "Christ, by his obedience and death, did fully discharge the debt of all those who are justified; and did, by the sacrifice of himself in the blood of his cross, undergoing in their stead the penalty due to them, make a proper, real, and full satisfaction to God’s justice in their behalf;",
+                    scriptures: 'Heb. 10:14; 1 Pet. 1:18-19; Isa. 53:5-6'
+                },
+                {
+                    superscript: 9,
+                    text: "yet, in as much as he was given by the Father for them, and his obedience and satisfaction accepted in their stead, and both freely, not for anything in them,",
+                    scriptures: 'Rom. 8:32; 2 Cor. 5:21'
+                },
+                {
+                    superscript: 10,
+                    text: "their justification is only of free grace, that both the exact justice and rich grace of God might be glorified in the justification of sinners.",
+                    scriptures: 'Rom. 3:26; Eph. 1:6-7, 2:7'
+                }
+            ],
+            [
+                {
+                    superscript: 11,
+                    text: "God did from all eternity decree to justify all the elect,",
+                    scriptures: 'Gal. 3:8, 1 Pet. 1:2, 1 Tim. 2:6'
+                },
+                {
+                    superscript: 12,
+                    text: "and Christ did in the fullness of time die for their sins, and rise again for their justification;",
+                    scriptures: 'Rom. 4:25'
+                },
+                {
+                    superscript: 13,
+                    text: "nevertheless, they are not justified personally, until the Holy Spirit in time does actually apply Christ to them.",
+                    scriptures: 'Col. 1:21-22, Titus 3:4-7'
+                }
+            ],
+            [
+                {
+                    superscript: 14,
+                    text: "God continues to forgive the sins of those that are justified,",
+                    scriptures: 'Matt. 6:12, 1 John 1:7, 9'
+                },
+                {
+                    superscript: 15,
+                    text: "and although they can never fall from the state of justification,",
+                    scriptures: 'John 10:28'
+                },
+                {
+                    superscript: 16,
+                    text: "yet they may, by their sins, fall under God’s fatherly displeasure;",
+                    scriptures: 'Ps. 89:31-33'
+                },
+                {
+                    superscript: 17,
+                    text: "and in that condition they usually do not have the light of his countenance restored to them, until they humble themselves, beg pardon, and renew their faith and repentance.",
+                    scriptures: 'Ps. 32:5, Ps. 51, Matt. 26:75'
+                }
+            ],
+            [
+                {
+                    superscript: 18,
+                    text: "The justification of believers under the Old Testament was, in all these respects, one and the same with the justification of believers under the New Testament.",
+                    scriptures: 'Gal. 3:9; Rom. 4:22-24'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 12,
+        title: "Of Adoption",
+        topic: ['adoption'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "All those that are justified, God conferred, in and for the sake of his only Son Jesus Christ, to make partakers of the grace of adoption,",
+                    scriptures: 'Eph. 1:5; Gal. 4:4-5'
+                },
+                {
+                    superscript: 2,
+                    text: "by which they are taken into the number, and enjoy the liberties and privileges of the children of God,",
+                    scriptures: 'John 1:12; Rom. 8:17'
+                },
+                {
+                    superscript: 3,
+                    text: "have his name put on them,",
+                    scriptures: '2 Cor. 6:18; Rev. 3:12'
+                },
+                {
+                    superscript: 4,
+                    text: "receive the spirit of adoption,",
+                    scriptures: 'Rom. 8:15'
+                },
+                {
+                    superscript: 5,
+                    text: "have access to the throne of grace with boldness, are enabled to cry Abba, Father,",
+                    scriptures: 'Gal. 4:6; Eph. 2:18'
+                },
+                {
+                    superscript: 6,
+                    text: "are pitied,",
+                    scriptures: 'Ps. 103:13'
+                },
+                {
+                    superscript: 7,
+                    text: "protected,",
+                    scriptures: 'Prov. 14:26; 1 Pet. 5:7'
+                },
+                {
+                    superscript: 8,
+                    text: "provided for,",
+                    scriptures: 'Heb. 12:6'
+                },
+                {
+                    superscript: 9,
+                    text: "and chastened by him as by a Father,",
+                    scriptures: 'Isa. 54:8-9'
+                },
+                {
+                    superscript: 10,
+                    text: "yet never cast off,",
+                    scriptures: 'Lam. 3:31'
+                },
+                {
+                    superscript: 11,
+                    text: "but sealed to the day of redemption,",
+                    scriptures: 'Eph. 4:30'
+                },
+                {
+                    superscript: 12,
+                    text: "and inherit the promises as heirs of everlasting salvation.",
+                    scriptures: 'Heb. 1:14, 6:12'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 13,
+        title: "Of Sanctification",
+        topic: ['sanctification'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "They who are united to Christ, effectually called, and regenerated, having a new heart and a new spirit created in them through the virtue of Christ's death and resurrection, are also farther sanctified, really and personally,",
+                    scriptures: 'Acts 20:32; Rom. 6:5-6'
+                },
+                {
+                    superscript: 2,
+                    text: "through the same virtue, by his Word and Spirit dwelling in them;",
+                    scriptures: 'John 17:17; Eph. 3:16-19; 1 Thess. 5:21-23'
+                },
+                {
+                    superscript: 3,
+                    text: "the dominion of the whole body of sin is destroyed,",
+                    scriptures: 'Rom. 6:14'
+                },
+                {
+                    superscript: 4,
+                    text: "and the several lusts of it are more and more weakened and mortified,",
+                    scriptures: 'Gal. 5:24'
+                },
+                {
+                    superscript: 5,
+                    text: "and they more and more quickened and strengthened in all saving graces,",
+                    scriptures: 'Col. 1:11'
+                },
+                {
+                    superscript: 6,
+                    text: "to the practice of all true holiness, without which no man shall see the Lord.",
+                    scriptures: '2 Cor. 7:1; Heb. 12:14'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "This sanctification is throughout the whole man,",
+                    scriptures: '1 Thess. 5:23'
+                },
+                {
+                    superscript: 8,
+                    text: "yet imperfect in this life; there abides still some remnants of corruption in every part,",
+                    scriptures: 'Rom. 7:18, 23'
+                },
+                {
+                    superscript: 9,
+                    text: "wherefrom arises a continual and irreconcilable war; the flesh lusting against the Spirit, and the Spirit against the flesh.",
+                    scriptures: 'Gal. 5:17; 1 Pet. 2:11'
+                }
+            ],
+            [
+                {
+                    superscript: 10,
+                    text: "In which war, although the remaining corruption for a time may much prevail,",
+                    scriptures: 'Rom. 7:23'
+                },
+                {
+                    superscript: 11,
+                    text: "yet, through the continual supply of strength from the sanctifying Spirit of Christ, the regenerate part does overcome;",
+                    scriptures: 'Rom. 6:14'
+                },
+                {
+                    superscript: 12,
+                    text: "and so the saints grow in grace, perfecting holiness in the fear of God, pressing after an heavenly life, in evangelical obedience to all the commands which Christ as Head and King, in his Word has prescribed to them.",
+                    scriptures: 'Eph. 4:15-16; 2 Cor. 3:18, 7:1'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 14,
+        title: "Of Saving Faith",
+        topic: ['faith'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The grace of faith, whereby the elect are enabled to believe to the saving of their souls, is the work of the Spirit of Christ in their hearts,",
+                    scriptures: '2 Cor. 4:13; Eph. 2:8'
+                },
+                {
+                    superscript: 2,
+                    text: "and is ordinarily wrought by the ministry of the Word;",
+                    scriptures: 'Rom. 10:14,17'
+                },
+                {
+                    superscript: 3,
+                    text: "by which also, and by the administration of baptism and the Lord's supper, prayer, and other means appointed of God, it is increased and strengthened.",
+                    scriptures: 'Luke 17:5; 1 Pet. 2:2; Acts 20:32'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "By this faith a Christian believes to be true whatsoever is revealed in the Word for the authority of God himself,",
+                    scriptures: 'Acts 24:14'
+                },
+                {
+                    superscript: 5,
+                    text: "and also apprehends an excellency therein above all other writings and all things in the world,",
+                    scriptures: 'Ps. 19:7-10, 69:72'
+                },
+                {
+                    superscript: 6,
+                    text: "as it bears forth the glory of God in his attributes, the excellency of Christ in his nature and offices, and the power and fullness of the Holy Spirit in his workings and operations: and so is enabled to cast his soul upon the truth consequently believed;",
+                    scriptures: '2 Tim. 1:12'
+                },
+                {
+                    superscript: 7,
+                    text: "and also acts differently upon that which each particular passage thereof contains; yielding obedience to the commands,",
+                    scriptures: 'John 15:14'
+                },
+                {
+                    superscript: 8,
+                    text: "trembling at the threatenings,",
+                    scriptures: 'Isa. 116:2'
+                },
+                {
+                    superscript: 9,
+                    text: "and embracing the promises of God for this life and that which is to come;",
+                    scriptures: 'Heb. 11:13'
+                },
+                {
+                    superscript: 10,
+                    text: "but the principle acts of saving faith have immediate relation to Christ, accepting, receiving, and resting upon him alone for justification, sanctification, and eternal life, by virtue of the covenant of grace.",
+                    scriptures: 'John 1:12; Acts 16:31; Gal 2:20; Acts 15:11'
+                }
+            ],
+            [
+                {
+                    superscript: 11,
+                    text: "This faith, although it be in different stages, and may be weak or strong,",
+                    scriptures: 'Heb. 5:13-14; Matt. 6:30; Rom. 4:19-20'
+                },
+                {
+                    superscript: 12,
+                    text: "yet it is in the least degree of it different in the kind or nature of it, as is all other saving grace, from the faith and common grace of temporary believers;",
+                    scriptures: '2 Pet. 1:1'
+                },
+                {
+                    superscript: 13,
+                    text: "and therefore, though it may be many times assailed and weakened, yet it gets the victory,",
+                    scriptures: 'Eph. 6:16; 1 John 5:4, 5'
+                },
+                {
+                    superscript: 14,
+                    text: "growing up in many to the attainment of a full assurance through Christ,",
+                    scriptures: 'Heb. 6:11, 12; Col. 2:2'
+                },
+                {
+                    superscript: 15,
+                    text: "who is both the author and finisher of our faith.",
+                    scriptures: 'Heb. 12:2'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 15,
+        title: "Of Repentance Unto Life and Salvation",
+        topic: ['repentance'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Such of the elect that are converted at riper years, having sometime lived in the state of nature, and therein served divers pleasures, God in their effectual calling gives them repentance to life.",
+                    scriptures: 'Titus 3:2-5'
+                }
+            ],
+            [
+                {
+                    superscript: 2,
+                    text: "Whereas there is none that does good and does not sin,",
+                    scriptures: 'Eccles. 7:20'
+                },
+                {
+                    superscript: 3,
+                    text: "and the best of men may, through the power and deceitfulness of their corruption dwelling in them, with the prevalency of temptation, fall in to great sins and provocations; God has, in the covenant of grace, mercifully provided that believers so sinning and falling be renewed through repentance unto salvation.",
+                    scriptures: 'Luke 22:31-32'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "This saving repentance is an evangelical grace,",
+                    scriptures: 'Zech. 12:10; Acts 11:18'
+                },
+                {
+                    superscript: 5,
+                    text: "whereby a person, being by the Holy Spirit made sensible of the manifold evils of his sin, does, by faith in Christ, humble himself for it with godly sorrow, detestation of it, and self-abhorrancy,",
+                    scriptures: 'Ezek. 36:31; 2 Cor. 7:11'
+                },
+                {
+                    superscript: 6,
+                    text: "praying for pardon and strength of grace, with a purpose and endeavor, by supplies of the Spirit, to walk before God unto all well-pleasing in all things.",
+                    scriptures: 'Ps. 119:6, 128'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "As repentance is to be continued through the whole course of our lives, upon the account of the body of death, and the motions thereof, so it is every man’s duty to repent of his particular known sins particularly.",
+                    scriptures: 'Luke 19:8; 1 Tim. 1:13, 15'
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "Such is the provision which God has made through Christ in the covenant of grace for the preservation of believers unto salvation, that although there is no sin so small but it deserves damnation,",
+                    scriptures: 'Rom. 6:23'
+                },
+                {
+                    superscript: 9,
+                    text: "yet there is no sin so great that it shall bring damnation to them that repent,",
+                    scriptures: 'Isa. 1:16-18, 55:7'
+                },
+                {
+                    superscript: '',
+                    text: "which makes the constant preaching of repentance necessary."
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 16,
+        title: "Of Good Works",
+        topic: ['good works'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Good works are only such as God has commanded in his Holy Word,",
+                    scriptures: 'Mic. 6:8; Heb. 13:21'
+                },
+                {
+                    superscript: 2,
+                    text: "and not such as without the warrant thereof are devised by men out of blind zeal, or upon any pretense of good intentions.",
+                    scriptures: 'Matt. 15:9; Isa. 29:13'
+                }
+            ],
+            [
+                {
+                    superscript: 3,
+                    text: "These good works, done in obedience to God’s commandments, are the fruits and evidences of a true and lively faith;",
+                    scriptures: 'James 2:18, 22'
+                },
+                {
+                    superscript: 4,
+                    text: "and by them believers manifest their thankfulness,",
+                    scriptures: 'Ps. 116:12-13'
+                },
+                {
+                    superscript: 5,
+                    text: "strengthen their assurance,",
+                    scriptures: '1 John 2:3, 5; 2 Pet. 1:5-11'
+                },
+                {
+                    superscript: 6,
+                    text: "edify their brethren, adorn the profession of the gospel,",
+                    scriptures: 'Matt. 5:16'
+                },
+                {
+                    superscript: 7,
+                    text: "stop the mouths of the adversaries, and glory God,",
+                    scriptures: '1 Tim. 6:1; 1 Pet. 2:15; Phil. 1:11'
+                },
+                {
+                    superscript: 8,
+                    text: "whose workmanship they are, created in Christ Jesus thereunto,",
+                    scriptures: 'Eph. 2:10'
+                },
+                {
+                    superscript: 9,
+                    text: "that having their fruit unto holiness they may have the end eternal life.",
+                    scriptures: 'Rom 6:22'
+                }
+            ],
+            [
+                {
+                    superscript: 10,
+                    text: "Their ability to do good works is not all of themselves, but wholly from the Spirit of Christ;",
+                    scriptures: 'John 15:4-5'
+                },
+                {
+                    superscript: 11,
+                    text: "and that they may be enabled thereunto, besides the graces they have already received, there is necessary an actual influence of the same Holy Spirit, to work in them and to will and to do of his good pleasure;",
+                    scriptures: '2 Cor. 3:5; Phil. 2:13'
+                },
+                {
+                    superscript: 12,
+                    text: " yet they are not bound to perform any duty, unless upon a special motion of the Spirit, but they ought to be diligent in stirring up the grace of God that is in them.",
+                    scriptures: 'Phil. 2:12; Heb. 6:11, 12; Isa. 64:7'
+                }
+            ],
+            [
+                {
+                    superscript: 13,
+                    text: "They who in their obedience attain to the greatest height which is possible in this life, are so far from being able to supererogate, and to do more than God requires, as that they fall short of much which in duty they are bound to do.",
+                    scriptures: 'Job 9:2-3; Gal. 5:17; Luke 17:10'
+                }
+            ],
+            [
+                {
+                    superscript: 14,
+                    text: "We cannot by our best works merit pardon of sin or eternal life at the hand of God, by reason of the great disproportion that is between them and the glory to come, and the infinite distance that is between us and God, whom by them we can neither profit nor satisfy for the debt of our former sins;",
+                    scriptures: 'Rom. 3:20; Eph. 2:8-9; Rom. 4:6'
+                },
+                {
+                    superscript: 15,
+                    text: "but when we have done all we can, we have done but our duty, and are unprofitable servants; and because they are good they proceed from his Spirit,",
+                    scriptures: 'Gal. 5:22-23'
+                },
+                {
+                    superscript: 16,
+                    text: "and as they are wrought by us they are defiled and mixed with so much weekness and imperfection, that they cannot endure the severity of God’s punishment.",
+                    scriptures: 'Isa. 64:6; Ps. 43:2'
+                }
+            ],
+            [
+                {
+                    superscript: 17,
+                    text: "Yet notwithstanding the persons of believers being accepted through Christ, their good works also are accepted in him;",
+                    scriptures: 'Eph. 1:5; 1 Pet. 1:5'
+                },
+                {
+                    superscript: 18,
+                    text: "not as thought they were in this life wholly unblamable and unreprovable in God’s sight, but that he, looking upon them in his Son, is pleased to accept and reward that which is sincere, although accompanied with many weaknesses and imperfection.",
+                    scriptures: 'Matt. 25:21, 23; Heb. 6:10'
+                }
+            ],
+            [
+                {
+                    superscript: 19,
+                    text: "Works done by unregenerate men, although for the matter of them they may things which God commands, and of good use both to themselves and to others;",
+                    scriptures: '2 Kings 10:30; 1 Kings 21:27, 29'
+                },
+                {
+                    superscript: 20,
+                    text: "yet because they proceed not from a heart purified by faith,",
+                    scriptures: 'Gen. 4:5; Heb. 11:4, 6'
+                },
+                {
+                    superscript: 21,
+                    text: "nor are done in a right manner according to the Word,",
+                    scriptures: '1 Cor. 13:1'
+                },
+                {
+                    superscript: 22,
+                    text: "nor to a right end, the glory of God,",
+                    scriptures: 'Matt. 6:2, 5'
+                },
+                {
+                    superscript: 23,
+                    text: "they are therfore sinful, and cannot please God, nor make a man meet to receive the grace from God,",
+                    scriptures: 'Amos 5:21-22; Rom. 9:16; Titus 3:5'
+                },
+                {
+                    superscript: 24,
+                    text: "and yet their neglect of them is more sinful and displeasing to God.",
+                    scriptures: 'Job 21:14-15; Matt. 25:41-43'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 17,
+        title: 'Of the Perseverance of the Saints',
+        topic: ['perseverance'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Those whom God has accepted in the beloved, effectually called and sanctified by his Spirit, and given the precious faith of his elect unto, can neither totally nor finally fall from the state of grace, but shall certainly persevere therein to the end, and be eternally saved, seeing the gifts and callings of God are without repentance, from which source he still begets and nourishes in them faith, repentance, love, joy, hope, and all the graces of the Spirit unto immortality;",
+                    scriptures: 'John 10:28-29; Phil. 1:6; 2 Tim. 2:19; 1 John 2:19'
+                },
+                {
+                    superscript: 2,
+                    text: "and though many storms and floods arise and beat against them, yet they shall never be able to take them off that foundation and rock which by faith they are fastened upon; notwithstanding, through unbelief and the temptations of Satan, the sensible sight of the light and love of God may for a time be clouded and obscured from them,",
+                    scriptures: 'Ps. 89:31-32; 1 Cor. 11:32'
+                },
+                {
+                    superscript: 3,
+                    text: "yet he is still the same, and they shall be sure to be kept by the power of God unto salvation, where they shall enjoy their purchased possession, they being engraved upon the palm of his hands, and their names having been written in the book of life from all eternity.",
+                    scriptures: 'Mal. 3:6'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "This perseverance of the saints depends not upon their own free will, but upon the immutability of the decree of election,",
+                    scriptures: 'Rom. 8:30, 9:11, 16'
+                },
+                {
+                    superscript: 5,
+                    text: "flowing from the free and unchangeable love of God the Father, upon the efficacy of the merit and intercession of Jesus Christ and union with him,",
+                    scriptures: 'Rom. 5:9-10; John 14:19'
+                },
+                {
+                    superscript: 6,
+                    text: "the oath of God,",
+                    scriptures: 'Heb. 6:17-18'
+                },
+                {
+                    superscript: 7,
+                    text: "the abiding of his Spirit, and the seed of God within them,",
+                    scriptures: '1 John 3:9'
+                },
+                {
+                    superscript: 8,
+                    text: "and the nature of the covenant of grace;",
+                    scriptures: 'Jer. 32:40'
+                },
+                {
+                    superscript: '',
+                    text: "from all which ariseth also the certainty and infallibility thereof."
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "And though they may, through the temptation of Satan and of the world, the prevalency of corruption remaining in them, and the neglect of means of their preservation, fall into grievous sins, and for a time continue therein,",
+                    scriptures: 'Matt. 26:70, 72, 74'
+                },
+                {
+                    superscript: 10,
+                    text: "whereby they incur God's displeasure and grieve his Holy Spirit,",
+                    scriptures: 'Isa. 64:5, 9; Eph. 4:30'
+                },
+                {
+                    superscript: 11,
+                    text: "come to have their graces and comforts impaired,",
+                    scriptures: 'Ps. 51:10, 12'
+                },
+                {
+                    superscript: 12,
+                    text: "have their hearts hardened, and their consciences wounded,",
+                    scriptures: 'Ps. 32:3-4'
+                },
+                {
+                    superscript: 13,
+                    text: "hurt and scandalize others, and bring temporal judgments upon themselves,",
+                    scriptures: '2 Sam. 12:14'
+                },
+                {
+                    superscript: 14,
+                    text: "yet shall they renew their repentance and be preserved through faith in Christ Jesus to the end.",
+                    scriptures: 'Luke 22:32, 61, 62'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 18,
+        title: 'Of the Assurance of Grace and Salvation',
+        topic: ['assurance'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Although temporary believers and other unregenerate men, may vainly deceive themselves with false hopes and carnal presumptions of being in the favor of God and in a state of salvation, which hope of theirs shall perish;",
+                    scriptures: 'Job 8:13-14; Matt. 7:22-23'
+                },
+                {
+                    superscript: 2,
+                    text: "yet such as truly believe in the Lord Jesus, and love him in sincerity, endeavouring to walk in all good conscience before him, may in this life be certainly assured that they are in the state of grace, and may rejoice in the hope of the glory of God,",
+                    scriptures: '1 John 2:3, 3:14, 18, 19, 21, 24, 5:13'
+                },
+                {
+                    superscript: 3,
+                    text: "which hope shall never make them ashamed.",
+                    scriptures: 'Rom. 5:2, 5'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "This certainty is not a bare conjectural and probable persuasion grounded upon a fallible hope, but an infallible assurance of faith,",
+                    scriptures: 'Heb. 6:11, 19'
+                },
+                {
+                    superscript: 5,
+                    text: "founded on the blood and righteousness of Christ revealed in the Gospel;",
+                    scriptures: 'Heb. 6:17-18'
+                },
+                {
+                    superscript: 6,
+                    text: "and also upon the inward evidence of those graces of the Spirit unto which promises are made,",
+                    scriptures: '2 Pet. 1:4-5, 10-11'
+                },
+                {
+                    superscript: 7,
+                    text: "and on the testimony of the Spirit of adoption, witnessing with our spirits that we are the children of God;",
+                    scriptures: 'Rom. 8:15-16'
+                },
+                {
+                    superscript: 8,
+                    text: "and, as a fruit thereof, keeping the heart both humble and holy.",
+                    scriptures: '1 John 3:1-3'
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "This infallible assurance does not so belong to the essence of faith, but that a true believer may wait long, and struggle with many difficulties before he be partaker of it;",
+                    scriptures: 'Isa. 50:10; Ps. 88; Ps. 77:1-12'
+                },
+                {
+                    superscript: 10,
+                    text: "yet being enabled by the Spirit to know the things which are freely given him of God, he may, without extraordinary revelation, in the right use of means, attain thereunto:",
+                    scriptures: '1 John 4:13; Heb. 6:11-12'
+                },
+                {
+                    superscript: 11,
+                    text: "and therefore it is the duty of every one to give all diligence to make his calling and election sure, that thereby his heart may be enlarged in peace and joy in the Holy Spirit, in love and thankfulness to God, and in strength and cheerfulness in the duties of obedience, the proper fruits of this assurance;",
+                    scriptures: 'Rom. 5:1-2, 5, 14:17; Ps. 119:32'
+                },
+                {
+                    superscript: 12,
+                    text: "-so far is it from inclining men to looseness.",
+                    scriptures: 'Rom. 6:1-2; Titus 2:11-12, 14'
+                }
+            ],
+            [
+                {
+                    superscript: 13,
+                    text: "True believers may have the assurance of their salvation divers ways shaken, diminished, and intermitted; as by negligence in preserving of it,",
+                    scriptures: 'Cant. 5:2-3, 6'
+                },
+                {
+                    superscript: 14,
+                    text: "by falling into some special sin which wounds the conscience and grieves the Spirit;",
+                    scriptures: 'Ps. 51:8, 12, 14'
+                },
+                {
+                    superscript: 15,
+                    text: "by some sudden or vehement temptation,",
+                    scriptures: 'Ps. 116:11; 77:7-8, 31:22'
+                },
+                {
+                    superscript: 16,
+                    text: "by God's withdrawing the light of his countenance, and suffering even such as fear him to walk in darkness and to have no light,",
+                    scriptures: 'Ps. 30:7'
+                },
+                {
+                    superscript: 17,
+                    text: "yet are they never destitute of the seed of God",
+                    scriptures: '1 John 3:9'
+                },
+                {
+                    superscript: 18,
+                    text: "and life of faith,",
+                    scriptures: 'Luke 22:32'
+                },
+                {
+                    superscript: 19,
+                    text: "that love of Christ and the brethren, that sincerity of heart and conscience of duty out of which, by the operation of the Spirit, this assurance may in due time be revived,",
+                    scriptures: 'Ps. 42:5, 11'
+                },
+                {
+                    superscript: 20,
+                    text: "and by the which, in the meantime, they are preserved from utter despair.",
+                    scriptures: 'Lam. 3:26-31'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 19,
+        title: "Of the Law of God",
+        topic: ['law'],
+        content: [
+
+        ]
     }
 ];
-// Chapter 8: Of Christ The Mediator
-// Paragraph 1. It pleased God, in His eternal purpose, to choose and ordain the Lord Jesus, His only begotten Son, according to the covenant made between them both, to be the mediator between God and man; (Isa. 42:1; 1 Pet. 1:19, 20) the prophet, (Acts 3:22) priest, (Heb. 5:5, 6) and king; (Ps. 2:6; Luke 1:33) head and savior of the church, (Eph. 1:22, 23) the heir of all things, (Heb. 1:2) and judge of the world; (Acts 17:31) unto whom He did from all eternity give a people to be His seed and to be by Him in time redeemed, called, justified, sanctified, and glorified.  (Isa. 53:10; John 17:6; Rom. 8:30)
 
-// Paragraph 2. The Son of God, the second person in the Holy Trinity, being very and eternal God, the brightness of the Father's glory, of one substance and equal with Him who made the world, who upholds and governs all things He has made, did, when the fullness of time was complete, take upon Him man's nature, with all the essential properties and common infirmities of it, (John 1:14; Gal. 4;4) yet without sin; (Rom. 8:3; Heb. 2:14, 16, 17, 4:15) being conceived by the Holy Spirit in the womb of the Virgin Mary, the Holy Spirit coming down upon her: and the power of the Most High overshadowing her; and so was made of a woman of the tribe of Judah, of the seed of Abraham and David according to the Scriptures; (Matt. 1:22, 23) so that two whole, perfect, and distinct natures were inseparably joined together in one person, without conversion, composition, or confusion; which person is very God and very man, yet one Christ, the only mediator between God and man.  (Luke 1:27, 31, 35; Rom. 9:5; 1 Tim. 2:5)
+// [
+//     {
+//         superscript: ,
+//         text: "",
+//         scriptures: ''
+//     },
+//     {
+//         superscript: ,
+//         text: "",
+//         scriptures: ''
+//     }
+// ]
 
-// Paragraph 3. The Lord Jesus, in His human nature thus united to the divine, in the person of the Son, was sanctified and anointed with the Holy Spirit above measure, (Ps. 45:7; Acts 10:38; John 3:34) having in Him all the treasures of wisdom and knowledge; (Col. 2:3) in whom it pleased the Father that all fullness should dwell, (Col. 1:19) to the end that being holy, harmless, undefiled, (Heb. 7:26) and full of grace and truth, (John 1:14) He might be throughly furnished to execute the office of mediator and surety; (Heb. 7:22) which office He took not upon himself, but was thereunto called by His Father; (Heb. 5:5) who also put all power and judgement in His hand, and gave Him commandment to execute the same.  (John 5:22, 27; Matt. 28:18; Acts 2:36)
 
-// Paragraph 4. This office the Lord Jesus did most willingly undertake, (Ps. 40:7, 8; Heb. 10:5-10; John 10:18) which that He might discharge He was made under the law, (Gal 4:4; Matt. 3:15) and did perfectly fulfill it, and underwent the punishment due to us, which we should have born and suffered, (Gal. 3:13; Isa. 53:6; 1 Pet. 3:18) being made sin and a curse for us; (2 Cor. 5:21) enduring most grievous sorrows in His soul, and most painful sufferings in His body; (Matt. 26:37, 38; Luke 22:44; Matt. 27:46) was crucified, and died, and remained in the state of the dead, yet saw no corruption: (Acts 13:37) on the third day He arose from the dead (1 Cor. 15:3, 4) with the same body in which He suffered, (John 20:25, 27) with which He also ascended into heaven, (Mark 16:19; Acts 1:9-11) and there sits at the right hand of His Father making intercession, (Rom. 8:34; Heb. 9:24) and shall return to judge men and angels at the end of the world.  (Acts 10:42; Rom. 14:9, 10; Acts 1:11; 2 Pet. 2:4)
-
-// Paragraph 5. The Lord Jesus, by His perfect obedience and sacrifice of Himself, which He through the eternal Spirit once offered up to God, has fully satisfied the justice of God, (Heb. 9:14, 10:14; Rom. 3:25,26) procured reconciliation, and purchased an everlasting inheritance in the kingdom of heaven, for all those whom the Father has given unto Him.  (John 17:2; Heb. 9:15)
-
-// Paragraph 6. Although the price of redemption was not actually paid by Christ until after His incarnation, yet the virtue, efficacy, and benefit thereof were communicated to the elect in all ages, successively from the beginning of the world, in and by those promises, types, and sacrifices wherein He was revealed, and signified to be the seed which should bruise the serpent's head; (1 Cor. 4:10; Heb. 4:2; 1 Pet. 1:10, 11) and the Lamb slain from the foundation of the world, (Rev. 13:8) being the same yesterday, and today and for ever.  (Heb. 13:8)
-
-// Paragraph 7. Christ, in the work of mediation, acts according to both natures, by each nature doing that which is proper to itself; yet by reason of the unity of the person, that which is proper to one nature is sometimes in Scripture, attributed to the person denominated by the other nature.  (John 3:13; Acts 20:28)
-
-// Paragraph 8. To all those for whom Christ has obtained eternal redemption, He does certainly and effectually apply and communicate the same, making intercession for them; (John 6:37, 10:15, 16, 17:9; Rom. 5:10) uniting them to Himself by His Spirit, revealing to them, in and by His Word, the mystery of salvation, persuading them to believe and obey, (John 17:6; Eph. 1:9; 1 John 5:20) governing their hearts by His Word and Spirit, (Rom. 8:9, 14) and overcoming all their enemies by His almighty power and wisdom, (Ps. 110:1; 1 Cor. 15:25, 26) in such manner and ways as are most consonant to His wonderful and unsearchable dispensation; and all of free and absolute grace, without any condition foreseen in them to procure it.  (John 3:8; Eph. 1:8)
-
-// Paragraph 9. This office of mediator between God and man is proper only to Christ, who is the prophet, priest, and king of the church of God; and may not be either in whole, or any part thereof, transferred from Him to any other.  (Tim. 2:5)
-
-// Paragraph 10. This number and order of offices is necessary; for in respect of our ignorance, we stand in need of His prophetical office; (John 1:18) and in respect of our alienation from God, and imperfection of the best of our services, we need His priestly office to reconcile us and present us acceptable unto God; (Col. 1:21; Gal. 5:17) and in respect to our averseness and utter inability to return to God, and for our rescue and security from our spiritual adversaries, we need His kingly office to convince, subdue, draw, uphold, deliver, and preserve us to His heavenly kingdom.  (John 16:8; Ps. 110:3; Luke 1:74,75)
-// Chapter 9: Of Free Will
-// Paragraph 1. God has endued the will of man with that natural liberty and power of acting upon choice, that it is neither forced, nor by any necessity of nature determined to do good or evil.  (Matt. 17:12; James 1:14; Deut. 30:19)
-
-// Paragraph 2. Man, in his state of innocency, had freedom and power to will and to do that which was good and well-pleasing to God, (Eccles. 7:29) but yet was unstable, so that he might fall from it.  (Gen. 3:6)
-
-// Paragraph 3. Man, by his fall into a state of sin, has wholly lost all ability of will to any spiritual good accompanying salvation; (Rom. 5:6, 8:7) so as a natural man, being altogether averse from that good, and dead in sin, (Eph. 2:1, 5) is not able by his own strength to convert himself, or to prepare himself thereunto.  (Titus 3:3-5; John 6:44)
-
-// Paragraph 4. When God converts a sinner, and translates him into the state of grace, He frees him from his natural bondage under sin, (Col. 1:13; John 8:36) and by His grace alone enables him freely to will and to do that which is spiritually good; (Phil. 2:13) yet so as that by reason of his remaining corruptions, he does not perfectly, nor only will, that which is good, but does also will that which is evil.  (Rom. 7:15, 18, 19, 21, 23)
-
-// Paragraph 5. This will of man is made perfectly and immutably free to good alone in the state of glory only.  (Eph. 4:13)
-// Chapter 10: Of Effectual Calling
-// Paragraph 1. Those whom God hath predestinated unto life, He is pleased in His appointed, and accepted time, effectually to call, (Rom. 8:30, 11:7; Eph. 1:10, 11; 2 Thess. 2:13, 14) by His Word and Spirit, out of that state of sin and death in which they are by nature, to grace and salvation by Jesus Christ; (Eph. 2:1-6) enlightening their minds spiritually and savingly to understand the things of God; (Acts 26:18; Eph. 1:17, 18) taking away their heart of stone, and giving to them a heart of flesh; (Ezek. 36:26) renewing their wills, and by His almighty power determining them to that which is good, and effectually drawing them to Jesus Christ; (Deut. 30:6; Ezek. 36:27; Eph. 1:19) yet so as they come most freely, being made willing by His grace.  (Ps. 110:3; Cant. 1:4)
-
-// Paragraph 2. This effectual call is of God's free and special grace alone, not from anything at all foreseen in man, nor from any power or agency in the creature, (2 Tim. 1:9; Eph. 2:8) being wholly passive therein, being dead in sins and trespasses, until being quickened and renewed by the Holy Spirit; (1 Cor. 2:14; Eph. 2:5; John 5:25) he is thereby enabled to answer this call, and to embrace the grace offered and conveyed in it, and that by no less power than that which raised up Christ from the dead.  (Eph. 1:19, 20)
-
-// Paragraph 3. Elect infants dying in infancy are regenerated and saved by Christ through the Spirit; (John 3:3, 5, 6) who works when, and where, and how He pleases; (John 3:8) so also are all elect persons, who are incapable of being outwardly called by the ministry of the Word.
-
-// Paragraph 4. Others not elected, although they may be called by the ministry of the Word, and may have some common operations of the Spirit, (Matt. 22:14, 13:20, 21; Heb 6:4, 5) yet not being effectually drawn by the Father, they neither will nor can truly come to Christ, and therefore cannot be saved: (John 6:44, 45, 65; 1 John 2:24, 25) much less can men that do not receive the Christian religion be saved; be they never so diligent to frame their lives according to the light of nature and the law of that religion they do profess.  (Acts 4:12; John 4:22, 17:3)
-// Chapter 11: Of Justification
-// Paragraph 1. Those whom God effectually calls, he also freely justifies, (Rom. 3:24, 8:30) not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; (Rom. 4:5-8, Eph. 1:7) not for anything wrought in them, or done by them, but for Christ's sake alone; (1 Cor. 1:30, 31, Rom. 5:17-19) not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness; but by imputing Christ's active obedience unto the whole law, and passive obedience in his death for their whole and sole righteousness by faith, (Phil. 3:8, 9; Eph. 2:8-10) which faith they have not of themselves; it is the gift of God.  (John 1:12, Rom. 5:17)
-
-// Paragraph 2. Faith thus receiving and resting on Christ and his righteousness, is the alone instrument of justification; (Rom. 3:28) yet is not alone in the person justified, but is ever accompanied with all other saving graces, and is no dead faith, but works by love.  (Gal.5:6, James 2:17, 22, 26)
-
-// Paragraph 3. Christ, by his obedience and death, did fully discharge the debt of all those who are justified; and did, by the sacrifice of himself in the blood of his cross, undergoing in their stead the penalty due to them, make a proper, real, and full satisfaction to God’s justice in their behalf; (Heb. 10:14; 1 Pet. 1:18, 19; Isa. 53:5, 6) yet, in as much as he was given by the Father for them, and his obedience and satisfaction accepted in their stead, and both freely, not for anything in them, (Rom. 8:32; 2 Cor. 5:21) their justification is only of free grace, that both the exact justice and rich grace of God might be glorified in the justification of sinners.  (Rom. 3:26; Eph. 1:6, 7, 2:7)
-
-// Paragraph 4. God did from all eternity decree to justify all the elect, (Gal. 3:8, 1 Pet. 1:2, 1 Tim. 2:6) and Christ did in the fullness of time die for their sins, and rise again for their justification; (Rom. 4:25)  nevertheless, they are not justified personally, until the Holy Spirit in time does actually apply Christ to them.  (Col. 1:21, 22, Titus 3:4-7)
-
-// Paragraph 5. God continues to forgive the sins of those that are justified, (Matt. 6:12, 1 John 1:7, 9) and although they can never fall from the state of justification, (John 10:28) yet they may, by their sins, fall under God’s fatherly displeasure; (Ps. 89:31-33) and in that condition they usually do not have the light of his countenance restored to them, until they humble themselves, beg pardon, and renew their faith and repentance.  (Ps. 32:5, Ps. 51, Matt. 26:75)
-
-// Paragraph 6. The justification of believers under the Old Testament was, in all these respects, one and the same with the justification of believers under the New Testament.  (Gal. 3:9; Rom. 4:22-24)
-// Chapter 12: Of Adoption
-// Paragraph 1. All those that are justified, God conferred, in and for the sake of his only Son Jesus Christ, to make partakers of the grace of adoption, (Eph. 1:5; Gal. 4:4, 5) by which they are taken into the number, and enjoy the liberties and privileges of the children of God, (John 1:12; Rom. 8:17) have his name put on them, (2 Cor. 6:18; Rev. 3:12) receive the spirit of adoption, (Rom. 8:15) have access to the throne of grace with boldness, are enabled to cry Abba, Father, (Gal. 4:6; Eph. 2:18) are pitied, (Ps. 103:13) protected, (Prov. 14:26; 1 Pet. 5:7) provided for, (Heb. 12:6) and chastened by him as by a Father, (Isa. 54:8, 9) yet never cast off, (Lam. 3:31) but sealed to the day of redemption, (Eph. 4:30) and inherit the promises as heirs of everlasting salvation.  (Heb. 1:14, 6:12)
-// Chapter 13: Of Sanctification
-// Paragraph 1. They who are united to Christ, effectually called, and regenerated, having a new heart and a new spirit created in them through the virtue of Christ's death and resurrection, are also farther sanctified, really and personally, (Acts 20:32; Rom. 6:5, 6) through the same virtue, by his Word and Spirit dwelling in them; (John 17:17; Eph. 3:16-19; 1 Thess. 5:21-23) the dominion of the whole body of sin is destroyed, (Rom. 6:14) and the several lusts of it are more and more weakened and mortified, (Gal. 5:24) and they more and more quickened and strengthened in all saving graces, (Col. 1:11) to the practice of all true holiness, without which no man shall see the Lord.  (2 Cor. 7:1; Heb. 12:14)
-
-// Paragraph 2. This sanctification is throughout the whole man, (1 Thess. 5:23) yet imperfect in this life; there abides still some remnants of corruption in every part, (Rom. 7:18, 23) wherefrom arises a continual and irreconcilable war; the flesh lusting against the Spirit, and the Spirit against the flesh.  (Gal. 5:17; 1 Pet. 2:11)
-
-// Paragraph 3. In which war, although the remaining corruption for a time may much prevail, (Rom. 7:23) yet, through the continual supply of strength from the sanctifying Spirit of Christ, the regenerate part does overcome; (Rom. 6:14) and so the saints grow in grace, perfecting holiness in the fear of God, pressing after an heavenly life, in evangelical obedience to all the commands which Christ as Head and King, in his Word has prescribed to them.  (Eph. 4:15, 16; 2 Cor. 3:18, 7:1)
-// Chapter 14: Of Saving Faith
-// Paragraph 1. The grace of faith, whereby the elect are enabled to believe to the saving of their souls, is the work of the Spirit of Christ in their hearts, (2 Cor. 4:13; Eph. 2:8) and is ordinarily wrought by the ministry of the Word; (Rom. 10:14,17) by which also, and by the administration of baptism and the Lord's supper, prayer, and other means appointed of God, it is increased and strengthened.  (Luke 17:5; 1 Pet. 2:2; Acts 20:32)
-
-// Paragraph 2. By this faith a Christian believes to be true whatsoever is revealed in the Word for the authority of God himself, (Acts 24:14) and also apprehends an excellency therein above all other writings and all things in the world, (Ps. 19:7-10, 69:72) as it bears forth the glory of God in his attributes, the excellency of Christ in his nature and offices, and the power and fullness of the Holy Spirit in his workings and operations: and so is enabled to cast his soul upon the truth consequently believed; (2 Tim. 1:12) and also acts differently upon that which each particular passage thereof contains; yielding obedience to the commands, (John 15:14) trembling at the threatenings, (Isa. 116:2) and embracing the promises of God for this life and that which is to come; (Heb. 11:13) but the principle acts of saving faith have immediate relation to Christ, accepting, receiving, and resting upon him alone for justification, sanctification, and eternal life, by virtue of the covenant of grace.  (John 1:12; Acts 16:31; Gal 2:20; Acts 15:11)
-
-// Paragraph 3. This faith, although it be in different stages, and may be weak or strong, (Heb. 5:13, 14; Matt. 6:30; Rom. 4:19, 20) yet it is in the least degree of it different in the kind or nature of it, as is all other saving grace, from the faith and common grace of temporary believers; (2 Pet. 1:1) and therefore, though it may be many times assailed and weakened, yet it gets the victory, (Eph. 6:16; 1 John 5:4, 5) growing up in many to the attainment of a full assurance through Christ, (Heb. 6:11, 12; Col. 2:2) who is both the author and finisher of our faith.  (Heb. 12:2)
-// Chapter 15: Of Repentance Unto Life And Salvation
-// Paragraph 1. Such of the elect that are converted at riper years, having sometime lived in the state of nature, and therein served divers pleasures, God in their effectual calling gives them repentance to life.  (Titus 3:2-5)
-
-// Paragraph 2. Whereas there is none that does good and does not sin, (Eccles. 7:20) and the best of men may, through the power and deceitfulness of their corruption dwelling in them, with the prevalency of temptation, fall in to great sins and provocations; God has, in the covenant of grace, mercifully provided that believers so sinning and falling be renewed through repentance unto salvation.  (Luke 22:31, 32)
-
-// Paragraph 3. This saving repentance is an evangelical grace, (Zech. 12:10; Acts 11:18) whereby a person, being by the Holy Spirit made sensible of the manifold evils of his sin, does, by faith in Christ, humble himself for it with godly sorrow, detestation of it, and self-abhorrancy, (Ezek. 36:31; 2 Cor. 7:11) praying for pardon and strength of grace, with a purpose and endeavor, by supplies of the Spirit, to walk before God unto all well-pleasing in all things.  (Ps. 119:6, 128)
-
-// Paragraph 4. As repentance is to be continued through the whole course of our lives, upon the account of the body of death, and the motions thereof, so it is every man’s duty to repent of his particular known sins particularly.  (Luke 19:8; 1 Tim. 1:13, 15)
-
-// Paragraph 5. Such is the provision which God has made through Christ in the covenant of grace for the preservation of believers unto salvation, that although there is no sin so small but it deserves damnation, (Rom. 6:23) yet there is no sin so great that it shall bring damnation to them that repent, (Isa. 1:16-18, 55:7) which makes the constant preaching of repentance necessary.
-// Chapter 16: Of Good Works
-// Paragraph 1. Good works are only such as God has commanded in his Holy Word, (Mic. 6:8; Heb. 13:21) and not such as without the warrant thereof are devised by men out of blind zeal, or upon any pretense of good intentions.  (Matt. 15:9; Isa. 29:13)
-
-// Paragraph 2. These good works, done in obedience to God’s commandments, are the fruits and evidences of a true and lively faith; (James 2:18, 22) and by them believers manifest their thankfulness, (Ps. 116:12, 13) strengthen their assurance, (1 John 2:3, 5; 2 Pet. 1:5-11) edify their brethren, adorn the profession of the gospel, (Matt. 5:16) stop the mouths of the adversaries, and glory God, (1 Tim. 6:1; 1 Pet. 2:15; Phil. 1:11) whose workmanship they are, created in Christ Jesus thereunto, (Eph. 2:10) that having their fruit unto holiness they may have the end eternal life.  (Rom 6:22)
-
-// Paragraph 3. Their ability to do good works is not all of themselves, but wholly from the Spirit of Christ; (John 15:4, 5) and that they may be enabled thereunto, besides the graces they have already received, there is necessary an actual influence of the same Holy Spirit, to work in them and to will and to do of his good pleasure; (2 Cor. 3:5; Phil. 2:13) yet they are not bound to perform any duty, unless upon a special motion of the Spirit, but they ought to be diligent in stirring up the grace of God that is in them.  (Phil. 2:12; Heb. 6:11, 12; Isa. 64:7)
-
-// Paragraph 4. They who in their obedience attain to the greatest height which is possible in this life, are so far from being able to supererogate, and to do more than God requires, as that they fall short of much which in duty they are bound to do.  (Job 9:2, 3; Gal. 5:17; Luke 17:10)
-
-// Paragraph 5. We cannot by our best works merit pardon of sin or eternal life at the hand of God, by reason of the great disproportion that is between them and the glory to come, and the infinite distance that is between us and God, whom by them we can neither profit nor satisfy for the debt of our former sins; (Rom. 3:20; Eph. 2:8, 9; Rom. 4:6) but when we have done all we can, we have done but our duty, and are unprofitable servants; and because they are good they proceed from his Spirit, (Gal. 5:22, 23) and as they are wrought by us they are defiled and mixed with so much weekness and imperfection, that they cannot endure the severity of God’s punishment.  (Isa. 64:6; Ps. 43:2)
-
-// Paragraph 6. Yet notwithstanding the persons of believers being accepted through Christ, their good works also are accepted in him; (Eph. 1:5; 1 Pet. 1:5) not as thought they were in this life wholly unblamable and unreprovable in God’s sight, but that he, looking upon them in his Son, is pleased to accept and reward that which is sincere, although accompanied with many weaknesses and imperfection.  (Matt. 25:21, 23; Heb. 6:10)
-
-// Paragraph 7. Works done by unregenerate men, although for the matter of them they may things which God commands, and of good use both to themselves and to others; (2 Kings 10:30; 1 Kings 21:27, 29) yet because they proceed not from a heart purified by faith, (Gen. 4:5; Heb. 11:4, 6) nor are done in a right manner according to the Word, (1 Cor. 13:1) nor to a right end, the glory of God, (Matt. 6:2, 5) they are therfore sinful, and cannot please God, nor make a man meet to receive the grace from God, (Amos 5:21, 22; Rom. 9:16; Titus 3:5) and yet their neglect of them is more sinful and displeasing to God.  (Job 21:14, 15; Matt. 25:41-43)
-// Chapter 17: Of The Perseverance Of The Saints
-// Paragraph 1. Those whom God has accepted in the beloved, effectually called and sanctified by his Spirit, and given the precious faith of his elect unto, can neither totally nor finally fall from the state of grace, but shall certainly persevere therein to the end, and be eternally saved, seeing the gifts and callings of God are without repentance, from which source he still begets and nourishes in them faith, repentance, love, joy, hope, and all the graces of the Spirit unto immortality; (John 10:28, 29; Phil. 1:6; 2 Tim. 2:19; 1 John 2:19) and though many storms and floods arise and beat against them, yet they shall never be able to take them off that foundation and rock which by faith they are fastened upon; notwithstanding, through unbelief and the temptations of Satan, the sensible sight of the light and love of God may for a time be clouded and obscured from them, (Ps. 89:31, 32; 1 Cor. 11:32) yet he is still the same, and they shall be sure to be kept by the power of God unto salvation, where they shall enjoy their purchased possession, they being engraved upon the palm of his hands, and their names having been written in the book of life from all eternity.  (Mal. 3:6)
-
-// Paragraph 2. This perseverance of the saints depends not upon their own free will, but upon the immutability of the decree of election, (Rom. 8:30, 9:11, 16) flowing from the free and unchangeable love of God the Father, upon the efficacy of the merit and intercession of Jesus Christ and union with him, (Rom. 5:9, 10; John 14:19) the oath of God, (Heb. 6:17, 18) the abiding of his Spirit, and the seed of God within them, (1 John 3:9) and the nature of the covenant of grace; (Jer. 32:40) from all which ariseth also the certainty and infallibility thereof. 
-
-// Paragraph 3. And though they may, through the temptation of Satan and of the world, the prevalency of corruption remaining in them, and the neglect of means of their preservation, fall into grievous sins, and for a time continue therein, (Matt. 26:70, 72, 74) whereby they incur God's displeasure and grieve his Holy Spirit, (Isa. 64:5, 9; Eph. 4:30) come to have their graces and comforts impaired, (Ps. 51:10, 12) have their hearts hardened, and their consciences wounded, (Ps. 32:3, 4) hurt and scandalize others, and bring temporal judgments upon themselves, (2 Sam. 12:14) yet shall they renew their repentance and be preserved through faith in Christ Jesus to the end.  (Luke 22:32, 61, 62)
-// Chapter 18: Of The Assurance Of Grace And Salvation
-// Paragraph 1. Although temporary believers and other unregenerate men, may vainly deceive themselves with false hopes and carnal presumptions of being in the favor of God and in a state of salvation, which hope of theirs shall perish; (Job 8:13, 14; Matt. 7:22, 23) yet such as truly believe in the Lord Jesus, and love him in sincerity, endeavouring to walk in all good conscience before him, may in this life be certainly assured that they are in the state of grace, and may rejoice in the hope of the glory of God, (1 John 2:3, 3:14, 18, 19, 21, 24, 5:13) which hope shall never make them ashamed.  (Rom. 5:2, 5)
-
-// Paragraph 2. This certainty is not a bare conjectural and probable persuasion grounded upon a fallible hope, but an infallible assurance of faith, (Heb. 6:11, 19) founded on the blood and righteousness of Christ revealed in the Gospel; (Heb. 6:17, 18) and also upon the inward evidence of those graces of the Spirit unto which promises are made, (2 Pet. 1:4, 5, 10, 11) and on the testimony of the Spirit of adoption, witnessing with our spirits that we are the children of God; (Rom. 8:15, 16) and, as a fruit thereof, keeping the heart both humble and holy.  (1 John 3:1-3)
-
-// Paragraph 3. This infallible assurance does not so belong to the essence of faith, but that a true believer may wait long, and struggle with many difficulties before he be partaker of it; (Isa. 50:10; Ps. 88; Ps. 77:1-12) yet being enabled by the Spirit to know the things which are freely given him of God, he may, without extraordinary revelation, in the right use of means, attain thereunto: (1 John 4:13; Heb. 6:11, 12) and therefore it is the duty of every one to give all diligence to make his calling and election sure, that thereby his heart may be enlarged in peace and joy in the Holy Spirit, in love and thankfulness to God, and in strength and cheerfulness in the duties of obedience, the proper fruits of this assurance; (Rom. 5:1, 2, 5, 14:17; Ps. 119:32) -so far is it from inclining men to looseness.  (Rom. 6:1, 2; Titus 2:11, 12, 14)
-
-// Paragraph 4. True believers may have the assurance of their salvation divers ways shaken, diminished, and intermitted; as by negligence in preserving of it, (Cant. 5:2, 3, 6) by falling into some special sin which wounds the conscience and grieves the Spirit; (Ps. 51:8, 12, 14) by some sudden or vehement temptation, (Ps. 116:11; 77:7, 8, 31:22) by God's withdrawing the light of his countenance, and suffering even such as fear him to walk in darkness and to have no light, (Ps. 30:7) yet are they never destitute of the seed of God (1 John 3:9) and life of faith, (Luke 22:32) that love of Christ and the brethren, that sincerity of heart and conscience of duty out of which, by the operation of the Spirit, this assurance may in due time be revived, (Ps. 42:5, 11) and by the which, in the meantime, they are preserved from utter despair.  (Lam. 3:26-31)
 // Chapter 19: Of The Law Of God
 // Paragraph 1. God gave to Adam a law of universal obedience written in his heart, and a particular precept of not eating the fruit of the tree of knowledge of good and evil; (Gen. 1:27; Eccles. 7:29) by which he bound him and all his posterity to personal, entire, exact, and perpetual obedience; (Rom. 10:5) promised life upon the fulfilling, and threatened death upon the breach of it, and endued him with power and ability to keep it.  (Gal. 3:10, 12)
 
@@ -1033,306 +2115,7 @@ const LONDON_BAPTIST = [
 
 
 
-//     {
-//         chapter: 7,
-//         title: "Of God's Covenant",
-//         topic: ['covenant'],
-//         content: [
-//             {
-//                 text: "The distance between God and the creature is so great, that although reasonable creatures do owe obedience to him as their creator, yet they could never have attained the reward of life but by some voluntary condescension on God's part, which he hath been pleased to express by way of covenant.",
-//                 scriptures: ['Luke 17:10', 'Job 35:7-8']
-//             },
-//             {
-//                 text: "Moreover, man having brought himself under the curse of the law by his fall, it pleased the Lord to make a covenant of grace, wherein he freely offereth unto sinners life and salvation by Jesus Christ, requiring of them faith in him, that they may be saved; and promising to give unto all those that are ordained unto eternal life, his Holy Spirit, to make them willing and able to believe.",
-//                 scriptures: ['Genesis 2:17', 'Galatians 3:10', 'Romans 3:20-21', 'Romans 8:3', 'Mark 16:15-16', 'John 3:16', 'Ezekiel 36:26-27', 'John 6:44-45', 'Psalms 110:3']
-//             },
-//             {
-//                 text: "This covenant is revealed in the gospel; first of all to Adam in the promise of salvation by the seed of the woman, and afterwards by farther steps, until the full discovery thereof was completed in the New Testament; and it is founded in that eternal covenant transaction that was between the Father and the Son about the redemption of the elect; and it is alone by the grace of this covenant that all the posterity of fallen Adam that ever were saved did obtain life and blessed immortality, man being now utterly incapable of acceptance with God upon those terms on which Adam stood in his state of innocency.",
-//                 scriptures: ['Genesis 3:15', 'Hebrews 1:1-2', 'Timothy 1:9', 'Titus 1:2', 'Hebrews 11:6, 13', 'Romans 4:1-2', 'Acts 4:12', 'John 8:56']
-//             } 
-//         ] 
-//     },
-//     {
-//         chapter: 8,
-//         title: "Of Christ the Mediator",
-//         topic: ['jesus'],
-//         content: [
-//             {
-//                 text: "It pleased God, in His eternal purpose, to choose and ordain the Lord Jesus, his only begotten Son, according to the covenant made between them both, to be the mediator between God and man; the prophet, priest, and king; head and saviour of the church, the heir of all things, and judge of the world; unto whom he did from all eternity give a people to be his seed and to be by him in time redeemed, called, justified, sanctified, and glorified.",
-//                 scriptures: ['Isaiah 42:1', '1 Peter 1:19-20', 'Acts 3:22', 'Hebrews 5:5-6', 'Psalms 2:6', 'Luke 1:33', 'Ephesians 1:22-23', 'Hebrews 1:2', 'Acts 17:31', 'Isaiah 53:10', 'John 17:6', 'Romans 8:30']
-//             },
-//             {
-//                 text: "The Son of God, the second person in the Holy Trinity, being very and eternal God, the brightness of the Father's glory, of one substance and equal with him who made the world, who upholdeth and governeth all things he hath made, did, when the fullness of time was come, take upon him man's nature, with all the essential properties and common infirmities thereof, yet without sin; being conceived by the Holy Spirit in the womb of the Virgin Mary, the Holy Spirit coming down upon her: and the power of the Most High overshadowing her; and so was made of a woman of the tribe of Judah, of the seed of Abraham and David according to the Scriptures; so that two whole, perfect, and distinct natures were inseparably joined together in one person, without conversion, composition, or confusion; which person is very God and very man, yet one Christ, the only mediator between God and man.",
-//                 scriptures: ['John 1:14', 'Galatians 4:4', 'Romans 8:3', 'Hebrews 2:14, 16-17', 'Hebrews 4:15', 'Matthew 1:22-23', 'Luke 1:27, 31, 35', 'Romans 9:5', '1 Timothy 2:5']
-//             },
-//             {
-//                 text: "The Lord Jesus, in his human nature thus united to the divine, in the person of the Son, was sanctified and anointed with the Holy Spirit above measure, having in Him all the treasures of wisdom and knowledge; in whom it pleased the Father that all fullness should dwell, to the end that being holy, harmless, undefiled, and full of grace and truth, he might be throughly furnished to execute the office of mediator and surety; which office he took not upon himself, but was thereunto called by his Father; who also put all power and judgement in his hand, and gave him commandment to execute the same.",
-//                 scriptures: ['Psalms 45:7', 'Acts 10:38', 'John 3:34', 'Colossians 2:3', 'Colossians 1:19', 'Hebrews 7:26', 'John 1:14', 'Hebrews 7:22', 'Hebrews 5:5', 'John 5:22, 27', 'Matthew 28:18', 'Acts 2:36']
-//             },
-//             {
-//                 text: "This office the Lord Jesus did most willingly undertake, which that he might discharge he was made under the law, and did perfectly fulfil it, and underwent the punishment due to us, which we should have borne and suffered, being made sin and a curse for us; enduring most grievous sorrows in his soul, and most painful sufferings in his body; was crucified, and died, and remained in the state of the dead, yet saw no corruption: on the third day he arose from the dead with the same body in which he suffered, with which he also ascended into heaven, and there sitteth at the right hand of his Father making intercession, and shall return to judge men and angels at the end of the world.",
-//                 scriptures: ['Psalms 40:7-8', 'Hebrews 10:5-10', 'John 10:18', 'Gal 4:4', 'Matthew 3:15', 'Galatians 3:13', 'Isaiah 53:6', '1 Peter 3:18', '2 Corinthians 5:21', 'Matthew 26:37-38', 'Luke 22:44', 'Matthew 27:46', 'Acts 13:37', '1 Corinthians 15:3-4', 'John 20:25, 27', 'Mark 16:19', 'Acts 1:9-11', 'Romans 8:34', 'Hebrews 9:24', 'Acts 10:42', 'Romans 14:9-10', 'Acts 1:11', '2 Peter 2:4']
-//             },
-//             {
-//                 text: "The Lord Jesus, by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, hath fully satisfied the justice of God, procured reconciliation, and purchased an everlasting inheritance in the kingdom of heaven, for all those whom the Father hath given unto Him.",
-//                 scriptures: ['Hebrews 9:14', 'Hebrews 10:14', 'Romans 3:25-26', 'John 17:2', 'Hebrews 9:15']
-//             },
-//             {
-//                 text: "Although the price of redemption was not actually paid by Christ till after his incarnation, yet the virtue, efficacy, and benefit thereof were communicated to the elect in all ages, successively from the beginning of the world, in and by those promises, types, and sacrifices wherein he was revealed, and signified to be the seed which should bruise the serpent's head; and the Lamb slain from the foundation of the world, being the same yesterday, and to-day and for ever.",
-//                 scriptures: ['1 Corinthians 4:10', 'Hebrews 4:2', '1 Peter 1:10-11', 'Revelation 13:8', 'Hebrews 13:8']
-//             },
-//             {
-//                 text: "Christ, in the work of mediation, acteth according to both natures, by each nature doing that which is proper to itself; yet by reason of the unity of the person, that which is proper to one nature is sometimes in Scripture, attributed to the person denominated by the other nature.",
-//                 scriptures: ['John 3:13', 'Acts 20:28']
-//             },
-//             {
-//                 text: "To all those for whom Christ hath obtained eternal redemption, he doth certainly and effectually apply and communicate the same, making intercession for them; uniting them to himself by his Spirit, revealing unto them, in and by his Word, the mystery of salvation, persuading them to believe and obey, governing their hearts by his Word and Spirit, and overcoming all their enemies by his almighty power and wisdom, in such manner and ways as are most consonant to his wonderful and unsearchable dispensation; and all of free and absolute grace, without any condition foreseen in them to procure it.",
-//                 scriptures: ['John 6:37', 'John 10:15-16', 'John 17:9', 'Romans 5:10', 'John 17:6', 'Ephesians 1:9', '1 John 5:20', 'Romans 8:9, 14', 'Psalms 110:1', '1 Corinthians 15:25-26', 'John 3:8', 'Ephesians 1:8']
-//             },
-//             {
-//                 text: "This office of mediator between God and man is proper only to Christ, who is the prophet, priest, and king of the church of God; and may not be either in whole, or any part thereof, transferred from him to any other.",
-//                 scriptures: ['1 Timothy 2:5']
-//             },
-//             {
-//                 text: "This number and order of offices is necessary; for in respect of our ignorance, we stand in need of his prophetical office; and in respect of our alienation from God, and imperfection of the best of our services, we need his priestly office to reconcile us and present us acceptable unto God; and in respect to our averseness and utter inability to return to God, and for our rescue and security from our spiritual adversaries, we need his kingly office to convince, subdue, draw, uphold, deliver, and preserve us to his heavenly kingdom.",
-//                 scriptures: ['John 1:18', 'Colossians 1:21', 'Galatians 5:17', 'John 16:8', 'Psalms 110:3', 'Luke 1:74-75']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 9,
-//         title: "Of Free Will",
-//         topic: ['free will'],
-//         content: [
-//             {
-//                 text: "God hath endued the will of man with that natural liberty and power of acting upon choice, that it is neither forced, nor by any necessity of nature determined to do good or evil.",
-//                 scriptures: ['Matthew 17:12', 'James 1:14', 'Deuteronomy 30:19']
-//             },
-//             {
-//                 text: "Man, in his state of innocency, had freedom and power to will and to do that which was good and well-pleasing to God, but yet was unstable, so that he might fall from it.",
-//                 scriptures: ['Ecclesiastes 7:29', 'Genesis 3:6']
-//             },
-//             {
-//                 text: "Man, by his fall into a state of sin, hath wholly lost all ability of will to any spiritual good accompanying salvation; so as a natural man, being altogether averse from that good, and dead in sin, is not able by his own strength to convert himself, or to prepare himself thereunto.",
-//                 scriptures: ['Romans 5:6', 'Romans 8:7', 'Ephesians 2:1, 5', 'Titus 3:3-5', 'John 6:44']
-//             },
-//             {
-//                 text: "When God converts a sinner, and translates him into the state of grace, he freeth him from his natural bondage under sin, and by his grace alone enables him freely to will and to do that which is spiritually good; yet so as that by reason of his remaining corruptions, he doth not perfectly, nor only will, that which is good, but doth also will that which is evil. ",
-//                 scriptures: ['Colossians 1:13', 'John 8:36', 'Philippians 2:13', 'Romans 7:15, 18-19, 21, 23']
-//             },
-//             {
-//                 text: "This will of man is made perfectly and immutably free to good alone in the state of glory only. ",
-//                 scriptures: ['Ephesians 4:13']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 10,
-//         title: "Of Effectual Calling",
-//         topic: ['calling'],
-//         content: [
-//             {
-//                 text: "Those whom God hath predestinated unto life, he is pleased in his appointed, and accepted time, effectually to call, by his Word and Spirit, out of that state of sin and death in which they are by nature, to grace and salvation by Jesus Christ; enlightening their minds spiritually and savingly to understand the things of God; taking away their heart of stone, and giving unto them a heart of flesh; renewing their wills, and by his almighty power determining them to that which is good, and effectually drawing them to Jesus Christ; yet so as they come most freely, being made willing by his grace.",
-//                 scriptures: ['Romans 8:30', 'Romans 11:7', 'Ephesians 1:10-11', '2 Thessalonians 2:13-14', 'Ephesians 2:1-6', 'Acts 26:18', 'Ephesians 1:17-18', 'Ezekiel 36:26', 'Deuteronomy 30:6', 'Ezekiel 36:27', 'Ephesians 1:19', 'Psalm 110:3', 'Song of Solomon 1:4']
-//             },
-//             {
-//                 text: "This effectual call is of God's free and special grace alone, not from anything at all foreseen in man, nor from any power or agency in the creature, being wholly passive therein, being dead in sins and trespasses, until being quickened and renewed by the Holy Spirit; he is thereby enabled to answer this call, and to embrace the grace offered and conveyed in it, and that by no less power than that which raised up Christ from the dead.",
-//                 scriptures: ['2 Timothy 1:9', 'Ephesians 2:8', '1 Corinthians 2:14', 'Ephesians 2:5', 'John 5:25', 'Ephesians 1:19-20']
-//             },
-//             {
-//                 text: "Elect infants dying in infancy are regenerated and saved by Christ through the Spirit; who worketh when, and where, and how he pleases; so also are all elect persons, who are incapable of being outwardly called by the ministry of the Word. ",
-//                 scriptures: ['John 3:3, 5-6', 'John 3:8']
-//             },
-//             {
-//                 text: "Others not elected, although they may be called by the ministry of the Word, and may have some common operations of the Spirit, yet not being effectually drawn by the Father, they neither will nor can truly come to Christ, and therefore cannot be saved: much less can men that receive not the Christian religion be saved; be they never so diligent to frame their lives according to the light of nature and the law of that religion they do profess.",
-//                 scriptures: ['Matthew 22:14', 'Matthew 13:20-21', 'Hebrews 6:4-5', 'John 6:44-45, 65', '1 John 2:24-25', 'Acts 4:12', 'John 4:22', 'John 17:3']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 11,
-//         title: "Of Justification",
-//         topic: ['justification'],
-//         content: [
-//             {
-//                 text: "Those whom God effectually calleth, he also freely justifieth, not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; not for anything wrought in them, or done by them, but for Christ's sake alone; not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness; but by imputing Christ's active obedience unto the whole law, and passive obedience in his death for their whole and sole righteousness by faith, which faith they have not of themselves; it is the gift of God.",
-//                 scriptures: ['Romans 3:24', 'Romans 8:30', 'Romans 4:5-8', 'Ephesians 1:7', '1 Corinthians 1:30-31', 'Romans 5:17-19', 'Philippians 3:8-9', 'Ephesians 2:8-10', 'John 1:12', 'Romans 5:17']
-//             },
-//             {
-//                 text: "Faith thus receiving and resting on Christ and his righteousness, is the alone instrument of justification; yet it is not alone in the person justified, but is ever accompanied with all other saving graces, and is no dead faith, but worketh by love.",
-//                 scriptures: ['Romans 3:28', 'Galatians 5:6', 'James 2:17, 22, 26']
-//             },
-//             {
-//                 text: "Christ, by his obedience and death, did fully discharge the debt of all those that are justified; and did, by the sacrifice of himself in the blood of his cross, undergoing in their stead the penalty due unto them, make a proper, real, and full satisfaction to God's justice in their behalf; yet, inasmuch as he was given by the Father for them, and his obedience and satisfaction accepted in their stead, and both freely, not for anything in them, their justification is only of free grace, that both the exact justice and rich grace of God might be glorified in the justification of sinners.",
-//                 scriptures: ['Hebrews 10:14', '1 Peter 1:18-19', 'Isaiah 53:5-6', 'Romans 8:32', '2 Corinthians 5:21', 'Romans 3:26', 'Ephesians 1:6-7', 'Ephesians 2:7']
-//             },
-//             {
-//                 text: "God did from all eternity decree to justify all the elect, and Christ did in the fullness of time die for their sins, and rise again for their justification; nevertheless, they are not justified personally, until the Holy Spirit doth in time due actually apply Christ unto them.",
-//                 scriptures: ['Galatians 3:8', '1 Peter 1:2', '1 Timothy 2:6', 'Romans 4:25', 'Colossians 1:21-22', 'Titus 3:4-7']
-//             },
-//             {
-//                 text: "God doth continue to forgive the sins of those that are justified, and although they can never fall from the state of justification, yet they may, by their sins, fall under God's fatherly displeasure; and in that condition they have not usually the light of his countenance restored unto them, until they humble themselves, confess their sins, beg pardon, and renew their faith and repentance.",
-//                 scriptures: ['Matthew 6:12', '1 John 1:7, 9', 'John 10:28', 'Psalms 89:31-33', 'Psalms 32:5', 'Psalms 51', 'Matthew 26:75']
-//             },
-//             {
-//                 text: "The justification of believers under the Old Testament was, in all these respects, one and the same with the justification of believers under the New Testament.",
-//                 scriptures: ['Galatians 3:9', 'Romans 4:22-24']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 12,
-//         title: "Of Adoption",
-//         topic: ['adoption'],
-//         content: [
-//             {
-//                 text: "All those that are justified, God vouchsafed, in and for the sake of his only Son Jesus Christ, to make partakers of the grace of adoption, by which they are taken into the number, and enjoy the liberties and privileges of the children of God, have his name put upon them, receive the spirit of adoption, have access to the throne of grace with boldness, are enabled to cry Abba, Father, are pitied, protected, provided for, and chastened by him as by a Father, yet never cast off, but sealed to the day of redemption, and inherit the promises as heirs of everlasting salvation.",
-//                 scriptures: ['Ephesians 1:5', 'Galatians 4:4-5', 'John 1:12', 'Romans 8:17', '2 Corinthians 6:18', 'Revelation 3:12', 'Romans 8:15', 'Galatians 4:6', 'Ephesians 2:18', 'Psalms 103:13', 'Proverbs 14:26', '1 Peter 5:7', 'Hebrews 12:6', 'Isaiah 54:8-9', 'Lamentations 3:31', 'Ephesians 4:30', 'Hebrews 1:14', 'Hebrews 6:12']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 13,
-//         title: "Of Sanctification",
-//         topic: ['sanctification'],
-//         content: [
-//             {
-//                 text: "They who are united to Christ, effectually called, and regenerated, having a new heart and a new spirit created in them through the virtue of Christ's death and resurrection, are also farther sanctified, really and personally, through the same virtue, by His Word and Spirit dwelling in them; the dominion of the whole body of sin is destroyed, and the several lusts thereof are more and more weakened and mortified, and they more and more quickened and strengthened in all saving graces, to the practice of all true holiness, without which no man shall see the Lord.",
-//                 scriptures: ['Acts 20:32', 'Romans 6:5-6', 'John 17:17', 'Ephesians 3:16-19', '1 Thessalonians 5:21-23', 'Romans 6:14', 'Galatians 5:24', 'Colossians 1:11', '2 Corinthians 7:1', 'Hebrews 12:14']
-//             },
-//             {
-//                 text: "This sanctification is throughout the whole man, yet imperfect in this life; there abideth still some remnants of corruption in every part, whence ariseth a continual and irreconcilable war; the flesh lusting against the Spirit, and the Spirit against the flesh.",
-//                 scriptures: ['1 Thessalonians 5:23', 'Romans 7:18, 23', 'Galatians 5:17', '1 Peter 2:11']
-//             },
-//             {
-//                 text: "In which war, although the remaining corruption for a time may much prevail, yet through the continual supply of strength from the sanctifying Spirit of Christ, the regenerate part doth overcome; and so the saints grow in grace, perfecting holiness in the fear of God, pressing after an heavenly life, in evangelical obedience to all the commands which Christ as Head and King, in His Word hath prescribed them.",
-//                 scriptures: ['Romans 7:23', 'Romans 6:14', 'Ephesians 4:15-16', '2 Corinthians 3:18', '2 Corinthians 7:1']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 14,
-//         title: "Of Saving Faith",
-//         topic: ['faith'],
-//         content: [
-//             {
-//                 text: "The grace of faith, whereby the elect are enabled to believe to the saving of their souls, is the work of the Spirit of Christ in their hearts, and is ordinarily wrought by the ministry of the Word; by which also, and by the administration of baptism and the Lord's supper, prayer, and other means appointed of God, it is increased and strengthened.",
-//                 scriptures: ['2 Corinthians 4:13', 'Ephesians 2:8', 'Romans 10:14, 17', 'Luke 17:5', '1 Peter 2:2', 'Acts 20:32']
-//             },
-//             {
-//                 text: "By this faith a Christian believeth to be true whatsoever is revealed in the Word for the authority of God himself, and also apprehendeth an excellency therein above all other writings and all things in the world, as it bears forth the glory of God in his attributes, the excellency of Christ in his nature and offices, and the power and fullness of the Holy Spirit in his workings and operations: and so is enabled to cast his soul upon the truth thus believed; and also acteth differently upon that which each particular passage thereof containeth; yielding obedience to the commands, trembling at the threatenings, and embracing the promises of God for this life and that which is to come; but the principal acts of saving faith have immediate relation to Christ, accepting, receiving, and resting upon him alone for justification, sanctification, and eternal life, by virtue of the covenant of grace.",
-//                 scriptures: ['Acts 24:14', 'Psalms 27:7-10', 'Psalms 119:72', '2 Timothy 1:12', 'John 14:14', 'Isaiah 66:2', 'Hebrews 11:13', 'John 1:12', 'Acts 16:31', 'Galatians 2:20', 'Acts 15:11']
-//             },
-//             {
-//                 text: "This faith, although it be different in degrees, and may be weak or strong, yet it is in the least degree of it different in the kind or nature of it, as is all other saving grace, from the faith and common grace of temporary believers; and therefore, though it may be many times assailed and weakened, yet it gets the victory, growing up in many to the attainment of a full assurance through Christ, who is both the author and finisher of our faith.",
-//                 scriptures: ['Hebrews 5:13-14', 'Matthew 6:30', 'Romans 4:19-20', '2 Peter 1:1', 'Ephesians 6:16', '1 John 5:4-5', 'Hebrews 6:11-12', 'Colossians 2:2', 'Hebrews 12:2']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 15,
-//         title: "Of Repentance Unto Life and Salvation",
-//         topic: ['repentance'],
-//         content: [
-//             {
-//                 text: "Such of the elect as are converted at riper years, having sometime lived in the state of nature, and therein served divers lusts and pleasures, God in their effectual calling giveth them repentance unto life.",
-//                 scriptures: ['Titus 3:2-5']
-//             },
-//             {
-//                 text: "Whereas there is none that doth good and sinneth not, and the best of men may, through the power and deceitfulness of their corruption dwelling in them, with the prevalency of temptation, fall into great sins and provocations; God hath, in the covenant of grace, mercifully provided that believers so sinning and falling be renewed through repentance unto salvation.",
-//                 scriptures: ['Ecclesiastes 7:20', 'Luke 22:31-32']
-//             },
-//             {
-//                 text: "This saving repentance is an evangelical grace, whereby a person, being by the Holy Spirit made sensible of the manifold evils of his sin, doth, by faith in Christ, humble himself for it with godly sorrow, detestation of it, and self-abhorrency, praying for pardon and strength of grace, with a purpose and endeavour, by supplies of the Spirit, to walk before God unto all well-pleasing in all things.",
-//                 scriptures: ['Zechariah 12:10', 'Acts 11:18', 'Ezekiel 36:31', '2 Corinthians 7:11', 'Psalms 119:6', 'Psalms 119:128']
-//             },
-//             {
-//                 text: "As repentance is to be continued through the whole course of our lives, upon the account of the body of death, and the motions thereof, so it is every man's duty to repent of his particular known sins particularly.",
-//                 scriptures: ['Luke 19:8', '1 Timothy 1:13, 15']
-//             },
-//             {
-//                 text: "Such is the provision which God hath made through Christ in the covenant of grace for the preservation of believers unto salvation; that although there is no sin so small but it deserves damnation; yet there is no sin so great that it shall bring damnation on them that repent; which makes the constant preaching of repentance necessary.",
-//                 scriptures: ['Romans 6:23', 'Isaiah 1:16-18', 'Isaiah 55:7']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 16,
-//         title: "Of Good Works",
-//         topic: ['good works'],
-//         content: [
-//             {
-//                 text: "Good works are only such as God hath commanded in his Holy Word, and not such as without the warrant thereof are devised by men out of blind zeal, or upon any pretence of good intentions.",
-//                 scriptures: ['Micah 6:8', 'Hebrews 13:21', 'Matthew 15:9', 'Isaiah 29:13']
-//             },
-//             {
-//                 text: "These good works, done in obedience to God's commandments, are the fruits and evidences of a true and lively faith; and by them believers manifest their thankfulness, strengthen their assurance, edify their brethren, adorn the profession of the gospel, stop the mouths of the adversaries, and glorify God, whose workmanship they are, created in Christ Jesus thereunto, that having their fruit unto holiness they may have the end eternal life.",
-//                 scriptures: ['James 2:18, 22', 'Psalms 116:12-13', '1 John 2:3, 5', '2 Peter 1:5-11', 'Matthew 5:16', '1 Timothy 6:1', '1 Peter 2:15', 'Philippians 1:11', 'Ephesians 2:10', 'Romans 6:22']
-//             },
-//             {
-//                 text: "Their ability to do good works is not at all of themselves, but wholly from the Spirit of Christ; and that they may be enabled thereunto, besides the graces they have already received, there is necessary an actual influence of the same Holy Spirit, to work in them to will and to do of his good pleasure; yet they are not hereupon to grow negligent, as if they were not bound to perform any duty, unless upon a special motion of the Spirit, but they ought to be diligent in stirring up the grace of God that is in them.",
-//                 scriptures: ['John 15:4-5', '2 Corinthians 3:5', 'Philippians 2:13', 'Philippians 2:12', 'Hebrews 6:11-12', 'Isaiah 64:7']
-//             },
-//             {
-//                 text: "They who in their obedience attain to the greatest height which is possible in this life, are so far from being able to supererogate, and to do more than God requires, as that they fall short of much which in duty they are bound to do.",
-//                 scriptures: ['Job 9:2-3', 'Galatians 5:17', 'Luke 17:10']
-//             },
-//             {
-//                 text: "We cannot by our best works merit pardon of sin or eternal life at the hand of God, by reason of the great disproportion that is between them and the glory to come, and the infinite distance that is between us and God, whom by them we can neither profit nor satisfy for the debt of our former sins; but when we have done all we can, we have done but our duty, and are unprofitable servants; and because as they are good they proceed from his Spirit, and as they are wrought by us they are defiled and mixed with so much weakness and imperfection, that they cannot endure the severity of God's punishment.",
-//                 scriptures: ['Romans 3:20', 'Ephesians 2:8, 9', 'Romans 4:6', 'Galatians 5:22-23', 'Isaiah 64:6', 'Psalms 143:2']
-//             },
-//             {
-//                 text: "Yet notwithstanding the persons of believers being accepted through Christ, their good works also are accepted in him; not as though they were in this life wholly unblameable and unreprovable in God's sight, but that he, looking upon them in his Son, is pleased to accept and reward that which is sincere, although accompanied with many weaknesses and imperfections.",
-//                 scriptures: ['Ephesians 1:6', '1 Peter 2:5', 'Matthew 25:21, 23', 'Hebrews 6:10']
-//             },
-//             {
-//                 text: "Works done by unregenerate men, although for the matter of them they may be things which God commands, and of good use both to themselves and others; yet because they proceed not from a heart purified by faith, nor are done in a right manner according to the word, nor to a right end, the glory of God, they are therefore sinful, and cannot please God, nor make a man meet to receive grace from God, and yet their neglect of them is more sinful and displeasing to God.",
-//                 scriptures: ['2 Kings 10:30', '1 Kings 21:27, 29', 'Genesis 4:5', 'Hebrews 11:4, 6', '1 Corinthians 13:1', 'Matthew 6:2, 5', 'Amos 5:21-22', 'Romans 9:16', 'Titus 3:5', 'Job 21:14-15', 'Matthew 25:41-43']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 17,
-//         title: 'Of the Perseverance of the Saints',
-//         topic: ['perseverance'],
-//         content: [
-//             {
-//                 text: "Those whom God hath accepted in the beloved, effectually called and sanctified by his Spirit, and given the precious faith of his elect unto, can neither totally nor finally fall from the state of grace, but shall certainly persevere therein to the end, and be eternally saved, seeing the gifts and callings of God are without repentance, whence he still begets and nourisheth in them faith, repentance, love, joy, hope, and all the graces of the Spirit unto immortality; and though many storms and floods arise and beat against them, yet they shall never be able to take them off that foundation and rock which by faith they are fastened upon; notwithstanding, through unbelief and the temptations of Satan, the sensible sight of the light and love of God may for a time be clouded and obscured from them, yet he is still the same, and they shall be sure to be kept by the power of God unto salvation, where they shall enjoy their purchased possession, they being engraven upon the palm of his hands, and their names having been written in the book of life from all eternity.",
-//                 scriptures: ['John 10:28-29', 'Philippians 1:6', '2 Timothy 2:19', '1 John 2:19', 'Psalms 89:31-32', '1 Corinthians 11:32', 'Malachi 3:6']
-//             },
-//             {
-//                 text: "This perseverance of the saints depends not upon their own free will, but upon the immutability of the decree of election, flowing from the free and unchangeable love of God the Father, upon the efficacy of the merit and intercession of Jesus Christ and union with him, the oath of God, the abiding of his Spirit, and the seed of God within them, and the nature of the covenant of grace; from all which ariseth also the certainty and infallibility thereof.",
-//                 scriptures: ['Romans 8:30', 'Romans 9:11, 16', 'Romans 5:9-10', 'John 14:19', 'Hebrews 6:17-18', '1 John 3:9', 'Jeremiah 32:40']
-//             },
-//             {
-//                 text: "And though they may, through the temptation of Satan and of the world, the prevalency of corruption remaining in them, and the neglect of means of their preservation, fall into grievous sins, and for a time continue therein, whereby they incur God's displeasure and grieve his Holy Spirit, come to have their graces and comforts impaired, have their hearts hardened, and their consciences wounded, hurt and scandalize others, and bring temporal judgments upon themselves, yet shall they renew their repentance and be preserved through faith in Christ Jesus to the end.",
-//                 scriptures: ['Matthew 26:70, 72, 74', 'Isaiah 64:5, 9', 'Ephesians 4:30', 'Psalms 51:10, 12', 'Psalms 32:3-4', '2 Samuel 12:14', 'Luke 22:32, 61-62']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 18,
-//         title: 'Of the Assurance of Grace and Salvation',
-//         topic: ['assurance'],
-//         content: [
-//             {
-//                 text: "Although temporary believers, and other unregenerate men, may vainly deceive themselves with false hopes and carnal presumptions of being in the favour of God and state of salvation, which hope of theirs shall perish; yet such as truly believe in the Lord Jesus, and love him in sincerity, endeavouring to walk in all good conscience before him, may in this life be certainly assured that they are in the state of grace, and may rejoice in the hope of the glory of God, which hope shall never make them ashamed.",
-//                 scriptures: ['Job 8:13-14', 'Matthew 7:22-23', '1 John 2:3', '1 John 3:14, 18-19, 21, 24', '1 John 5:13', 'Romans 5:2, 5']
-//             },
-//             {
-//                 text: "This certainty is not a bare conjectural and probable persuasion grounded upon a fallible hope, but an infallible assurance of faith founded on the blood and righteousness of Christ revealed in the Gospel; and also upon the inward evidence of those graces of the Spirit unto which promises are made, and on the testimony of the Spirit of adoption, witnessing with our spirits that we are the children of God; and, as a fruit thereof, keeping the heart both humble and holy. ",
-//                 scriptures: ['Hebrews 6:11, 19', 'Hebrews 6:17-18', '2 Peter 1:4-5, 10-11', 'Romans 8:15-16', '1 John 3:1-3']
-//             },
-//             {
-//                 text: "This infallible assurance doth not so belong to the essence of faith, but that a true believer may wait long, and conflict with many difficulties before he be partaker of it; yet being enabled by the Spirit to know the things which are freely given him of God, he may, without extraordinary revelation, in the right use of means, attain thereunto: and therefore it is the duty of every one to give all diligence to make his calling and election sure, that thereby his heart may be enlarged in peace and joy in the Holy Spirit, in love and thankfulness to God, and in strength and cheerfulness in the duties of obedience, the proper fruits of this assurance; -so far is it from inclining men to looseness.",
-//                 scriptures: ['Isaiah 50:10', 'Psalms 88', 'Psalms 77:1-12', '1 John 4:13', 'Hebrews 6:11-12', 'Romans 5:1-2, 5', 'Romans 14:17', 'Psalms 119:32', 'Romans 6:1-2', 'Titus 2:11-12, 14']
-//             },
-//             {
-//                 text: "True believers may have the assurance of their salvation divers ways shaken, diminished, and intermitted; as by negligence in preserving of it, by falling into some special sin which woundeth the conscience and grieveth the Spirit; by some sudden or vehement temptation, by God's withdrawing the light of his countenance, and suffering even such as fear him to walk in darkness and to have no light, yet are they never destitute of the seed of God and life of faith, that love of Christ and the brethren, that sincerity of heart and conscience of duty out of which, by the operation of the Spirit, this assurance may in due time be revived, and by the which, in the meantime, they are preserved from utter despair.",
-//                 scriptures: ['Song of Solomon 5:2-3, 6', 'Psalms 51:8, 12, 14', 'Psalms 116:11', 'Psalms 77:7-8', 'Psalms 31:22', 'Psalms 30:7', '1 John 3:9',' Luke 22:32', 'Psalms 42:5, 11', 'Lamentations 3:26-31']
-//             }
-//         ] 
-//     },
+
 //     {
 //         chapter: 19,
 //         title: "Of the Law of God",
