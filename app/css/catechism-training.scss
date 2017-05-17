@@ -15,6 +15,10 @@
         > div > div {
             margin-right: 6px !important;
         }
+
+        &:last-child {
+            width: 262px !important;
+        }
     }
 
     &__main {
