@@ -1951,7 +1951,267 @@ const LONDON_BAPTIST = [
         title: "Of the Law of God",
         topic: ['law'],
         content: [
-
+            [
+                {
+                    superscript: 1,
+                    text: "God gave to Adam a law of universal obedience written in his heart, and a particular precept of not eating the fruit of the tree of knowledge of good and evil;",
+                    scriptures: 'Gen. 1:27; Eccles. 7:29'
+                },
+                {
+                    superscript: 2,
+                    text: "by which he bound him and all his posterity to personal, entire, exact, and perpetual obedience;",
+                    scriptures: 'Rom. 10:5'
+                },
+                {
+                    superscript: 3,
+                    text: "promised life upon the fulfilling, and threatened death upon the breach of it, and endued him with power and ability to keep it.",
+                    scriptures: 'Gal. 3:10, 12'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "The same law that was first written in the heart of man continued to be a perfect rule of righteousness after the fall,",
+                    scriptures: 'Rom. 2:14-15'
+                },
+                {
+                    superscript: 5,
+                    text: "and was delivered by God upon Mount Sinai, in ten commandments, and written in two tables, the four first containing our duty towards God, and the other six, our duty to man.",
+                    scriptures: 'Deut. 10:4'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "Besides this law, commonly called moral, God was pleased to give to the people of Israel ceremonial laws, containing several typical ordinances, partly of worship, prefiguring Christ, his graces, actions, sufferings, and benefits;",
+                    scriptures: 'Heb. 10:1; Col. 2:17'
+                },
+                {
+                    superscript: 7,
+                    text: "and partly holding forth divers instructions of moral duties,",
+                    scriptures: '1 Cor. 5:7'
+                },
+                {
+                    superscript: 8,
+                    text: "all which ceremonial laws being appointed only to the time of reformation, are, by Jesus Christ the true Messiah and only law-giver, who was furnished with power from the Father for that end abrogated and taken away.",
+                    scriptures: 'Col. 2:14,16-17; Eph. 2:14,16'
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "To them also he gave sundry judicial laws, which expired together with the state of that people, not obliging any now by virtue of that institution; their general equity only being of modern use.",
+                    scriptures: '1 Cor. 9:8-10'
+                }
+            ],
+            [
+                {
+                    superscript: 10,
+                    text: "The moral law does for ever bind all, as well justified persons as others, to the obedience thereof,",
+                    scriptures: 'Rom. 13:8-10; James 2:8, 10-12'
+                },
+                {
+                    superscript: 11,
+                    text: "and that not only in regard of the matter contained in it, but also in respect of the authority of God the Creator, who gave it;",
+                    scriptures: 'James 2:10, 11'
+                },
+                {
+                    superscript: 12,
+                    text: "neither does Christ in the Gospel any way dissolve, but much strengthen this obligation.",
+                    scriptures: 'Matt. 5:17-19; Rom. 3:31'
+                }
+            ],
+            [
+                {
+                    superscript: 13,
+                    text: "Although true believers are not under the law as a covenant of works, to be thereby justified or condemned,",
+                    scriptures: 'Rom. 6:14; Gal. 2:16; Rom. 8:1, 10:4'
+                },
+                {
+                    superscript: 14,
+                    text: "yet it is of great use to them as well as to others, in that as a rule of life, informing them of the will of God and their duty, it directs and binds them to walk accordingly; discovering also the sinful pollutions of their natures, hearts, and lives, so as examining themselves thereby, they may come to further conviction of, humiliation for, and hatred against, sin;",
+                    scriptures: 'Rom. 3:20, 7:7, etc.'
+                },
+                {
+                    superscript: 15,
+                    text: "together with a clearer sight of the need they have of Christ and the perfection of his obedience; it is likewise of use to the regenerate to restrain their corruptions, in that it forbids sin; and the threatenings of it serve to show what even their sins deserve, and what afflictions in this life they may expect for them, although freed from the curse and unallayed rigour thereof. The promises of it likewise show them God's approbation of obedience, and what blessings they may expect upon the performance thereof, though not as due to them by the law as a covenant of works; so as man's doing good and refraining from evil, because the law encourages to the one and deters from the other, is no evidence of his being under the law and not under grace.",
+                    scriptures: 'Rom. 6:12-14; 1 Pet. 3:8-13'
+                }
+            ],
+            [
+                {
+                    superscript: 16,
+                    text: "Neither are the aforementioned uses of the law contrary to the grace of the Gospel, but do sweetly comply with it,",
+                    scriptures: 'Gal. 3:21'
+                },
+                {
+                    superscript: 17,
+                    text: "the Spirit of Christ subduing and enabling the will of man to do that freely and cheerfully which the will of God, revealed in the law, requires to be done.",
+                    scriptures: 'Ezek. 36:27'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 20,
+        title: "Of the Gospel and the Extent of Grace thereof",
+        topic: ['gospel'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The covenant of works being broken by sin, and made unprofitable unto life, God was pleased to give forth the promise of Christ, the seed of the woman, as the means of calling the elect, and begetting in them faith and repentance;",
+                    scriptures: 'Gen. 3:15'
+                },
+                {
+                    superscript: 2,
+                    text: "in this promise the gospel, as to the substance of it, was revealed, and [is] therein effectual for the conversion and salvation of sinners.",
+                    scriptures: 'Rev. 13:8'
+                }
+            ],
+            [
+                {
+                    superscript: 3,
+                    text: "This promise of Christ, and salvation by him, is revealed only by the Word of God;",
+                    scriptures: 'Rom. 1:17'
+                },
+                {
+                    superscript: 4,
+                    text: "neither do the works of creation or providence, with the light of nature, make discovery of Christ, or of grace by him, so much as in a general or obscure way;",
+                    scriptures: 'Rom. 10:14-15, 17'
+                },
+                {
+                    superscript: 5,
+                    text: "much less that men destitute of the revelation of Him by the promise or gospel, should be enabled thereby to attain saving faith or repentance.",
+                    scriptures: 'Prov. 29:18; Isa. 25:7; 60:2-3'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "The revelation of the gospel to sinners, made in divers times and by sundry parts, with the addition of promises and precepts for the obedience required therein, as to the nations and persons to whom it is granted, is merely of the sovereign will and good pleasure of God;",
+                    scriptures: 'Ps. 147:20; Acts 16:7'
+                },
+                {
+                    superscript: 7,
+                    text: "not being annexed by virtue of any promise to the due improvement of men's natural abilities, by virtue of common light received without it, which none ever made, or can do so;",
+                    scriptures: 'Rom. 1:18-32'
+                },
+                {
+                    superscript: '',
+                    text: "and therefore in all ages, the preaching of the gospel has been granted unto persons and nations, as to the extent or straitening of it, in great variety, according to the counsel of the will of God."
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "Although the gospel be the only outward means of revealing Christ and saving grace, and is, as such, abundantly sufficient thereunto; yet that men who are dead in trespasses may be born again, quickened or regenerated, there is moreover necessary an effectual insuperable work of the Holy Spirit upon the whole soul, for the producing in them a new spiritual life;",
+                    scriptures: 'Ps. 110:3; 1 Cor. 2:14; Eph. 1:19-20'
+                },
+                {
+                    superscript: 9,
+                    text: "without which no other means will effect their conversion unto God.",
+                    scriptures: 'John 6:44; 2 Cor. 4:4, 6'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 21,
+        title: "Of Christian Liberty and Liberty of Conscience",
+        topic: ['liberty'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The liberty which Christ has purchased for believers under the gospel, consists in their freedom from the guilt of sin, the condemning wrath of God, the severity and curse of the law,",
+                    scriptures: 'Gal. 3:13'
+                },
+                {
+                    superscript: 2,
+                    text: "and in their being delivered from this present evil world,",
+                    scriptures: 'Gal. 1:4'
+                },
+                {
+                    superscript: 3,
+                    text: "bondage to Satan,",
+                    scriptures: 'Acts 26:18'
+                },
+                {
+                    superscript: 4,
+                    text: "and dominion of sin,",
+                    scriptures: 'Rom. 8:3'
+                },
+                {
+                    superscript: 5,
+                    text: "from the evil of afflictions,",
+                    scriptures: 'Rom. 8:28'
+                },
+                {
+                    superscript: 6,
+                    text: "the fear and sting of death, the victory of the grave,",
+                    scriptures: '1 Cor. 15:54-57'
+                },
+                {
+                    superscript: 7,
+                    text: " and everlasting damnation:",
+                    scriptures: '2 Thess. 1:10'
+                },
+                {
+                    superscript: 8,
+                    text: "as also in their free access to God, and their yielding obedience unto Him, not out of slavish fear,",
+                    scriptures: 'Rom. 8:15'
+                },
+                {
+                    superscript: 9,
+                    text: "but a child-like love and willing mind.",
+                    scriptures: 'Luke 1:73-75; 1 John 4:18'
+                },
+                {
+                    superscript: 10,
+                    text: "All which were common also to believers under the law for the substance of them;",
+                    scriptures: 'Gal. 3:9, 14'
+                },
+                {
+                    superscript: 11,
+                    text: "but under the New Testament the liberty of Christians is further enlarged, in their freedom from the yoke of a ceremonial law, to which the Jewish church was subjected, and in greater boldness of access to the throne of grace, and in fuller communications of the free Spirit of God, than believers under the law did ordinarily partake of.",
+                    scriptures: 'John 7:38-39; Heb. 10:19-21'
+                }
+            ],
+            [
+                {
+                    superscript: 12,
+                    text: "",
+                    scriptures: ''
+                },
+                {
+                    superscript: 13,
+                    text: "",
+                    scriptures: ''
+                },
+                {
+                    superscript: 14,
+                    text: "",
+                    scriptures: ''
+                },
+                {
+                    superscript: 15,
+                    text: "",
+                    scriptures: ''
+                }
+            ],
+            [
+                {
+                    superscript: 16,
+                    text: "",
+                    scriptures: ''
+                },
+                {
+                    superscript: 17,
+                    text: "",
+                    scriptures: ''
+                }
+            ]
         ]
     }
 ];
@@ -1969,31 +2229,6 @@ const LONDON_BAPTIST = [
 //     }
 // ]
 
-
-// Chapter 19: Of The Law Of God
-// Paragraph 1. God gave to Adam a law of universal obedience written in his heart, and a particular precept of not eating the fruit of the tree of knowledge of good and evil; (Gen. 1:27; Eccles. 7:29) by which he bound him and all his posterity to personal, entire, exact, and perpetual obedience; (Rom. 10:5) promised life upon the fulfilling, and threatened death upon the breach of it, and endued him with power and ability to keep it.  (Gal. 3:10, 12)
-
-// Paragraph 2. The same law that was first written in the heart of man continued to be a perfect rule of righteousness after the fall, (Rom. 2:14, 15) and was delivered by God upon Mount Sinai, in ten commandments, and written in two tables, the four first containing our duty towards God, and the other six, our duty to man.  (Deut. 10:4)
-
-// Paragraph 3. Besides this law, commonly called moral, God was pleased to give to the people of Israel ceremonial laws, containing several typical ordinances, partly of worship, prefiguring Christ, his graces, actions, sufferings, and benefits; (Heb. 10:1; Col. 2:17) and partly holding forth divers instructions of moral duties, (1 Cor. 5:7) all which ceremonial laws being appointed only to the time of reformation, are, by Jesus Christ the true Messiah and only law-giver, who was furnished with power from the Father for that end abrogated and taken away.  (Col. 2:14,16,17; Eph. 2:14,16)
-
-// Paragraph 4. To them also he gave sundry judicial laws, which expired together with the state of that people, not obliging any now by virtue of that institution; their general equity only being of modern use.  (1 Cor. 9:8-10)
-
-// Paragraph 5. The moral law does for ever bind all, as well justified persons as others, to the obedience thereof, (Rom. 13:8-10; James 2:8, 10-12) and that not only in regard of the matter contained in it, but also in respect of the authority of God the Creator, who gave it; (James 2:10, 11) neither does Christ in the Gospel any way dissolve, but much strengthen this obligation.  (Matt. 5:17-19; Rom. 3:31)
-
-// Paragraph 6. Although true believers are not under the law as a covenant of works, to be thereby justified or condemned, (Rom. 6:14; Gal. 2:16; Rom. 8:1, 10:4) yet it is of great use to them as well as to others, in that as a rule of life, informing them of the will of God and their duty, it directs and binds them to walk accordingly; discovering also the sinful pollutions of their natures, hearts, and lives, so as examining themselves thereby, they may come to further conviction of, humiliation for, and hatred against, sin; (Rom. 3:20, 7:7, etc.) together with a clearer sight of the need they have of Christ and the perfection of his obedience; it is likewise of use to the regenerate to restrain their corruptions, in that it forbids sin; and the threatenings of it serve to show what even their sins deserve, and what afflictions in this life they may expect for them, although freed from the curse and unallayed rigour thereof. The promises of it likewise show them God's approbation of obedience, and what blessings they may expect upon the performance thereof, though not as due to them by the law as a covenant of works; so as man's doing good and refraining from evil, because the law encourages to the one and deters from the other, is no evidence of his being under the law and not under grace.  (Rom. 6:12-14; 1 Pet. 3:8-13)
-
-// Paragraph 7. Neither are the aforementioned uses of the law contrary to the grace of the Gospel, but do sweetly comply with it, (Gal. 3:21) the Spirit of Christ subduing and enabling the will of man to do that freely and cheerfully which the will of God, revealed in the law, requires to be done.  (Ezek. 36:27)
-// Chapter 20: Of The Gospel And Of The Extent Of The Grace Thereof
-// Paragraph 1. The covenant of works being broken by sin, and made unprofitable unto life, God was pleased to give forth the promise of Christ, the seed of the woman, as the means of calling the elect, and begetting in them faith and repentance; (Gen. 3:15) in this promise the gospel, as to the substance of it, was revealed, and [is] therein effectual for the conversion and salvation of sinners.  (Rev. 13:8)
-
-// Paragraph 2. This promise of Christ, and salvation by him, is revealed only by the Word of God; (Rom. 1:17) neither do the works of creation or providence, with the light of nature, make discovery of Christ, or of grace by him, so much as in a general or obscure way; (Rom. 10:14, 15, 17) much less that men destitute of the revelation of Him by the promise or gospel, should be enabled thereby to attain saving faith or repentance.  (Prov. 29:18; Isa. 25:7; 60:2, 3)
-
-// Paragraph 3. The revelation of the gospel to sinners, made in divers times and by sundry parts, with the addition of promises and precepts for the obedience required therein, as to the nations and persons to whom it is granted, is merely of the sovereign will and good pleasure of God; (Ps. 147:20; Acts 16:7) not being annexed by virtue of any promise to the due improvement of men's natural abilities, by virtue of common light received without it, which none ever made, or can do so; (Rom. 1:18-32) and therefore in all ages, the preaching of the gospel has been granted unto persons and nations, as to the extent or straitening of it, in great variety, according to the counsel of the will of God.
-
-// Paragraph 4. Although the gospel be the only outward means of revealing Christ and saving grace, and is, as such, abundantly sufficient thereunto; yet that men who are dead in trespasses may be born again, quickened or regenerated, there is moreover necessary an effectual insuperable work of the Holy Spirit upon the whole soul, for the producing in them a new spiritual life; (Ps. 110:3; 1 Cor. 2:14; Eph. 1:19, 20) without which no other means will effect their conversion unto God.  (John 6:44; 2 Cor. 4:4, 6)
-// Chapter 21: Of Christian Liberty And Liberty Of Conscience
-// Paragraph 1. The liberty which Christ has purchased for believers under the gospel, consists in their freedom from the guilt of sin, the condemning wrath of God, the severity and curse of the law, (Gal. 3:13) and in their being delivered from this present evil world, (Gal. 1:4) bondage to Satan, (Acts 26:18) and dominion of sin, (Rom. 8:3) from the evil of afflictions, (Rom. 8:28) the fear and sting of death, the victory of the grave, (1 Cor. 15:54-57) and everlasting damnation: (2 Thess. 1:10) as also in their free access to God, and their yielding obedience unto Him, not out of slavish fear, (Rom. 8:15) but a child-like love and willing mind. (Luke 1:73-75; 1 John 4:18) All which were common also to believers under the law for the substance of them; (Gal. 3:9, 14) but under the New Testament the liberty of Christians is further enlarged, in their freedom from the yoke of a ceremonial law, to which the Jewish church was subjected, and in greater boldness of access to the throne of grace, and in fuller communications of the free Spirit of God, than believers under the law did ordinarily partake of.  (John 7:38, 39; Heb. 10:19-21)
 
 // Paragraph 2. God alone is Lord of the conscience, (James 4:12; Rom. 14:4) and has left it free from the doctrines and commandments of men which are in any thing contrary to his word, or not contained in it. (Acts 4:19, 29; 1 Cor. 7:23; Matt. 15:9) So that to believe such doctrines, or obey such commands out of conscience, is to betray true liberty of conscience; (Col. 2:20, 22, 23) and the requiring of an implicit faith, an absolute and blind obedience, is to destroy liberty of conscience and reason also.  (1 Cor. 3:5; 2 Cor. 1:24)
 
@@ -2116,64 +2351,6 @@ const LONDON_BAPTIST = [
 
 
 
-//     {
-//         chapter: 19,
-//         title: "Of the Law of God",
-//         topic: ['law'],
-//         content: [
-//             {
-//                 text: "God gave to Adam a law of universal obedience written in his heart, and a particular precept of not eating the fruit of the tree of knowledge of good and evil; by which he bound him and all his posterity to personal, entire, exact, and perpetual obedience; promised life upon the fulfilling, and threatened death upon the breach of it, and endued him with power and ability to keep it.",
-//                 scriptures: ['Genesis 1:27', 'Ecclesiastes 7:29', 'Romans 10:5', 'Galatians 3:10, 12']
-//             },
-//             {
-//                 text: "The same law that was first written in the heart of man continued to be a perfect rule of righteousness after the fall, and was delivered by God upon Mount Sinai, in ten commandments, and written in two tables, the four first containing our duty towards God, and the other six, our duty to man.",
-//                 scriptures: ['Romans 2:14-15', 'Deuteronomy 10:4']
-//             },
-//             {
-//                 text: "Besides this law, commonly called moral, God was pleased to give to the people of Israel ceremonial laws, containing several typical ordinances, partly of worship, prefiguring Christ, his graces, actions, sufferings, and benefits; and partly holding forth divers instructions of moral duties, all which ceremonial laws being appointed only to the time of reformation, are, by Jesus Christ the true Messiah and only law-giver, who was furnished with power from the Father for that end abrogated and taken away.",
-//                 scriptures: ['Hebrews 10:1', 'Colossians 2:17', '1 Corinthians 5:7', 'Colossians 2:14, 16-17', 'Ephesians 2:14, 16']
-//             },
-//             {
-//                 text: "To them also he gave sundry judicial laws, which expired together with the state of that people, not obliging any now by virtue of that institution; their general equity only being of moral use.",
-//                 scriptures: ['1 Corinthians 9:8-10']
-//             },
-//             {
-//                 text: "The moral law doth for ever bind all, as well justified persons as others, to the obedience thereof, and that not only in regard of the matter contained in it, but also in respect of the authority of God the Creator, who gave it; neither doth Christ in the Gospel any way dissolve, but much strengthen this obligation.",
-//                 scriptures: ['Romans 13:8-10', 'James 2:8, 10-12', 'James 2:10-11', 'Matthew 5:17-19', 'Romans 3:31']
-//             },
-//             {
-//                 text: "Although true believers be not under the law as a covenant of works, to be thereby justified or condemned, yet it is of great use to them as well as to others, in that as a rule of life, informing them of the will of God and their duty, it directs and binds them to walk accordingly; discovering also the sinful pollutions of their natures, hearts, and lives, so as examining themselves thereby, they may come to further conviction of, humiliation for, and hatred against, sin; together with a clearer sight of the need they have of Christ and the perfection of his obedience; it is likewise of use to the regenerate to restrain their corruptions, in that it forbids sin; and the threatenings of it serve to shew what even their sins deserve, and what afflictions in this life they may expect for them, although freed from the curse and unallayed rigour thereof. The promises of it likewise shew them God's approbation of obedience, and what blessings they may expect upon the performance thereof, though not as due to them by the law as a covenant of works; so as man's doing good and refraining from evil, because the law encourageth to the one and deterreth from the other, is no evidence of his being under the law and not under grace.",
-//                 scriptures: ['Romans 6:14', 'Galatians 2:16', 'Romans 8:1', 'Romans 10:4', 'Romans 3:20', 'Romans 7:7', 'Romans 6:12-14', '1 Peter 3:8-13']
-//             },
-//             {
-//                 text: "Neither are the aforementioned uses of the law contrary to the grace of the Gospel, but do sweetly comply with it, the Spirit of Christ subduing and enabling the will of man to do that freely and cheerfully which the will of God, revealed in the law, requireth to be done.",
-//                 scriptures: ['Galatians 3:21', 'Ezekiel 36:27']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 20,
-//         title: "Of the Gospel and the Extent of Grace thereof",
-//         topic: ['gospel'],
-//         content: [
-//             {
-//                 text: "The covenant of works being broken by sin, and made unprofitable unto life, God was pleased to give forth the promise of Christ, the seed of the woman, as the means of calling the elect, and begetting in them faith and repentance; in this promise the gospel, as to the substance of it, was revealed, and [is] therein effectual for the conversion and salvation of sinners.",
-//                 scriptures: ['Genesis 3:15', 'Revelation 13:8']
-//             },
-//             {
-//                 text: "This promise of Christ, and salvation by him, is revealed only by the Word of God; neither do the works of creation or providence, with the light of nature, make discovery of Christ, or of grace by him, so much as in a general or obscure way; much less that men destitute of the revelation of Him by the promise or gospel, should be enabled thereby to attain saving faith or repentance.",
-//                 scriptures: ['Romans 1:17', 'Romans 10:14-15,17', 'Proverbs 29:18', 'Isaiah 25:7', 'Isaiah 60:2-3']
-//             },
-//             {
-//                 text: "The revelation of the gospel unto sinners, made in divers times and by sundry parts, with the addition of promises and precepts for the obedience required therein, as to the nations and persons to whom it is granted, is merely of the sovereign will and good pleasure of God; not being annexed by virtue of any promise to the due improvement of men's natural abilities, by virtue of common light received without it, which none ever did make, or can do so; and therefore in all ages, the preaching of the gospel has been granted unto persons and nations, as to the extent or straitening of it, in great variety, according to the counsel of the will of God.",
-//                 scriptures: ['Psalms 147:20', 'Acts 16:7', 'Romans 1:18-32']
-//             },
-//             {
-//                 text: "Although the gospel be the only outward means of revealing Christ and saving grace, and is, as such, abundantly sufficient thereunto; yet that men who are dead in trespasses may be born again, quickened or regenerated, there is moreover necessary an effectual insuperable work of the Holy Spirit upon the whole soul, for the producing in them a new spiritual life; without which no other means will effect their conversion unto God. ",
-//                 scriptures: ['Psalms 110:3', '1 Corinthians 2:14', 'Ephesians 1:19-20', 'John 6:44', '2 Corinthians 4:4, 6']
-//             }
-//         ] 
-//     },
 //     {
 //         chapter: 21,
 //         title: "Of Christian Liberty and Liberty of Conscience",
