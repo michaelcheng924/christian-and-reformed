@@ -4,6 +4,7 @@ import { addLeaderboard, addScore, deleteScore, deleteUser, getAllUsers, getAppD
 const defaultState = {
     allUsers: [],
     app: null,
+    appData: {},
     loginErrorMessage: null,
     user: null,
     userData: {}

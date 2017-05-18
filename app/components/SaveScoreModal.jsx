@@ -15,6 +15,7 @@ class SaveScoreModal extends Component {
             saveName: ''
         };
 
+        this.handleClose = this.handleClose.bind(this);
         this.saveScore = this.saveScore.bind(this);
     }
 
@@ -68,7 +69,7 @@ class SaveScoreModal extends Component {
                     modal={true}
                     open={open}
                 >
-                    <div>Your score (<strong>{displayScore}</strong>) is in the <strong>Top 10</strong>! To save your score, enter your name below and click <strong>Submit</strong>! If you do not want to save your score, click <strong>Cancel</strong>.</div>
+                    <div>Your score (<strong>{displayScore}</strong>) is in the Top 10! To save your score, enter your name below and click <strong>Submit</strong>. If you do not want to save your score, click <strong>Cancel</strong>.</div>
                     <TextField
                         floatingLabelText="Enter your name here"
                         onChange={event => this.setState({ saveName: event.target.value })}

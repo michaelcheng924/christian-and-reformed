@@ -71,7 +71,7 @@ export default class BibleOrderContentCard extends Component {
     renderContent() {
         if (this.state.allCorrect) {
             return (
-                <div className="bible-order__completed">
+                <div className="completed">
                     <CheckCircleIcon />
                     <h2>You finished in {this.getTimeString()}!</h2>
                 </div>

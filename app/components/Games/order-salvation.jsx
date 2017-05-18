@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import css from 'classnames';
-import { every, last, shuffle } from 'lodash';
+import { every, isEmpty, last, shuffle } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import CheckCircleIcon from 'material-ui-icons/CheckCircle';
 
 import OrderSalvationPiece from 'app/components/Games/order-salvation-piece';
 import SaveScoreModal from 'app/components/SaveScoreModal';
+import Leaderboard from 'app/components/Leaderboard';
 
 const ORDER = [
     {
@@ -161,7 +162,12 @@ class OrderSalvationContentCard extends Component {
     }
 
     onStart() {
-        this.setState({ started: true });
+        this.setState({
+            allCorrect: false,
+            order: shuffle(ORDER),
+            started: true,
+            timer: 0
+        });
 
         this.timerInterval = setInterval(() => {
             this.setState({ timer: this.state.timer += 1 });
@@ -170,11 +176,17 @@ class OrderSalvationContentCard extends Component {
 
     renderContent() {
         const { allCorrect, dragIndex, isDragging, order, started } = this.state;
+        const { appData } = this.props;
 
         if (!started) {
             return (
-                <div>
-                    <RaisedButton className="order-salvation__start-button" label="Start" primary={true} onTouchTap={this.onStart} />
+                <div className="start">
+                    <RaisedButton className="start__button" label="Start" primary={true} onTouchTap={this.onStart} />
+                    {
+                        isEmpty(appData.orderSalvation)
+                            ? null
+                            : <Leaderboard scores={appData.orderSalvation} />
+                    }
                 </div>
             );
         }
@@ -184,11 +196,17 @@ class OrderSalvationContentCard extends Component {
                 {
                     !isDragging && allCorrect
                         ? (
-                            <div className="bible-order__completed">
+                            <div className="completed">
                                 <div>
                                     <CheckCircleIcon />
                                     <h2>You finished in {this.getTimeString()}!</h2>
+                                    <RaisedButton className="completed__play-again" label="Play again" secondary={true} onTouchTap={this.onStart} />
                                 </div>
+                                {
+                                    isEmpty(appData.orderSalvation)
+                                        ? null
+                                        : <Leaderboard scores={appData.orderSalvation} />
+                                }
                             </div>
                         )
                         : <div className="order-salvation__timer">{this.getTimeString()}</div>
