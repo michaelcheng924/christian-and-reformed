@@ -47,8 +47,8 @@ function isTimeScoreValid(score) {
 }
 
 function isNewScoreBetter(currentScore, newScore) {
-    const splitCurrentScore = currentScore.score.split(':');
-    const splitNewScore = newScore.score.split(':');
+    const splitCurrentScore = currentScore.split(':');
+    const splitNewScore = newScore.split(':');
     const currentScoreMin = Number(splitCurrentScore[0]);
     const currentScoreSec = Number(splitCurrentScore[1]);
     const newScoreMin = Number(splitNewScore[0]);
@@ -78,13 +78,13 @@ function isNewScoreBetter(currentScore, newScore) {
 function getTimeScores(currentScores, score) {
     if (currentScores.length < 10) {
         currentScores.push(score);
-    } else if (isNewScoreBetter(last(currentScores), score)) {
+    } else if (isNewScoreBetter(last(currentScores).score, score.score)) {
         currentScores.splice(9, 1);
         currentScores.push(score);
     }
 
     return currentScores.sort((a, b) => {
-        return isNewScoreBetter(a, b) ? 1 : -1;
+        return isNewScoreBetter(a.score, b.score) ? 1 : -1;
     });
 }
 

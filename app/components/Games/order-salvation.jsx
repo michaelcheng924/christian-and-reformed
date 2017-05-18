@@ -3,10 +3,13 @@ import React, { Component } from 'react';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import css from 'classnames';
-import { every, shuffle } from 'lodash';
+import { every, last, shuffle } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import CheckCircleIcon from 'material-ui-icons/CheckCircle';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
+import TextField from 'material-ui/TextField';
 
 import OrderSalvationPiece from 'app/components/Games/order-salvation-piece';
 
@@ -58,15 +61,46 @@ class OrderSalvationContentCard extends Component {
         super(props);
 
         this.state = {
+            allCorrect: false,
             dragIndex: null,
             isDragging: false,
+            open: false,
             order: shuffle(ORDER),
             started: false,
             timer: 0
         };
 
+        this.handleClose = this.handleClose.bind(this);
         this.setParentState = this.setParentState.bind(this);
         this.onStart = this.onStart.bind(this);
+        this.saveScore = this.saveScore.bind(this);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        const { allCorrect, isDragging } = this.state;
+
+        if (!isDragging && prevState.isDragging && !allCorrect) {
+            const allCorrect = true/*every(order, (item, index) => {
+                return item.name === ORDER[index].name;
+            })*/;
+
+            if (allCorrect) {
+                clearInterval(this.timerInterval);
+
+                $('body').scrollTop(0);
+                
+                this.setState({ allCorrect: true });
+            }
+        }
+
+        if (allCorrect && !prevState.allCorrect) {
+            const { appData } = this.props;
+            const orderSalvation = appData.orderSalvation;
+
+            if (orderSalvation.length < 10 || this.isNewScoreBetter(last(orderSalvation).score, this.getTime())) {
+                this.handleOpen();
+            }
+        }
     }
 
     componentWillUnmount() {
@@ -75,6 +109,67 @@ class OrderSalvationContentCard extends Component {
 
     setParentState(object) {
         this.setState(object);
+    }
+
+    handleOpen() {
+        this.setState({ open: true });
+    }
+
+    handleClose() {
+        this.setState({ open: false });
+    }
+
+    saveScore() {
+        this.props.onAddScore({
+            key: 'orderSalvation',
+            score: {
+                name: this.state.saveName,
+                score: this.getTime()
+            }
+        });
+
+        this.handleClose();
+    }
+
+    isNewScoreBetter(currentScore, newScore) {
+        const splitCurrentScore = currentScore.split(':');
+        const splitNewScore = newScore.split(':');
+        const currentScoreMin = Number(splitCurrentScore[0]);
+        const currentScoreSec = Number(splitCurrentScore[1]);
+        const newScoreMin = Number(splitNewScore[0]);
+        const newScoreSec = Number(splitNewScore[1]);
+
+        if (newScoreMin < currentScoreMin) {
+            return true;
+        }
+
+        if (newScoreMin > currentScoreMin) {
+            return false;
+        }
+
+        if (newScoreMin === currentScoreMin) {
+            if (newScoreSec < currentScoreSec) {
+                return true;
+            }
+
+            if (newScoreSec > currentScoreSec || newScoreSec === currentScoreSec) {
+                return false;
+            }
+        }
+
+        return false;
+    }
+
+    getTime() {
+        const time = this.state.timer;
+
+        if (time < 60) {
+            return `0:${time}`;
+        } else if (time >= 60 && time < 120) {
+            return `1:${time % 60}`;
+        } else if (time >= 120) {
+            return `${Math.floor(time / 60)}:${time % 60}`;
+        }
     }
 
     getTimeString() {
@@ -98,17 +193,7 @@ class OrderSalvationContentCard extends Component {
     }
 
     renderContent() {
-        const { dragIndex, isDragging, order, started } = this.state;
-
-        const allCorrect = every(order, (item, index) => {
-            return item.name === ORDER[index].name;
-        });
-
-        if (!isDragging && allCorrect) {
-            clearInterval(this.timerInterval);
-
-            $('body').scrollTop(0);
-        }
+        const { allCorrect, dragIndex, isDragging, order, started } = this.state;
 
         if (!started) {
             return (
@@ -139,21 +224,60 @@ class OrderSalvationContentCard extends Component {
         );
     }
 
+    renderModal() {
+        if (!this.state.open) { return null; }
+
+        const actions = [
+            <FlatButton
+                label="Cancel"
+                primary={true}
+                onTouchTap={this.handleClose}
+            />,
+            <FlatButton
+                disabled={!this.state.saveName}
+                keyboardFocused={Boolean(this.state.saveName)}
+                label="Submit"
+                primary={true}
+                onTouchTap={this.saveScore}
+            />,
+        ];
+
+        return (
+            <div>
+                <Dialog
+                    title="Save score?"
+                    actions={actions}
+                    modal={true}
+                    open={this.state.open}
+                >
+                    <div>Your score (<strong>{this.getTime()}</strong>) is in the <strong>Top 10</strong>! To save your score, enter your name below and click <strong>Submit</strong>! If you do not want to save your score, click <strong>Cancel</strong>.</div>
+                    <TextField
+                        floatingLabelText="Enter your name here"
+                        onChange={event => this.setState({ saveName: event.target.value })}
+                    />
+                </Dialog>
+            </div>
+        );
+    }
+
     render() {
         const classNames = css('order-salvation__content-card-description', {
             'order-salvation__content-card-description--complete': this.state.allCorrect
         });
 
         return (
-            <Card className="order-salvation__content-card">
-                <CardTitle
-                    className="order-salvation__content-card-title"
-                    title="Order the Order of Salvation"
-                />
-                <CardText className={classNames}>
-                    {this.renderContent()}
-                </CardText>
-            </Card>
+            <div>
+                <Card className="order-salvation__content-card">
+                    <CardTitle
+                        className="order-salvation__content-card-title"
+                        title="Order the Order of Salvation"
+                    />
+                    <CardText className={classNames}>
+                        {this.renderContent()}
+                    </CardText>
+                </Card>
+                {this.renderModal()}
+            </div>
         );
     }
 }

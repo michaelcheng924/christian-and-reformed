@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
 import { delay, partial } from 'lodash';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
@@ -9,6 +11,7 @@ import { Card, CardTitle, CardText } from 'material-ui/Card';
 import GAMES from 'app/constants/games';
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
+import { addScore } from 'app/api/users';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
 import BibleOrder from 'app/components/Games/bible-order';
@@ -92,6 +95,7 @@ class Games extends Component {
 
     renderContent() {
         const { selection } = this.state;
+        const { appData, onAddScore } = this.props;
 
         if (!selection) {
             return (
@@ -109,18 +113,23 @@ class Games extends Component {
 
         let Component;
 
+        const props = {
+            appData,
+            onAddScore
+        };
+
         switch (selection) {
             case '/games/bible-books-order':
-                Component = <BibleOrder />;
+                Component = <BibleOrder {...props} />;
                 break;
             case '/games/catechism-boys-girls':
-                Component = <CatechismTrainingContentCard data={BOYS_GIRLS.data} name={BOYS_GIRLS.name} />
+                Component = <CatechismTrainingContentCard {...props} data={BOYS_GIRLS.data} name={BOYS_GIRLS.name} />
                 break;
             case '/games/catechism-westminster-shorter':
-                Component = <CatechismTrainingContentCard data={WESTMINSTER_SHORTER.data} name={WESTMINSTER_SHORTER.name} />
+                Component = <CatechismTrainingContentCard {...props} data={WESTMINSTER_SHORTER.data} name={WESTMINSTER_SHORTER.name} />
                 break;
             case '/games/order-salvation':
-                Component = <OrderSalvation />;
+                Component = <OrderSalvation {...props} />;
                 break;
             default:
                 Component = null;
@@ -151,4 +160,13 @@ class Games extends Component {
     }
 }
 
-export default withRouter(Games);
+const mapStateToProps = createSelector(
+    state => state.app,
+    app => ({ ...app })
+);
+
+const mapActionsToProps = {
+    onAddScore: addScore
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(withRouter(Games));
