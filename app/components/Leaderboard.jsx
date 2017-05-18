@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isEmpty } from 'lodash';
 import {
   Table,
   TableBody,
@@ -20,6 +21,8 @@ export default class OrderSalvationContentCard extends Component {
 
     render() {
         const { scores } = this.props;
+
+        if (isEmpty(scores)) { return null; }
 
         return (
             <div className="leaderboard">

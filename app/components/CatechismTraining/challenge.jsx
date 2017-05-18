@@ -9,6 +9,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
 
 import { CORRECT_RESPONSES } from 'app/constants/global';
+import SaveScoreModal from 'app/components/SaveScoreModal';
+import Leaderboard from 'app/components/Leaderboard';
 
 export default class CatechismTrainingChallenge extends Component {
     constructor(props) {

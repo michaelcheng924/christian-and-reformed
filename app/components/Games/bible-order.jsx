@@ -7,6 +7,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import CheckCircleIcon from 'material-ui-icons/CheckCircle';
 
 import BIBLE_ORDER from 'app/constants/game-bible-order';
+import SaveScoreModal from 'app/components/SaveScoreModal';
+import Leaderboard from 'app/components/Leaderboard';
 
 export default class BibleOrderContentCard extends Component {
     constructor(props) {
@@ -14,6 +16,7 @@ export default class BibleOrderContentCard extends Component {
 
         this.state = {
             allCorrect: false,
+            open: false,
             ot: [],
             nt: [],
             started: false,
@@ -21,11 +24,16 @@ export default class BibleOrderContentCard extends Component {
         };
         
         this.onInputChange = this.onInputChange.bind(this);
+        this.setParentState = this.setParentState.bind(this);
         this.onStart = this.onStart.bind(this);
     }
 
     componentWillUnmount() {
         clearInterval(this.timerInterval);
+    }
+
+    setParentState(object) {
+        this.setState(object);
     }
 
     onStart() {
@@ -34,6 +42,18 @@ export default class BibleOrderContentCard extends Component {
         this.timerInterval = setInterval(() => {
             this.setState({ timer: this.state.timer += 1 });
         }, 1000);
+    }
+
+    getTime() {
+        const time = this.state.timer;
+
+        if (time < 60) {
+            return `0:${time}`;
+        } else if (time >= 60 && time < 120) {
+            return `1:${time % 60}`;
+        } else if (time >= 120) {
+            return `${Math.floor(time / 60)}:${time % 60}`;
+        }
     }
 
     getTimeString() {
@@ -62,6 +82,13 @@ export default class BibleOrderContentCard extends Component {
         if (allCorrect) {
             this.setState({ allCorrect: true });
             clearInterval(this.timerInterval);
+
+            const { appData } = this.props;
+            const bibleOrder = appData.bibleOrder;
+
+            if (bibleOrder.length < 10 || this.isNewScoreBetter(last(bibleOrder).score, this.getTime())) {
+                this.setState({ open: true });
+            }
             return;
         }
 
@@ -69,17 +96,28 @@ export default class BibleOrderContentCard extends Component {
     }
 
     renderContent() {
+        const { appData } = this.props;
+
         if (this.state.allCorrect) {
             return (
                 <div className="completed">
-                    <CheckCircleIcon />
-                    <h2>You finished in {this.getTimeString()}!</h2>
+                    <div>
+                        <CheckCircleIcon />
+                        <h2>You finished in {this.getTimeString()}!</h2>
+                        <RaisedButton className="completed__play-again" label="Play again" secondary={true} onTouchTap={this.onStart} />
+                    </div>
+                    <Leaderboard scores={appData.bibleOrder} />
                 </div>
             );
         }
 
         if (!this.state.started) {
-            return <RaisedButton className="bible-order__start-button" label="Start" primary={true} onTouchTap={this.onStart} />;
+            return (
+                <div className="start">
+                    <RaisedButton className="start__button" label="Start" primary={true} onTouchTap={this.onStart} />
+                    <Leaderboard scores={appData.bibleOrder} />
+                </div>
+            );
         }
 
         return (
@@ -142,16 +180,22 @@ export default class BibleOrderContentCard extends Component {
     }
 
     render() {
+        const { open } = this.state;
+
         return (
-            <Card className="bible-order__content-card">
-                <CardTitle
-                    className="bible-order__content-card-title"
-                    title="Bible Books Order Challenge"
-                />
-                <CardText className="bible-order__content-card-description">
-                    {this.renderContent()}
-                </CardText>
-            </Card>
+            <div>
+                <Card className="bible-order__content-card">
+                    <CardTitle
+                        className="bible-order__content-card-title"
+                        title="Bible Books Order Challenge"
+                    />
+                    <CardText className="bible-order__content-card-description">
+                        {this.renderContent()}
+                    </CardText>
+                </Card>
+                <SaveScoreModal open={open} setParentState={this.setParentState} keyValue="bibleOrder" score={this.getTime()} displayScore={this.getTimeString()} />
+
+            </div>
         );
     }
 }

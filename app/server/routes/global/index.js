@@ -88,6 +88,19 @@ function getTimeScores(currentScores, score) {
     });
 }
 
+function getNumberScores(currentScores, score) {
+    if (currentScores.length < 10) {
+        currentScores.push(score);
+    } else if (score.score > last(currentScores).score) {
+        currentScores.splice(9, 1);
+        currentScores.push(score);
+    }
+
+    return currentScores.sort((a, b) => {
+        return b.score > a.score ? 1 : -1;
+    });
+}
+
 router.post('/addscore', (req, res) => {
     const { key, score } = req.body;
 
@@ -102,6 +115,8 @@ router.post('/addscore', (req, res) => {
         if (keyData) {
             if (key === 'orderSalvation' || key === 'bibleOrder') {
                 keyData.scores = getTimeScores(keyData, score);
+            } else {
+                keyData.scores = getNumberScores(keyData, score);
             }
         }
 

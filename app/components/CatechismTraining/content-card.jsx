@@ -10,7 +10,7 @@ export default class ConfessionsCreedsContentCard extends Component {
         super(props);
         
         this.state = {
-            mode: 'practice',
+            mode: 'challenge',
             questionNumber: 1
         };
 
@@ -51,13 +51,13 @@ export default class ConfessionsCreedsContentCard extends Component {
                     <RadioButtonGroup name="catechismMode" defaultSelected="practice" onChange={this.onModeChange}>
                         <RadioButton
                             className="catechism-training__mode-button"
-                            value="practice"
-                            label="Practice"
+                            value="challenge"
+                            label="Challenge"
                         />
                         <RadioButton
                             className="catechism-training__mode-button"
-                            value="challenge"
-                            label="Challenge (How far can you get?)"
+                            value="practice"
+                            label="Practice"
                         />
                     </RadioButtonGroup>
                     <hr />

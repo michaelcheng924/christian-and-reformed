@@ -74,12 +74,12 @@ class OrderSalvationContentCard extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const { allCorrect, isDragging } = this.state;
+        const { allCorrect, isDragging, order } = this.state;
 
         if (!isDragging && prevState.isDragging && !allCorrect) {
-            const allCorrect = true/*every(order, (item, index) => {
+            const allCorrect = every(order, (item, index) => {
                 return item.name === ORDER[index].name;
-            })*/;
+            });
 
             if (allCorrect) {
                 clearInterval(this.timerInterval);
@@ -182,11 +182,7 @@ class OrderSalvationContentCard extends Component {
             return (
                 <div className="start">
                     <RaisedButton className="start__button" label="Start" primary={true} onTouchTap={this.onStart} />
-                    {
-                        isEmpty(appData.orderSalvation)
-                            ? null
-                            : <Leaderboard scores={appData.orderSalvation} />
-                    }
+                    <Leaderboard scores={appData.orderSalvation} />
                 </div>
             );
         }
@@ -202,11 +198,7 @@ class OrderSalvationContentCard extends Component {
                                     <h2>You finished in {this.getTimeString()}!</h2>
                                     <RaisedButton className="completed__play-again" label="Play again" secondary={true} onTouchTap={this.onStart} />
                                 </div>
-                                {
-                                    isEmpty(appData.orderSalvation)
-                                        ? null
-                                        : <Leaderboard scores={appData.orderSalvation} />
-                                }
+                                <Leaderboard scores={appData.orderSalvation} />
                             </div>
                         )
                         : <div className="order-salvation__timer">{this.getTimeString()}</div>
