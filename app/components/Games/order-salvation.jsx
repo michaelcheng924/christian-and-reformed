@@ -7,11 +7,9 @@ import { every, last, shuffle } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import CheckCircleIcon from 'material-ui-icons/CheckCircle';
-import Dialog from 'material-ui/Dialog';
-import FlatButton from 'material-ui/FlatButton';
-import TextField from 'material-ui/TextField';
 
 import OrderSalvationPiece from 'app/components/Games/order-salvation-piece';
+import SaveScoreModal from 'app/components/SaveScoreModal';
 
 const ORDER = [
     {
@@ -70,10 +68,8 @@ class OrderSalvationContentCard extends Component {
             timer: 0
         };
 
-        this.handleClose = this.handleClose.bind(this);
         this.setParentState = this.setParentState.bind(this);
         this.onStart = this.onStart.bind(this);
-        this.saveScore = this.saveScore.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -98,7 +94,7 @@ class OrderSalvationContentCard extends Component {
             const orderSalvation = appData.orderSalvation;
 
             if (orderSalvation.length < 10 || this.isNewScoreBetter(last(orderSalvation).score, this.getTime())) {
-                this.handleOpen();
+                this.setState({ open: true });
             }
         }
     }
@@ -109,26 +105,6 @@ class OrderSalvationContentCard extends Component {
 
     setParentState(object) {
         this.setState(object);
-    }
-
-    handleOpen() {
-        this.setState({ open: true });
-    }
-
-    handleClose() {
-        this.setState({ open: false });
-    }
-
-    saveScore() {
-        this.props.onAddScore({
-            key: 'orderSalvation',
-            score: {
-                name: this.state.saveName,
-                score: this.getTime()
-            }
-        });
-
-        this.handleClose();
     }
 
     isNewScoreBetter(currentScore, newScore) {
@@ -209,8 +185,10 @@ class OrderSalvationContentCard extends Component {
                     !isDragging && allCorrect
                         ? (
                             <div className="bible-order__completed">
-                                <CheckCircleIcon />
-                                <h2>You finished in {this.getTimeString()}!</h2>
+                                <div>
+                                    <CheckCircleIcon />
+                                    <h2>You finished in {this.getTimeString()}!</h2>
+                                </div>
                             </div>
                         )
                         : <div className="order-salvation__timer">{this.getTimeString()}</div>
@@ -224,45 +202,11 @@ class OrderSalvationContentCard extends Component {
         );
     }
 
-    renderModal() {
-        if (!this.state.open) { return null; }
-
-        const actions = [
-            <FlatButton
-                label="Cancel"
-                primary={true}
-                onTouchTap={this.handleClose}
-            />,
-            <FlatButton
-                disabled={!this.state.saveName}
-                keyboardFocused={Boolean(this.state.saveName)}
-                label="Submit"
-                primary={true}
-                onTouchTap={this.saveScore}
-            />,
-        ];
-
-        return (
-            <div>
-                <Dialog
-                    title="Save score?"
-                    actions={actions}
-                    modal={true}
-                    open={this.state.open}
-                >
-                    <div>Your score (<strong>{this.getTime()}</strong>) is in the <strong>Top 10</strong>! To save your score, enter your name below and click <strong>Submit</strong>! If you do not want to save your score, click <strong>Cancel</strong>.</div>
-                    <TextField
-                        floatingLabelText="Enter your name here"
-                        onChange={event => this.setState({ saveName: event.target.value })}
-                    />
-                </Dialog>
-            </div>
-        );
-    }
-
     render() {
+        const { allCorrect, open } = this.state;
+
         const classNames = css('order-salvation__content-card-description', {
-            'order-salvation__content-card-description--complete': this.state.allCorrect
+            'order-salvation__content-card-description--complete': allCorrect
         });
 
         return (
@@ -276,7 +220,7 @@ class OrderSalvationContentCard extends Component {
                         {this.renderContent()}
                     </CardText>
                 </Card>
-                {this.renderModal()}
+                <SaveScoreModal open={open} setParentState={this.setParentState} keyValue="orderSalvation" score={this.getTime()} displayScore={this.getTimeString()} />
             </div>
         );
     }

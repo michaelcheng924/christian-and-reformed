@@ -165,8 +165,4 @@ const mapStateToProps = createSelector(
     app => ({ ...app })
 );
 
-const mapActionsToProps = {
-    onAddScore: addScore
-}
-
-export default connect(mapStateToProps, mapActionsToProps)(withRouter(Games));
+export default connect(mapStateToProps, null)(withRouter(Games));
