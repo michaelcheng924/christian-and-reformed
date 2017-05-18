@@ -28,7 +28,7 @@ export const APP_LIST = [
     },
     {
         title: 'Games',
-        description: 'Learning the Bible can be fun',
+        description: 'Learning the Bible is fun',
         url: '/games',
         background: '#EF6C00',
         icon: <i className="fa fa-puzzle-piece" aria-hidden="true" />

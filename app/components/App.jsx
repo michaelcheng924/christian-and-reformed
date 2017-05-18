@@ -8,6 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentForward from 'material-ui/svg-icons/content/forward';
 
+import { getAppData } from 'app/api/users';
 import { setApp } from 'app/actions/AppActions';
 import Header from 'app/components/Header';
 import Home from 'app/components/Home';
@@ -15,6 +16,7 @@ import VideoAudio from 'app/components/VideoAudio';
 import ChurchFinder from 'app/components/ChurchFinder';
 import ConfessionsCreeds from 'app/components/ConfessionsCreeds';
 import Games from 'app/components/Games';
+import Admin from 'app/components/Admin';
 
 class App extends Component {
     componentWillMount() {
@@ -23,6 +25,8 @@ class App extends Component {
             if (pathname !== '/') {
                 this.props.onSetApp(pathname);
             }
+
+            this.props.onGetAppData();
         }
     }
 
@@ -58,7 +62,8 @@ class App extends Component {
                         <Route path="/video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
                         <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
-                        <Route path="/games" component={Games}/>
+                        <Route path="/games" component={Games} />
+                        <Route path="/admin" component={Admin} />
                         {this.renderBack()}
                     </div>
                 </MuiThemeProvider>
@@ -73,6 +78,7 @@ const mapStateToProps = createSelector(
 );
 
 const mapActionsToProps = {
+    onGetAppData: getAppData,
     onSetApp: setApp
 };
 

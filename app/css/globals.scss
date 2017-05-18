@@ -175,23 +175,12 @@ progress {
 }
 
 .admin {
-    text-align: left;
-    width: 100%;
+    padding: 20px;
 
-    > span {
-        color: red;
-        cursor: pointer;
-    }
-
-    > div {
+    &__leaderboards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-
-    .fa-times {
-        color: red;
-        cursor: pointer;
     }
 }
 

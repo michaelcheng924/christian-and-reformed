@@ -24,6 +24,10 @@ export default class BibleOrderContentCard extends Component {
         this.onStart = this.onStart.bind(this);
     }
 
+    componentWillUnmount() {
+        clearInterval(this.timerInterval);
+    }
+
     onStart() {
         this.setState({ started: true });
 

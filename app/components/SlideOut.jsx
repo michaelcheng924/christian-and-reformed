@@ -19,27 +19,8 @@ class SlideOut extends Component {
         super(props);
         
         this.state = {
-            email: '',
-            isSignup: false,
-            password: '',
-            repeatPassword: '',
             showSlideOut: false
         };
-
-        this.onLoginSignupChange = this.onLoginSignupChange.bind(this);
-        this.onLoginSubmit = this.onLoginSubmit.bind(this);
-        this.onLogout = this.onLogout.bind(this);
-        this.updateTextField = this.updateTextField.bind(this);
-    }
-
-    componentWillMount() {
-        if (typeof window !== 'undefined') {
-            const token = window.localStorage.getItem('reformedtoolbox:token');
-
-            if (token) {
-                this.props.onLoginWithToken({ token });
-            }
-        }
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -54,162 +35,13 @@ class SlideOut extends Component {
         }
     }
 
-    onLogout() {
-        if (typeof window !== 'undefined') {
-            const confirm = window.confirm('Are you sure you want to log out?');
-
-            if (confirm) {
-                this.props.onLogout();
-            }
-        }
-    }
-
-    updateTextField(textField, event) {
-        this.setState({ [textField]: event.target.value });
-
-        this.props.onSetLoginErrorMessage(null);
-    }
-
-    onLoginSignupChange(event) {
-        this.setState({
-            email: '',
-            isSignup: event.target.value === 'signup',
-            password: '',
-            repeatPassword: ''
-        });
-
-        this.props.onSetLoginErrorMessage(null);
-    }
-
-    onLoginSubmit(event) {
-        if (!event.which || event.which === 13) {
-            const { onLogin, onSetLoginErrorMessage, onSignup } = this.props;
-            const { email, isSignup, password, repeatPassword } = this.state;
-
-            if (!EMAIL_REGEX.test(email)) {
-                onSetLoginErrorMessage('Please enter a valid email.');
-                return;
-            }
-
-            if (!email || !password) {
-                onSetLoginErrorMessage('A field is empty.');
-                return;
-            }
-
-            if (isSignup && password !== repeatPassword) {
-                onSetLoginErrorMessage('Passwords do not match.');
-                return;
-            }
-
-            isSignup
-                ? onSignup({ email, password })
-                : onLogin({ email, password });
-        }
-    }
-
     renderOverlay() {
         if (!this.state.showSlideOut) { return null; }
 
         return <div className="overlay" onClick={() => this.setState({ showSlideOut: false })} />;
     }
 
-    renderLoggedIn() {
-        const { onLogout, user, userData } = this.props;
-
-        return (
-            <div className="slide-out-content__logged-in-section">
-                <div><strong>{user}</strong> is logged in.</div>
-                <br />
-                <div><strong>Catechism for Boys and Girls Score: </strong>{userData.catechismBoysGirls}</div>
-                <RaisedButton
-                    className="slide-out-content__logout"
-                    label="Log out"
-                    secondary={true}
-                    onClick={this.onLogout}
-                />
-            </div>
-
-        );
-    }
-
-    renderLogin() {
-        const { loginErrorMessage, user } = this.props;
-        const { email, isSignup, password, repeatPassword } = this.state;
-
-        if (user) { return this.renderLoggedIn(); }
-
-        return (
-            <div className="slide-out-content__login-section">
-                <RadioButtonGroup className="slide-out-content__login-radio-container" name="login" defaultSelected="login" onChange={this.onLoginSignupChange}>
-                    <RadioButton
-                        className="radio-inline"
-                        value="login"
-                        label="Login"
-                    />
-                    <RadioButton
-                        className="radio-inline"
-                        value="signup"
-                        label="Signup"
-                    />
-                </RadioButtonGroup>
-                <div>
-                    <TextField
-                        className="slide-out-content__login-input"
-                        errorText={loginErrorMessage ? ' ' : null}
-                        hintText="Email"
-                        onChange={partial(this.updateTextField, 'email')}
-                        onKeyDown={this.onLoginSubmit}
-                        type="email"
-                        underlineFocusStyle={{ borderColor: '#1E88E5' }}
-                        value={email}
-                    />
-                    <TextField
-                        className="slide-out-content__login-input"
-                        errorText={loginErrorMessage ? ' ' : null}
-                        hintText="Password"
-                        onChange={partial(this.updateTextField, 'password')}
-                        onKeyDown={this.onLoginSubmit}
-                        type="password"
-                        underlineFocusStyle={{ borderColor: '#1E88E5' }}
-                        value={password}
-                    />
-                    {
-                        isSignup
-                            ? (
-                                <TextField
-                                    className="slide-out-content__login-input"
-                                    errorText={loginErrorMessage ? ' ' : null}
-                                    hintText="Repeat password"
-                                    onChange={partial(this.updateTextField, 'repeatPassword')}
-                                    onKeyDown={this.onLoginSubmit}
-                                    type="password"
-                                    underlineFocusStyle={{ borderColor: '#1E88E5' }}
-                                    value={repeatPassword}
-                                />
-                            )
-                            : null
-                    }
-                    <RaisedButton
-                        className="slide-out-content__login-button"
-                        label="Submit"
-                        primary={true}
-                        onClick={this.onLoginSubmit}
-                    />
-                </div>
-            </div>
-        );
-    }
-
-    renderLoginErrorMessage() {
-        const { loginErrorMessage } = this.props;
-
-        if (!loginErrorMessage) { return null; }
-
-        return <div className="slide-out-content__login-error-message">{loginErrorMessage}</div>;
-    }
-
     render() {
-        const { user } = this.props;
         const { showSlideOut } = this.state;
 
         const classNames = css('slide-out', {
@@ -223,25 +55,15 @@ class SlideOut extends Component {
                     <div className="slide-out-content">
                         <Card className="slide-out-content__card">
                             <CardText className="slide-out-content__card-description">
-                                {
-                                    user === 'cheng.c.mike@gmail.com'
-                                        ? <Admin />
-                                        : (
-                                            <div>
-                                                {this.renderLogin()}
-                                                {this.renderLoginErrorMessage()}
-                                                <div
-                                                    className="fb-like"
-                                                    data-href="http://reformedtoolbox.com"
-                                                    data-layout="button_count"
-                                                    data-action="like"
-                                                    data-size="small"
-                                                    data-show-faces="true"
-                                                    data-share="true"
-                                                />
-                                            </div>
-                                        )
-                                }
+                                <div
+                                    className="fb-like"
+                                    data-href="http://reformedtoolbox.com"
+                                    data-layout="button_count"
+                                    data-action="like"
+                                    data-size="small"
+                                    data-show-faces="true"
+                                    data-share="true"
+                                />
                             </CardText>
                         </Card>
                     </div>

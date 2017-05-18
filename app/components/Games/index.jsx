@@ -31,7 +31,7 @@ class Games extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Christian and Reformed - Games: Learning the Bible can be fun';
+            document.title = 'Christian and Reformed - Games: Learning the Bible is fun';
             document.body.style.background = '#FFF3E0';
 
             const pathname = window.location.pathname;
@@ -139,7 +139,7 @@ class Games extends Component {
                     setParentState={this.setParentState}
                     showHeader={showHeader}
                     title="Games"
-                    subtitle="Learning the Bible can be fun"
+                    subtitle="Learning the Bible is fun"
                 >
                     {this.renderDropdown()}
                 </AppHeader>

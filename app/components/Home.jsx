@@ -22,7 +22,7 @@ class Home extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Reformed Toolbox: Technology Serving Truth';
+            document.title = 'Christian and Reformed: Technology Serving Historic Truth';
             document.body.style.background = '#90CAF9';
         }
     }

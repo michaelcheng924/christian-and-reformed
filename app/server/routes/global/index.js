@@ -1,5 +1,7 @@
 import express from 'express';
 import request from 'request';
+import { last } from 'lodash';
+import { AppData } from 'app/server/db/user-schema';
 
 const router = express.Router();
 
@@ -8,6 +10,133 @@ router.post('/getscripture', (req, res) => {
 
     request(`http://www.esvapi.org/v2/rest/passageQuery?key=IP&passage=${scripture}`, (error, response, body) => {
         res.send(response);
+    });
+});
+
+router.post('/getappdata', (req, res) => {
+    AppData.findOne({ name: 'data' }, (err, result) => {
+        res.send({ appData: result.data });
+    });
+});
+
+router.post('/addleaderboard', (req, res) => {
+    const { leaderboardKey } = req.body;
+
+    AppData.findOne({ name: 'data' }, (err, result) => {
+        const data = result.data;
+        data[leaderboardKey] = [];
+
+        AppData.update({ name: 'data' }, {
+            $set: {
+                data
+            }
+        }, (err, result) => {
+            res.send({
+                appData: data
+            });
+        });
+    });
+});
+
+function isTimeScoreValid(score) {
+    if (!score.score || score.score.indexOf(':') === -1) {
+        return false;
+    }
+
+    return true;
+}
+
+function isNewScoreBetter(currentScore, newScore) {
+    const splitCurrentScore = currentScore.score.split(':');
+    const splitNewScore = newScore.score.split(':');
+    const currentScoreMin = Number(splitCurrentScore[0]);
+    const currentScoreSec = Number(splitCurrentScore[1]);
+    const newScoreMin = Number(splitNewScore[0]);
+    const newScoreSec = Number(splitNewScore[1]);
+
+    if (newScoreMin < currentScoreMin) {
+        return true;
+    }
+
+    if (newScoreMin > currentScoreMin) {
+        return false;
+    }
+
+    if (newScoreMin === currentScoreMin) {
+        if (newScoreSec < currentScoreSec) {
+            return true;
+        }
+
+        if (newScoreSec > currentScoreSec || newScoreSec === currentScoreSec) {
+            return false;
+        }
+    }
+
+    return false;
+}
+
+function getTimeScores(currentScores, score) {
+    if (currentScores.length < 10) {
+        currentScores.push(score);
+    } else if (isNewScoreBetter(last(currentScores), score)) {
+        currentScores.splice(9, 1);
+        currentScores.push(score);
+    }
+
+    return currentScores.sort((a, b) => {
+        return isNewScoreBetter(a, b) ? 1 : -1;
+    });
+}
+
+router.post('/addscore', (req, res) => {
+    const { key, score } = req.body;
+
+    if (!isTimeScoreValid(score)) {
+        res.send('Please stop :)');
+    }
+
+    AppData.findOne({ name: 'data' }, (err, result) => {
+        const data = result.data;
+        const keyData = data[key];
+
+        if (keyData) {
+            if (key === 'orderSalvation' || key === 'bibleOrder') {
+                keyData.scores = getTimeScores(keyData, score);
+            }
+        }
+
+        AppData.update({ name: 'data' }, {
+            $set: {
+                data
+            }
+        }, (err, result) => {
+            res.send({
+                appData: data
+            });
+        });
+    });
+});
+
+router.delete('/deletescore', (req, res) => {
+    const { key, index } = req.body;
+
+    AppData.findOne({ name: 'data' }, (err, result) => {
+        const data = result.data;
+        const scores = data[key];
+
+        if (scores) {
+            scores.splice(index, 1);
+        }
+
+        AppData.update({ name: 'data' }, {
+            $set: {
+                data
+            }
+        }, (err, result) => {
+            res.send({
+                appData: data
+            });
+        });
     });
 });
 

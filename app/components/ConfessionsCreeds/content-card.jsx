@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
@@ -96,7 +97,7 @@ export default class ConfessionsCreedsContentCard extends Component {
         return (
             <div className={classnames} ref={container => this.container = container}>
                 <div className="confessions-creeds__content-card-section">
-                    <strong><em>Click superscripts to view Scriptures in a popover without leaving the page.</em></strong>
+                    <strong><em>Click superscripts to view Scriptures directly below without leaving the page.</em></strong>
                 </div>
                 {
                     data[selection - 1].content.map((paragraph, index) => {

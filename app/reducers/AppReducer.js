@@ -1,5 +1,5 @@
 import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE } from 'app/actions/AppActionTypes';
-import { deleteUser, getAllUsers, login, loginWithToken, passwordResetEmail, signup } from 'app/api/users';
+import { addLeaderboard, addScore, deleteScore, deleteUser, getAllUsers, getAppData, login, loginWithToken, passwordResetEmail, signup } from 'app/api/users';
 
 const defaultState = {
     allUsers: [],
@@ -13,7 +13,7 @@ export default function usersReducer(state = defaultState, { type, payload }) {
     switch(type) {
         case LOGOUT: {
             if (typeof window !== 'undefined') {
-                window.localStorage.removeItem('reformedtoolbox:token');
+                window.localStorage.removeItem('christianandreformed:token');
             }
 
             return defaultState;
@@ -31,13 +31,12 @@ export default function usersReducer(state = defaultState, { type, payload }) {
         case login.SUCCESS:
         case signup.SUCCESS: {
             if (typeof window !== 'undefined') {
-                window.localStorage.setItem('reformedtoolbox:token', payload.token);
+                window.localStorage.setItem('christianandreformed:token', payload.token);
             }
 
             return {
                 ...state,
-                user: payload.user,
-                userData: payload.userData
+                user: payload.user
             };
         }
         case passwordResetEmail.SUCCESS:
@@ -55,8 +54,7 @@ export default function usersReducer(state = defaultState, { type, payload }) {
         case loginWithToken.SUCCESS:
             return {
                 ...state,
-                user: payload.user,
-                userData: payload.userData
+                user: payload.user
             };
         case deleteUser.SUCCESS:
             return {
@@ -69,6 +67,14 @@ export default function usersReducer(state = defaultState, { type, payload }) {
             return {
                 ...state,
                 allUsers: payload.users
+            };
+        case addLeaderboard.SUCCESS:
+        case addScore.SUCCESS:
+        case deleteScore.SUCCESS:
+        case getAppData.SUCCESS:
+            return {
+                ...state,
+                appData: payload.appData
             };
         default:
             return state;

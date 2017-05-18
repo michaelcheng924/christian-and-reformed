@@ -5,3 +5,8 @@ export const User = mongoose.model('User', {
     password: String,
     data: Object
 });
+
+export const AppData = mongoose.model('AppData', {
+    data: Object,
+    name: String
+});

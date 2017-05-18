@@ -1,6 +1,8 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+import css from 'classnames';
 import { every, shuffle } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -67,6 +69,10 @@ class OrderSalvationContentCard extends Component {
         this.onStart = this.onStart.bind(this);
     }
 
+    componentWillUnmount() {
+        clearInterval(this.timerInterval);
+    }
+
     setParentState(object) {
         this.setState(object);
     }
@@ -98,26 +104,32 @@ class OrderSalvationContentCard extends Component {
             return item.name === ORDER[index].name;
         });
 
-        if (allCorrect) {
+        if (!isDragging && allCorrect) {
             clearInterval(this.timerInterval);
+
+            $('body').scrollTop(0);
         }
 
-        if (!isDragging && allCorrect) {
+        if (!started) {
             return (
-                <div className="bible-order__completed">
-                    <CheckCircleIcon />
-                    <h2>You finished in {this.getTimeString()}!</h2>
+                <div>
+                    <RaisedButton className="order-salvation__start-button" label="Start" primary={true} onTouchTap={this.onStart} />
                 </div>
             );
         }
 
-        if (!started) {
-            return <RaisedButton className="order-salvation__start-button" label="Start" primary={true} onTouchTap={this.onStart} />;
-        }
-
         return (
             <div>
-                <div className="order-salvation__timer">{this.getTimeString()}</div>
+                {
+                    !isDragging && allCorrect
+                        ? (
+                            <div className="bible-order__completed">
+                                <CheckCircleIcon />
+                                <h2>You finished in {this.getTimeString()}!</h2>
+                            </div>
+                        )
+                        : <div className="order-salvation__timer">{this.getTimeString()}</div>
+                }
                 {
                     order.map((item, index) => {
                         return <OrderSalvationPiece key={item.name} dragIndex={dragIndex} index={index} item={item} order={order} setParentState={this.setParentState} />;
@@ -128,13 +140,17 @@ class OrderSalvationContentCard extends Component {
     }
 
     render() {
+        const classNames = css('order-salvation__content-card-description', {
+            'order-salvation__content-card-description--complete': this.state.allCorrect
+        });
+
         return (
             <Card className="order-salvation__content-card">
                 <CardTitle
                     className="order-salvation__content-card-title"
                     title="Order the Order of Salvation"
                 />
-                <CardText className="order-salvation__content-card-description">
+                <CardText className={classNames}>
                     {this.renderContent()}
                 </CardText>
             </Card>

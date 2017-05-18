@@ -26,6 +26,30 @@ export const passwordResetEmail = createClient({
 
 // ******** ADMIN ********
 
+export const getAppData = createClient({
+    actionTypePrefix: 'users:getAppData',
+    requestType: 'POST',
+    url: '/api/global/getappdata'
+});
+
+export const addScore = createClient({
+    actionTypePrefix: 'users:addScore',
+    requestType: 'POST',
+    url: '/api/global/addscore'
+});
+
+export const deleteScore = createClient({
+    actionTypePrefix: 'users:deleteScore',
+    requestType: 'DELETE',
+    url: '/api/global/deletescore'
+});
+
+export const addLeaderboard = createClient({
+    actionTypePrefix: 'users:addLeaderboard',
+    requestType: 'POST',
+    url: '/api/global/addleaderboard'
+});
+
 export const getAllUsers = createClient({
     actionTypePrefix: 'users:getAllUsers',
     requestType: 'GET',

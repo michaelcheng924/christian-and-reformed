@@ -63,6 +63,7 @@
 
     &__completed {
         color: #4CAF50;
+        margin-bottom: 20px;
         text-align: center;
 
         svg {
@@ -93,6 +94,17 @@
         display: flex;
         justify-content: center;
         padding: 25px 15px !important;
+
+        &--complete {
+            .order-salvation__option {
+                cursor: pointer;
+                pointer-events: none;
+
+                &:hover {
+                    background: #FFF;
+                }
+            }
+        }
     }
 
     &__timer {
