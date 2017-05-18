@@ -19,3 +19,94 @@
         }
     }
 }
+
+.bible-order {
+    &__content-card-title {
+        background: #006064;
+
+        > span {
+            color: #FFF !important;
+        }
+    }
+
+    &__content-card-description {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0 !important;
+    }
+
+    &__timer {
+        text-align: center;
+    }
+
+    &__game-section {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    &__input {
+        &--correct {
+            label, div, input {
+                color: #4CAF50 !important;
+                font-weight: 500 !important;
+            }
+        }
+    }
+
+    &__completed {
+        color: #4CAF50;
+        text-align: center;
+
+        svg {
+            fill: #4CAF50 !important;
+            height: 40px !important;
+            width: 40px !important;
+        }
+    }
+}
+
+.order-salvation {
+    &__content-card {
+        > div {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    &__content-card-title {
+        background: #33691E;
+
+        > span {
+            color: #FFF !important;
+        }
+    }
+
+    &__content-card-description {
+        background: #C8E6C9;
+        display: flex;
+        justify-content: center;
+        padding: 25px 15px !important;
+    }
+
+    &__option {
+        background: #FFF;
+        border: 1px solid #CACACA;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+
+        &:hover {
+            background: #F1F1F1;
+        }
+
+        &--dragging {
+            visibility: hidden;
+        }
+    }
+
+    &__option-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

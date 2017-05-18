@@ -6,11 +6,14 @@ import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 
+import GAMES from 'app/constants/games';
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
+import BibleOrder from 'app/components/Games/bible-order';
 import CatechismTrainingContentCard from 'app/components/CatechismTraining/content-card';
+import OrderSalvation from 'app/components/Games/order-salvation';
 
 class Games extends Component {
     constructor(props) {
@@ -33,12 +36,9 @@ class Games extends Component {
 
             const pathname = window.location.pathname;
 
-            if (pathname === '/games/catechism-boys-girls') {
+            if (GAMES[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = 'Christian and Reformed - Games: Catechism for Boys and Girls Training';
-            } else if (pathname === 'games/catechism-westminster-shorter') {
-                this.setState({ selection: pathname });
-                document.title = 'Christian and Reformed - Games: Westminster Shorter Catechism Training';
+                document.title = GAMES[pathname];
             }
         }
     }
@@ -56,8 +56,8 @@ class Games extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && value === '/games/catechism-boys-girls') {
-            document.title = 'Christian and Reformed - Games: Catechism for Boys and Girls Training';
+        if (typeof window !== 'undefined' && GAMES[value]) {
+            document.title = GAMES[value];
         }
 
         delay(() => {
@@ -81,8 +81,10 @@ class Games extends Component {
                     autoWidth={false}
                 >
                     <MenuItem value={null} primaryText="Select a game" disabled />
+                    <MenuItem value="/games/bible-books-order" primaryText="Bible Books Order Challenge" />
                     <MenuItem value="/games/catechism-boys-girls" primaryText="Catechism for Boys and Girls Training" />
                     <MenuItem value="/games/catechism-westminster-shorter" primaryText="Westminster Shorter Catechism Training" />
+                    <MenuItem value="/games/order-salvation" primaryText="Order the Order of Salvation" />
                 </DropDownMenu>
             </Paper>
         );
@@ -108,15 +110,21 @@ class Games extends Component {
         let Component;
 
         switch (selection) {
+            case '/games/bible-books-order':
+                Component = <BibleOrder />;
+                break;
             case '/games/catechism-boys-girls':
                 Component = <CatechismTrainingContentCard data={BOYS_GIRLS.data} name={BOYS_GIRLS.name} />
                 break;
             case '/games/catechism-westminster-shorter':
                 Component = <CatechismTrainingContentCard data={WESTMINSTER_SHORTER.data} name={WESTMINSTER_SHORTER.name} />
                 break;
+            case '/games/order-salvation':
+                Component = <OrderSalvation />;
+                break;
             default:
-                data = [];
-                name = 'Select a game above'
+                Component = null;
+                break;
         }
 
         return Component;
