@@ -4,6 +4,7 @@ import { DragSource } from 'react-dnd';
 import { DropTarget } from 'react-dnd';
 import { compose } from 'redux';
 import css from 'classnames';
+import { isNumber } from 'lodash';
 
 class OrderSalvationPiece extends Component {
     render() {
@@ -29,11 +30,16 @@ class OrderSalvationPiece extends Component {
 
 const pieceSource = {
     beginDrag(props) {
+        props.setParentState({ dragIndex: null, isDragging: true });
+
         return {
             index: props.index,
             isDragging: true,
             item: props.item
         };
+    },
+    endDrag(props) {
+        props.setParentState({ isDragging: false });
     }
 };
 
@@ -46,13 +52,11 @@ function collectSource(connect, monitor) {
 }
 
 const pieceTarget = {
-    drop(props) {
-
-    },
     hover(props, monitor, component) {
         const sourceProps = monitor.getItem();
         const sourceIndex = sourceProps.index;
         const targetIndex = props.index;
+        const dragIndex = isNumber(props.dragIndex) ? props.dragIndex : sourceIndex;
 
         const cursorPosition = monitor.getClientOffset();
 
@@ -60,18 +64,17 @@ const pieceTarget = {
         const middleY = (sourceRectangle.top + sourceRectangle.bottom) / 2;
 
         const location = cursorPosition.y >= middleY ? 'below' : 'above';
-        console.log(sourceIndex, targetIndex, location);
+
         if (
-            (targetIndex - sourceIndex <= 1 && targetIndex - sourceIndex >= 0 && location === 'above')
-            || (sourceIndex - targetIndex <= 1 && sourceIndex - targetIndex >= 0 && location === 'below')
+            (targetIndex - dragIndex <= 1 && targetIndex - dragIndex >= 0 && location === 'above')
+            || (dragIndex - targetIndex <= 1 && dragIndex - targetIndex >= 0 && location === 'below')
         ) { return; }
 
         const sourceItem = sourceProps.item;
         const orderCopy = props.order.slice();
-        const newIndex = location === 'below' ? targetIndex : targetIndex - 1;
-        orderCopy.splice(newIndex, 0, orderCopy.splice(sourceIndex, 1)[0]);
+        orderCopy.splice(targetIndex, 0, orderCopy.splice(dragIndex, 1)[0]);
 
-        props.setParentState({ order: orderCopy });
+        props.setParentState({ dragIndex: targetIndex, order: orderCopy });
     }
 };
 

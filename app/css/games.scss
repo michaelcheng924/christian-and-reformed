@@ -32,11 +32,16 @@
     &__content-card-description {
         display: flex;
         justify-content: center;
-        padding: 25px 0 !important;
+        padding: 25px 0 25px 8px !important;
+        width: 100%;
     }
 
     &__timer {
         text-align: center;
+    }
+
+    &__game-section-container {
+        width: 100%;
     }
 
     &__game-section {
@@ -46,6 +51,8 @@
     }
 
     &__input {
+        width: 120px !important;
+
         &--correct {
             label, div, input {
                 color: #4CAF50 !important;
@@ -82,10 +89,15 @@
     }
 
     &__content-card-description {
-        background: #C8E6C9;
+        background: #E8F5E9;
         display: flex;
         justify-content: center;
         padding: 25px 15px !important;
+    }
+
+    &__timer {
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     &__option {

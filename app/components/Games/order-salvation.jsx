@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+import { every, shuffle } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
+import CheckCircleIcon from 'material-ui-icons/CheckCircle';
 
 import OrderSalvationPiece from 'app/components/Games/order-salvation-piece';
 
@@ -54,8 +56,11 @@ class OrderSalvationContentCard extends Component {
         super(props);
 
         this.state = {
-            order: ORDER,
-            started: false
+            dragIndex: null,
+            isDragging: false,
+            order: shuffle(ORDER),
+            started: false,
+            timer: 0
         };
 
         this.setParentState = this.setParentState.bind(this);
@@ -66,12 +71,45 @@ class OrderSalvationContentCard extends Component {
         this.setState(object);
     }
 
+    getTimeString() {
+        const time = this.state.timer;
+
+        if (time < 60) {
+            return `${time} seconds`;
+        } else if (time >= 60 && time < 120) {
+            return `1 minute ${time % 60} seconds`;
+        } else if (time >= 120) {
+            return `${Math.floor(time / 60)} minutes ${time % 60} seconds`;
+        }
+    }
+
     onStart() {
         this.setState({ started: true });
+
+        this.timerInterval = setInterval(() => {
+            this.setState({ timer: this.state.timer += 1 });
+        }, 1000);
     }
 
     renderContent() {
-        const { order, started } = this.state;
+        const { dragIndex, isDragging, order, started } = this.state;
+
+        const allCorrect = every(order, (item, index) => {
+            return item.name === ORDER[index].name;
+        });
+
+        if (allCorrect) {
+            clearInterval(this.timerInterval);
+        }
+
+        if (!isDragging && allCorrect) {
+            return (
+                <div className="bible-order__completed">
+                    <CheckCircleIcon />
+                    <h2>You finished in {this.getTimeString()}!</h2>
+                </div>
+            );
+        }
 
         if (!started) {
             return <RaisedButton className="order-salvation__start-button" label="Start" primary={true} onTouchTap={this.onStart} />;
@@ -79,9 +117,10 @@ class OrderSalvationContentCard extends Component {
 
         return (
             <div>
+                <div className="order-salvation__timer">{this.getTimeString()}</div>
                 {
                     order.map((item, index) => {
-                        return <OrderSalvationPiece key={item.name} index={index} item={item} order={order} setParentState={this.setParentState} />;
+                        return <OrderSalvationPiece key={item.name} dragIndex={dragIndex} index={index} item={item} order={order} setParentState={this.setParentState} />;
                     })
                 }
             </div>

@@ -79,7 +79,7 @@ export default class BibleOrderContentCard extends Component {
         }
 
         return (
-            <div>
+            <div className="bible-order__game-section-container">
                 <div className="bible-order__timer">{this.getTimeString()}</div>
                 <div className="bible-order__game-section">
                     <div className="bible-order__ot">
