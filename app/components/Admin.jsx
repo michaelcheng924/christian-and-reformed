@@ -10,7 +10,7 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
 import { EMAIL_REGEX } from 'app/constants/global';
-import { addScore, addLeaderboard, login, loginWithToken, signup, deleteScore } from 'app/api/users';
+import { addCourseCount, addScore, addLeaderboard, login, loginWithToken, signup, deleteScore } from 'app/api/users';
 import { logout, setLoginErrorMessage } from 'app/actions/AppActions';
 
 class Admin extends Component {
@@ -26,6 +26,7 @@ class Admin extends Component {
         };
 
         this.deleteScore = this.deleteScore.bind(this);
+        this.onAddCourseCount = this.onAddCourseCount.bind(this);
         this.onAddLeaderboard = this.onAddLeaderboard.bind(this);
         this.onLoginSignupChange = this.onLoginSignupChange.bind(this);
         this.onLoginSubmit = this.onLoginSubmit.bind(this);
@@ -69,6 +70,10 @@ class Admin extends Component {
 
     onAddLeaderboard() {
         this.props.onAddLeaderboard({ leaderboardKey: this.state.leaderboardKey });
+    }
+
+    onAddCourseCount() {
+        this.props.onAddCourseCount({ courseKey: this.state.courseKey });
     }
 
     onLogout() {
@@ -211,14 +216,16 @@ class Admin extends Component {
             <div className="admin">
                 <div className="admin__leaderboards">
                     {
-                        map(appData, (scores, key) => {
+                        map(appData, (item, key) => {
                             return (
                                 <div key={key}>
                                     <h3>{key}</h3>
                                     {
-                                        scores.map((score, index) => {
-                                            return <div key={index}>{`${score.score} | ${score.name}`} || <span onClick={partial(this.deleteScore, key, index)}>X</span></div>;
-                                        })
+                                        typeof item === 'number'
+                                            ? item
+                                            :  item.map((value, index) => {
+                                                return <div key={index}>{`${value.score} | ${value.name}`} || <span onClick={partial(this.deleteScore, key, index)}>X</span></div>;
+                                            })
                                     }
                                 </div>
                             );
@@ -235,6 +242,18 @@ class Admin extends Component {
                         label="Add Leaderboard"
                         secondary={true}
                         onClick={this.onAddLeaderboard}
+                    />
+                </div>
+                <div>
+                    <TextField
+                        hintText="Add course"
+                        onChange={event => this.setState({ courseKey: event.target.value })}
+                        type="text"
+                    />
+                    <RaisedButton
+                        label="Add Course"
+                        secondary={true}
+                        onClick={this.onAddCourseCount}
                     />
                 </div>
                 <RaisedButton
@@ -278,6 +297,7 @@ const mapStateToProps = createSelector(
 );
 
 const mapActionsToProps = {
+    onAddCourseCount: addCourseCount,
     onAddLeaderboard: addLeaderboard,
     onAddScore: addScore,
     onDeleteScore: deleteScore,

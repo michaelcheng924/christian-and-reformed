@@ -1,5 +1,18 @@
 import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE } from 'app/actions/AppActionTypes';
-import { addLeaderboard, addScore, deleteScore, deleteUser, getAllUsers, getAppData, login, loginWithToken, passwordResetEmail, signup } from 'app/api/users';
+import {
+    addCourseCount,
+    addLeaderboard,
+    addScore,
+    deleteScore,
+    deleteUser,
+    getAllUsers,
+    getAppData,
+    incrementCourseCount,
+    login,
+    loginWithToken,
+    passwordResetEmail,
+    signup
+} from 'app/api/users';
 
 const defaultState = {
     allUsers: [],
@@ -69,10 +82,12 @@ export default function usersReducer(state = defaultState, { type, payload }) {
                 ...state,
                 allUsers: payload.users
             };
+        case addCourseCount.SUCCESS:
         case addLeaderboard.SUCCESS:
         case addScore.SUCCESS:
         case deleteScore.SUCCESS:
         case getAppData.SUCCESS:
+        case incrementCourseCount.SUCCESS:
             return {
                 ...state,
                 appData: payload.appData

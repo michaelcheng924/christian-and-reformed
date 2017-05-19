@@ -50,6 +50,18 @@ export const addLeaderboard = createClient({
     url: '/api/global/addleaderboard'
 });
 
+export const addCourseCount = createClient({
+    actionTypePrefix: 'users:addCourseCount',
+    requestType: 'POST',
+    url: '/api/global/addcoursecount'
+});
+
+export const incrementCourseCount = createClient({
+    actionTypePrefix: 'users:incrementCourseCount',
+    requestType: 'POST',
+    url: '/api/global/incrementcoursecount'
+});
+
 export const getAllUsers = createClient({
     actionTypePrefix: 'users:getAllUsers',
     requestType: 'GET',

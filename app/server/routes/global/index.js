@@ -161,4 +161,42 @@ router.delete('/deletescore', (req, res) => {
     });
 });
 
+router.post('/addcoursecount', (req, res) => {
+    const { courseKey } = req.body;
+
+    AppData.findOne({ name: 'data' }, (err, result) => {
+        const data = result.data;
+        data[courseKey] = 0;
+
+        AppData.update({ name: 'data' }, {
+            $set: {
+                data
+            }
+        }, (err, result) => {
+            res.send({
+                appData: data
+            });
+        });
+    });
+});
+
+router.post('/incrementcoursecount', (req, res) => {
+    const { courseKey } = req.body;
+
+    AppData.findOne({ name: 'data' }, (err, result) => {
+        const data = result.data;
+        data[courseKey]++;
+
+        AppData.update({ name: 'data' }, {
+            $set: {
+                data
+            }
+        }, (err, result) => {
+            res.send({
+                appData: data
+            });
+        });
+    });
+});
+
 export default router;

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
 import css from 'classnames';
 import { delay, every, isArray, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
@@ -7,7 +9,9 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import CheckCircleIcon from 'material-ui-icons/CheckCircle';
 
-export default class VideoAudioContentCard extends Component {
+import { incrementCourseCount } from 'app/api/users';
+
+class VideoAudioContentCard extends Component {
     constructor(props) {
         super(props);
         
@@ -20,6 +24,15 @@ export default class VideoAudioContentCard extends Component {
 
         this.onFillInTheBlank = this.onFillInTheBlank.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        const { currentQuestionIndex } = this.state;
+        const { data, onIncrementCourseCount } = this.props;
+
+        if (currentQuestionIndex > prevState.currentQuestionIndex && currentQuestionIndex === data.questions.length) {
+            onIncrementCourseCount({ courseKey: data.key });
+        }
     }
 
     getAnswer(string) {
@@ -172,7 +185,7 @@ export default class VideoAudioContentCard extends Component {
     }
 
     render() {
-        const { data, name } = this.props;
+        const { appData, data, name } = this.props;
 
         return (
             <Card className="video-audio__content-card">
@@ -181,6 +194,7 @@ export default class VideoAudioContentCard extends Component {
                     title={name}
                 />
                 <CardText>
+                    <div className="video-audio__course-count">This course has been completed <strong>{appData[data.key]}</strong> times.</div>
                     <div className="video-audio__course-content">
                         <div className="video-audio__media" dangerouslySetInnerHTML={{__html: data.iframe}} />
                         {this.renderQuestions()}
@@ -190,3 +204,14 @@ export default class VideoAudioContentCard extends Component {
         );
     }
 }
+
+const mapStateToProps = createSelector(
+    state => state.app,
+    app => ({ ...app })
+);
+
+const mapActionsToProps = {
+    onIncrementCourseCount: incrementCourseCount
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(VideoAudioContentCard);
