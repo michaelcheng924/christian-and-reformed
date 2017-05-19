@@ -120,6 +120,16 @@ progress {
     justify-content: center;
     padding: 20px;
 
+    a {
+        color: #689F38;
+        cursor: pointer;
+        font-weight: 900;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     &__card {
         height: 100%;
         width: 100%;
