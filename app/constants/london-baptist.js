@@ -2181,502 +2181,912 @@ const LONDON_BAPTIST = [
             [
                 {
                     superscript: 12,
-                    text: "",
-                    scriptures: ''
+                    text: "God alone is Lord of the conscience,",
+                    scriptures: 'James 4:12; Rom. 14:4'
                 },
                 {
                     superscript: 13,
-                    text: "",
-                    scriptures: ''
+                    text: "and has left it free from the doctrines and commandments of men which are in any thing contrary to his word, or not contained in it.",
+                    scriptures: 'Acts 4:19, 29; 1 Cor. 7:23; Matt. 15:9'
                 },
                 {
                     superscript: 14,
-                    text: "",
-                    scriptures: ''
+                    text: "So that to believe such doctrines, or obey such commands out of conscience, is to betray true liberty of conscience;",
+                    scriptures: 'Col. 2:20, 22-23'
                 },
                 {
                     superscript: 15,
-                    text: "",
-                    scriptures: ''
+                    text: "and the requiring of an implicit faith, an absolute and blind obedience, is to destroy liberty of conscience and reason also.",
+                    scriptures: '1 Cor. 3:5; 2 Cor. 1:24'
                 }
             ],
             [
                 {
                     superscript: 16,
-                    text: "",
-                    scriptures: ''
+                    text: "They who upon pretence of Christian liberty do practice any sin, or cherish any sinful lust, as they do thereby pervert the main design of the grace of the gospel to their own destruction,",
+                    scriptures: 'Rom. 6:1-2'
                 },
                 {
                     superscript: 17,
-                    text: "",
-                    scriptures: ''
+                    text: "so they wholly destroy the end of Christian liberty, which is, that being delivered out of the hands of all our enemies, we might serve the Lord without fear, in holiness and righeousness before Him, all the days of our lives.",
+                    scriptures: 'Gal. 5:13; 2 Pet. 2:18, 21'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 22,
+        title: "Of Religious Worship and the Sabbath Day",
+        topic: ['sabbath'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The light of nature shows that there is a God, who has lordship and sovereignty over all; is just, good and does good to all; and is therefore to be feared, loved, praised, called upon, trusted in, and served, with all the heart and all the soul, and with all the might.",
+                    scriptures: 'Jer. 10:7; Mark 12:33'
+                },
+                {
+                    superscript: 2,
+                    text: "But the acceptable way of worshipping the true God, is instituted by himself,",
+                    scriptures: 'Deut. 12:32'
+                },
+                {
+                    superscript: 3,
+                    text: "and so limited by his own revealed will, that he may not be worshipped according to the imagination and devices of men, nor the suggestions of Satan, under any visible representations, or any other way not prescribed in the Holy Scriptures.",
+                    scriptures: 'Exod. 20:4-6'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "Religious worship is to be given to God the Father, Son, and Holy Spirit, and to him alone;",
+                    scriptures: 'Matt. 4:9, 10; John 6:23; Matt. 28:19'
+                },
+                {
+                    superscript: 5,
+                    text: "not to angels, saints, or any other creatures;",
+                    scriptures: 'Rom. 1:25; Col. 2:18; Rev. 19:10'
+                },
+                {
+                    superscript: 6,
+                    text: "and since the fall, not without a mediator,",
+                    scriptures: 'John 14:6'
+                },
+                {
+                    superscript: 7,
+                    text: "nor in the mediation of any other but Christ alone.",
+                    scriptures: '1 Tim. 2:5'
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "Prayer, with thanksgiving, being one part of natural worship, is by God required of all men.",
+                    scriptures: 'Ps. 95:1-7, 65:2'
+                },
+                {
+                    superscript: 9,
+                    text: "But that it may be accepted, it is to be made in the name of the Son,",
+                    scriptures: 'John 14:13-14'
+                },
+                {
+                    superscript: 10,
+                    text: "by the help of the Spirit,",
+                    scriptures: 'Rom. 8:26'
+                },
+                {
+                    superscript: 11,
+                    text: "according to his will;",
+                    scriptures: '1 John 5:14'
+                },
+                {
+                    superscript: 12,
+                    text: "with understanding, reverence, humility, fervency, faith, love, and perseverance; and when with others, in a known tongue.",
+                    scriptures: '1 Cor. 14:16, 17'
+                }
+            ],
+            [
+                {
+                    superscript: 13,
+                    text: "Prayer is to be made for things lawful, and for all sorts of men living, or that shall live hereafter;",
+                    scriptures: '1 Tim. 2:1-2; 2 Sam. 7:29'
+                },
+                {
+                    superscript: 14,
+                    text: "but not for the dead,",
+                    scriptures: '2 Sam. 12:21-23'
+                },
+                {
+                    superscript: 15,
+                    text: "nor for those of whom it may be known that they have sinned the sin unto death.",
+                    scriptures: '1 John 5:16'
+                }
+            ],
+            [
+                {
+                    superscript: 16,
+                    text: "The reading of the Scriptures,",
+                    scriptures: '1 Tim. 4:13'
+                },
+                {
+                    superscript: 17,
+                    text: "preaching, and hearing the Word of God,",
+                    scriptures: '2 Tim. 4:2; Luke 8:18'
+                },
+                {
+                    superscript: 18,
+                    text: "teaching and admonishing one another in psalms, hymns, and spiritual songs, singing with grace in our hearts to the Lord;",
+                    scriptures: 'Col. 3:16; Eph. 5:19'
+                },
+                {
+                    superscript: 19,
+                    text: "as also the administration of baptism,",
+                    scriptures: 'Matt. 28:19-20'
+                },
+                {
+                    superscript: 20,
+                    text: "and the Lord's supper,",
+                    scriptures: '1 Cor. 11:26'
+                },
+                {
+                    superscript: 21,
+                    text: "are all parts of religious worship of God, to be performed in obedience to him, with understanding, faith, reverence, and godly fear; moreover, solemn humiliation, with fastings,",
+                    scriptures: 'Esther 4:16; Joel 2:12'
+                },
+                {
+                    superscript: 22,
+                    text: "and thanksgivings, upon special occasions, ought to be used in an holy and religious manner.",
+                    scriptures: 'Exod. 15:1-19, Ps. 107'
+                }
+            ],
+            [
+                {
+                    superscript: 23,
+                    text: "Neither prayer nor any other part of religious worship, is now under the gospel, tied unto, or made more acceptable by any place in which it is performed, or towards which it is directed; but God is to be worshipped everywhere in spirit and in truth;",
+                    scriptures: 'John 4:21; Mal. 1:11; 1 Tim. 2:8'
+                },
+                {
+                    superscript: 24,
+                    text: "as in private families",
+                    scriptures: 'Acts 10:2'
+                },
+                {
+                    superscript: 25,
+                    text: "daily,",
+                    scriptures: 'Matt. 6:11; Ps. 55:17'
+                },
+                {
+                    superscript: 26,
+                    text: "and in secret each one by himself;",
+                    scriptures: 'Matt. 6:6'
+                },
+                {
+                    superscript: 27,
+                    text: "so more solemnly in the public assemblies, which are not carelessly nor wilfully to be neglected or forsaken, when God by his word or providence calls thereunto.",
+                    scriptures: 'Heb. 10:25; Acts 2:42'
+                }
+            ],
+            [
+                {
+                    superscript: 28,
+                    text: "As it is the law of nature, that in general a proportion of time, by God's appointment, be set apart for the worship of God, so by his Word, in a positive moral, and perpetual commandment, binding all men, in all ages, he has particularly appointed one day in seven for a sabbath to be kept holy unto him,",
+                    scriptures: 'Exod. 20:8'
+                },
+                {
+                    superscript: 29,
+                    text: "which from the beginning of the world to the resurrection of Christ was the last day of the week, and from the resurrection of Christ was changed into the first day of the week, which is called the Lord's Day:",
+                    scriptures: '1 Cor. 16:1-2; Acts 20:7; Rev. 1:10'
+                },
+                {
+                    superscript: '',
+                    text: "and is to be continued to the end of the world as the Christian Sabbath, the observation of the last day of the week being abolished."
+                }
+            ],
+            [
+                {
+                    superscript: 30,
+                    text: "The sabbath is then kept holy unto the Lord, when men, after a due preparing of their hearts, and ordering their common affairs aforehand, do not only observe a holy rest all day, from their own works, words and thoughts, about their worldly employment and recreations,",
+                    scriptures: 'Isa. 58:13; Neh. 13:15-22'
+                },
+                {
+                    superscript: 31,
+                    text: "but are also taken up the whole time in the public and private exercises of his worship, and in the duties of necessity and mercy.",
+                    scriptures: 'Matt. 12:1-13'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 23,
+        title: "Of Lawful Oaths and Vows",
+        topic: ['vows'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "A lawful oath is a part of religious worship, wherein the person swearing in truth, righteousness, and judgment, solemnly calls God to witness what he swears,",
+                    scriptures: 'Exod. 20:7; Deut. 10:20; Jer. 4:2'
+                },
+                {
+                    superscript: 2,
+                    text: "and to judge him according to the truth or falseness thereof.",
+                    scriptures: '2 Chron. 6:22-23'
+                }
+            ],
+            [
+                {
+                    superscript: 3,
+                    text: "The name of God only is that by which men ought to swear; and therein it is to be used, with all holy fear and reverence; therefore to swear vainly or rashly by that glorious and dreadful name, or to swear at all by any other thing, is sinful, and to be abhorred;",
+                    scriptures: 'Matt. 5:34, 37; James 5:12'
+                },
+                {
+                    superscript: 4,
+                    text: "yet as in matter of weight and moment, for confirmation of truth, and ending all strife, an oath is warranted by the word of God;",
+                    scriptures: 'Heb. 6:16; 2 Cor. 1:23'
+                },
+                {
+                    superscript: 5,
+                    text: "so a lawful oath being imposed by lawful authority in such matters, ought to be taken.",
+                    scriptures: 'Neh. 13:25'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "Whosoever takes an oath warranted by the word of God, ought duly to consider the weightiness of so solemn an act, and therein to avouch nothing but what he knows to be truth; for that by rash, false, and vain oaths, the Lord is provoked, and for them this land mourns.",
+                    scriptures: 'Lev. 19:12; Jer. 23:10'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "An oath is to be taken in the plain and common sense of the words, without equivocation or mental reservation.",
+                    scriptures: 'Ps. 24:4'
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "A vow, which is not to be made to any creature, but to God alone, is to be made and performed with all religious care and faithfulness;",
+                    scriptures: 'Ps. 76:11; Gen. 28:20-22'
+                },
+                {
+                    superscript: 9,
+                    text: "but popish monastical vows of perpetual single life,",
+                    scriptures: '1 Cor. 7:2, 9'
+                },
+                {
+                    superscript: 10,
+                    text: "professed poverty,",
+                    scriptures: 'Eph. 4:28'
+                },
+                {
+                    superscript: 11,
+                    text: "and regular obedience, are so far from being degrees of higher perfection, that they are superstitious and sinful snares, in which no Christian may entangle himself.",
+                    scriptures: 'Matt. 19:1'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 24,
+        title: "Of the Civil magistrate",
+        topic: ['government'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "God, the supreme Lord and King of all the world, has ordained civil magistrates to be under him, over the people, for his own glory and the public good; and to this end has armed them with the power of the sword, for defence and encouragement of them that do good, and for the punishment of evil doers.",
+                    scriptures: 'Rom. 13:1-4'
+                }
+            ],
+            [
+                {
+                    superscript: 3,
+                    text: "It is lawful for Christians to accept and execute the office of a magistrate when called thereunto; in the management whereof, as they ought especially to maintain justice and peace,",
+                    scriptures: '2 Sam. 23:3; Ps. 82:3-4'
+                },
+                {
+                    superscript: 4,
+                    text: "according to the wholesome laws of each kingdom and commonwealth, so for that end they may lawfully now, under the New Testament, wage war upon just and necessary occasions.",
+                    scriptures: 'Luke 3:14'
+                }
+            ],
+            [
+                {
+                    superscript: 5,
+                    text: "Civil magistrates being set up by God for the ends aforesaid; subjection, in all lawful things commanded by them, ought to be yielded by us in the Lord, not only for wrath, but for conscience’ sake;",
+                    scriptures: 'Rom. 13:5-7; 1 Pet. 2:17'
+                },
+                {
+                    superscript: 6,
+                    text: "and we ought to make supplications and prayers for kings and all that are in authority, that under them we may live a quiet and peaceable life, in all godliness and honesty.",
+                    scriptures: '1 Tim. 2:1-2'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 25,
+        title: "Of Marriage",
+        topic: ['marriage'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Marriage is to be between one man and one woman; neither is it lawful for any man to have more than one wife, nor for any woman to have more than one husband at the same time.",
+                    scriptures: 'Gen. 2:24; Mal. 2:15; Matt. 19:5-6'
+                }
+            ],
+            [
+                {
+                    superscript: 2,
+                    text: "Marriage was ordained for the mutual help of husband and wife,",
+                    scriptures: 'Gen. 2:18'
+                },
+                {
+                    superscript: 3,
+                    text: "for the increase of mankind with a legitimate issue,",
+                    scriptures: 'Gen. 1:28'
+                },
+                {
+                    superscript: 4,
+                    text: "and the preventing of uncleanness.",
+                    scriptures: '1 Cor. 7:2, 9'
+                }
+            ],
+            [
+                {
+                    superscript: 5,
+                    text: "It is lawful for all sorts of people to marry, who are able with judgment to give their consent;",
+                    scriptures: 'Heb. 13:4; 1 Tim. 4:3'
+                },
+                {
+                    superscript: 6,
+                    text: "yet it is the duty of Christians to marry in the Lord;",
+                    scriptures: '1 Cor. 7:39'
+                },
+                {
+                    superscript: 7,
+                    text: "and therefore such as profess the true religion, should not marry with infidels, or idolaters; neither should such as are godly, be unequally yoked, by marrying with such as are wicked in their life, or maintain damnable heresy.",
+                    scriptures: 'Neh. 13:25-27'
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "Marriage ought not to be within the degrees of consanguinity or affinity, forbidden in the Word;",
+                    scriptures: 'Lev. 18'
+                },
+                {
+                    superscript: 9,
+                    text: "nor can such incestuous marriages ever be made lawful, by any law of man or consent of parties, so as those persons may live together as man and wife.",
+                    scriptures: 'Mark 6:18; 1 Cor. 5:1'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 26,
+        title: "Of the Church",
+        topic: ['church'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The catholic or universal church, which (with respect to the internal work of the Spirit and truth of grace) may be called invisible, consists of the whole number of the elect, that have been, are, or shall be gathered into one, under Christ, the head thereof; and is the spouse, the body, the fulness of him that fills all in all.",
+                    scriptures: 'Heb. 12:23; Col. 1:18; Eph. 1:10, 22-23, 5:23, 27, 32'
+                }
+            ],
+            [
+                {
+                    superscript: 2,
+                    text: "All persons throughout the world, professing the faith of the gospel, and obedience unto God by Christ according unto it, not destroying their own profession by any errors everting the foundation, or unholiness of conversation, are and may be called visible saints;",
+                    scriptures: '1 Cor. 1:2; Acts 11:26'
+                },
+                {
+                    superscript: 3,
+                    text: "and of such ought all particular congregations to be constituted.",
+                    scriptures: 'Rom. 1:7; Eph. 1:20-22'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "The purest churches under heaven are subject to mixture and error;",
+                    scriptures: '1 Cor. 5; Rev. 2-3'
+                },
+                {
+                    superscript: 5,
+                    text: "and some have so degenerated as to become no churches of Christ, but synagogues of Satan;",
+                    scriptures: 'Rev. 18:2; 2 Thess. 2:11-12'
+                },
+                {
+                    superscript: 6,
+                    text: "nevertheless Christ always has had, and ever shall have a kingdom in this world, to the end thereof, of such as believe in him, and make profession of his name.",
+                    scriptures: 'Matt. 16:18; Ps. 72:17, 102:28; Rev. 12:17'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "The Lord Jesus Christ is the Head of the church, in whom, by the appointment of the Father, all power for the calling, institution, order or government of the church, is invested in a supreme and sovereign manner;",
+                    scriptures: 'Col. 1:18; Matt. 28:18-20; Eph. 4:11-12'
+                },
+                {
+                    superscript: 8,
+                    text: "neither can the Pope of Rome in any sense be head thereof, but is that antichrist, that man of sin, and son of perdition, that exalts himself in the church against Christ, and all that is called God; whom the Lord shall destroy with the brightness of his coming.",
+                    scriptures: '2 Thess. 2:2-9'
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "In the execution of this power wherewith he is so intrusted, the Lord Jesus calls out of the world unto himself, through the ministry of his word, by his Spirit, those that are given unto him by his Father,",
+                    scriptures: 'John 10:16; John 12:32'
+                },
+                {
+                    superscript: 10,
+                    text: "that they may walk before him in all the ways of obedience, which he prescribes to them in his word.",
+                    scriptures: 'Matt. 28:20'
+                },
+                {
+                    superscript: 11,
+                    text: "Those thus called, he commands to walk together in particular societies, or churches, for their mutual edification, and the due performance of that public worship, which he requires of them in the world.",
+                    scriptures: 'Matt. 18:15-20'
+                }
+            ],
+            [
+                {
+                    superscript: 12,
+                    text: "The members of these churches are saints by calling, visibly manifesting and evidencing (in and by their profession and walking) their obedience unto that call of Christ;",
+                    scriptures: 'Rom. 1:7; 1 Cor. 1:2'
+                },
+                {
+                    superscript: 13,
+                    text: "and do willingly consent to walk together, according to the appointment of Christ; giving up themselves to the Lord, and one to another, by the will of God, in professed subjection to the ordinances of the Gospel.",
+                    scriptures: 'Acts 2:41-42, 5:13-14; 2 Cor. 9:13'
+                }
+            ],
+            [
+                {
+                    superscript: 14,
+                    text: "To each of these churches therefore gathered, according to his mind declared in his word, he has given all that power and authority, which is in any way needful for their carrying on that order in worship and discipline, which he has instituted for them to observe; with commands and rules for the due and right exerting, and executing of that power.",
+                    scriptures: 'Matt. 18:17-18; 1 Cor. 5:4-5, 5:13, 2 Cor. 2:6-8'
+                }
+            ],
+            [
+                {
+                    superscript: 15,
+                    text: "A particular church, gathered and completely organized according to the mind of Christ, consists of officers and members; and the officers appointed by Christ to be chosen and set apart by the church (so called and gathered), for the peculiar administration of ordinances, and execution of power or duty, which he intrusts them with, or calls them to, to be continued to the end of the world, are bishops or elders, and deacons.",
+                    scriptures: 'Acts 20:17, 28; Phil. 1:1'
+                }
+            ],
+            [
+                {
+                    superscript: 16,
+                    text: "The way appointed by Christ for the calling of any person, fitted and gifted by the Holy Spirit, unto the office of bishop or elder in a church, is, that he be chosen thereunto by the common suffrage of the church itself;",
+                    scriptures: 'Acts 14:23'
+                },
+                {
+                    superscript: 17,
+                    text: "and solemnly set apart by fasting and prayer, with imposition of hands of the eldership of the church, if there be any before constituted therein;",
+                    scriptures: '1 Tim. 4:14'
+                },
+                {
+                    superscript: 18,
+                    text: "and of a deacon that he be chosen by the like suffrage, and set apart by prayer, and the like imposition of hands.",
+                    scriptures: 'Acts 6:3, 5-6'
+                }
+            ],
+            [
+                {
+                    superscript: 19,
+                    text: "The work of pastors being constantly to attend the service of Christ, in his churches, in the ministry of the word and prayer, with watching for their souls, as they that must give an account to Him;",
+                    scriptures: 'Acts 6:4; Heb. 13:17'
+                },
+                {
+                    superscript: 20,
+                    text: "it is incumbent on the churches to whom they minister, not only to give them all due respect, but also to communicate to them of all their good things according to their ability,",
+                    scriptures: '1 Tim. 5:17-18; Gal. 6:6-7'
+                },
+                {
+                    superscript: 21,
+                    text: "so as they may have a comfortable supply, without being themselves entangled in secular affairs;",
+                    scriptures: '2 Tim. 2:4'
+                },
+                {
+                    superscript: 22,
+                    text: "and may also be capable of exercising hospitality towards others;",
+                    scriptures: '1 Tim. 3:2'
+                },
+                {
+                    superscript: 23,
+                    text: "and this is required by the law of nature, and by the express order of our Lord Jesus, who has ordained that they that preach the Gospel should live of the Gospel.",
+                    scriptures: '1 Cor. 9:6-14'
+                }
+            ],
+            [
+                {
+                    superscript: 24,
+                    text: "Although it be incumbent on the bishops or pastors of the churches, to be instant in preaching the word, by way of office, yet the work of preaching the word is not so peculiarly confined to them but that others also gifted and fitted by the Holy Spirit for it, and approved and called by the church, may and ought to perform it.",
+                    scriptures: 'Acts 11:19-21; 1 Pet. 4:10-11'
+                }
+            ],
+            [
+                {
+                    superscript: 25,
+                    text: "As all believers are bound to join themselves to particular churches, when and where they have opportunity so to do; so all that are admitted unto the privileges of a church, are also under the censures and government thereof, according to the rule of Christ.",
+                    scriptures: '1 Thess. 5:14; 2 Thess. 3:6, 14-15'
+                }
+            ],
+            [
+                {
+                    superscript: 26,
+                    text: "No church members, upon any offence taken by them, having performed their duty required of them towards the person they are offended at, ought to disturb any church-order, or absent themselves from the assemblies of the church, or administration of any ordinances, upon the account of such offence at any of their fellow members, but to wait upon Christ, in the further proceeding of the church.",
+                    scriptures: 'Matt. 18:15-17; Eph. 4:2-3'
+                }
+            ],
+            [
+                {
+                    superscript: 27,
+                    text: "As each church, and all the members of it, are bound to pray continually for the good and prosperity of all the churches of Christ,",
+                    scriptures: 'Eph. 6:18; Ps. 122:6'
+                },
+                {
+                    superscript: 28,
+                    text: "in all places, and upon all occasions to further every one within the bounds of their places and callings, in the exercise of their gifts and graces, so the churches, when planted by the providence of God, so as they may enjoy opportunity and advantage for it, ought to hold communion among themselves, for their peace, increase of love, and mutual edification.",
+                    scriptures: 'Rom. 16:1-2; 3 John 8-10'
+                }
+            ],
+            [
+                {
+                    superscript: 29,
+                    text: "In cases of difficulties or differences, either in point of doctrine or administration, wherein either the churches in general are concerned, or any one church, in their peace, union, and edification; or any member or members of any church are injured, in or by any proceedings in censures not agreeable to truth and order: it is according to the mind of Christ, that many churches holding communion together, do, by their messengers, meet to consider, and give their advice in or about that matter in difference, to be reported to all the churches concerned;",
+                    scriptures: 'Acts 15:2, 4, 6, 22-23, 25'
+                },
+                {
+                    superscript: 30,
+                    text: "howbeit these messengers assembled, are not intrusted with any church-power properly so called; or with any jurisdiction over the churches themselves, to exercise any censures either over any churches or persons; or to impose their determination on the churches or officers.",
+                    scriptures: '2 Cor. 1:24; 1 John 4:1'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 27,
+        title: "Of the Communion of Saints",
+        topic: ['communion of saints'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "All saints that are united to Jesus Christ, their head, by his Spirit, and faith, although they are not made thereby one person with him, have fellowship in his graces, sufferings, death, resurrection, and glory;",
+                    scriptures: '1 John 1:3; John 1:16; Phil. 3:10; Rom. 6:5-6'
+                },
+                {
+                    superscript: 2,
+                    text: "and, being united to one another in love, they have communion in each others gifts and graces,",
+                    scriptures: 'Eph. 4:15-16; 1 Cor. 12:7; 3:21-23'
+                },
+                {
+                    superscript: 3,
+                    text: "and are obliged to the performance of such duties, public and private, in an orderly way, as do conduce to their mutual good, both in the inward and outward man.",
+                    scriptures: '1 Thess. 5:11, 14; Rom. 1:12; 1 John 3:17-18; Gal. 6:10'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "Saints by profession are bound to maintain a holy fellowship and communion in the worship of God, and in performing such other spiritual services as tend to their mutual edification;",
+                    scriptures: 'Heb. 10:24-25, 3:12-13'
+                },
+                {
+                    superscript: 5,
+                    text: "as also in relieving each other in outward things according to their several abilities, and necessities;",
+                    scriptures: 'Acts 11:29-30'
+                },
+                {
+                    superscript: 6,
+                    text: "which communion, according to the rule of the gospel, though especially to be exercised by them, in the relation wherein they stand, whether in families,",
+                    scriptures: 'Eph. 6:4'
+                },
+                {
+                    superscript: 7,
+                    text: "or churches,",
+                    scriptures: '1 Cor. 12:14-27'
+                },
+                {
+                    superscript: 8,
+                    text: "yet, as God offers opportunity, is to be extended to all the household of faith, even all those who in every place call upon the name of the Lord Jesus; nevertheless their communion one with another as saints, does not take away or infringe the title or propriety which each man has in his goods and possessions.",
+                    scriptures: 'Acts 5:4; Eph. 4:28'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 28,
+        title: "Of Baptism and the Lord's Supper",
+        topic: ['sacraments'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Baptism and the Lord's Supper are ordinances of positive and sovereign institution, appointed by the Lord Jesus, the only lawgiver, to be continued in his church to the end of the world.",
+                    scriptures: 'Matt. 28:19-20; 1 Cor. 11:26'
+                }
+            ],
+            [
+                {
+                    superscript: 2,
+                    text: "These holy appointments are to be administered by those only who are qualified and thereunto called, according to the commission of Christ.",
+                    scriptures: 'Matt. 28:19; 1 Cor. 4:1'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 29,
+        title: "Of Baptism",
+        topic: ['repentance'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "Baptism is an ordinance of the New Testament, ordained by Jesus Christ, to be unto the party baptized, a sign of his fellowship with him, in his death and resurrection; of his being engrafted into him;",
+                    scriptures: 'Rom. 6:3-5; Col. 2:12; Gal. 3:27'
+                },
+                {
+                    superscript: 2,
+                    text: "of remission of sins;",
+                    scriptures: 'Mark 1:4; Acts 22:16'
+                },
+                {
+                    superscript: 3,
+                    text: "and of giving up into God, through Jesus Christ, to live and walk in newness of life.",
+                    scriptures: 'Rom. 6:4'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "Those who do actually profess repentance towards God, faith in, and obedience to, our Lord Jesus Christ, are the only proper subjects of this ordinance.",
+                    scriptures: 'Mark 16:16; Acts 8:36-37, 2:41, 8:12, 18:8'
+                }
+            ],
+            [
+                {
+                    superscript: 5,
+                    text: "The outward element to be used in this ordinance is water, wherein the party is to be baptized, in the name of the Father, and of the Son, and of the Holy Spirit.",
+                    scriptures: 'Matt. 28:19-20; Acts 8:38'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "Immersion, or dipping of the person in water, is necessary to the due administration of this ordinance.",
+                    scriptures: 'Matt. 3:16; John 3:23'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 30,
+        title: "Of the Lord's Supper",
+        topic: ['communion'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The supper of the Lord Jesus was instituted by him the same night wherein he was betrayed, to be observed in his churches, unto the end of the world, for the perpetual remembrance, and showing to all the world the sacrifice of himself in his death,",
+                    scriptures: '1 Cor. 11:23-26'
+                },
+                {
+                    superscript: 2,
+                    text: "confirmation of the faith of believers in all the benefits thereof, their spiritual nourishment, and growth in him, their further engagement in, and to all duties which they owe to him; and to be a bond and pledge of their communion with him, and with each other.",
+                    scriptures: '1 Cor. 10:16-17, 21'
+                }
+            ],
+            [
+                {
+                    superscript: 3,
+                    text: "In this ordinance Christ is not offered up to his Father, nor any real sacrifice made at all for remission of sin of the quick or dead, but only a memorial of that one offering up of himself by himself upon the cross, once for all;",
+                    scriptures: 'Heb. 9:25-26, 28'
+                },
+                {
+                    superscript: 4,
+                    text: "and a spiritual oblation of all possible praise unto God for the same.",
+                    scriptures: '1 Cor. 11:24; Matt. 26:26-27'
+                },
+                {
+                    superscript: '',
+                    text: "So that the popish sacrifice of the mass, as they call it, is most abominable, injurious to Christ's own sacrifice the alone propitiation for all the sins of the elect."
+                }
+            ],
+            [
+                {
+                    superscript: 5,
+                    text: "The Lord Jesus hath, in this ordinance, appointed his ministers to pray, and bless the elements of bread and wine, and thereby to set them apart from a common to a holy use, and to take and break the bread; to take the cup, and, they communicating also themselves, to give both to the communicants.",
+                    scriptures: '1 Cor. 11:23-26, etc.'
+                }
+            ],
+            [
+                {
+                    superscript: 6,
+                    text: "The denial of the cup to the people, worshipping the elements, the lifting them up, or carrying them about for adoration, and reserving them for any pretended religious use, are all contrary to the nature of this ordinance, and to the institution of Christ.",
+                    scriptures: 'Matt. 26:26-28, 15:9, Exod. 20:4-5'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "The outward elements in this ordinance, duly set apart to the use ordained by Christ, have such relation to him crucified, as that truly, although in terms used figuratively, they are sometimes called by the names of the things they represent, in other words, the body and blood of Christ,",
+                    scriptures: '1 Cor. 11:27'
+                },
+                {
+                    superscript: 8,
+                    text: "albeit, in substance and nature, they still remain truly and only bread and wine, as they were before.",
+                    scriptures: '1 Cor. 11:26-28'
+                }
+            ],
+            [
+                {
+                    superscript: 9,
+                    text: "That doctrine which maintains a change of the substance of bread and wine, into the substance of Christ's body and blood, commonly called transubstantiation, by consecration of a priest, or by any other way, is repugnant not to Scripture alone,",
+                    scriptures: 'Acts 3:21; Luke 14:6, 39'
+                },
+                {
+                    superscript: 10,
+                    text: "but even to common sense and reason, overthrows the nature of the ordinance, and has been, and is, the cause of manifold superstitions, yea, of gross idolatries.",
+                    scriptures: '1 Cor. 11:24-25'
+                }
+            ],
+            [
+                {
+                    superscript: 11,
+                    text: "Worthy receivers, outwardly partaking of the visible elements in this ordinance, do then also inwardly by faith, really and indeed, yet not carnally and corporally, but spiritually receive, and feed upon Christ crucified, and all the benefits of his death; the body and blood of Christ being then not corporally or carnally, but spiritually present to the faith of believers in that ordinance, as the elements themselves are to their outward senses.",
+                    scriptures: '1 Cor. 10:16, 11:23-26'
+                }
+            ],
+            [
+                {
+                    superscript: 12,
+                    text: "All ignorant and ungodly persons, as they are unfit to enjoy communion with Christ, so are they unworthy of the Lord's table, and cannot, without great sin against him, while they remain such, partake of these holy mysteries, or be admitted thereunto;",
+                    scriptures: '2 Cor. 6:14-15'
+                },
+                {
+                    superscript: 13,
+                    text: "yea, whosoever shall receive unworthily, are guilty of the body and blood of the Lord, eating and drinking judgment to themselves.",
+                    scriptures: '1 Cor. 11:29; Matt. 7:6'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 31,
+        title: "Of the State of Man after Death, and of the Resurrection of the Dead",
+        topic: ['resurrection'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "The bodies of men after death return to dust, and see corruption;",
+                    scriptures: 'Gen. 3:19; Acts 13:36'
+                },
+                {
+                    superscript: 2,
+                    text: "but their souls, which neither die nor sleep, having an immortal subsistence, immediately return to God who gave them.",
+                    scriptures: 'Eccles. 12:7'
+                },
+                {
+                    superscript: 3,
+                    text: "The souls of the righteous being then made perfect in holiness, are received into paradise, where they are with Christ, and behold the face of God in light and glory, waiting for the full redemption of their bodies;",
+                    scriptures: 'Luke 23:43; 2 Cor. 5:1, 6, 8; Phil. 1:23; Heb. 12:23'
+                },
+                {
+                    superscript: 4,
+                    text: "and the souls of the wicked are cast into hell; where they remain in torment and utter darkness, reserved to the judgment of the great day;",
+                    scriptures: 'Jude 6-7; 1 Peter 3:19; Luke 16:23-24'
+                },
+                {
+                    superscript: '',
+                    text: "besides these two places, for souls separated from their bodies, the Scripture acknowledgeth none."
+                }
+            ],
+            [
+                {
+                    superscript: 5,
+                    text: "At the last day, such of the saints as are found alive, shall not sleep, but be changed;",
+                    scriptures: '1 Cor. 15:51, 52; 1 Thess. 4:17'
+                },
+                {
+                    superscript: 6,
+                    text: "and all the dead shall be raised up with the selfsame bodies, and none other;",
+                    scriptures: 'Job 19:26-27'
+                },
+                {
+                    superscript: 7,
+                    text: "although with different qualities, which shall be united again to their souls forever.",
+                    scriptures: '1 Cor. 15:42-43'
+                }
+            ],
+            [
+                {
+                    superscript: 8,
+                    text: "The bodies of the unjust shall, by the power of Christ, be raised to dishonour; the bodies of the just, by his Spirit, unto honour, and be made conformable to his own glorious body.",
+                    scriptures: 'Acts 24:15; John 5:28-29; Phil. 3:21'
+                }
+            ]
+        ]
+    },
+    {
+        chapter: 32,
+        title: "Of the Last Judgment",
+        topic: ['judgment'],
+        content: [
+            [
+                {
+                    superscript: 1,
+                    text: "God has appointed a day wherein he will judge the world in righteousness, by Jesus Christ;",
+                    scriptures: 'Acts 17:31; John 5:22, 27'
+                },
+                {
+                    superscript: 2,
+                    text: "to whom all power and judgment is given of the Father; in which day, not only the apostate angels shall be judged,",
+                    scriptures: '1 Cor. 6:3; Jude 6'
+                },
+                {
+                    superscript: 3,
+                    text: "but likewise all persons that have lived upon the earth shall appear before the tribunal of Christ, to give an account of their thoughts, words, and deeds, and to receive according to what they have done in the body, whether good or evil.",
+                    scriptures: '2 Cor. 5:10; Eccles. 12:14; Matt. 12:36; Rom. 14:10, 12; Matt. 25:32-46'
+                }
+            ],
+            [
+                {
+                    superscript: 4,
+                    text: "The end of God's appointing this day, is for the manifestation of the glory of his mercy, in the eternal salvation of the elect; and of his justice, in the eternal damnation of the reprobate, who are wicked and disobedient;",
+                    scriptures: 'Rom. 9:22-23'
+                },
+                {
+                    superscript: 5,
+                    text: "for then shall the righteous go into everlasting life, and receive that fulness of joy and glory with everlasting rewards, in the presence of the Lord; but the wicked, who do not know God, and do not obey the gospel of Jesus Christ, shall be cast aside into everlasting torments,",
+                    scriptures: 'Matt. 25:21, 34; 2 Tim. 4:8'
+                },
+                {
+                    superscript: 6,
+                    text: "and punished with everlasting destruction, from the presence of the Lord, and from the glory of his power.",
+                    scriptures: 'Matt. 25:46; Mark 9:48; 2 Thess. 1:7-10'
+                }
+            ],
+            [
+                {
+                    superscript: 7,
+                    text: "As Christ would have us to be certainly persuaded that there shall be a day of judgment, both to deter all men from sin,",
+                    scriptures: '2 Cor. 5:10-11'
+                },
+                {
+                    superscript: 8,
+                    text: "and for the greater consolation of the godly in their adversity,",
+                    scriptures: '2 Thess. 1:5-7'
+                },
+                {
+                    superscript: 9,
+                    text: "so will he have the day unknown to men, that they may shake off all carnal security, and be always watchful, because they know not at what hour the Lord will come,",
+                    scriptures: 'Mark 13:35-37; Luke 12:35-40'
+                },
+                {
+                    superscript: 10,
+                    text: "and may ever be prepared to say, Come Lord Jesus; come quickly.",
+                    scriptures: 'Rev. 22:20'
+                },
+                {
+                    superscript: '',
+                    text: "Amen."
                 }
             ]
         ]
     }
 ];
-
-// [
-//     {
-//         superscript: ,
-//         text: "",
-//         scriptures: ''
-//     },
-//     {
-//         superscript: ,
-//         text: "",
-//         scriptures: ''
-//     }
-// ]
-
-
-// Paragraph 2. God alone is Lord of the conscience, (James 4:12; Rom. 14:4) and has left it free from the doctrines and commandments of men which are in any thing contrary to his word, or not contained in it. (Acts 4:19, 29; 1 Cor. 7:23; Matt. 15:9) So that to believe such doctrines, or obey such commands out of conscience, is to betray true liberty of conscience; (Col. 2:20, 22, 23) and the requiring of an implicit faith, an absolute and blind obedience, is to destroy liberty of conscience and reason also.  (1 Cor. 3:5; 2 Cor. 1:24)
-
-// Paragraph 3. They who upon pretence of Christian liberty do practice any sin, or cherish any sinful lust, as they do thereby pervert the main design of the grace of the gospel to their own destruction, (Rom. 6:1, 2) so they wholly destroy the end of Christian liberty, which is, that being delivered out of the hands of all our enemies, we might serve the Lord without fear, in holiness and righeousness before Him, all the days of our lives.  (Gal. 5:13; 2 Pet. 2:18, 21)
-// Chapter 22: Of Religious Worship And The Sabbath Day
-// Paragraph 1. The light of nature shows that there is a God, who has lordship and sovereignty over all; is just, good and does good to all; and is therefore to be feared, loved, praised, called upon, trusted in, and served, with all the heart and all the soul, and with all the might. (Jer. 10:7; Mark 12:33) But the acceptable way of worshipping the true God, is instituted by himself, (Deut. 12:32) and so limited by his own revealed will, that he may not be worshipped according to the imagination and devices of men, nor the suggestions of Satan, under any visible representations, or any other way not prescribed in the Holy Scriptures.  (Exod. 20:4-6)
-
-// Paragraph 2. Religious worship is to be given to God the Father, Son, and Holy Spirit, and to him alone; (Matt. 4:9, 10; John 6:23; Matt. 28:19) not to angels, saints, or any other creatures; (Rom. 1:25; Col. 2:18; Rev. 19:10) and since the fall, not without a mediator, (John 14:6) nor in the mediation of any other but Christ alone.  (1 Tim. 2:5)
-
-// Paragraph 3. Prayer, with thanksgiving, being one part of natural worship, is by God required of all men. (Ps. 95:1-7, 65:2) But that it may be accepted, it is to be made in the name of the Son, (John 14:13, 14) by the help of the Spirit, (Rom. 8:26) according to his will; (1 John 5:14) with understanding, reverence, humility, fervency, faith, love, and perseverance; and when with others, in a known tongue.  (1 Cor. 14:16, 17)
-
-// Paragraph 4. Prayer is to be made for things lawful, and for all sorts of men living, or that shall live hereafter; (1 Tim. 2:1, 2; 2 Sam. 7:29) but not for the dead, (2 Sam. 12:21-23) nor for those of whom it may be known that they have sinned the sin unto death.  (1 John 5:16)
-
-// Paragraph 5. The reading of the Scriptures, (1 Tim. 4:13) preaching, and hearing the Word of God, (2 Tim. 4:2; Luke 8:18) teaching and admonishing one another in psalms, hymns, and spiritual songs, singing with grace in our hearts to the Lord; (Col. 3:16; Eph. 5:19) as also the administration of baptism, (Matt. 28:19, 20) and the Lord's supper, (1 Cor. 11:26) are all parts of religious worship of God, to be performed in obedience to him, with understanding, faith, reverence, and godly fear; moreover, solemn humiliation, with fastings, (Esther 4:16; Joel 2:12) and thanksgivings, upon special occasions, ought to be used in an holy and religious manner.  (Exod. 15:1-19, Ps. 107)
-
-// Paragraph 6. Neither prayer nor any other part of religious worship, is now under the gospel, tied unto, or made more acceptable by any place in which it is performed, or towards which it is directed; but God is to be worshipped everywhere in spirit and in truth; (John 4:21; Mal. 1:11; 1 Tim. 2:8) as in private families (Acts 10:2) daily, (Matt. 6:11; Ps. 55:17) and in secret each one by himself; (Matt. 6:6) so more solemnly in the public assemblies, which are not carelessly nor wilfully to be neglected or forsaken, when God by his word or providence calls thereunto.  (Heb. 10:25; Acts 2:42)
-
-// Paragraph 7. As it is the law of nature, that in general a proportion of time, by God's appointment, be set apart for the worship of God, so by his Word, in a positive moral, and perpetual commandment, binding all men, in all ages, he has particularly appointed one day in seven for a sabbath to be kept holy unto him, (Exod. 20:8) which from the beginning of the world to the resurrection of Christ was the last day of the week, and from the resurrection of Christ was changed into the first day of the week, which is called the Lord's Day: (1 Cor. 16:1, 2; Acts 20:7; Rev. 1:10) and is to be continued to the end of the world as the Christian Sabbath, the observation of the last day of the week being abolished.
-
-// Paragraph 8. The sabbath is then kept holy unto the Lord, when men, after a due preparing of their hearts, and ordering their common affairs aforehand, do not only observe a holy rest all day, from their own works, words and thoughts, about their worldly employment and recreations, (Isa. 58:13; Neh. 13:15-22) but are also taken up the whole time in the public and private exercises of his worship, and in the duties of necessity and mercy.  (Matt. 12:1-13)
-// Chapter 23: Of Lawful Oaths And Vows
-// Paragraph 1. A lawful oath is a part of religious worship, wherein the person swearing in truth, righteousness, and judgment, solemnly calls God to witness what he swears, (Exod. 20:7; Deut. 10:20; Jer. 4:2) and to judge him according to the truth or falseness thereof.  (2 Chron. 6:22, 23)
-
-// Paragraph 2. The name of God only is that by which men ought to swear; and therein it is to be used, with all holy fear and reverence; therefore to swear vainly or rashly by that glorious and dreadful name, or to swear at all by any other thing, is sinful, and to be abhorred; (Matt. 5:34, 37; James 5:12) yet as in matter of weight and moment, for confirmation of truth, and ending all strife, an oath is warranted by the word of God; (Heb. 6:16; 2 Cor. 1:23) so a lawful oath being imposed by lawful authority in such matters, ought to be taken.  (Neh. 13:25)
-
-// Paragraph 3. Whosoever takes an oath warranted by the word of God, ought duly to consider the weightiness of so solemn an act, and therein to avouch nothing but what he knows to be truth; for that by rash, false, and vain oaths, the Lord is provoked, and for them this land mourns.  (Lev. 19:12; Jer. 23:10)
-
-// Paragraph 4. An oath is to be taken in the plain and common sense of the words, without equivocation or mental reservation.  (Ps. 24:4)
-
-// Paragraph 5. A vow, which is not to be made to any creature, but to God alone, is to be made and performed with all religious care and faithfulness; (Ps. 76:11; Gen. 28:20-22) but popish monastical vows of perpetual single life, (1 Cor. 7:2, 9) professed poverty, (Eph. 4:28) and regular obedience, are so far from being degrees of higher perfection, that they are superstitious and sinful snares, in which no Christian may entangle himself.  (Matt. 19:1)
-// Chapter 24: Of The Civil Magistrate
-// Paragraph 1. God, the supreme Lord and King of all the world, has ordained civil magistrates to be under him, over the people, for his own glory and the public good; and to this end has armed them with the power of the sword, for defence and encouragement of them that do good, and for the punishment of evil doers.  (Rom. 13:1-4)
-
-// Paragraph 2. It is lawful for Christians to accept and execute the office of a magistrate when called thereunto; in the management whereof, as they ought especially to maintain justice and peace, (2 Sam. 23:3; Ps. 82:3, 4) according to the wholesome laws of each kingdom and commonwealth, so for that end they may lawfully now, under the New Testament, wage war upon just and necessary occasions.  (Luke 3:14)
-
-// Paragraph 3. Civil magistrates being set up by God for the ends aforesaid; subjection, in all lawful things commanded by them, ought to be yielded by us in the Lord, not only for wrath, but for conscience’ sake; (Rom. 13:5-7; 1 Pet. 2:17) and we ought to make supplications and prayers for kings and all that are in authority, that under them we may live a quiet and peaceable life, in all godliness and honesty.  (1 Tim. 2:1, 2)
-// Chapter 25: Of Marriage
-// Paragraph 1. Marriage is to be between one man and one woman; neither is it lawful for any man to have more than one wife, nor for any woman to have more than one husband at the same time.  (Gen. 2:24; Mal. 2:15; Matt. 19:5, 6)
-
-// Paragraph 2. Marriage was ordained for the mutual help of husband and wife, (Gen. 2:18) for the increase of mankind with a legitimate issue, (Gen. 1:28) and the preventing of uncleanness.  (1 Cor. 7:2, 9)
-
-// Paragraph 3. It is lawful for all sorts of people to marry, who are able with judgment to give their consent; (Heb. 13:4; 1 Tim. 4:3) yet it is the duty of Christians to marry in the Lord; (1 Cor. 7:39) and therefore such as profess the true religion, should not marry with infidels, or idolaters; neither should such as are godly, be unequally yoked, by marrying with such as are wicked in their life, or maintain damnable heresy.  (Neh. 13:25-27)
-
-// Paragraph 4. Marriage ought not to be within the degrees of consanguinity or affinity, forbidden in the Word; (Lev. 18) nor can such incestuous marriages ever be made lawful, by any law of man or consent of parties, so as those persons may live together as man and wife.  (Mark 6:18; 1 Cor. 5:1)
-// Chapter 26: Of The Church
-// Paragraph 1. The catholic or universal church, which (with respect to the internal work of the Spirit and truth of grace) may be called invisible, consists of the whole number of the elect, that have been, are, or shall be gathered into one, under Christ, the head thereof; and is the spouse, the body, the fulness of him that fills all in all.  (Heb. 12:23; Col. 1:18; Eph. 1:10, 22, 23, 5:23, 27, 32)
-
-// Paragraph 2. All persons throughout the world, professing the faith of the gospel, and obedience unto God by Christ according unto it, not destroying their own profession by any errors everting the foundation, or unholiness of conversation, are and may be called visible saints; (1 Cor. 1:2; Acts 11:26) and of such ought all particular congregations to be constituted.  (Rom. 1:7; Eph. 1:20-22)
-
-// Paragraph 3. The purest churches under heaven are subject to mixture and error; (1 Cor. 5; Rev. 2, 3) and some have so degenerated as to become no churches of Christ, but synagogues of Satan; (Rev. 18:2; 2 Thess. 2:11, 12) nevertheless Christ always has had, and ever shall have a kingdom in this world, to the end thereof, of such as believe in him, and make profession of his name.  (Matt. 16:18; Ps. 72:17, 102:28; Rev. 12:17)
-
-// Paragraph 4. The Lord Jesus Christ is the Head of the church, in whom, by the appointment of the Father, all power for the calling, institution, order or government of the church, is invested in a supreme and sovereign manner; (Col. 1:18; Matt. 28:18-20; Eph. 4:11, 12) neither can the Pope of Rome in any sense be head thereof, but is that antichrist, that man of sin, and son of perdition, that exalts himself in the church against Christ, and all that is called God; whom the Lord shall destroy with the brightness of his coming.  (2 Thess. 2:2-9)
-
-// Paragraph 5. In the execution of this power wherewith he is so intrusted, the Lord Jesus calls out of the world unto himself, through the ministry of his word, by his Spirit, those that are given unto him by his Father, (John 10:16; John 12:32) that they may walk before him in all the ways of obedience, which he prescribes to them in his word. (Matt. 28:20) Those thus called, he commands to walk together in particular societies, or churches, for their mutual edification, and the due performance of that public worship, which he requires of them in the world.  (Matt. 18:15-20)
-
-// Paragraph 6. The members of these churches are saints by calling, visibly manifesting and evidencing (in and by their profession and walking) their obedience unto that call of Christ; (Rom. 1:7; 1 Cor. 1:2) and do willingly consent to walk together, according to the appointment of Christ; giving up themselves to the Lord, and one to another, by the will of God, in professed subjection to the ordinances of the Gospel.  (Acts 2:41, 42, 5:13, 14; 2 Cor. 9:13)
-
-// Paragraph 7. To each of these churches therefore gathered, according to his mind declared in his word, he has given all that power and authority, which is in any way needful for their carrying on that order in worship and discipline, which he has instituted for them to observe; with commands and rules for the due and right exerting, and executing of that power.  (Matt. 18:17, 18; 1 Cor. 5:4, 5, 5:13, 2 Cor. 2:6-8)
-
-// Paragraph 8. A particular church, gathered and completely organized according to the mind of Christ, consists of officers and members; and the officers appointed by Christ to be chosen and set apart by the church (so called and gathered), for the peculiar administration of ordinances, and execution of power or duty, which he intrusts them with, or calls them to, to be continued to the end of the world, are bishops or elders, and deacons.  (Acts 20:17, 28; Phil. 1:1)
-
-// Paragraph 9. The way appointed by Christ for the calling of any person, fitted and gifted by the Holy Spirit, unto the office of bishop or elder in a church, is, that he be chosen thereunto by the common suffrage of the church itself; (Acts 14:23) and solemnly set apart by fasting and prayer, with imposition of hands of the eldership of the church, if there be any before constituted therein; (1 Tim. 4:14) and of a deacon that he be chosen by the like suffrage, and set apart by prayer, and the like imposition of hands.  (Acts 6:3, 5, 6)
-
-// Paragraph 10. The work of pastors being constantly to attend the service of Christ, in his churches, in the ministry of the word and prayer, with watching for their souls, as they that must give an account to Him; (Acts 6:4; Heb. 13:17) it is incumbent on the churches to whom they minister, not only to give them all due respect, but also to communicate to them of all their good things according to their ability, (1 Tim. 5:17, 18; Gal. 6:6, 7) so as they may have a comfortable supply, without being themselves entangled in secular affairs; (2 Tim. 2:4) and may also be capable of exercising hospitality towards others; (1 Tim. 3:2) and this is required by the law of nature, and by the express order of our Lord Jesus, who has ordained that they that preach the Gospel should live of the Gospel.  (1 Cor. 9:6-14)
-
-// Paragraph 11. Although it be incumbent on the bishops or pastors of the churches, to be instant in preaching the word, by way of office, yet the work of preaching the word is not so peculiarly confined to them but that others also gifted and fitted by the Holy Spirit for it, and approved and called by the church, may and ought to perform it.  (Acts 11:19-21; 1 Pet. 4:10, 11)
-
-// Paragraph 12. As all believers are bound to join themselves to particular churches, when and where they have opportunity so to do; so all that are admitted unto the privileges of a church, are also under the censures and government thereof, according to the rule of Christ.  (1 Thess. 5:14; 2 Thess. 3:6, 14, 15)
-
-// Paragraph 13. No church members, upon any offence taken by them, having performed their duty required of them towards the person they are offended at, ought to disturb any church-order, or absent themselves from the assemblies of the church, or administration of any ordinances, upon the account of such offence at any of their fellow members, but to wait upon Christ, in the further proceeding of the church.  (Matt. 18:15-17; Eph. 4:2, 3)
-
-// Paragraph 14. As each church, and all the members of it, are bound to pray continually for the good and prosperity of all the churches of Christ, (Eph. 6:18; Ps. 122:6) in all places, and upon all occasions to further every one within the bounds of their places and callings, in the exercise of their gifts and graces, so the churches, when planted by the providence of God, so as they may enjoy opportunity and advantage for it, ought to hold communion among themselves, for their peace, increase of love, and mutual edification.  (Rom. 16:1, 2; 3 John 8-10)
-
-// Paragraph 15. In cases of difficulties or differences, either in point of doctrine or administration, wherein either the churches in general are concerned, or any one church, in their peace, union, and edification; or any member or members of any church are injured, in or by any proceedings in censures not agreeable to truth and order: it is according to the mind of Christ, that many churches holding communion together, do, by their messengers, meet to consider, and give their advice in or about that matter in difference, to be reported to all the churches concerned; (Acts 15:2, 4, 6, 22, 23, 25) howbeit these messengers assembled, are not intrusted with any church-power properly so called; or with any jurisdiction over the churches themselves, to exercise any censures either over any churches or persons; or to impose their determination on the churches or officers.  (2 Cor. 1:24; 1 John 4:1)
-// Chapter 27: Of The Communion Of The Saints
-// Paragraph 1. All saints that are united to Jesus Christ, their head, by his Spirit, and faith, although they are not made thereby one person with him, have fellowship in his graces, sufferings, death, resurrection, and glory; (1 John 1:3; John 1:16; Phil. 3:10; Rom. 6:5,6) and, being united to one another in love, they have communion in each others gifts and graces, (Eph. 4:15, 16; 1 Cor. 12:7; 3:21-23) and are obliged to the performance of such duties, public and private, in an orderly way, as do conduce to their mutual good, both in the inward and outward man.  (1 Thess. 5:11, 14; Rom. 1:12; 1 John 3:17,18; Gal. 6:10)
-
-// Paragraph 2. Saints by profession are bound to maintain a holy fellowship and communion in the worship of God, and in performing such other spiritual services as tend to their mutual edification; (Heb. 10:24, 25, 3:12, 13) as also in relieving each other in outward things according to their several abilities, and necessities; (Acts 11:29, 30) which communion, according to the rule of the gospel, though especially to be exercised by them, in the relation wherein they stand, whether in families, (Eph. 6:4) or churches, (1 Cor. 12:14-27) yet, as God offers opportunity, is to be extended to all the household of faith, even all those who in every place call upon the name of the Lord Jesus; nevertheless their communion one with another as saints, does not take away or infringe the title or propriety which each man has in his goods and possessions.  (Acts 5:4; Eph. 4:28)
-// Chapter 28: Of Baptism And The Lord’s Supper
-// Paragraph 1. Baptism and the Lord's Supper are ordinances of positive and sovereign institution, appointed by the Lord Jesus, the only lawgiver, to be continued in his church to the end of the world.  (Matt. 28:19, 20; 1 Cor. 11:26)
-
-// Paragraph 2. These holy appointments are to be administered by those only who are qualified and thereunto called, according to the commission of Christ.  (Matt. 28:19; 1 Cor. 4:1)
-// Chapter 29: Of Baptism
-// Paragraph 1. Baptism is an ordinance of the New Testament, ordained by Jesus Christ, to be unto the party baptized, a sign of his fellowship with him, in his death and resurrection; of his being engrafted into him; (Rom. 6:3-5; Col. 2:12; Gal. 3:27) of remission of sins; (Mark 1:4; Acts 22:16) and of giving up into God, through Jesus Christ, to live and walk in newness of life.  (Rom. 6:4)
-
-// Paragraph 2. Those who do actually profess repentance towards God, faith in, and obedience to, our Lord Jesus Christ, are the only proper subjects of this ordinance.  (Mark 16:16; Acts 8:36, 37, 2:41, 8:12, 18:8)
-
-// Paragraph 3. The outward element to be used in this ordinance is water, wherein the party is to be baptized, in the name of the Father, and of the Son, and of the Holy Spirit.  (Matt. 28:19, 20; Acts 8:38)
-
-// Paragraph 4. Immersion, or dipping of the person in water, is necessary to the due administration of this ordinance.  (Matt. 3:16; John 3:23)
-// Chapter 30: Of The Lord’s Supper
-// Paragraph 1. The supper of the Lord Jesus was instituted by him the same night wherein he was betrayed, to be observed in his churches, unto the end of the world, for the perpetual remembrance, and showing to all the world the sacrifice of himself in his death, (1 Cor. 11:23-26) confirmation of the faith of believers in all the benefits thereof, their spiritual nourishment, and growth in him, their further engagement in, and to all duties which they owe to him; and to be a bond and pledge of their communion with him, and with each other.  (1 Cor. 10:16, 17, 21)
-
-// Paragraph 2. In this ordinance Christ is not offered up to his Father, nor any real sacrifice made at all for remission of sin of the quick or dead, but only a memorial of that one offering up of himself by himself upon the cross, once for all; (Heb. 9:25, 26, 28) and a spiritual oblation of all possible praise unto God for the same. (1 Cor. 11:24; Matt. 26:26, 27) So that the popish sacrifice of the mass, as they call it, is most abominable, injurious to Christ's own sacrifice the alone propitiation for all the sins of the elect.
-
-// Paragraph 3. The Lord Jesus hath, in this ordinance, appointed his ministers to pray, and bless the elements of bread and wine, and thereby to set them apart from a common to a holy use, and to take and break the bread; to take the cup, and, they communicating also themselves, to give both to the communicants.  (1 Cor. 11:23-26, etc.)
-
-// Paragraph 4. The denial of the cup to the people, worshipping the elements, the lifting them up, or carrying them about for adoration, and reserving them for any pretended religious use, are all contrary to the nature of this ordinance, and to the institution of Christ.  (Matt. 26:26-28, 15:9, Exod. 20:4, 5)
-
-// Paragraph 5. The outward elements in this ordinance, duly set apart to the use ordained by Christ, have such relation to him crucified, as that truly, although in terms used figuratively, they are sometimes called by the names of the things they represent, in other words, the body and blood of Christ, (1 Cor. 11:27) albeit, in substance and nature, they still remain truly and only bread and wine, as they were before.  (1 Cor. 11:26-28)
-
-// Paragraph 6. That doctrine which maintains a change of the substance of bread and wine, into the substance of Christ's body and blood, commonly called transubstantiation, by consecration of a priest, or by any other way, is repugnant not to Scripture alone, (Acts 3:21; Luke 14:6, 39) but even to common sense and reason, overthrows the nature of the ordinance, and has been, and is, the cause of manifold superstitions, yea, of gross idolatries.  (1 Cor. 11:24, 25)
-
-// Paragraph 7. Worthy receivers, outwardly partaking of the visible elements in this ordinance, do then also inwardly by faith, really and indeed, yet not carnally and corporally, but spiritually receive, and feed upon Christ crucified, and all the benefits of his death; the body and blood of Christ being then not corporally or carnally, but spiritually present to the faith of believers in that ordinance, as the elements themselves are to their outward senses.  (1 Cor. 10:16, 11:23-26)
-
-// Paragraph 8. All ignorant and ungodly persons, as they are unfit to enjoy communion with Christ, so are they unworthy of the Lord's table, and cannot, without great sin against him, while they remain such, partake of these holy mysteries, or be admitted thereunto; (2 Cor. 6:14, 15) yea, whosoever shall receive unworthily, are guilty of the body and blood of the Lord, eating and drinking judgment to themselves.  (1 Cor. 11:29; Matt. 7:6)
-// Chapter 31: Of The State Of Man After Death, And Of The Resurrection Of The Dead
-// Paragraph 1. The bodies of men after death return to dust, and see corruption; (Gen. 3:19; Acts 13:36) but their souls, which neither die nor sleep, having an immortal subsistence, immediately return to God who gave them. (Eccles. 12:7) The souls of the righteous being then made perfect in holiness, are received into paradise, where they are with Christ, and behold the face of God in light and glory, waiting for the full redemption of their bodies; (Luke 23:43; 2 Cor. 5:1, 6, 8; Phil. 1:23; Heb. 12:23) and the souls of the wicked are cast into hell; where they remain in torment and utter darkness, reserved to the judgment of the great day; (Jude 6, 7; 1 Peter 3:19; Luke 16:23, 24) besides these two places, for souls separated from their bodies, the Scripture acknowledgeth none.
-
-// Paragraph 2. At the last day, such of the saints as are found alive, shall not sleep, but be changed; (1 Cor. 15:51, 52; 1 Thess. 4:17) and all the dead shall be raised up with the selfsame bodies, and none other; (Job 19:26, 27) although with different qualities, which shall be united again to their souls forever.  (1 Cor. 15:42, 43)
-
-// Paragraph 3. The bodies of the unjust shall, by the power of Christ, be raised to dishonour; the bodies of the just, by his Spirit, unto honour, and be made conformable to his own glorious body.  (Acts 24:15; John 5:28, 29; Phil. 3:21)
-// Chapter 32: Of The Last Judgment
-// Paragraph 1. God has appointed a day wherein he will judge the world in righteousness, by Jesus Christ; (Acts 17:31; John 5:22, 27) to whom all power and judgment is given of the Father; in which day, not only the apostate angels shall be judged, (1 Cor. 6:3; Jude 6) but likewise all persons that have lived upon the earth shall appear before the tribunal of Christ, to give an account of their thoughts, words, and deeds, and to receive according to what they have done in the body, whether good or evil.  (2 Cor. 5:10; Eccles. 12:14; Matt. 12:36; Rom. 14:10, 12; Matt. 25:32-46)
-
-// Paragraph 2. The end of God's appointing this day, is for the manifestation of the glory of his mercy, in the eternal salvation of the elect; and of his justice, in the eternal damnation of the reprobate, who are wicked and disobedient; (Rom. 9:22, 23) for then shall the righteous go into everlasting life, and receive that fulness of joy and glory with everlasting rewards, in the presence of the Lord; but the wicked, who do not know God, and do not obey the gospel of Jesus Christ, shall be cast aside into everlasting torments, (Matt. 25:21, 34; 2 Tim. 4:8) and punished with everlasting destruction, from the presence of the Lord, and from the glory of his power.  (Matt. 25:46; Mark 9:48; 2 Thess. 1:7-10)
-
-// Paragraph 3. As Christ would have us to be certainly persuaded that there shall be a day of judgment, both to deter all men from sin, (2 Cor. 5:10, 11) and for the greater consolation of the godly in their adversity, (2 Thess. 1:5-7) so will he have the day unknown to men, that they may shake off all carnal security, and be always watchful, because they know not at what hour the Lord will come, (Mark 13:35-37; Luke 12:35-40) and may ever be prepared to say, Come Lord Jesus; come quickly. (Rev. 22:20) Amen.
-
-
-
-
-//     {
-//         chapter: 21,
-//         title: "Of Christian Liberty and Liberty of Conscience",
-//         topic: ['liberty'],
-//         content: [
-//             {
-//                 text: <div>The liberty which Christ hath purchased for believers under the gospel, consists in their freedom from the guilt of sin, the condemning wrath of God, the rigour and curse of the law, and in their being delivered from this present evil world, bondage to Satan, and dominion of sin, from the evil of afflictions, the fear and sting of death, the victory of the grave, and ever- lasting damnation: as also in their free access to God, and their yielding obedience unto Him, not out of slavish fear, but a child-like love and willing mind.
-//                 <br /><br />
-//             All which were common also to believers under the law for the substance of them; but under the New Testament the liberty of Christians is further enlarged, in their freedom from the yoke of a ceremonial law, to which the Jewish church was subjected, and in greater boldness of access to the throne of grace, and in fuller communications of the free Spirit of God, than believers under the law did ordinarily partake of.</div>,
-//                 scriptures: ['Galatians 3:13', 'Galatians 1:4', 'Acts 26:18', 'Romans 8:3', 'Romans 8:28', '1 Corinthians 15:54-57', '2 Thessalonians 1:10', 'Romans 8:15', 'Luke 1:73-75', '1 John 4:18', 'Galatians 3:9, 14', 'John 7:38-39', 'Hebrews 10:19-21']
-//             },
-//             {
-//                 text: "God alone is Lord of the conscience, and hath left it free from the doctrines and commandments of men which are in any thing contrary to his word, or not contained in it. So that to believe such doctrines, or obey such commands out of conscience, is to betray true liberty of conscience; and the requiring of an implicit faith, an absolute and blind obedience, is to destroy liberty of conscience and reason also.",
-//                 scriptures: ['James 4:12', 'Romans 14:4', 'Acts 4:19, 29', '1 Corinthians 7:23', 'Matthew 15:9', 'Colossians 2:20, 22-23', '1 Corinthians 3:5', '2 Corinthians 1:24']
-//             },
-//             {
-//                 text: "They who upon pretence of Christian liberty do practice any sin, or cherish any sinful lust, as they do thereby pervert the main design of the grace of the gospel to their own destruction, so they wholly destroy the end of Christian liberty, which is, that being delivered out of the hands of all our enemies, we might serve the Lord without fear, in holiness and righeousness before Him, all the days of our lives.",
-//                 scriptures: ['Romans 6:1-2', 'Galatians 5:13', '2 Peter 2:18, 21']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 22,
-//         title: "Of Religious Worship and the Sabbath Day",
-//         topic: ['sabbath'],
-//         content: [
-//             {
-//                 text: "The light of nature shews that there is a God, who hath lordship and sovereignty over all; is just, good and doth good unto all; and is therefore to be feared, loved, praised, called upon, trusted in, and served, with all the heart and all the soul, and with all the might. But the acceptable way of worshipping the true God, is instituted by himself, and so limited by his own revealed will, that he may not be worshipped according to the imagination and devices of men, nor the suggestions of Satan, under any visible representations, or any other way not prescribed in the Holy Scriptures.",
-//                 scriptures: ['Jeremiah 10:7', 'Mark 12:33', 'Deuteronomy 12:32', 'Exodus 20:4-6']
-//             },
-//             {
-//                 text: "Religious worship is to be given to God the Father, Son, and Holy Spirit, and to him alone; not to angels, saints, or any other creatures; and since the fall, not without a mediator, nor in the mediation of any other but Christ alone.",
-//                 scriptures: ['Matthew 4:9-10', 'John 6:23', 'Matthew 28:19', 'Romans 1:25', 'Colossians 2:18', 'Revelation 19:10', 'John 14:6', '1 Timothy 2:5']
-//             },
-//             {
-//                 text: "Prayer, with thanksgiving, being one part of natural worship, is by God required of all men. But that it may be accepted, it is to be made in the name of the Son, by the help of the Spirit, according to his will; with understanding, reverence, humility, fervency, faith, love, and perseverance; and when with others, in a known tongue.",
-//                 scriptures: ['Psalms 95:1-7', 'Psalms 65:2', 'John 14:13-14', 'Romans 8:26', '1 John 5:14', '1 Corinthians 14:16-17']
-//             },
-//             {
-//                 text: "Prayer is to be made for things lawful, and for all sorts of men living, or that shall live hereafter; but not for the dead, nor for those of whom it may be known that they have sinned the sin unto death.",
-//                 scriptures: ['1 Timothy 2:1-2', '2 Samuel 7:29', '2 Samuel 12:21-23', '1 John 5:16']
-//             },
-//             {
-//                 text: "The reading of the Scriptures, preaching, and hearing the Word of God, teaching and admonishing one another in psalms, hymns, and spiritual songs, singing with grace in our hearts to the Lord; as also the administration of baptism, and the Lord's supper, are all parts of religious worship of God, to be performed in obedience to him, with understanding, faith, reverence, and godly fear; moreover, solemn humiliation, with fastings, and thanksgivings, upon special occasions, ought to be used in an holy and religious manner.",
-//                 scriptures: ['1 Timothy 4:13', '2 Timothy 4:2', 'Luke 8:18', 'Colossians 3:16', 'Ephesians 5:19', 'Matthew 28:19-20', '1 Corinthians 11:26', 'Esther 4:16', 'Joel 2:12', 'Exodus 15:1-19', 'Psalms 107']
-//             },
-//             {
-//                 text: "Neither prayer nor any other part of religious worship, is now under the gospel, tied unto, or made more acceptable by any place in which it is performed, or towards which it is directed; but God is to be worshipped everywhere in spirit and in truth; as in private families daily, and in secret each one by himself; so more solemnly in the public assemblies, which are not carelessly nor wilfully to be neglected or forsaken, when God by his word or providence calleth thereunto.",
-//                 scriptures: ['John 4:21', 'Malachi 1:11', '1 Timothy 2:8', 'Acts 10:2', 'Matthew 6:11', 'Psalms 55:17', 'Matthew 6:6', 'Hebrews 10:25', 'Acts 2:42']
-//             },
-//             {
-//                 text: "As it is the law of nature, that in general a proportion of time, by God's appointment, be set apart for the worship of God, so by his Word, in a positive moral, and perpetual commandment, binding all men, in all ages, he hath particularly appointed one day in seven for a sabbath to be kept holy unto him, which from the beginning of the world to the resurrection of Christ was the last day of the week, and from the resurrection of Christ was changed into the first day of the week, which is called the Lord's day: and is to be continued to the end of the world as the Christian Sabbath, the observation of the last day of the week being abolished.",
-//                 scriptures: ['Exodus 20:8', '1 Corinthians 16:1-2', 'Acts 20:7', 'Revelation 1:10']
-//             },
-//             {
-//                 text: "The sabbath is then kept holy unto the Lord, when men, after a due preparing of their hearts, and ordering their common affairs aforehand, do not only observe an holy rest all day, from their own works, words and thoughts, about their worldly employment and recreations, but are also taken up the whole time in the public and private exercises of his worship, and in the duties of necessity and mercy. ",
-//                 scriptures: ['Isaiah 58:13', 'Nehemiah 13:15-22', 'Matthew 12:1-13']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 23,
-//         title: "Of Lawful Oaths and Vows",
-//         topic: ['vows'],
-//         content: [
-//             {
-//                 text: "A lawful oath is a part of religious worship, wherein the person swearing in truth, righteousness, and judgement, solemnly calleth God to witness what he sweareth, and to judge him according to the truth or falseness thereof.",
-//                 scriptures: ['Exodus 20:7', 'Deuteronomy 10:20', 'Jeremiah 4:2', '2 Chronicles 6:22-23']
-//             },
-//             {
-//                 text: "The name of God only is that by which men ought to swear; and therein it is to be used, with all holy fear and reverence; therefore to swear vainly or rashly by that glorious and dreadful name, or to swear at all by any other thing, is sinful, and to be abhorred; yet as in matter of weight and moment, for confirmation of truth, and ending all strife, an oath is warranted by the word of God; so a lawful oath being imposed by lawful authority in such matters, ought to be taken.",
-//                 scriptures: ['Matthew 5:34, 37', 'James 5:12', 'Hebrews 6:16', '2 Corinthians 1:23', 'Nehemiah 13:25']
-//             },
-//             {
-//                 text: "Whosoever taketh an oath warranted by the Word of God, ought duly to consider the weightiness of so solemn an act, and therein to avouch nothing but what he knoweth to be truth; for that by rash, false, and vain oaths, the Lord is provoked, and for them this land mourns.",
-//                 scriptures: ['Leviticus 19:12', 'Jeremiah 23:10']
-//             },
-//             {
-//                 text: "An oath is to be taken in the plain and common sense of the words, without equivocation or mental reservation.",
-//                 scriptures: ['Psalms 24:4']
-//             },
-//             {
-//                 text: "A vow, which is not to be made to any creature, but to God alone, is to be made and performed with all religious care and faithfulness; but popish monastical vows of perpetual single life, professed poverty, and regular obedience, are so far from being degrees of higher perfection, that they are superstitious and sinful snares, in which no Christian may entangle himself.",
-//                 scriptures: ['Psalms 76:11', 'Genesis 28:20-22', '1 Corinthians 7:2, 9', 'Ephesians 4:28', 'Matthew 19:11']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 24,
-//         title: "Of the Civil magistrate",
-//         topic: ['government'],
-//         content: [
-//             {
-//                 text: "God, the supreme Lord and King of all the world, hath ordained civil magistrates to be under him, over the people, for his own glory and the public good; and to this end hath armed them with the power of the sword, for defence and encouragement of them that do good, and for the punishment of evil doers.",
-//                 scriptures: ['Romans 13:1-4']
-//             },
-//             {
-//                 text: "It is lawful for Christians to accept and execute the office of a magistrate when called there unto; in the management whereof, as they ought especially to maintain justice and peace, according to the wholesome laws of each kingdom and commonwealth, so for that end they may lawfully now, under the New Testament wage war upon just and necessary occasions.",
-//                 scriptures: ['2 Samuel 23:3', 'Psalms 82:3-4', 'Luke 3:14']
-//             },
-//             {
-//                 text: "Civil magistrates being set up by God for the ends aforesaid; subjection, in all lawful things commanded by them, ought to be yielded by us in the Lord, not only for wrath, but for conscience sake; and we ought to make supplications and prayers for kings and all that are in authority, that under them we may live a quiet and peaceable life, in all godliness and honesty.",
-//                 scriptures: ['Romans 13:5-7', '1 Peter 2:17', '1 Timothy 2:1, 2']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 25,
-//         title: "Of Marriage",
-//         topic: ['marriage'],
-//         content: [
-//             {
-//                 text: "Marriage is to be between one man and one woman; neither is it lawful for any man to have more than one wife, nor for any woman to have more than one husband at the same time.",
-//                 scriptures: ['Genesis 2:24', 'Malachi 2:15', 'Matthew 19:5-6']
-//             },
-//             {
-//                 text: "Marriage was ordained for the mutual help of husband and wife, for the increase of mankind with a legitimate issue, and the preventing of uncleanness.",
-//                 scriptures: ['Genesis 2:18', 'Genesis 1:28', '1 Corinthians 7:2, 9']
-//             },
-//             {
-//                 text: "It is lawful for all sorts of people to marry, who are able with judgment to give their consent; yet it is the duty of Christians to marry in the Lord; and therefore such as profess the true religion, should not marry with infidels, or idolaters; neither should such as are godly, be unequally yoked, by marrying with such as are wicked in their life, or maintain damnable heresy.",
-//                 scriptures: ['Hebrews 13:4', '1 Timothy 4:3', '1 Corinthians 7:39', 'Nehemiah 13:25-27']
-//             },
-//             {
-//                 text: "Marriage ought not to be within the degrees of consanguinity or affinity, forbidden in the Word; nor can such incestuous marriages ever be made lawful, by any law of man or consent of parties, so as those persons may live together as man and wife.",
-//                 scriptures: ['Leviticus 18', 'Mark 6:18', '1 Corinthians 5:1']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 26,
-//         title: "Of the Church",
-//         topic: ['church'],
-//         content: [
-//             {
-//                 text: "The catholic or universal church, which (with respect to the internal work of the Spirit and truth of grace) may be called invisible, consists of the whole number of the elect, that have been, are, or shall be gathered into one, under Christ, the head thereof; and is the spouse, the body, the fulness of him that filleth all in all.",
-//                 scriptures: ['Hebrews 12:23', 'Colossians 1:18', 'Ephesians 1:10, 22-23', 'Ephesians 5:23, 27, 32']
-//             },
-//             {
-//                 text: "All persons throughout the world, professing the faith of the gospel, and obedience unto God by Christ according unto it, not destroying their own profession by any errors everting the foundation, or unholiness of conversation, are and may be called visible saints; and of such ought all particular congregations to be constituted.",
-//                 scriptures: ['1 Corinthians 1:2', 'Acts 11:26', 'Romans 1:7', 'Ephesians 1:20-22']
-//             },
-//             {
-//                 text: "The purest churches under heaven are subject to mixture and error; and some have so degenerated as to become no churches of Christ, but synagogues of Satan; nevertheless Christ always hath had, and ever shall have a kingdom in this world, to the end thereof, of such as believe in him, and make profession of his name.",
-//                 scriptures: ['1 Corinthians 5', 'Revelation 2', 'Revelation 3', 'Revelation 18:2', '2 Thessalonians 2:11-12', 'Matthew 16:18', 'Psalms 72:17', 'Psalm 102:28', 'Revelation 12:17']
-//             },
-//             {
-//                 text: "The Lord Jesus Christ is the Head of the church, in whom, by the appointment of the Father, all power for the calling, institution, order or government of the church, is invested in a supreme and sovereign manner; neither can the Pope of Rome in any sense be head thereof, but is that antichrist, that man of sin, and son of perdition, that exalteth himself in the church against Christ, and all that is called God; whom the Lord shall destroy with the brightness of his coming.",
-//                 scriptures: ['Colossians 1:18', 'Matthew 28:18-20', 'Ephesians 4:11-12', '2 Thessalonians 2:2-9']
-//             },
-//             {
-//                 text: "In the execution of this power wherewith he is so intrusted, the Lord Jesus calleth out of the world unto himself, through the ministry of his word, by his Spirit, those that are given unto him by his Father, that they may walk before him in all the ways of obedience, which he prescribeth to them in his word. Those thus called, he commandeth to walk together in particular societies, or churches, for their mutual edification, and the due performance of that public worship, which he requireth of them in the world.",
-//                 scriptures: ['John 10:16', 'John 12:32', 'Matthew 28:20', 'Matthew 18:15-20']
-//             },
-//             {
-//                 text: "The members of these churches are saints by calling, visibly manifesting and evidencing (in and by their profession and walking) their obedience unto that call of Christ; and do willingly consent to walk together, according to the appointment of Christ; giving up themselves to the Lord, and one to another, by the will of God, in professed subjection to the ordinances of the Gospel.",
-//                 scriptures: ['Romans 1:7', '1 Corinthians 1:2', 'Acts 2:41-42', 'Acts 5:13-14', '2 Corinthians 9:13']
-//             },
-//             {
-//                 text: "To each of these churches thus gathered, according to his mind declared in his word, he hath given all that power and authority, which is in any way needful for their carrying on that order in worship and discipline, which he hath instituted for them to observe; with commands and rules for the due and right exerting, and executing of that power.",
-//                 scriptures: ['Matthew 18:17-18', '1 Corinthians 5:4-5', '1 Corinthians 5:13', '2 Corinthians 2:6-8']
-//             },
-//             {
-//                 text: "A particular church, gathered and completely organized according to the mind of Christ, consists of officers and members; and the officers appointed by Christ to be chosen and set apart by the church (so called and gathered), for the peculiar administration of ordinances, and execution of power or duty, which he intrusts them with, or calls them to, to be continued to the end of the world, are bishops or elders, and deacons.",
-//                 scriptures: ['Acts 20:17, 28', 'Philippians 1:1']
-//             },
-//             {
-//                 text: "The way appointed by Christ for the calling of any person, fitted and gifted by the Holy Spirit, unto the office of bishop or elder in a church, is, that he be chosen thereunto by the common suffrage of the church itself; and solemnly set apart by fasting and prayer, with imposition of hands of the eldership of the church, if there be any before constituted therein; and of a deacon that he be chosen by the like suffrage, and set apart by prayer, and the like imposition of hands.",
-//                 scriptures: ['Acts 14:23', '1 Timothy 4:14', 'Acts 6:3, 5-6']
-//             },
-//             {
-//                 text: "The work of pastors being constantly to attend the service of Christ, in his churches, in the ministry of the word and prayer, with watching for their souls, as they that must give an account to Him; it is incumbent on the churches to whom they minister, not only to give them all due respect, but also to communicate to them of all their good things according to their ability, so as they may have a comfortable supply, without being themselves entangled in secular affairs; and may also be capable of exercising hospitality towards others; and this is required by the law of nature, and by the express order of our Lord Jesus, who hath ordained that they that preach the Gospel should live of the Gospel.",
-//                 scriptures: ['Acts 6:4', 'Hebrews 13:17', '1 Timothy 5:17-18', 'Galatians 6:6-7', '2 Timothy 2:4', '1 Timothy 3:2', '1 Corinthians 9:6-14']
-//             },
-//             {
-//                 text: "Although it be incumbent on the bishops or pastors of the churches, to be instant in preaching the word, by way of office, yet the work of preaching the word is not so peculiarly confined to them but that others also gifted and fitted by the Holy Spirit for it, and approved and called by the church, may and ought to perform it.",
-//                 scriptures: ['Acts 11:19-21', '1 Peter 4:10-11']
-//             },
-//             {
-//                 text: "As all believers are bound to join themselves to particular churches, when and where they have opportunity so to do; so all that are admitted unto the privileges of a church, are also under the censures and government thereof, according to the rule of Christ.",
-//                 scriptures: ['1 Thessalonians 5:14', '2 Thessalonians 3:6, 14-15']
-//             },
-//             {
-//                 text: "No church members, upon any offence taken by them, having performed their duty required of them towards the person they are offended at, ought to disturb any church-order, or absent themselves from the assemblies of the church, or administration of any ordinances, upon the account of such offence at any of their fellow members, but to wait upon Christ, in the further proceeding of the church.",
-//                 scriptures: ['Matthew 18:15-17', 'Ephesians 4:2-3']
-//             },
-//             {
-//                 text: "As each church, and all the members of it, are bound to pray continually for the good and prosperity of all the churches of Christ, in all places, and upon all occasions to further every one within the bounds of their places and callings, in the exercise of their gifts and graces, so the churches, when planted by the providence of God, so as they may enjoy opportunity and advantage for it, ought to hold communion among themselves, for their peace, increase of love, and mutual edification.",
-//                 scriptures: ['Ephesians 6:18', 'Psalms 122:6', 'Romans 16:1-2', '3 John 8-10']
-//             },
-//             {
-//                 text: "In cases of difficulties or differences, either in point of doctrine or administration, wherein either the churches in general are concerned, or any one church, in their peace, union, and edification; or any member or members of any church are injured, in or by any proceedings in censures not agreeable to truth and order: it is according to the mind of Christ, that many churches holding communion together, do, by their messengers, meet to consider, and give their advice in or about that matter in difference, to be reported to all the churches concerned; howbeit these messengers assembled, are not intrusted with any church-power properly so called; or with any jurisdiction over the churches themselves, to exercise any censures either over any churches or persons; or to impose their determination on the churches or officers.",
-//                 scriptures: ['Acts 15:2, 4, 6, 22-23, 25', '2 Corinthians 1:24', '1 John 4:1']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 27,
-//         title: "Of the Communion of Saints",
-//         topic: ['communion of saints'],
-//         content: [
-//             {
-//                 text: "All saints that are united to Jesus Christ, their head, by his Spirit, and faith, although they are not made thereby one person with him, have fellowship in his graces, sufferings, death, resurrection, and glory; and, being united to one another in love, they have communion in each others gifts and graces, and are obliged to the performance of such duties, public and private, in an orderly way, as do conduce to their mutual good, both in the inward and outward man.",
-//                 scriptures: ['1 John 1:3', 'John 1:16', 'Philippians 3:10', 'Romans 6:5-6', 'Ephesians 4:15-16', '1 Corinthians 12:7', '1 Corinthians 3:21-23', '1 Thessalonians 5:11, 14', 'Romans 1:12', '1 John 3:17-18', 'Galatians 6:10']
-//             },
-//             {
-//                 text: "Saints by profession are bound to maintain an holy fellowship and communion in the worship of God, and in performing such other spiritual services as tend to their mutual edification; as also in relieving each other in outward things according to their several abilities, and necessities; which communion, according to the rule of the gospel, though especially to be exercised by them, in the relation wherein they stand, whether in families, or churches, yet, as God offereth opportunity, is to be extended to all the household of faith, even all those who in every place call upon the name of the Lord Jesus; nevertheless their communion one with another as saints, doth not take away or infringe the title or propriety which each man hath in his goods and possessions.",
-//                 scriptures: ['Hebrews 10:24-25', 'Hebrews 3:12-13', 'Acts 11:29-30', 'Ephesians 6:4', '1 Corinthians 12:14-27', 'Acts 5:4', 'Ephesians 4:28']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 28,
-//         title: "Of Baptism and the Lord's Supper",
-//         topic: ['sacraments'],
-//         content: [
-//             {
-//                 text: "Baptism and the Lord's Supper are ordinances of positive and sovereign institution, appointed by the Lord Jesus, the only lawgiver, to be continued in his church to the end of the world.",
-//                 scriptures: ['Matthew 28:19-20', '1 Corinthians 11:26']
-//             },
-//             {
-//                 text: "These holy appointments are to be administered by those only who are qualified and thereunto called, according to the commission of Christ.",
-//                 scriptures: ['Matthew 28:19', '1 Corinthians 4:1']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 29,
-//         title: "Of Baptism",
-//         topic: ['repentance'],
-//         content: [
-//             {
-//                 text: "Baptism is an ordinance of the New Testament, ordained by Jesus Christ, to be unto the party baptized, a sign of his fellowship with him, in his death and resurrection; of his being engrafted into him; of remission of sins; and of giving up into God, through Jesus Christ, to live and walk in newness of life.",
-//                 scriptures: ['Romans 6:3-5', 'Colossians 2:12', 'Galatians 3:27', 'Mark 1:4', 'Acts 22:16', 'Romans 6:4']
-//             },
-//             {
-//                 text: "Those who do actually profess repentance towards God, faith in, and obedience to, our Lord Jesus Christ, are the only proper subjects of this ordinance. ",
-//                 scriptures: ['Mark 16:16', 'Acts 8:36-37', 'Acts 2:41', 'Acts 8:12', 'Acts 18:8']
-//             },
-//             {
-//                 text: "The outward element to be used in this ordinance is water, wherein the party is to be baptized, in the name of the Father, and of the Son, and of the Holy Spirit.",
-//                 scriptures: ['Matthew 28:19-20', 'Acts 8:38']
-//             },
-//             {
-//                 text: "Immersion, or dipping of the person in water, is necessary to the due administration of this ordinance.",
-//                 scriptures: ['Matthew 3:16', 'John 3:23']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 30,
-//         title: "Of the Lord's Supper",
-//         topic: ['communion'],
-//         content: [
-//             {
-//                 text: "The supper of the Lord Jesus was instituted by him the same night wherein he was betrayed, to be observed in his churches, unto the end of the world, for the perpetual remembrance, and shewing forth the sacrifice of himself in his death, confirmation of the faith of believers in all the benefits thereof, their spiritual nourishment, and growth in him, their further engagement in, and to all duties which they owe to him; and to be a bond and pledge of their communion with him, and with each other.",
-//                 scriptures: ['1 Corinthians 11:23-26', '1 Corinthians 10:16-17,21']
-//             },
-//             {
-//                 text: "In this ordinance Christ is not offered up to his Father, nor any real sacrifice made at all for remission of sin of the quick or dead, but only a memorial of that one offering up of himself by himself upon the cross, once for all; and a spiritual oblation of all possible praise unto God for the same. So that the popish sacrifice of the mass, as they call it, is most abominable, injurious to Christ's own sacrifice the alone propitiation for all the sins of the elect.",
-//                 scriptures: ['Hebrews 9:25-26, 28', '1 Corinthians 11:24', 'Matthew 26:26-27']
-//             },
-//             {
-//                 text: "The Lord Jesus hath, in this ordinance, appointed his ministers to pray, and bless the elements of bread and wine, and thereby to set them apart from a common to a holy use, and to take and break the bread; to take the cup, and, they communicating also themselves, to give both to the communicants.",
-//                 scriptures: ['1 Corinthians 11:23-26']
-//             },
-//             {
-//                 text: "The denial of the cup to the people, worshipping the elements, the lifting them up, or carrying them about for adoration, and reserving them for any pretended religious use, are all contrary to the nature of this ordinance, and to the institution of Christ.",
-//                 scriptures: ['Matthew 26:26-28', 'Matthew 15:9', 'Exodus 20:4-5']
-//             },
-//             {
-//                 text: "The outward elements in this ordinance, duly set apart to the use ordained by Christ, have such relation to him crucified, as that truly, although in terms used figuratively, they are sometimes called by the names of the things they represent, to wit, the body and blood of Christ, albeit, in substance and nature, they still remain truly and only bread and wine, as they were before.",
-//                 scriptures: ['1 Corinthians 11:27', '1 Corinthians 11:26-28']
-//             },
-//             {
-//                 text: "That doctrine which maintains a change of the substance of bread and wine, into the substance of Christ's body and blood, commonly called transubstantiation, by consecration of a priest, or by any other way, is repugnant not to Scripture alone, but even to common sense and reason, overthroweth the nature of the ordinance, and hath been, and is, the cause of manifold superstitions, yea, of gross idolatries.",
-//                 scriptures: ['Acts 3:21', 'Luke 14:6, 39', '1 Corinthians 11:24-25']
-//             },
-//             {
-//                 text: "Worthy receivers, outwardly partaking of the visible elements in this ordinance, do then also inwardly by faith, really and indeed, yet not carnally and corporally, but spiritually receive, and feed upon Christ crucified, and all the benefits of his death; the body and blood of Christ being then not corporally or carnally, but spiritually present to the faith of believers in that ordinance, as the elements themselves are to their outward senses.",
-//                 scriptures: ['1 Corinthians 10:16', '1 Corinthians 11:23-26']
-//             },
-//             {
-//                 text: "All ignorant and ungodly persons, as they are unfit to enjoy communion with Christ, so are they unworthy of the Lord's table, and cannot, without great sin against him, while they remain such, partake of these holy mysteries, or be admitted thereunto; yea, whosoever shall receive unworthily, are guilty of the body and blood of the Lord, eating and drinking judgment to themselves.",
-//                 scriptures: ['2 Corinthians 6:14-15', '1 Corinthians 11:29', 'Matthew 7:6']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 31,
-//         title: "Of the State of Man after Death, and of the Resurrection of the Dead",
-//         topic: ['resurrection'],
-//         content: [
-//             {
-//                 text: "The bodies of men after death return to dust, and see corruption; but their souls, which neither die nor sleep, having an immortal subsistence, immediately return to God who gave them. The souls of the righteous being then made perfect in holiness, are received into paradise, where they are with Christ, and behold the face of God in light and glory, waiting for the full redemption of their bodies; and the souls of the wicked are cast into hell; where they remain in torment and utter darkness, reserved to the judgment of the great day; besides these two places, for souls separated from their bodies, the Scripture acknowledgeth none.",
-//                 scriptures: ['Genesis 3:19', 'Acts 13:36', 'Ecclesiastes 12:7', 'Luke 23:43', '2 Corinthians 5:1, 6,8', 'Philippians 1:23', 'Hebrews 12:23', 'Jude 6-7', '1 Peter 3:19', 'Luke 16:23-24']
-//             },
-//             {
-//                 text: "At the last day, such of the saints as are found alive, shall not sleep, but be changed; and all the dead shall be raised up with the selfsame bodies, and none other; although with different qualities, which shall be united again to their souls forever.",
-//                 scriptures: ['1 Corinthians 15:51-52', '1 Thessalonians 4:17', 'Job 19:26-27', '1 Corinthians 15:42-43']
-//             },
-//             {
-//                 text: "The bodies of the unjust shall, by the power of Christ, be raised to dishonour; the bodies of the just, by his Spirit, unto honour, and be made conformable to his own glorious body.",
-//                 scriptures: ['Acts 24:15', 'John 5:28-29', 'Philippians 3:21']
-//             }
-//         ] 
-//     },
-//     {
-//         chapter: 32,
-//         title: "Of the Last Judgment",
-//         topic: ['judgment'],
-//         content: [
-//             {
-//                 text: "God hath appointed a day wherein he will judge the world in righteousness, by Jesus Christ; to whom all power and judgment is given of the Father; in which day, not only the apostate angels shall be judged, but likewise all persons that have lived upon the earth shall appear before the tribunal of Christ, to give an account of their thoughts, words, and deeds, and to receive according to what they have done in the body, whether good or evil.",
-//                 scriptures: ['Acts 17:31', 'John 5:22, 27', '1 Corinthians 6:3', 'Jude 6', '2 Corinthians 5:10', 'Ecclesiastes 12:14', 'Matthew 12:36', 'Romans 14:10, 12', 'Matthew 25:32-46']
-//             },
-//             {
-//                 text: "The end of God's appointing this day, is for the manifestation of the glory of his mercy, in the eternal salvation of the elect; and of his justice, in the eternal damnation of the reprobate, who are wicked and disobedient; for then shall the righteous go into everlasting life, and receive that fulness of joy and glory with everlasting rewards, in the presence of the Lord; but the wicked, who know not God, and obey not the gospel of Jesus Christ, shall be cast aside into everlasting torments, and punished with everlasting destruction, from the presence of the Lord, and from the glory of his power.",
-//                 scriptures: ['Romans 9:22-23', 'Matthew 25:21, 34', '2 Timothy 4:8', 'Matthew 25:46', 'Mark 9:48', '2 Thessalonians 1:7-10']
-//             },
-//             {
-//                 text: "As Christ would have us to be certainly persuaded that there shall be a day of judgment, both to deter all men from sin, and for the greater consolation of the godly in their adversity, so will he have the day unknown to men, that they may shake off all carnal security, and be always watchful, because they know not at what hour the Lord will come, and may ever be prepared to say, Come Lord Jesus; come quickly. Amen.",
-//                 scriptures: ['2 Corinthians 5:10-11', '2 Thessalonians 1:5-7', 'Mark 13:35-37', 'Luke 12:35-40', 'Revelation 22:20']
-//             }
-//         ] 
-
 
 export {
     LONDON_BAPTIST,
