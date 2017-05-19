@@ -115,7 +115,7 @@ class Games extends Component {
 
         const props = {
             appData,
-            onAddScore
+            selection
         };
 
         switch (selection) {
@@ -140,7 +140,7 @@ class Games extends Component {
     }
 
     render() {
-        const { showContent, showHeader } = this.state;
+        const { selection, showContent, showHeader } = this.state;
 
         return (
             <div className="games">
@@ -152,7 +152,7 @@ class Games extends Component {
                 >
                     {this.renderDropdown()}
                 </AppHeader>
-                <ContentCard setParentState={this.setParentState} showContent={showContent}>
+                <ContentCard selection={selection} setParentState={this.setParentState} showContent={showContent}>
                     {this.renderContent()}
                 </ContentCard>
             </div>

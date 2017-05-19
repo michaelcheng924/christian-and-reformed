@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
-import { delay } from 'lodash';
+import { delay, last } from 'lodash';
 import { Card, CardActions, CardTitle, CardText } from 'material-ui/Card';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -28,6 +28,12 @@ export default class CatechismTrainingChallenge extends Component {
 
         if (typeof window !== 'undefined') {
             $('body').on('keypress', this.onKeyPress);
+        }
+    }
+
+    componentWillUpdate(nextProps) {
+        if (this.props.selection !== nextProps.selection) {
+            this.onReset();
         }
     }
 
@@ -62,7 +68,7 @@ export default class CatechismTrainingChallenge extends Component {
 
         if (answer === userAnswer) {
             if (currentQuestion.id === 135) {
-
+                this.saveScore();
             } else {
                 this.setState({
                     questionCorrect: true,
@@ -76,12 +82,21 @@ export default class CatechismTrainingChallenge extends Component {
             }
         } else {
             this.setState({ questionWrong: true });
+            this.saveScore();
+        }
+    }
+
+    saveScore() {
+        const { currentQuestion, scores, setParentState } = this.props;
+
+        if (scores.length < 10 || currentQuestion.id > last(scores).score) {
+            setParentState({ open: true });
         }
     }
 
     render() {
         const { questionCorrect, questionCorrectText, questionWrong } = this.state;
-        const { currentQuestion } = this.props;
+        const { currentQuestion, isBoysGirls, open, scores, setParentState } = this.props;
 
         const classNames = css('catechism-training__main', {
             'catechism-training__main--correct': questionCorrect,
@@ -131,6 +146,8 @@ export default class CatechismTrainingChallenge extends Component {
                         }
                     </CSSTransitionGroup>
                 </Paper>
+                <Leaderboard scores={scores} />
+                <SaveScoreModal open={open} setParentState={setParentState} keyValue={isBoysGirls ? 'boysGirls' : 'westminsterShorter'} score={currentQuestion.id - 1} displayScore={`Question #${currentQuestion.id}`} />
             </div>
         );
     }

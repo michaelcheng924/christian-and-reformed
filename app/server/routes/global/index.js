@@ -104,7 +104,13 @@ function getNumberScores(currentScores, score) {
 router.post('/addscore', (req, res) => {
     const { key, score } = req.body;
 
-    if (!isTimeScoreValid(score)) {
+    const isTimeScore = key === 'orderSalvation' || key === 'bibleOrder';
+    const isBoysGirls = key === 'boysGirls';
+
+    if (
+        (isTimeScore && !isTimeScoreValid(score))
+        || (isBoysGirls && (typeof score.score !== 'number' || score.score > 135 || score.score <= 0))
+    ) {
         res.send('Please stop :)');
     }
 
@@ -113,7 +119,7 @@ router.post('/addscore', (req, res) => {
         const keyData = data[key];
 
         if (keyData) {
-            if (key === 'orderSalvation' || key === 'bibleOrder') {
+            if (isTimeScore) {
                 keyData.scores = getTimeScores(keyData, score);
             } else {
                 keyData.scores = getNumberScores(keyData, score);

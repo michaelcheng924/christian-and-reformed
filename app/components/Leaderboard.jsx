@@ -11,6 +11,10 @@ import {
 
 export default class OrderSalvationContentCard extends Component {
     getScore(score) {
+        if (typeof score === 'number') {
+            return `Question #${score}`;
+        }
+
         if (score.indexOf(':') !== -1) {
             const splitScore = score.split(':');
             return `${splitScore[0]} minutes ${splitScore[1]} seconds`;

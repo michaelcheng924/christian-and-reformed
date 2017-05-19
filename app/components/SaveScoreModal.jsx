@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
@@ -17,6 +18,12 @@ class SaveScoreModal extends Component {
 
         this.handleClose = this.handleClose.bind(this);
         this.saveScore = this.saveScore.bind(this);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.open && !prevProps.open) {
+            $('.save-score-modal__input input').focus();
+        }
     }
 
     handleOpen() {
@@ -71,6 +78,7 @@ class SaveScoreModal extends Component {
                 >
                     <div>Your score (<strong>{displayScore}</strong>) is in the Top 10! To save your score, enter your name below and click <strong>Submit</strong>. If you do not want to save your score, click <strong>Cancel</strong>.</div>
                     <TextField
+                        className="save-score-modal__input"
                         floatingLabelText="Enter your name here"
                         onChange={event => this.setState({ saveName: event.target.value })}
                     />

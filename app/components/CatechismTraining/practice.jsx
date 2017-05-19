@@ -40,6 +40,12 @@ export default class CatechismTrainingPractice extends Component {
         }
     }
 
+    componentDidUpdate(prevProps) {
+        if (this.props.selection !== prevProps.selection) {
+            this.onReset();
+        }
+    }
+
     componentWillUnmount() {
         $('body').off('keypress', this.onKeyPress);
     }

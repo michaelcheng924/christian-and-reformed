@@ -11,6 +11,7 @@ export default class ConfessionsCreedsContentCard extends Component {
         
         this.state = {
             mode: 'challenge',
+            open: false,
             questionNumber: 1
         };
 
@@ -31,10 +32,14 @@ export default class ConfessionsCreedsContentCard extends Component {
     }
 
     render() {
-        const { mode, questionNumber } = this.state;
-        const { data, name } = this.props
+        const { mode, open, questionNumber } = this.state;
+        const { appData, data, name, selection } = this.props;
+
+        const isBoysGirls = name === 'Catechism for Boys and Girls Training';
+        const scores = isBoysGirls ? appData.boysGirls : appData.westminsterShorter;
 
         const props = {
+            selection,
             catechismData: data,
             currentQuestion: data[questionNumber - 1],
             getAnswer: this.getAnswer,
@@ -42,32 +47,34 @@ export default class ConfessionsCreedsContentCard extends Component {
         };
 
         return (
-            <Card className="catechism-training__content-card">
-                <CardTitle
-                    className="catechism-training__content-card-title"
-                    title={name}
-                />
-                <CardText>
-                    <RadioButtonGroup name="catechismMode" defaultSelected="practice" onChange={this.onModeChange}>
-                        <RadioButton
-                            className="catechism-training__mode-button"
-                            value="challenge"
-                            label="Challenge"
-                        />
-                        <RadioButton
-                            className="catechism-training__mode-button"
-                            value="practice"
-                            label="Practice"
-                        />
-                    </RadioButtonGroup>
-                    <hr />
-                    {
-                        mode === 'challenge'
-                            ? <Challenge {...props} />
-                            : <Practice {...props} />
-                    }
-                </CardText>
-            </Card>
+            <div>
+                <Card className="catechism-training__content-card">
+                    <CardTitle
+                        className="catechism-training__content-card-title"
+                        title={name}
+                    />
+                    <CardText>
+                        <RadioButtonGroup name="catechismMode" defaultSelected="challenge" onChange={this.onModeChange}>
+                            <RadioButton
+                                className="catechism-training__mode-button"
+                                value="challenge"
+                                label="Challenge"
+                            />
+                            <RadioButton
+                                className="catechism-training__mode-button"
+                                value="practice"
+                                label="Practice"
+                            />
+                        </RadioButtonGroup>
+                        <hr />
+                        {
+                            mode === 'challenge'
+                                ? <Challenge {...props} isBoysGirls={isBoysGirls} open={open} scores={scores} />
+                                : <Practice {...props} />
+                        }
+                    </CardText>
+                </Card>
+            </div>
         );
     }
 }

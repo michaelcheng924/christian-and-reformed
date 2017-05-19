@@ -194,7 +194,6 @@ export default class BibleOrderContentCard extends Component {
                     </CardText>
                 </Card>
                 <SaveScoreModal open={open} setParentState={this.setParentState} keyValue="bibleOrder" score={this.getTime()} displayScore={this.getTimeString()} />
-
             </div>
         );
     }
