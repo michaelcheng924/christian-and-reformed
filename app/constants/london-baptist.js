@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LONDON_BAPTIST_NAME = '1689 London Baptist Confession of Faith';
+const LONDON_BAPTIST_NAME = '1689 London Baptist Confession of Faith - Explorer';
 
 const LONDON_BAPTIST = [
     {

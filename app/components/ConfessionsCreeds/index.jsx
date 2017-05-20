@@ -7,7 +7,9 @@ import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 
+import CONFESSIONS_CREEDS from 'app/constants/confessions-creeds';
 import { LONDON_BAPTIST, LONDON_BAPTIST_NAME } from 'app/constants/london-baptist.js';
+import { WESTMINSTER, WESTMINSTER_NAME } from 'app/constants/confession-westminster.js';
 import { setApp } from 'app/actions/AppActions';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
@@ -34,9 +36,9 @@ class ConfessionsCreeds extends Component {
 
             const pathname = window.location.pathname;
 
-            if (pathname === '/confessions-creeds/1689-london-baptist-confession') {
+            if (CONFESSIONS_CREEDS[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = '1689 London Baptist Confession';
+                document.title = CONFESSIONS_CREEDS[pathname];
             }
         }
     }
@@ -54,8 +56,8 @@ class ConfessionsCreeds extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && value === '/confessions-creeds/1689-london-baptist-confession') {
-            document.title = '1689 London Baptist Confession';
+        if (typeof window !== 'undefined' && CONFESSIONS_CREEDS[value]) {
+            document.title = CONFESSIONS_CREEDS[value];
         }
 
         delay(() => {
