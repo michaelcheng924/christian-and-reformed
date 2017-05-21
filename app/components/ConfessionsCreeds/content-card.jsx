@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import css from 'classnames';
-import { delay, find, partial, remove, some } from 'lodash';
+import { delay, find, isArray, partial, remove, some } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
@@ -94,6 +94,10 @@ export default class ConfessionsCreedsContentCard extends Component {
             'confessions-creeds__content-card-chapter--show': showText
         });
 
+        if (!isArray(data)) {
+            return data;
+        }
+
         return (
             <div className={classnames} ref={container => this.container = container}>
                 <div className="confessions-creeds__content-card-section">
@@ -164,7 +168,9 @@ export default class ConfessionsCreedsContentCard extends Component {
 
     render() {
         const { selection } = this.state;
-        const { data, name } = this.props;
+        const { data, date, name } = this.props;
+
+        const isDataDirect = !isArray(data);
 
         return (
             <Card className="confessions-creeds__content-card">
@@ -172,25 +178,33 @@ export default class ConfessionsCreedsContentCard extends Component {
                     className="confessions-creeds__content-card-title"
                     title={name}
                 >
-                    <div className="confessions-creeds__content-card-dropdown-label"> Select a chapter from the dropdown below:</div>
-                    <Paper className="confessions-creeds__chapter-dropdown" zDepth={5}>
-                        <DropDownMenu
-                            className="confessions-creeds__content-card-dropdown"
-                            value={selection}
-                            maxHeight={400}
-                            onChange={this.onSelect}
-                            style={{ width: '100%' }}
-                            autoWidth={false}
-                        >
-                            {
-                                data.map((item, index) => {
-                                    return (
-                                        <MenuItem key={index} value={index + 1} primaryText={`Chapter ${item.chapter}:  ${item.title}`} />
-                                    );
-                                })
-                            }
-                        </DropDownMenu>
-                    </Paper>
+                    {
+                        isDataDirect
+                            ? null
+                            : (
+                                <div>
+                                    <div className="confessions-creeds__content-card-dropdown-label"> Select a chapter from the dropdown below:</div>
+                                    <Paper className="confessions-creeds__chapter-dropdown" zDepth={5}>
+                                        <DropDownMenu
+                                            className="confessions-creeds__content-card-dropdown"
+                                            value={selection}
+                                            maxHeight={400}
+                                            onChange={this.onSelect}
+                                            style={{ width: '100%' }}
+                                            autoWidth={false}
+                                        >
+                                            {
+                                                data.map((item, index) => {
+                                                    return (
+                                                        <MenuItem key={index} value={index + 1} primaryText={`Chapter ${item.chapter}:  ${item.title}`} />
+                                                    );
+                                                })
+                                            }
+                                        </DropDownMenu>
+                                    </Paper>
+                                </div>
+                            )
+                    }
                 </CardTitle>
                 <CardText>
                     {this.renderChapter()}

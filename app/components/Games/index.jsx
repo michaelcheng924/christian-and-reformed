@@ -8,7 +8,7 @@ import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 
-import GAMES from 'app/constants/games';
+import { GAMES } from 'app/constants/global';
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
 import { addScore } from 'app/api/users';
@@ -41,7 +41,7 @@ class Games extends Component {
 
             if (GAMES[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = GAMES[pathname];
+                document.title = GAMES[pathname].title;
             }
         }
     }
@@ -60,7 +60,7 @@ class Games extends Component {
         history.push(value);
 
         if (typeof window !== 'undefined' && GAMES[value]) {
-            document.title = GAMES[value];
+            document.title = GAMES[value].title;
         }
 
         delay(() => {

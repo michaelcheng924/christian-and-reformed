@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { delay, partial } from 'lodash';
+import { delay, get, map, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 
-import CONFESSIONS_CREEDS from 'app/constants/confessions-creeds';
-import { LONDON_BAPTIST, LONDON_BAPTIST_NAME } from 'app/constants/london-baptist.js';
-import { WESTMINSTER, WESTMINSTER_NAME } from 'app/constants/confession-westminster.js';
+import { CONFESSIONS_CREEDS } from 'app/constants/global';
 import { setApp } from 'app/actions/AppActions';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
@@ -38,7 +36,7 @@ class ConfessionsCreeds extends Component {
 
             if (CONFESSIONS_CREEDS[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = CONFESSIONS_CREEDS[pathname];
+                document.title = CONFESSIONS_CREEDS[pathname].title;
             }
         }
     }
@@ -57,7 +55,7 @@ class ConfessionsCreeds extends Component {
         history.push(value);
 
         if (typeof window !== 'undefined' && CONFESSIONS_CREEDS[value]) {
-            document.title = CONFESSIONS_CREEDS[value];
+            document.title = CONFESSIONS_CREEDS[value].title;
         }
 
         delay(() => {
@@ -81,8 +79,17 @@ class ConfessionsCreeds extends Component {
                     autoWidth={false}
                 >
                     <MenuItem value={null} primaryText="Select a confession or creed" disabled />
-                    <MenuItem value="/confessions-creeds/1689-london-baptist-confession" primaryText="1689 London Baptist Confession of Faith" />
-                    <MenuItem value="westminster" primaryText="Westminster Confession of Faith" />
+                    {
+                        map(CONFESSIONS_CREEDS, (value, key) => {
+                            return (
+                                <MenuItem
+                                    key={value.name}
+                                    value={key}
+                                    primaryText={value.name}
+                                />
+                            );
+                        })
+                    }
                 </DropDownMenu>
             </Paper>
         );
@@ -105,19 +112,8 @@ class ConfessionsCreeds extends Component {
             );
         }
 
-        let data;
-        let name;
-
-        switch (selection) {
-            case '/confessions-creeds/1689-london-baptist-confession':
-                data = LONDON_BAPTIST;
-                name = LONDON_BAPTIST_NAME;
-                break;
-            default:
-                data = [];
-                name = 'Select a confession or creed above';
-                break;
-        }
+        const data = get(CONFESSIONS_CREEDS[selection], 'data', []);
+        const name = get(CONFESSIONS_CREEDS[selection], 'title', 'Select a confession or creed above');
 
         return (
             <ConfessionsCreedsContentCard data={data} name={name} />

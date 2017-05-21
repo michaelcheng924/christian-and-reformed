@@ -61,7 +61,7 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/video-audio" component={VideoAudio}/>
                         <Route path="/reformed-church-finder" component={ChurchFinder}/>
-                        <Route path="/confessions-creeds" component={ConfessionsCreeds}/>
+                        <Route path="/confessions-creeds-explorer" component={ConfessionsCreeds}/>
                         <Route path="/games" component={Games} />
                         <Route path="/admin" component={Admin} />
                         {this.renderBack()}

@@ -56,18 +56,20 @@ class SlideOut extends Component {
                         <Card className="slide-out-content__card">
                             <CardText className="slide-out-content__card-description">
                                 <div>
+                                    <h2>Help spread the word!</h2>
+                                    <br />
+                                    <div>Like the Facebook page</div>
                                     <div
                                         className="fb-like"
-                                        data-href="http://reformedtoolbox.com"
+                                        data-href="https://www.facebook.com/christianandreformed/"
                                         data-layout="button_count"
                                         data-action="like"
                                         data-size="small"
                                         data-show-faces="true"
-                                        data-share="true"
                                     />
                                     <br />
                                     <div>
-                                        Visit the <a href="https://www.facebook.com/Christian-and-Reformed-1350918021658490/?fref=ts" target="_blank">Facebook</a> page to talk about this app&mdash;share your experience, request a feature, report a bug, ask a question, or just chat in general!
+                                        Visit the <a href="https://www.facebook.com/christianandreformed/" target="_blank">Facebook</a> page to talk about this app&mdash;share your experience, request a feature, report a bug, ask a question, or just chat in general!
                                     </div>
                                 </div>
                             </CardText>
