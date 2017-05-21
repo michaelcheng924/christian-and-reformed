@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 
-import BAPTIST_CONFESSIONAL_CHURCHES from 'app/constants/baptist-confessional-churches';
+import BAPTIST_CHURCHES from 'app/constants/baptist-churches';
 
 export default class ChurchFinderList extends Component {
     constructor(props) {
@@ -78,11 +78,11 @@ export default class ChurchFinderList extends Component {
                         hintStyle={{color: '#E7E7E7'}}
                         underlineStyle={{borderColor: '#FFF'}}
                     />
-                    <div>{BAPTIST_CONFESSIONAL_CHURCHES.filter(church => church.details.lastUpdated).length}</div>
+                    <div>{BAPTIST_CHURCHES.filter(church => church.details.lastUpdated).length}</div>
                 </div>
                 <div className="church-directory__list">
                     {
-                        BAPTIST_CONFESSIONAL_CHURCHES.map((church, index) => {
+                        BAPTIST_CHURCHES.map((church, index) => {
                             const { name, address, website, familyIntegrated, noConfession, notes, pastors, lastUpdated } = church.details;
 
                             const directionsUrl = `https://maps.google.com?daddr=${address.replace(' ', '+')}`;

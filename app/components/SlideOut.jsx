@@ -56,9 +56,9 @@ class SlideOut extends Component {
                         <Card className="slide-out-content__card">
                             <CardText className="slide-out-content__card-description">
                                 <div>
-                                    <h2>Help spread the word!</h2>
+                                    <h2>How you can help:</h2>
                                     <br />
-                                    <div>Like the Facebook page</div>
+                                    <span>Like the Facebook page</span>
                                     <div
                                         className="fb-like"
                                         data-href="https://www.facebook.com/christianandreformed/"
@@ -67,9 +67,19 @@ class SlideOut extends Component {
                                         data-size="small"
                                         data-show-faces="true"
                                     />
-                                    <br />
+                                    <br /><br />
+                                    <span>Share this website</span>
+                                    <div dangerouslySetInnerHTML={{__html: '<div class="fb-share-button" data-href="http://christianandreformed.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fchristianandreformed.com%2F&amp;src=sdkpreparse">Share</a></div>'}} />
+                                    <br /><br />
                                     <div>
-                                        Visit the <a href="https://www.facebook.com/christianandreformed/" target="_blank">Facebook</a> page to talk about this app&mdash;share your experience, request a feature, report a bug, ask a question, or just chat in general!
+                                        Visit the <a href="https://www.facebook.com/christianandreformed/" target="_blank">Facebook</a> page to...
+                                        <ul>
+                                            <li>Add or edit information for a church</li>
+                                            <li>Request a feature</li>
+                                            <li>Report a bug</li>
+                                            <li>Share your experience</li>
+                                            <li>Just chat about whatever you want</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </CardText>

@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import { defer, each } from 'lodash';
 
-import BAPTIST_CONFESSIONAL_CHURCHES from 'app/constants/baptist-confessional-churches';
+import BAPTIST_CHURCHES from 'app/constants/baptist-churches';
 
 export default class ChurchFinderMap extends Component {
     constructor(props) {
@@ -30,7 +30,7 @@ export default class ChurchFinderMap extends Component {
 
             let infoWindow = {};
 
-            BAPTIST_CONFESSIONAL_CHURCHES.forEach((church, index) => {
+            BAPTIST_CHURCHES.forEach((church, index) => {
                 const { coordinates, details } = church;
                 const { name, address, website, familyIntegrated, noConfession, notes, pastors, lastUpdated } = details;
 

@@ -92,7 +92,7 @@ progress {
     z-index: 1000;
 
     &__toggle {
-        background: #EF6C00;
+        background: #039BE5;
         border: 1px solid #FFF;
         border-top: 0;
         border-radius: 0 0 3px 3px;
@@ -113,12 +113,17 @@ progress {
 
 .slide-out-content {
     align-items: center;
-    background: #EF6C00;
+    background: #039BE5;
     border-bottom: 1px solid #FFF;
     display: flex;
     height: 400px;
     justify-content: center;
     padding: 20px;
+
+    span + div {
+        display: inline-block;
+        margin-left: 6px;
+    }
 
     a {
         color: #689F38;
