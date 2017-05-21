@@ -3,6 +3,19 @@ import request from 'request';
 import { last } from 'lodash';
 import { AppData } from 'app/server/db/user-schema';
 
+AppData.findOne({ name: 'data' }, (err, result) => {
+    if (!result) {
+        const appData = new AppData({
+            name: 'data',
+            data: {
+                orderSalvation: [{name: 'Michael', score: '1:01'}]
+            }
+        });
+
+        appData.save();
+    }
+});
+
 const router = express.Router();
 
 router.post('/getscripture', (req, res) => {
