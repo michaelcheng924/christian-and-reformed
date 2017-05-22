@@ -34,6 +34,8 @@ export default class ChurchFinderMap extends Component {
                 const { coordinates, details } = church;
                 const { name, address, website, familyIntegrated, noConfession, notes, pastors, lastUpdated } = details;
 
+                if (!lastUpdated) { return; }
+
                 const icon = this.getIcon(familyIntegrated, noConfession);
 
                 var marker = new google.maps.Marker({

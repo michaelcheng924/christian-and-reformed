@@ -1,4 +1,4 @@
-// https://maps.googleapis.com/maps/api/geocode/json?address=19-23+Queen+Street,+Walloon,+Qld+4306&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
+// https://maps.googleapis.com/maps/api/geocode/json?address=3385+E.+Shields,+Fresno+CA+93726&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
 
 const CHURCHES = [  
     {  
@@ -51,12 +51,7 @@ const CHURCHES = [
             address: "Samford Farmers Hall, 30 Main St, Samford Village QLD 4520, Australia",
             region: "AUS",
             website: "http://www.sbcq.org/",
-            notes: [
-                {
-                    type: 'confession',
-                    data: '1689'
-                }
-            ]
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2031,7 +2026,31 @@ const CHURCHES = [
             name: "Phoenix Reformed Baptist Church",
             address: "3805 North 12th Street Phoenix, Arizona  85014",
             region: "AZ",
-            website: "http://www.prbc.org/"
+            website: "http://www.prbc.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.prbc.org/sermons.htm'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Phoenix-Reformed-Baptist-Church/122232514453757?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Donald Fry',
+                    image: 'http://millervalleybaptist.org/wordpress/wp-content/myimages/ordinationfamily.jpg'
+                },
+                {
+                    name: 'James White',
+                    image: 'http://wp.patheos.com.s3.amazonaws.com/blogs/formerlyfundie/files/2014/06/Dr.-White.jpg'
+                },
+                {
+                    name: 'James Callahan'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2043,8 +2062,32 @@ const CHURCHES = [
             name: "Sovereign Grace Bible Church",
             address: "2940 W. Bethany Home Rd. Phoenix, AZ 85017",
             region: "AZ",
-            website: "http://www.sovgracephoenix.com/"
-
+            website: "http://www.sovgracephoenix.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://sovgracephoenix.com/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mike Green',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/GreenMike-01.png'
+                },
+                {
+                    name: 'John Tock',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/TockJohn.png'
+                },
+                {
+                    name: 'Dan Caffese',
+                    image: 'http://www.sermonaudio.com/images/overlayphoto.PNG'
+                },
+                {
+                    name: 'Victor Harris',
+                    image: 'http://sgbcphx.org/wp-content/uploads/2014/07/elderphoto2008.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
       }
     },
     {  
@@ -2054,10 +2097,26 @@ const CHURCHES = [
         },
         details: {  
             name: "Tucson Reformed Baptist Church",
-            address: "1150 N Country Club Drive Tucson, AZ 85716",
+            address: "1603 S Eastside Loop #209 Tucson, AZ 85710",
             region: "AZ",
-            website: "http://www.tucsonreformedbaptist.org/"
-
+            website: "http://www.tucsonreformedbaptist.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=tucsonreformed'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/tucsonrbc/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Robert Cosby',
+                    image: 'http://www.tucsonreformedbaptist.org/wp-content/uploads/2011/06/DSCF7663-e1384751666140-150x150.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
       }
     },
     {  
@@ -2069,7 +2128,28 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "Conway, Arkansas",
             region: "AR",
-            website: ""
+            website: "http://www.gbcconway.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gbcconway.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/gbcconway/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jeff Johnson',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+                },
+                {
+                    name: 'Wyeth Wallis',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2079,9 +2159,20 @@ const CHURCHES = [
         },
         details: {  
             name: "Legacy Baptist Church",
-            address: "Bentonville, AR 72712",
+            address: "1937 South Liberty Bell Road, Rogers, AR",
             region: "AR",
-            website: "http://www.lbcofnwa.com/"
+            website: "http://www.lbcofnwa.com/",
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Liberty Bell Comm. Bldg'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://lbcofnwa.com/sermon-library'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2093,43 +2184,71 @@ const CHURCHES = [
             name: "Texarkana Reformed Baptist Church",
             address: "1801 South State Line Avenue  Texarkana, Arkansas 71854",
             region: "AR",
-            website: "http://texarkanarbc.org/"
+            website: "http://texarkanarbc.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.texarkanarbc.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/TexarkanaReformedBaptistChurch/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Russ Bennett',
+                    image: 'http://www.texarkanarbc.org/wp-content/uploads/2007/07/Officer-Russ-150x150.jpg'
+                },
+                {
+                    name: 'Jimmy DeMoss',
+                    image: 'http://www.texarkanarbc.org/wp-content/uploads/2007/07/Officer-Jimmy-150x150.jpg'
+                },
+                {
+                    name: 'Martin Rizley',
+                    image: 'http://www.texarkanarbc.org/wp-content/uploads/2007/07/Elder-Martin-150x150.jpg'
+                },
+                {
+                    name: 'Henry Wood (Emeritus)',
+                    image: 'http://www.texarkanarbc.org/images/henry.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
-    {  
-        coordinates: {
-            lat: 34.950232,
-            lng: -92.008579
-        },
-        details: {  
-            name: "The Bible Church of Cabot",
-            address: "1400 S. Pine Cabot, AR 72023",
-            region: "AR",
-            website: "http://www.cabotbible.com/"
-        }
-    },
-    {  
-        coordinates: {
-            lat: 37.590418,
-            lng: -120.947392
-        },
-        details: {  
-            name: "Berean Baptist Church",
-            address: "2609 Lawrence St Ceres, CA 95307",
-            region: "CA",
-            website: "http://www.bereanbaptist.info/"
-        }
-    },
+    // {  
+    //     coordinates: {
+    //         lat: 34.950232,
+    //         lng: -92.008579
+    //     },
+    //     details: {  
+    //         name: "The Bible Church of Cabot",
+    //         address: "1400 S. Pine Cabot, AR 72023",
+    //         region: "AR",
+    //         website: "http://www.cabotbible.com/"
+    //     }
+    // },
     {  
         coordinates: {
             lat: 33.915148,
             lng: -117.890178
         },
         details: {  
-            name: "Brea Center Baptist Church",
-            address: "251 S. Randolph Ave., Suite B Brea, CA 92821",
+            name: "Grace Covenant Community Church",
+            address: "251 S Randolph Ave, Brea, CA 92821",
             region: "CA",
-            website: "http://www.breacenterchurch.org/"
+            website: "http://g3conline.org/",
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Golden Gate Seminary'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Grace-Covenant-Community-Church/217373388294920?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2141,7 +2260,22 @@ const CHURCHES = [
             name: "Centinela Baptist Church",
             address: "4730 W. 152nd Street Lawndale, CA 90260",
             region: "CA",
-            website: ""
+            website: "http://centinelabaptistchurch.com/",
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Centinela-Baptist-Church/102218989821731?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Larry Smith'
+                },
+                {
+                    name: 'Chris Beamer'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2151,9 +2285,26 @@ const CHURCHES = [
         },
         details: {  
             name: "Cornerstone Bible Church",
-            address: "114 S. Gemstone St. Ridgecrest, CA 93555",
+            address: "443 W. Inyokern Road, Ridgecrest, CA 93555",
             region: "CA",
-            website: "http://www.cbcridgecrest.org/"
+            website: "http://www.cbcridgecrest.org/",
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Cornerstone-Bible-Church/108132879228744?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Daniel Warda',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/cornerstone-bible-church-ca/warda-family-photo.jpg'
+                },
+                {
+                    name: 'Lyn Whitcomb',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/cornerstone-bible-church-ca/img_0217-copy.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2165,7 +2316,24 @@ const CHURCHES = [
             name: "Christ Reformed Baptist Church",
             address: "2210 East Vista Way Vista, CA 92084",
             region: "CA",
-            website: "http://www.christrbc.com/"
+            website: "http://www.christrbc.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.christrbc.com/sermons.htm'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jason Walter',
+                    image: 'http://www.christrbc.com/DSCN4677.jpg'
+                },
+                {
+                    name: 'Jim Renihan',
+                    image: 'http://www.christrbc.com/renihan-j.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2177,7 +2345,29 @@ const CHURCHES = [
             name: "Faith Community Church",
             address: "723 South D Street Oxnard, CA 93030",
             region: "CA",
-            website: "http://www.fccoxnard.org/"
+            website: "http://www.fccoxnard.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.fccoxnard.org/sermons.php'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Faith-Community-Church/111683788867244?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Rick Anderson'
+                },
+                {
+                    name: 'Tim Sheehy'
+                },
+                {
+                    name: 'Jonathan Downing'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2189,7 +2379,24 @@ const CHURCHES = [
             name: "Grace Baptist Church ",
             address: "1009 E. Pine Avenue Lompoc, CA 93436",
             region: "CA",
-            website: ""
+            website: "http://fsbclompoc.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/search.asp?speakeronly=true&currsection=sermonsspeaker&keyword=David_Pauley'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Grace-Baptist-Church-of-Lompoc-176526205815004/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'David Pauley',
+                    image: 'http://fsbclompoc.com/wp-content/uploads/Pastor-David-Pauley-2-213x300.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2201,31 +2408,53 @@ const CHURCHES = [
             name: "First Baptist Church of Monterey",
             address: "600 Hawthorne Street Monterey, California  93940",
             region: "CA",
-            website: "http://www.fbcmonterey.org/"
+            website: "http://www.fbcmonterey.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.fbcmonterey.org/listen/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/fbcmonterey/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Nathan M Rehn',
+                    image: 'https://static1.squarespace.com/static/53c5782ae4b0b121aee4c10e/t/54020f2de4b086132f5bb32b/1409421101954/Charlotte.jpg?format=750w'
+                },
+                {
+                    name: 'Jeremy Wong',
+                    image: 'https://static1.squarespace.com/static/53c5782ae4b0b121aee4c10e/t/544fe811e4b0606d81679f0a/1414522915445/?format=750w'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
         coordinates: {
-            lat: 36.80871,
-            lng: -119.710553
+            lat: 36.7800283,
+            lng: 36.7800283
         },
         details: {  
             name: "Free Grace Church",
-            address: "63 West Shaw Ave Clovis CA 93612",
+            address: "3385 E. Shields, Fresno CA 93726",
             region: "CA",
-            website: "http://www.freegracefresno.com/"
-        }
-    },
-    {  
-        coordinates: {
-            lat: 34.678967,
-            lng: -118.183009
-        },
-        details: {  
-            name: "Free Grace Church",
-            address: "43824 30th Street West Lancaster, CA 93536",
-            region: "CA",
-            website: "http://www.freegracechurch.com/"
+            website: "http://www.freegracefresno.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.freegracefresno.com/feeds/sermons/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Matt Troupe',
+                    image: 'https://static1.squarespace.com/static/53f52348e4b01f35ef6d4211/t/5413c7dfe4b01d62a17295f3/1410582495927/5662353064_bfdf436a96_b.jpg?format=750w'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2237,7 +2466,32 @@ const CHURCHES = [
             name: "Gateway Church",
             address: "811 Marylin Avenue Livermore, CA 94551",
             region: "CA",
-            website: "http://www.lrbc.info/"
+            website: "http://www.lrbc.info/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=lrbc'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Gateway-Church/484805044907992?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mike Kelley',
+                    image: 'http://www.gatewaylivermore.org/wp-content/uploads/2017/05/Mike-Kelley-e1493693156556.png'
+                },
+                {
+                    name: 'Larry Trummel',
+                    image: 'http://www.gatewaylivermore.org/wp-content/uploads/2013/01/pastorlarry.png'
+                },
+                {
+                    name: 'Bill Fletcher',
+                    image: 'http://www.gatewaylivermore.org/wp-content/uploads/2013/01/bill1.png'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2249,7 +2503,18 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "655 West 11th Avenue Escondido, CA 92025",
             region: "CA",
-            website: "http://www.grcbible.org/"
+            website: "http://www.grcbible.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://grcbible.org/category/audio/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Grace-Bible-Church-of-North-County-164525926932647/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2261,7 +2526,28 @@ const CHURCHES = [
             name: "Grace Bible Church - San Diego",
             address: "7250 Eckstrom St. San Diego, CA 92111",
             region: "CA",
-            website: "http://www.gbc-sd.org/"
+            website: "http://www.gbc-sd.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gbc-sd.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/gracebiblesandiego/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Curt Arend',
+                    image: 'https://static1.squarespace.com/static/570adb9ff8508296818523f9/t/590fb22eb3db2bcaf5e0ae9f/1494200884237/?format=750w'
+                },
+                {
+                    name: 'Steve Robinson',
+                    image: 'https://static1.squarespace.com/static/570adb9ff8508296818523f9/t/590fb26fbe65940ba99d53ba/1494200948597/?format=750w'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2273,7 +2559,28 @@ const CHURCHES = [
             name: "Grace Providence Church",
             address: "Bellflower, CA",
             region: "CA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2285,7 +2592,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "1386 Carson Road Placerville, CA 95667",
             region: "CA",
-            website: "http://www.gracereformedbc.net/"
+            website: "http://www.gracereformedbc.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2297,7 +2625,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "Palmdale, CA",
             region: "CA",
-            website: "http://www.grbcav.org/"
+            website: "http://www.grbcav.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2309,7 +2658,28 @@ const CHURCHES = [
             name: "Immanuel Baptist Church",
             address: "1424 24th Street Sacramento, CA 95816",
             region: "CA",
-            website: "http://www.immanuelbc.net/"
+            website: "http://www.immanuelbc.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2321,7 +2691,28 @@ const CHURCHES = [
             name: "Providence Bible Church",
             address: "709 Lakewood Drive Sunnyvale, CA  94088",
             region: "CA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2333,7 +2724,28 @@ const CHURCHES = [
             name: "Mountain Reformed Church",
             address: "22972 Waters Drive Crestline, CA 92325",
             region: "CA",
-            website: "http://www.mountainreformed.com/"
+            website: "http://www.mountainreformed.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2345,7 +2757,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Riverside",
             address: "7250 Mission Boulevard, Riverside, CA 92509",
             region: "CA",
-            website: "http://www.rbcr.org/"
+            website: "http://www.rbcr.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2357,7 +2790,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "1168 East G Street Ontario, CA 91764",
             region: "CA",
-            website: "http://www.sgbc-ontario.us/"
+            website: "http://www.sgbc-ontario.us/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2369,7 +2823,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "271 West Edmundson Ave. Morgan Hill, CA., 95037",
             region: "CA",
-            website: "http://www.sgbcsv.org/"
+            website: "http://www.sgbcsv.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2381,7 +2856,28 @@ const CHURCHES = [
             name: "Trinity Reformed Baptist Church",
             address: "14407 E. Rosecrans Ave. La Mirada, CA  90638",
             region: "CA",
-            website: "http://www.reformedbaptist.net/"
+            website: "http://www.reformedbaptist.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2393,7 +2889,28 @@ const CHURCHES = [
             name: "Christ Church",
             address: "Denver, CO 80236",
             region: "CO",
-            website: "http://christchurchdenver.com/"
+            website: "http://christchurchdenver.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2405,7 +2922,28 @@ const CHURCHES = [
             name: "Denver Sound Church",
             address: "5800 West 6th Avenue   Lakewood, CO 80214",
             region: "CO",
-            website: "http://www.denversoundchurch.org/"
+            website: "http://www.denversoundchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2417,7 +2955,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Northern Colorado",
             address: "7493 Old Mill Trail Boulder, CO 80301",
             region: "CO",
-            website: "http://www.rbcnc.com/"
+            website: "http://www.rbcnc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2429,7 +2988,28 @@ const CHURCHES = [
             name: "First Baptist Church",
             address: "18 E. Main St. Plainville, CT 06062",
             region: "CT",
-            website: "http://www.fbcplainvillect.org/"
+            website: "http://www.fbcplainvillect.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2441,7 +3021,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church ",
             address: "1225 N. High Street East Haven, CT 06512",
             region: "CT",
-            website: "http://www.grbcct.org/"
+            website: "http://www.grbcct.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2453,7 +3054,28 @@ const CHURCHES = [
             name: "Ahava Baptist Church",
             address: "6015 W. Farkas Rd  Plant City, FL 33567",
             region: "FL",
-            website: "http://www.ahavabaptist.com/"
+            website: "http://www.ahavabaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2465,7 +3087,28 @@ const CHURCHES = [
             name: "Bethel Community Church",
             address: "Sarasota, Florida",
             region: "FL",
-            website: "http://www.bethelcomchurch.org/index.html"
+            website: "http://www.bethelcomchurch.org/index.html",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2477,7 +3120,28 @@ const CHURCHES = [
             name: "Covenant Reformed Baptist Church",
             address: "3600 McNeil Rd.  Apopka, FL 32703",
             region: "FL",
-            website: "http://www.covenantreformedbaptist.com/"
+            website: "http://www.covenantreformedbaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2489,7 +3153,28 @@ const CHURCHES = [
             name: "Cornerstone Baptist Church",
             address: "3370 Snow Hill Road Chuluota, Florida 32766",
             region: "FL",
-            website: "http://www.cornerstoneorlando.org/"
+            website: "http://www.cornerstoneorlando.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2501,7 +3186,28 @@ const CHURCHES = [
             name: "Cornerstone Bible Church",
             address: "12268 SW 128th St. Miami, Florida, USA 33186",
             region: "FL",
-            website: "http://www.cornerstonebiblechurch.com/"
+            website: "http://www.cornerstonebiblechurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2513,7 +3219,28 @@ const CHURCHES = [
             name: "Emmanuel Baptist Church",
             address: "5391 Johnson Road Coconut Creek, Florida 33073",
             region: "FL",
-            website: "http://www.ebcfl.org/"
+            website: "http://www.ebcfl.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2525,7 +3252,28 @@ const CHURCHES = [
             name: "Faith Baptist Church",
             address: "500 North Bumby Avenue Orlando, FL 32803",
             region: "FL",
-            website: "http://www.faithbaptistorlando.org"
+            website: "http://www.faithbaptistorlando.org",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2537,7 +3285,28 @@ const CHURCHES = [
             name: "Faith Reformed Baptist Church",
             address: "3910 S. Washington Ave. Suite 107, Titusville, FL 32780",
             region: "FL",
-            website: "http://frb.church"
+            website: "http://frb.church",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2549,7 +3318,28 @@ const CHURCHES = [
             name: "Forest Hills Baptist Church",
             address: "2625 South Street, Titusville, FL 32780",
             region: "FL",
-            website: "http://foresthillsbaptist.com"
+            website: "http://foresthillsbaptist.com",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2561,7 +3351,28 @@ const CHURCHES = [
             name: "Free Grace Church of Tampa Bay",
             address: "19111 N. Livingston Ave Lutz, FL 33559",
             region: "FL",
-            website: "http://www.tampareformedbaptistchurch.com/"
+            website: "http://www.tampareformedbaptistchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2573,7 +3384,28 @@ const CHURCHES = [
             name: "Grace Chapel",
             address: "Holy Cross Lutheran Academy S.R. 46, 1 mile West of I-4, Sanford, Florida",
             region: "FL",
-            website: "http://www.gracereformedchapel.org/"
+            website: "http://www.gracereformedchapel.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2585,7 +3417,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "1300 Ceitus Terrace, Cape Coral, FL 33991",
             region: "FL",
-            website: "http://truegraceofgod.org/"
+            website: "http://truegraceofgod.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2597,7 +3450,28 @@ const CHURCHES = [
             name: "Grace Baptist Church of North Tampa Bay ",
             address: "11803 State Road 52 Bayonet Point, FL 34669",
             region: "FL",
-            website: "http://www.gbcwp.com/"
+            website: "http://www.gbcwp.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2609,7 +3483,28 @@ const CHURCHES = [
             name: "Highlands Grace Reformed Church",
             address: "516 N. Pine St.  Sebring, FL 33870",
             region: "FL",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2621,7 +3516,28 @@ const CHURCHES = [
             name: "Iglesia Cristiana Camino Nuevo",
             address: "6790 SW 12th. Street  Miami, FL 33144",
             region: "FL",
-            website: "http://www.iglesiacaminonuevo.com/"
+            website: "http://www.iglesiacaminonuevo.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2633,7 +3549,28 @@ const CHURCHES = [
             name: "Iglesia Bautista La Gracia",
             address: "10904 Winterview Drive, Naples, FL 34109",
             region: "FL",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2645,7 +3582,28 @@ const CHURCHES = [
             name: "Iglesia Bautista Independiente",
             address: "15078 SW 56th St. Miami, FL  33185",
             region: "FL",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2657,7 +3615,28 @@ const CHURCHES = [
             name: "Monteocha Baptist Church",
             address: "9420 N. County Road 225  Gainesville, FL 32609",
             region: "FL",
-            website: "http://www.monteochabaptist.org/"
+            website: "http://www.monteochabaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2669,7 +3648,28 @@ const CHURCHES = [
             name: "Mount Zion Bible Church",
             address: "2603 West Wright St.  Pensacola, FL 32505",
             region: "FL",
-            website: "http://www.mountzion.org/"
+            website: "http://www.mountzion.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2681,7 +3681,28 @@ const CHURCHES = [
             name: "Orlando Grace Church",
             address: "455 Maitland Avenue  Altamonte Springs, Florida",
             region: "FL",
-            website: "http://www.orlandograce.org/"
+            website: "http://www.orlandograce.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2693,7 +3714,28 @@ const CHURCHES = [
             name: "Providence Baptist Church",
             address: "4471 W. Sanction Rd.  Lecanto, FL",
             region: "FL",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2705,7 +3747,28 @@ const CHURCHES = [
             name: "Riverbend Community Church",
             address: "2080 West Granada Blvd Ormond Beach, FL 32174",
             region: "FL",
-            website: "http://www.riverbendchurch.com/"
+            website: "http://www.riverbendchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2717,7 +3780,28 @@ const CHURCHES = [
             name: "Westgate Baptist Church",
             address: "901 N.W. 112th Avenue Plantation, FL  33325",
             region: "FL",
-            website: "http://www.westgatebaptist.org/"
+            website: "http://www.westgatebaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2729,7 +3813,28 @@ const CHURCHES = [
             name: "West Pointe Baptist Ministries",
             address: "Gainesville, Florida 32635",
             region: "FL",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2741,7 +3846,28 @@ const CHURCHES = [
             name: "Arbor Heights Baptist Church",
             address: "3506 Reynolds Rd.  Douglasville, Georgia 30135",
             region: "GA",
-            website: "http://www.arborheightsbc.com/"
+            website: "http://www.arborheightsbc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2753,7 +3879,28 @@ const CHURCHES = [
             name: "Atlanta Reformation Fellowship",
             address: "4651 Britt Road Norcross, GA 30093",
             region: "GA",
-            website: "http://www.atlantareformationfellowship.com/"
+            website: "http://www.atlantareformationfellowship.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2765,7 +3912,28 @@ const CHURCHES = [
             name: "Berean Baptist Church",
             address: "2356 Clay Road Austell, GA 30106",
             region: "GA",
-            website: "http://www.bereanchurchps.org/"
+            website: "http://www.bereanchurchps.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2777,7 +3945,28 @@ const CHURCHES = [
             name: "Christ Reformed Church",
             address: "2209 Sunny Hill Road Lawrenceville, GA 30043",
             region: "GA",
-            website: "http://www.christreformedchurch.org/"
+            website: "http://www.christreformedchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2789,7 +3978,28 @@ const CHURCHES = [
             name: "Emmanuel Baptist Church",
             address: "1618 Waycross Highway Jesup GA 31545",
             region: "GA",
-            website: "http://ebcjesup.net/"
+            website: "http://ebcjesup.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2801,7 +4011,28 @@ const CHURCHES = [
             name: "Ephesus Church",
             address: "226 Goshen Rd Rincon, GA 31326",
             region: "GA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2813,7 +4044,28 @@ const CHURCHES = [
             name: "Faith Bible Church",
             address: "4907 Hwy 34 E Sharpsburg, GA 30277",
             region: "GA",
-            website: "http://www.faithbiblechurch.us/"
+            website: "http://www.faithbiblechurch.us/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2825,7 +4077,28 @@ const CHURCHES = [
             name: "Grace Covenant Baptist Church of Gainesville, GA",
             address: "Gainesville, GA. 30504",
             region: "GA",
-            website: "http://www.gracecovenantbaptist.com/"
+            website: "http://www.gracecovenantbaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2837,7 +4110,28 @@ const CHURCHES = [
             name: "Grace Community Church",
             address: "258 Beartooth Parkway Dawsonville, GA  30534",
             region: "GA",
-            website: "http://www.gracechurchdawsonville.org/"
+            website: "http://www.gracechurchdawsonville.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2849,7 +4143,28 @@ const CHURCHES = [
             name: "Grace Church",
             address: "Alpharetta, GA 30009",
             region: "GA",
-            website: "http://www.enjoygrace.com/"
+            website: "http://www.enjoygrace.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2861,7 +4176,28 @@ const CHURCHES = [
             name: "Grace Baptist Mission",
             address: "Commerce, GA 30529",
             region: "GA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2873,7 +4209,28 @@ const CHURCHES = [
             name: "Grace Church of North Atlanta",
             address: "4511 Jones Bridge Circle, N.W.  Norcross, GA 30092",
             region: "GA",
-            website: "http://www.gracechurchatlanta.org/"
+            website: "http://www.gracechurchatlanta.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2885,7 +4242,28 @@ const CHURCHES = [
             name: "Heritage Baptist Church",
             address: "150 Lester Road  Fayetteville, GA  30214",
             region: "GA",
-            website: "http://www.heritagerbc.org/"
+            website: "http://www.heritagerbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2897,7 +4275,28 @@ const CHURCHES = [
             name: "New Hope Baptist Church",
             address: "234 8th Street Saint Marys, GA 31558",
             region: "GA",
-            website: "http://www.newhopebaptistchurch.wordpress.com/"
+            website: "http://www.newhopebaptistchurch.wordpress.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2909,7 +4308,28 @@ const CHURCHES = [
             name: "Redeemer Baptist Church",
             address: "6420 Shawn Dr. Lizella, GA 31052",
             region: "GA",
-            website: "http://www.redeemer-baptist.org/"
+            website: "http://www.redeemer-baptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2921,7 +4341,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "106 Wyoming St. Adel, GA 31620",
             region: "GA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2933,7 +4374,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "121 Creekside Drive  Leesburg, Georgia 31763",
             region: "GA",
-            website: "http://www.sgbcleesburg.com/"
+            website: "http://www.sgbcleesburg.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2945,7 +4407,28 @@ const CHURCHES = [
             name: "Trinity Reformed Baptist Church",
             address: "543 Colwell Road Jackson  GA  30233",
             region: "GA",
-            website: "http://www.trinityrbc.org/"
+            website: "http://www.trinityrbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2957,7 +4440,28 @@ const CHURCHES = [
             name: "Central Baptist Church",
             address: "1217 Nehoa St. Honolulu, HI 96822",
             region: "HI",
-            website: "http://www.centralbaptisthawaii.org/"
+            website: "http://www.centralbaptisthawaii.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2969,7 +4473,28 @@ const CHURCHES = [
             name: "Honolulu Bible Church",
             address: "1844 Palolo Ave Honolulu, HI 96816",
             region: "HI",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2981,7 +4506,28 @@ const CHURCHES = [
             name: "Port Cities Reformed Baptist Church",
             address: "Lewiston, Idaho 83501",
             region: "ID",
-            website: "http://www.portcitiesreformed.org/"
+            website: "http://www.portcitiesreformed.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2993,7 +4539,28 @@ const CHURCHES = [
             name: "Sovereign Grace Fellowship",
             address: "1311 6th St. S. Nampa ID 83651",
             region: "ID",
-            website: "http://www.sovereigngracefellowship.org/"
+            website: "http://www.sovereigngracefellowship.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3005,7 +4572,28 @@ const CHURCHES = [
             name: "Bible Baptist Church",
             address: "123 South Busse Rd Mount Prospect, IL 60056",
             region: "IL",
-            website: "http://www.kjbbc.org/"
+            website: "http://www.kjbbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3017,7 +4605,28 @@ const CHURCHES = [
             name: "Christ Bible Church",
             address: "517 Jubilee Lane Germantown Hills, IL  61548",
             region: "IL",
-            website: "http://www.christbiblechurch.net/"
+            website: "http://www.christbiblechurch.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3029,7 +4638,28 @@ const CHURCHES = [
             name: "Grace Covenant Church",
             address: "355 E. Chicago St. Elgin, IL 60120",
             region: "IL",
-            website: "http://www.gracecovenantchurch.net/"
+            website: "http://www.gracecovenantchurch.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3041,7 +4671,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "7721 N. Alpine Road  Rockford, IL  61131",
             region: "IL",
-            website: "http://www.grbcrockford.org/"
+            website: "http://www.grbcrockford.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3053,7 +4704,28 @@ const CHURCHES = [
             name: "Heritage of Faith Church",
             address: "Waubonsee Community College Sugar Grove, Illinois",
             region: "IL",
-            website: "http://www.heritageoffaith.org/"
+            website: "http://www.heritageoffaith.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3065,7 +4737,28 @@ const CHURCHES = [
             name: "Hope Reformed Baptist Fellowship",
             address: "17171 S. 84th Ave. Tinley Park, IL 60477",
             region: "IL",
-            website: "http://www.hopereformedbaptistchurch.com"
+            website: "http://www.hopereformedbaptistchurch.com",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3077,7 +4770,28 @@ const CHURCHES = [
             name: "Immanuel Baptist Church",
             address: "811 South Vale Street Bloomington, Illinois 61701",
             region: "IL",
-            website: "http://www.immanuelhomepage.org/"
+            website: "http://www.immanuelhomepage.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3089,7 +4803,28 @@ const CHURCHES = [
             name: "Living Hope Bible Church ",
             address: "6N171 Gary Avenue Roselle, IL 60172",
             region: "IL",
-            website: "http://www.livinghopechurch.net/"
+            website: "http://www.livinghopechurch.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3101,7 +4836,28 @@ const CHURCHES = [
             name: "Iglesia Esperanza",
             address: "7020 Barrington Road Hanover Park, Illinois 60133",
             region: "IL",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3113,7 +4869,28 @@ const CHURCHES = [
             name: "New Life Fellowship Church",
             address: "294 Evergreen Drive Vernon Hills, IL 60061",
             region: "IL",
-            website: "http://www.newlifevh.org/"
+            website: "http://www.newlifevh.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3125,7 +4902,28 @@ const CHURCHES = [
             name: "Sycamore Baptist Church",
             address: "5323 180th Street North  East Moline, IL 61244",
             region: "IL",
-            website: "http://www.sycamorebaptistchurch.com/"
+            website: "http://www.sycamorebaptistchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3137,7 +4935,28 @@ const CHURCHES = [
             name: "Christ's Covenant Church",
             address: "2090 E. Pierceton Road Winona Lake, IN 46590",
             region: "IN",
-            website: "http://www.christscovenant.org/"
+            website: "http://www.christscovenant.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3149,7 +4968,28 @@ const CHURCHES = [
             name: "Cornerstone Fellowship",
             address: "3665 Bell Road Newburgh, IN  47630",
             region: "IN",
-            website: "http://www.cornerstone-fellowship.org/"
+            website: "http://www.cornerstone-fellowship.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3161,7 +5001,28 @@ const CHURCHES = [
             name: "Edgewood Baptist Church",
             address: "3743 Nichol Avenue Anderson, IN 46011",
             region: "IN",
-            website: "http://www.edgewoodbaptistchurch.net/"
+            website: "http://www.edgewoodbaptistchurch.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3173,7 +5034,28 @@ const CHURCHES = [
             name: "Eternal Grace Baptist Church of New Maysville",
             address: "Bainbridge, Indiana",
             region: "IN",
-            website: "http://www.link2000.net/homes/users/preacher/index.html"
+            website: "http://www.link2000.net/homes/users/preacher/index.html",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3185,7 +5067,28 @@ const CHURCHES = [
             name: "First Baptist Church",
             address: "1010 E. 126th St. Carmel, IN 46033",
             region: "IN",
-            website: "http://www.fbccarmel.com/"
+            website: "http://www.fbccarmel.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3197,7 +5100,28 @@ const CHURCHES = [
             name: "Grace Baptist Fellowship",
             address: "475 Anchorage Road Warsaw, IN 46580",
             region: "IN",
-            website: "http://www.gbcwarsaw.com/"
+            website: "http://www.gbcwarsaw.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3209,7 +5133,28 @@ const CHURCHES = [
             name: "Grace Fellowship Church",
             address: "535 S. Birkey St Bremen, IN 46506",
             region: "IN",
-            website: "http://www.gfcbremen.com/"
+            website: "http://www.gfcbremen.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3221,7 +5166,28 @@ const CHURCHES = [
             name: "Hancock Reformed Baptist Church",
             address: "944 E. Davis Rd. Greenfield, IN 46140",
             region: "IN",
-            website: "http://www.hrbchurch.org/"
+            website: "http://www.hrbchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3233,7 +5199,28 @@ const CHURCHES = [
             name: "Heritage Reformed Baptist Church",
             address: "Franklin, Indiana 46131",
             region: "IN",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3245,7 +5232,28 @@ const CHURCHES = [
             name: "Heritage Bible Fellowship",
             address: "1720 W. 38th St. Marion, IN.  46953",
             region: "IN",
-            website: "http://www.heritagebiblefellowship.com/"
+            website: "http://www.heritagebiblefellowship.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3257,7 +5265,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "12550 Promise Creek Ln, Suite 112, Fishers, IN",
             region: "IN",
-            website: "http://www.prbcindy.com/"
+            website: "http://www.prbcindy.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3269,7 +5298,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church",
             address: "701 State Street Tama, IA 52339",
             region: "IA",
-            website: "www.sermonaudio.com/rbctama"
+            website: "www.sermonaudio.com/rbctama",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3281,7 +5331,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Topeka, KS",
             address: "321 SE Stanton Road Tecumseh, KS 66542",
             region: "KS",
-            website: "http://reformingworship.org/main/church/home"
+            website: "http://reformingworship.org/main/church/home",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3293,7 +5364,28 @@ const CHURCHES = [
             name: "New Hope Baptist Church",
             address: "882 W. Hwy 36 Seneca, KS 66538",
             region: "KS",
-            website: "http://www.sermonaudio.com/newhopeks"
+            website: "http://www.sermonaudio.com/newhopeks",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3305,7 +5397,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Kansas City",
             address: "24450 W. 83rd St. Lenexa, Kansas 66227",
             region: "KS",
-            website: "http://www.reformedbaptistkc.org/"
+            website: "http://www.reformedbaptistkc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3317,7 +5430,28 @@ const CHURCHES = [
             name: "Trinity Reformed Baptist Church",
             address: "Topeka, KS 66614",
             region: "KS",
-            website: "http://www.trinityreformedbaptist.org/"
+            website: "http://www.trinityreformedbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3329,7 +5463,28 @@ const CHURCHES = [
             name: "Covenant Baptist Church",
             address: "1021 Market Street, Henderson KY 42420",
             region: "KY",
-            website: "http://covenantbaptisthenderson.org/"
+            website: "http://covenantbaptisthenderson.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3341,7 +5496,28 @@ const CHURCHES = [
             name: "Crossroads Baptist Church",
             address: "Callhoun, KY 42327",
             region: "KY",
-            website: "http://www.crossroads-baptist-church.org/"
+            website: "http://www.crossroads-baptist-church.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3353,7 +5529,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "1501 26th St. Owensboro, KY 42303",
             region: "KY",
-            website: "http://www.grbco.org/"
+            website: "http://www.grbco.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3365,7 +5562,28 @@ const CHURCHES = [
             name: "Green River Area Deaf Fellowship",
             address: "3587 Hwy 54 Owensboro, KY 42301",
             region: "KY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3377,7 +5595,28 @@ const CHURCHES = [
             name: "Heritage Baptist Church",
             address: "Elizabethtown, KY",
             region: "KY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3389,7 +5628,28 @@ const CHURCHES = [
             name: "Heritage Baptist Church",
             address: "3585 Thruston-Dermont Rd. Owensboro, KY 42303",
             region: "KY",
-            website: "http://www.hbcowensboro.org/"
+            website: "http://www.hbcowensboro.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3401,7 +5661,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Louisville",
             address: "3400 Wilderness Trail, Louisville, KY 40299",
             region: "KY",
-            website: "http://www.rbclouisville.com/"
+            website: "http://www.rbclouisville.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3413,7 +5694,28 @@ const CHURCHES = [
             name: "Berean Bible Church",
             address: "2003 Fourth St Jonesville, LA 71343",
             region: "LA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3425,7 +5727,28 @@ const CHURCHES = [
             name: "Covenant Baptist Church",
             address: "1700 E WIllow St Lafayette, LA",
             region: "LA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3437,7 +5760,28 @@ const CHURCHES = [
             name: "First Baptist Church",
             address: "12329 Jackson Street, Clinton, LA 70722",
             region: "LA",
-            website: "http://www.fbcclintonla.com/"
+            website: "http://www.fbcclintonla.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3449,7 +5793,28 @@ const CHURCHES = [
             name: "Grace Fellowship Baptist Church",
             address: "26954 LA Highway 42 Springfield, LA 70462",
             region: "LA",
-            website: "http://www.gfbcla.com/"
+            website: "http://www.gfbcla.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3461,7 +5826,28 @@ const CHURCHES = [
             name: "Providence Baptist Church",
             address: "Ball, LA 71405",
             region: "LA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3473,7 +5859,28 @@ const CHURCHES = [
             name: "Sovereign Grace Fellowship",
             address: "2021 Gause Blvd. East Slidell, LA 70461",
             region: "LA",
-            website: "http://www.sgfellowship.org/"
+            website: "http://www.sgfellowship.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3485,7 +5892,28 @@ const CHURCHES = [
             name: "Trinity Baptist Church",
             address: "1785 Wooddale Court Baton Rouge, Louisiana 70806",
             region: "LA",
-            website: "http://www.trinitybaptistreformed.org/"
+            website: "http://www.trinitybaptistreformed.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3497,7 +5925,28 @@ const CHURCHES = [
             name: "Free Baptist Church of Limerick",
             address: "2 Sokokis Trail North Limerick, ME   04048",
             region: "ME",
-            website: "http://www.lfbcreformed.org/"
+            website: "http://www.lfbcreformed.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3509,7 +5958,28 @@ const CHURCHES = [
             name: "Grace Community Church",
             address: "47 Pleasant St, Topsham, ME 04086",
             region: "ME",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3521,7 +5991,28 @@ const CHURCHES = [
             name: "Faith Reformed Baptist Church",
             address: "40 Main St. Walkersville, MD",
             region: "MD",
-            website: "http://www.faithrbc.com/"
+            website: "http://www.faithrbc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3533,7 +6024,28 @@ const CHURCHES = [
             name: "Grace Baptist Church of Odenton",
             address: "2641 Strawberry Lake Way Odenton, MD  21113",
             region: "MD",
-            website: "http://www.gracebaptistonline.com/"
+            website: "http://www.gracebaptistonline.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3545,7 +6057,28 @@ const CHURCHES = [
             name: "New Life Community Church",
             address: "6433 Mt Vista Rd  Kingsville MD 21087",
             region: "MD",
-            website: "http://www.newlifemd.org/"
+            website: "http://www.newlifemd.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3557,7 +6090,28 @@ const CHURCHES = [
             name: "Austin Square Baptist Church",
             address: "10 Keslar Ave. Lynn, MA 01905",
             region: "MA",
-            website: "http://www.austinsquarechurch.com/"
+            website: "http://www.austinsquarechurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3569,7 +6123,28 @@ const CHURCHES = [
             name: "First Baptist Church",
             address: "23 West St. Leominster, MA 01453",
             region: "MA",
-            website: "http://www.thewordoftruth.net/"
+            website: "http://www.thewordoftruth.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3581,7 +6156,28 @@ const CHURCHES = [
             name: "First Church of Hixville",
             address: "1190 N. Hixville Rd. N. Dartmouth, MA 02747",
             region: "MA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3593,7 +6189,28 @@ const CHURCHES = [
             name: "Pilgrim Reformed Bible Church",
             address: "245 Summer St. Duxbury, MA 02332",
             region: "MA",
-            website: "http://pilgrimreformed.weebly.com/"
+            website: "http://pilgrimreformed.weebly.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3605,7 +6222,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "98 Kimball Road Amesbury, MA 01913",
             region: "MA",
-            website: "http://www.netministries.org/see/churches/ch01846"
+            website: "http://www.netministries.org/see/churches/ch01846",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3617,7 +6255,28 @@ const CHURCHES = [
             name: "Heritage Baptist Church",
             address: "59 Blackstone River Dr. Worcester, MA 01607",
             region: "MA",
-            website: "http://www.hbcma.org/"
+            website: "http://www.hbcma.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3629,7 +6288,28 @@ const CHURCHES = [
             name: "Providence Baptist Church",
             address: "80 Boardman Street Norfolk, MA 02056",
             region: "MA",
-            website: "http://www.providencebaptistchurchma.org/"
+            website: "http://www.providencebaptistchurchma.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3641,7 +6321,28 @@ const CHURCHES = [
             name: "Rehoboth Baptist Church",
             address: "132 Moulton St. Rehoboth, MA 02769",
             region: "MA",
-            website: "http://www.rehobothbaptistchurch.org/"
+            website: "http://www.rehobothbaptistchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3653,7 +6354,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "664 Main Road Savoy, Massachussetts 01256",
             region: "MA",
-            website: "http://bcn.net/~wmplenge"
+            website: "http://bcn.net/~wmplenge",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3665,7 +6387,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "4075 S. Sheldon Rd. Canton, MI 48188",
             region: "MI",
-            website: "http://www.sermon.org/"
+            website: "http://www.sermon.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3677,7 +6420,28 @@ const CHURCHES = [
             name: "Grace Immanuel Reformed Baptist Church",
             address: "860 Peachcrest Ct. NE Grand Rapids  Michigan 49505",
             region: "MI",
-            website: "http://www.girbc.org/"
+            website: "http://www.girbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3689,7 +6453,28 @@ const CHURCHES = [
             name: "Harbor Reformed Baptist Church",
             address: "269 Douglas Ave.  Holland, MI 49424",
             region: "MI",
-            website: "http://www.harborchurchholland.org/"
+            website: "http://www.harborchurchholland.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3701,7 +6486,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Lenawee",
             address: "121 S. Locust Street Adrian, MI 49221",
             region: "MI",
-            website: "http://www.reformedbaptistchurchlenawee.com/"
+            website: "http://www.reformedbaptistchurchlenawee.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3713,7 +6519,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "1010 East 58th Street Minneapolis, MN 55417",
             region: "MN",
-            website: "http://www.reformedbaptistmn.org/"
+            website: "http://www.reformedbaptistmn.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3725,7 +6552,28 @@ const CHURCHES = [
             name: "Renewing Grace Fellowship",
             address: "558 W. Fifth St. Winona, MN  55987",
             region: "MN",
-            website: "http://www.renewinggrace.org/"
+            website: "http://www.renewinggrace.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3737,7 +6585,28 @@ const CHURCHES = [
             name: "Audubon Drive Bible Church",
             address: "Laurel, MS 39441",
             region: "MS",
-            website: "http://www.audubonchurch.org/"
+            website: "http://www.audubonchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -3750,7 +6619,28 @@ const CHURCHES = [
             name: "Bridgetown Baptist Church",
             address: "2779 Malone Rd. N. Nesbit, MS  38651",
             region: "MS",
-            website: "http://www.bridgetownbaptist.org/"
+            website: "http://www.bridgetownbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3762,7 +6652,28 @@ const CHURCHES = [
             name: "Christ Community Reformed Baptist Church",
             address: "146 South McCrary Road P.O. Box 446, Columbus, MS. 39703",
             region: "MS",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3774,7 +6685,28 @@ const CHURCHES = [
             name: "Christ Covenant Church",
             address: "Olive Branch, MS 38654",
             region: "MS",
-            website: "http://www.christcovenantob.org/"
+            website: "http://www.christcovenantob.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3786,7 +6718,28 @@ const CHURCHES = [
             name: "Cross Roads Baptist Church",
             address: "2 Ashe Nursery Road Wiggins, MS 39577",
             region: "MS",
-            website: "http://www.crossroadsfamily.org/"
+            website: "http://www.crossroadsfamily.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3798,7 +6751,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "5422 Clinton Blvd. Jackson, MS  39209",
             region: "MS",
-            website: "http://www.gracejackson.net/"
+            website: "http://www.gracejackson.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -3811,7 +6785,28 @@ const CHURCHES = [
             name: "Iglesia Bautista Biblica",
             address: "3 Green St Lawrence, MS 01841",
             region: "MS",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3823,7 +6818,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "1005 North 4th Avenue Ozark, MO 65721",
             region: "MO",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3835,7 +6851,28 @@ const CHURCHES = [
             name: "Rockport Baptist Church",
             address: "3761 Telegraph Rd Arnold, MO  63010",
             region: "MO",
-            website: "http://www.rockportbaptist.org/"
+            website: "http://www.rockportbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3847,7 +6884,28 @@ const CHURCHES = [
             name: "South Creek Church",
             address: "3145 W. Republic Road Springfield, Missouri, 65807",
             region: "MO",
-            website: "http://www.southcreekchurch.org/"
+            website: "http://www.southcreekchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3859,7 +6917,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "2225 N. St. Charles, MO 64801",
             region: "MO",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3871,7 +6950,28 @@ const CHURCHES = [
             name: "Wolf Creek Baptist Church",
             address: "Wolf Creek, MT  59648",
             region: "MT",
-            website: "http://www.wolfcreekbaptist.com"
+            website: "http://www.wolfcreekbaptist.com",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3883,7 +6983,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "205 E. Halleck St. Papillion, NE 68046",
             region: "NE",
-            website: "http://www.gbcpapillion.org/"
+            website: "http://www.gbcpapillion.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3895,7 +7016,28 @@ const CHURCHES = [
             name: "City On A Hill Church",
             address: "7808 Anchor Point Dr. Reno, NV 89506",
             region: "NV",
-            website: "http://www.cityonahillreno.org/"
+            website: "http://www.cityonahillreno.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3907,7 +7049,28 @@ const CHURCHES = [
             name: "Community Bible Church",
             address: "333 W. Moana Lane Reno NV 89506",
             region: "NV",
-            website: "http://www.cbcreno.net/"
+            website: "http://www.cbcreno.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3919,7 +7082,28 @@ const CHURCHES = [
             name: "Grace Community Church",
             address: "2320 Heybourne Rd Minden, NV  89423",
             region: "NV",
-            website: "http://gracenevada.com/"
+            website: "http://gracenevada.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3931,7 +7115,28 @@ const CHURCHES = [
             name: "Calvary Baptist Church (Reformed) ",
             address: "12 Little River Road Exeter, New Hampshire 03833",
             region: "NH",
-            website: "http://cbcexeter.sermonaudio.com/"
+            website: "http://cbcexeter.sermonaudio.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3943,7 +7148,28 @@ const CHURCHES = [
             name: "Christ Redeemer Church",
             address: "P.O. Box 5523, Hanover, NH 03755",
             region: "NH",
-            website: "http://www.christredeemerchurch.org/"
+            website: "http://www.christredeemerchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3955,7 +7181,28 @@ const CHURCHES = [
             name: "Faith Bible Church",
             address: "515 South Street Bow, NH",
             region: "NH",
-            website: "http://faithbiblechurchnh.org/"
+            website: "http://faithbiblechurchnh.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -3968,7 +7215,28 @@ const CHURCHES = [
             name: "Sovereign Grace Fellowship",
             address: "235 High Street Boscawen, NH 03303",
             region: "NH",
-            website: "http://www.sovgracenh.com/"
+            website: "http://www.sovgracenh.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3980,7 +7248,28 @@ const CHURCHES = [
             name: "Westmoreland Reformed Bible Church",
             address: "33 Capron Road Westmoreland, NH 03467",
             region: "NH",
-            website: "http://www.netministries.org/see/churches.exe/ch01426"
+            website: "http://www.netministries.org/see/churches.exe/ch01426",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3992,7 +7281,28 @@ const CHURCHES = [
             name: "Bread of Life Fellowship",
             address: "New Milford, NJ 07646",
             region: "NJ",
-            website: "http://www.bolfellowship.org/"
+            website: "http://www.bolfellowship.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4004,7 +7314,28 @@ const CHURCHES = [
             name: "Christian Fellowship Church",
             address: "1212 Livingston Ave North Brunswick, NJ 08902",
             region: "NJ",
-            website: "http://www.cfcnb.org/"
+            website: "http://www.cfcnb.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -4017,7 +7348,28 @@ const CHURCHES = [
             name: "Covenant Baptist Church ",
             address: "528 Main Street  Lumberton, NJ  08048",
             region: "NJ",
-            website: "http://www.cbc-lumberton.org/"
+            website: "http://www.cbc-lumberton.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4029,7 +7381,28 @@ const CHURCHES = [
             name: "Englewood Baptist Church",
             address: "320 Tenafly Road  Englewood, NJ 07631",
             region: "NJ",
-            website: "http://www.ebcnj.com/"
+            website: "http://www.ebcnj.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4041,7 +7414,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "643 Sandford Ave.  Newark, NJ 07106",
             region: "NJ",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4053,7 +7447,28 @@ const CHURCHES = [
             name: "Grace Reformed Fellowship Church",
             address: "329 Kresson Gibbsboro Rd Voorhees, NJ  08043",
             region: "NJ",
-            website: "http://www.gracereformedfellowshipchurch.org/"
+            website: "http://www.gracereformedfellowshipchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4065,7 +7480,28 @@ const CHURCHES = [
             name: "Grace Covenant Baptist Church",
             address: "35 Court St.  Flemington, NJ 08822",
             region: "NJ",
-            website: "http://www.gcbcnj.org/"
+            website: "http://www.gcbcnj.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4077,7 +7513,28 @@ const CHURCHES = [
             name: "Iglesia Bautista Reformada",
             address: "5510 Tonnelle Avenue  North Bergen, NJ 07047",
             region: "NJ",
-            website: "http://www.ibrnb.com/iglesia"
+            website: "http://www.ibrnb.com/iglesia",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4089,7 +7546,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Lafayette",
             address: "28 Meadows Road  Lafayette, NJ 07848",
             region: "NJ",
-            website: "http://www.rbclafayette.org/"
+            website: "http://www.rbclafayette.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -4102,7 +7580,28 @@ const CHURCHES = [
             name: "Trinity Baptist Church of Montville",
             address: "160 Changebridge Rd  Montville, NJ 07045",
             region: "NJ",
-            website: "http://www.trinitymontville.org/"
+            website: "http://www.trinitymontville.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4114,7 +7613,28 @@ const CHURCHES = [
             name: "Albuquerque Sovereign Grace Baptist Church",
             address: "1534 Blake Rd.  SW Albuquerque, New Mexico  87105",
             region: "NM",
-            website: "http://www.albuquerquesovereigngrace.org/"
+            website: "http://www.albuquerquesovereigngrace.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4126,7 +7646,28 @@ const CHURCHES = [
             name: "Church of the Redeemer",
             address: "1715 Hwy 314 Los Lunas, NM 87016",
             region: "NM",
-            website: "http://www.churchoftheredeemerll.org/"
+            website: "http://www.churchoftheredeemerll.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4138,7 +7679,28 @@ const CHURCHES = [
             name: "Santa Teresa Baptist Church",
             address: "PO Box 1524, 5750 McNutt Road Santa Teresa, NM 88008",
             region: "NM",
-            website: "http://www.stbcweb.org/"
+            website: "http://www.stbcweb.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4150,7 +7712,28 @@ const CHURCHES = [
             name: "Albany Baptist Church",
             address: "361 Krumkill Road Slingerlands, New York 12159",
             region: "NY",
-            website: "http://www.albanybaptist.net/"
+            website: "http://www.albanybaptist.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4162,7 +7745,28 @@ const CHURCHES = [
             name: "Amazing Grace Church",
             address: "5073 Route 32 Catskill, NY  12414",
             region: "NY",
-            website: "http://www.amazinggracecatskill.org/"
+            website: "http://www.amazinggracecatskill.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4174,7 +7778,28 @@ const CHURCHES = [
             name: "Ballston Lake Baptist Church",
             address: "1 Edward Street Ballston Lake, NY 12019",
             region: "NY",
-            website: "http://www.blbc.org/"
+            website: "http://www.blbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -4187,7 +7812,28 @@ const CHURCHES = [
             name: "Bible Baptist Church of Galway",
             address: "2095 East Street, Galway NY 12074",
             region: "NY",
-            website: "http://galwaybaptist.com/"
+            website: "http://galwaybaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -4200,7 +7846,28 @@ const CHURCHES = [
             name: "Brisben Baptist Church ",
             address: "2717 State HWY 12 Oxford, NY 13830",
             region: "NY",
-            website: "http://netministries.org/see/churches/ch01276"
+            website: "http://netministries.org/see/churches/ch01276",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4212,7 +7879,28 @@ const CHURCHES = [
             name: "Clarkson Community Church",
             address: "8339 Ridge Rd. W. Brockport, NY 14420",
             region: "NY",
-            website: "http://www.clarksonchurch.com/"
+            website: "http://www.clarksonchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4224,7 +7912,28 @@ const CHURCHES = [
             name: "Clifton Park Community Church",
             address: "516 Moe Road Clifton Park, NY 12065",
             region: "NY",
-            website: "http://www.cliftonparkcommunitychurch.org/"
+            website: "http://www.cliftonparkcommunitychurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4236,7 +7945,28 @@ const CHURCHES = [
             name: "Faith Reformed Baptist Church",
             address: "13000 Main Road Mattituck, NY 11952",
             region: "NY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4248,7 +7978,28 @@ const CHURCHES = [
             name: "Grace Baptist Church of Dolgeville",
             address: "12 Van Buren Street Dolgeville, NY 13329",
             region: "NY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4260,7 +8011,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "9316 Main St Dansville, NY 14437",
             region: "NY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4272,7 +8044,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "2229 Bay Shore Blvd. Rochester, NY 14622",
             region: "NY",
-            website: "http://www.vor.org/gbcofrochester"
+            website: "http://www.vor.org/gbcofrochester",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4284,7 +8077,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "Pinebush, NY 12566",
             region: "NY",
-            website: "http://www.gracerbc.org/"
+            website: "http://www.gracerbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4296,7 +8110,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church of Long Island",
             address: "36 Smith Street Merrick, NY 11566",
             region: "NY",
-            website: "http://www.gracereformedbaptistchurch.com/"
+            website: "http://www.gracereformedbaptistchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4308,7 +8143,28 @@ const CHURCHES = [
             name: "Hope Reformed Baptist Church",
             address: "3239 Rte 112, Ste 2 Medford, New York  11763",
             region: "NY",
-            website: "http://www.hopereformedli.net/"
+            website: "http://www.hopereformedli.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -4321,7 +8177,28 @@ const CHURCHES = [
             name: "Red Mills Baptist Church",
             address: "531 Rt. 6N P.O. Box 93 Mahopac Falls, NY 10542",
             region: "NY",
-            website: "http://www.redmillsbaptist.org/"
+            website: "http://www.redmillsbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4333,7 +8210,28 @@ const CHURCHES = [
             name: "Refreshing Springs Church",
             address: "34 Elam Place Buffalo, N.Y. 14214",
             region: "NY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4345,7 +8243,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church of Baldwinsville",
             address: "3301 Ira Hill Rd. Cato, NY 13033",
             region: "NY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4357,7 +8276,28 @@ const CHURCHES = [
             name: "Venice Baptist Church",
             address: "2465 Stewarts Corners Road Venice Center, NY 13147",
             region: "NY",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4369,7 +8309,28 @@ const CHURCHES = [
             name: "West Side Baptist Church",
             address: "59 Smith Street Gouverneur, NY 13642",
             region: "NY",
-            website: "http://www.west-side-baptist.com/"
+            website: "http://www.west-side-baptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4381,7 +8342,28 @@ const CHURCHES = [
             name: "Catherine Lake Baptist Church",
             address: "2064 Catherine Lake Road Richlands, NC 28574",
             region: "NC",
-            website: "http://www.catherinelakebaptist.com/"
+            website: "http://www.catherinelakebaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4393,7 +8375,28 @@ const CHURCHES = [
             name: "Christ Covenant Community Church",
             address: "2065 N Main St  Hendersonville, NC 28792",
             region: "NC",
-            website: "http://www.christcovenantcommunity.org/"
+            website: "http://www.christcovenantcommunity.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4405,7 +8408,28 @@ const CHURCHES = [
             name: "Covenant Reformed Baptist Church",
             address: "6611 Old Highway 86 N. Providence, NC 27315",
             region: "NC",
-            website: "http://www.covenantcaswell.org/"
+            website: "http://www.covenantcaswell.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4417,7 +8441,28 @@ const CHURCHES = [
             name: "Crosspoint Church",
             address: "235 St Johns Road Fletcher, NC 28732",
             region: "NC",
-            website: "http://crosspointasheville.org/"
+            website: "http://crosspointasheville.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4429,7 +8474,28 @@ const CHURCHES = [
             name: "East Hendersonville Baptist Church",
             address: "1010  Shepherd Street  Hendersonville, NC  28792",
             region: "NC",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4441,7 +8507,28 @@ const CHURCHES = [
             name: "First Reformed Baptist Church",
             address: "Hwy 19 and Dellwood Road  Waynesville, NC 28786",
             region: "NC",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4453,7 +8540,28 @@ const CHURCHES = [
             name: "Grace Fellowship Church",
             address: "817 South McPherson Church Road Fayetteville, NC. 28303",
             region: "NC",
-            website: "http://www.gracecharlotte.org/"
+            website: "http://www.gracecharlotte.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4465,7 +8573,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "939 South Third Street Mebane, NC 27302",
             region: "NC",
-            website: "http://www.grbc.net/"
+            website: "http://www.grbc.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4477,7 +8606,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church of Rocky Mount",
             address: "5645 Hunter Hill Road Rocky Mount, North Carolina",
             region: "NC",
-            website: "http://gracereformedbaptist.org/home"
+            website: "http://gracereformedbaptist.org/home",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4489,7 +8639,28 @@ const CHURCHES = [
             name: "Grace Tabernacle Reformed Baptist Church",
             address: "Cashiers Valley Road  Brevard, NC 28712",
             region: "NC",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4501,7 +8672,28 @@ const CHURCHES = [
             name: "Heritage Community Church",
             address: "Gastonia, NC",
             region: "NC",
-            website: "http://www.heritagecommunitychurch.net/"
+            website: "http://www.heritagecommunitychurch.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4513,7 +8705,28 @@ const CHURCHES = [
             name: "North Garham Baptist Church ",
             address: "721 Washington St. Graham, NC 27253",
             region: "NC",
-            website: "http://www.northgrahambaptist.org/"
+            website: "http://www.northgrahambaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4525,7 +8738,28 @@ const CHURCHES = [
             name: "Reformed Community Church of Eden",
             address: "8745 Hwy 14 Eden, NC 27288",
             region: "NC",
-            website: "http://www.reformedchurchofeden.org/"
+            website: "http://www.reformedchurchofeden.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4537,7 +8771,28 @@ const CHURCHES = [
             name: "Sovereign Grace Chapel",
             address: "2712 Bon Air Avenue Winston-Salem, NC 27105",
             region: "NC",
-            website: "http://www.sgchapel.org/"
+            website: "http://www.sgchapel.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4549,7 +8804,28 @@ const CHURCHES = [
             name: "Sovereign Grace Fellowship",
             address: "430 S. McPherson Church Road Fayetteville, NC  28303",
             region: "NC",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4561,7 +8837,28 @@ const CHURCHES = [
             name: "Word of Grace Baptist Church",
             address: "1915 West Park North Wilkesboro, NC 28659",
             region: "NC",
-            website: "http://www.wordofgracebaptistchurch.org/"
+            website: "http://www.wordofgracebaptistchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4573,7 +8870,28 @@ const CHURCHES = [
             name: "Community Baptist Church",
             address: "3535 25th Street SW Fargo, North Dakota 58104",
             region: "ND",
-            website: "http://www.cbcfargo.com/"
+            website: "http://www.cbcfargo.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4585,7 +8903,28 @@ const CHURCHES = [
             name: "Faith Bible Church ",
             address: "12239 Morse Rd.  SW Pataskala, OH 43062",
             region: "OH",
-            website: "http://www.faithbibleohio.com/"
+            website: "http://www.faithbibleohio.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4597,7 +8936,28 @@ const CHURCHES = [
             name: "Grace Community Church",
             address: "313 West 2nd Street Waverly, Ohio 45690",
             region: "OH",
-            website: "http://www.gccwaverly.net/"
+            website: "http://www.gccwaverly.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4609,7 +8969,28 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "400 Powell Drive Arlington, OH 45814",
             region: "OH",
-            website: "http://www.gracechurcharlington.org/"
+            website: "http://www.gracechurcharlington.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4621,7 +9002,28 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "9524 New Delaware Rd.  Mt. Vernon, Ohio 43050",
             region: "OH",
-            website: "http://www.christianpublisher.com/"
+            website: "http://www.christianpublisher.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4633,7 +9035,28 @@ const CHURCHES = [
             name: "Grace Covenant Church",
             address: "24430 Nobottom Rd. Olmsted Falls, OH 44138",
             region: "OH",
-            website: "http://gracecovenantcleveland.com/"
+            website: "http://gracecovenantcleveland.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4645,7 +9068,28 @@ const CHURCHES = [
             name: "Grace Reformed Fellowship",
             address: "43 South Paint Street  Chillicothe, Ohio 45601",
             region: "OH",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4657,7 +9101,28 @@ const CHURCHES = [
             name: "Heritage Reformed Baptist Church",
             address: "3077 Mt. Pleasant St. NW North Canton, OH 44720",
             region: "OH",
-            website: "http://www.heritagerbc.com/"
+            website: "http://www.heritagerbc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4669,7 +9134,28 @@ const CHURCHES = [
             name: "Kemp Road Baptist Church",
             address: "2991 Kemp Road  Dayton, OH 45431",
             region: "OH",
-            website: "http://www.kemproadbaptist.com/"
+            website: "http://www.kemproadbaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4681,7 +9167,28 @@ const CHURCHES = [
             name: "Lemoyne Baptist Church",
             address: "25020 Bradner Road Genoa, OH 43430",
             region: "OH",
-            website: "http://www.lemoynebaptist.org/"
+            website: "http://www.lemoynebaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4693,7 +9200,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "5926 Meteor Avenue Toledo, Ohio 43623",
             region: "OH",
-            website: "http://www.prbctoledo.org/"
+            website: "http://www.prbctoledo.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4705,7 +9233,28 @@ const CHURCHES = [
             name: "Bethel Baptist Church",
             address: "86th and Cedar Street North Owasso, OK  74055",
             region: "OK",
-            website: "http://www.bethelowasso.com/"
+            website: "http://www.bethelowasso.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4717,7 +9266,28 @@ const CHURCHES = [
             name: "Calvary Baptist Church",
             address: "18807 West Wekiwa Road Sand Springs, OK.  74063",
             region: "OK",
-            website: "http://www.calvarybaptistss.com/"
+            website: "http://www.calvarybaptistss.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4729,7 +9299,28 @@ const CHURCHES = [
             name: "Gatlin Baptist Church",
             address: "801 W. Gatlin Road Marlow, OK 73055",
             region: "OK",
-            website: "http://www.gatlinbaptist.com/"
+            website: "http://www.gatlinbaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4741,7 +9332,28 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "7415 E. 15th Street Tulsa, OK    74145",
             region: "OK",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4753,7 +9365,28 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "241 W. Wilshire Blvd Oklahoma City, OK 73116",
             region: "OK",
-            website: "http://www.gbcok.org/"
+            website: "http://www.gbcok.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4765,7 +9398,28 @@ const CHURCHES = [
             name: "Grace Baptist Church of Bartlesville-Dewey",
             address: "802 N Cherokee Dewey, Oklahoma 74029",
             region: "OK",
-            website: "http://www.gracebaptistchurchbville.com/index.html"
+            website: "http://www.gracebaptistchurchbville.com/index.html",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -4778,7 +9432,28 @@ const CHURCHES = [
             name: "Grace Baptist Church of Owasso",
             address: "Owasso, OK 74055",
             region: "OK",
-            website: "http://www.graceowasso.com/"
+            website: "http://www.graceowasso.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4790,7 +9465,28 @@ const CHURCHES = [
             name: "Messiah Fellowship Bible Church",
             address: "101 East Main Street Stratford, OK 74872",
             region: "OK",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4802,7 +9498,28 @@ const CHURCHES = [
             name: "Northwest Bible Church",
             address: "4301 NW 36th St. Oklahoma City, OK",
             region: "OK",
-            website: "http://www.nwbcokc.org/"
+            website: "http://www.nwbcokc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4814,7 +9531,28 @@ const CHURCHES = [
             name: "Sovereign Grace Bible Church",
             address: "Ada, OK  74820",
             region: "OK",
-            website: "http://www.sgbca.org/"
+            website: "http://www.sgbca.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4826,7 +9564,28 @@ const CHURCHES = [
             name: "Lawton Indian Baptist Church",
             address: "2502 SW B Ave., Lawton, OK 73505",
             region: "OK",
-            website: "http://lawtonindian.com/"
+            website: "http://lawtonindian.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4838,7 +9597,28 @@ const CHURCHES = [
             name: "Bible Baptist Church of Lafayette",
             address: "514 Market Streets Lafayette, OR. 97127",
             region: "OR",
-            website: "http://www.sites.onlinemac.com/alanr"
+            website: "http://www.sites.onlinemac.com/alanr",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4850,7 +9630,28 @@ const CHURCHES = [
             name: "Elm Street Baptist Church",
             address: "1150 Elm St. PO Box 461 Sweet Home, OR  97386",
             region: "OR",
-            website: "http://www.elmstreetbaptistchurch.org/"
+            website: "http://www.elmstreetbaptistchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4862,7 +9663,28 @@ const CHURCHES = [
             name: "Glencullen Baptist Church",
             address: "4747 SW Cameron Rd.  Portland, Oregon 97221",
             region: "OR",
-            website: "http://www.sermonaudio.com/glencullen"
+            website: "http://www.sermonaudio.com/glencullen",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4874,7 +9696,28 @@ const CHURCHES = [
             name: "Grace Bible Church",
             address: "1114 Y Avenue La Grande, OR 97850",
             region: "OR",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4886,7 +9729,28 @@ const CHURCHES = [
             name: "Christ Reformation Church",
             address: "7450 Alderbrook Rd. Tillamook, OR  97141",
             region: "OR",
-            website: "http://www.christreformationchurch.com/"
+            website: "http://www.christreformationchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4898,7 +9762,28 @@ const CHURCHES = [
             name: "Mariners Reformed Baptist Church",
             address: "Coos Bay, Oregon  97420",
             region: "OR",
-            website: "http://www.marinersreformedbaptist.org/index.htm"
+            website: "http://www.marinersreformedbaptist.org/index.htm",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4910,7 +9795,28 @@ const CHURCHES = [
             name: "Sovereign Grace Bible Church",
             address: "501 Foothills Drive Newberg, OR 97132",
             region: "OR",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4922,7 +9828,28 @@ const CHURCHES = [
             name: "Sovereign Grace Bible Church",
             address: "30375 Fairview Road  Lebanon, Oregon, 97355",
             region: "OR",
-            website: "http://www.sovereigngracebible.com/"
+            website: "http://www.sovereigngracebible.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4934,7 +9861,28 @@ const CHURCHES = [
             name: "Bible Fellowship Church of Greentown",
             address: "103 Blue Heron Drive, Greentown, PA",
             region: "PA",
-            website: "https://bfcgreentown.com/"
+            website: "https://bfcgreentown.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4946,7 +9894,28 @@ const CHURCHES = [
             name: "Covenant Baptist Church",
             address: "148 Union Street Uniontown, PA  15401",
             region: "PA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4958,7 +9927,28 @@ const CHURCHES = [
             name: "Emmanuel Reformed Baptist Church ",
             address: "302 Lamborntown Road West Grove, PA",
             region: "PA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4970,7 +9960,28 @@ const CHURCHES = [
             name: "Faith Reformed Baptist Church",
             address: "110 Old State Rd. Media, PA  19063",
             region: "PA",
-            website: "http://www.faithchurchpa.org/"
+            website: "http://www.faithchurchpa.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4982,7 +9993,28 @@ const CHURCHES = [
             name: "First Regular Baptist Church",
             address: "Second st and Queen Street Northumberland, PA  17857",
             region: "PA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -4994,7 +10026,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "2475 McCleary Drive Chambersburg, PA",
             region: "PA",
-            website: "http://www.gbcchambersburg.org/"
+            website: "http://www.gbcchambersburg.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5006,7 +10059,28 @@ const CHURCHES = [
             name: "Grace Church",
             address: "111 Lloyd Avenue Downingtown, PA 19335",
             region: "PA",
-            website: "http://www.gracechurchdowningtown.org/"
+            website: "http://www.gracechurchdowningtown.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5018,7 +10092,28 @@ const CHURCHES = [
             name: "Grace Covenant Church",
             address: "1 Fawn Road East Stroudsburg, PA  18301",
             region: "PA",
-            website: "http://gracecovenantpa.org/"
+            website: "http://gracecovenantpa.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5030,7 +10125,28 @@ const CHURCHES = [
             name: "Grace Baptist Church of Carlisle",
             address: "777 West North Street Carlisle, PA 17013",
             region: "PA",
-            website: "http://www.gracebaptistcarlisle.org/"
+            website: "http://www.gracebaptistcarlisle.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5042,7 +10158,28 @@ const CHURCHES = [
             name: "Grace Fellowship Church",
             address: "130 S. Academy St. Boalsburg, PA 16827",
             region: "PA",
-            website: "http://www.gracereformedbaptist.com"
+            website: "http://www.gracereformedbaptist.com",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5054,7 +10191,28 @@ const CHURCHES = [
             name: "Grace Fellowship Church",
             address: "27 Pecora Blvd. Hazle Township, PA 18202",
             region: "PA",
-            website: "http://www.www.gfchazleton.org/"
+            website: "http://www.www.gfchazleton.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5066,7 +10224,28 @@ const CHURCHES = [
             name: "Immanuel Free Reformed Church",
             address: "Ephrata, Pennsylvania",
             region: "PA",
-            website: "http://www.immanuelfrc.org/"
+            website: "http://www.immanuelfrc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5078,7 +10257,28 @@ const CHURCHES = [
             name: "Liberty Baptist Church",
             address: "1308 Freedom Road, Cranberry Township, PA 16066",
             region: "PA",
-            website: "http://www.lbref.org/"
+            website: "http://www.lbref.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5090,7 +10290,28 @@ const CHURCHES = [
             name: "Olney Baptist Church",
             address: "239 West Chew Avenue  Philadelphia PA 19120",
             region: "PA",
-            website: "http://olneybaptist.org/"
+            website: "http://olneybaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5102,7 +10323,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "6467 Sterrettania Road Fairview, PA 16415",
             region: "PA",
-            website: "http://www.prbcerie.org/"
+            website: "http://www.prbcerie.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5114,7 +10356,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "800 York Road Warminster, PA",
             region: "PA",
-            website: "http://www.prbchurch.com/"
+            website: "http://www.prbchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
 
       }
     },
@@ -5127,7 +10390,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Franconia",
             address: "644 Allentown Road Franconia, PA 18969",
             region: "PA",
-            website: "http://www.rbcfranconia.org/"
+            website: "http://www.rbcfranconia.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5139,7 +10423,28 @@ const CHURCHES = [
             name: "Reibers Reformed Baptist Church",
             address: "180 Reibers Church Rd. Shermans Dale, PA  17090",
             region: "PA",
-            website: "http://reiberschurch.com/"
+            website: "http://reiberschurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5151,7 +10456,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Scranton",
             address: "114 Hill Street Dunmore, PA 18512",
             region: "PA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5163,7 +10489,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "423 North Second Street Apollo, PA 15613",
             region: "PA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5175,7 +10522,28 @@ const CHURCHES = [
             name: "Trinity Baptist Church",
             address: "689 S. Hillview Road Allentown, PA 18103",
             region: "PA",
-            website: "http://trinityallentown.org/"
+            website: "http://trinityallentown.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5187,7 +10555,28 @@ const CHURCHES = [
             name: "Vincent Baptist Church",
             address: "2109 Art School Road Chester Springs, PA",
             region: "PA",
-            website: "http://www.vincentbaptistchurch.com/"
+            website: "http://www.vincentbaptistchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5199,7 +10588,28 @@ const CHURCHES = [
             name: "West Side Baptist Church",
             address: "4960 Lincoln Highway West Thomasville, PA  17364",
             region: "PA",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5211,7 +10621,28 @@ const CHURCHES = [
             name: "Word of Life Baptist Church",
             address: "302 N. Centre St. Pottsville, PA 17901",
             region: "PA",
-            website: "http://www.biblicalstudies.com/"
+            website: "http://www.biblicalstudies.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5223,7 +10654,28 @@ const CHURCHES = [
             name: "Grace Community Baptist Church",
             address: "621 Woonasquatucket Ave.  North Providence, RI 02911",
             region: "RI",
-            website: "http://www.gcbcri.org/"
+            website: "http://www.gcbcri.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5235,7 +10687,28 @@ const CHURCHES = [
             name: "Cornerstone Baptist Church",
             address: "1797 Hwy 72 W Clinton, SC 29325",
             region: "SC",
-            website: "http://www.cornerstonechurch-sc.org/"
+            website: "http://www.cornerstonechurch-sc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5247,7 +10720,28 @@ const CHURCHES = [
             name: "Covenant Reformed Baptist Church",
             address: "1709 Ariel St. Easley, SC",
             region: "SC",
-            website: "http://www.crbceasley.org/"
+            website: "http://www.crbceasley.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5259,7 +10753,28 @@ const CHURCHES = [
             name: "Fellowship Bible Church",
             address: "115 Buist Avenue Greenville, SC  29609",
             region: "SC",
-            website: "http://fellowship-greenville.org/"
+            website: "http://fellowship-greenville.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5271,7 +10786,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "5020 Old Spartanburg Rd. Taylors, SC  29687",
             region: "SC",
-            website: "http://www.gbctaylors.org/"
+            website: "http://www.gbctaylors.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5283,7 +10819,28 @@ const CHURCHES = [
             name: "Grace Community Baptist Church",
             address: "579 Gaillard Road Moncks Corner, South Carolina",
             region: "SC",
-            website: "http://www.gracecommunitybaptist.org/"
+            website: "http://www.gracecommunitybaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5295,7 +10852,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "2104 N. Main Street Conway, SC",
             region: "SC",
-            website: "http://www.sgbcconway.org/"
+            website: "http://www.sgbcconway.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5307,7 +10885,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "Main Street and Dawkins Road Caputa SD, 57725",
             region: "SD",
-            website: "http://www.providenceblackhills.org/"
+            website: "http://www.providenceblackhills.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5319,7 +10918,28 @@ const CHURCHES = [
             name: "Christ's Church of Chattanooga",
             address: "4295 Cromwell Road, Suite 500 Chattanooga TN  37421",
             region: "TN",
-            website: "http://www.christschurchofchattanooga.com/"
+            website: "http://www.christschurchofchattanooga.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5331,7 +10951,28 @@ const CHURCHES = [
             name: "Cornerstone Chapel",
             address: "1745 King College Road Bristol, TN 37620",
             region: "TN",
-            website: "http://cornerstonechapelrbc.org/"
+            website: "http://cornerstonechapelrbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5343,7 +10984,28 @@ const CHURCHES = [
             name: "Covenant Baptist Church of Blount County",
             address: "2525 Morganton Rd. Maryville, TN 37801",
             region: "TN",
-            website: "http://www.covenantbaptistbc.org/"
+            website: "http://www.covenantbaptistbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5355,7 +11017,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "550 McMurry Blvd. Hartsville, TN",
             region: "TN",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5367,7 +11050,28 @@ const CHURCHES = [
             name: "Grace Community Church",
             address: "115 East Harper Ave. Maryville, TN 37804",
             region: "TN",
-            website: "http://www.gracetn.org/"
+            website: "http://www.gracetn.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5379,7 +11083,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "2624 Lyndon Avenue Chattanooga, TN 37415",
             region: "TN",
-            website: "http://www.grbchurch.org"
+            website: "http://www.grbchurch.org",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5391,7 +11116,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Nashville",
             address: "P.O. Box 824 Madison, TN  37115",
             region: "TN",
-            website: "http://www.rbcnashville.org/"
+            website: "http://www.rbcnashville.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5403,7 +11149,28 @@ const CHURCHES = [
             name: "Trinity Reformed Baptist Church",
             address: "6771 Stage Road Bartlett, TN  38134",
             region: "TN",
-            website: "http://www.rbcmemphis.org/"
+            website: "http://www.rbcmemphis.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5415,7 +11182,28 @@ const CHURCHES = [
             name: "Calvary Grace Baptist Church",
             address: "1009 N. Teel Dr. Devine, TX 78016",
             region: "TX",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5427,7 +11215,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "227 NE Loop 820  Hurst, TX 76065",
             region: "TX",
-            website: "http://www.gracereformedbc.org/"
+            website: "http://www.gracereformedbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5439,7 +11248,28 @@ const CHURCHES = [
             name: "Community Baptist Church",
             address: "5697 Labus Road #1 Elmendorf, TX  78112",
             region: "TX",
-            website: "http://www.cbcweb.net/"
+            website: "http://www.cbcweb.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5451,7 +11281,28 @@ const CHURCHES = [
             name: "Dallas Reformed Baptist Church",
             address: "1312 South Ervay St. Dallas, TX 75215",
             region: "TX",
-            website: "http://www.dallasreformedbaptistchurch.org/"
+            website: "http://www.dallasreformedbaptistchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5463,7 +11314,28 @@ const CHURCHES = [
             name: "Emmanuel Reformed Baptist Church",
             address: "Georgetown, Texas",
             region: "TX",
-            website: "http://emmanuelrbc.com/"
+            website: "http://emmanuelrbc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5475,7 +11347,28 @@ const CHURCHES = [
             name: "Faith Baptist Church",
             address: "S. Loop 281 Longview, Texas",
             region: "TX",
-            website: "http://www.faithlongview.com/"
+            website: "http://www.faithlongview.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5487,7 +11380,28 @@ const CHURCHES = [
             name: "First Baptist Church of Parker Texas",
             address: "5304 East Parker Rd Parker, Texas 75002",
             region: "TX",
-            website: "http://www.firstbaptistparker.org/"
+            website: "http://www.firstbaptistparker.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5499,7 +11413,28 @@ const CHURCHES = [
             name: "Faith Reformed Baptist Church of San Antonio",
             address: "San Antonio, TX 78234",
             region: "TX",
-            website: "http://faithbaptistsa.org/"
+            website: "http://faithbaptistsa.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5511,7 +11446,28 @@ const CHURCHES = [
             name: "Free Grace Baptist Church",
             address: "1801 Thorain Street San Antonio, TX 78201",
             region: "TX",
-            website: "http://freegracebaptist.org/"
+            website: "http://freegracebaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5523,7 +11479,28 @@ const CHURCHES = [
             name: "Grace Family Baptist of Conroe",
             address: "11920 Stidham Rd, Conroe, TX 77302",
             region: "TX",
-            website: "http://gfbcconroe.com/"
+            website: "http://gfbcconroe.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5535,7 +11512,28 @@ const CHURCHES = [
             name: "Grace Family Baptist of North Houston",
             address: "106 Bammel Westfield Rd, Houston TX 77090",
             region: "TX",
-            website: "http://www.gracefamilybaptist.net/"
+            website: "http://www.gracefamilybaptist.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5547,7 +11545,28 @@ const CHURCHES = [
             name: "Good Shepherd Community Church",
             address: "4701 Virginia Ave  Dallas, TX 75204",
             region: "TX",
-            website: "http://www.gsccdallas.org/"
+            website: "http://www.gsccdallas.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5559,7 +11578,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "115 Santa Anna Ave Coleman, Texas  76834",
             region: "TX",
-            website: "http://www.gracebaptist-fellowship.com/"
+            website: "http://www.gracebaptist-fellowship.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5571,7 +11611,28 @@ const CHURCHES = [
             name: "Grace Baptist Church ",
             address: "P.O. Box 433 Aledo, Texas 76008",
             region: "TX",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5583,7 +11644,28 @@ const CHURCHES = [
             name: "Grace Community Bible Church",
             address: "601 S. 4th Street Bonham, Texas 75418",
             region: "TX",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5595,7 +11677,28 @@ const CHURCHES = [
             name: "Grace Baptist Church",
             address: "Mt. Pleasant, TX 75456",
             region: "TX",
-            website: "http://www.gracebaptistchurchmp.org/"
+            website: "http://www.gracebaptistchurchmp.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5607,7 +11710,28 @@ const CHURCHES = [
             name: "Grace Community Church",
             address: "315 North Hackberry San Antonio, TX  78202",
             region: "TX",
-            website: "http://www.gccsatx.com/"
+            website: "http://www.gccsatx.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5619,7 +11743,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "24176 Sorters Road Porter, Texas  77365",
             region: "TX",
-            website: "http://www.grbcfamily.org/"
+            website: "http://www.grbcfamily.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5631,7 +11776,28 @@ const CHURCHES = [
             name: "Grace Reformed Baptist Church",
             address: "184 Christensen Rd Elgin, Texas 78621",
             region: "TX",
-            website: "http://www.gracerbc.com/"
+            website: "http://www.gracerbc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5643,7 +11809,28 @@ const CHURCHES = [
             name: "Heritage Baptist Church",
             address: "201 E. Broad Street Mansfield, TX 76063",
             region: "TX",
-            website: "http://www.reformedbaptist.org/"
+            website: "http://www.reformedbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5655,7 +11842,28 @@ const CHURCHES = [
             name: "Hillburn Drive Grace Baptist Church",
             address: "5426 Hillburn Drive San Antonio, TX 78227",
             region: "TX",
-            website: "http://www.sovgracebaptsatx.com/"
+            website: "http://www.sovgracebaptsatx.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5667,7 +11875,28 @@ const CHURCHES = [
             name: "Providence Community Church",
             address: "17401 IH-35 Schertz, Texas 78154",
             region: "TX",
-            website: "http://www.pcc-schertz.com/"
+            website: "http://www.pcc-schertz.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5679,7 +11908,28 @@ const CHURCHES = [
             name: "Providence Baptist Church",
             address: "4400 Vista Rd Pasadena, TX 77504",
             region: "TX",
-            website: "http://www.providence-bc.com/"
+            website: "http://www.providence-bc.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5691,7 +11941,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "Marble Falls, TX 78654",
             region: "TX",
-            website: "http://www.providencerbc.org/"
+            website: "http://www.providencerbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5703,7 +11974,28 @@ const CHURCHES = [
             name: "Redeemer Church",
             address: "126 N. Judd St. Fort Worth, TX",
             region: "TX",
-            website: "http://www.redeemerfortworth.org/"
+            website: "http://www.redeemerfortworth.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5715,7 +12007,28 @@ const CHURCHES = [
             name: "Southern Hills Baptist Church",
             address: "2920 South FM 116 Kempner, TX  76539",
             region: "TX",
-            website: "http://www.shbccove.com/"
+            website: "http://www.shbccove.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5727,7 +12040,28 @@ const CHURCHES = [
             name: "Sovereign Grace Community Church",
             address: "Corpus Christi, TX",
             region: "TX",
-            website: "http://www.corpuschristians.com/"
+            website: "http://www.corpuschristians.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5739,7 +12073,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "1502 N. Magdalen San Angelo, TX 76934",
             region: "TX",
-            website: "http://www.particularbaptist.org/"
+            website: "http://www.particularbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5751,7 +12106,28 @@ const CHURCHES = [
             name: "Tapestry Community Church",
             address: "219 E Central Avenue Belton, Texas 76513",
             region: "TX",
-            website: "http://tapestrycommunitychurch.org/"
+            website: "http://tapestrycommunitychurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5763,7 +12139,28 @@ const CHURCHES = [
             name: "The First Baptist Church of Richland Hills",
             address: "7540 Glenview Drive Fort Worth, Texas 76180",
             region: "TX",
-            website: "http://www.fbcrh.org/"
+            website: "http://www.fbcrh.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {
@@ -5775,7 +12172,28 @@ const CHURCHES = [
             name: "West Oaks Baptist Church",
             address: "1901 W Villa Maria Rd, Bryan, TX 77807",
             region: "TX",
-            website: "http://www.westoaksbaptist.org/"
+            website: "http://www.westoaksbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5787,7 +12205,28 @@ const CHURCHES = [
             name: "Roy Bible Church",
             address: "5757 South 3100 West Roy, Utah  84067",
             region: "UT",
-            website: "http://www.roybiblechurch.org/"
+            website: "http://www.roybiblechurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5799,7 +12238,28 @@ const CHURCHES = [
             name: "Reformed Bible Church",
             address: "268 Furnace Rd.  Pittsford, Vermont  05763",
             region: "VT",
-            website: "http://allbygrace.org/"
+            website: "http://allbygrace.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5811,7 +12271,28 @@ const CHURCHES = [
             name: "Alleghany Baptist Church",
             address: "416 Alleghany St. Blacksburg, VA  24060",
             region: "VA",
-            website: "http://www.alleghanybaptistchurch.org/"
+            website: "http://www.alleghanybaptistchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5823,7 +12304,28 @@ const CHURCHES = [
             name: "Christ Reformed Baptist Church",
             address: "P.O. Box 5162 Charlottesville, VA 22905",
             region: "VA",
-            website: "http://www.christreformedbaptist.org/"
+            website: "http://www.christreformedbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5835,7 +12337,28 @@ const CHURCHES = [
             name: "Covenant Reformed Baptist Church",
             address: "7336 Riley Rd. Warrenton, VA 20187",
             region: "VA",
-            website: "http://www.covenantrbc.org/"
+            website: "http://www.covenantrbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5847,7 +12370,28 @@ const CHURCHES = [
             name: "Emmanuel Baptist Church",
             address: "60 Middle River Drive Verona, VA  24482",
             region: "VA",
-            website: "http://www.ebc-verona.net/"
+            website: "http://www.ebc-verona.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5859,7 +12403,28 @@ const CHURCHES = [
             name: "Grace Baptist Chapel",
             address: "805 Todds Lane Hampton, VA 23666",
             region: "VA",
-            website: "http://www.gracebaptistchapel.net/"
+            website: "http://www.gracebaptistchapel.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5871,7 +12436,28 @@ const CHURCHES = [
             name: "Occoquan Bible Church",
             address: "3700 Old Bridge Road, Woodbridge, VA 22192",
             region: "VA",
-            website: "http://www.obc.org"
+            website: "http://www.obc.org",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5883,7 +12469,28 @@ const CHURCHES = [
             name: "Redeeming Grace Baptist Church",
             address: "Mathews, VA 23109",
             region: "VA",
-            website: "http://www.redeeming-grace.org/"
+            website: "http://www.redeeming-grace.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
          
       }
     },
@@ -5896,7 +12503,28 @@ const CHURCHES = [
             name: "Grace Covenant Church",
             address: "PO Box 64443 Virginia Beach, VA 23467",
             region: "VA",
-            website: "http://www.reformedbaptistchurch.org/"
+            website: "http://www.reformedbaptistchurch.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5908,7 +12536,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Richmond, VA. ",
             address: "14401 Beach Road Chesterfield, Virginia 23838",
             region: "VA",
-            website: "http://rbcrichmond.com/"
+            website: "http://rbcrichmond.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5920,7 +12569,28 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Staunton",
             address: "1976 Springhill Road Staunton, Va.  24401",
             region: "VA",
-            website: "http://www.caymandesigns.com/rbcos.htm"
+            website: "http://www.caymandesigns.com/rbcos.htm",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5932,7 +12602,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "14703 Silverdale Drive  Woodbridge, VA 22193",
             region: "VA",
-            website: "http://www.angelfire.com/va/sovereigngrace/sgbc.html"
+            website: "http://www.angelfire.com/va/sovereigngrace/sgbc.html",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5944,7 +12635,28 @@ const CHURCHES = [
             name: "Trinity Church",
             address: "7965 Dunahoo Drive  Boones Mill, VA 24065",
             region: "VA",
-            website: "http://www.tbcva.org/"
+            website: "http://www.tbcva.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5956,7 +12668,28 @@ const CHURCHES = [
             name: "Wilderness Road Baptist Assembly",
             address: "105 Linkous Ave.  Dublin, VA 24084",
             region: "VA",
-            website: "http://www.wildernessroadbaptist.org/"
+            website: "http://www.wildernessroadbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5968,7 +12701,28 @@ const CHURCHES = [
             name: "Faith Reformed Baptist Church",
             address: "605 Front St. Lovingston, VA 22949",
             region: "VA",
-            website: "https://www.faithreformedbaptistchurch.com/"
+            website: "https://www.faithreformedbaptistchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5980,7 +12734,28 @@ const CHURCHES = [
             name: "Emmanuel Reformed Baptist Church",
             address: "3752 S. 182nd St. Seattle, Washington  98188",
             region: "WA",
-            website: "http://www.emmanuelreformedbaptist.org/"
+            website: "http://www.emmanuelreformedbaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -5992,7 +12767,28 @@ const CHURCHES = [
             name: "Free Grace Baptist Church",
             address: "2160 Paulson Rd. N.E. Brownsville, WA  98370",
             region: "WA",
-            website: "http://www.freegracebaptistchurch.com/"
+            website: "http://www.freegracebaptistchurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6004,7 +12800,28 @@ const CHURCHES = [
             name: "Grace Reformed Church of Clarkston, Washington",
             address: "1104 Diagonal St Clarkston, WA  99403",
             region: "WA",
-            website: "http://www.grcclarkston.com/"
+            website: "http://www.grcclarkston.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6016,7 +12833,28 @@ const CHURCHES = [
             name: "Grace Evangelical Church",
             address: "P.O. Box 1734 Oak Harbor, WA 98277",
             region: "WA",
-            website: "http://www.graceevangelical.org/"
+            website: "http://www.graceevangelical.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6028,7 +12866,28 @@ const CHURCHES = [
             name: "Juanita Community Church",
             address: "10007 NE 132nd Street Kirkland, WA 98034",
             region: "WA",
-            website: "http://juanitacc.org/"
+            website: "http://juanitacc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6040,7 +12899,28 @@ const CHURCHES = [
             name: "Pilgrim Bible Church",
             address: "2301 Worthington Street Steilacoom, WA 98388",
             region: "WA",
-            website: "http://www.pilgrimbible.org/"
+            website: "http://www.pilgrimbible.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6052,7 +12932,28 @@ const CHURCHES = [
             name: "Providence Family Baptist Church",
             address: "2609 Larch Way Lynnwood, WA  98036",
             region: "WA",
-            website: "http://www.providencefbc.org/"
+            website: "http://www.providencefbc.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6064,7 +12965,28 @@ const CHURCHES = [
             name: "Providence Reformed Baptist Church",
             address: "7002 40th Street West University Place, WA 98467",
             region: "WA",
-            website: "http://users.lewiston.com/ardenh/prbc.html"
+            website: "http://users.lewiston.com/ardenh/prbc.html",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6076,7 +12998,28 @@ const CHURCHES = [
             name: "Sovereign Grace Baptist Church",
             address: "1809 Wells Street Enumclaw, WA 98022",
             region: "WA",
-            website: "http://www.sovgracewa.org/"
+            website: "http://www.sovgracewa.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6088,7 +13031,28 @@ const CHURCHES = [
             name: "Trinity Reformed Baptist Church",
             address: "315 3rd Ave. S. Kirkland, WA 98033",
             region: "WA",
-            website: "http://www.trinityreformedbaptist.com/"
+            website: "http://www.trinityreformedbaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6100,7 +13064,28 @@ const CHURCHES = [
             name: "Covenant Reformed Baptist Church",
             address: "P.O. Box 2021 Bluefield, WV 24701",
             region: "WV",
-            website: "http://www.crbcbluefield.net/"
+            website: "http://www.crbcbluefield.net/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6112,7 +13097,28 @@ const CHURCHES = [
             name: "Citadel Reformed Baptist Church",
             address: "Huntington, West Virginia",
             region: "WV",
-            website: ""
+            website: "",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6124,7 +13130,28 @@ const CHURCHES = [
             name: "Northwoods Baptist Church",
             address: "417 West Davenport Street Rhinelander, WI 54501",
             region: "WI",
-            website: "http://www.northwoodsbaptist.com/"
+            website: "http://www.northwoodsbaptist.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6136,7 +13163,28 @@ const CHURCHES = [
             name: "Rice Lake Baptist Church",
             address: "104 East Barker Street Rice Lake, WI 54868",
             region: "WI",
-            website: "http://www.ricelakebaptist.org/"
+            website: "http://www.ricelakebaptist.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6148,7 +13196,28 @@ const CHURCHES = [
             name: "Sovereign Grace Church",
             address: "534 CY Avenue Casper, WY 82601",
             region: "WY",
-            website: "http://www.sovereigngracechurch.com/"
+            website: "http://www.sovereigngracechurch.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6160,7 +13229,28 @@ const CHURCHES = [
             name: "Sovereign Grace Bible Church",
             address: "PO Box 906 Worland, WY 82401",
             region: "WY",
-            website: "http://www.sgbcwy.org/"
+            website: "http://www.sgbcwy.org/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6172,7 +13262,28 @@ const CHURCHES = [
             name: "Trinity Bible Church ",
             address: "507 North Clark Street Powell, Wyoming 82435",
             region: "WY",
-            website: "http://www.tbcwyoming.com/"
+            website: "http://www.tbcwyoming.com/",
+            // notes: [
+            //     {
+            //         type: 'sermons',
+            //         data: 'http://www.gbcconway.com/sermons/'
+            //     },
+            //     {
+            //         type: 'facebook',
+            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
+            //     }
+            // ],
+            // pastors: [
+            //     {
+            //         name: 'Jeff Johnson',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+            //     },
+            //     {
+            //         name: 'Wyeth Wallis',
+            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+            //     }
+            // ],
+            // lastUpdated: '5/22/2017'
         }
     }
 ];

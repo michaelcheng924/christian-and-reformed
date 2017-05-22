@@ -2,6 +2,7 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { partial } from 'lodash';
 import { createSelector } from 'reselect';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -56,16 +57,24 @@ class App extends Component {
         return (
             <Component>
                 <MuiThemeProvider>
-                    <div>
-                        <Header app={app} />
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/video-audio" component={VideoAudio}/>
-                        <Route path="/reformed-church-finder" component={ChurchFinder}/>
-                        <Route path="/confessions-creeds-explorer" component={ConfessionsCreeds}/>
-                        <Route path="/games" component={Games} />
-                        <Route path="/admin" component={Admin} />
-                        {this.renderBack()}
-                    </div>
+                    <CSSTransitionGroup
+                        transitionName="app"
+                        transitionAppear={true}
+                        transitionAppearTimeout={400}
+                        transitionEnter={false}
+                        transitionLeave={false}
+                    >
+                        <div>
+                            <Header app={app} />
+                            <Route exact path="/" component={Home}/>
+                            <Route path="/video-audio" component={VideoAudio}/>
+                            <Route path="/reformed-church-finder" component={ChurchFinder}/>
+                            <Route path="/confessions-creeds-explorer" component={ConfessionsCreeds}/>
+                            <Route path="/games" component={Games} />
+                            <Route path="/admin" component={Admin} />
+                            {this.renderBack()}
+                        </div>
+                    </CSSTransitionGroup>
                 </MuiThemeProvider>
             </Component>
         );

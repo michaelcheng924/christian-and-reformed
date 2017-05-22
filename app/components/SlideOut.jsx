@@ -56,30 +56,45 @@ class SlideOut extends Component {
                         <Card className="slide-out-content__card">
                             <CardText className="slide-out-content__card-description">
                                 <div>
-                                    <h2>How you can help:</h2>
-                                    <br />
-                                    <span>Like the Facebook page</span>
-                                    <div
-                                        className="fb-like"
-                                        data-href="https://www.facebook.com/christianandreformed/"
-                                        data-layout="button_count"
-                                        data-action="like"
-                                        data-size="small"
-                                        data-show-faces="true"
-                                    />
-                                    <br /><br />
-                                    <span>Share this website</span>
-                                    <div dangerouslySetInnerHTML={{__html: '<div class="fb-share-button" data-href="http://christianandreformed.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fchristianandreformed.com%2F&amp;src=sdkpreparse">Share</a></div>'}} />
-                                    <br /><br />
                                     <div>
-                                        Visit the <a href="https://www.facebook.com/christianandreformed/" target="_blank">Facebook</a> page to...
+                                        <h2>About</h2>
+                                        <br />
+                                        <div>The goal of this app is to further the spread of the gospel, which we believe is well-summarized in the historic <strong>London Baptist</strong> and <strong>Westminster</strong> confessions.</div>
+                                        <br />
+
+                                        <div>Specifically, here is how we hope to accomplish this goal:</div>
                                         <ul>
-                                            <li>Add or edit information for a church</li>
-                                            <li>Request a feature</li>
-                                            <li>Report a bug</li>
-                                            <li>Share your experience</li>
-                                            <li>Just chat about whatever you want</li>
+                                            <li>Provide a place to learn and explore Reformed theology in a variety of ways</li>
+                                            <li>Maintain the most accurate, extensive, and up-to-date directory of Reformed churches across the world</li>
+                                            <li>Be a resource to help parents teach their children</li>
                                         </ul>
+                                    </div>
+                                    <div>
+                                        <h2>How you can help</h2>
+                                        <br />
+                                        <span>Like the Facebook page</span>
+                                        <div
+                                            className="fb-like"
+                                            data-href="https://www.facebook.com/christianandreformed/"
+                                            data-layout="button_count"
+                                            data-action="like"
+                                            data-size="small"
+                                            data-show-faces="true"
+                                        />
+                                        <br /><br />
+                                        <span>Share this website</span>
+                                        <div dangerouslySetInnerHTML={{__html: '<div class="fb-share-button" data-href="http://christianandreformed.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fchristianandreformed.com%2F&amp;src=sdkpreparse">Share</a></div>'}} />
+                                        <br /><br />
+                                        <div>
+                                            Visit the <a href="https://www.facebook.com/christianandreformed/" target="_blank">Facebook</a> page to...
+                                            <ul>
+                                                <li>Add or edit information for a church</li>
+                                                <li>Request a feature</li>
+                                                <li>Report a bug</li>
+                                                <li>Share your experience</li>
+                                                <li>Just chat about whatever you want</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </CardText>
