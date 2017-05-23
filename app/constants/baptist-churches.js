@@ -1,4 +1,4 @@
-// https://maps.googleapis.com/maps/api/geocode/json?address=4652+Ayers+Rd,+Macon,+GA+31210&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
+// https://maps.googleapis.com/maps/api/geocode/json?address=6200+Vollmer+Road,+Matteson,+IL+60443&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
 
 const CHURCHES = [  
     {  
@@ -4062,68 +4062,25 @@ const CHURCHES = [
     },
     {  
         coordinates: {
-            lat: 42.062493,
-            lng: -87.959686
+            lat: 40.7905304,
+            lng: -89.3555702
         },
         details: {  
-            name: "Bible Baptist Church",
-            address: "123 South Busse Rd Mount Prospect, IL 60056",
+            name: "Christ Reformed Baptist Church",
+            address: "707 E. Mt. Vernon Street, Metamora, IL",
             region: "IL",
-            website: "http://www.kjbbc.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 40.766036,
-            lng: -89.475317
-        },
-        details: {  
-            name: "Christ Bible Church",
-            address: "517 Jubilee Lane Germantown Hills, IL  61548",
-            region: "IL",
-            website: "http://www.christbiblechurch.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "http://www.crbc.cc/",
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Mt. Vernon Shopping Center, next to McDonalds'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.crbc.cc/sermons.htm'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4133,129 +4090,96 @@ const CHURCHES = [
         },
         details: {  
             name: "Grace Covenant Church",
-            address: "355 E. Chicago St. Elgin, IL 60120",
+            address: "411 River Road, Elgin IL",
             region: "IL",
             website: "http://www.gracecovenantchurch.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            newHampshire: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gracecovenantchurch.net/sermons/?view=mobile'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Grace-Covenant-Church/894929637221933?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Paul Alexander',
+                    image: 'http://storage.cloversites.com/gracecovenantchurchoffoxvalley/site_images/list_page43_item54_1382669266.jpg'
+                },
+                {
+                    name: 'Dave Fassett',
+                    image: 'http://storage.cloversites.com/gracecovenantchurchoffoxvalley/site_images/list_page43_item57_553bd804e76d8.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
         coordinates: {
-            lat: 42.336772,
-            lng: -89.027526
+            lat: 42.28381,
+            lng: -88.993774
         },
         details: {  
             name: "Grace Reformed Baptist Church",
-            address: "7721 N. Alpine Road  Rockford, IL  61131",
+            address: "6310 Guilford Rd. Rockford, IL 61107",
             region: "IL",
             website: "http://www.grbcrockford.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.grbcrockford.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Grace-Reformed-Baptist-Church/762674890442031?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Dale Smith',
+                    image: 'http://www.grbcrockford.org/wp-content/uploads/2013/12/dale-smith.jpeg'
+                },
+                {
+                    name: 'Allen Huber',
+                    image: 'http://www.grbcrockford.org/wp-content/uploads/2013/12/al-huber.jpeg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
         coordinates: {
-            lat: 41.761418,
-            lng: -88.443686
-        },
-        details: {  
-            name: "Heritage of Faith Church",
-            address: "Waubonsee Community College Sugar Grove, Illinois",
-            region: "IL",
-            website: "http://www.heritageoffaith.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 41.578507,
-            lng: -87.82165
+            lat: 41.5285314,
+            lng: -87.7660643
         },
         details: {  
             name: "Hope Reformed Baptist Fellowship",
-            address: "17171 S. 84th Ave. Tinley Park, IL 60477",
+            address: "6200 Vollmer Road, Matteson, IL 60443",
             region: "IL",
             website: "http://www.hopereformedbaptistchurch.com",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Old St. Paul\'s Church'
+                },
+                {
+                    type: 'sermons',
+                    data: 'https://hopereformedbaptistchurch.com/resources/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/HopeReformedBaptistChurchChicagoland/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'John Yoder'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4268,27 +4192,36 @@ const CHURCHES = [
             address: "811 South Vale Street Bloomington, Illinois 61701",
             region: "IL",
             website: "http://www.immanuelhomepage.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.immanuelhomepage.org/site/cpage.asp?sec_id=180019493&cpage_id=180095795'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/ibcbloomington/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Keith Throop',
+                    image: 'http://www.immanuelhomepage.org/home/180019493/180019493/Images/12491929_10153812626290692_2629035299197194556_o-1.jpg'
+                },
+                {
+                    name: 'George Drye',
+                    image: 'http://www.immanuelhomepage.org/home/180019493/180019493/Images/12491929_10153812626290692_2629035299197194556_o-1.jpg'
+                },
+                {
+                    name: 'Dennis Luhn'
+                },
+                {
+                    name: 'Brent Flint'
+                },
+                {
+                    name: 'Ben Murphy'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4301,60 +4234,27 @@ const CHURCHES = [
             address: "6N171 Gary Avenue Roselle, IL 60172",
             region: "IL",
             website: "http://www.livinghopechurch.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 41.998443,
-            lng: -88.145283
-        },
-        details: {  
-            name: "Iglesia Esperanza",
-            address: "7020 Barrington Road Hanover Park, Illinois 60133",
-            region: "IL",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://livinghopechurch.net/sermon-archive/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/livinghoperoselle/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Matthew Black',
+                    image: 'http://livinghopechurch.net/wp-content/uploads/2015/01/mattjill.jpg'
+                },
+                {
+                    name: 'Michael Tiberi',
+                    image: 'http://livinghopechurch.net/wp-content/uploads/2014/07/tiberis.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4367,27 +4267,32 @@ const CHURCHES = [
             address: "294 Evergreen Drive Vernon Hills, IL 60061",
             region: "IL",
             website: "http://www.newlifevh.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            newHampshire: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.newlifevh.org/resources/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/New-Life-Fellowship-Church/190111617699748?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Louis Love',
+                    image: 'http://www.newlifevh.org/wp-content/uploads/2013/05/bio-love-sr.jpg'
+                },
+                {
+                    name: 'Alton Grant, Jr.',
+                    image: 'http://www.newlifevh.org/wp-content/uploads/2013/05/Grant-Family.jpg'
+                },
+                {
+                    name: 'James "Billy" Little, III',
+                    image: 'http://www.newlifevh.org/wp-content/uploads/2013/05/Little-Family.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4396,31 +4301,31 @@ const CHURCHES = [
             lng: -90.368218
         },
         details: {  
-            name: "Sycamore Baptist Church",
+            name: "Sycamore Reformed Baptist Church",
             address: "5323 180th Street North  East Moline, IL 61244",
             region: "IL",
             website: "http://www.sycamorebaptistchurch.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://sycamorebaptistchurch.com/multimedia-category/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Sycamore-Reformed-Baptist-Church-202238264239/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Chuck Rennie',
+                    image: 'http://sycamorebaptistchurch.com/wp-content/uploads/2011/10/untitled-10-641x960.jpg'
+                },
+                {
+                    name: 'Jim Dopler',
+                    image: 'http://sycamorebaptistchurch.com/wp-content/uploads/2011/10/untitled-22-686x960.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4433,27 +4338,27 @@ const CHURCHES = [
             address: "2090 E. Pierceton Road Winona Lake, IN 46590",
             region: "IN",
             website: "http://www.christscovenant.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://christscovenant.org/sermon-archive/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/ChristsCovenant/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Nate Mclaurin',
+                    image: 'http://ccchurch.wpengine.netdna-cdn.com/wp-content/uploads/2013/06/Nate-McLaurin-1024x1024.jpg'
+                },
+                {
+                    name: 'Marc Goodwin',
+                    image: 'http://ccchurch.wpengine.netdna-cdn.com/wp-content/uploads/2013/06/MarcGoodwin-1024x1024.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4466,27 +4371,27 @@ const CHURCHES = [
             address: "3665 Bell Road Newburgh, IN  47630",
             region: "IN",
             website: "http://www.cornerstone-fellowship.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.cornerstone-fellowship.org/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/CornerstoneFellowshipChurch/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Bill Francis',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/cornerstone_fellowship_newburgh/pbill-quicklink_209x124.png'
+                },
+                {
+                    name: 'Kevin Roberts',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/cornerstone_fellowship_newburgh/kmr-page-photo-580x435-.png'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4499,60 +4404,31 @@ const CHURCHES = [
             address: "3743 Nichol Avenue Anderson, IN 46011",
             region: "IN",
             website: "http://www.edgewoodbaptistchurch.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 39.761157,
-            lng: -86.811952
-        },
-        details: {  
-            name: "Eternal Grace Baptist Church of New Maysville",
-            address: "Bainbridge, Indiana",
-            region: "IN",
-            website: "http://www.link2000.net/homes/users/preacher/index.html",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.edgewoodbaptistchurch.net/streaming'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Edgewood-Baptist-Church-104976559555374/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Tom Lutz',
+                    image: 'http://www.edgewoodbaptistchurch.net/wp-content/uploads/2006/09/3-150x150.jpg'
+                },
+                {
+                    name: 'Andy Lutz',
+                    image: 'http://www.edgewoodbaptistchurch.net/wp-content/uploads/2006/09/1-300x300.jpg'
+                },
+                {
+                    name: 'Bob Mahl',
+                    image: 'http://www.edgewoodbaptistchurch.net/wp-content/uploads/2006/09/bob-150x150.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4565,27 +4441,31 @@ const CHURCHES = [
             address: "1010 E. 126th St. Carmel, IN 46033",
             region: "IN",
             website: "http://www.fbccarmel.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.fbccarmel.com/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/First-Baptist-Church-of-Carmel-126895620658760/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Chad Knudson',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/first_baptist_carmel/chad-r.jpg'
+                },
+                {
+                    name: 'Kurt Larson',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/first_baptist_carmel/kurt-r.jpg'
+                },
+                {
+                    name: 'Rob Schloemer',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/first_baptist_carmel/rob-r.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4598,27 +4478,22 @@ const CHURCHES = [
             address: "475 Anchorage Road Warsaw, IN 46580",
             region: "IN",
             website: "http://www.gbcwarsaw.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'The Meeting Place'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.gbcwarsaw.com/sermons.html'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Aaron Hoak'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4631,27 +4506,27 @@ const CHURCHES = [
             address: "535 S. Birkey St Bremen, IN 46506",
             region: "IN",
             website: "http://www.gfcbremen.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gfcbremen.com/media.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Grace-Fellowship-Church/108147295894316?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jon Hueni',
+                    image: 'http://www.gfcbremen.com/uploads/7/8/6/3/7863743/4918293.jpg?300'
+                },
+                {
+                    name: 'Jason Webb',
+                    image: 'http://www.gfcbremen.com/uploads/7/8/6/3/7863743/8660456.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4664,93 +4539,23 @@ const CHURCHES = [
             address: "944 E. Davis Rd. Greenfield, IN 46140",
             region: "IN",
             website: "http://www.hrbchurch.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 39.480606,
-            lng: -86.054986
-        },
-        details: {  
-            name: "Heritage Reformed Baptist Church",
-            address: "Franklin, Indiana 46131",
-            region: "IN",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 40.524072,
-            lng: -85.681971
-        },
-        details: {  
-            name: "Heritage Bible Fellowship",
-            address: "1720 W. 38th St. Marion, IN.  46953",
-            region: "IN",
-            website: "http://www.heritagebiblefellowship.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'https://www.sermonaudio.com/sermoninfo.asp?m=t&s=5211712295810'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Hancock-Reformed-Baptist-Church-221742241178764/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mark Judy',
+                    image: 'https://static.wixstatic.com/media/4419d5_0968629761d9474cac2ddb5574d16bf2~mv2.jpg/v1/fill/w_672,h_428,al_c,q_80,usm_0.66_1.00_0.01/4419d5_0968629761d9474cac2ddb5574d16bf2~mv2.webp'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4763,27 +4568,19 @@ const CHURCHES = [
             address: "12550 Promise Creek Ln, Suite 112, Fishers, IN",
             region: "IN",
             website: "http://www.prbcindy.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.prbcindy.com/sermons/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Pastor Bob',
+                    image: 'http://www.prbcindy.com/wp-content/uploads/2014/03/20140310-141645.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4795,28 +4592,36 @@ const CHURCHES = [
             name: "Reformed Baptist Church",
             address: "701 State Street Tama, IA 52339",
             region: "IA",
-            website: "www.sermonaudio.com/rbctama",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "http://reformedbaptistoftama.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=rbctama'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Reformed-Baptist-Church/120334867978854?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Paul Rendall',
+                    image: 'http://reformedbaptistoftama.com/images/paul.png'
+                },
+                {
+                    name: 'Brian Squiers',
+                    image: 'http://reformedbaptistoftama.com/images/brian.png'
+                },
+                {
+                    name: 'Lyle Pakala',
+                    image: 'http://reformedbaptistoftama.com/images/lyle.png'
+                },
+                {
+                    name: 'Abraham Korodan',
+                    image: 'http://reformedbaptistoftama.com/images/abe.png'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4825,31 +4630,31 @@ const CHURCHES = [
             lng: -95.581523
         },
         details: {  
-            name: "Reformed Baptist Church of Topeka, KS",
-            address: "321 SE Stanton Road Tecumseh, KS 66542",
+            name: "Trinity Reformed Baptist Church",
+            address: "4307 SW 30th Terrace, Topeka, KS",
             region: "KS",
-            website: "http://reformingworship.org/main/church/home",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "http://www.trinityreformedbaptist.org/",
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Pastor Spagnuolo\'s home'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.trinityreformedbaptist.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/TRBCTopeka/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Bob Spagnuolo',
+                    image: 'http://www.trinityreformedbaptist.org/wpimages/wpaa68b932_05_06.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4861,28 +4666,19 @@ const CHURCHES = [
             name: "New Hope Baptist Church",
             address: "882 W. Hwy 36 Seneca, KS 66538",
             region: "KS",
-            website: "http://www.sermonaudio.com/newhopeks",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "http://newhopebaptistseneca.squarespace.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://newhopebaptistseneca.squarespace.com/sermons/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Curtis Knapp'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4895,60 +4691,22 @@ const CHURCHES = [
             address: "24450 W. 83rd St. Lenexa, Kansas 66227",
             region: "KS",
             website: "http://www.reformedbaptistkc.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 39.013101,
-            lng: -95.85121
-        },
-        details: {  
-            name: "Trinity Reformed Baptist Church",
-            address: "Topeka, KS 66614",
-            region: "KS",
-            website: "http://www.trinityreformedbaptist.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.reformedbaptistkc.org/sermons.php'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Reformed-Baptist-Church-of-Kansas-City/183188768699229?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Martin Nish'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4961,60 +4719,27 @@ const CHURCHES = [
             address: "1021 Market Street, Henderson KY 42420",
             region: "KY",
             website: "http://covenantbaptisthenderson.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 37.538935,
-            lng: -87.258332
-        },
-        details: {  
-            name: "Crossroads Baptist Church",
-            address: "Callhoun, KY 42327",
-            region: "KY",
-            website: "http://www.crossroads-baptist-church.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://covenantbaptisthenderson.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/covenantbaptisthenderson/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Kenny Noblett',
+                    image: 'http://covenantbaptisthenderson.org/wp-content/uploads/2012/08/nobletts.jpg'
+                },
+                {
+                    name: 'Brian Whitman',
+                    image: 'http://covenantbaptisthenderson.org/wp-content/uploads/2012/08/whitmans.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5027,93 +4752,23 @@ const CHURCHES = [
             address: "1501 26th St. Owensboro, KY 42303",
             region: "KY",
             website: "http://www.grbco.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 37.751801,
-            lng: -87.053283
-        },
-        details: {  
-            name: "Green River Area Deaf Fellowship",
-            address: "3587 Hwy 54 Owensboro, KY 42301",
-            region: "KY",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 37.703065,
-            lng: -85.864941
-        },
-        details: {  
-            name: "Heritage Baptist Church",
-            address: "Elizabethtown, KY",
-            region: "KY",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.grbco.org/index.php/grbcresources/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/grbco/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Sam Waldron',
+                    image: 'http://www.grbco.org/images/waldron-01.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5126,27 +4781,35 @@ const CHURCHES = [
             address: "3585 Thruston-Dermont Rd. Owensboro, KY 42303",
             region: "KY",
             website: "http://www.hbcowensboro.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.hbcowensboro.org/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/hbcowensboro/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jonathan Christman',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/heritage_baptist_owensboro/monkimage-2-php.jpeg'
+                },
+                {
+                    name: 'Mark Redfern',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/heritage_baptist_owensboro/monkimage-3-php.jpeg'
+                },
+                {
+                    name: 'Keith Maddy',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/heritage_baptist_owensboro/monkimage-1-php.jpeg'
+                },
+                {
+                    name: 'Ted Christman',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/heritage_baptist_owensboro/monkimage-php.jpeg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5159,93 +4822,28 @@ const CHURCHES = [
             address: "3400 Wilderness Trail, Louisville, KY 40299",
             region: "KY",
             website: "http://www.rbclouisville.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 31.628563,
-            lng: -91.834256
-        },
-        details: {  
-            name: "Berean Bible Church",
-            address: "2003 Fourth St Jonesville, LA 71343",
-            region: "LA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 30.243354,
-            lng: -91.987761
-        },
-        details: {  
-            name: "Covenant Baptist Church",
-            address: "1700 E WIllow St Lafayette, LA",
-            region: "LA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.rbclouisville.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Reformed-Baptist-Church-of-Louisville/104967419546594?fref=ts&ref=br_tf'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Charlie Hall'
+                },
+                {
+                    name: 'Jim Savastio'
+                },
+                {
+                    name: 'John Grevious'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5258,27 +4856,27 @@ const CHURCHES = [
             address: "12329 Jackson Street, Clinton, LA 70722",
             region: "LA",
             website: "http://www.fbcclintonla.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.fbcclintonla.com/sermons.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/First-Baptist-Church/188351334554546?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Tom Hicks',
+                    image: 'http://www.fbcclintonla.com/Images/leadership-tom-small.jpg'
+                },
+                {
+                    name: 'Fred Malone',
+                    image: 'http://www.fbcclintonla.com/Images/leadership-fred-small.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5291,27 +4889,13 @@ const CHURCHES = [
             address: "26954 LA Highway 42 Springfield, LA 70462",
             region: "LA",
             website: "http://www.gfbcla.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://gfbcla.com/sermons.html'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5321,30 +4905,25 @@ const CHURCHES = [
         },
         details: {  
             name: "Providence Baptist Church",
-            address: "Ball, LA 71405",
+            address: "53 Hammock Lane, Ball, LA 71405",
             region: "LA",
             website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/search.asp?SourceOnly=true&currSection=sermonssource&keyword=providencebc'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pbcreformed/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'William Avants'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5357,27 +4936,22 @@ const CHURCHES = [
             address: "2021 Gause Blvd. East Slidell, LA 70461",
             region: "LA",
             website: "http://www.sgfellowship.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sgfellowship.org/sermon-audio.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Sovereign-Grace-Fellowship-302275116458352/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Eddie Exposito'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  

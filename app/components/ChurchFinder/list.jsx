@@ -95,6 +95,8 @@ export default class ChurchFinderList extends Component {
                                         <CardTitle className="church-directory__list-card-title" title={name} />
                                         <CardText className="church-directory__list-card-description">
                                             <div>{address} (<a href={directionsUrl} target="_blank">Directions</a>)</div>
+                                            <br />
+                                            <div><strong>Website:</strong> {website}</div>
                                             {this.renderNotes(notes, familyIntegrated)}
                                             {this.renderPastors(pastors)}
                                             <br />
