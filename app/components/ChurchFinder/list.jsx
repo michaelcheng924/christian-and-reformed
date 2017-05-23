@@ -24,13 +24,13 @@ export default class ChurchFinderList extends Component {
                 {
                     notes && notes.map(note => {
                         if (note.type === 'confession') {
-                            return <div><i className="fa fa-book" aria-hidden="true"></i> <strong>Confession:</strong> {note.data}</div>;
+                            return <div key={note.type}><i className="fa fa-book" aria-hidden="true"></i> <strong>Confession:</strong> {note.data}</div>;
                         } else if (note.type === 'meeting at') {
-                            return <div><i className="fa fa-home" aria-hidden="true"></i> <strong>Meeting at:</strong> {note.data}</div>;
+                            return <div key={note.type}><i className="fa fa-home" aria-hidden="true"></i> <strong>Meeting at:</strong> {note.data}</div>;
                         } else if (note.type === 'sermons') {
-                            return <div><i className="fa fa-comment" aria-hidden="true"></i> <a className="church-directory__church-link" href={note.data} target="_blank">Sermons</a></div>;
+                            return <div key={note.type}><i className="fa fa-comment" aria-hidden="true"></i> <a className="church-directory__church-link" href={note.data} target="_blank">Sermons</a></div>;
                         } else if (note.type === 'facebook') {
-                            return <div><i className="fa fa-facebook-official" aria-hidden="true"></i> <a className="church-directory__church-link" href={note.data} target="_blank">Facebook</a></div>;
+                            return <div key={note.type}><i className="fa fa-facebook-official" aria-hidden="true"></i> <a className="church-directory__church-link" href={note.data} target="_blank">Facebook</a></div>;
                         }
                     })
                 }
@@ -39,6 +39,8 @@ export default class ChurchFinderList extends Component {
     }
 
     renderPastors(pastors) {
+        if (!pastors) { return null; }
+
         return (
             <div>
                 <br />
@@ -47,7 +49,7 @@ export default class ChurchFinderList extends Component {
                     {
                         pastors.map(pastor => {
                             return (
-                                <div className="church-directory__pastor">
+                                <div key={pastor.name} className="church-directory__pastor">
                                     {
                                         pastor.image
                                             ? <img className="church-directory__pastor-image" src={pastor.image} />

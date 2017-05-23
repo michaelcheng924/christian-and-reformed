@@ -1,4 +1,4 @@
-// https://maps.googleapis.com/maps/api/geocode/json?address=3385+E.+Shields,+Fresno+CA+93726&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
+// https://maps.googleapis.com/maps/api/geocode/json?address=4652+Ayers+Rd,+Macon,+GA+31210&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
 
 const CHURCHES = [  
     {  
@@ -2552,39 +2552,6 @@ const CHURCHES = [
     },
     {  
         coordinates: {
-            lat: 33.881682,
-            lng: -118.117012
-        },
-        details: {  
-            name: "Grace Providence Church",
-            address: "Bellflower, CA",
-            region: "CA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
             lat: 38.73527,
             lng: -120.78297
         },
@@ -2593,27 +2560,22 @@ const CHURCHES = [
             address: "1386 Carson Road Placerville, CA 95667",
             region: "CA",
             website: "http://www.gracereformedbc.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gracereformedbc.net/index_files/Sermons.htm'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jeff Oliver',
+                    image: 'http://www.gracereformedbc.net/index_files/image613.jpg'
+                },
+                {
+                    name: 'Kyle Daque'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2623,30 +2585,30 @@ const CHURCHES = [
         },
         details: {  
             name: "Grace Reformed Baptist Church",
-            address: "Palmdale, CA",
+            address: "38630 5th St W, Palmdale, CA 93551",
             region: "CA",
             website: "http://www.grbcav.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Holiday Inn'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/search.asp?SourceOnly=true&currSection=sermonssource&keyword=grbc1689&keywordDesc=Grace+Reformed+Baptist+Church'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/grbcav/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Richard C. Barcellos',
+                    image: 'http://grbcav.org/wp-content/uploads/2011/03/richard-barcellos1.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2659,27 +2621,30 @@ const CHURCHES = [
             address: "1424 24th Street Sacramento, CA 95816",
             region: "CA",
             website: "http://www.immanuelbc.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.immanuelbc.net/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/IBCofSac/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Paul Vossen'
+                },
+                {
+                    name: 'Robert Briggs',
+                    image: 'http://media.sermonaudio.com/gallery/photos/thumbnails/robertbriggs-02.png'
+                },
+                {
+                    name: 'Steve Meister',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2691,28 +2656,18 @@ const CHURCHES = [
             name: "Providence Bible Church",
             address: "709 Lakewood Drive Sunnyvale, CA  94088",
             region: "CA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.pbc-ca.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.pbc-ca.org/sermon-archive/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Providence-Bible-Church-of-Sunnyvale/120565164621290?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2722,30 +2677,25 @@ const CHURCHES = [
         },
         details: {  
             name: "Mountain Reformed Church",
-            address: "22972 Waters Drive Crestline, CA 92325",
+            address: "23382 Crest Forest Dr, Crestline, CA 93325",
             region: "CA",
             website: "http://www.mountainreformed.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://mountainreformed.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/MountainReformedBaptistChurch/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Alan Harris'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2758,27 +2708,31 @@ const CHURCHES = [
             address: "7250 Mission Boulevard, Riverside, CA 92509",
             region: "CA",
             website: "http://www.rbcr.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.rbcr.org/audio-sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/ReformedBaptistChurch/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Robert Elliott',
+                    image: 'http://www.rbcr.org/wp-content/uploads/2017/04/robert-1.jpg'
+                },
+                {
+                    name: 'Ryan Devine',
+                    image: 'http://www.rbcr.org/wp-content/uploads/2012/06/pastor-ryan.jpg'
+                },
+                {
+                    name: 'Christian Poleynard',
+                    image: 'http://www.rbcr.org/wp-content/uploads/2015/02/IMG_2729-e1424318485106.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2791,27 +2745,23 @@ const CHURCHES = [
             address: "1168 East G Street Ontario, CA 91764",
             region: "CA",
             website: "http://www.sgbc-ontario.us/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://sgbc-ontario.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/sgbc.ontario/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Steve Marquedant',
+                    image: 'http://47k9ssuzwxl42i9go2n75fyd.wpengine.netdna-cdn.com/wp-content/uploads/Steve-Marquedant.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2824,27 +2774,27 @@ const CHURCHES = [
             address: "271 West Edmundson Ave. Morgan Hill, CA., 95037",
             region: "CA",
             website: "http://www.sgbcsv.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sgbcsv.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Sovereign-Grace-Baptist-Church/118369981508967?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Dr. W. R. Downing',
+                    image: 'http://www.sgbcsv.org/_images/pastorDowning.jpg'
+                },
+                {
+                    name: 'Dr. Paul Nelson',
+                    image: 'http://www.sgbcsv.org/_images/pastorNelson.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2857,60 +2807,17 @@ const CHURCHES = [
             address: "14407 E. Rosecrans Ave. La Mirada, CA  90638",
             region: "CA",
             website: "http://www.reformedbaptist.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 39.647845,
-            lng: -105.04113
-        },
-        details: {  
-            name: "Christ Church",
-            address: "Denver, CO 80236",
-            region: "CO",
-            website: "http://christchurchdenver.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=trbc'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/TRBCLaMirada/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2919,31 +2826,31 @@ const CHURCHES = [
             lng: -105.060643
         },
         details: {  
-            name: "Denver Sound Church",
+            name: "Denver Reformed Church",
             address: "5800 West 6th Avenue   Lakewood, CO 80214",
             region: "CO",
-            website: "http://www.denversoundchurch.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.denverreformed.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'https://www.youtube.com/user/SoundChurchDenver'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/gbcconway/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jeff Johnson',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+                },
+                {
+                    name: 'Wyeth Wallis',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -2956,60 +2863,27 @@ const CHURCHES = [
             address: "7493 Old Mill Trail Boulder, CO 80301",
             region: "CO",
             website: "http://www.rbcnc.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 41.67145,
-            lng: -72.86643
-        },
-        details: {  
-            name: "First Baptist Church",
-            address: "18 E. Main St. Plainville, CT 06062",
-            region: "CT",
-            website: "http://www.fbcplainvillect.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.rbcnc.com/sermons-and-radio-show'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mason Staub'
+                },
+                {
+                    name: 'Peter Van Dorn'
+                },
+                {
+                    name: 'Stan Campbell'
+                },
+                {
+                    name: 'Douglas Van Dorn'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3022,27 +2896,31 @@ const CHURCHES = [
             address: "1225 N. High Street East Haven, CT 06512",
             region: "CT",
             website: "http://www.grbcct.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://grbcct.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Grace-Reformed-Baptist-Church/111676255537832?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mark Raines'
+                },
+                {
+                    name: 'Wayne LaFond'
+                },
+                {
+                    name: 'Chris Forbes'
+                },
+                {
+                    name: 'Adam Richwine'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3055,27 +2933,24 @@ const CHURCHES = [
             address: "6015 W. Farkas Rd  Plant City, FL 33567",
             region: "FL",
             website: "http://www.ahavabaptist.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            noConfession: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.ahavabaptist.com/sermons/sermons.htm'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/AhavaBaptist/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mike Holland',
+                    image: 'http://www.ahavabaptist.com/images/mikeHollandPulpit_200x299_web.gif'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3085,63 +2960,20 @@ const CHURCHES = [
         },
         details: {  
             name: "Bethel Community Church",
-            address: "Sarasota, Florida",
+            address: "5632 Gantt Road, Sarasota, Florida, 34233",
             region: "FL",
             website: "http://www.bethelcomchurch.org/index.html",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 28.656005,
-            lng: -81.443296
-        },
-        details: {  
-            name: "Covenant Reformed Baptist Church",
-            address: "3600 McNeil Rd.  Apopka, FL 32703",
-            region: "FL",
-            website: "http://www.covenantreformedbaptist.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.bethelcomchurch.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Bethel-Community-Church/116258461735198?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3154,27 +2986,17 @@ const CHURCHES = [
             address: "3370 Snow Hill Road Chuluota, Florida 32766",
             region: "FL",
             website: "http://www.cornerstoneorlando.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.cornerstoneorlando.org/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/CornerstoneOrlando/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3187,27 +3009,19 @@ const CHURCHES = [
             address: "12268 SW 128th St. Miami, Florida, USA 33186",
             region: "FL",
             website: "http://www.cornerstonebiblechurch.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/cbcmiami/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jason Tesser',
+                    image: 'http://cornerstonebiblechurch.com/wp-content/uploads/2016/04/Screen-Shot-2017-04-15-at-8.20.22-AM.png'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3220,27 +3034,31 @@ const CHURCHES = [
             address: "5391 Johnson Road Coconut Creek, Florida 33073",
             region: "FL",
             website: "http://www.ebcfl.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.ebcfl.org/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/ebcfl/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Robert Diekema',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/emmanuel_baptist/pastors_dec2016.jpg'
+                },
+                {
+                    name: 'Jeffery Smith',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/emmanuel_baptist/pastors_dec2016.jpg'
+                },
+                {
+                    name: 'Daniel Wakefield',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/emmanuel_baptist/pastors_dec2016.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3252,28 +3070,32 @@ const CHURCHES = [
             name: "Faith Baptist Church",
             address: "500 North Bumby Avenue Orlando, FL 32803",
             region: "FL",
-            website: "http://www.faithbaptistorlando.org",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.faithbaptistorlando.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.faithbaptistorlando.com/resources'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Faith-Baptist-Church-125295160885258/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jack Jenkins',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/faith_baptist_orlando/color-10x10s--6-of-7-.jpg'
+                },
+                {
+                    name: 'Rick Myers',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/faith_baptist_orlando/color-10x10s--1-of-7-.jpg'
+                },
+                {
+                    name: 'Ron Wood',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/faith_baptist_orlando/color-10x10s--2-of-7-.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3286,27 +3108,17 @@ const CHURCHES = [
             address: "3910 S. Washington Ave. Suite 107, Titusville, FL 32780",
             region: "FL",
             website: "http://frb.church",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://frb.church/index.php/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Faith-Reformed-Baptist-Church-1820336101537385/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3319,27 +3131,17 @@ const CHURCHES = [
             address: "2625 South Street, Titusville, FL 32780",
             region: "FL",
             website: "http://foresthillsbaptist.com",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://foresthillsbaptist.com/audio.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Forest-Hills-Baptist-Church-216968481673811/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3352,27 +3154,23 @@ const CHURCHES = [
             address: "19111 N. Livingston Ave Lutz, FL 33559",
             region: "FL",
             website: "http://www.tampareformedbaptistchurch.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'https://tampareformedbaptistchurch.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/freegracechurchoftampabay/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Gary Carter',
+                    image: 'http://tampareformedbaptistchurch.com/wp-content/uploads/2013/02/carter.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3382,30 +3180,30 @@ const CHURCHES = [
         },
         details: {  
             name: "Grace Chapel",
-            address: "Holy Cross Lutheran Academy S.R. 46, 1 mile West of I-4, Sanford, Florida",
+            address: "100 Aero Ln, Sanford, FL 32771",
             region: "FL",
-            website: "http://www.gracereformedchapel.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.gracechapelonline.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gracechapelonline.com/sermons/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Peter Catalano',
+                    image: 'http://www.gracechapelonline.com/wp-content/uploads/2015/05/Peter-180x180.jpg'
+                },
+                {
+                    name: 'Chris Hatton',
+                    image: 'http://www.gracechapelonline.com/wp-content/uploads/2015/05/Chris-Hatton-180x180.png'
+                },
+                {
+                    name: 'Mike White',
+                    image: 'http://www.gracechapelonline.com/wp-content/uploads/2015/05/Mike-White-180x180.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3418,27 +3216,27 @@ const CHURCHES = [
             address: "1300 Ceitus Terrace, Cape Coral, FL 33991",
             region: "FL",
             website: "http://truegraceofgod.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://truegraceofgod.org/resources/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/truegraceofgod/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Tom Ascol',
+                    image: 'http://truegraceofgod.org/monkimage.php?mediaDirectory=mediafiles&mediaId=3905076&fileName=tdascol-0-0-225-225.jpg'
+                },
+                {
+                    name: 'Jared Longshore',
+                    image: 'http://truegraceofgod.org/monkimage.php?mediaDirectory=mediafiles&mediaId=3905078&fileName=jhlongshore-0-0-225-225.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3451,27 +3249,23 @@ const CHURCHES = [
             address: "11803 State Road 52 Bayonet Point, FL 34669",
             region: "FL",
             website: "http://www.gbcwp.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gbcwp.com/gggt_current.htm'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/GraceBaptistNTB/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Michael Hildebrandt',
+                    image: 'http://www.gbcwp.com/images/pastor-01.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3481,30 +3275,26 @@ const CHURCHES = [
         },
         details: {  
             name: "Highlands Grace Reformed Church",
-            address: "516 N. Pine St.  Sebring, FL 33870",
+            address: "514 N.Pine St. Sebring,Fl. 33870",
             region: "FL",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://reformed.wixsite.com/highlandsgracechurch",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://reformed.wixsite.com/highlandsgracechurch/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Highlands-Grace-Reformed-Church/111680555534252?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Ed Sager',
+                    image: 'https://static.wixstatic.com/media/9b9ff0_1c5015d81d254884a60c17d13e6901ec~mv2_d_2992_2000_s_2.jpg/v1/fill/w_1010,h_900,al_c,q_85,usm_0.66_1.00_0.01/9b9ff0_1c5015d81d254884a60c17d13e6901ec~mv2_d_2992_2000_s_2.webp'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3517,27 +3307,18 @@ const CHURCHES = [
             address: "6790 SW 12th. Street  Miami, FL 33144",
             region: "FL",
             website: "http://www.iglesiacaminonuevo.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            spanish: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://iglesiacaminonuevo.com/icn/sermones'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/iglesiacaminonuevo.miami/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3549,28 +3330,15 @@ const CHURCHES = [
             name: "Iglesia Bautista La Gracia",
             address: "10904 Winterview Drive, Naples, FL 34109",
             region: "FL",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://ibgnaples.blogspot.com/",
+            spanish: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'https://onedrive.live.com/?id=2F915EA2988E439A%211457&cid=2F915EA2988E439A'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3580,30 +3348,17 @@ const CHURCHES = [
         },
         details: {  
             name: "Iglesia Bautista Independiente",
-            address: "15078 SW 56th St. Miami, FL  33185",
+            address: "15082 SW 56th St, Miami, Florida 33185",
             region: "FL",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "https://www.facebook.com/pages/Iglesia-Bautista-Independiente/111617155543025",
+            spanish: true,
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Iglesia-Bautista-Independiente/111617155543025'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3615,28 +3370,14 @@ const CHURCHES = [
             name: "Monteocha Baptist Church",
             address: "9420 N. County Road 225  Gainesville, FL 32609",
             region: "FL",
-            website: "http://www.monteochabaptist.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "https://www.facebook.com/pg/Monteocha-Baptist-Church-249770273186/about/?ref=page_internal",
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pg/Monteocha-Baptist-Church-249770273186/about/?ref=page_internal'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3648,28 +3389,18 @@ const CHURCHES = [
             name: "Mount Zion Bible Church",
             address: "2603 West Wright St.  Pensacola, FL 32505",
             region: "FL",
-            website: "http://www.mountzion.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.chapellibrary.org/about/mt-zion-bible-church/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.chapellibrary.org/audio/mzbc-pulpit/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/chapellibrary/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3679,30 +3410,30 @@ const CHURCHES = [
         },
         details: {  
             name: "Orlando Grace Church",
-            address: "455 Maitland Avenue  Altamonte Springs, Florida",
+            address: "872 Maitland Ave, Altamonte Springs, Florida",
             region: "FL",
             website: "http://www.orlandograce.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://orlandogracechurch.org/media/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Orlando-Grace-Church-86507696915/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Curt Heffelfinger',
+                    image: 'http://orlandogracechurch.org/wp-content/uploads/2014/10/Leadership-1-Curt-Heffelfinger.jpg'
+                },
+                {
+                    name: 'Michael Graham',
+                    image: 'http://orlandogracechurch.org/wp-content/uploads/2014/10/Leadership-2-Michael-Graham.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3714,28 +3445,26 @@ const CHURCHES = [
             name: "Providence Baptist Church",
             address: "4471 W. Sanction Rd.  Lecanto, FL",
             region: "FL",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.pbcfl.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.pbcfl.org/sermons.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Providence-Baptist-Church/117599511598788?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Martin Hoffman'
+                },
+                {
+                    name: 'Steve Watson'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3748,27 +3477,24 @@ const CHURCHES = [
             address: "2080 West Granada Blvd Ormond Beach, FL 32174",
             region: "FL",
             website: "http://www.riverbendchurch.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            noConfession: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.riverbendchurch.com/sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/RCC.OrmondBeach/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Scott Menesz',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/riverbend_community/scott-gina1.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3780,61 +3506,8 @@ const CHURCHES = [
             name: "Westgate Baptist Church",
             address: "901 N.W. 112th Avenue Plantation, FL  33325",
             region: "FL",
-            website: "http://www.westgatebaptist.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 29.71,
-            lng: -82.4
-        },
-        details: {  
-            name: "West Pointe Baptist Ministries",
-            address: "Gainesville, Florida 32635",
-            region: "FL",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "https://www.facebook.com/pages/Westgate-Baptist-Church/111461602227524",
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3847,27 +3520,23 @@ const CHURCHES = [
             address: "3506 Reynolds Rd.  Douglasville, Georgia 30135",
             region: "GA",
             website: "http://www.arborheightsbc.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.arborheightsbc.com/sermons.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Arbor-Heights-Baptist-Church/114093461954656?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Randy Smith',
+                    image: 'http://www.arborheightsbc.com/uploads/3/9/5/2/39520735/pic2906-xonvr2.jpg?304'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3877,30 +3546,35 @@ const CHURCHES = [
         },
         details: {  
             name: "Atlanta Reformation Fellowship",
-            address: "4651 Britt Road Norcross, GA 30093",
+            address: "4320 Cowan Road, Tucker, Ga 30084",
             region: "GA",
             website: "http://www.atlantareformationfellowship.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            familyIntegrated: true,
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Pine Creek Center'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://atlantareformationfellowship.com/sermon-audio/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Steve Atkerson',
+                    image: 'http://atlantareformationfellowship.com/wp-content/uploads/2013/11/SteveSandra.png'
+                },
+                {
+                    name: 'Ed Caouette',
+                    image: 'http://atlantareformationfellowship.com/wp-content/uploads/2013/11/ed.png'
+                },
+                {
+                    name: 'Denton Elliott',
+                    image: 'http://atlantareformationfellowship.com/wp-content/uploads/2013/11/IMG_3620-225x300.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3910,30 +3584,34 @@ const CHURCHES = [
         },
         details: {  
             name: "Berean Baptist Church",
-            address: "2356 Clay Road Austell, GA 30106",
+            address: "3551 Jimmy Lee Smith Pkwy., Hiram, GA 30141",
             region: "GA",
             website: "http://www.bereanchurchps.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Bellamy Funeral Home'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=pastorslate'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/bereanrbc/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jerry Slate',
+                    image: 'http://www.bereanchurchps.org/img/photos/slate2.jpg'
+                },
+                {
+                    name: 'David Harris',
+                    image: 'http://www.bereanchurchps.org/img/photos/Harris.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -3946,27 +3624,20 @@ const CHURCHES = [
             address: "2209 Sunny Hill Road Lawrenceville, GA 30043",
             region: "GA",
             website: "http://www.christreformedchurch.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            familyIntegrated: true,
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/christreformed/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Robert Truelove',
+                    image: 'http://www.christreformedchurch.org/wp-content/uploads/2015/05/robert.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -3978,28 +3649,29 @@ const CHURCHES = [
             name: "Emmanuel Baptist Church",
             address: "1618 Waycross Highway Jesup GA 31545",
             region: "GA",
-            website: "http://ebcjesup.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://www.ebcjesup.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.ebcjesup.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/EBCJesupGA/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Thomas Waters'
+                },
+                {
+                    name: 'Al Groover'
+                },
+                {
+                    name: 'John Hubbard'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4008,31 +3680,31 @@ const CHURCHES = [
             lng: -81.215274
         },
         details: {  
-            name: "Ephesus Church",
+            name: "Redeemer Baptist Church",
             address: "226 Goshen Rd Rincon, GA 31326",
             region: "GA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://redeemerbaptistchurch.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://redeemerbaptistchurch.org/resource-library'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/VisitRBCGA/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Nick Kennicott',
+                    image: 'http://media.cloversites.com/ed/ed11f6cc-68dc-4b1d-a14f-06707ef0619d/site-images/dfda3245-0143-4a08-b8df-6c29d55289f3@2x.png'
+                },
+                {
+                    name: 'Sam Barber',
+                    image: 'http://media.cloversites.com/ed/ed11f6cc-68dc-4b1d-a14f-06707ef0619d/site-images/cd5f3990-63b6-4062-bba1-a84be2de1851@2x.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4045,60 +3717,27 @@ const CHURCHES = [
             address: "4907 Hwy 34 E Sharpsburg, GA 30277",
             region: "GA",
             website: "http://www.faithbiblechurch.us/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 34.27831,
-            lng: -83.879107
-        },
-        details: {  
-            name: "Grace Covenant Baptist Church of Gainesville, GA",
-            address: "Gainesville, GA. 30504",
-            region: "GA",
-            website: "http://www.gracecovenantbaptist.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://faithbiblechurch.us/resources/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/faithbiblechurchsharpsburg/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'John Crotts',
+                    image: 'http://faithbiblechurch.us/wp-content/uploads/2014/07/JCrotts.jpg'
+                },
+                {
+                    name: 'Kent Keller',
+                    image: 'http://faithbiblechurch.us/wp-content/uploads/2014/08/KKeller.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4111,27 +3750,28 @@ const CHURCHES = [
             address: "258 Beartooth Parkway Dawsonville, GA  30534",
             region: "GA",
             website: "http://www.gracechurchdawsonville.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            familyIntegrated: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://gracechurchdawsonville.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Gracecommunity/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Ray Rhodes Jr.',
+                    image: 'http://gracechurchdawsonville.org/wp-content/uploads/2012/08/IMG_7154-1024x756.jpg'
+                },
+                {
+                    name: 'Lt. Col. Kevin Jarrard',
+                    image: 'http://gracechurchdawsonville.org/wp-content/uploads/2012/08/IMG_7159t-1024x682.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4141,96 +3781,30 @@ const CHURCHES = [
         },
         details: {  
             name: "Grace Church",
-            address: "Alpharetta, GA 30009",
+            address: "13660 New Providence, Alpharetta, GA 30009",
             region: "GA",
             website: "http://www.enjoygrace.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 34.203997,
-            lng: -83.457106
-        },
-        details: {  
-            name: "Grace Baptist Mission",
-            address: "Commerce, GA 30529",
-            region: "GA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 33.987722,
-            lng: -84.248906
-        },
-        details: {  
-            name: "Grace Church of North Atlanta",
-            address: "4511 Jones Bridge Circle, N.W.  Norcross, GA 30092",
-            region: "GA",
-            website: "http://www.gracechurchatlanta.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'https://enjoygrace.com/listen-online/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Grace-Church-242761929132740/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Scott W. Kay',
+                    image: 'https://enjoygrace.com/wp-content/uploads/2011/07/Kay-2011.jpg'
+                },
+                {
+                    name: 'Mark Bearden',
+                    image: 'https://enjoygrace.com/wp-content/uploads/2011/07/Bearden-2011.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4239,31 +3813,26 @@ const CHURCHES = [
             lng: -84.523592
         },
         details: {  
-            name: "Heritage Baptist Church",
+            name: "Heritage Reformed Baptist Church",
             address: "150 Lester Road  Fayetteville, GA  30214",
             region: "GA",
             website: "http://www.heritagerbc.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.heritagerbc.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/heritagerbc/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Hank Rast'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4276,93 +3845,44 @@ const CHURCHES = [
             address: "234 8th Street Saint Marys, GA 31558",
             region: "GA",
             website: "http://www.newhopebaptistchurch.wordpress.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            lastUpdated: '5/23/2017'
         }
     },
     {  
         coordinates: {
-            lat: 32.750058,
+            lat: 32.85812,
             lng: -83.770736
         },
         details: {  
             name: "Redeemer Baptist Church",
-            address: "6420 Shawn Dr. Lizella, GA 31052",
+            address: "4652 Ayers Rd, Macon, GA 31210",
             region: "GA",
             website: "http://www.redeemer-baptist.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 31.116224,
-            lng: -83.41549
-        },
-        details: {  
-            name: "Sovereign Grace Baptist Church",
-            address: "106 Wyoming St. Adel, GA 31620",
-            region: "GA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Covenant Academy'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.redeemer-baptist.org/pages/index.php?view=8'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Eric Freel',
+                    image: 'http://www.redeemer-baptist.org/images/redeemerPastors_eric.jpg'
+                },
+                {
+                    name: 'Joel Hester',
+                    image: 'http://www.redeemer-baptist.org/images/redeemerPastors_joe.jpg'
+                },
+                {
+                    name: 'Jake Walls',
+                    image: 'http://www.redeemer-baptist.org/images/redeemerPastors_jake.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4375,27 +3895,23 @@ const CHURCHES = [
             address: "121 Creekside Drive  Leesburg, Georgia 31763",
             region: "GA",
             website: "http://www.sgbcleesburg.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sgbcleesburg.com/listen_to_a_sermon0.aspx'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Sovereign-Grace-Baptist-Church/461813127338771?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Steve Youngblood',
+                    image: 'http://www.sgbcleesburg.com/images/pastors%20picture.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4408,27 +3924,22 @@ const CHURCHES = [
             address: "543 Colwell Road Jackson  GA  30233",
             region: "GA",
             website: "http://www.trinityrbc.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://trinityrbc.org/?page_id=575'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Trinity-Reformed-Baptist-Church/172894626131781?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Brandon F. Smith'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4441,27 +3952,19 @@ const CHURCHES = [
             address: "1217 Nehoa St. Honolulu, HI 96822",
             region: "HI",
             website: "http://www.centralbaptisthawaii.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            familyIntegrated: true,
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/cbchawaii/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Johnny Hom'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4473,28 +3976,32 @@ const CHURCHES = [
             name: "Honolulu Bible Church",
             address: "1844 Palolo Ave Honolulu, HI 96816",
             region: "HI",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://honolulubiblechurch.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://honolulubiblechurch.org/sermons.htm'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Honolulu-Bible-Church-515034545273200/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Billy Hopper'
+                },
+                {
+                    name: 'Daniel Mather'
+                },
+                {
+                    name: 'Guy Nishimoto'
+                },
+                {
+                    name: 'Kevin Kondo'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4504,30 +4011,24 @@ const CHURCHES = [
         },
         details: {  
             name: "Port Cities Reformed Baptist Church",
-            address: "Lewiston, Idaho 83501",
+            address: "1424 Main Street in Lewiston, Idaho",
             region: "ID",
             website: "http://www.portcitiesreformed.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Lewiston Community Center'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.portcitiesreformed.org/index.php?option=com_content&view=article&id=48&Itemid=6'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Port-Cities-Reformed-Baptist-Church/999914580071045?fref=ts'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4540,27 +4041,23 @@ const CHURCHES = [
             address: "1311 6th St. S. Nampa ID 83651",
             region: "ID",
             website: "http://www.sovereigngracefellowship.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sovereigngracefellowship.org/recent-sermons/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Rick Hogaboam',
+                    image: 'http://www.sovereigngracefellowship.org/wordpress/wp-content/uploads/2011/04/IMG_2346-768x549.jpg'
+                },
+                {
+                    name: 'Matthew Masiewicz',
+                    image: 'http://www.sovereigngracefellowship.org/wordpress/wp-content/uploads/2012/11/Set30051.JPG-682x1024.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4593,7 +4090,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4626,7 +4123,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4659,7 +4156,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4692,7 +4189,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4725,7 +4222,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4758,7 +4255,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4791,7 +4288,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4824,7 +4321,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4857,7 +4354,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4890,7 +4387,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4923,7 +4420,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4956,7 +4453,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4989,7 +4486,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5022,7 +4519,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5055,7 +4552,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5088,7 +4585,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5121,7 +4618,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5154,7 +4651,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5187,7 +4684,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5220,7 +4717,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5253,7 +4750,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5286,7 +4783,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5319,7 +4816,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5352,7 +4849,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5385,7 +4882,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5418,7 +4915,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5451,7 +4948,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5484,7 +4981,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5517,7 +5014,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5550,7 +5047,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5583,7 +5080,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5616,7 +5113,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5649,7 +5146,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5682,7 +5179,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5715,7 +5212,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5748,7 +5245,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5781,7 +5278,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5814,7 +5311,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5847,7 +5344,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5880,7 +5377,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5913,7 +5410,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5946,7 +5443,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5979,7 +5476,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6012,7 +5509,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6045,7 +5542,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6078,7 +5575,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6111,7 +5608,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6144,7 +5641,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6177,7 +5674,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6210,7 +5707,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6243,7 +5740,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6276,7 +5773,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6309,7 +5806,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6342,7 +5839,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6375,7 +5872,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6408,7 +5905,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6441,7 +5938,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6474,7 +5971,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6507,7 +6004,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6540,7 +6037,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6573,7 +6070,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6606,7 +6103,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
 
       }
     },
@@ -6640,7 +6137,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6673,7 +6170,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6706,7 +6203,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6739,7 +6236,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6772,7 +6269,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
 
       }
     },
@@ -6806,7 +6303,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6839,7 +6336,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6872,7 +6369,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6905,7 +6402,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6938,7 +6435,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -6971,7 +6468,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7004,7 +6501,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7037,7 +6534,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7070,7 +6567,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7103,7 +6600,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7136,7 +6633,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7169,7 +6666,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7202,7 +6699,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
 
       }
     },
@@ -7236,7 +6733,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7269,7 +6766,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7302,7 +6799,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7335,7 +6832,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
 
       }
     },
@@ -7369,7 +6866,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7402,7 +6899,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7435,7 +6932,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7468,7 +6965,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7501,7 +6998,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7534,7 +7031,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7567,7 +7064,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
 
       }
     },
@@ -7601,7 +7098,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -7634,7 +7131,7 @@ const CHURCHES = [
             //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
             //     }
             // ],
-            // lastUpdated: '5/22/2017'
+            // lastUpdated: '5/23/2017'
         }
     },
     {  

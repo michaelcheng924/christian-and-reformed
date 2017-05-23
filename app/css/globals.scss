@@ -36,6 +36,15 @@ progress {
     }
 }
 
+.root {
+    transition: all .4s;
+    visibility: hidden;
+
+    &--show {
+        visibility: visible;
+    }
+}
+
 .radio-inline {
     display: inline-block !important;
     margin-right: 15px;
