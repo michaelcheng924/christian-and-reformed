@@ -1,4 +1,4 @@
-// https://maps.googleapis.com/maps/api/geocode/json?address=6200+Vollmer+Road,+Matteson,+IL+60443&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
+// https://maps.googleapis.com/maps/api/geocode/json?address=100+Dairy+Lane,+Gambrills,+MD&key=AIzaSyBpJ82xY4YxuWoXC04gGWx3lCl8hp7ZTZ4
 
 const CHURCHES = [  
     {  
@@ -4964,27 +4964,27 @@ const CHURCHES = [
             address: "1785 Wooddale Court Baton Rouge, Louisiana 70806",
             region: "LA",
             website: "http://www.trinitybaptistreformed.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.trinitybaptistreformed.org/Page04Sermons.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Trinity-Baptist-Church/196234257391882?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Dale Crawford',
+                    image: 'http://www.trinitybaptistreformed.org/files/Crawfords.jpg'
+                },
+                {
+                    name: 'Chad Chauvin',
+                    image: 'http://www.trinitybaptistreformed.org/files/Chauvins.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -4997,60 +4997,36 @@ const CHURCHES = [
             address: "2 Sokokis Trail North Limerick, ME   04048",
             region: "ME",
             website: "http://www.lfbcreformed.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Free-Baptist-Church/548663868632547?fref=ts'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
         coordinates: {
-            lat: 43.93172,
-            lng: -69.96387
+            lat: 43.9153875,
+            lng: -69.967894
         },
         details: {  
-            name: "Grace Community Church",
-            address: "47 Pleasant St, Topsham, ME 04086",
+            name: "Grace Reformed Baptist Church",
+            address: "35 Union St, Brunswick, ME 04011",
             region: "ME",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "http://www.grbcme.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gbcconway.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/grbcme/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5059,64 +5035,50 @@ const CHURCHES = [
             lng: -77.350802
         },
         details: {  
-            name: "Faith Reformed Baptist Church",
+            name: "Providence Reformed Baptist Church",
             address: "40 Main St. Walkersville, MD",
             region: "MD",
-            website: "http://www.faithrbc.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "https://providencereformedbaptistchurch.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'https://providencereformedbaptistchurch.com/sermons/'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
         coordinates: {
-            lat: 39.060823,
-            lng: -76.719142
+            lat: 39.0669499,
+            lng: -76.6728792
         },
         details: {  
             name: "Grace Baptist Church of Odenton",
-            address: "2641 Strawberry Lake Way Odenton, MD  21113",
+            address: "100 Dairy Lane, Gambrills, MD",
             region: "MD",
             website: "http://www.gracebaptistonline.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.gbcconway.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Grace-Baptist-Church-of-Odenton-164388436950370/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Doug Mixer',
+                    image: 'http://www.gracebaptistonline.com/wp-content/uploads/2010/10/Family-199x300.jpg'
+                },
+                {
+                    name: 'Richard Queen',
+                    image: 'http://www.gracebaptistonline.com/wp-content/uploads/2010/10/queen.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5129,27 +5091,22 @@ const CHURCHES = [
             address: "6433 Mt Vista Rd  Kingsville MD 21087",
             region: "MD",
             website: "http://www.newlifemd.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'meeting at',
+                    data: 'Beachmont Christian Camp, Upper level of Field House'
+                },
+                {
+                    type: 'sermons',
+                    data: 'http://www.newlifemd.org/sermons/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Paul Hamilton'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5162,27 +5119,23 @@ const CHURCHES = [
             address: "10 Keslar Ave. Lynn, MA 01905",
             region: "MA",
             website: "http://www.austinsquarechurch.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://austinsquarechurch.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/austinsquarebaptist/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Dr. Steven P. Wilfert',
+                    image: 'https://i2.wp.com/austinsquarechurch.com/wp-content/uploads/2016/12/Scan.jpg?zoom=2&resize=395%2C500'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5195,27 +5148,22 @@ const CHURCHES = [
             address: "23 West St. Leominster, MA 01453",
             region: "MA",
             website: "http://www.thewordoftruth.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.thewordoftruth.net/sermons.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/First-Baptist-Church-of-Leominster/121196384562056?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Lars Larson'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5227,28 +5175,19 @@ const CHURCHES = [
             name: "First Church of Hixville",
             address: "1190 N. Hixville Rd. N. Dartmouth, MA 02747",
             region: "MA",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: "http://firstchurchhixville.webs.com/",
+            notes: [
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/firstchurchofhixville/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Edward J. Baci'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5261,27 +5200,23 @@ const CHURCHES = [
             address: "245 Summer St. Duxbury, MA 02332",
             region: "MA",
             website: "http://pilgrimreformed.weebly.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://pilgrimreformed.weebly.com/messages.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/PilgrimReformed/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Robert J. Burreli Jr.',
+                    image: 'http://pilgrimreformed.weebly.com/uploads/3/7/6/5/37651645/dr-burrelli-copy_orig.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5294,27 +5229,12 @@ const CHURCHES = [
             address: "98 Kimball Road Amesbury, MA 01913",
             region: "MA",
             website: "http://www.netministries.org/see/churches/ch01846",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            pastors: [
+                {
+                    name: 'Ronald Johnson'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5327,27 +5247,22 @@ const CHURCHES = [
             address: "59 Blackstone River Dr. Worcester, MA 01607",
             region: "MA",
             website: "http://www.hbcma.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.hbcma.org/home/?page_id=25'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Heritage-Baptist-Church-116399681717460/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mike Renihan'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5360,27 +5275,23 @@ const CHURCHES = [
             address: "80 Boardman Street Norfolk, MA 02056",
             region: "MA",
             website: "http://www.providencebaptistchurchma.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.providencebaptistchurchma.org/sermons/sermons.htm'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Providence-Baptist-Church/163750666984108?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mark Lukens',
+                    image: 'http://www.providencebaptistchurchma.org/images/Mark_pic_website.JPG'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5392,61 +5303,20 @@ const CHURCHES = [
             name: "Rehoboth Baptist Church",
             address: "132 Moulton St. Rehoboth, MA 02769",
             region: "MA",
-            website: "http://www.rehobothbaptistchurch.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 42.566551,
-            lng: -73.02827
-        },
-        details: {  
-            name: "Sovereign Grace Baptist Church",
-            address: "664 Main Road Savoy, Massachussetts 01256",
-            region: "MA",
-            website: "http://bcn.net/~wmplenge",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            website: '"http://www.rehobothbaptistchurch.org/"',
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.rehobothbaptistchurch.org/rbc_sermons.php'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Stephen E. Kitchen',
+                    image: 'http://www.rehobothbaptistchurch.org/images/steve_kitchen.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  
@@ -5459,27 +5329,19 @@ const CHURCHES = [
             address: "4075 S. Sheldon Rd. Canton, MI 48188",
             region: "MI",
             website: "http://www.sermon.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/23/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermon.org/sermons'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Gordon Cook',
+                    image: 'http://www.sermon.org/img/resource_photos/1398211464cook.jpg'
+                }
+            ],
+            lastUpdated: '5/23/2017'
         }
     },
     {  

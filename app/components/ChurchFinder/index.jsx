@@ -66,14 +66,14 @@ export default class ChurchFinder extends Component {
                                         <span>+ Family-integrated</span>
                                     </div>
                                 </div>
-                                <Checkbox
+                                {/*<Checkbox
                                     label="Confessional only"
                                     onCheck={this.onShowAnswer}
                                 />
                                 <Checkbox
                                     label="Family-integrated only"
                                     onCheck={this.onShowAnswer}
-                                />
+                                />*/}
                                 <Checkbox
                                     label="List view"
                                     onCheck={this.onListView}

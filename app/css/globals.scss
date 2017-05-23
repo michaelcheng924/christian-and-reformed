@@ -121,7 +121,6 @@ progress {
 }
 
 .slide-out-content {
-    align-items: center;
     background: #039BE5;
     border-bottom: 1px solid #FFF;
     display: flex;
@@ -155,7 +154,6 @@ progress {
     }
 
     &__card-description {
-        align-items: center;
         display: flex;
         height: 100%;
         justify-content: center;
@@ -163,9 +161,10 @@ progress {
 
         > div {
             display: flex;
+            justify-content: space-around;
 
             > div {
-                width: 50%;
+                width: 49%;
             }
         }
     }

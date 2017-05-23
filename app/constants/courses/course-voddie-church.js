@@ -1,7 +1,6 @@
 const GOSPEL = {
-    key: 'courseGospel',
-    name: 'What is the Gospel?',
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/GOaqUvXPBpU" frameborder="0" allowfullscreen></iframe>',
+    key: 'courseVoddieChurch',
+    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iZur9xIjZpM" frameborder="0" allowfullscreen></iframe>',
     questions: [
         {
             type: 'FITB',

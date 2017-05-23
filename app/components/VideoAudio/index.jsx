@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
-import { delay, partial } from 'lodash';
+import { delay, map, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 
-import GOSPEL from 'app/constants/course-gospel';
+import { COURSES } from 'app/constants/courses';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
 import VideoAudioContentCard from 'app/components/VideoAudio/content-card';
@@ -32,9 +32,9 @@ class VideoAudo extends Component {
 
             const pathname = window.location.pathname;
 
-            if (pathname === '/video-audio/gospel') {
+            if (COURSES[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = 'Video/Audio Mini-course: What is the Gospel?';
+                document.title = COURSES[pathname].title;
             }
         }
     }
@@ -52,8 +52,8 @@ class VideoAudo extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && value === '/confessions-creeds/1689-london-baptist-confession') {
-            document.title = '1689 London Baptist Confession';
+        if (typeof window !== 'undefined' && COURSES[value]) {
+            document.title = COURSES[value].title;
         }
 
         delay(() => {
@@ -77,7 +77,13 @@ class VideoAudo extends Component {
                     autoWidth={false}
                 >
                     <MenuItem value={null} primaryText="Select a mini-course" disabled />
-                    <MenuItem value="/video-audio/gospel" primaryText="What is the Gospel?" />
+                    {
+                        map(COURSES, (value, key) => {
+                            return (
+                                <MenuItem key={key} value={key} primaryText={value.name} />
+                            );
+                        })
+                    }
                 </DropDownMenu>
             </Paper>
         );
@@ -100,18 +106,12 @@ class VideoAudo extends Component {
             );
         }
 
-        let data;
-        let name;
+        let data = {};
+        let name = 'Select a mini-course above';
 
-        switch (selection) {
-            case '/video-audio/gospel':
-                data = GOSPEL;
-                name = GOSPEL.name;
-                break;
-            default:
-                data = [];
-                name = 'Select a mini-course above';
-                break;
+        if (COURSES[selection]) {
+            data = COURSES[selection].data;
+            name = COURSES[selection].name;
         }
 
         return (

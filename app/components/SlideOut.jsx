@@ -68,6 +68,13 @@ class SlideOut extends Component {
                                             <li>Maintain the most accurate, extensive, and up-to-date directory of Reformed churches across the world</li>
                                             <li>Be a resource to help parents teach their children</li>
                                         </ul>
+                                        <br />
+
+                                        <h2>In Progress</h2>
+                                        <ul>
+                                            <li>Continue building the <strong>Reformed Church Finder</strong></li>
+                                            <li>Finish adding footnotes to the Westminster Confession</li>
+                                        </ul>
                                     </div>
                                     <div>
                                         <h2>How you can help</h2>

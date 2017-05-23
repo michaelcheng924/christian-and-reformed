@@ -194,7 +194,7 @@ class VideoAudioContentCard extends Component {
                     title={name}
                 />
                 <CardText>
-                    <div className="video-audio__course-count">This course has been completed <strong>{appData[data.key]}</strong> times.</div>
+                    <div className="video-audio__course-count">This course has been completed <strong>{appData[data.key] || 0}</strong> times.</div>
                     <div className="video-audio__course-content">
                         <div className="video-audio__media" dangerouslySetInnerHTML={{__html: data.iframe}} />
                         {this.renderQuestions()}
