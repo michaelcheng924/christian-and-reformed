@@ -100,8 +100,9 @@ export default class ConfessionsCreedsContentCard extends Component {
 
         return (
             <div className={classnames} ref={container => this.container = container}>
+                <h2>{`Chapter ${selection}: ${data[selection - 1].title}`}</h2>
                 <div className="confessions-creeds__content-card-section">
-                    <strong><em>Click superscripts to view Scriptures directly below without leaving the page.</em></strong>
+                    <em>Click superscripts to view Scriptures directly below without leaving the page.</em>
                 </div>
                 {
                     data[selection - 1].content.map((paragraph, index) => {

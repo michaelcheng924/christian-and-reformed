@@ -125,8 +125,8 @@ class ConfessionsCreeds extends Component {
                 <AppHeader
                     setParentState={this.setParentState}
                     showHeader={showHeader}
-                    title="Confessions/Creeds Explorer"
-                    subtitle="Read and study historic confessions and creeds with easy display of Scripture references"
+                    title="Creeds and Confessions Explorer"
+                    subtitle="Tools to help you learn and study the historic creeds and confessions"
                 >
                     {this.renderDropdown()}
                 </AppHeader>

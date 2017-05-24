@@ -39,7 +39,7 @@ app.use((req, res) => {
 
     const initialState = store.getState();
 
-    const title = ROUTES[req.path] ? ROUTES[req.path].title : DEFAULT_TITLE;
+    const title = ROUTES[req.path] ? ROUTES[req.path].windowTitle : DEFAULT_TITLE;
 
     const HTML = `
         <!DOCTYPE html>

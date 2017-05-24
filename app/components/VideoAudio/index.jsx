@@ -123,8 +123,8 @@ class VideoAudo extends Component {
                 <AppHeader
                     setParentState={this.setParentState}
                     showHeader={showHeader}
-                    title="Video/Audio Mini-courses"
-                    subtitle="Video/audio on a variety of topics, with questions to test your understanding"
+                    title="Video/Audio Mini-Courses"
+                    subtitle="Build a Biblical Worldview"
                 >
                     {this.renderDropdown()}
                 </AppHeader>

@@ -144,8 +144,8 @@ class Games extends Component {
                 <AppHeader
                     setParentState={this.setParentState}
                     showHeader={showHeader}
-                    title="Games"
-                    subtitle="Learning the Bible is fun"
+                    title="Reformed Games"
+                    subtitle="Fun for children, a challenge for adults"
                 >
                     {this.renderDropdown()}
                 </AppHeader>
