@@ -6,11 +6,12 @@ body {
     background: #E3F2FD;
     color: #333;
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight: 100;
     margin: 0;
 }
 
 h1, h2, h3, h4 {
+    font-weight: 400;
     margin: 0;
 }
 
@@ -136,7 +137,6 @@ progress {
     a {
         color: #689F38;
         cursor: pointer;
-        font-weight: 900;
 
         &:hover {
             text-decoration: underline;

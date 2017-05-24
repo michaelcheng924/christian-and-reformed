@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { delay, get, map, partial } from 'lodash';
+import { delay, get, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 
-import { CONFESSIONS_CREEDS } from 'app/constants/global';
+import { CONFESSIONS_CREEDS, ROUTES } from 'app/constants/routes';
 import { setApp } from 'app/actions/AppActions';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
@@ -29,14 +29,10 @@ class ConfessionsCreeds extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Confessions and Creeds: Tools to help you read and compare the historic confessions and creeds more effectively.';
-            document.body.style.background = '#B2EBF2';
-
             const pathname = window.location.pathname;
 
-            if (CONFESSIONS_CREEDS[pathname]) {
+            if (ROUTES[pathname] && ROUTES[pathname].data) {
                 this.setState({ selection: pathname });
-                document.title = CONFESSIONS_CREEDS[pathname].title;
             }
         }
     }
@@ -54,8 +50,8 @@ class ConfessionsCreeds extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && CONFESSIONS_CREEDS[value]) {
-            document.title = CONFESSIONS_CREEDS[value].title;
+        if (typeof window !== 'undefined' && ROUTES[value]) {
+            document.title = ROUTES[value].windowTitle;
         }
 
         delay(() => {
@@ -80,12 +76,12 @@ class ConfessionsCreeds extends Component {
                 >
                     <MenuItem value={null} primaryText="Select a confession or creed" disabled />
                     {
-                        map(CONFESSIONS_CREEDS, (value, key) => {
+                        CONFESSIONS_CREEDS.map(item => {
                             return (
                                 <MenuItem
-                                    key={value.name}
-                                    value={key}
-                                    primaryText={value.name}
+                                    key={item.name}
+                                    value={item.url}
+                                    primaryText={item.name}
                                 />
                             );
                         })
@@ -112,8 +108,8 @@ class ConfessionsCreeds extends Component {
             );
         }
 
-        const data = get(CONFESSIONS_CREEDS[selection], 'data', []);
-        const name = get(CONFESSIONS_CREEDS[selection], 'title', 'Select a confession or creed above');
+        const data = get(ROUTES[selection], 'data', []);
+        const name = get(ROUTES[selection], 'title', 'Select a confession or creed above');
 
         return (
             <ConfessionsCreedsContentCard data={data} name={name} />

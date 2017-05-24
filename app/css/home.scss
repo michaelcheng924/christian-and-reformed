@@ -3,7 +3,6 @@
         background: #0D47A1;
         color: #FFF;
         flex-grow: 1;
-        font-weight: 900;
         height: 100%;
         padding: 30px 0;
         position: relative;
@@ -30,7 +29,6 @@
 
     &__header-tagline {
         font-size: 16px;
-        font-weight: 300;
     }
 
     &__apps {
@@ -100,17 +98,6 @@
                 width: 30px !important;
             }
         }
-    }
-
-    &__construction {
-        align-items: center;
-        color: #FFF176;
-        display: flex;
-        font-size: 20px;
-        font-weight: 800;
-        justify-content: center;
-        margin-bottom: 10px;
-        width: 100%;
     }
 }
 

@@ -19,13 +19,6 @@ export default class ChurchFinder extends Component {
         this.toggleFilters = this.toggleFilters.bind(this);
     }
 
-    componentWillMount() {
-        if (typeof window !== 'undefined') {
-            document.title = 'Reformed Church Finder: An International Directory';
-            document.body.style.background = '#455A64';
-        }
-    }
-
     toggleFilters() {
         this.setState({ showFilters: !this.state.showFilters });
     }

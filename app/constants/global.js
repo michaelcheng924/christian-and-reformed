@@ -14,37 +14,6 @@ import {
     THIRTY_NINE_ARTICLES
 } from 'app/constants/creeds';
 
-export const APP_LIST = [
-    {
-        title: 'Video/Audio Mini-courses',
-                description: 'Video/audio on select topics, with questions to test your understanding',
-        url: '/video-audio',
-        background: '#EF5350',
-        icon: <PlayCircleFilledIcon />
-    },
-    {
-        title: 'Reformed Church Finder',
-        description: 'Find solid Reformed churches using Google Maps',
-        url: '/reformed-church-finder',
-        background: '#43A047',
-        icon: <DirectionsIcon />
-    },
-    {
-        title: 'Confessions/Creeds Explorer',
-        description: 'Read and study historic confessions and creeds with easy display of Scripture references',
-        url: '/confessions-creeds-explorer',
-        background: '#0097A7',
-        icon: <LibraryBooksIcon />
-    },
-    {
-        title: 'Games',
-        description: 'Learn the Bible while having fun',
-        url: '/games',
-        background: '#EF6C00',
-        icon: <i className="fa fa-puzzle-piece" aria-hidden="true" />
-    }
-];
-
 export const GAMES = {
     '/games/bible-books-order': {
         title: 'Christian and Reformed - Games: Bible Books Order Challenge',

@@ -27,14 +27,10 @@ class VideoAudo extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Video/Audio Mini-courses: Video/audio on a variety of topics, with questions to test your understanding';
-            document.body.style.background = '#FFCDD2';
-
             const pathname = window.location.pathname;
 
             if (COURSES[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = COURSES[pathname].title;
             }
         }
     }

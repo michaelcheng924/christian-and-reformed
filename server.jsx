@@ -12,7 +12,7 @@ import createLocation from 'history/lib/createLocation';
 import { makeStore } from 'app/helpers';
 import serverRoutes from 'app/server/routes';
 import App from 'app/components/App';
-import { APP_LIST } from 'app/constants/global';
+import { DEFAULT_TITLE, ROUTES } from 'app/constants/routes';
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reformedchristianapp');
 
@@ -39,8 +39,7 @@ app.use((req, res) => {
 
     const initialState = store.getState();
 
-    const data = find(APP_LIST, app => app.url === req.path);
-    const title = data ? data.title : 'Christian and Reformed: Technology Serving Historic Truth';
+    const title = ROUTES[req.path] ? ROUTES[req.path].title : DEFAULT_TITLE;
 
     const HTML = `
         <!DOCTYPE html>
@@ -48,6 +47,11 @@ app.use((req, res) => {
             <head>
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Christian and Reformed App" />
+                <meta property="og:description" content="Technology Serving Historic Truth" />
+                <meta property="og:image" content="/fb-pic.png" /> 
                 <title>${title}</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">

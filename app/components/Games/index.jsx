@@ -34,14 +34,10 @@ class Games extends Component {
 
     componentWillMount() {
         if (typeof window !== 'undefined') {
-            document.title = 'Christian and Reformed - Games: Learning the Bible is fun';
-            document.body.style.background = '#FFF3E0';
-
             const pathname = window.location.pathname;
 
             if (GAMES[pathname]) {
                 this.setState({ selection: pathname });
-                document.title = GAMES[pathname].title;
             }
         }
     }

@@ -6,7 +6,7 @@ import css from 'classnames';
 import { delay, partial } from 'lodash';
 import WarningIcon from 'material-ui-icons/Warning';
 
-import { APP_LIST } from 'app/constants/global';
+import { APP_LIST } from 'app/constants/routes';
 import { setApp } from 'app/actions/AppActions';
 
 class Home extends Component {
@@ -71,7 +71,7 @@ class Home extends Component {
                                             ? null
                                             : (
                                                 <div className={classNames} onClick={partial(this.onAppClick, app.url)}>
-                                                    <div className="home__app" style={{ background: app.background }}>
+                                                    <div className="home__app" style={{ background: app.headerBackground }}>
                                                         <div>
                                                             {app.icon}
                                                             <h2>{app.title}</h2>

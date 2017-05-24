@@ -19,7 +19,7 @@ export const APOSTLES_CREED = (
         <br />
 
         <div>I believe in the Holy Spirit,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the holy catholic* church,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the holy catholic church,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the communion of saints,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the forgiveness of sins,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the resurrection of the body,</div>

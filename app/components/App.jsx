@@ -9,14 +9,11 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentForward from 'material-ui/svg-icons/content/forward';
 
+import { APP_LIST, DEFAULT_TITLE, ROUTES } from 'app/constants/routes';
 import { getAppData } from 'app/api/users';
 import { setApp } from 'app/actions/AppActions';
 import Header from 'app/components/Header';
 import Home from 'app/components/Home';
-import VideoAudio from 'app/components/VideoAudio';
-import ChurchFinder from 'app/components/ChurchFinder';
-import ConfessionsCreeds from 'app/components/ConfessionsCreeds';
-import Games from 'app/components/Games';
 import Admin from 'app/components/Admin';
 
 class App extends Component {
@@ -40,8 +37,28 @@ class App extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        if (!this.props.app && prevProps.app) {
+        const { app } = this.props;
+
+        if (!app && prevProps.app) {
             $('body').scrollTop(0);
+        }
+
+        if (app !== prevProps.app && typeof window !== 'undefined') {
+            this.setTitle();
+        }
+    }
+
+    setTitle() {
+        const { app } = this.props;
+
+        if (ROUTES[app]) {
+            document.title = ROUTES[app].windowTitle;
+
+            if (ROUTES[app].background) {
+                document.body.style.background = ROUTES[app].background;
+            }
+        } else {
+            document.title = DEFAULT_TITLE;
         }
     }
 
@@ -72,11 +89,12 @@ class App extends Component {
                     <div className={classNames}>
                         <Header app={app} />
                         <Route exact path="/" component={Home}/>
-                        <Route path="/video-audio" component={VideoAudio}/>
-                        <Route path="/reformed-church-finder" component={ChurchFinder}/>
-                        <Route path="/confessions-creeds-explorer" component={ConfessionsCreeds}/>
-                        <Route path="/games" component={Games} />
                         <Route path="/admin" component={Admin} />
+                        {
+                            APP_LIST.map(item => {
+                                return <Route key={item.url} path={item.url} component={item.component}/>
+                            })
+                        }
                         {this.renderBack()}
                     </div>
                 </MuiThemeProvider>
