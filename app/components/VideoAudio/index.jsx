@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
-import { delay, map, partial } from 'lodash';
+import { delay, partial } from 'lodash';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 
-import { COURSES } from 'app/constants/courses';
+import { COURSES, ROUTES } from 'app/constants/routes';
 import AppHeader from 'app/components/AppHeader';
 import ContentCard from 'app/components/ContentCard';
 import VideoAudioContentCard from 'app/components/VideoAudio/content-card';
@@ -29,7 +29,7 @@ class VideoAudo extends Component {
         if (typeof window !== 'undefined') {
             const pathname = window.location.pathname;
 
-            if (COURSES[pathname]) {
+            if (ROUTES[pathname] && ROUTES[pathname].name) {
                 this.setState({ selection: pathname });
             }
         }
@@ -48,8 +48,8 @@ class VideoAudo extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && COURSES[value]) {
-            document.title = COURSES[value].title;
+        if (typeof window !== 'undefined' && ROUTES[value]) {
+            document.title = ROUTES[value].windowTitle;
         }
 
         delay(() => {
@@ -74,9 +74,9 @@ class VideoAudo extends Component {
                 >
                     <MenuItem value={null} primaryText="Select a mini-course" disabled />
                     {
-                        map(COURSES, (value, key) => {
+                        COURSES.map(item => {
                             return (
-                                <MenuItem key={key} value={key} primaryText={value.name} />
+                                <MenuItem key={item.name} value={item.url} primaryText={item.name} />
                             );
                         })
                     }
@@ -105,9 +105,9 @@ class VideoAudo extends Component {
         let data = {};
         let name = 'Select a mini-course above';
 
-        if (COURSES[selection]) {
-            data = COURSES[selection].data;
-            name = COURSES[selection].name;
+        if (ROUTES[selection]) {
+            data = ROUTES[selection].data;
+            name = ROUTES[selection].name;
         }
 
         return (

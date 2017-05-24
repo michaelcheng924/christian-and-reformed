@@ -8,7 +8,7 @@ import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 
-import { GAMES } from 'app/constants/global';
+import { GAMES, ROUTES } from 'app/constants/routes';
 import BOYS_GIRLS from 'app/constants/catechism-boys-girls';
 import WESTMINSTER_SHORTER from 'app/constants/catechism-westminster-shorter';
 import { addScore } from 'app/api/users';
@@ -36,7 +36,7 @@ class Games extends Component {
         if (typeof window !== 'undefined') {
             const pathname = window.location.pathname;
 
-            if (GAMES[pathname]) {
+            if (ROUTES[pathname] && ROUTES[pathname].name) {
                 this.setState({ selection: pathname });
             }
         }
@@ -55,8 +55,8 @@ class Games extends Component {
 
         history.push(value);
 
-        if (typeof window !== 'undefined' && GAMES[value]) {
-            document.title = GAMES[value].title;
+        if (typeof window !== 'undefined' && ROUTES[value]) {
+            document.title = ROUTES[value].windowTitle;
         }
 
         delay(() => {
@@ -80,10 +80,11 @@ class Games extends Component {
                     autoWidth={false}
                 >
                     <MenuItem value={null} primaryText="Select a game" disabled />
-                    <MenuItem value="/games/bible-books-order" primaryText="Bible Books Order Challenge" />
-                    <MenuItem value="/games/catechism-boys-girls" primaryText="Catechism for Boys and Girls Training" />
-                    <MenuItem value="/games/catechism-westminster-shorter" primaryText="Westminster Shorter Catechism Training" />
-                    <MenuItem value="/games/order-salvation" primaryText="Order the Order of Salvation" />
+                    {
+                        GAMES.map(item => {
+                            return <MenuItem key={item.name} value={item.url} primaryText={item.name} />;
+                        })
+                    }
                 </DropDownMenu>
             </Paper>
         );

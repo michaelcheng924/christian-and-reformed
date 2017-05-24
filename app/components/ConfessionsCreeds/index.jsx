@@ -31,7 +31,7 @@ class ConfessionsCreeds extends Component {
         if (typeof window !== 'undefined') {
             const pathname = window.location.pathname;
 
-            if (ROUTES[pathname] && ROUTES[pathname].data) {
+            if (ROUTES[pathname] && ROUTES[pathname].name) {
                 this.setState({ selection: pathname });
             }
         }

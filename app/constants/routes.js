@@ -4,6 +4,8 @@ import PlayCircleFilledIcon from 'material-ui-icons/PlayCircleFilled';
 import DirectionsIcon from 'material-ui-icons/Directions';
 import LibraryBooksIcon from 'material-ui-icons/LibraryBooks';
 
+import GOSPEL from 'app/constants/courses/course-gospel';
+
 import { LONDON_BAPTIST } from 'app/constants/confession-1689.js';
 import { WESTMINSTER } from 'app/constants/confession-westminster.js';
 import {
@@ -23,7 +25,7 @@ export const DEFAULT_TITLE = 'Christian and Reformed: Technology Serving Histori
 
 export const APP_LIST = [
     {
-        windowTitle: 'Video/Audio Mini-Courses: Build a Biblical Worldview',
+        windowTitle: 'Reformed Video/Audio Mini-Courses: Build a Biblical Worldview',
         title: 'Video/Audio Mini-Courses',
         description: 'Build a Biblical Worldview',
         url: '/video-audio',
@@ -61,6 +63,15 @@ export const APP_LIST = [
         background: '#FFF3E0',
         icon: <i className="fa fa-puzzle-piece" aria-hidden="true" />,
         component: Games
+    }
+];
+
+export const COURSES = [
+    {
+        url: '/video-audio/gospel',
+        windowTitle: 'Reformed Video/Audio Mini-Course: What is the Gospel? (Voddie Baucham)',
+        name: 'What is the Gospel? (Voddie Baucham)',
+        data: GOSPEL
     }
 ];
 
@@ -113,10 +124,34 @@ export const CONFESSIONS_CREEDS = [
         name: 'London Baptist Confession of Faith (1689)',
         data: LONDON_BAPTIST
     }
+];
 
+export const GAMES = [
+    {
+        url: '/games/bible-books-order',
+        windowTitle: 'Reformed Games: Bible Books Order Challenge',
+        name: 'Bible Books Order Challenge'
+    },
+    {
+        url: '/games/catechism-boys-girls',
+        windowTitle: 'Reformed Games: Catechism for Boys and Girls Training',
+        name: 'Catechism for Boys and Girls Training'
+    },
+    {
+        url: '/games/catechism-westminster-shorter',
+        windowTitle: 'Reformed Games: Westminster Shorter Catechism Training',
+        name: 'Westminster Shorter Catechism Training'
+    },
+    {
+        url: '/games/order-salvation',
+        windowTitle: 'Reformed Games: Order the Order of Salvation',
+        name: 'Order the Order of Salvation'
+    }
 ];
 
 export const ROUTES = {
     ...keyBy(APP_LIST, 'url'),
-    ...keyBy(CONFESSIONS_CREEDS, 'url')
+    ...keyBy(COURSES, 'url'),
+    ...keyBy(CONFESSIONS_CREEDS, 'url'),
+    ...keyBy(GAMES, 'url')
 };
