@@ -40,6 +40,8 @@ app.use((req, res) => {
     const initialState = store.getState();
 
     const title = ROUTES[req.path] ? ROUTES[req.path].windowTitle : DEFAULT_TITLE;
+    const headingTitle = ROUTES[req.path] ? ROUTES[req.path].title || ROUTES[req.path].name : 'Christian and Reformed App';
+    const description = ROUTES[req.path] ? ROUTES[req.path].description : 'Technology Serving Historic Truth';
 
     const HTML = `
         <!DOCTYPE html>
@@ -49,9 +51,9 @@ app.use((req, res) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Christian and Reformed App" />
-                <meta property="og:description" content="Technology Serving Historic Truth" />
-                <meta property="og:image" content="/fb-pic.png" /> 
+                <meta property="og:title" content="${headingTitle}" />
+                <meta property="og:description" content="${description}" />
+                <meta property="og:image" content="/fb-pic1.png" /> 
                 <title>${title}</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">

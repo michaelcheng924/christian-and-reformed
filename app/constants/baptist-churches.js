@@ -5979,27 +5979,24 @@ const CHURCHES = [
             address: "1212 Livingston Ave North Brunswick, NJ 08902",
             region: "NJ",
             website: "http://www.cfcnb.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            noConfession: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.cfcnb.org/index.php?p=audio_2010'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Christian-Fellowship-Church/108097015899267?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Steve Sherman',
+                    image: 'http://www.cfcnb.org/images/pic_steve_sherman.jpg'
+                }
+            ],
+            lastUpdated: '5/24/2017'
 
       }
     },
@@ -6009,31 +6006,27 @@ const CHURCHES = [
             lng: -74.8067
         },
         details: {  
-            name: "Covenant Baptist Church ",
+            name: "Covenant Baptist Church",
             address: "528 Main Street  Lumberton, NJ  08048",
             region: "NJ",
-            website: "http://www.cbc-lumberton.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            website: "http://www.cbclumberton.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.cbclumberton.com/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/CovenantBaptistChurchLumberton/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'John Reuther',
+                    image: 'https://i1.wp.com/www.cbclumberton.com/wp-content/uploads/2016/06/Pastor-R-and-Wife.jpg?zoom=2&w=1080'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6046,27 +6039,27 @@ const CHURCHES = [
             address: "320 Tenafly Road  Englewood, NJ 07631",
             region: "NJ",
             website: "http://www.ebcnj.com/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.ebcnj.com/sermons.html'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/englewoodbaptistnj/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jim Domm',
+                    image: 'http://www.ebcnj.com/uploads/1/8/7/5/18759970/4273493.jpg?147'
+                },
+                {
+                    name: 'Ron Abrahamsen',
+                    image: 'http://www.ebcnj.com/uploads/1/8/7/5/18759970/9297725.jpg?130'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6076,63 +6069,30 @@ const CHURCHES = [
         },
         details: {  
             name: "Grace Reformed Baptist Church",
-            address: "643 Sandford Ave.  Newark, NJ 07106",
+            address: "639 Sandford Ave.  Newark, NJ 07106",
             region: "NJ",
-            website: "",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
-        }
-    },
-    {  
-        coordinates: {
-            lat: 39.855436,
-            lng: -74.923952
-        },
-        details: {  
-            name: "Grace Reformed Fellowship Church",
-            address: "329 Kresson Gibbsboro Rd Voorhees, NJ  08043",
-            region: "NJ",
-            website: "http://www.gracereformedfellowshipchurch.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            website: "http://www.sermonaudio.com/source_detail.asp?sourceid=grbc-newark",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=grbc-newark'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/gbcconway/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jeff Johnson',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
+                },
+                {
+                    name: 'Wyeth Wallis',
+                    image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6144,28 +6104,24 @@ const CHURCHES = [
             name: "Grace Covenant Baptist Church",
             address: "35 Court St.  Flemington, NJ 08822",
             region: "NJ",
-            website: "http://www.gcbcnj.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            website: "http://gcbcnj.squarespace.com/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.sermonaudio.com/source_detail.asp?sourceid=gcbcnj'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/gracebaptchurch/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Alan Dunn',
+                    image: 'https://static1.squarespace.com/static/55b69018e4b0cc4be2725746/t/562ee101e4b0399cd6ae4219/1445912842736/?format=1000w'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6177,28 +6133,25 @@ const CHURCHES = [
             name: "Iglesia Bautista Reformada",
             address: "5510 Tonnelle Avenue  North Bergen, NJ 07047",
             region: "NJ",
-            website: "http://www.ibrnb.com/iglesia",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            website: "http://www.ibrnj.org/",
+            spanish: true,
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.ibrnj.org/sermon-audio/'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Eugenio Pinero',
+                    image: 'http://www.ibrnj.org/wp-content/uploads/Pastor-Pinero.jpg'
+                },
+                {
+                    name: 'Harvey Martinez',
+                    image: 'http://www.ibrnj.org/wp-content/uploads/hm-retrato.png'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6210,28 +6163,23 @@ const CHURCHES = [
             name: "Reformed Baptist Church of Lafayette",
             address: "28 Meadows Road  Lafayette, NJ 07848",
             region: "NJ",
-            website: "http://www.rbclafayette.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            website: "http://www.sermonaudio.com/source_detail.asp?sourceid=rbclnj",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: "http://www.sermonaudio.com/source_detail.asp?sourceid=rbclnj"
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/ReformedBaptistChurchOfLafayette/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Patrick Harrison'
+                }
+            ],
+            lastUpdated: '5/24/2017'
 
       }
     },
@@ -6245,27 +6193,35 @@ const CHURCHES = [
             address: "160 Changebridge Rd  Montville, NJ 07045",
             region: "NJ",
             website: "http://www.trinitymontville.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.trinitymontville.org/sermon-audio'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/TrinityBaptistMontvilleNj/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Jeff Smith',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/trinity_baptist_montville/elders.jpg'
+                },
+                {
+                    name: 'David Chanski',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/trinity_baptist_montville/elders.jpg'
+                },
+                {
+                    name: 'Bart Carlson',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/trinity_baptist_montville/elders.jpg'
+                },
+                {
+                    name: 'Shehzad Khan',
+                    image: 'http://s3.amazonaws.com/churchplantmedia-cms/trinity_baptist_montville/elders.jpg'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6278,27 +6234,17 @@ const CHURCHES = [
             address: "1534 Blake Rd.  SW Albuquerque, New Mexico  87105",
             region: "NM",
             website: "http://www.albuquerquesovereigngrace.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/24/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.albuquerquesovereigngrace.org/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/pages/Albuquerque-Sovereign-Grace-Baptist-Church/113819585315420?fref=ts'
+                }
+            ],
+            lastUpdated: '5/24/2017'
         }
     },
     {  
@@ -6310,61 +6256,66 @@ const CHURCHES = [
             name: "Church of the Redeemer",
             address: "1715 Hwy 314 Los Lunas, NM 87016",
             region: "NM",
-            website: "http://www.churchoftheredeemerll.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            website: "http://churchoftheredeemerll.org/",
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://churchoftheredeemerll.org/sermons/'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Church-of-the-Redeemer-259677933668/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Robert Browning',
+                    image: 'http://churchoftheredeemerll.org/wp-content/uploads/2016/08/rbrowning1.png'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
         coordinates: {
-            lat: 31.867698,
-            lng: -106.649583
+            lat: 31.866030,
+            lng: -106.647704
         },
         details: {  
             name: "Santa Teresa Baptist Church",
-            address: "PO Box 1524, 5750 McNutt Road Santa Teresa, NM 88008",
+            address: "5750 McNutt Road, Santa Teresa, NM 88008",
             region: "NM",
             website: "http://www.stbcweb.org/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://www.stbcweb.org/messages/?view=mobile'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/SantaTeresaBaptistChurch/?fref=ts'
+                }
+            ],
+            lastUpdated: '5/22/2017'
+        }
+    },
+    {  
+        coordinates: {
+            lat: 31.865880,
+            lng: -106.648
+        },
+        details: {  
+            name: "Iglesia Bautista Emmanuel",
+            address: "5750 McNutt Road, Santa Teresa, NM 88008",
+            region: "NM",
+            website: "http://www.stbcweb.org/about-us/iglesia-bautista-emmanuel/?view=mobile",
+            spanish: true,
+            pastors: [
+                {
+                    name: 'Carlos Pino'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
@@ -6377,27 +6328,27 @@ const CHURCHES = [
             address: "361 Krumkill Road Slingerlands, New York 12159",
             region: "NY",
             website: "http://www.albanybaptist.net/",
-            // notes: [
-            //     {
-            //         type: 'sermons',
-            //         data: 'http://www.gbcconway.com/sermons/'
-            //     },
-            //     {
-            //         type: 'facebook',
-            //         data: 'https://www.facebook.com/gbcconway/?fref=ts'
-            //     }
-            // ],
-            // pastors: [
-            //     {
-            //         name: 'Jeff Johnson',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/57aebafbb3db2b8d0eaa99d8/1471068937518/stockphoto5.jpg?format=750w'
-            //     },
-            //     {
-            //         name: 'Wyeth Wallis',
-            //         image: 'https://static1.squarespace.com/static/5612dbb3e4b0147725b6297f/t/588b017820099e289d34e947/1485505074978/?format=750w'
-            //     }
-            // ],
-            // lastUpdated: '5/22/2017'
+            notes: [
+                {
+                    type: 'sermons',
+                    data: 'http://albanybaptist.net/home/#sermons'
+                },
+                {
+                    type: 'facebook',
+                    data: 'https://www.facebook.com/Albany-Baptist-Church-302885496759260/?fref=ts'
+                }
+            ],
+            pastors: [
+                {
+                    name: 'Mark Sarver',
+                    image: 'http://albanybaptist.net/wp-content/uploads/2015/10/2011-fall-tday-005-300x225.jpg'
+                },
+                {
+                    name: 'William Hill',
+                    image: 'http://albanybaptist.net/wp-content/uploads/2015/10/2011-fall-tday-005-300x225.jpg'
+                }
+            ],
+            lastUpdated: '5/22/2017'
         }
     },
     {  
