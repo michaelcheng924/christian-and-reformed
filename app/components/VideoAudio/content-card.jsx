@@ -194,11 +194,97 @@ class VideoAudioContentCard extends Component {
                     title={name}
                 />
                 <CardText>
-                    <div className="video-audio__course-count">This course has been completed <strong>{appData[data.key] || 0}</strong> times.</div>
+                    <center><h2>Proof/evidence that the Bible is true</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>Presuppositional Apologetics</h3>
+                            <p><strong>Overview:</strong> Greg Bahsen explains presuppositional apologetics, which argues that the Christian worldview/Bible is the necessary starting point for knowledge itself, which means that it is impossible to even argue against Christianity without first assuming that Christianity is true.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/EqMpflXOQnQ" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Jesus' Resurrection</h3>
+                            <p><strong>Overview:</strong> William Lane Craig gives evidence for Jesus' resurrection.
+                            <br /><small><em>Note: Craig's theology is not reformed, but his presentation on this topic is excellent.</em></small></p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/4iyxR8uE9GQ" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Archaeological Evidence</h3>
+                            <p><strong>Overview:</strong> This presenter provides a list of archaeological discoveries that confirm the Bible's history.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/FxHYh3QZbTI" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <center><h2>Basics of the gospel message (How do I get saved?)</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>Gospel Basics/Summary</h3>
+                            <p><strong>Overview:</strong> Steve Lawson gives an introduction to what one must believe (about Jesus and his atoning work) and do (repent and turn to God) to be saved.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/4exu-7RDdKE" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <center><h2>Doctrines of Grace/Calvinism/Predestination</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>Amazing Grace, Part 1</h3>
+                            <p><strong>Overview:</strong> Part 1 explains the history of the debate between Calvinism and Arminianism by examining the debate between Augistine and Pelagius, Luther and Erasmus, and the Synod of Dordt and Arminius.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/oCtrOqYXekE" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Amazing Grace, Part 2</h3>
+                            <p><strong>Overview:</strong> Part 2 supports the five points of Calvinism with Scripture and answers questions against them, as well as provides an application of Calvinism compared to Arminianism.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/rdbLouq98L4" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Amazing Grace, Part 3</h3>
+                            <p><strong>Overview:</strong> Part 3 is about the relationship between Calvinism and evangelism.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/pBB74tt8W14" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <center><h2>Family</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>Love and Marriage, Part 1 - In the Beginning</h3>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/chAvBs5Fexw" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Love and Marriage, Part 2 - True Love</h3>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/WZHn3wy7wvQ" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Love and Marriage, Part 3 - The Other Half</h3>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/Orhgx1gSlJQ" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Love and Marriage, Part 4 - The Better Half</h3>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/zVt74HfNK7I" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <center><h2>Other topics</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>The Importance of Attending a Local Church</h3>
+                            <p><strong>Overview:</strong> Voddie Baucham explains why attending a local church is not optional.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/iZur9xIjZpM" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+
+                    {/*<div className="video-audio__course-count">This course has been completed <strong>{appData[data.key] || 0}</strong> times.</div>
                     <div className="video-audio__course-content">
                         <div className="video-audio__media" dangerouslySetInnerHTML={{__html: data.iframe}} />
                         {this.renderQuestions()}
-                    </div>
+                    </div>*/}
                 </CardText>
             </Card>
         );

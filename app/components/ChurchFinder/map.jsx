@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import { defer, each } from 'lodash';
 
-import BAPTIST_CHURCHES from 'app/constants/baptist-churches';
+import { DIRECTORY_1689 } from 'app/constants/directory-1689';
 
 export default class ChurchFinderMap extends Component {
     constructor(props) {
@@ -30,33 +30,35 @@ export default class ChurchFinderMap extends Component {
 
             let infoWindow = {};
 
-            BAPTIST_CHURCHES.forEach((church, index) => {
-                const { coordinates, details } = church;
-                const { name, address, website, familyIntegrated, noConfession, notes, pastors, lastUpdated } = details;
+            DIRECTORY_1689.forEach((church, index) => {
+                const { name, address, lat, long, region, website, email, pastor, confession, lastUpdated } = church;
 
-                if (!lastUpdated) { return; }
-
-                const icon = this.getIcon(familyIntegrated, noConfession);
+                const icon = this.getIcon();
 
                 var marker = new google.maps.Marker({
                     icon,
                     map,
-                    position: coordinates
+                    position: {
+                        lat: Number(lat),
+                        lng: Number(long)
+                    }
                 });
 
                 const nameAddressString = this.getNameAddressString(name, address);
                 const websiteString = this.getWebsiteString(website);
-                const notesString = this.getNotesString(notes, familyIntegrated);
-                const pastorsString = this.getPastorsString(pastors);
+                const emailString = this.getEmailString(email);
+                const pastorString = this.getPastorString(pastor);
+                const confession1689 = this.getConfession(confession);
                 const lastUpdatedString = this.getLastUpdatedString(lastUpdated);
 
                 infoWindow[index] = new google.maps.InfoWindow({
                     content: `
                         <div class="info-window">
                             ${nameAddressString}
+                            ${confession1689}
                             ${websiteString}
-                            ${notesString}
-                            ${pastorsString}
+                            ${emailString}
+                            ${pastorString}
                             ${lastUpdatedString}
                         </div>
                     `
@@ -150,64 +152,22 @@ export default class ChurchFinderMap extends Component {
         return `<div><strong>Website: </strong><a href="${website}" target="_blank">${website}</a></div>`;
     }
 
-    getNotesString(notes, familyIntegrated) {
-        if (!notes && !familyIntegrated) { return ''; }
+    getEmailString(email) {
+        if (!email) { return ''; }
 
-        let notesString = '';
-
-        notesString += familyIntegrated ? '<div><i class="fa fa-users" aria-hidden="true"></i> Family-integrated</div>' : '';
-
-        notesString += notes.map(note => {
-            let string = '';
-
-            if (note.type === 'confession') {
-                string = `<div><i class="fa fa-book" aria-hidden="true"></i> <strong>Confession:</strong> ${note.data}</div>`;
-            } else if (note.type === 'meeting at') {
-                string = `<div><i class="fa fa-home" aria-hidden="true"></i> <strong>Meeting at:</strong> ${note.data}</div>`;
-            } else if (note.type === 'sermons') {
-                string = `<div><i class="fa fa-comment" aria-hidden="true"></i> <a class="church-directory__church-link" href="${note.data}" target="_blank">Sermons</a></div>`;
-            } else if (note.type === 'facebook') {
-                string = `<div><i class="fa fa-facebook-official" aria-hidden="true"></i> <a class="church-directory__church-link" href="${note.data}" target="_blank">Facebook</a></div>`;
-            }
-
-            return string;
-        }).join('');
-
-        return `
-            <br>
-            <div><strong>Notes:</strong></div>
-            ${notesString}
-        `;
+        return `<div><strong>Email: </strong><a href="mailto:${email}" target="_blank">${email}</a></div>`;
     }
 
-    getPastorsString(pastors) {
-        if (!pastors) { return ''; }
+    getPastorString(pastor) {
+        if (!pastor) { return ''; }
 
-        const pastorsString = pastors.map(pastor => {
-            let string = '';
+        return `<div><strong>Lead Pastor: </strong>${pastor}</div>`;
+    }
 
-            const email = pastor.email ? `<div><a href="mailto:${pastor.email}">${pastor.email}</a></div>` : ''
+    getConfession(confession) {
+        if (!confession) { return ''; }
 
-            const image = pastor.image ? `<img class="church-directory__pastor-image" src="${pastor.image}" />` : '';
-
-            string = `
-                <div class="church-directory__pastor">
-                    ${image}
-                    <div><strong>${pastor.name}</strong></div>
-                    ${email}
-                </div>
-            `;
-
-            return string;
-        }).join('');
-
-        return `
-            <br>
-            <div><strong>Pastors:</strong></div>
-            <div class="church-directory__pastors-container">
-                ${pastorsString}
-            </div>
-        `;
+        return `<div><i class="fa fa-book"></i> ${confession}</div>`;
     }
 
     getLastUpdatedString(lastUpdated) {

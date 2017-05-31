@@ -88,22 +88,22 @@ class VideoAudo extends Component {
     renderContent() {
         const { selection } = this.state;
 
-        if (!this.state.selection) {
-            return (
-                <Card className="video-audio__content-card">
-                    <CardTitle
-                        className="video-audio__content-card-title"
-                        title="Select a mini-course above"
-                    />
-                    <CardText>
-                        Mini-course content will appear here.
-                    </CardText>
-                </Card>
-            );
-        }
+        // if (!this.state.selection) {
+        //     return (
+        //         <Card className="video-audio__content-card">
+        //             <CardTitle
+        //                 className="video-audio__content-card-title"
+        //                 title="Select a mini-course above"
+        //             />
+        //             <CardText>
+        //                 Mini-course content will appear here.
+        //             </CardText>
+        //         </Card>
+        //     );
+        // }
 
         let data = {};
-        let name = 'Select a mini-course above';
+        let name = 'Videos';
 
         if (ROUTES[selection]) {
             data = ROUTES[selection].data;
@@ -123,10 +123,10 @@ class VideoAudo extends Component {
                 <AppHeader
                     setParentState={this.setParentState}
                     showHeader={showHeader}
-                    title="Video/Audio Mini-Courses"
+                    title="Reformed Video/Audio"
                     subtitle="Build a Biblical Worldview"
                 >
-                    {this.renderDropdown()}
+                    {/*this.renderDropdown()*/}
                 </AppHeader>
                 <ContentCard setParentState={this.setParentState} showContent={showContent}>
                     {this.renderContent()}
