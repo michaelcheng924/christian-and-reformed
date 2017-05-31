@@ -87,7 +87,7 @@ class App extends Component {
             <Component>
                 <MuiThemeProvider>
                     <div className={classNames}>
-                        <Header app={app} />
+                        <Header app={app} onSetApp={onSetApp} />
                         <Route exact path="/" component={Home}/>
                         <Route path="/admin" component={Admin} />
                         {

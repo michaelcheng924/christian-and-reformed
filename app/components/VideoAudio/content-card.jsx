@@ -224,10 +224,15 @@ class VideoAudioContentCard extends Component {
                             <p><strong>Overview:</strong> Steve Lawson gives an introduction to what one must believe (about Jesus and his atoning work) and do (repent and turn to God) to be saved.</p>
                             <iframe width="325" height="183" src="https://www.youtube.com/embed/4exu-7RDdKE" frameBorder="0" allowFullScreen></iframe>
                         </div>
+                        <div>
+                            <h3>True Salvation/Regeneration vs. a False "Decision"</h3>
+                            <p><strong>Overview:</strong> Paul Washer critiques "decisional" conversion and explains what true conversion/regeneration looks like.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/shxQcczYuAA?start=1907" frameBorder="0" allowFullScreen></iframe>
+                        </div>
                     </div>
                     <br /><br />
 
-                    <center><h2>Doctrines of Grace/Calvinism/Predestination</h2></center>
+                    <center><h2>Doctrines of Grace</h2></center>
                     <br />
                     <div className="video-audio__videos-container">
                         <div>
@@ -248,7 +253,7 @@ class VideoAudioContentCard extends Component {
                     </div>
                     <br /><br />
 
-                    <center><h2>Family</h2></center>
+                    <center><h2>Love and Marriage</h2></center>
                     <br />
                     <div className="video-audio__videos-container">
                         <div>
@@ -270,7 +275,7 @@ class VideoAudioContentCard extends Component {
                     </div>
                     <br /><br />
 
-                    <center><h2>Other topics</h2></center>
+                    <center><h2>Church</h2></center>
                     <br />
                     <div className="video-audio__videos-container">
                         <div>

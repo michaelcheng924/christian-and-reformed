@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import { Link } from 'react-router-dom';
 import css from 'classnames';
+import { partial } from 'lodash';
 import SlideOut from 'app/components/SlideOut';
 
 export default class Header extends Component {
@@ -22,7 +24,9 @@ export default class Header extends Component {
                     transitionLeave={false}
                 >
                     <div className={classNames}>
-                        <div className="home__header-title">Christian and Reformed</div>
+                        <Link to="/" onClick={partial(this.props.onSetApp, null)}>
+                            <div className="home__header-title">Christian and Reformed</div>
+                        </Link>
                         <div className="home__header-tagline">Technology Serving Historic Truth</div>
                     </div>
                 </CSSTransitionGroup>
