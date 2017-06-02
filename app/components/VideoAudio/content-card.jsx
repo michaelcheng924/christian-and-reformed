@@ -194,6 +194,27 @@ class VideoAudioContentCard extends Component {
                     title={name}
                 />
                 <CardText>
+                    <center><h2>What is the gospel/salvation?</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>What is the gospel?</h3>
+                            <p><strong>Overview:</strong> John Piper summarizes the gospel.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/ClfLFeb5vww" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>What is the gospel?</h3>
+                            <p><strong>Overview:</strong> Steve Lawson summarizes the gospel.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/4exu-7RDdKE" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
+                            <h3>True Salvation/Regeneration vs. a False "Decision"</h3>
+                            <p><strong>Overview:</strong> Paul Washer critiques "decisional" conversion and explains what true conversion/regeneration looks like.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/shxQcczYuAA?start=1907" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                    <br /><br />
+
                     <center><h2>Proof/evidence that the Bible is true</h2></center>
                     <br />
                     <div className="video-audio__videos-container">
@@ -209,25 +230,15 @@ class VideoAudioContentCard extends Component {
                             <iframe width="325" height="183" src="https://www.youtube.com/embed/4iyxR8uE9GQ" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
+                            <h3>Is the New Testament Historically Reliable?</h3>
+                            <p><strong>Overview:</strong> Frank Turek provides six reasons why we can trust the New Testament.
+                            <br /><small><em>Note: Turek's theology is not reformed.</em></small></p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/KmA6kOWwfWI" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                        <div>
                             <h3>Archaeological Evidence</h3>
                             <p><strong>Overview:</strong> This presenter provides a list of archaeological discoveries that confirm the Bible's history.</p>
                             <iframe width="325" height="183" src="https://www.youtube.com/embed/FxHYh3QZbTI" frameBorder="0" allowFullScreen></iframe>
-                        </div>
-                    </div>
-                    <br /><br />
-
-                    <center><h2>Basics of the gospel message (How do I get saved?)</h2></center>
-                    <br />
-                    <div className="video-audio__videos-container">
-                        <div>
-                            <h3>Gospel Basics/Summary</h3>
-                            <p><strong>Overview:</strong> Steve Lawson gives an introduction to what one must believe (about Jesus and his atoning work) and do (repent and turn to God) to be saved.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/4exu-7RDdKE" frameBorder="0" allowFullScreen></iframe>
-                        </div>
-                        <div>
-                            <h3>True Salvation/Regeneration vs. a False "Decision"</h3>
-                            <p><strong>Overview:</strong> Paul Washer critiques "decisional" conversion and explains what true conversion/regeneration looks like.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/shxQcczYuAA?start=1907" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                     <br /><br />
@@ -253,6 +264,17 @@ class VideoAudioContentCard extends Component {
                     </div>
                     <br /><br />
 
+                    <center><h2>Church</h2></center>
+                    <br />
+                    <div className="video-audio__videos-container">
+                        <div>
+                            <h3>The Importance of Attending a Local Church</h3>
+                            <p><strong>Overview:</strong> Voddie Baucham explains why attending a local church is not optional.</p>
+                            <iframe width="325" height="183" src="https://www.youtube.com/embed/iZur9xIjZpM" frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                    <br /><br />
+
                     <center><h2>Love and Marriage</h2></center>
                     <br />
                     <div className="video-audio__videos-container">
@@ -271,17 +293,6 @@ class VideoAudioContentCard extends Component {
                         <div>
                             <h3>Love and Marriage, Part 4 - The Better Half</h3>
                             <iframe width="325" height="183" src="https://www.youtube.com/embed/zVt74HfNK7I" frameBorder="0" allowFullScreen></iframe>
-                        </div>
-                    </div>
-                    <br /><br />
-
-                    <center><h2>Church</h2></center>
-                    <br />
-                    <div className="video-audio__videos-container">
-                        <div>
-                            <h3>The Importance of Attending a Local Church</h3>
-                            <p><strong>Overview:</strong> Voddie Baucham explains why attending a local church is not optional.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/iZur9xIjZpM" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
 

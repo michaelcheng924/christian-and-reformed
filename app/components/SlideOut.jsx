@@ -90,7 +90,7 @@ class SlideOut extends Component {
                                         />
                                         <br /><br />
                                         <span>Share this website</span>
-                                        <div dangerouslySetInnerHTML={{__html: '<div class="fb-share-button" data-href="http://christianandreformed.com" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fchristianandreformed.com%2F&amp;src=sdkpreparse">Share</a></div>'}} />
+                                        <div dangerouslySetInnerHTML={{__html: '<div class="fb-share-button" data-href="http://app.christianandreformed.com" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fchristianandreformed.com%2F&amp;src=sdkpreparse">Share</a></div>'}} />
                                         <br /><br />
                                         <div>
                                             Visit the <a href="https://www.facebook.com/christianandreformed/" target="_blank">Facebook</a> page to...
@@ -99,6 +99,7 @@ class SlideOut extends Component {
                                                 <li>Request a feature</li>
                                                 <li>Report a bug</li>
                                                 <li>Share your experience</li>
+                                                <li>Ask a question</li>
                                                 <li>Just chat about whatever you want</li>
                                             </ul>
                                         </div>
