@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 import { Card, CardTitle, CardText } from 'material-ui/Card';
 
-import { DIRECTORY_1689 } from 'app/constants/directory-1689';
-
 export default class ChurchFinderList extends Component {
-    constructor(props) {
-        super(props);
+    renderData(confession) {
+        if (!confession) { return null; }
 
-        
+        return <div><i className="fa fa-book" /> {confession}<br /><br /></div>
     }
 
     render() {
@@ -21,11 +19,10 @@ export default class ChurchFinderList extends Component {
                         hintStyle={{color: '#E7E7E7'}}
                         underlineStyle={{borderColor: '#FFF'}}
                     />
-                    <div>{DIRECTORY_1689.length}</div>
                 </div>
                 <div className="church-directory__list">
                     {
-                        DIRECTORY_1689.map((church, index) => {
+                        this.props.filteredChurches.map((church, index) => {
                             const { name, address, region, website, email, pastor, confession, lastUpdated } = church;
 
                             const directionsUrl = `https://maps.google.com?daddr=${address.replace(' ', '+')}`;
@@ -38,6 +35,7 @@ export default class ChurchFinderList extends Component {
                                         <br />
                                         <div><strong>Website:</strong> {website}</div>
                                         <br />
+                                        {this.renderData(confession)}
                                         <div><strong>Last updated:</strong> {lastUpdated}</div>
                                     </CardText>
                                 </Card>

@@ -2,8 +2,6 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import { defer, each } from 'lodash';
 
-import { DIRECTORY_1689 } from 'app/constants/directory-1689';
-
 export default class ChurchFinderMap extends Component {
     constructor(props) {
         super(props);
@@ -19,6 +17,10 @@ export default class ChurchFinderMap extends Component {
         this.initMap();
     }
 
+    componentDidUpdate() {
+        this.initMap();
+    }
+
     initMap() {
         if (typeof window !== 'undefined') {
             var usa = {lat: 37.09024, lng: -95.712891};
@@ -30,7 +32,7 @@ export default class ChurchFinderMap extends Component {
 
             let infoWindow = {};
 
-            DIRECTORY_1689.forEach((church, index) => {
+            this.props.filteredChurches.forEach((church, index) => {
                 const { name, address, lat, long, region, website, email, pastor, confession, lastUpdated } = church;
 
                 const icon = this.getIcon();

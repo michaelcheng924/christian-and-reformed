@@ -11,7 +11,7 @@
         background: rgba(255, 255, 255, .8);
         height: 165px;
         padding: 5px;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 64px;
         transition: all .3s;
@@ -19,7 +19,7 @@
         z-index: 50;
 
         &--hide {
-            height: 24px;
+            height: 30px;
             width: 132px;
 
             .church-directory__filters-title svg {

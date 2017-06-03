@@ -3,6 +3,7 @@
         background: #0D47A1;
         color: #FFF;
         flex-grow: 1;
+        font-weight: 100;
         height: 100%;
         padding: 30px 0;
         position: relative;
@@ -18,6 +19,7 @@
 
             .home__header-title {
                 font-size: 18px;
+                font-weight: 100;
             }
 
             .home__header-tagline {
@@ -28,6 +30,7 @@
 
     &__header-title {
         font-size: 32px;
+        font-weight: 100;
         transition: all .4s;
     }
 
@@ -75,11 +78,16 @@
     &__app {
         align-items: center;
         display: flex;
+        font-weight: 100;
         height: 250px;
         padding: 40px;
         text-align: center;
         transition: all .3s;
         width: 100%;
+
+        h2 {
+            font-weight: 100;
+        }
 
         > div {
             flex-grow: 1;
