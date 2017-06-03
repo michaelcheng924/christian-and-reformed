@@ -37,7 +37,11 @@ export default class BibleOrderContentCard extends Component {
     }
 
     onStart() {
-        this.setState({ started: true });
+        this.setState({
+            allCorrect: false,
+            started: true,
+            timer: 0
+        });
 
         this.timerInterval = setInterval(() => {
             this.setState({ timer: this.state.timer += 1 });
