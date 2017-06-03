@@ -44,21 +44,6 @@ export default class ChurchFinder extends Component {
                     showFilters
                         ? (
                             <div>
-                                <div className="church-directory__legend">
-                                    <strong>Baptist:</strong>
-                                    <div className="church-directory__legend-option">
-                                        <img src="/marker-baptist-generic.png" />
-                                        <span>Reformed theology</span>
-                                    </div>
-                                    <div className="church-directory__legend-option">
-                                        <img src="/marker-baptist.png" />
-                                        <span>+ Confessional</span>
-                                    </div>
-                                    <div className="church-directory__legend-option">
-                                        <img src="/marker-baptist-fi.png" />
-                                        <span>+ Family-integrated</span>
-                                    </div>
-                                </div>
                                 {/*<Checkbox
                                     label="Confessional only"
                                     onCheck={this.onShowAnswer}
