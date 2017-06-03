@@ -109,7 +109,7 @@ class ConfessionsCreeds extends Component {
         }
 
         const data = get(ROUTES[selection], 'data', []);
-        const name = get(ROUTES[selection], 'title', 'Select a confession or creed above');
+        const name = get(ROUTES[selection], 'name', 'Select a confession or creed above');
 
         return (
             <ConfessionsCreedsContentCard data={data} name={name} />
