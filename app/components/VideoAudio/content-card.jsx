@@ -200,17 +200,17 @@ class VideoAudioContentCard extends Component {
                         <div>
                             <h3>What is the gospel?</h3>
                             <p><strong>Overview:</strong> John Piper summarizes the gospel.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/ClfLFeb5vww" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/ClfLFeb5vww" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>What is the gospel?</h3>
                             <p><strong>Overview:</strong> Steve Lawson summarizes the gospel.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/4exu-7RDdKE" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/4exu-7RDdKE" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>True Salvation/Regeneration vs. a False "Decision"</h3>
                             <p><strong>Overview:</strong> Paul Washer critiques "decisional" conversion and explains what true conversion/regeneration looks like.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/shxQcczYuAA?start=1907" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/shxQcczYuAA?start=1907" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                     <br /><br />
@@ -221,24 +221,24 @@ class VideoAudioContentCard extends Component {
                         <div>
                             <h3>Presuppositional Apologetics</h3>
                             <p><strong>Overview:</strong> Greg Bahsen explains presuppositional apologetics, which argues that the Christian worldview/Bible is the necessary starting point for knowledge itself, which means that it is impossible to even argue against Christianity without first assuming that Christianity is true.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/EqMpflXOQnQ" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/EqMpflXOQnQ" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Jesus' Resurrection</h3>
                             <p><strong>Overview:</strong> William Lane Craig gives evidence for Jesus' resurrection.
                             <br /><small><em>Note: Craig's theology is not reformed, but his presentation on this topic is excellent.</em></small></p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/4iyxR8uE9GQ" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/4iyxR8uE9GQ" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Is the New Testament Historically Reliable?</h3>
                             <p><strong>Overview:</strong> Frank Turek provides six reasons why we can trust the New Testament.
                             <br /><small><em>Note: Turek's theology is not reformed.</em></small></p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/KmA6kOWwfWI" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/KmA6kOWwfWI" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Archaeological Evidence</h3>
                             <p><strong>Overview:</strong> This presenter provides a list of archaeological discoveries that confirm the Bible's history.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/FxHYh3QZbTI" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/FxHYh3QZbTI" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                     <br /><br />
@@ -249,17 +249,17 @@ class VideoAudioContentCard extends Component {
                         <div>
                             <h3>Amazing Grace, Part 1</h3>
                             <p><strong>Overview:</strong> Part 1 explains the history of the debate between Calvinism and Arminianism by examining the debate between Augistine and Pelagius, Luther and Erasmus, and the Synod of Dordt and Arminius.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/oCtrOqYXekE" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/oCtrOqYXekE" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Amazing Grace, Part 2</h3>
                             <p><strong>Overview:</strong> Part 2 supports the five points of Calvinism with Scripture and answers questions against them, as well as provides an application of Calvinism compared to Arminianism.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/rdbLouq98L4" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/rdbLouq98L4" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Amazing Grace, Part 3</h3>
                             <p><strong>Overview:</strong> Part 3 is about the relationship between Calvinism and evangelism.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/pBB74tt8W14" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/pBB74tt8W14" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                     <br /><br />
@@ -270,7 +270,7 @@ class VideoAudioContentCard extends Component {
                         <div>
                             <h3>The Importance of Attending a Local Church</h3>
                             <p><strong>Overview:</strong> Voddie Baucham explains why attending a local church is not optional.</p>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/iZur9xIjZpM" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/iZur9xIjZpM" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                     <br /><br />
@@ -280,19 +280,19 @@ class VideoAudioContentCard extends Component {
                     <div className="video-audio__videos-container">
                         <div>
                             <h3>Love and Marriage, Part 1 - In the Beginning</h3>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/chAvBs5Fexw" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/chAvBs5Fexw" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Love and Marriage, Part 2 - True Love</h3>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/WZHn3wy7wvQ" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/WZHn3wy7wvQ" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Love and Marriage, Part 3 - The Other Half</h3>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/Orhgx1gSlJQ" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/Orhgx1gSlJQ" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div>
                             <h3>Love and Marriage, Part 4 - The Better Half</h3>
-                            <iframe width="325" height="183" src="https://www.youtube.com/embed/zVt74HfNK7I" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="300" height="169" src="https://www.youtube.com/embed/zVt74HfNK7I" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
 
