@@ -1,0 +1,62 @@
+.salvation {
+    color: #FFF;
+    padding: 20px 20px 0 20px;
+
+    h2 {
+        font-weight: 900;
+    }
+
+    h3 {
+        font-weight: 700;
+    }
+
+    div {
+        font-weight: 300;
+    }
+
+    &__truth {
+        border: 1px solid #FFF;
+        margin-bottom: 20px;
+    }
+
+    &__truth-heading {
+        background: #333;
+        padding: 20px 20px 10px;
+    }
+
+    &__truth-body {
+        align-items: center;
+        background: #FFEBEE;
+        color: #333;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px 20px;
+
+        > div {
+            padding-right: 10px;
+            width: 50%;
+
+            &:last-child {
+                padding-left: 10px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__scriptures {
+        margin-top: 10px;
+    }
+
+    &__scriptures-meaning {
+        border: 1px solid #333;
+        padding: 10px 10px 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .salvation {
+        &__truth-body > div {
+            width: 100%;
+        }
+    }
+}
