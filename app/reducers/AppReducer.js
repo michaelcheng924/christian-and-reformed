@@ -8,6 +8,7 @@ import {
     getAllUsers,
     getAppData,
     incrementCourseCount,
+    incrementScroll,
     login,
     loginWithToken,
     passwordResetEmail,
@@ -68,7 +69,8 @@ export default function usersReducer(state = defaultState, { type, payload }) {
         case loginWithToken.SUCCESS:
             return {
                 ...state,
-                user: payload.user
+                user: payload.user,
+                appData: payload.userData
             };
         case deleteUser.SUCCESS:
             return {
@@ -88,6 +90,7 @@ export default function usersReducer(state = defaultState, { type, payload }) {
         case deleteScore.SUCCESS:
         case getAppData.SUCCESS:
         case incrementCourseCount.SUCCESS:
+        case incrementScroll.SUCCESS:
             return {
                 ...state,
                 appData: payload.appData

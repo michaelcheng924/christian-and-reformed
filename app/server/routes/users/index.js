@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jwt-simple';
 import crypto from 'crypto';
 import { sendUsers } from 'app/server/routes/users/utils';
-import { User } from 'app/server/db/user-schema';
+import { AppData, User } from 'app/server/db/user-schema';
 
 const secret = 'blah bleh';
 
@@ -53,9 +53,13 @@ router.post('/loginwithtoken', (req, res) => {
             return;
         }
 
-        res.send({
-            user: email,
-            userData: result.data
+        AppData.findOne({ name: 'data' }, (err, result1) => {
+            const data = result1.data;
+            
+            res.send({
+                user: email,
+                userData: data
+            });
         });
     });
 });

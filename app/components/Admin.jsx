@@ -211,57 +211,20 @@ class Admin extends Component {
 
     renderContent() {
         const { appData } = this.props;
-
+console.log(appData);
         return (
             <div className="admin">
-                <div className="admin__leaderboards">
-                    {
-                        map(appData, (item, key) => {
+                {
+                    map(appData, (value, key) => {
+                        if (key.indexOf('/') !== -1) {
                             return (
-                                <div key={key}>
-                                    <h3>{key}</h3>
-                                    {
-                                        typeof item === 'number'
-                                            ? item
-                                            :  item.map((value, index) => {
-                                                return <div key={index}>{`${value.score} | ${value.name}`} || <span onClick={partial(this.deleteScore, key, index)}>X</span></div>;
-                                            })
-                                    }
-                                </div>
+                                <div>{key}: {value}</div>
                             );
-                        })
-                    }
-                </div>
-                <div>
-                    <TextField
-                        hintText="Add leaderboard"
-                        onChange={event => this.setState({ leaderboardKey: event.target.value })}
-                        type="text"
-                    />
-                    <RaisedButton
-                        label="Add Leaderboard"
-                        secondary={true}
-                        onClick={this.onAddLeaderboard}
-                    />
-                </div>
-                <div>
-                    <TextField
-                        hintText="Add course"
-                        onChange={event => this.setState({ courseKey: event.target.value })}
-                        type="text"
-                    />
-                    <RaisedButton
-                        label="Add Course"
-                        secondary={true}
-                        onClick={this.onAddCourseCount}
-                    />
-                </div>
-                <RaisedButton
-                    className="slide-out-content__logout"
-                    label="Log out"
-                    secondary={true}
-                    onClick={this.onLogout}
-                />
+                        }
+
+                        return null;
+                    })
+                }
             </div>
         );
     }

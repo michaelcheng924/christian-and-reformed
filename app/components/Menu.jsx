@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import css from 'classnames';
-import { map, partial } from 'lodash';
+import { debounce, map, partial } from 'lodash';
+
+import { incrementScroll } from 'app/api/users';
 
 const ROUTES = {
     '/': {
@@ -22,6 +25,15 @@ const ROUTES = {
             </div>
         ),
         url: '/salvation'
+    },
+    '/bible': {
+        icon: 'book',
+        text: (
+            <div className="menu__text">
+                <h1>Evidence/Proof for the Bible</h1>
+            </div>
+        ),
+        url: '/bible'
     }
 }
 
@@ -35,6 +47,7 @@ class Menu extends Component {
         };
 
         this.expandCollapse = this.expandCollapse.bind(this);
+        this.onScroll = debounce(this.onScroll.bind(this), 1000);
         this.setRoute = this.setRoute.bind(this);
     }
 
@@ -48,7 +61,13 @@ class Menu extends Component {
                     route: pathname
                 });
             }
+
+            window.addEventListener('scroll', this.onScroll);
         }
+    }
+
+    onScroll() {
+        this.props.onScroll({ route: this.state.route });
     }
 
     expandCollapse() {
@@ -63,13 +82,19 @@ class Menu extends Component {
     }
 
     render() {
+        if (typeof window !== 'undefined') {
+            const pathname = window.location.pathname;
+
+            if (pathname === '/admin') { return null; }
+        }
+
         const currentRoute = ROUTES[this.state.route];
 
         const classNames = css('menu__options', {
             'menu__options--expanded': this.state.expanded
         });
 
-        const height = this.state.expanded ? 70 : 0;
+        const height = this.state.expanded ? 140 : 0;
 
         return (
             <div className="menu">
@@ -107,4 +132,8 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+const mapActionsToProps = {
+    onScroll: incrementScroll
+};
+
+export default connect(null, mapActionsToProps)(Menu);

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+import Admin from 'app/components/Admin';
 import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
 import Salvation from 'app/components/Salvation';
@@ -17,6 +18,7 @@ class App extends Component {
                         <Menu />
                         <Route exact path="/" component={Home}/>
                         <Route path="/salvation" component={Salvation} />
+                        <Route path="/admin" component={Admin} />
                     </div>
                 </MuiThemeProvider>
             </Component>

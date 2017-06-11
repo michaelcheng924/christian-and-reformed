@@ -62,6 +62,12 @@ export const incrementCourseCount = createClient({
     url: '/api/global/incrementcoursecount'
 });
 
+export const incrementScroll = createClient({
+    actionTypePrefix: 'users:incrementScroll',
+    requestType: 'POST',
+    url: '/api/global/incrementscroll'
+});
+
 export const getAllUsers = createClient({
     actionTypePrefix: 'users:getAllUsers',
     requestType: 'GET',
