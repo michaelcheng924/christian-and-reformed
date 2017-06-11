@@ -51,10 +51,9 @@ app.use((req, res) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="${headingTitle}" />
-                <meta property="og:description" content="${description}" />
-                <meta property="og:image" content="/fb-pic1.png" /> 
-                <title>${title}</title>
+                <meta property="og:title" content="Christian and Reformed" />
+                <meta property="og:description" content="Proclaiming Historic, Timeless Truth" />
+                <title>Christian and Reformed: Proclaiming Historic, Timeless Truth</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
                 <link rel="icon" 
