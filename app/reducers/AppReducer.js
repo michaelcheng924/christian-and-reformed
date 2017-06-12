@@ -17,7 +17,7 @@ import {
 
 const defaultState = {
     allUsers: [],
-    app: null,
+    app: '/',
     appData: {},
     loginErrorMessage: null,
     user: null,

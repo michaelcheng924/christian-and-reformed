@@ -7,6 +7,7 @@ import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
 import Salvation from 'app/components/Salvation';
 import Bible from 'app/components/Bible';
+import Predestination from 'app/components/Predestination';
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/salvation" component={Salvation} />
                         <Route path="/bible" component={Bible} />
+                        <Route path="/predestination-free-will" component={Predestination} />
                         <Route path="/admin" component={Admin} />
                     </div>
                 </MuiThemeProvider>

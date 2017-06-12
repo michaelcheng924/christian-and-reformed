@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
+import { partial } from 'lodash';
+
+import { setApp } from 'app/actions/AppActions';
 
 class Salvation extends Component {
     constructor(props) {
@@ -35,10 +40,16 @@ class Salvation extends Component {
     }
 
     render() {
+        const { onSetApp } = this.props;
+
         return (
             <div className="salvation">
                 <div className="salvation__other-pages">
-                    Not convinced that the Bible is true? Check out the <Link to="/bible">Proof/Evidence for the Bible</Link> page.
+                    <p>Not convinced that the Bible is true? Check out the <Link to="/bible" onClick={partial(onSetApp, '/bible')}>Proof/Evidence for the Bible</Link> page.</p>
+                    <p>
+                        Learn more about the Bible:<br />
+                        <Link to="/predestination-free-will" onClick={partial(onSetApp, '/predestination-free-will')}>Is salvation by predestination or free will?</Link>
+                    </p>
                 </div>
 
                 <div className="salvation__truth">
@@ -137,4 +148,8 @@ class Salvation extends Component {
     }
 }
 
-export default Salvation;
+const mapActionsToProps = {
+    onSetApp: setApp
+};
+
+export default connect(null,  mapActionsToProps)(Salvation);

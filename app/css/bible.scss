@@ -1,11 +1,31 @@
 .bible {
     .salvation {
+        &__other-pages {
+            color: #333;
+
+            a {
+                color: #1565C0;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
         &__truth {
             border: 1px solid #333;
         }
 
         &__truth-body {
             background: #FFFDE7;
+        }
+    }
+}
+
+.predestination {
+    .salvation {
+        &__truth-body {
+            background: #E1F5FE;
         }
     }
 }

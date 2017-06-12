@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
+import { partial } from 'lodash';
+
+import { setApp } from 'app/actions/AppActions';
 
 class Bible extends Component {
     constructor(props) {
@@ -34,8 +40,16 @@ class Bible extends Component {
     }
 
     render() {
+        const { onSetApp } = this.props;
+
         return (
             <div className="salvation bible">
+                <div className="salvation__other-pages">
+                    Learn what the Bible teaches:<br />
+                    <Link to="/salvation" onClick={partial(onSetApp, '/salvation')}>3 truths about salvation</Link><br />
+                    <Link to="/predestination-free-will" onClick={partial(onSetApp, '/predestination-free-will')}>Is salvation by predestination or free will?</Link>
+                </div>
+
                 <div className="salvation__truth">
                     <div className="salvation__truth-heading">
                         <h2>Evidence/Proof #1: Knowledge itself is impossible without assuming or stealing from the Christian worldview (the Bible)</h2>
@@ -117,4 +131,8 @@ class Bible extends Component {
     }
 }
 
-export default Bible;
+const mapActionsToProps = {
+    onSetApp: setApp
+};
+
+export default connect(null,  mapActionsToProps)(Bible);

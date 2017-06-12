@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
 import { Link } from 'react-router-dom';
 import css from 'classnames';
 import { debounce, map, partial } from 'lodash';
 
+import { setApp } from 'app/actions/AppActions';
 import { incrementScroll } from 'app/api/users';
 
 const ROUTES = {
@@ -34,6 +36,15 @@ const ROUTES = {
             </div>
         ),
         url: '/bible'
+    },
+    '/predestination-free-will': {
+        icon: 'dot-circle-o',
+        text: (
+            <div className="menu__text">
+                <h1>Is salvation by predestination or free will?</h1>
+            </div>
+        ),
+        url: '/predestination-free-will'
     }
 }
 
@@ -42,8 +53,7 @@ class Menu extends Component {
         super(props);
         
         this.state = {
-            expanded: true,
-            route: '/'
+            expanded: true
         };
 
         this.expandCollapse = this.expandCollapse.bind(this);
@@ -56,9 +66,10 @@ class Menu extends Component {
             const pathname = window.location.pathname;
 
             if (ROUTES[pathname]) {
+                this.props.onSetApp(pathname);
+
                 this.setState({
                     expanded: pathname === '/',
-                    route: pathname
                 });
             }
 
@@ -66,8 +77,14 @@ class Menu extends Component {
         }
     }
 
+    componentDidUpdate(prevProps) {
+        if (this.props.app !== prevProps.app) {
+            this.setRoute(this.props.app);
+        }
+    }
+
     onScroll() {
-        this.props.onScroll({ route: this.state.route });
+        this.props.onScroll(this.props.app);
     }
 
     expandCollapse() {
@@ -76,7 +93,6 @@ class Menu extends Component {
 
     setRoute(route) {
         this.setState({
-            route,
             expanded: route === '/'
         });
     }
@@ -88,13 +104,15 @@ class Menu extends Component {
             if (pathname === '/admin') { return null; }
         }
 
-        const currentRoute = ROUTES[this.state.route];
+        const { onSetApp } = this.props;
+
+        const currentRoute = ROUTES[this.props.app];
 
         const classNames = css('menu__options', {
             'menu__options--expanded': this.state.expanded
         });
 
-        const height = this.state.expanded ? 140 : 0;
+        const height = this.state.expanded ? 210 : 0;
 
         return (
             <div className="menu">
@@ -110,12 +128,12 @@ class Menu extends Component {
                 <div className={classNames} style={{ height }}>
                     {
                         map(ROUTES, (value, key) => {
-                            if (key === this.state.route) {
+                            if (key === this.props.app) {
                                 return null;
                             }
 
                             return (
-                                <Link key={key} to={value.url} onClick={partial(this.setRoute, value.url)}>
+                                <Link key={key} to={value.url} onClick={partial(onSetApp, value.url)}>
                                     <div className="menu__option">
                                         <div className="menu__icon">
                                             <i className={`fa fa-${value.icon}`} />
@@ -132,8 +150,14 @@ class Menu extends Component {
     }
 }
 
+const mapStateToProps = createSelector(
+    state => state.app,
+    app => ({ ...app })
+);
+
 const mapActionsToProps = {
-    onScroll: incrementScroll
+    onScroll: incrementScroll,
+    onSetApp: setApp
 };
 
-export default connect(null, mapActionsToProps)(Menu);
+export default connect(mapStateToProps, mapActionsToProps)(Menu);
