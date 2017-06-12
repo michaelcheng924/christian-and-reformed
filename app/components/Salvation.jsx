@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Menu extends Component {
+class Salvation extends Component {
     constructor(props) {
         super(props);
         
@@ -132,4 +132,4 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+export default Salvation;

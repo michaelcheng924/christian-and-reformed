@@ -6,6 +6,7 @@ import Admin from 'app/components/Admin';
 import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
 import Salvation from 'app/components/Salvation';
+import Bible from 'app/components/Bible';
 
 class App extends Component {
     render() {
@@ -18,6 +19,7 @@ class App extends Component {
                         <Menu />
                         <Route exact path="/" component={Home}/>
                         <Route path="/salvation" component={Salvation} />
+                        <Route path="/bible" component={Bible} />
                         <Route path="/admin" component={Admin} />
                     </div>
                 </MuiThemeProvider>

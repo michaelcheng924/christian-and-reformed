@@ -26,15 +26,15 @@ const ROUTES = {
         ),
         url: '/salvation'
     },
-    // '/bible': {
-    //     icon: 'book',
-    //     text: (
-    //         <div className="menu__text">
-    //             <h1>Evidence/Proof for the Bible</h1>
-    //         </div>
-    //     ),
-    //     url: '/bible'
-    // }
+    '/bible': {
+        icon: 'book',
+        text: (
+            <div className="menu__text">
+                <h1>Evidence/Proof for the Bible</h1>
+            </div>
+        ),
+        url: '/bible'
+    }
 }
 
 class Menu extends Component {
