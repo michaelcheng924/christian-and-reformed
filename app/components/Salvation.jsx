@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Salvation extends Component {
     constructor(props) {
@@ -36,6 +37,10 @@ class Salvation extends Component {
     render() {
         return (
             <div className="salvation">
+                <div className="salvation__other-pages">
+                    Not convinced that the Bible is true? Check out the <Link to="/bible">Proof/Evidence for the Bible</Link> page.
+                </div>
+
                 <div className="salvation__truth">
                     <div className="salvation__truth-heading">
                         <h2>Truth #1: Most people who say they are Christians are not actually saved.</h2>

@@ -30,7 +30,7 @@ const ROUTES = {
         icon: 'book',
         text: (
             <div className="menu__text">
-                <h1>Evidence/Proof for the Bible</h1>
+                <h1>Proof/Evidence for the Bible</h1>
             </div>
         ),
         url: '/bible'
