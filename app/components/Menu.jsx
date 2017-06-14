@@ -84,7 +84,7 @@ class Menu extends Component {
     }
 
     onScroll() {
-        this.props.onScroll(this.props.app);
+        this.props.onScroll({ route: this.props.app });
     }
 
     expandCollapse() {
