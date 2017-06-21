@@ -10,23 +10,14 @@
   <loc>http://app.christianandreformed.com/</loc>
 </url>
 
-<!-- COURSES -->
 <url>
-  <loc>http://app.christianandreformed.com/video-audio</loc>
+  <loc>http://app.christianandreformed.com/salvation</loc>
 </url>
 
-<!-- CHURCH FINDER -->
 <url>
-  <loc>http://app.christianandreformed.com/reformed-church-finder</loc>
+  <loc>http://app.christianandreformed.com/bible</loc>
 </url>
 
-<!-- CREEDS CONFESSIONS -->
 <url>
-  <loc>http://app.christianandreformed.com/creeds-confessions-explorer</loc>
+  <loc>http://app.christianandreformed.com/predestination-free-will</loc>
 </url>
-
-<!-- GAMES -->
-<url>
-  <loc>http://app.christianandreformed.com/games</loc>
-</url>
-</urlset>
