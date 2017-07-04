@@ -19,33 +19,42 @@ const ROUTES = {
         ),
         url: '/'
     },
-    '/salvation': {
+    '/repent-believe': {
         icon: 'heartbeat',
         text: (
             <div className="menu__text">
-                <h1>3 truths about salvation</h1>
+                <h1>You must repent and believe</h1>
             </div>
         ),
-        url: '/salvation'
+        url: '/repent-believe'
     },
-    '/bible': {
-        icon: 'book',
-        text: (
-            <div className="menu__text">
-                <h1>Proof/Evidence for the Bible</h1>
-            </div>
-        ),
-        url: '/bible'
-    },
-    '/predestination-free-will': {
-        icon: 'dot-circle-o',
-        text: (
-            <div className="menu__text">
-                <h1>Is salvation by predestination or free will?</h1>
-            </div>
-        ),
-        url: '/predestination-free-will'
-    }
+    // '/salvation': {
+    //     icon: 'heartbeat',
+    //     text: (
+    //         <div className="menu__text">
+    //             <h1>3 truths about salvation</h1>
+    //         </div>
+    //     ),
+    //     url: '/salvation'
+    // },
+    // '/bible': {
+    //     icon: 'book',
+    //     text: (
+    //         <div className="menu__text">
+    //             <h1>Proof/Evidence for the Bible</h1>
+    //         </div>
+    //     ),
+    //     url: '/bible'
+    // },
+    // '/predestination-free-will': {
+    //     icon: 'dot-circle-o',
+    //     text: (
+    //         <div className="menu__text">
+    //             <h1>Is salvation by predestination or free will?</h1>
+    //         </div>
+    //     ),
+    //     url: '/predestination-free-will'
+    // }
 }
 
 class Menu extends Component {

@@ -12,7 +12,7 @@
     &__option {
         align-items: center;
         background: #333;
-        border-bottom: 1px solid #FFF;
+        border-bottom: 1px solid #333;
         color: #FFF;
         cursor: pointer;
         display: flex;
@@ -91,5 +91,15 @@
 
     .fa-dot-circle-o {
         color: #0277BD;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu__subtitle {
+        display: none;
+    }
+
+    h1 {
+        font-size: 25px;
     }
 }
