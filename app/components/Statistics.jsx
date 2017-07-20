@@ -1,11 +1,12 @@
-// admin@car.com
-// admin!
+// patreon@car.com
+// stats!
 
 import $ from 'jquery';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
-import { map, partial } from 'lodash';
+import { get, map, partial } from 'lodash';
 import css from 'classnames';
 import { Card, CardText } from 'material-ui/Card';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
@@ -14,7 +15,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import { EMAIL_REGEX } from 'app/constants/global';
 import { addCourseCount, addScore, addLeaderboard, login, loginWithToken, signup, deleteScore } from 'app/api/users';
-import { logout, setLoginErrorMessage } from 'app/actions/AppActions';
+import { logout, setApp, setLoginErrorMessage } from 'app/actions/AppActions';
 
 class Admin extends Component {
     constructor(props) {
@@ -23,9 +24,9 @@ class Admin extends Component {
         this.state = {
             email: '',
             isSignup: false,
-            leaderboardKey: '',
             password: '',
-            repeatPassword: ''
+            repeatPassword: '',
+            statistics: null
         };
 
         this.onLoginSignupChange = this.onLoginSignupChange.bind(this);
@@ -49,29 +50,18 @@ class Admin extends Component {
     componentDidMount() {
         setTimeout(() => {
             $.ajax({
+                context: this,
                 url: '/api/global/getfbstats',
                 contentType: 'application/json',
                 success(response) {
                     try {
-                        console.log(JSON.parse(response.body).data[0]);
+                        this.setState({ statistics: JSON.parse(response.body).data[0] });
                     } catch(err) {
 
                     }
                 }
             })
         }, 500);
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-        if (this.state.showAdmin !== prevState.showAdmin) {
-            $('body').css(this.state.showSlideOut ? {
-                height: '100vh',
-                overflow: 'hidden'
-            } : {
-                height: 'initial',
-                overflow: 'auto'
-            });
-        }
     }
 
     onLogout() {
@@ -125,12 +115,6 @@ class Admin extends Component {
                 ? onSignup({ email, password })
                 : onLogin({ email, password });
         }
-    }
-
-    renderOverlay() {
-        if (!this.state.showSlideOut) { return null; }
-
-        return <div className="overlay" onClick={() => this.setState({ showSlideOut: false })} />;
     }
 
     renderLogin() {
@@ -208,43 +192,96 @@ class Admin extends Component {
     }
 
     renderContent() {
-        const { appData } = this.props;
+        const stats = this.state.statistics;
+
+        const costPerVisit = get(stats, 'cost_per_outbound_click[0].value', 0);
+        const costPerVisitFinal = costPerVisit ? `$${parseFloat(Math.round(costPerVisit * 100) / 100).toFixed(2)}` : 'Error :(';
+
+        const oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+        const firstDate = new Date(stats.date_start);
+        const secondDate = new Date(stats.date_stop);
+
+        const diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
 
         return (
-            <div className="admin">
-                <span onClick={this.props.onLogout}>Log out</span>
-                {
-                    map(appData, (value, key) => {
-                        if (key.indexOf('/') !== -1) {
-                            return (
-                                <div key={key}>{key}: {value}</div>
-                            );
-                        }
+            <div className="statistics">
+                <div className="statistics__nav">
+                    <span><Link to="/" onClick={partial(this.props.onSetApp, '/')}>Home</Link></span>
+                    {` | `}
+                    <span onClick={this.props.onLogout}>Log out</span>
+                </div>
+                <div className="statistics__heading">
+                    Christian and Reformed<br />
+                    App Statistics
+                </div>
 
-                        return null;
-                    })
-                }
+                <div className="statistics__content-container">
+                    <div className="statistics__content">
+                        <div className="statistics__content-field">
+                            <div>Time range</div>
+                            <h2>Last 30 days</h2>
+                        </div>
+                    </div>
+                    <div className="statistics__content">
+                        <div className="statistics__content-field">
+                            <div>Amount spent</div>
+                            <h2>{`$${stats.spend}`}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div className="statistics__content-container">
+                    <div className="statistics__content">
+                        <a href="https://www.facebook.com/christianandreformed/posts/1399520410131584?ref=notif&notif_t=like&notif_id=1499776119482864" target="_blank"><img src="/fb-ad.png" style={{ width: 400, height: 384 }} /></a>
+                        <div className="statistics__content-stats">
+                            <div className="statistics__content-field">
+                                <div>Ad views</div>
+                                <h2>{stats.impressions}</h2>
+                            </div>
+                            <div className="statistics__content-field">
+                                <div>Cost per ad view</div>
+                                <h2>{`${parseFloat((stats.spend / stats.impressions) * 100).toFixed(2)} cents`}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="statistics__content-container">
+                    <div className="statistics__content">
+                        <a href="http://app.christianandreformed.com/repent-believe" target="_blank"><img src="/repent-believe-image.png" style={{ width: 400, height: 384 }} /></a>
+                        <div className="statistics__content-stats">
+                            <div className="statistics__content-field">
+                                <div>Website visits</div>
+                                <h2>{stats.outbound_clicks[0].value}</h2>
+                            </div>
+                            <div className="statistics__content-field">
+                                <div>Cost per website visit</div>
+                                <h2>{costPerVisitFinal}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
 
     render() {
-        const { appData, user } = this.props;
-        const { showSlideOut } = this.state;
+        const { user } = this.props;
+        const { statistics } = this.state;
 
-        if (user === 'admin@car.com' && appData) {
+        if (user === 'patreon@car.com' && statistics) {
             return this.renderContent();
         }
 
-        if (user === 'admin@car.com') {
-            return <h1>Loading admin...</h1>;
+        if (user === 'patreon@car.com') {
+            return <h1>Loading statistics...</h1>;
         }
 
         if (!user) {
             return (
                 <div>
-                    {this.renderLogin()}
-                    {this.renderLoginErrorMessage()}
+                    <div>
+                        {this.renderLogin()}
+                        {this.renderLoginErrorMessage()}
+                    </div>
                 </div>
             );
         }
@@ -259,13 +296,10 @@ const mapStateToProps = createSelector(
 );
 
 const mapActionsToProps = {
-    onAddCourseCount: addCourseCount,
-    onAddLeaderboard: addLeaderboard,
-    onAddScore: addScore,
-    onDeleteScore: deleteScore,
     onLogin: login,
     onLoginWithToken: loginWithToken,
     onLogout: logout,
+    onSetApp: setApp,
     onSetLoginErrorMessage: setLoginErrorMessage,
     onSignup: signup
 }
