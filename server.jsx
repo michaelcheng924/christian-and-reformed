@@ -72,7 +72,7 @@ app.use((req, res) => {
                 <script>
                   window.fbAsyncInit = function() {
                     FB.init({
-                      appId      : '292276141215622',
+                      appId      : '477351322618211',
                       xfbml      : true,
                       version    : 'v2.9'
                     });

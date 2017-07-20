@@ -110,7 +110,7 @@ class Menu extends Component {
         if (typeof window !== 'undefined') {
             const pathname = window.location.pathname;
 
-            if (pathname === '/admin') { return null; }
+            if (pathname === '/admin' || pathname === '/statistics') { return null; }
         }
 
         const { onSetApp } = this.props;
