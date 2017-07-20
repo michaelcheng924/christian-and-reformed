@@ -17,7 +17,7 @@ import { EMAIL_REGEX } from 'app/constants/global';
 import { addCourseCount, addScore, addLeaderboard, login, loginWithToken, signup, deleteScore } from 'app/api/users';
 import { logout, setApp, setLoginErrorMessage } from 'app/actions/AppActions';
 
-class Admin extends Component {
+class Statistics extends Component {
     constructor(props) {
         super(props);
         
@@ -304,4 +304,4 @@ const mapActionsToProps = {
     onSignup: signup
 }
 
-export default connect(mapStateToProps, mapActionsToProps)(Admin);
+export default connect(mapStateToProps, mapActionsToProps)(Statistics);

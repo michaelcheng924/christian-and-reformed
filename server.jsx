@@ -53,6 +53,8 @@ app.use((req, res) => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Christian and Reformed" />
                 <meta property="og:description" content="Proclaiming Historic, Timeless Truth" />
+                <meta property="og:image" content="/fb-pic.png" />
+
                 <title>Christian and Reformed: Proclaiming Historic, Timeless Truth</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">

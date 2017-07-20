@@ -23,8 +23,12 @@ router.get('/getfbstats', (req, res) => {
     request('https://graph.facebook.com/v2.9/6102465974320/insights?fields=impressions,outbound_clicks,cost_per_outbound_click,spend&access_token=EAAGyJgQEiWMBAG1xdGjP8Ibxa54sNmlHtyAV76c7gjQYlFJQnmBvZC6ohNvdoZC2GYYRYLuy6ZCxFvllhps3zVHJTGaQTwsC5zav6bt40DOljnPW7j67PtCRhvHafnhvZBE4dBXW7QrQsfZCmYU7MTASpUT9HEJyzSakUZAbMHNgZDZD', (error, response, body) => {
         res.send(response);
     });
+});
 
-    // https://graph.facebook.com/v2.9/6102465974320/insights?fields=cost_per_result,reach,results,spend,today_spend&access_token=EAAGyJgQEiWMBAKYRX75F1Q11qGQ14qmUhsHI9SnEUKet89bFyT3UhpXQqJkZA1cBYkQYAqTF9jVzDGcu6vFii8xeiqrE0sb1x55LnVZArsFLJ03ieXHNjwmeYMlbSG6b3TrY3dNxcpZBiNet4E1hlPnVYEwiSbztAevZC7ifBw7Gp58XY5mZCx8WNwZAYG6tptMQ5Wr1xxxDxa7dONUMpl
+router.get('/getchurchdirectory', (req, res) => {
+    request('https://spreadsheets.google.com/feeds/list/1IegN-4V2ceTq4d36wPn5xUSVNouyISKYsEqBGAtIuWs/od6/public/basic?alt=json', (error, response, body) => {
+        res.send(response);
+    });
 });
 
 router.post('/getscripture', (req, res) => {

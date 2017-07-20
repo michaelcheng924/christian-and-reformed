@@ -12,7 +12,7 @@
     &__option {
         align-items: center;
         background: #333;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #FFF;
         color: #FFF;
         cursor: pointer;
         display: flex;
@@ -85,12 +85,8 @@
         color: #B71C1C;
     }
 
-    .fa-book {
-        color: #FFD600;
-    }
-
-    .fa-dot-circle-o {
-        color: #0277BD;
+    .fa-globe {
+        color: #4CAF50;
     }
 }
 
