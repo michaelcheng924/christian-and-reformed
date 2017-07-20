@@ -30,7 +30,7 @@ export const ROUTES = {
         ),
         url: '/repent-believe',
         title: 'You must repent and believe - Christian and Reformed App',
-        description: 'Learn what Jesus meant when He taught, "Repent and believe."'
+        description: 'Learn what Jesus meant when He taught people to repent and believe."'
     },
     // '/reformed-church-finder': {
     //     icon: 'globe',
