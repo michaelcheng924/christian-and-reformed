@@ -8,7 +8,7 @@ import { debounce, map, partial } from 'lodash';
 import { setApp } from 'app/actions/AppActions';
 import { incrementScroll } from 'app/api/users';
 
-const ROUTES = {
+export const ROUTES = {
     '/': {
         icon: 'plus',
         text: (
@@ -17,7 +17,9 @@ const ROUTES = {
                 <div className="menu__subtitle">Proclaiming historic, timeless truth</div>
             </div>
         ),
-        url: '/'
+        url: '/',
+        title: 'Christian and Reformed App',
+        description: 'Proclaiming Historic, Timeless Truth'
     },
     '/repent-believe': {
         icon: 'heartbeat',
@@ -26,7 +28,9 @@ const ROUTES = {
                 <h1>You must repent and believe</h1>
             </div>
         ),
-        url: '/repent-believe'
+        url: '/repent-believe',
+        title: 'You must repent and believe - Christian and Reformed App',
+        description: 'Learn what Jesus meant when He taught, "Repent and believe."'
     },
     // '/reformed-church-finder': {
     //     icon: 'globe',
@@ -35,7 +39,9 @@ const ROUTES = {
     //             <h1>Reformed Church Finder</h1>
     //         </div>
     //     ),
-    //     url: '/reformed-church-finder'
+    //     url: '/reformed-church-finder',
+    //     title: 'Reformed Church Finder - Christian and Reformed App',
+    //     description: 'Find solid reformed churches.'
     // }
 }
 
@@ -71,6 +77,11 @@ class Menu extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.app !== prevProps.app) {
             this.setRoute(this.props.app);
+
+            if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
+                console.log(ROUTES);
+                document.title = ROUTES[this.props.app].title;
+            }
         }
     }
 
