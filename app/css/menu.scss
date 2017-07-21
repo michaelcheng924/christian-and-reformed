@@ -7,6 +7,7 @@
         top: 70px;
         transition: all .3s;
         width: 100%;
+        z-index: 2;
     }
 
     &__option {
@@ -54,10 +55,6 @@
         margin-left: 10px;
     }
 
-    &__caret {
-        font-size: 40px;
-    }
-
     &__icon {
         font-size: 40px;
         position: relative;
@@ -87,6 +84,31 @@
 
     .fa-globe {
         color: #4CAF50;
+    }
+
+    &--church-finder {
+        &.menu {
+            .menu__subtitle {
+                display: none;
+            }
+
+            .menu__options {
+                top: 32px;
+            }
+
+            .menu__options, .menu__option {
+                font-size: 11px;
+                height: 32px;
+            }
+
+            .menu__icon {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+        }
     }
 }
 

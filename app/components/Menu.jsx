@@ -32,17 +32,17 @@ export const ROUTES = {
         title: 'You must repent and believe - Christian and Reformed App',
         description: 'Learn what Jesus meant when He taught people to repent and believe."'
     },
-    // '/reformed-church-finder': {
-    //     icon: 'globe',
-    //     text: (
-    //         <div className="menu__text">
-    //             <h1>Reformed Church Finder</h1>
-    //         </div>
-    //     ),
-    //     url: '/reformed-church-finder',
-    //     title: 'Reformed Church Finder - Christian and Reformed App',
-    //     description: 'Find solid reformed churches.'
-    // }
+    '/reformed-church-finder': {
+        icon: 'globe',
+        text: (
+            <div className="menu__text">
+                <h1>Reformed Church Finder</h1>
+            </div>
+        ),
+        url: '/reformed-church-finder',
+        title: 'Reformed Church Finder - Christian and Reformed App',
+        description: 'Find solid reformed churches.'
+    }
 }
 
 class Menu extends Component {
@@ -79,7 +79,6 @@ class Menu extends Component {
             this.setRoute(this.props.app);
 
             if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
-                console.log(ROUTES);
                 document.title = ROUTES[this.props.app].title;
             }
         }
@@ -100,8 +99,10 @@ class Menu extends Component {
     }
 
     render() {
+        let pathname;
+
         if (typeof window !== 'undefined') {
-            const pathname = window.location.pathname;
+            pathname = window.location.pathname;
 
             if (pathname === '/admin' || pathname === '/statistics') { return null; }
         }
@@ -110,14 +111,23 @@ class Menu extends Component {
 
         const currentRoute = ROUTES[this.props.app];
 
+        const rootClassNames = css('menu', {
+            'menu--church-finder': pathname === '/reformed-church-finder'
+        });
+
         const classNames = css('menu__options', {
             'menu__options--expanded': this.state.expanded
         });
 
-        const height = this.state.expanded ? 210 : 0;
+        const numberOfItems = Object.keys(ROUTES).length - 1;
+        let height = this.state.expanded ? numberOfItems * 70 : 0;
+
+        if (pathname === '/reformed-church-finder' && this.state.expanded) {
+            height = numberOfItems * 32;
+        }
 
         return (
-            <div className="menu">
+            <div className={rootClassNames}>
                 <Link to={currentRoute.url} onClick={this.expandCollapse}>
                     <div className="menu__option menu__option--selected">
                         <div className="menu__icon">

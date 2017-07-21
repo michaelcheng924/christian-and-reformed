@@ -1,0 +1,195 @@
+.church-finder {
+    position: relative;
+
+    &__map-container {
+        visibility: hidden;
+
+        &--visible {
+            visibility: visible;
+        }
+    }
+
+    &__loading {
+        font-weight: 500;
+        position: relative;
+        text-align: center;
+        top: 275px;
+    }
+
+    &__message {
+        background: #C8E6C9;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        font-weight: 300;
+        left: 0;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+
+        p:first-child {
+            margin-top: 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .fa-times {
+            cursor: pointer;
+            font-size: 18px;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    }
+
+    &__map {
+        height: calc(100vh - 32px);
+    }
+
+    &__filters-toggle {
+        cursor: pointer;
+    }
+
+    &__filters {
+        background: rgba(255, 255, 255, .7);
+        font-weight: 300;
+        height: 29px;
+        overflow: hidden;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all .5s;
+        width: 161px;
+
+        .fa-chevron-down {
+            font-size: 11px;
+            position: absolute;
+            right: 5px;
+            top: 9px;
+            transform: rotate(0deg);
+            transition: all .5s;
+        }
+
+        &--show {
+            height: 155px;
+
+            .fa-chevron-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__filter {
+        > div > div {
+            margin-right: 3px !important;
+        }
+
+        > div > label {
+            width: calc(100% - 24px) !important;
+        }
+
+        &--baptist {
+            > div > label {
+                color: #FF0000 !important;
+                font-weight: 400;
+            }
+        }
+
+        &--presbyterian {
+            > div > label {
+                color: #007FFF !important;
+                font-weight: 400;
+            }
+        }
+
+        &--espanol {
+            > div > label {
+                color: #158036 !important;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+#target {
+    width: 345px;
+}
+
+.info-window {
+    max-width: 350px;
+
+    h2 {
+        font-weight: 500;
+        margin: 0 0 10px;
+    }
+
+    div {
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: rgb(0, 0, 238);
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.gm-style-iw > div > div {
+    overflow: initial !important;
+}
