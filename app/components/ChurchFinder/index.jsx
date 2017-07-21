@@ -11,10 +11,10 @@ class ChurchFinder extends Component {
         this.state = {
             allowBoundsSave: true,
             baptistOnly: false,
-            bounds: null,
             filteredRows: null,
             infoWindow: {},
             map: null,
+            markers: [],
             messageDismissed: false,
             presbyterianOnly: false,
             rows: null,
@@ -60,13 +60,7 @@ class ChurchFinder extends Component {
             (this.state.presbyterianOnly && !prevState.presbyterianOnly) ||
             (this.state.soloEspanol && !prevState.soloEspanol) ||
             (!this.state.filteredRows && prevState.filteredRows)) {
-            this.initMap();
-
-            this.setState({ allowBoundsSave: false });
-
-            setTimeout(() => {
-                this.setState({ allowBoundsSave: true });
-            }, 1000);
+            this.createMarkers();
         }
     }
 
@@ -162,7 +156,12 @@ class ChurchFinder extends Component {
     }
 
     createMarkers() {
-        const infoWindow = this.state.infoWindow;
+        this.state.markers.forEach(marker => {
+            marker.setMap(null);
+        });
+
+        const markers = [];
+        const infoWindow = {};
 
         const rows = this.state.filteredRows || this.state.rows;
 
@@ -171,7 +170,7 @@ class ChurchFinder extends Component {
 
             const icon = this.getIcon(filter);
 
-            var marker = new google.maps.Marker({
+            const marker = new google.maps.Marker({
                 icon,
                 map: this.state.map,
                 position: {
@@ -180,6 +179,8 @@ class ChurchFinder extends Component {
                     lng: Number(long)
                 }
             });
+
+            markers.push(marker);
 
             const nameAddressString = this.getNameAddressString(name, address);
             const websiteString = this.getWebsiteString(website);
@@ -204,7 +205,7 @@ class ChurchFinder extends Component {
             });
         });
 
-        this.setState({ infoWindow });
+        this.setState({ infoWindow, markers });
     }
 
     createSearchBoxAndControls() {
@@ -216,57 +217,35 @@ class ChurchFinder extends Component {
         // Bias the SearchBox results towards current map's viewport.
         this.state.map.addListener('bounds_changed', function() {
             searchBox.setBounds(this.state.map.getBounds());
-
-            if (this.state.allowBoundsSave) {
-                this.setState({
-                    bounds: this.state.map.getBounds(),
-                    zoom: this.state.map.getZoom()
-                });
-            }
         }.bind(this));
 
-        var markers = [];
         // Listen for the event fired when the user selects a prediction and retrieve
         // more details for that place.
         searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
+            var places = searchBox.getPlaces();
 
-          if (places.length == 0) {
+            if (places.length == 0) {
             return;
-          }
-
-          // Clear out the old markers.
-          markers.forEach(function(marker) {
-            marker.setMap(null);
-          });
-          markers = [];
-
-          // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
-          places.forEach(function(place) {
-            if (!place.geometry) {
-              console.log("Returned place contains no geometry");
-              return;
             }
 
-            if (place.geometry.viewport) {
-              // Only geocodes have viewport.
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
-          });
-          this.state.map.fitBounds(bounds);
+            // For each place, get the icon, name and location.
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function(place) {
+                if (!place.geometry) {
+                  console.log("Returned place contains no geometry");
+                  return;
+                }
 
-          this.setState({ bounds });
-        }.bind(this));
-
-        if (this.state.bounds) {
-            defer(() => {
-                this.state.map.fitBounds(this.state.bounds);
-                this.state.map.setZoom(this.state.zoom);
+                if (place.geometry.viewport) {
+                  // Only geocodes have viewport.
+                  bounds.union(place.geometry.viewport);
+                } else {
+                  bounds.extend(place.geometry.location);
+                }
             });
-        }
+
+            this.state.map.fitBounds(bounds);
+        }.bind(this));
     }
 
     initMap() {
