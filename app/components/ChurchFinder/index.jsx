@@ -10,13 +10,11 @@ class ChurchFinder extends Component {
         
         this.state = {
             allowBoundsSave: true,
-            baptistOnly: false,
             filteredRows: null,
             infoWindow: {},
             map: null,
             markers: [],
             messageDismissed: false,
-            presbyterianOnly: false,
             rows: null,
             showFilters: true,
             soloEspanol: false
@@ -52,13 +50,11 @@ class ChurchFinder extends Component {
             this.initMap();
         }
 
-        if (!this.state.baptistOnly && !this.state.presbyterianOnly && !this.state.soloEspanol && this.state.filteredRows) {
+        if (!this.state.soloEspanol && this.state.filteredRows) {
             this.setState({ filteredRows: null });
         }
 
-        if ((this.state.baptistOnly && !prevState.baptistOnly) ||
-            (this.state.presbyterianOnly && !prevState.presbyterianOnly) ||
-            (this.state.soloEspanol && !prevState.soloEspanol) ||
+        if ((this.state.soloEspanol && !prevState.soloEspanol) ||
             (!this.state.filteredRows && prevState.filteredRows)) {
             this.createMarkers();
         }
@@ -80,14 +76,6 @@ class ChurchFinder extends Component {
 
     onFilter(filter) {
         let filteredRows;
-
-        if (filter === 'baptistOnly' && !this.state.baptistOnly) {
-            filteredRows = this.state.rows.filter(row => row.filter.indexOf('baptist') !== -1);
-        }
-
-        if (filter === 'presbyterianOnly' && !this.state.presbyterianOnly) {
-            filteredRows = this.state.rows.filter(row => row.filter.indexOf('presbyterian') !== -1);
-        }
 
         if (filter === 'soloEspanol' && !this.state.soloEspanol) {
             filteredRows = this.state.rows.filter(row => row.filter.indexOf('espanol') !== -1);
@@ -150,10 +138,6 @@ class ChurchFinder extends Component {
     }
 
     getIcon(filter) {
-        if (filter.indexOf('presbyterian') !== -1) {
-            return '/marker-presbyterian.png';
-        }
-
         if (filter.indexOf('espanol') !== -1) {
             return '/marker-espanol.png';
         }
@@ -292,16 +276,16 @@ class ChurchFinder extends Component {
 
         return (
             <div className="church-finder__message">
-                <p><strong>Note:</strong> These churches have not been individually vetted and may vary greatly in what they specifically believe and practice. The similarity between them is that they all profess to believe and teach the Reformed view of God's complete sovereignty in salvation.</p>
-                <p>Visit the church website and contact the church directly to learn more about its distinctives.</p>
-                <p>Contribute to this project (add a church, edit an existing church) by emailing Michael at <a href="mailto:cheng.c.michael@gmail.com">cheng.c.michael@gmail.com</a>!</p>
+                <p><strong>Notes:</strong> These churches have not been individually vetted and may vary greatly in what they specifically believe and practice. The similarity between them is that they all profess to believe and teach the Reformed view of God's complete sovereignty in salvation. Visit the church website and contact the church directly to learn more about its distinctives.</p>
+                <p>Contribute to this project (add a church, edit an existing church) by emailing Michael at <a href="mailto:cheng.c.michael@gmail.com">cheng.c.michael@gmail.com</a>.</p>
+                <p><a href="https://www.opc.org/locator.html" target="_blank">OPC (Orthodox Presbyterian Church)</a> and <a href="http://www.pcaac.org/church-search/" target="_blank">PCA (Presbyterian Church of America)</a> are the Reformed denominations of the Presbyterian church. The links here will take you to their directories/church finders.</p>
                 <i className="fa fa-times" onClick={this.dismissMessage} />
             </div>
         );
     }
 
     renderFilters() {
-        const { baptistOnly, filteredRows, presbyterianOnly, rows, showFilters, soloEspanol } = this.state;
+        const { baptistOnly, filteredRows, rows, showFilters, soloEspanol } = this.state;
 
         const filtersClassNames = css('church-finder__filters', {
             'church-finder__filters--show': showFilters
@@ -313,31 +297,22 @@ class ChurchFinder extends Component {
             <div className={filtersClassNames}>
                 <i className="fa fa-chevron-down" />
                 <div className="church-finder__filters-toggle" onClick={() => this.setState({ showFilters: !showFilters })}>
-                    {showFilters ? 'Hide' : 'Show'} filters
+                    {showFilters ? 'Hide' : 'Show'}
                 </div>
                 <hr />
                 <div><strong>{currentRows ? currentRows.length : 0}</strong> churches</div>
                 <br />
-                <Checkbox
-                    className="church-finder__filter church-finder__filter--baptist"
-                    label="Baptist only"
-                    onCheck={partial(this.onFilter, 'baptistOnly')}
-                    checked={baptistOnly}
-                    disabled={presbyterianOnly || soloEspanol}
-                />
-                <Checkbox
-                    className="church-finder__filter church-finder__filter--presbyterian"
-                    label="Presbyterian only"
-                    onCheck={partial(this.onFilter, 'presbyterianOnly')}
-                    checked={presbyterianOnly}
-                    disabled={baptistOnly || soloEspanol}
-                />
+                <div className="church-finder__key-row">
+                    <img src="/marker-baptist.png" /> Baptist
+                </div>
+                <div className="church-finder__key-row">
+                    <img src="/marker-espanol.png" /> Espanol
+                </div>
                 <Checkbox
                     className="church-finder__filter church-finder__filter--espanol"
                     label="Solo Espanol"
                     onCheck={partial(this.onFilter, 'soloEspanol')}
                     checked={soloEspanol}
-                    disabled={baptistOnly || presbyterianOnly}
                 />
             </div>
         );
