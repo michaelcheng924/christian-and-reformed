@@ -52,7 +52,7 @@ class ChurchFinder extends Component {
             this.initMap();
         }
 
-        if (!this.state.baptistOnly && !this.state.presbyterian && !this.state.soloEspanol && this.state.filteredRows) {
+        if (!this.state.baptistOnly && !this.state.presbyterianOnly && !this.state.soloEspanol && this.state.filteredRows) {
             this.setState({ filteredRows: null });
         }
 
@@ -102,6 +102,18 @@ class ChurchFinder extends Component {
     parseRowContent(row) {
         const content = row.content.$t;
 
+        if (content.indexOf('address') === -1 || content.indexOf('website') === -1 || content.indexOf('lat') === -1 || content.indexOf('long') === -1 || content.indexOf('lastupdated') === -1 || content.indexOf('filter') === -1) {
+            return {
+                name: '',
+                address: '',
+                website: '',
+                lat: 1,
+                long: 1,
+                lastUpdated: '',
+                filter: ''
+            };
+        }
+
         return {
             name: row.title.$t,
             address: content.split('address: ')[1].split(', region:')[0],
@@ -122,6 +134,11 @@ class ChurchFinder extends Component {
 
     getWebsiteString(website) {
         if (!website) { return ''; }
+
+        if (website.indexOf(',') !== -1) {
+            const websites = website.split(',');
+            return `<div><strong>Website: </strong><a href="${websites[0]}" target="_blank">${websites[0]}</a>, <a href="${websites[1]}" target="_blank">${websites[1]}</a></div>`;
+        }
 
         return `<div><strong>Website: </strong><a href="${website}" target="_blank">${website}</a></div>`;
     }
@@ -167,6 +184,13 @@ class ChurchFinder extends Component {
 
         rows.forEach((row, index) => {
             const { name, address, website, lat, long, lastUpdated, filter } = row;
+
+            // Check for duplicate entries
+            // rows.forEach((row1, index1) => {
+            //     if (website !== 'n/a' && index !== index1 && website === row1.website) {
+            //         console.log(index, website, index1, row1.website);
+            //     }
+            // });
 
             const icon = this.getIcon(filter);
 
@@ -270,6 +294,7 @@ class ChurchFinder extends Component {
             <div className="church-finder__message">
                 <p><strong>Note:</strong> These churches have not been individually vetted and may vary greatly in what they specifically believe and practice. The similarity between them is that they all profess to believe and teach the Reformed view of God's complete sovereignty in salvation.</p>
                 <p>Visit the church website and contact the church directly to learn more about its distinctives.</p>
+                <p>Contribute to this project (add a church, edit an existing church) by emailing Michael at <a href="mailto:cheng.c.michael@gmail.com">cheng.c.michael@gmail.com</a>!</p>
                 <i className="fa fa-times" onClick={this.dismissMessage} />
             </div>
         );
@@ -331,7 +356,7 @@ class ChurchFinder extends Component {
 
                 {this.renderMessage()}
 
-                <div>
+                <div className={classNames}>
                     <input id="pac-input" className="controls" type="text" placeholder="Search Box" ref={input => this.search = input} />
                     <div className="church-finder__map" ref={div => this.map = div} onClick={this.dismissMessage} />
                     {this.renderFilters()}

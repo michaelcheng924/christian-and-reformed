@@ -13,7 +13,7 @@
         font-weight: 500;
         position: relative;
         text-align: center;
-        top: 275px;
+        top: 200px;
     }
 
     &__message {
@@ -41,6 +41,10 @@
             position: absolute;
             right: 5px;
             top: 5px;
+        }
+
+        a {
+            font-weight: 400;
         }
     }
 
@@ -89,6 +93,10 @@
 
         > div > label {
             width: calc(100% - 24px) !important;
+        }
+
+        > input[disabled] + div > label {
+            color: rgba(0, 0, 0, 0.3) !important;
         }
 
         &--baptist {
@@ -182,6 +190,7 @@
     a {
         color: rgb(0, 0, 238);
         cursor: pointer;
+        font-weight: 400;
         text-decoration: none;
 
         &:hover {
