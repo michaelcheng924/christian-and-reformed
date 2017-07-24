@@ -112,7 +112,8 @@ class Menu extends Component {
         const currentRoute = ROUTES[this.props.app];
 
         const rootClassNames = css('menu', {
-            'menu--church-finder': pathname === '/reformed-church-finder'
+            'menu--church-finder': pathname === '/reformed-church-finder',
+            'menu--expanded': this.state.expanded
         });
 
         const classNames = css('menu__options', {
