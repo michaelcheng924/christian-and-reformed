@@ -116,7 +116,7 @@ class ChurchFinder extends Component {
 
         return {
             name: row.title.$t,
-            address: content.split('address: ')[1].split(', region:')[0],
+            address: content.split('address: ')[1].split(', website:')[0],
             website: content.split('website: ')[1].split(', lat:')[0],
             lat: content.split('lat: ')[1].split(', long:')[0],
             long: content.split('long: ')[1].split(', lastupdated:')[0],

@@ -1,4 +1,4 @@
-// patreon@car.com
+// stats@car.com
 // stats!
 
 import $ from 'jquery';
@@ -267,11 +267,11 @@ class Statistics extends Component {
         const { user } = this.props;
         const { statistics } = this.state;
 
-        if (user === 'patreon@car.com' && statistics) {
+        if (user === 'stats@car.com' && statistics) {
             return this.renderContent();
         }
 
-        if (user === 'patreon@car.com') {
+        if (user === 'stats@car.com') {
             return <h1>Loading statistics...</h1>;
         }
 
