@@ -7,12 +7,13 @@
         top: 70px;
         transition: all .3s;
         width: 100%;
+        z-index: 2;
     }
 
     &__option {
         align-items: center;
         background: #333;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #FFF;
         color: #FFF;
         cursor: pointer;
         display: flex;
@@ -54,10 +55,6 @@
         margin-left: 10px;
     }
 
-    &__caret {
-        font-size: 40px;
-    }
-
     &__icon {
         font-size: 40px;
         position: relative;
@@ -85,12 +82,33 @@
         color: #B71C1C;
     }
 
-    .fa-book {
-        color: #FFD600;
+    .fa-globe {
+        color: #4CAF50;
     }
 
-    .fa-dot-circle-o {
-        color: #0277BD;
+    &--church-finder {
+        &.menu {
+            .menu__subtitle {
+                display: none;
+            }
+
+            .menu__options {
+                top: 32px;
+            }
+
+            .menu__options, .menu__option {
+                font-size: 11px;
+                height: 32px;
+            }
+
+            .menu__icon {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+        }
     }
 }
 

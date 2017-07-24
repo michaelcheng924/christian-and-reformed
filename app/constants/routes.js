@@ -168,11 +168,3 @@ export const CHURCH_FINGER = [
         windowTitle: 'Reformed Church Finder - List View'
     }
 ];
-
-export const ROUTES = {
-    ...keyBy(APP_LIST, 'url'),
-    ...keyBy(COURSES, 'url'),
-    ...keyBy(CONFESSIONS_CREEDS, 'url'),
-    ...keyBy(GAMES, 'url'),
-    ...keyBy(ROUTES, 'url')
-};

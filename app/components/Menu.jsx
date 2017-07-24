@@ -8,7 +8,7 @@ import { debounce, map, partial } from 'lodash';
 import { setApp } from 'app/actions/AppActions';
 import { incrementScroll } from 'app/api/users';
 
-const ROUTES = {
+export const ROUTES = {
     '/': {
         icon: 'plus',
         text: (
@@ -17,7 +17,9 @@ const ROUTES = {
                 <div className="menu__subtitle">Proclaiming historic, timeless truth</div>
             </div>
         ),
-        url: '/'
+        url: '/',
+        title: 'Christian and Reformed App',
+        description: 'Proclaiming Historic, Timeless Truth'
     },
     '/repent-believe': {
         icon: 'heartbeat',
@@ -26,35 +28,21 @@ const ROUTES = {
                 <h1>You must repent and believe</h1>
             </div>
         ),
-        url: '/repent-believe'
+        url: '/repent-believe',
+        title: 'You must repent and believe - Christian and Reformed App',
+        description: 'Learn what Jesus meant when He taught people to repent and believe."'
     },
-    // '/salvation': {
-    //     icon: 'heartbeat',
-    //     text: (
-    //         <div className="menu__text">
-    //             <h1>3 truths about salvation</h1>
-    //         </div>
-    //     ),
-    //     url: '/salvation'
-    // },
-    // '/bible': {
-    //     icon: 'book',
-    //     text: (
-    //         <div className="menu__text">
-    //             <h1>Proof/Evidence for the Bible</h1>
-    //         </div>
-    //     ),
-    //     url: '/bible'
-    // },
-    // '/predestination-free-will': {
-    //     icon: 'dot-circle-o',
-    //     text: (
-    //         <div className="menu__text">
-    //             <h1>Is salvation by predestination or free will?</h1>
-    //         </div>
-    //     ),
-    //     url: '/predestination-free-will'
-    // }
+    '/reformed-church-finder': {
+        icon: 'globe',
+        text: (
+            <div className="menu__text">
+                <h1>Reformed Church Finder</h1>
+            </div>
+        ),
+        url: '/reformed-church-finder',
+        title: 'Reformed Church Finder - Christian and Reformed App',
+        description: 'Find solid reformed churches.'
+    }
 }
 
 class Menu extends Component {
@@ -89,6 +77,10 @@ class Menu extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.app !== prevProps.app) {
             this.setRoute(this.props.app);
+
+            if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
+                document.title = ROUTES[this.props.app].title;
+            }
         }
     }
 
@@ -107,8 +99,10 @@ class Menu extends Component {
     }
 
     render() {
+        let pathname;
+
         if (typeof window !== 'undefined') {
-            const pathname = window.location.pathname;
+            pathname = window.location.pathname;
 
             if (pathname === '/admin' || pathname === '/statistics') { return null; }
         }
@@ -117,14 +111,23 @@ class Menu extends Component {
 
         const currentRoute = ROUTES[this.props.app];
 
+        const rootClassNames = css('menu', {
+            'menu--church-finder': pathname === '/reformed-church-finder'
+        });
+
         const classNames = css('menu__options', {
             'menu__options--expanded': this.state.expanded
         });
 
-        const height = this.state.expanded ? 210 : 0;
+        const numberOfItems = Object.keys(ROUTES).length - 1;
+        let height = this.state.expanded ? numberOfItems * 70 : 0;
+
+        if (pathname === '/reformed-church-finder' && this.state.expanded) {
+            height = numberOfItems * 32;
+        }
 
         return (
-            <div className="menu">
+            <div className={rootClassNames}>
                 <Link to={currentRoute.url} onClick={this.expandCollapse}>
                     <div className="menu__option menu__option--selected">
                         <div className="menu__icon">

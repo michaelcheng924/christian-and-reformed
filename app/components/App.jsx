@@ -6,10 +6,8 @@ import Admin from 'app/components/Admin';
 import Statistics from 'app/components/Statistics';
 import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
-import Salvation from 'app/components/Salvation';
-import Bible from 'app/components/Bible';
-import Predestination from 'app/components/Predestination';
 import RepentBelieve from 'app/components/RepentBelieve';
+import ChurchFinder from 'app/components/ChurchFinder';
 
 class App extends Component {
     render() {
@@ -22,6 +20,7 @@ class App extends Component {
                         <Menu />
                         <Route exact path="/" component={Home}/>
                         <Route path="/repent-believe" component={RepentBelieve} />
+                        <Route path="/reformed-church-finder" component={ChurchFinder} />
                         <Route path="/admin" component={Admin} />
                         <Route path="/statistics" component={Statistics} />
                     </div>

@@ -207,6 +207,7 @@ class RepentBelieve extends Component {
                     <div className="repent-believe__next-steps">
                         <ol>
                             <li>Find a good church that faithfully preaches the Bible and start learning from and fellowshipping with other believers there. To start, try one of these church finders: 
+                            <br /><a href="/reformed-church-finder" target="_blank">Reformed Church Finder</a>
                             <br /><a href="http://www.farese.com/map" target="_blank">Reformed Baptist Church Directory</a>
                             <br /><a href="http://churches.thegospelcoalition.org/" target="_blank">Gospel Coalition Church Directory</a>
                             <br /><a href="https://www.9marks.org/church-search/" target="_blank">9Marks Church Search</a></li>

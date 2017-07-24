@@ -12,7 +12,7 @@ import createLocation from 'history/lib/createLocation';
 import { makeStore } from 'app/helpers';
 import serverRoutes from 'app/server/routes';
 import App from 'app/components/App';
-import { DEFAULT_TITLE, ROUTES } from 'app/constants/routes';
+import { ROUTES } from 'app/components/Menu';
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reformedchristianapp');
 
@@ -39,9 +39,8 @@ app.use((req, res) => {
 
     const initialState = store.getState();
 
-    const title = ROUTES[req.path] ? ROUTES[req.path].windowTitle : DEFAULT_TITLE;
-    const headingTitle = ROUTES[req.path] ? ROUTES[req.path].title || ROUTES[req.path].name : 'Christian and Reformed App';
-    const description = ROUTES[req.path] ? ROUTES[req.path].description : 'Technology Serving Historic Truth';
+    const title = ROUTES[req.path] ? ROUTES[req.path].title : 'Christian and Reformed App';
+    const description = ROUTES[req.path] ? ROUTES[req.path].description : 'Proclaiming Historic, Timeless Truth';
 
     const HTML = `
         <!DOCTYPE html>
@@ -51,8 +50,10 @@ app.use((req, res) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Christian and Reformed" />
-                <meta property="og:description" content="Proclaiming Historic, Timeless Truth" />
+                <meta property="og:title" content="${title}" />
+                <meta property="og:description" content="${description}" />
+                <meta property="og:image" content="http://app.christianandreformed.com/fb-pic.png" />
+
                 <title>Christian and Reformed: Proclaiming Historic, Timeless Truth</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
