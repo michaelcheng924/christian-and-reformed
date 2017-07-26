@@ -1,13 +1,8 @@
-import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE } from 'app/actions/AppActionTypes';
+import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE, SET_SUB_APP } from 'app/actions/AppActionTypes';
 import {
-    addCourseCount,
-    addLeaderboard,
-    addScore,
-    deleteScore,
     deleteUser,
     getAllUsers,
     getAppData,
-    incrementCourseCount,
     incrementScroll,
     login,
     loginWithToken,
@@ -20,6 +15,7 @@ const defaultState = {
     app: '/',
     appData: {},
     loginErrorMessage: null,
+    subApp: '',
     user: null,
     userData: {}
 };
@@ -42,6 +38,11 @@ export default function usersReducer(state = defaultState, { type, payload }) {
             return {
                 ...state,
                 loginErrorMessage: payload.loginErrorMessage
+            };
+        case SET_SUB_APP:
+            return {
+                ...state,
+                subApp: payload.subApp
             };
         case login.SUCCESS:
         case signup.SUCCESS: {
@@ -84,12 +85,7 @@ export default function usersReducer(state = defaultState, { type, payload }) {
                 ...state,
                 allUsers: payload.users
             };
-        case addCourseCount.SUCCESS:
-        case addLeaderboard.SUCCESS:
-        case addScore.SUCCESS:
-        case deleteScore.SUCCESS:
         case getAppData.SUCCESS:
-        case incrementCourseCount.SUCCESS:
         case incrementScroll.SUCCESS:
             return {
                 ...state,

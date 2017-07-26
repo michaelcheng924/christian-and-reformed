@@ -84,11 +84,15 @@
         color: #B71C1C;
     }
 
+    .fa-puzzle-piece {
+        color: #FF9800;
+    }
+
     .fa-globe {
         color: #4CAF50;
     }
 
-    &--church-finder {
+    &--small {
         &.menu {
             .menu__subtitle {
                 display: none;
