@@ -203,6 +203,7 @@ class AttributesOfGod extends Component {
 
         this.onAnswer = this.onAnswer.bind(this);
         this.onNext = this.onNext.bind(this);
+        this.reset = this.reset.bind(this);
         this.setAnswer = this.setAnswer.bind(this);
         this.setMode = this.setMode.bind(this);
     }
@@ -221,13 +222,25 @@ class AttributesOfGod extends Component {
         });
     }
 
+    reset() {
+        this.setState({
+            finalAnswer: false,
+            isWrong: false,
+            number: 0,
+            showAll: false,
+            showDetails: false,
+            shuffledAttributes: shuffle(ATTRIBUTES),
+            shuffledChoices: shuffle(ATTRIBUTES)
+        });
+    }
+
     onAnswer(answer) {
         const { number, shuffledAttributes } = this.state;
 
         $(this.container).scrollTop(0);
 
         if (shuffledAttributes[number].attribute === answer) {
-            this.setState({ finalAnswer: answer, isWrong: false, number: number + 1, showDetails: true });
+            this.setState({ finalAnswer: answer, isWrong: false, showDetails: true });
         } else {
             this.setState({ finalAnswer: answer, isWrong: true });
         }
@@ -245,6 +258,7 @@ class AttributesOfGod extends Component {
     onNext() {
         this.setState({
             finalAnswer: null,
+            number: this.state.number + 1,
             showAll: this.state.number + 1 === ATTRIBUTES.length,
             showDetails: false
         });
@@ -258,7 +272,7 @@ class AttributesOfGod extends Component {
                 <div className="attributes-of-god__congratulations">
                     <i className="fa fa-check" />Hooray, you finished!
                 </div>
-                <RaisedButton className="attributes-of-god__play-again" label="Play again" primary={true} />
+                <div><RaisedButton className="attributes-of-god__play-again" label="Play again" primary={true} onClick={this.reset} /></div>
             </div>
         );
     }
