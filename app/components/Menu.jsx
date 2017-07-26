@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import css from 'classnames';
 import { debounce, map, partial } from 'lodash';
 
-import { setApp } from 'app/actions/AppActions';
+import { GAMES } from 'app/components/InteractiveTheology';
+import { setApp, setSubApp } from 'app/actions/AppActions';
 import { incrementScroll } from 'app/api/users';
 
 export const ROUTES = {
@@ -31,6 +32,17 @@ export const ROUTES = {
         url: '/repent-believe',
         title: 'You must repent and believe - Christian and Reformed App',
         description: 'Learn what Jesus meant when He taught people to repent and believe."'
+    },
+    '/interactive-theology': {
+        icon: 'puzzle-piece',
+        text: (
+            <div className="menu__text">
+                <h1>Interactive Theology</h1>
+            </div>
+        ),
+        url: '/interactive-theology',
+        title: 'Interactive Theology - Christian and Reformed App',
+        description: 'Have fun learning the Bible.'
     },
     '/reformed-church-finder': {
         icon: 'globe',
@@ -62,13 +74,21 @@ class Menu extends Component {
         if (typeof window !== 'undefined') {
             const pathname = window.location.pathname;
 
+            const expanded = pathname === '/';
+
             if (ROUTES[pathname]) {
                 this.props.onSetApp(pathname);
-
-                this.setState({
-                    expanded: pathname === '/',
-                });
             }
+
+            if (GAMES[pathname]) {
+                document.title = GAMES[pathname].title;
+                this.props.onSetApp('/interactive-theology');
+                this.props.onSetSubApp(pathname);
+            }
+
+            this.setState({
+                expanded,
+            });
 
             window.addEventListener('scroll', this.onScroll);
         }
@@ -80,6 +100,12 @@ class Menu extends Component {
 
             if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
                 document.title = ROUTES[this.props.app].title;
+
+                const pathname = window.location.href;
+
+                if (pathname.indexOf('/interactive-theology/') === -1) {
+                    this.props.onSetSubApp('');
+                }
             }
         }
     }
@@ -99,7 +125,7 @@ class Menu extends Component {
     }
 
     render() {
-        let pathname;
+        let pathname = '';
 
         if (typeof window !== 'undefined') {
             pathname = window.location.pathname;
@@ -107,12 +133,12 @@ class Menu extends Component {
             if (pathname === '/admin' || pathname === '/statistics') { return null; }
         }
 
-        const { onSetApp } = this.props;
+        const { app, onSetApp, subApp } = this.props;
 
         const currentRoute = ROUTES[this.props.app];
 
         const rootClassNames = css('menu', {
-            'menu--church-finder': pathname === '/reformed-church-finder',
+            'menu--small': pathname === '/reformed-church-finder' || subApp.indexOf('/interactive-theology/') !== -1,
             'menu--expanded': this.state.expanded
         });
 
@@ -129,15 +155,31 @@ class Menu extends Component {
 
         return (
             <div className={rootClassNames}>
-                <Link to={currentRoute.url} onClick={this.expandCollapse}>
-                    <div className="menu__option menu__option--selected">
-                        <div className="menu__icon">
-                            <i className={`fa fa-${currentRoute.icon}`} />
-                        </div>
-                        {currentRoute.text}
-                        <i className="fa fa-chevron-down" />
-                    </div>
-                </Link>
+                {
+                    app === '/interactive-theology' && subApp
+                        ? (
+                            <div onClick={this.expandCollapse}>
+                                <div className="menu__option menu__option--selected">
+                                    <div className="menu__icon">
+                                        <i className={`fa fa-${currentRoute.icon}`} />
+                                    </div>
+                                    {currentRoute.text}
+                                    <i className="fa fa-chevron-down" />
+                                </div>
+                            </div>
+                        )
+                        : (
+                            <Link to={currentRoute.url} onClick={this.expandCollapse}>
+                                <div className="menu__option menu__option--selected">
+                                    <div className="menu__icon">
+                                        <i className={`fa fa-${currentRoute.icon}`} />
+                                    </div>
+                                    {currentRoute.text}
+                                    <i className="fa fa-chevron-down" />
+                                </div>
+                            </Link>
+                        )
+                }
                 <div className={classNames} style={{ height }}>
                     {
                         map(ROUTES, (value, key) => {
@@ -170,7 +212,8 @@ const mapStateToProps = createSelector(
 
 const mapActionsToProps = {
     onScroll: incrementScroll,
-    onSetApp: setApp
+    onSetApp: setApp,
+    onSetSubApp: setSubApp
 };
 
 export default connect(mapStateToProps, mapActionsToProps)(Menu);

@@ -1,4 +1,4 @@
-import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE } from 'app/actions/AppActionTypes';
+import { LOGOUT, SET_APP, SET_LOGIN_ERROR_MESSAGE, SET_SUB_APP } from 'app/actions/AppActionTypes';
 
 export function logout() {
     return {
@@ -20,6 +20,15 @@ export function setLoginErrorMessage(loginErrorMessage) {
         type: SET_LOGIN_ERROR_MESSAGE,
         payload: {
             loginErrorMessage
+        }
+    };
+}
+
+export function setSubApp(subApp) {
+    return {
+        type: SET_SUB_APP,
+        payload: {
+            subApp
         }
     };
 }
