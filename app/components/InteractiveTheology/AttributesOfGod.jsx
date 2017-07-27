@@ -129,7 +129,7 @@ const ATTRIBUTES = [
         ]
     },
     {
-        attribute: 'Unchangeable/Immutable',
+        attribute: 'Immutable',
         definition: "God does not and cannot change.",
         meaning: 'We can have confidence that God will fulfill all of His promises.',
         scriptures: [
@@ -174,7 +174,7 @@ const ATTRIBUTES = [
         ]
     },
     {
-        attribute: 'Personal/Imminent',
+        attribute: 'Personal',
         definition: "God knows each person individually.",
         meaning: 'If we have repented and believed in Jesus, we can have comfort that God knows us by name and cares for us.',
         scriptures: [
