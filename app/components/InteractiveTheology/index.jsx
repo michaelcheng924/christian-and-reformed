@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
 import { map, partial } from 'lodash';
 
 import { setSubApp } from 'app/actions/AppActions';
@@ -19,10 +20,6 @@ export const GAMES = {
 class InteractiveTheology extends Component {
     constructor(props) {
         super(props);
-        
-        this.state = {
-            game: null
-        };
 
         this.setGame = this.setGame.bind(this);
     }
@@ -32,7 +29,7 @@ class InteractiveTheology extends Component {
             const pathname = window.location.pathname;
 
             if (GAMES[pathname]) {
-                this.setState({ game: pathname });
+                this.props.onSetSubApp(pathname);
 
                 document.title = GAMES[pathname].title;
             }
@@ -40,7 +37,6 @@ class InteractiveTheology extends Component {
     }
 
     setGame(game) {
-        this.setState({ game });
         this.props.onSetSubApp(game);
 
         if (typeof window !== 'undefined') {
@@ -51,7 +47,7 @@ class InteractiveTheology extends Component {
     }
 
     renderGames() {
-        if (this.state.game) { return null; }
+        if (this.props.subApp) { return null; }
 
         return (
             <div className="interactive-theology__games">
@@ -71,12 +67,12 @@ class InteractiveTheology extends Component {
     }
 
     renderGame() {
-        if (!this.state.game) { return null; }
+        if (!this.props.subApp) { return null; }
 
         let Game;
 
-        if (GAMES[this.state.game]) {
-            Game = GAMES[this.state.game].component;
+        if (GAMES[this.props.subApp]) {
+            Game = GAMES[this.props.subApp].component;
         }
 
         return <Game />;
@@ -92,8 +88,13 @@ class InteractiveTheology extends Component {
     }
 }
 
+const mapStateToProps = createSelector(
+    state => state.app,
+    app => ({ ...app })
+);
+
 const mapActionsToProps = {
     onSetSubApp: setSubApp
 };
 
-export default connect(null, mapActionsToProps)(InteractiveTheology);
+export default connect(mapStateToProps, mapActionsToProps)(InteractiveTheology);

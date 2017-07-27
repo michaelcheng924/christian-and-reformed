@@ -32,7 +32,8 @@ export default function usersReducer(state = defaultState, { type, payload }) {
         case SET_APP:
             return {
                 ...state,
-                app: payload.app
+                app: payload.app,
+                subApp: '',
             };
         case SET_LOGIN_ERROR_MESSAGE:
             return {

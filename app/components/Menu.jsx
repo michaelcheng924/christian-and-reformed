@@ -95,7 +95,7 @@ class Menu extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        if (this.props.app !== prevProps.app) {
+        if (this.props.app !== prevProps.app || this.props.subApp !== prevProps.subApp) {
             this.setRoute(this.props.app);
 
             if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
@@ -163,7 +163,9 @@ class Menu extends Component {
                                     <div className="menu__icon">
                                         <i className={`fa fa-${currentRoute.icon}`} />
                                     </div>
-                                    {currentRoute.text}
+                                    <div className="menu__text">
+                                        <h1>{GAMES[subApp].name}</h1>
+                                    </div>
                                     <i className="fa fa-chevron-down" />
                                 </div>
                             </div>
@@ -183,7 +185,7 @@ class Menu extends Component {
                 <div className={classNames} style={{ height }}>
                     {
                         map(ROUTES, (value, key) => {
-                            if (key === this.props.app) {
+                            if (key === this.props.app && !this.props.subApp) {
                                 return null;
                             }
 
