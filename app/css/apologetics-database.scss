@@ -1,0 +1,116 @@
+.apologetics-database {
+    &__find-section {
+        background: #BBDEFB;
+        padding: 20px;
+        text-align: center;
+
+        h3 {
+            font-weight: 500;
+        }
+
+        .apologetics-database__result-tag {
+            cursor: pointer;
+        }
+    }
+
+    &__search-input {
+        > div:first-child {
+            left: 102px;
+        }
+
+        input {
+            text-align: center !important;
+        }
+    }
+
+    &__results-count {
+        color: #EF6C00;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 20px 0 0;
+    }
+
+    &__filters-header {
+        font-weight: 500;
+        margin-top: 8px;
+    }
+
+    &__filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__filter-checkbox {
+        font-weight: 300;
+        width: initial !important;
+
+        label {
+            width: initial !important;
+        }
+    }
+
+    &__results {
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    &__result {
+        font-weight: 300;
+        margin: 20px auto;
+
+        h2 {
+            color: #0288D1;
+            font-weight: 700;
+
+            &:hover {
+                color: #01579B;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__result-tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__result-tag {
+        border: 1px solid #333;
+        border-radius: 3px;
+        color: #FFF;
+        font-size: 13px;
+        margin-right: 6px;
+        opacity: .5;
+        padding: 2px 4px;
+
+        &--active {
+            opacity: 1;
+        }
+
+        &--abortion {
+            background: #F44336;
+        }
+
+        &--bible-internal {
+            background: #0277BD;
+        }
+
+        &--bible-external {
+            background: #00838F;
+        }
+
+        &--creation {
+            background: #388E3C;
+        }
+
+        &--homosexuality {
+            background: #9C27B0;
+        }
+
+        &--is-god-good {
+            background: #424242;
+        }
+    }
+}

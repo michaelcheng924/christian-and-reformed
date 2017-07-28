@@ -30,8 +30,19 @@ export const ROUTES = {
             </div>
         ),
         url: '/repent-believe',
-        title: 'You must repent and believe - Christian and Reformed App',
-        description: 'Learn what Jesus meant when He taught people to repent and believe."'
+        title: 'You must repent and believe',
+        description: 'Learn what Jesus meant when He taught people to repent and believe.'
+    },
+    '/apologetics-database': {
+        icon: 'question-circle',
+        text: (
+            <div className="menu__text">
+                <h1>Apologetics Database</h1>
+            </div>
+        ),
+        url: '/apologetics-database',
+        title: 'Apologetics Database',
+        description: 'Answers to questions.'
     },
     '/interactive-theology': {
         icon: 'puzzle-piece',
@@ -41,7 +52,7 @@ export const ROUTES = {
             </div>
         ),
         url: '/interactive-theology',
-        title: 'Interactive Theology - Christian and Reformed App',
+        title: 'Interactive Theology',
         description: 'Have fun learning the Bible.'
     },
     '/reformed-church-finder': {
@@ -52,7 +63,7 @@ export const ROUTES = {
             </div>
         ),
         url: '/reformed-church-finder',
-        title: 'Reformed Church Finder - Christian and Reformed App',
+        title: 'Reformed Church Finder',
         description: 'Find solid reformed churches.'
     }
 }
@@ -103,7 +114,7 @@ class Menu extends Component {
 
                 const pathname = window.location.href;
 
-                if (pathname.indexOf('/interactive-theology/') === -1) {
+                if (pathname.indexOf('/interactive-theology/') === -1 && pathname.indexOf('/apologetics-database/') === -1) {
                     this.props.onSetSubApp('');
                 }
             }

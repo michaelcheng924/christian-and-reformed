@@ -9,9 +9,9 @@ import AttributesOfGod from 'app/components/InteractiveTheology/AttributesOfGod'
 
 export const GAMES = {
     '/interactive-theology/attributes-of-god': {
-        title: 'Attributes of God - Interactive Theology - Christian and Reformed App',
+        title: 'Attributes of God - Interactive Theology',
         name: 'Attributes of God',
-        description: 'Collect all the attributes of God cards.',
+        description: 'Learn the attributes of God',
         image: '/attributes-of-god-stars.png',
         component: AttributesOfGod
     }
