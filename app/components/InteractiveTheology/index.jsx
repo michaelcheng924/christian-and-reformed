@@ -31,7 +31,7 @@ class InteractiveTheology extends Component {
             if (GAMES[pathname]) {
                 this.props.onSetSubApp(pathname);
 
-                document.title = GAMES[pathname].title;
+                document.title = `${GAMES[pathname].title} - Christian and Reformed App`;
             }
         }
     }
@@ -41,7 +41,7 @@ class InteractiveTheology extends Component {
 
         if (typeof window !== 'undefined') {
             if (GAMES[game]) {
-                document.title = GAMES[game].title;
+                document.title = `${GAMES[game].title} - Christian and Reformed App`;
             }
         }
     }

@@ -13,7 +13,7 @@ import { makeStore } from 'app/helpers';
 import serverRoutes from 'app/server/routes';
 import App from 'app/components/App';
 import { ROUTES } from 'app/components/Menu';
-import { APOLOGETICS_DATABASE_MAP } from 'app/components/ApologeticsDatabase/constants';
+import { ANSWERS_DATABASE_MAP } from 'app/components/AnswersDatabase/constants';
 
 import { GAMES } from 'app/components/InteractiveTheology';
 
@@ -42,7 +42,7 @@ app.use((req, res) => {
 
     const initialState = store.getState();
 
-    const place = ROUTES[req.path] || APOLOGETICS_DATABASE_MAP[req.path] || GAMES[req.path];
+    const place = ROUTES[req.path] || ANSWERS_DATABASE_MAP[req.path] || GAMES[req.path];
 
     const title = place ? `${place.title} - Christian and Reformed App` : 'Christian and Reformed App';
     const description = place ? place.description || '' : 'Proclaiming Historic, Timeless Truth';

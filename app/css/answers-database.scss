@@ -1,4 +1,4 @@
-.apologetics-database {
+.answers-database {
     &__find-section {
         background: #BBDEFB;
         padding: 20px;
@@ -8,7 +8,7 @@
             font-weight: 500;
         }
 
-        .apologetics-database__result-tag {
+        .answers-database__result-tag {
             cursor: pointer;
         }
     }
@@ -26,7 +26,7 @@
     &__results-count {
         color: #EF6C00;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         margin: 20px 0 0;
     }
 
@@ -42,7 +42,7 @@
     }
 
     &__filter-checkbox {
-        font-weight: 300;
+        font-weight: 400;
         width: initial !important;
 
         label {
@@ -50,15 +50,79 @@
         }
     }
 
-    &__results {
+    &__content {
         margin: 20px auto;
         max-width: 600px;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    &__selection {
+        background: #FFF;
+        left: -600px;
         padding: 0 20px;
+        position: absolute;
+        top: 0;
+        transition: all .3s ease-in;
+        width: 600px;
+        z-index: 1;
+
+        &--show {
+            left: 0;
+            position: relative;
+        }
+
+        h2 {
+            font-weight: 700;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__selection-argument {
+        border-bottom: 2px solid #616161;
+        border-top: 2px solid #616161;
+        color: #616161;
+        font-style: italic;
+        font-weight: 400;
+        margin: 20px 0;
+        padding: 10px 0 15px;
+
+        h3 {
+            font-weight: 500;
+        }
+
+        ol {
+            margin-bottom: 0;
+        }
+    }
+
+    &__selection-answer {
+        font-weight: 400;
+
+        h3 {
+            font-weight: 500;
+        }
+    }
+
+    &__back-button {
+        margin-bottom: 15px;
+    }
+
+    &__results {
+        &--hide {
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
     }
 
     &__result {
-        font-weight: 300;
+        font-weight: 400;
         margin: 20px auto;
+        padding: 0 20px;
 
         h2 {
             color: #0288D1;
@@ -74,6 +138,7 @@
     &__result-tags {
         display: flex;
         flex-wrap: wrap;
+        margin-top: -6px;
     }
 
     &__result-tag {
@@ -82,6 +147,7 @@
         color: #FFF;
         font-size: 13px;
         margin-right: 6px;
+        margin-top: 6px;
         opacity: .5;
         padding: 2px 4px;
 
@@ -99,6 +165,10 @@
 
         &--bible-external {
             background: #00838F;
+        }
+
+        &--calvinism {
+            background: #0097A7;
         }
 
         &--creation {

@@ -33,15 +33,15 @@ export const ROUTES = {
         title: 'You must repent and believe',
         description: 'Learn what Jesus meant when He taught people to repent and believe.'
     },
-    '/apologetics-database': {
+    '/answers-database': {
         icon: 'question-circle',
         text: (
             <div className="menu__text">
-                <h1>Apologetics Database</h1>
+                <h1>Answers Database</h1>
             </div>
         ),
-        url: '/apologetics-database',
-        title: 'Apologetics Database',
+        url: '/answers-database',
+        title: 'Answers Database',
         description: 'Answers to questions.'
     },
     '/interactive-theology': {
@@ -110,11 +110,13 @@ class Menu extends Component {
             this.setRoute(this.props.app);
 
             if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
-                document.title = ROUTES[this.props.app].title;
+                if (!this.props.subApp) {
+                    document.title = ROUTES[this.props.app].title;
+                }
 
                 const pathname = window.location.href;
 
-                if (pathname.indexOf('/interactive-theology/') === -1 && pathname.indexOf('/apologetics-database/') === -1) {
+                if (pathname.indexOf('/interactive-theology/') === -1 && pathname.indexOf('/answers-database/') === -1) {
                     this.props.onSetSubApp('');
                 }
             }
@@ -131,7 +133,7 @@ class Menu extends Component {
 
     setRoute(route) {
         this.setState({
-            expanded: route === '/'
+            expanded: route === '/' && !this.props.subApp
         });
     }
 
@@ -149,7 +151,7 @@ class Menu extends Component {
         const currentRoute = ROUTES[this.props.app];
 
         const rootClassNames = css('menu', {
-            'menu--small': pathname === '/reformed-church-finder' || subApp.indexOf('/interactive-theology/') !== -1,
+            'menu--small': pathname === '/reformed-church-finder' || pathname.indexOf('/answers-database') !== -1 || subApp.indexOf('/interactive-theology/') !== -1,
             'menu--expanded': this.state.expanded
         });
 
