@@ -1,8 +1,9 @@
+import $ from 'jquery';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
-import { every, find, partial, some } from 'lodash';
+import { defer, every, find, partial, some } from 'lodash';
 import css from 'classnames';
 import TextField from 'material-ui/TextField';
 import Checkbox from 'material-ui/Checkbox';
@@ -117,6 +118,11 @@ class AnswersDatabase extends Component {
                 this.props.onSetSubApp(url);
 
                 document.title = `${ANSWERS_DATABASE_MAP[url].title} - Christian and Reformed App`;
+
+                const height = this.findSection.offsetHeight;
+                defer(() => {
+                    $('body').scrollTop(height + 20);
+                });
             }
         }
     }
@@ -142,7 +148,7 @@ class AnswersDatabase extends Component {
 
     renderFindSection() {
         return (
-            <div className="answers-database__find-section">
+            <div className="answers-database__find-section" ref={findSection => this.findSection = findSection}>
                 <h3>Search and Filter Database</h3>
                 <TextField
                     className="answers-database__search-input"

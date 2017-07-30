@@ -73,19 +73,17 @@ class Menu extends Component {
         super(props);
         
         this.state = {
-            expanded: true
+            expanded: false
         };
 
         this.expandCollapse = this.expandCollapse.bind(this);
         this.onScroll = debounce(this.onScroll.bind(this), 1000);
-        this.setRoute = this.setRoute.bind(this);
+        this.onSetApp = this.onSetApp.bind(this);
     }
 
     componentDidMount() {
         if (typeof window !== 'undefined') {
             const pathname = window.location.pathname;
-
-            const expanded = pathname === '/';
 
             if (ROUTES[pathname]) {
                 this.props.onSetApp(pathname);
@@ -97,17 +95,13 @@ class Menu extends Component {
                 this.props.onSetSubApp(pathname);
             }
 
-            this.setState({
-                expanded,
-            });
-
             window.addEventListener('scroll', this.onScroll);
         }
     }
 
     componentDidUpdate(prevProps) {
         if (this.props.app !== prevProps.app || this.props.subApp !== prevProps.subApp) {
-            this.setRoute(this.props.app);
+            this.setState({ expanded: false });
 
             if (typeof window !== 'undefined' && ROUTES[this.props.app]) {
                 if (!this.props.subApp) {
@@ -123,18 +117,17 @@ class Menu extends Component {
         }
     }
 
+    onSetApp(url) {
+        this.props.onSetApp(url);
+        this.setState({ expanded: false });
+    }
+
     onScroll() {
         this.props.onScroll({ route: this.props.app });
     }
 
     expandCollapse() {
         this.setState({ expanded: !this.state.expanded });
-    }
-
-    setRoute(route) {
-        this.setState({
-            expanded: route === '/' && !this.props.subApp
-        });
     }
 
     render() {
@@ -203,7 +196,7 @@ class Menu extends Component {
                             }
 
                             return (
-                                <Link key={key} to={value.url} onClick={partial(onSetApp, value.url)}>
+                                <Link key={key} to={value.url} onClick={partial(this.onSetApp, value.url)}>
                                     <div className="menu__option">
                                         <div className="menu__icon">
                                             <i className={`fa fa-${value.icon}`} />
