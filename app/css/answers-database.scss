@@ -1,0 +1,303 @@
+.answers-database {
+    &__find-section {
+        background: #BBDEFB;
+        padding: 20px;
+        text-align: center;
+
+        h3 {
+            font-weight: 500;
+        }
+
+        .answers-database__result-tag {
+            cursor: pointer;
+        }
+    }
+
+    &__search-input {
+        > div:first-child {
+            left: 102px;
+        }
+
+        input {
+            text-align: center !important;
+        }
+    }
+
+    &__results-count {
+        color: #EF6C00;
+        font-size: 14px;
+        margin: 20px 0 0;
+    }
+
+    &__filters-header {
+        font-weight: 500;
+        margin-top: 8px;
+    }
+
+    &__filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__filter-checkbox {
+        width: initial !important;
+
+        label {
+            width: initial !important;
+        }
+    }
+
+    &__content {
+        margin: 20px auto;
+        max-width: 620px;
+        overflow-x: hidden;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    &__selection {
+        background: #FFF;
+        left: -600px;
+        max-width: 620px;
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        transition: all .3s ease-in;
+        z-index: 1;
+
+        &--show {
+            left: 0;
+            position: relative;
+        }
+
+        h2 {
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        h3 + p, h4 + p {
+            margin-top: 5px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        blockquote {
+            font-style: italic;
+        }
+
+        thead > tr {
+            height: initial !important;
+
+            & > th {
+                color: #333 !important;
+                font-weight: bold !important;
+                height: initial !important;
+                padding: 2px 4px !important;
+
+                &:first-child {
+                    display: none !important;
+                }
+            }
+        }
+
+        tbody > tr {
+            height: initial !important;
+
+            & > td {
+                height: initial !important;
+                padding: 2px 4px !important;
+            }
+        }
+
+        .answers-database__transmission-table {
+            margin-left: -10px;
+            overflow: auto;
+            max-width: 600px;
+
+            > div {
+                overflow: initial !important;
+                width: 585px;
+            }
+
+            table {
+                width: 580px !important;
+            }
+
+            th:nth-child(2), td:nth-child(1) {
+                width: 95px;
+            }
+
+            th:nth-child(3), td:nth-child(2) {
+                width: 102px;
+            }
+
+            th:nth-child(4), td:nth-child(3) {
+                width: 103px;
+            }
+
+            th:nth-child(5), td:nth-child(4) {
+                width: 133px;
+            }
+
+            th:nth-child(6), td:nth-child(5) {
+                width: 84px;
+            }
+
+            th:nth-child(7), td:nth-child(6) {
+                width: 70px;
+            }
+        }
+
+        .answers-database__new-testament-table {
+            color: #C62828 !important;
+            font-weight: bold;
+        }
+    }
+
+    &__selection-argument {
+        border-bottom: 2px solid #616161;
+        border-top: 2px solid #616161;
+        color: #616161;
+        font-style: italic;
+        margin: 20px 0;
+        padding: 10px 0 15px;
+
+        h3 {
+            font-weight: 500;
+        }
+
+        ol {
+            margin-bottom: 0;
+        }
+    }
+
+    &__selection-answer {
+        h3 {
+            font-weight: 500;
+        }
+    }
+
+    &__back-button {
+        margin-bottom: 15px;
+    }
+
+    &__sort-section {
+        align-items: center;
+        display: flex;
+        margin-top: 12px;
+    }
+
+    &__sorts {
+        margin-left: 20px;
+
+        > div {
+            display: inline-block !important;
+            margin-right: 20px;
+            width: initial !important;
+
+            &:last-child {
+                width: 268px !important;
+            }
+
+            & > div > div {
+                margin-right: 6px !important;
+            }
+        }
+    }
+
+    &__results {
+        display: block;
+        transition: all .5;
+
+        &--hide {
+            display: none;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    &__result {
+        margin: 20px auto;
+        padding: 0 20px;
+
+        h2 {
+            color: #0288D1;
+            font-weight: 700;
+
+            &:hover {
+                color: #01579B;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__result-tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -6px;
+    }
+
+    &__result-tag {
+        border: 1px solid #333;
+        border-radius: 3px;
+        color: #FFF;
+        font-size: 13px;
+        margin-right: 6px;
+        margin-top: 6px;
+        opacity: .5;
+        padding: 2px 4px;
+
+        &--active {
+            opacity: 1;
+        }
+
+        &--abortion {
+            background: #F44336;
+        }
+
+        &--bible-external {
+            background: #00838F;
+        }
+
+        &--calvinism {
+            background: #0097A7;
+        }
+
+        &--complementarianism {
+            background: #E91E63;
+        }        
+
+        &--creation {
+            background: #388E3C;
+        }
+
+        &--contradictions {
+            background: #0277BD;
+        }
+
+        &--homosexuality {
+            background: #9C27B0;
+        }
+
+        &--is-god-good {
+            background: #424242;
+        }
+
+        &--islam {
+            background: #795548;
+        }
+    }
+}
