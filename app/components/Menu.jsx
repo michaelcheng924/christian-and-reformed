@@ -43,18 +43,8 @@ export const ROUTES = {
         ),
         url: '/answers-database',
         title: 'Answers Database',
-        description: 'Answers to questions.'
-    },
-    '/interactive-theology': {
-        icon: 'puzzle-piece',
-        text: (
-            <div className="menu__text">
-                <h1>Interactive Theology</h1>
-            </div>
-        ),
-        url: '/interactive-theology',
-        title: 'Interactive Theology',
-        description: 'Have fun learning the Bible.'
+        description: 'Answers to all kinds of questions related to Christianity.',
+        image: 'http://app.christianandreformed.com/answers-database-image.png'
     },
     '/reformed-church-finder': {
         icon: 'globe',
@@ -66,6 +56,17 @@ export const ROUTES = {
         url: '/reformed-church-finder',
         title: 'Reformed Church Finder',
         description: 'Find solid reformed churches.'
+    },
+    '/interactive-theology': {
+        icon: 'puzzle-piece',
+        text: (
+            <div className="menu__text">
+                <h1>Interactive Theology</h1>
+            </div>
+        ),
+        url: '/interactive-theology',
+        title: 'Interactive Theology',
+        description: 'Have fun learning the Bible.'
     }
 }
 
