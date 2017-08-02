@@ -46,6 +46,7 @@ app.use((req, res) => {
 
     const title = place ? `${place.title} - Christian and Reformed App` : 'Christian and Reformed App';
     const description = place ? place.description || '' : 'Proclaiming Historic, Timeless Truth';
+    const image = place.image || 'http://app.christianandreformed.com/fb-pic.png';
 
     const HTML = `
         <!DOCTYPE html>
@@ -57,7 +58,7 @@ app.use((req, res) => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="${title}" />
                 <meta property="og:description" content="${description}" />
-                <meta property="og:image" content="http://app.christianandreformed.com/fb-pic.png" />
+                <meta property="og:image" content="${image}" />
 
                 <title>Christian and Reformed: Proclaiming Historic, Timeless Truth</title>
 

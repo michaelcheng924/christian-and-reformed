@@ -31,7 +31,8 @@ export const ROUTES = {
         ),
         url: '/repent-believe',
         title: 'You must repent and believe',
-        description: 'Learn what Jesus meant when He taught people to repent and believe.'
+        description: 'Learn what Jesus meant when He taught people to repent and believe.',
+        image: 'http://app.christianandreformed.com/repent-believe-image.png'
     },
     '/answers-database': {
         icon: 'question-circle',
