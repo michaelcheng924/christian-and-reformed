@@ -46,7 +46,7 @@ app.use((req, res) => {
 
     const title = place ? `${place.title} - Christian and Reformed App` : 'Christian and Reformed App';
     const description = place ? place.description || '' : 'Proclaiming Historic, Timeless Truth';
-    const image = place.image || 'http://app.christianandreformed.com/fb-pic.png';
+    const image = place ? place.image || 'http://app.christianandreformed.com/fb-pic.png' : 'http://app.christianandreformed.com/fb-pic.png';
 
     const HTML = `
         <!DOCTYPE html>
