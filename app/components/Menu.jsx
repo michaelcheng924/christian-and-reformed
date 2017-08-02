@@ -55,7 +55,8 @@ export const ROUTES = {
         ),
         url: '/reformed-church-finder',
         title: 'Reformed Church Finder',
-        description: 'Find solid reformed churches.'
+        description: 'Find solid reformed churches all over the world.',
+        image: 'http://app.christianandreformed.com/church-finder-image.png'
     },
     '/interactive-theology': {
         icon: 'puzzle-piece',
