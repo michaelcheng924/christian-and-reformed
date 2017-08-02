@@ -14,7 +14,6 @@ import serverRoutes from 'app/server/routes';
 import App from 'app/components/App';
 import { ROUTES } from 'app/components/Menu';
 import { ANSWERS_DATABASE_MAP } from 'app/components/AnswersDatabase/constants';
-
 import { GAMES } from 'app/components/InteractiveTheology';
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reformedchristianapp');

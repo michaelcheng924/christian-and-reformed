@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+import SiteMap from 'app/components/SiteMap';
 import Admin from 'app/components/Admin';
 import Statistics from 'app/components/Statistics';
 import Home from 'app/components/Home';
@@ -27,6 +28,7 @@ class App extends Component {
                         <Route path="/reformed-church-finder" component={ChurchFinder} />
                         <Route path="/admin" component={Admin} />
                         <Route path="/statistics" component={Statistics} />
+                        <Route path="/sitemap" component={SiteMap} />
                     </div>
                 </MuiThemeProvider>
             </Component>

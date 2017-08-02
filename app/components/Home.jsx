@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     componentDidMount() {
@@ -29,6 +30,8 @@ class Home extends Component {
                     <div className="home__part-of-speech">noun</div>
                     <div>a person who holds to the doctrines of the Reformation, which are generally summarized in the five Solas (Sola Scriptura, Sola Fide, Sola Gratia, Solus Christus, and Soli Deo Gloria), and more specifically summarized in the 1689 London Baptist Confession of Faith and the Westminster Confession of Faith.</div>
                 </div>
+
+                <Link to="/sitemap" className="home__sitemap">Sitemap</Link>
             </div>
 		);
 	}

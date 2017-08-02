@@ -13,7 +13,8 @@ export const GAMES = {
         name: 'Attributes of God',
         description: 'Learn the attributes of God',
         image: '/attributes-of-god-stars.png',
-        component: AttributesOfGod
+        component: AttributesOfGod,
+        url: '/interactive-theology/attributes-of-god'
     }
 };
 

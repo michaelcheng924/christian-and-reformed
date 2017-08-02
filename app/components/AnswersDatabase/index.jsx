@@ -31,10 +31,10 @@ const TAGS = [
         name: 'Complementarianism',
         code: 'complementarianism'
     },
-    // {
-    //     name: '"Contradictions"',
-    //     code: 'contradictions'
-    // },
+    {
+        name: '"Contradictions"',
+        code: 'contradictions'
+    },
     // {
     //     name: 'Creation',
     //     code: 'creation'
@@ -43,10 +43,10 @@ const TAGS = [
     //     name: 'Homosexuality',
     //     code: 'homosexuality'
     // },
-    // {
-    //     name: 'Is God good?',
-    //     code: 'is-god-good'
-    // },
+    {
+        name: 'Is God good?',
+        code: 'is-god-good'
+    },
     // {
     //     name: 'Islam',
     //     code: 'islam'

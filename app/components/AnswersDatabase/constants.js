@@ -25,7 +25,7 @@ const ANSWERS_DATABASE = [
 
     complementarianismNoMaleFemale,
 
-    // contradictionsSlavery,
+    contradictionsSlavery,
 
     // creationDays,
 
