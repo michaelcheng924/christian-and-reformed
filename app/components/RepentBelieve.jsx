@@ -65,11 +65,16 @@ class RepentBelieve extends Component {
     }
 
     componentDidMount() {
-        setInterval(this.sinnedInterval, 4000);
+        this.sinnedIntervalVar = setInterval(this.sinnedInterval, 4000);
 
         setTimeout(() => {
-            setInterval(this.punishmentInterval, 4000);
+            this.punishmentIntervalVar = setInterval(this.punishmentInterval, 4000);
         }, 2000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.sinnedIntervalVar);
+        clearInterval(this.punishmentIntervalVar);
     }
 
     updateIndex(list, stateProperty) {

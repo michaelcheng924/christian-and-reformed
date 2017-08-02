@@ -143,9 +143,15 @@ class Menu extends Component {
 
         const currentRoute = ROUTES[this.props.app];
 
+        const isSmall = pathname === '/reformed-church-finder' || pathname.indexOf('/answers-database') !== -1 || subApp.indexOf('/interactive-theology/') !== -1;
+
         const rootClassNames = css('menu', {
-            'menu--small': pathname === '/reformed-church-finder' || pathname.indexOf('/answers-database') !== -1 || subApp.indexOf('/interactive-theology/') !== -1,
+            'menu--small': isSmall,
             'menu--expanded': this.state.expanded
+        });
+
+        const overlayClassNames = css('menu__overlay', {
+            'menu__overlay--show': this.state.expanded
         });
 
         const classNames = css('menu__options', {
@@ -153,7 +159,7 @@ class Menu extends Component {
         });
 
         const numberOfItems = Object.keys(ROUTES).length - 1;
-        let height = this.state.expanded ? numberOfItems * 70 : 0;
+        let height = this.state.expanded ? isSmall ? numberOfItems * 32 : numberOfItems * 70 : 0;
 
         if (pathname === '/reformed-church-finder' && this.state.expanded) {
             height = numberOfItems * 32;
@@ -161,6 +167,7 @@ class Menu extends Component {
 
         return (
             <div className={rootClassNames}>
+                <div className={overlayClassNames} onClick={() => this.setState({ expanded: false })} style={{ top: isSmall ? 30 : 70 }} />
                 {
                     app === '/interactive-theology' && subApp
                         ? (
@@ -191,7 +198,7 @@ class Menu extends Component {
                 <div className={classNames} style={{ height }}>
                     {
                         map(ROUTES, (value, key) => {
-                            if (key === this.props.app && !this.props.subApp) {
+                            if (key === this.props.app && (!this.props.subApp || this.props.subApp.indexOf('/answers-database/') !== -1)) {
                                 return null;
                             }
 

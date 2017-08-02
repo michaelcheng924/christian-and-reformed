@@ -1,8 +1,10 @@
 import React from 'react';
 
-const bibleInternalSlavery = {
+const contradictionsSlavery = {
+    added: '8/1/2017',
+    updated: '',
     title: 'Does the Bible support slavery?',
-    tags: ['bible-internal', 'is-god-good'],
+    tags: ['contradictions', 'is-god-good'],
     url: '/answers-database/does-the-bible-support-slavery',
     argument: (
         <ol>
@@ -26,4 +28,4 @@ const bibleInternalSlavery = {
     )
 };
 
-export default bibleInternalSlavery;
+export default contradictionsSlavery;

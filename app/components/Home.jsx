@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 
 class Home extends Component {
+    componentDidMount() {
+        if (typeof window !== 'undefined') {
+            document.body.style.background = '#333';
+        }
+    }
+
+    componentWillUnmount() {
+        if (typeof window !== 'undefined') {
+            document.body.style.background = '#FFF';
+        }
+    }
+
 	render() {
 		return (
 			<div className="home">

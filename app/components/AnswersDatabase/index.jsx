@@ -9,6 +9,7 @@ import TextField from 'material-ui/TextField';
 import Checkbox from 'material-ui/Checkbox';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Forward from 'material-ui/svg-icons/content/forward';
+import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 
 import { setApp, setSubApp } from 'app/actions/AppActions';
 import { ANSWERS_DATABASE, ANSWERS_DATABASE_MAP } from 'app/components/AnswersDatabase/constants';
@@ -19,10 +20,6 @@ const TAGS = [
         code: 'abortion'
     },
     {
-        name: 'Bible (internal)',
-        code: 'bible-internal'
-    },
-    {
         name: 'Bible (external)',
         code: 'bible-external'
     },
@@ -31,37 +28,57 @@ const TAGS = [
         code: 'calvinism'
     },
     {
-        name: 'Creation',
-        code: 'creation'
+        name: 'Complementarianism',
+        code: 'complementarianism'
     },
-    {
-        name: 'Homosexuality',
-        code: 'homosexuality'
-    },
-    {
-        name: 'Is God good?',
-        code: 'is-god-good'
-    }
+    // {
+    //     name: '"Contradictions"',
+    //     code: 'contradictions'
+    // },
+    // {
+    //     name: 'Creation',
+    //     code: 'creation'
+    // },
+    // {
+    //     name: 'Homosexuality',
+    //     code: 'homosexuality'
+    // },
+    // {
+    //     name: 'Is God good?',
+    //     code: 'is-god-good'
+    // },
+    // {
+    //     name: 'Islam',
+    //     code: 'islam'
+    // }
 ]
 
 class AnswersDatabase extends Component {
     constructor(props) {
         super(props);
 
+        this.sortedAnswers = ANSWERS_DATABASE.sort((a, b) => {
+            return a.title > b.title;
+        });
+
         this.state = {
-            results: ANSWERS_DATABASE,
+            results: this.sortedAnswers,
             filterChanged: false,
-            search: ''
+            search: '',
+            sort: 'alphabetical'
         };
 
         this.onBackClick = this.onBackClick.bind(this);
         this.onFilter = this.onFilter.bind(this);
         this.onSelect = this.onSelect.bind(this);
+        this.onSort = this.onSort.bind(this);
         this.setSearch = this.setSearch.bind(this);
     }
 
     componentDidMount() {
         if (typeof window !== 'undefined') {
+            this.props.onSetApp('/answers-database');
+
             const pathname = window.location.pathname;
 
             if (ANSWERS_DATABASE_MAP[pathname]) {
@@ -73,14 +90,14 @@ class AnswersDatabase extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const { filterChanged, search } = this.state;
+        const { filterChanged, search, sort } = this.state;
 
         if (filterChanged !== prevState.filterChanged || search !== prevState.search) {
             if (!search && !this.hasFilter()) {
-                this.setState({ results: ANSWERS_DATABASE });
+                this.setState({ results: this.sortedAnswers });
             } else {
                 this.setState({
-                    results: ANSWERS_DATABASE.filter(result => {
+                    results: this.sortedAnswers.filter(result => {
                         const isSearchValid = this.isSearchValid(result);
 
                         return this.hasFilter() ? isSearchValid && this.shouldShowTags(result) : isSearchValid;
@@ -88,6 +105,25 @@ class AnswersDatabase extends Component {
                 });
             }
         }
+
+        if (sort !== prevState.sort) {
+            this.sortedAnswers = ANSWERS_DATABASE.sort((a, b) => {
+                if (sort === 'alphabetical') {
+                    return a.title > b.title;
+                }
+
+                a = new Date(a.updated || a.added);
+                b = new Date(b.updated || b.added);
+
+                return a > b ? -1 : a < b ? 1 : 0;
+            });
+
+            this.setState({ results: this.sortedAnswers });
+        }
+    }
+
+    onSort(sort) {
+        this.setState({ sort });
     }
 
     onBackClick() {
@@ -96,6 +132,8 @@ class AnswersDatabase extends Component {
         if (this.props.app === '/') {
             this.props.onSetApp('/answers-database');
         }
+
+        $('body').scrollTop(0);
     }
 
     isSearchValid(result) {
@@ -200,6 +238,16 @@ class AnswersDatabase extends Component {
         );
     }
 
+    renderDate(added, updated) {
+        if (this.state.sort !== 'date') { return null; }
+
+        if (updated) {
+            return <div><strong>Updated: </strong>{updated}</div>;
+        }
+
+        return <div><strong>Added: </strong>{added}</div>;
+    }
+
     renderContent() {
         const selection = ANSWERS_DATABASE_MAP[this.props.subApp] || {};
 
@@ -229,6 +277,21 @@ class AnswersDatabase extends Component {
                     </div>
                 </div>
                 <div className={resultsClassNames}>
+                    <div className="answers-database__sort-section">
+                        <strong>Sort:</strong>
+                        <RadioButtonGroup className="answers-database__sorts" name="sort" defaultSelected="alphabetical">
+                            <RadioButton
+                                value="alphabetical"
+                                label="Alphabetical"
+                                onClick={partial(this.onSort, 'alphabetical')}
+                            />
+                            <RadioButton
+                                value="date"
+                                label="Most recently added/updated"
+                                onClick={partial(this.onSort, 'date')}
+                            />
+                        </RadioButtonGroup>
+                    </div>
                     {
                         this.state.results.map(result => {
                             return (
@@ -237,6 +300,7 @@ class AnswersDatabase extends Component {
                                         <h2>{result.title}</h2>
                                     </Link>
                                     {this.renderResultTags(result.tags)}
+                                    {this.renderDate(result.added, result.updated)}
                                 </div>
                             );
                         })
