@@ -24,6 +24,10 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 serverRoutes(app);
 
+process.on('uncaughtException', (err) => {
+    console.log(err);
+});
+
 app.use((req, res) => {
     const store = makeStore();
     const context = {}
