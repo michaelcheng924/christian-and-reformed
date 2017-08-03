@@ -35,10 +35,10 @@ const TAGS = [
         name: '"Contradictions"',
         code: 'contradictions'
     },
-    // {
-    //     name: 'Creation',
-    //     code: 'creation'
-    // },
+    {
+        name: 'Creation',
+        code: 'creation'
+    },
     // {
     //     name: 'Homosexuality',
     //     code: 'homosexuality'
