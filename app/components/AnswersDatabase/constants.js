@@ -31,7 +31,7 @@ const ANSWERS_DATABASE = [
 
     // homosexualityOrientation,
 
-    // islamSameGod
+    islamSameGod
 ];
 
 const ANSWERS_DATABASE_MAP = keyBy(ANSWERS_DATABASE, 'url');

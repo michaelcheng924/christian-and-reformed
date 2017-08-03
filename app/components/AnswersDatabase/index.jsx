@@ -47,10 +47,10 @@ const TAGS = [
         name: 'Is God good?',
         code: 'is-god-good'
     },
-    // {
-    //     name: 'Islam',
-    //     code: 'islam'
-    // }
+    {
+        name: 'Islam',
+        code: 'islam'
+    }
 ]
 
 class AnswersDatabase extends Component {
