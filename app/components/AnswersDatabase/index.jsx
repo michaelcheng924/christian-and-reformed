@@ -75,7 +75,7 @@ class AnswersDatabase extends Component {
         this.setSearch = this.setSearch.bind(this);
     }
 
-    componentDidMount() {
+    componentWillMount() {
         if (typeof window !== 'undefined') {
             this.props.onSetApp('/answers-database');
 
