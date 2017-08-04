@@ -50,6 +50,10 @@ const TAGS = [
     {
         name: 'Islam',
         code: 'islam'
+    },
+    {
+        name: 'Science',
+        code: 'science'
     }
 ]
 

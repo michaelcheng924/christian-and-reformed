@@ -16,6 +16,8 @@ import homosexualityOrientation from 'app/components/AnswersDatabase/subjects/ho
 
 import islamSameGod from 'app/components/AnswersDatabase/subjects/islamSameGod';
 
+import scienceContradict from 'app/components/AnswersDatabase/subjects/scienceContradict';
+
 const ANSWERS_DATABASE = [
     abortionRapeIncestLifeOfMother,
 
@@ -31,7 +33,9 @@ const ANSWERS_DATABASE = [
 
     // homosexualityOrientation,
 
-    islamSameGod
+    islamSameGod,
+
+    scienceContradict
 ];
 
 const ANSWERS_DATABASE_MAP = keyBy(ANSWERS_DATABASE, 'url');
