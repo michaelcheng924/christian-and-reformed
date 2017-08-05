@@ -58,18 +58,9 @@
 
     &__selection {
         background: #FFF;
-        left: -600px;
+        margin: 20px auto;
         max-width: 620px;
         padding: 0 10px;
-        position: absolute;
-        top: 0;
-        transition: all .3s ease-in;
-        z-index: 1;
-
-        &--show {
-            left: 0;
-            position: relative;
-        }
 
         h2 {
             font-weight: 700;

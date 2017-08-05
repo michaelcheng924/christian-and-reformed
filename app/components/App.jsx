@@ -9,6 +9,7 @@ import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
 import RepentBelieve from 'app/components/RepentBelieve';
 import AnswersDatabase from 'app/components/AnswersDatabase';
+import AnswersSelection from 'app/components/AnswersDatabase/AnswersSelection';
 import InteractiveTheology from 'app/components/InteractiveTheology';
 import ChurchFinder from 'app/components/ChurchFinder';
 
@@ -23,7 +24,8 @@ class App extends Component {
                         <Menu />
                         <Route exact path="/" component={Home}/>
                         <Route path="/repent-believe" component={RepentBelieve} />
-                        <Route path="/answers-database" component={AnswersDatabase} />
+                        <Route path="/answers-database/*" component={AnswersSelection} />
+                        <Route exact path="/answers-database" component={AnswersDatabase} />
                         <Route path="/interactive-theology" component={InteractiveTheology} />
                         <Route path="/reformed-church-finder" component={ChurchFinder} />
                         <Route path="/admin" component={Admin} />

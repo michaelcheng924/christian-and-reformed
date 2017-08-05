@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -7,8 +6,6 @@ import { defer, every, find, partial, some } from 'lodash';
 import css from 'classnames';
 import TextField from 'material-ui/TextField';
 import Checkbox from 'material-ui/Checkbox';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import Forward from 'material-ui/svg-icons/content/forward';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 
 import { setApp, setSubApp } from 'app/actions/AppActions';
@@ -72,7 +69,6 @@ class AnswersDatabase extends Component {
             sort: 'alphabetical'
         };
 
-        this.onBackClick = this.onBackClick.bind(this);
         this.onFilter = this.onFilter.bind(this);
         this.onSelect = this.onSelect.bind(this);
         this.onSort = this.onSort.bind(this);
@@ -82,14 +78,6 @@ class AnswersDatabase extends Component {
     componentWillMount() {
         if (typeof window !== 'undefined') {
             this.props.onSetApp('/answers-database');
-
-            const pathname = window.location.pathname;
-
-            if (ANSWERS_DATABASE_MAP[pathname]) {
-                this.props.onSetSubApp(pathname);
-
-                document.title = `${ANSWERS_DATABASE_MAP[pathname].title} - Christian and Reformed App`;
-            }
         }
     }
 
@@ -130,16 +118,6 @@ class AnswersDatabase extends Component {
         this.setState({ sort });
     }
 
-    onBackClick() {
-        this.props.onSetSubApp(null);
-
-        if (this.props.app === '/') {
-            this.props.onSetApp('/answers-database');
-        }
-
-        $('body').scrollTop(0);
-    }
-
     isSearchValid(result) {
         if (!this.state.search) { return true; }
 
@@ -162,9 +140,6 @@ class AnswersDatabase extends Component {
                 document.title = `${ANSWERS_DATABASE_MAP[url].title} - Christian and Reformed App`;
 
                 const height = this.findSection.offsetHeight;
-                defer(() => {
-                    $('body').scrollTop(height + 20);
-                });
             }
         }
     }
@@ -253,33 +228,12 @@ class AnswersDatabase extends Component {
     }
 
     renderContent() {
-        const selection = ANSWERS_DATABASE_MAP[this.props.subApp] || {};
-
-        const selectionClassNames = css('answers-database__selection', {
-            'answers-database__selection--show': this.props.subApp
-        });
-
         const resultsClassNames = css('answers-database__results', {
             'answers-database__results--hide': this.props.subApp
         });
 
         return (
             <div className="answers-database__content">
-                <div className={selectionClassNames}>
-                    <Link to="/answers-database" onClick={this.onBackClick}>
-                        <FloatingActionButton className="answers-database__back-button" mini={true}>
-                            <Forward style={{ transform: 'rotate(180deg)' }} />
-                        </FloatingActionButton>
-                    </Link>
-                    <h2>{selection.title}</h2>
-                    <div className="answers-database__selection-argument">
-                        <h3>Argument</h3>
-                        {selection.argument}
-                    </div>
-                    <div className="answers-database__selection-answer">
-                        {selection.answer}
-                    </div>
-                </div>
                 <div className={resultsClassNames}>
                     <div className="answers-database__sort-section">
                         <strong>Sort:</strong>
