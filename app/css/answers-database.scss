@@ -208,18 +208,6 @@
         }
     }
 
-    &__results {
-        display: block;
-        transition: all .5;
-
-        &--hide {
-            display: none;
-            left: 0;
-            position: absolute;
-            top: 0;
-        }
-    }
-
     &__result {
         margin: 20px auto;
         padding: 0 20px;

@@ -228,13 +228,9 @@ class AnswersDatabase extends Component {
     }
 
     renderContent() {
-        const resultsClassNames = css('answers-database__results', {
-            'answers-database__results--hide': this.props.subApp
-        });
-
         return (
             <div className="answers-database__content">
-                <div className={resultsClassNames}>
+                <div className="answers-database__results">
                     <div className="answers-database__sort-section">
                         <strong>Sort:</strong>
                         <RadioButtonGroup className="answers-database__sorts" name="sort" defaultSelected="alphabetical">
