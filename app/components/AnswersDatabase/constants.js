@@ -12,9 +12,9 @@ import complementarianismNoMaleFemale from 'app/components/AnswersDatabase/subje
 
 import creationDays from 'app/components/AnswersDatabase/subjects/creationDays';
 
-import homosexualityOrientation from 'app/components/AnswersDatabase/subjects/homosexualityOrientation';
-
 import islamSameGod from 'app/components/AnswersDatabase/subjects/islamSameGod';
+
+import jesusGod from 'app/components/AnswersDatabase/subjects/jesusGod';
 
 import scienceContradict from 'app/components/AnswersDatabase/subjects/scienceContradict';
 
@@ -31,9 +31,9 @@ const ANSWERS_DATABASE = [
 
     creationDays,
 
-    // homosexualityOrientation,
-
     islamSameGod,
+
+    jesusGod,
 
     scienceContradict
 ];
