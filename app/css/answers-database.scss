@@ -157,6 +157,16 @@
         }
     }
 
+    &__selection-images {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    &__selection-image {
+        border-radius: 10px;
+    }
+
     &__selection-argument {
         border-bottom: 2px solid #616161;
         border-top: 2px solid #616161;

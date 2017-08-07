@@ -54,6 +54,15 @@ class AnswersSelection extends Component {
                         <Forward style={{ transform: 'rotate(180deg)' }} />
                     </FloatingActionButton>
                 </Link>
+                <div className="answers-database__selection-images">
+                    {
+                        selection.tags && selection.tags.map(tag => {
+                            return (
+                                <img key={tag} className="answers-database__selection-image" src={`/tag-${tag}.png`} />
+                            );
+                        })
+                    }
+                </div>
                 <h2>{selection.title}</h2>
                 <div className="answers-database__selection-argument">
                     <h3>Argument</h3>

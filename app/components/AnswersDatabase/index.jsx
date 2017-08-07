@@ -45,12 +45,12 @@ const TAGS = [
         code: 'is-god-good'
     },
     {
-        name: 'Jesus',
-        code: 'jesus'
-    },
-    {
         name: 'Islam',
         code: 'islam'
+    },
+    {
+        name: 'Jesus',
+        code: 'jesus'
     },
     {
         name: 'Science',
