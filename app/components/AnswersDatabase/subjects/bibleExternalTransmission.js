@@ -10,7 +10,7 @@ import {
 
 const bibleExternalTransmission = {
     added: '8/1/2017',
-    updated: '',
+    updated: '8/8/2017',
     title: 'Has the Bible been reliably copied/transmitted throughout history?',
     tags: ['bible-external'],
     url: '/answers-database/has-the-bible-been-reliably-transmitted-throughout-history',
@@ -22,7 +22,7 @@ const bibleExternalTransmission = {
 
             <h3>Detailed answer</h3>
             <h4>New Testament and Old Testament compared with other ancient texts</h4>
-            <p>The New Testament and Old Testament that we have today can be trusted to be essentially the same as the original texts. Compared to any other ancient text, there are far more biblical manuscripts far closer to the date of the originals. Furthermore, these manuscripts are about 99.5% identical, most of the differences can be explained very reasonably, and none of the differences affects any significant Christian doctrine.</p>
+            <p>The New Testament and Old Testament that we have today can be trusted to be essentially the same as the original texts. Compared to any other ancient text, there are far more biblical manuscripts far closer to the date of the originals.</p>
 
             <div className="answers-database__transmission-table">
                 <Table>
@@ -147,6 +147,24 @@ const bibleExternalTransmission = {
                     </TableBody>
                   </Table>
             </div>
+
+            <h4>New Testament Accuracy</h4>
+
+            <p>It is clear that we have an enormous number of New Testament manuscripts, many of which have dates that are very close to the originals. But, how accurate are they? Are there significant differences between them that would bring into question the reliability of the New Testament? The answer is that there are an insignificant number of differences between the New Testament manuscripts we possess. Here is what Norman Geisler says on the subject:</p>
+
+            <blockquote>First, NT textual authorities Westcott and Hort estimated that only about one-sixtieth rise above “trivialities” and can be called “substantial variations.” In short, the NT is 98.33 percent pure. Second, Greek expert Ezra Abbott said about 19/20 (95 percent) of the readings are “various” rather than “rival” readings, and about 19/20 (95 percent) of the rest make no appreciable difference in the sense of the passage. Thus the text is 99.75 percent accurate. Third, noted NT Greek scholar A. T. Robertson said the real concern is with about a “thousandth part of the entire text.” So, the reconstructed text of the New Testament is 99.9% free from real concern.</blockquote>
+
+            <p>Most of the differences between manuscripts are trivial and make no real impact upon the meaning of the text. Only about .1% of the differences are of any real concern, and reasonable solutions have been proposed for all of these differences. Thus, there is no reason to doubt the accuracy/reliability of the New Testament that we have today in terms of how similar it is to the original.</p>
+
+            <h4>Old Testament Accuracy - The Dead Sea Scrolls</h4>
+
+            <p>What about the accuracy of the Old Testament manuscripts that have been discovered? Again, there is tremendous reason to trust in the accuracy/reliability of the Old Testament we possess today.</p>
+
+            <img src="/dead-sea-scrolls.png" style={{ float: 'right' }} />
+
+            <p>The Dead Sea Scrolls, considered one of the greatest archaeological finds of the 20th century, were written between 150 B.C. and 70 A.D. Previously, the earliest Old Testament manuscript discovered was written A.D. 980. Over 95% of the text of the Dead Sea Scrolls text is word-for-word identical with what had been determined to be the Old Testament before the discovery of the Dead Sea Scrolls, and like with the differences in New Testament manuscripts, most of the differences in the Old Testament manuscripts are insignificant, and the rest have reasonable explanations.</p>
+
+            <p>The fact that the Old Testament has been so reliably copied over the course of a thousand years demonstrates that just like with the New Testament, we can have tremendous confidence in the accuracy/reliability of the Old Testament we have today.</p>
         </div>
     )
 };
