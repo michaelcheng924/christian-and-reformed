@@ -88,6 +88,10 @@
             font-style: italic;
         }
 
+        img {
+            margin: 5px;
+        }
+
         thead > tr {
             height: initial !important;
 
@@ -291,6 +295,10 @@
 
         &--jesus {
             background: #B71C1C;
+        }
+
+        &--miscellaneous {
+            background: #757575;
         }
 
         &--presuppositional {

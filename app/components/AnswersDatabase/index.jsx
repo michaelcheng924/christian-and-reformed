@@ -53,6 +53,10 @@ const TAGS = [
         code: 'jesus'
     },
     {
+        name: 'Miscellaneous',
+        code: 'miscellaneous'
+    },
+    {
         name: 'Presuppositional',
         code: 'presuppositional'
     },

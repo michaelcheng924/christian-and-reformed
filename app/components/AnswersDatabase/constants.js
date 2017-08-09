@@ -17,6 +17,8 @@ import islamSameGod from 'app/components/AnswersDatabase/subjects/islamSameGod';
 import jesusExistence from 'app/components/AnswersDatabase/subjects/jesusExistence';
 import jesusGod from 'app/components/AnswersDatabase/subjects/jesusGod';
 
+import miscellaneousArrogance from 'app/components/AnswersDatabase/subjects/miscellaneousArrogance';
+
 import presuppositionalProof from 'app/components/AnswersDatabase/subjects/presuppositionalProof';
 
 import scienceContradict from 'app/components/AnswersDatabase/subjects/scienceContradict';
@@ -38,6 +40,8 @@ const ANSWERS_DATABASE = [
 
     jesusExistence,
     jesusGod,
+
+    miscellaneousArrogance,
 
     presuppositionalProof,
 

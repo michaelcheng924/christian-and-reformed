@@ -2,7 +2,7 @@ import React from 'react';
 
 const jesusExistence = {
     added: '8/8/2017',
-    updated: '',
+    updated: '8/9/2017',
     title: 'Did Jesus exist?',
     tags: ['jesus'],
     url: '/answers-database/did-jesus-exist',
@@ -10,7 +10,7 @@ const jesusExistence = {
     answer: (
         <div>
             <h3>Quick answer</h3>
-            <p>An extremely strong case can be made for Jesus' existence from examining history. However, because there are limits to what we can prove with absolute certainty by merely examining history, the greatest evidence for Jesus' existence is the necessity of the Christian worldview for life and knowledge itself, which results in no other option than to trust the reliability of the Bible's teachings concerning Jesus.</p>
+            <p>An extremely strong case can be made for Jesus' existence from examining history itself. However, because there are limits to what we can prove with absolute certainty by merely examining history, the greatest evidence for Jesus' existence is the necessity of the Christian worldview for life and knowledge itself, which results in no other option than to trust the reliability of the Bible's teachings concerning Jesus.</p>
 
             <h3>Detailed answer</h3>
             <h4>Limits to merely examining history</h4>
@@ -53,6 +53,10 @@ const jesusExistence = {
                     The difficulty with this passage is the italicized portions, since Josephus would not have described Jesus in such a manner. The best explanation of this passage is that it is partly authentic&mdash;it contains what Josephus wrote, along with several additions and/or modifications by Christian scribes. It would be a mistake to say this entire passage was not written by Josephus because it is this introduction to Jesus here that provides the context for Josephus's mention of Jesus in the first passage quoted above. This passage explains who <em>Christus</em>, the name Josephus uses for Jesus, which was just a normal name in that time, was and provides the necessary background for understanding Josephus's brief mention of <em>Christus</em> in the first passage. Thus, there is no good reason to believe that this entire passage is a forgery.
                 </li>
             </ol>
+
+            <h4>The necessity of the Christian worldview</h4>
+
+            <p>One can only prove so much by merely examining history. For a more thorough defense of Jesus' life and works, see <a className="answers-database__internal-link" href="/answers-database/what-is-the-best-proof-bible-christianity">What is the best proof for the Bible/Christianity?</a></p>
         </div>
     )
 };

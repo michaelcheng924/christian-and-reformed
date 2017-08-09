@@ -37,6 +37,17 @@ class AnswersSelection extends Component {
         }
     }
 
+    componentWillUpdate(nextProps) {
+        if (this.props.subApp !== nextProps.subApp) {
+            this.selection = nextProps.subApp;
+
+            if (typeof window !== 'undefined') {
+                document.title = `${ANSWERS_DATABASE_MAP[nextProps.subApp].title} - Christian and Reformed App`;
+                $('body').scrollTop(0);
+            }
+        }
+    }
+
     onBackClick() {
         this.props.onSetSubApp(null);
 
@@ -46,7 +57,7 @@ class AnswersSelection extends Component {
     }
 
     render() {
-        const selection = ANSWERS_DATABASE_MAP[this.selection] || {};
+        const selection = ANSWERS_DATABASE_MAP[this.selection] || ANSWERS_DATABASE_MAP[this.props.subApp] || {};
 
         return (
             <div className="answers-database__selection">
@@ -77,9 +88,14 @@ class AnswersSelection extends Component {
     }
 }
 
+const mapStateToProps = createSelector(
+    state => state.app,
+    app => ({ ...app })
+);
+
 const mapActionsToProps = {
     onSetApp: setApp,
     onSetSubApp: setSubApp
 };
 
-export default connect(null, mapActionsToProps)(AnswersSelection);
+export default connect(mapStateToProps, mapActionsToProps)(AnswersSelection);
