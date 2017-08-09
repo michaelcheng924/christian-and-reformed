@@ -19,6 +19,7 @@ const contradictionsSlavery = {
             <p>There are several possible explanations for the passages that people bring up to "prove" that God is immoral for giving instructions regarding slavery. For example:</p>
 
             <ol>
+                <li>Slavery in the Bible was very different from American slavery.</li>
                 <li>Some people voluntarily sold themselves into slavery because of poverty and were set free in six years.</li>
                 <li>Some people may be slaves because of sin. This happened to Israelites themselves.</li>
                 <li>God may have given instructions for a sinful institution to minimize/prevent abuses.</li>
@@ -43,6 +44,8 @@ const contradictionsSlavery = {
 
             <h4>Leviticus 25:44-46 &ndash; What about Israelites owning slaves from other nations?</h4>
 
+            <img src="/chains.png" style={{ float: 'right' }} />
+
             <blockquote>As for your male and female slaves whom you may have: you may buy male and female slaves from among the nations that are around you. You may also buy from among the strangers who sojourn with you and their clans that are with you, who have been born in your land, and they may be your property. You may bequeath them to your sons after you to inherit as a possession forever. You may make slaves of them, but over your brothers the people of Israel you shall not rule, one over another ruthlessly. (leviticus 25:44-46)</blockquote>
 
             <p>First, this passage says nothing about kidnapping people or forcing people to become slaves. It is possible that these slaves from other nations had also sold themselves into slavery because of poverty and were more like bondservants.</p>
@@ -58,6 +61,8 @@ const contradictionsSlavery = {
             <p>Although this may not be the case with slavery in the Bible (see the third point above), it is possible that God gave instructions for slavery in the same way He gave instructions for divorce. Perhaps, like with divorce, the slavery in the Bible was permitted "because of your hardness of heart," and "from the beginning it was not so." The important thing to recognize here is that there are several possible explanations. There is no irrefutable proof that God is immoral for giving instructions for slavery.</p>
 
             <h4>Leviticus 25:39-42) &ndash; "Slavery," or "bondservanthood," was one way to provide economic relief for the servant, and it was temporary</h4>
+
+            <img src="/coins.png" style={{ float: 'right' }} />
 
             <blockquote>If your brother becomes poor beside you and sells himself to you, you shall not make him serve as a slave: he shall be with you as a hired worker and as a sojourner. He shall serve with you until the year of the jubilee. Then he shall go out from you, he and his children with him, and go back to his own clan and return to the possession of his fathers. For they are my servants,[e] whom I brought out of the land of Egypt; they shall not be sold as slaves. (Leviticus 25:39-41)</blockquote>
 
