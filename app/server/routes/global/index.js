@@ -225,28 +225,4 @@ router.post('/incrementcoursecount', (req, res) => {
     });
 });
 
-router.post('/incrementscroll', (req, res) => {
-    const { route } = req.body;
-
-    AppData.findOne({ name: 'data' }, (err, result) => {
-        const data = result.data;
-
-        if (!data[route]) {
-            data[route] = 0;
-        }
-
-        data[route]++;
-
-        AppData.update({ name: 'data' }, {
-            $set: {
-                data
-            }
-        }, (err, result) => {
-            res.send({
-                appData: data
-            });
-        });
-    });
-});
-
 export default router;

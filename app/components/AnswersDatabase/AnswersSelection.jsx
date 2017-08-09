@@ -24,6 +24,7 @@ class AnswersSelection extends Component {
 
             if (ANSWERS_DATABASE_MAP[pathname]) {
                 this.props.onSetSubApp(pathname);
+                this.selection = pathname;
 
                 document.title = `${ANSWERS_DATABASE_MAP[pathname].title} - Christian and Reformed App`;
             }
@@ -45,7 +46,7 @@ class AnswersSelection extends Component {
     }
 
     render() {
-        const selection = ANSWERS_DATABASE_MAP[this.props.subApp] || {};
+        const selection = ANSWERS_DATABASE_MAP[this.selection] || {};
 
         return (
             <div className="answers-database__selection">
@@ -76,14 +77,9 @@ class AnswersSelection extends Component {
     }
 }
 
-const mapStateToProps = createSelector(
-    state => state.app,
-    app => ({ ...app })
-);
-
 const mapActionsToProps = {
     onSetApp: setApp,
     onSetSubApp: setSubApp
 };
 
-export default connect(mapStateToProps, mapActionsToProps)(AnswersSelection);
+export default connect(null, mapActionsToProps)(AnswersSelection);

@@ -7,7 +7,6 @@ import { debounce, map, partial } from 'lodash';
 
 import { GAMES } from 'app/components/InteractiveTheology';
 import { setApp, setSubApp } from 'app/actions/AppActions';
-import { incrementScroll } from 'app/api/users';
 
 export const ROUTES = {
     '/': {
@@ -80,7 +79,6 @@ class Menu extends Component {
         };
 
         this.expandCollapse = this.expandCollapse.bind(this);
-        this.onScroll = debounce(this.onScroll.bind(this), 1000);
         this.onSetApp = this.onSetApp.bind(this);
     }
 
@@ -97,8 +95,6 @@ class Menu extends Component {
                 this.props.onSetApp('/interactive-theology');
                 this.props.onSetSubApp(pathname);
             }
-
-            window.addEventListener('scroll', this.onScroll);
         }
     }
 
@@ -123,10 +119,6 @@ class Menu extends Component {
     onSetApp(url) {
         this.props.onSetApp(url);
         this.setState({ expanded: false });
-    }
-
-    onScroll() {
-        this.props.onScroll({ route: this.props.app });
     }
 
     expandCollapse() {
@@ -229,7 +221,6 @@ const mapStateToProps = createSelector(
 );
 
 const mapActionsToProps = {
-    onScroll: incrementScroll,
     onSetApp: setApp,
     onSetSubApp: setSubApp
 };
