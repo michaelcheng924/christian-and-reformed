@@ -8,44 +8,78 @@
 
 <url>
   <loc>http://app.christianandreformed.com/</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/repent-believe</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/answers-database</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/reformed-church-finder</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/interactive-theology</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/sitemap</loc>
-</url>
-<url>
-  <loc>http://app.christianandreformed.com/answers-database/couldnt-the-days-in-genesis-be-periods-of-time-instead-of-literal-24-hour-days</loc>
-</url>
-<url>
-  <loc>http://app.christianandreformed.com/answers-database/does-the-bible-support-slavery</loc>
-</url>
-<url>
-  <loc>http://app.christianandreformed.com/answers-database/dont-muslims-jews-christians-worship-same-god</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/answers-database/has-the-bible-been-reliably-transmitted-throughout-history</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/dont-muslims-jews-christians-worship-same-god</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/did-jesus-claim-to-be-god</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/did-jesus-exist</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/couldnt-the-days-in-genesis-be-periods-of-time-instead-of-literal-24-hour-days</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/does-the-bible-support-slavery</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/does-science-contradict-bible</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/is-it-arrogant-for-christians-to-believe-bible-exclusively-true</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/answers-database/is-predestination-simply-gods-foreknowledge-of-who-will-freely-choose-jesus</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/answers-database/isnt-there-no-male-female-in-christ</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/answers-database/what-about-exceptions-for-rape-incest-life-mother</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://app.christianandreformed.com/answers-database/what-is-the-best-proof-bible-christianity</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://app.christianandreformed.com/interactive-theology/attributes-of-god</loc>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>

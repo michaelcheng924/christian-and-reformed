@@ -17,6 +17,8 @@ const jesusGod = {
 
             <h4>John 1:1 &ndash; The Word was God</h4>
 
+            <img src="/bible.png" style={{ float: 'right' }} />
+
             <blockquote>In the beginning was the Word, and the Word was with God, and <strong>the Word was God</strong>. (John 1:1)</blockquote>
 
             <p>The "Word" here refers to Jesus, and the verse says that "the Word [Jesus] was God." The Greek does not say that Jesus was "a god," as Jehovah's Witnesses claim.</p>
@@ -30,6 +32,8 @@ const jesusGod = {
             <p>The Jews clearly understood that Jesus calling God his Father and saying "I and the Father are one" meant Jesus "making himself equal with God." Jesus never denied their conclusion.</p>
 
             <h4>John 8:24, 58-59 &ndash; Jesus claims to be "I am," which God said was His name (Exodus 3:14)</h4>
+
+            <img src="/i-am.png" style={{ float: 'right' }} />
 
             <blockquote>I told you that you would die in your sins, for unless you believe that <strong>I am</strong> he you will die in your sins. (John 8:24)</blockquote>
 
