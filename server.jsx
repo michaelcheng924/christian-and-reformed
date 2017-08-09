@@ -63,7 +63,9 @@ app.use((req, res) => {
                 <meta property="og:description" content="${description}" />
                 <meta property="og:image" content="${image}" />
 
-                <title>Christian and Reformed: Proclaiming Historic, Timeless Truth</title>
+                <meta name="description" content="${description}" />
+
+                <title>${title}</title>
 
                 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
                 <link rel="icon" 
