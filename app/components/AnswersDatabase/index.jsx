@@ -21,16 +21,16 @@ const TAGS = [
         code: 'bible-external'
     },
     {
+        name: 'Bible (Internal)',
+        code: 'bible-internal'
+    },
+    {
         name: 'Calvinism',
         code: 'calvinism'
     },
     {
         name: 'Complementarianism',
         code: 'complementarianism'
-    },
-    {
-        name: '"Contradictions"',
-        code: 'contradictions'
     },
     {
         name: 'Creation',
@@ -262,9 +262,9 @@ class AnswersDatabase extends Component {
                         this.state.results.map(result => {
                             return (
                                 <div key={result.title} className="answers-database__result">
-                                    <Link to={result.url} onClick={partial(this.onSelect, result.url)}>
+                                    <a href={result.url} target="_blank">
                                         <h2>{result.title}</h2>
-                                    </Link>
+                                    </a>
                                     {this.renderResultTags(result.tags)}
                                     {this.renderDate(result.added, result.updated)}
                                 </div>
