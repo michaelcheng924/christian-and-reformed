@@ -3,7 +3,7 @@ const abortionRapeIncestLifeOfMother = {
     updated: '',
     title: 'What about exceptions for rape, incest, and the life of the mother?',
     tags: ['abortion'],
-    url: 'http://christianandreformed.com/abortion-what-about-exceptions-for-rape-incest-and-the-life-of-the-mother/'
+    url: 'http://christianreformedanswers.com/abortion-what-about-exceptions-for-rape-incest-and-the-life-of-the-mother/'
 };
 
 export default abortionRapeIncestLifeOfMother;

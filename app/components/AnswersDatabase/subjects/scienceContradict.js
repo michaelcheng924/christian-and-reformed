@@ -3,7 +3,7 @@ const scienceContradict = {
     updated: '',
     title: "Does science contradict the Bible?",
     tags: ['science'],
-    url: 'http://christianandreformed.com/does-science-contradict-the-bible/'
+    url: 'http://christianreformedanswers.com/does-science-contradict-the-bible/'
 };
 
 export default scienceContradict;

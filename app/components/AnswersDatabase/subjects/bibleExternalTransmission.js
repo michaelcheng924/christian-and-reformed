@@ -3,7 +3,7 @@ const bibleExternalTransmission = {
     updated: '8/8/2017',
     title: 'Has the Bible been reliably copied/transmitted throughout history?',
     tags: ['bible-external'],
-    url: 'http://christianandreformed.com/has-the-bible-been-reliably-copiedtransmitted-throughout-history/'
+    url: 'http://christianreformedanswers.com/has-the-bible-been-reliably-copiedtransmitted-throughout-history/'
 };
 
 export default bibleExternalTransmission;

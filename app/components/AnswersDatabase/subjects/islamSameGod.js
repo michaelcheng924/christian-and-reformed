@@ -3,7 +3,7 @@ const abortionRapeIncestLifeOfMother = {
     updated: '',
     title: "Don't Muslims, Jews, and Christians believe in the same God?",
     tags: ['islam'],
-    url: 'http://christianandreformed.com/dont-muslims-jews-and-christians-believe-in-the-same-god/'
+    url: 'http://christianreformedanswers.com/dont-muslims-jews-and-christians-believe-in-the-same-god/'
 };
 
 export default abortionRapeIncestLifeOfMother;

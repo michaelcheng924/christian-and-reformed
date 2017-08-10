@@ -5,7 +5,7 @@ const presuppositionalProof = {
     updated: '8/9/2017',
     title: 'What is the best proof for the Bible/Christianity?',
     tags: ['presuppositional'],
-    url: 'http://christianandreformed.com/what-is-the-best-proof-for-the-biblechristianity/'
+    url: 'http://christianreformedanswers.com/what-is-the-best-proof-for-the-biblechristianity/'
 };
 
 export default presuppositionalProof;

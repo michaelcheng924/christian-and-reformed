@@ -3,7 +3,7 @@ const jesusGod = {
     updated: '',
     title: 'Did Jesus claim to be God?',
     tags: ['jesus'],
-    url: 'http://christianandreformed.com/did-jesus-claim-to-be-god/'
+    url: 'http://christianreformedanswers.com/did-jesus-claim-to-be-god/'
 };
 
 export default jesusGod;

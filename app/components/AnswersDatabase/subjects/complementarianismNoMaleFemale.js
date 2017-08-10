@@ -3,7 +3,7 @@ const complementarianismNoMaleFemale = {
     updated: '',
     title: 'Isn\'t there "no male and female" in Christ? (Galatians 3:28)',
     tags: ['complementarianism'],
-    url: 'http://christianandreformed.com/isnt-there-no-male-and-female-in-christ-galatians-328/'
+    url: 'http://christianreformedanswers.com/isnt-there-no-male-and-female-in-christ-galatians-328/'
 };
 
 export default complementarianismNoMaleFemale;

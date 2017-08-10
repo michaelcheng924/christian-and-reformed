@@ -3,7 +3,7 @@ const jesusExistence = {
     updated: '8/9/2017',
     title: 'Did Jesus exist?',
     tags: ['jesus'],
-    url: 'http://christianandreformed.com/did-jesus-exist/'
+    url: 'http://christianreformedanswers.com/did-jesus-exist/'
 };
 
 export default jesusExistence;
