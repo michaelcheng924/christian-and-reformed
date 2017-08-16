@@ -4,7 +4,8 @@ import abortionRapeIncestLifeOfMother from 'app/components/AnswersDatabase/subje
 
 import bibleExternalTransmission from 'app/components/AnswersDatabase/subjects/bibleExternalTransmission';
 
-import contradictionsSlavery from 'app/components/AnswersDatabase/subjects/contradictionsSlavery';
+import bibleInternalContradictionsBarker from 'app/components/AnswersDatabase/subjects/bibleInternalContradictionsBarker';
+import bibleInternalSlavery from 'app/components/AnswersDatabase/subjects/bibleInternalSlavery';
 
 import calvinismForeknowledge from 'app/components/AnswersDatabase/subjects/calvinismForeknowledge';
 
@@ -28,11 +29,12 @@ const ANSWERS_DATABASE = [
 
     bibleExternalTransmission,
 
+    bibleInternalContradictionsBarker,
+    bibleInternalSlavery,
+
     calvinismForeknowledge,
 
     complementarianismNoMaleFemale,
-
-    contradictionsSlavery,
 
     creationDays,
 

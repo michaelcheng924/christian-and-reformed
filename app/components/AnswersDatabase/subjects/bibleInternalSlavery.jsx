@@ -1,4 +1,4 @@
-const contradictionsSlavery = {
+const bibleInternalSlavery = {
     added: '8/2/2017',
     updated: '',
     title: 'Does the Bible support slavery?',
@@ -6,4 +6,4 @@ const contradictionsSlavery = {
     url: 'http://christianreformedanswers.com/does-the-bible-support-slavery/'
 };
 
-export default contradictionsSlavery;
+export default bibleInternalSlavery;
