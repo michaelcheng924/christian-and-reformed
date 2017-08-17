@@ -1,54 +1,29 @@
 import { keyBy } from 'lodash';
 
-import abortionRapeIncestLifeOfMother from 'app/components/AnswersDatabase/subjects/abortionRapeIncestLifeOfMother';
+import abortion from 'app/components/AnswersDatabase/subjects/abortion';
+import bibleExternal from 'app/components/AnswersDatabase/subjects/bibleExternal';
+import bibleInternal from 'app/components/AnswersDatabase/subjects/bibleInternal';
+import calvinism from 'app/components/AnswersDatabase/subjects/calvinism';
+import complementarianism from 'app/components/AnswersDatabase/subjects/complementarianism';
+import creation from 'app/components/AnswersDatabase/subjects/creation';
+import islam from 'app/components/AnswersDatabase/subjects/islam';
+import jesus from 'app/components/AnswersDatabase/subjects/jesus';
+import miscellaneous from 'app/components/AnswersDatabase/subjects/miscellaneous';
+import presuppositional from 'app/components/AnswersDatabase/subjects/presuppositional';
+import science from 'app/components/AnswersDatabase/subjects/science';
 
-import bibleExternalTransmission from 'app/components/AnswersDatabase/subjects/bibleExternalTransmission';
-
-import bibleInternalContradictionsBarker from 'app/components/AnswersDatabase/subjects/bibleInternalContradictionsBarker';
-import bibleInternalSlavery from 'app/components/AnswersDatabase/subjects/bibleInternalSlavery';
-
-import calvinismForeknowledge from 'app/components/AnswersDatabase/subjects/calvinismForeknowledge';
-
-import complementarianismNoMaleFemale from 'app/components/AnswersDatabase/subjects/complementarianismNoMaleFemale';
-
-import creationDays from 'app/components/AnswersDatabase/subjects/creationDays';
-
-import islamSameGod from 'app/components/AnswersDatabase/subjects/islamSameGod';
-
-import jesusExistence from 'app/components/AnswersDatabase/subjects/jesusExistence';
-import jesusGod from 'app/components/AnswersDatabase/subjects/jesusGod';
-
-import miscellaneousArrogance from 'app/components/AnswersDatabase/subjects/miscellaneousArrogance';
-
-import presuppositionalProof from 'app/components/AnswersDatabase/subjects/presuppositionalProof';
-
-import scienceContradict from 'app/components/AnswersDatabase/subjects/scienceContradict';
-
-const ANSWERS_DATABASE = [
-    abortionRapeIncestLifeOfMother,
-
-    bibleExternalTransmission,
-
-    bibleInternalContradictionsBarker,
-    bibleInternalSlavery,
-
-    calvinismForeknowledge,
-
-    complementarianismNoMaleFemale,
-
-    creationDays,
-
-    islamSameGod,
-
-    jesusExistence,
-    jesusGod,
-
-    miscellaneousArrogance,
-
-    presuppositionalProof,
-
-    scienceContradict
-];
+const ANSWERS_DATABASE = []
+.concat(abortion)
+.concat(calvinism)
+.concat(complementarianism)
+.concat(creation)
+.concat(bibleExternal)
+.concat(bibleInternal)
+.concat(islam)
+.concat(jesus)
+.concat(miscellaneous)
+.concat(presuppositional)
+.concat(science);
 
 const ANSWERS_DATABASE_MAP = keyBy(ANSWERS_DATABASE, 'url');
 

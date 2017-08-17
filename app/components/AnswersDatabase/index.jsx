@@ -71,7 +71,7 @@ class AnswersDatabase extends Component {
         super(props);
 
         this.sortedAnswers = ANSWERS_DATABASE.sort((a, b) => {
-            return a.title > b.title;
+            return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
         });
 
         this.state = {
@@ -113,7 +113,7 @@ class AnswersDatabase extends Component {
         if (sort !== prevState.sort) {
             this.sortedAnswers = ANSWERS_DATABASE.sort((a, b) => {
                 if (sort === 'alphabetical') {
-                    return a.title > b.title;
+                    return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
                 }
 
                 a = new Date(a.updated || a.added);
