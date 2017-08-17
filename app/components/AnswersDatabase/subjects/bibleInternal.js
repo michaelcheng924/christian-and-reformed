@@ -220,14 +220,14 @@ const bibleInternal = [
         added: '8/17/2017',
         updated: '',
         title: 'Is the Bible contradictory about whether Michal had children?',
-        tags: ['bible-internal', 'creation'],
+        tags: ['bible-internal'],
         url: 'http://christianreformedanswers.com/is-the-bible-contradictory-about-whether-michal-had-children/'
     },
     {
         added: '8/17/2017',
         updated: '',
         title: 'Is the Bible contradictory about whether Paul\'s men heard a voice?',
-        tags: ['bible-internal', 'creation'],
+        tags: ['bible-internal'],
         url: 'http://christianreformedanswers.com/is-the-bible-contradictory-about-whether-pauls-men-heard-a-voice/'
     },
     {
