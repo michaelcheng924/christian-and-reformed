@@ -236,6 +236,13 @@ const bibleInternal = [
         title: 'Should Christians kill? (Is it "You shall not murder" or "You shall not kill"?',
         tags: ['bible-internal'],
         url: 'http://christianreformedanswers.com/should-christians-kill-is-it-you-shall-not-murder-or-you-shall-not-kill/'
+    },
+    {
+        added: '9/5/2017',
+        updated: '',
+        title: 'Is hell immoral?',
+        tags: ['bible-internal', 'is-god-good'],
+        url: 'http://christianreformedanswers.com/is-hell-immoral/'
     }
 ];
 
