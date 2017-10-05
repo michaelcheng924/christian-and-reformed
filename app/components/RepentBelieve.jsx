@@ -155,7 +155,7 @@ class RepentBelieve extends Component {
                     <p className="repent-believe__truth-text">
                         Repentance involves feeling hatred/sorrow towards your sin and resolving to turn away from it towards obedience to God.
                         <br />
-                        <span className="repent-believe__scripture">"Not everyone who says to me, \'Lord, Lord,\' will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven." (Matthew 7:21)</span>
+                        <span className="repent-believe__scripture">"Not everyone who says to me, 'Lord, Lord,' will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven." (Matthew 7:21)</span>
                         <br />
                         <span className="repent-believe__scripture">"What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life." (Romans 6:1-4)</span>
                     </p>
