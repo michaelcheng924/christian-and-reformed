@@ -275,7 +275,7 @@ class Gospel extends Component {
                             <a href="http://www.arbca.com/1689-confession" target="_blank">1689 London Baptist Confession of Faitih</a>
                         </div>
                         <div>
-                            <a href="http://www.reformed.org/documents/wcf_with_proofs/" target="_blank">Westminster Confession of Faitih</a>
+                            <a href="http://www.reformed.org/documents/wcf_with_proofs/" target="_blank">Westminster Confession of Faith</a>
                         </div>
                     </div>
                 </div>
