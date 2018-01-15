@@ -7,7 +7,7 @@ import Admin from 'app/components/Admin';
 import Statistics from 'app/components/Statistics';
 import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
-import RepentBelieve from 'app/components/RepentBelieve';
+import Gospel from 'app/components/Gospel';
 import AnswersDatabase from 'app/components/AnswersDatabase';
 import AnswersSelection from 'app/components/AnswersDatabase/AnswersSelection';
 import InteractiveTheology from 'app/components/InteractiveTheology';
@@ -23,7 +23,7 @@ class App extends Component {
                     <div>
                         <Menu />
                         <Route exact path="/" component={Home}/>
-                        <Route path="/repent-believe" component={RepentBelieve} />
+                        <Route path="/repent-believe" component={Gospel} />
                         <Route path="/answers-database/*" component={AnswersSelection} />
                         <Route exact path="/answers-database" component={AnswersDatabase} />
                         <Route path="/interactive-theology" component={InteractiveTheology} />

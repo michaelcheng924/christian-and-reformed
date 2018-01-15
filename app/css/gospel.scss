@@ -1,0 +1,319 @@
+.gospel {
+    &__shortcuts {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+
+        a {
+            color: #FFF;
+        }
+    }
+
+    &__shortcut {
+        cursor: pointer;
+        flex-grow: 1;
+        font-weight: bold;
+    }
+
+    &__shortcut-number {
+        align-items: center;
+        border: 2px solid #E0E0E0;
+        border-radius: 50%;
+        color: #E0E0E0;
+        display: inline-flex;
+        height: 25px;
+        justify-content: center;
+        margin-right: 10px;
+        width: 25px;
+    }
+
+    &__title {
+        background: #2196F3;
+        color: #FFF;
+        font-size: 38px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .fa {
+        color: #E0E0E0;
+        font-size: 60px;
+        margin-bottom: 18px;
+    }
+
+    &__title-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flip-container {
+        perspective: 1000;
+    }
+
+    .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+    .flip-container, .front, .back {
+        text-align: center;
+        width: 200px;
+    }
+
+    .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+        position: relative;
+    }
+
+    .front, .back {
+        backface-visibility: hidden;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .front {
+        z-index: 2;
+    }
+
+    .back {
+        transform: rotateY(180deg);
+    }
+
+    .flip-container--gospel {
+        color: #FFFF00;
+        font-weight: 600;
+
+        &.flip-container, .front, .back {
+            height: 44px;
+            width: 250px;
+        }
+    }
+
+    &__before-good-news {
+        background: #EEE;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__guilty-of-sin {
+        text-align: center;
+
+        .fa-tint {
+            color: #B71C1C;
+            font-size: 40px;
+            margin-right: 20px;
+            position: relative;
+            top: 6px;
+        }
+    }
+
+    &__guilty-of-sin-title {
+        background: linear-gradient(180deg, #D50000 60%, #FFEBEE);
+        color: #FFF;
+        font-size: 40px;
+        padding: 30px 20px 65px;
+    }
+
+    &__guilty-of-sin-content {
+        background: #FFEBEE;
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    &__guilty-of-sin-holy {
+        color: #FFD600;
+        font-size: 33px;
+        font-weight: bold;
+    }
+
+    &__scripture {
+        font-size: 16px;
+        font-style: italic;
+        margin: 20px 0;
+    }
+
+    &__guilty-of-sin-sinned {
+        color: #B71C1C;
+        font-size: 33px;
+        font-weight: bold;
+    }
+
+    &__guilty-of-sin-scripture {
+        border-left: 3px solid #B71C1C;
+        color: #B71C1C;
+        font-size: 28px;
+        padding-left: 20px;
+        text-align: left;
+
+        strong {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+
+    &__guilty-of-sin-list {
+        margin-left: 20px;
+    }
+
+    &__guilty-of-sin-question {
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__guilty-of-sin-hell {
+        margin-top: 35px;
+
+        strong {
+            color: #B71C1C;
+            font-size: 33px;
+        }
+    }
+
+    &__hell {
+        text-align: center;
+    }
+
+    &__hell-title {
+        background: linear-gradient(180deg, #424242 60%, #EEEEEE);
+        color: #FFF;
+        font-size: 40px;
+        padding: 30px 20px 65px;
+    }
+
+    &__hell-content {
+        background: #EEEEEE;
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    &__hell-infinite {
+        color: #26C6DA;
+        display: inline-block;
+        font-size: 80px;
+        font-weight: bold;
+        margin-right: 12px;
+        position: relative;
+        top: 15px;
+    }
+
+    &__hell-scripture {
+        border-left: 3px solid #424242;
+        color: #424242;
+        font-size: 28px;
+        margin-top: 15px;
+        padding-left: 20px;
+        text-align: left;
+
+        strong {
+            color: #C62828;
+            font-size: 33px;
+        }
+    }
+
+    &__good-news {
+        background: #DCEDC8;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__jesus {
+        text-align: center;
+    }
+
+    &__jesus-title {
+        background: linear-gradient(180deg, #039BE5 60%, #E1F5FE);
+        color: #FFF;
+        font-size: 40px;
+        padding: 30px 20px 65px;
+    }
+
+    &__jesus-content {
+        background: #E1F5FE;
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    &__jesus-scripture {
+        border-left: 3px solid #01579B;
+        color: #01579B;
+        font-size: 28px;
+        margin-top: 15px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    &__repent-believe {
+        text-align: center;
+    }
+
+    &__repent-believe-title {
+        background: linear-gradient(180deg, #4CAF50 60%, #E8F5E9);
+        color: #FFF;
+        font-size: 40px;
+        padding: 30px 20px 65px;
+    }
+
+    &__repent-believe-content {
+        background: #E8F5E9;
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    &__repent-believe-scripture {
+        border-left: 3px solid #1B5E20;
+        color: #01579B;
+        font-size: 28px;
+        margin-top: 15px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    &__next {
+        text-align: center;
+
+        a {
+            color: #689F38;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__next-title {
+        background: linear-gradient(180deg, #009688 60%, #E0F2F1);
+        color: #FFF;
+        font-size: 40px;
+        padding: 30px 20px 65px;
+    }
+
+    &__next-content {
+        background: #E0F2F1;
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    &__next-scripture {
+        border-left: 3px solid #004D40;
+        color: #004D40;
+        font-size: 28px;
+        margin-top: 15px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    &__next-resources {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

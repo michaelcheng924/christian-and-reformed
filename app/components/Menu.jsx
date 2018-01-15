@@ -22,15 +22,15 @@ export const ROUTES = {
         description: 'Proclaiming Historic, Timeless Truth'
     },
     '/repent-believe': {
-        icon: 'heartbeat',
+        icon: 'book',
         text: (
             <div className="menu__text">
-                <h1>You must repent and believe</h1>
+                <h1>What is the gospel?</h1>
             </div>
         ),
         url: '/repent-believe',
-        title: 'You must repent and believe',
-        description: 'Learn what Jesus meant when He taught people to repent and believe.',
+        title: 'What is the gospel of Jesus Christ?',
+        description: 'Learn the good news',
         image: 'http://app.christianandreformed.com/repent-believe-image.png'
     },
     '/answers-database': {
@@ -45,18 +45,18 @@ export const ROUTES = {
         description: 'Answers to all kinds of questions related to Christianity.',
         image: 'http://app.christianandreformed.com/answers-database-image.png'
     },
-    '/reformed-church-finder': {
-        icon: 'globe',
-        text: (
-            <div className="menu__text">
-                <h1>Reformed Church Finder</h1>
-            </div>
-        ),
-        url: '/reformed-church-finder',
-        title: 'Reformed Church Finder',
-        description: 'Find solid reformed churches all over the world.',
-        image: 'http://app.christianandreformed.com/church-finder-image.png'
-    },
+    // '/reformed-church-finder': {
+    //     icon: 'globe',
+    //     text: (
+    //         <div className="menu__text">
+    //             <h1>Reformed Church Finder</h1>
+    //         </div>
+    //     ),
+    //     url: '/reformed-church-finder',
+    //     title: 'Reformed Church Finder',
+    //     description: 'Find solid reformed churches all over the world.',
+    //     image: 'http://app.christianandreformed.com/church-finder-image.png'
+    // },
     '/interactive-theology': {
         icon: 'puzzle-piece',
         text: (
