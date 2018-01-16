@@ -33,6 +33,17 @@ export const ROUTES = {
         description: 'Learn the good news',
         image: 'http://app.christianandreformed.com/repent-believe-image.png'
     },
+    '/catechism-corner': {
+        icon: 'commenting-o',
+        text: (
+            <div className="menu__text">
+                <h1>Catechism Corner</h1>
+            </div>
+        ),
+        url: '/catechism-corner',
+        title: 'Catechism Corner',
+        description: 'Tools for learning the catechisms'
+    },
     '/answers-database': {
         icon: 'question-circle',
         text: (

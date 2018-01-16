@@ -8,6 +8,7 @@ import Statistics from 'app/components/Statistics';
 import Home from 'app/components/Home';
 import Menu from 'app/components/Menu';
 import Gospel from 'app/components/Gospel';
+import CatechismCorner from 'app/components/CatechismCorner';
 import AnswersDatabase from 'app/components/AnswersDatabase';
 import AnswersSelection from 'app/components/AnswersDatabase/AnswersSelection';
 import InteractiveTheology from 'app/components/InteractiveTheology';
@@ -24,10 +25,10 @@ class App extends Component {
                         <Menu />
                         <Route exact path="/" component={Home}/>
                         <Route path="/repent-believe" component={Gospel} />
+                        <Route path="/catechism-corner" component={CatechismCorner} />
                         <Route path="/answers-database/*" component={AnswersSelection} />
                         <Route exact path="/answers-database" component={AnswersDatabase} />
                         <Route path="/interactive-theology" component={InteractiveTheology} />
-                        <Route path="/reformed-church-finder" component={ChurchFinder} />
                         <Route path="/admin" component={Admin} />
                         <Route path="/statistics" component={Statistics} />
                         <Route path="/sitemap" component={SiteMap} />
